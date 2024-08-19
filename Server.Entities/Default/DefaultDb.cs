@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace System.Entities
@@ -11,11 +12,20 @@ namespace System.Entities
     {
 
         [Key]
+        [JsonIgnore]
         public int Id { get; set; }
 
+
+        [JsonIgnore]
         public Guid UniqueId { get; set; } = Guid.NewGuid();
+
+        [JsonIgnore]
         public bool IsDeleted { get; set; } = false;
+
+        [JsonIgnore]
         public DateTime LastUpdate { get; set; } = DateTime.MinValue;
+
+        [JsonIgnore]
         public DateTime DeleteDate { get; set; } = DateTime.MinValue;
 
         public virtual bool Validate()
