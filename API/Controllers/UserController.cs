@@ -1,0 +1,87 @@
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
+using Server.Entities;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
+
+namespace API.Controllers
+{
+
+
+    [Route("api/[controller]")]
+    [ApiController]
+    public class UserController : Controller
+    {
+        private readonly UserManager<ApplicationUser> UserManager;
+        private readonly SignInManager<ApplicationUser> SignManager;
+        private readonly IConfiguration Configuration;
+
+        public UserController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signManager, IConfiguration configuration)
+        {
+            UserManager = userManager;
+            SignManager = signManager;
+            Configuration = configuration;
+        }
+
+        [HttpPost("Register")]
+        public async Task<ActionResult<UserToken>> CreateUser([FromBody] User userInfo)
+        {
+            var user = new ApplicationUser { UserName = userInfo.Email, Email = userInfo.Email };
+
+            var result = await UserManager.CreateAsync(user, userInfo.Password);
+
+            if (result.Succeeded)
+                return Ok(userInfo);
+            else
+                return BadRequest(result.Errors);
+
+        }
+
+        [HttpPost("Login")]
+        public async Task<ActionResult<UserToken>> Login([FromBody] User userInfo)
+        {
+
+            var result = await SignManager.PasswordSignInAsync(userInfo?.Email, userInfo?.Password, isPersistent: false, lockoutOnFailure: false);
+
+
+            if (result.Succeeded)
+                return BuildToken(userInfo);
+            else
+                return BadRequest("User or Password Invalid!");
+
+        }
+
+        private UserToken BuildToken(User userinfo)
+        {
+            Claim[] claims = new[]
+            {
+                new Claim(JwtRegisteredClaimNames.UniqueName, userinfo.Email),
+                new Claim("AppMain", "Teste.com"),
+                new Claim(JwtRegisteredClaimNames.Aud, Configuration["Jwt:Audience"]),
+                new Claim(JwtRegisteredClaimNames.Iss, Configuration["Jwt:Issuer"]),
+                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
+            };
+
+            DateTime expiration = DateTime.UtcNow.AddHours(2);
+
+            SymmetricSecurityKey key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:key"]));
+            SigningCredentials creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+
+            JwtSecurityToken token = new JwtSecurityToken(
+                issuer: null,
+                audience: null,
+                claims: claims,
+                expires: expiration,
+                signingCredentials: creds);
+
+            return new UserToken()
+            {
+                Token = new JwtSecurityTokenHandler().WriteToken(token),
+                Expiration = expiration
+            };
+        }
+
+    }
+}
