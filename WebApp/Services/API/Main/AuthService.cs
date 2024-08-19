@@ -1,8 +1,10 @@
 ﻿using Blazored.LocalStorage;
 using Intersoft.Crosslight;
 using Microsoft.AspNetCore.Components.Authorization;
+using Server.Entities;
 using System.Net.Http;
 using System.Security.Claims;
+using System.Text;
 using System.Text.Json;
 
 
@@ -106,14 +108,38 @@ namespace WebApp.Services.API.Main
             return Convert.FromBase64String(base64);
         }
 
-        public async Task<LoginResult> Login(User loginModel)
+        public async Task<LoginResult> Login(User User)
         {
             try
+            {
+                var httpClient = httpClientFactory.CreateClient("API");
+                var loginAsJson = JsonSerializer.Serialize(User);
+                var requestContent = new StringContent(loginAsJson, Encoding.UTF8, "application/json");
+                var response = await httpClient.PostAsync("api/Users/Login", requestContent);
+
+                var loginResult = JsonSerializer.Deserialize<LoginResult>(await response.Content.ReadAsStringAsync(),
+                    new JsonSerializerOptions
+                    {
+                        PropertyNameCaseInsensitive = true
+                    });
+
+                return loginResult;
+                
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+
         }
 
         public async Task Loggout()
         {
-            throw NotImplementedException();
+            var httpClient = httpClientFactory.CreateClient("API");
+            await localStorage.RemoveItemAsync("authToken");
+
+            this.MarkUserAsLoggedOut();
+            httpClient.DefaultRequestHeaders.Authorization = null;
         }
 
     }

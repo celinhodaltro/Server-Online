@@ -15,4 +15,8 @@
     <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Server.Entities\Server.Entities.csproj" />
+  </ItemGroup>
+
 </Project>

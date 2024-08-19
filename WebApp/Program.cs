@@ -14,8 +14,10 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 
 builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 builder.Services.AddScoped<AuthenticationStateProvider, AuthService>();
+builder.Services.AddScoped<AuthService>();
 builder.Services.AddBlazoredLocalStorage();
 builder.Services.AddAuthorizationCore();
 
+builder.Services.AddCascadingAuthenticationState();
 
 await builder.Build().RunAsync();
