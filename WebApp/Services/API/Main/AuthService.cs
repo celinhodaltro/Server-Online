@@ -1,14 +1,17 @@
 ﻿using Blazored.LocalStorage;
+using Intersoft.Crosslight;
 using Microsoft.AspNetCore.Components.Authorization;
+using System.Net.Http;
 using System.Security.Claims;
 using System.Text.Json;
+
 
 namespace WebApp.Services.API.Main
 {
     public class AuthService : AuthenticationStateProvider
     {
         private readonly ILocalStorageService localStorage;
-
+        private readonly IHttpClientFactory httpClientFactory;
         public AuthService(ILocalStorageService localStorage)
         {
             this.localStorage = localStorage;
@@ -25,7 +28,7 @@ namespace WebApp.Services.API.Main
                 return new AuthenticationState(new ClaimsPrincipal(new ClaimsIdentity()));
             }
 
-            return new AuthenticationState(new ClaimsPrincipal(new ClaimsIdentity(ParseClaimsFromJwt(savedToken), "jwt"));
+            return new AuthenticationState(new ClaimsPrincipal(new ClaimsIdentity(ParseClaimsFromJwt(savedToken), "jwt")));
 
         }
 
@@ -103,6 +106,15 @@ namespace WebApp.Services.API.Main
             return Convert.FromBase64String(base64);
         }
 
-        
+        public async Task<LoginResult> Login(User loginModel)
+        {
+            try
+        }
+
+        public async Task Loggout()
+        {
+            throw NotImplementedException();
+        }
+
     }
 }
