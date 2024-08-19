@@ -1,5 +1,6 @@
 ﻿@page "/"
 
+
 <PageTitle>Home</PageTitle>
 
 <h1>Hello, world!</h1>
@@ -7,6 +8,6 @@
 Welcome to your new app.
  
 <AuthorizeView>
-    <Authorized>Aoba</Authorized>
-    <NotAuthorized>Aoba2</NotAuthorized>
+    <Authorized><MudAlert Severity="Severity.Success" Variant="Variant.Filled">The reactor is running at optimum temperature</MudAlert></Authorized>
+    <NotAuthorized><MudAlert Severity ="Severity.Error"  Variant = "Variant .Outlined">Não Autenticado! </MudAlert></NotAuthorized>
 </AuthorizeView>
