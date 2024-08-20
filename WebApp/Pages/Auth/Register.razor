@@ -1,5 +1,66 @@
-﻿<h3>Register</h3>
+﻿@page "/register/"
+
+@inject NavigationManager NavigationManager
+@inject AuthService AuthService
+@using System.Text.RegularExpressions
+@using System.ComponentModel.DataAnnotations
+
+
+<div class="card">
+    <div class="card-body">
+        <EditForm Model="RegisterModel" OnValidSubmit="HandleRegister">
+            <DataAnnotationsValidator />
+            <ValidationSummary />
+
+            <div class="form-group mt-2">
+                <MudTextField T="string" @bind-Value="@RegisterModel.Email" InputType="InputType.Email" Label="Email" Required="true" RequiredError="Email is required!" />
+            </div>
+
+            <div class="form-group mt-2">
+                <MudTextField T="string" @bind-Value="@RegisterModel.Password" InputType="InputType.Password" Label="Password" Required="true" RequiredError="Password is required!" />
+            </div>
+
+
+
+            <MudButton ButtonType="ButtonType.Submit" Class="mt-4" Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.Send" Color="Color.Primary">Login</MudButton>
+        </EditForm>
+    </div>
+</div>
+
+@if (ShowErrors)
+{
+    <MudAlert Severity="Severity.Warning" Variant="Variant.Outlined">@Error </MudAlert>
+}
+
 
 @code {
+    private User RegisterModel = new();
+    String RepeatPasssword = "";
+    bool ShowErrors = false;
+    string Error = String.Empty;
 
+    private async Task HandleRegister()
+    {
+        try
+        {
+            ShowErrors = false;
+            var result = await AuthService.Register(RegisterModel);
+
+            if (result.Token is not null)
+            {
+                NavigationManager.NavigateTo("/");
+            }
+            else
+            {
+                ShowErrors = true;
+            }
+        }
+        catch (Exception ex)
+        {
+            Error = ex.Message;
+            ShowErrors = true;
+        }
+
+    }
 }
+

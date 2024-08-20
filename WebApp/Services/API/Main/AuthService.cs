@@ -14,9 +14,10 @@ namespace WebApp.Services.API.Main
     {
         private readonly ILocalStorageService localStorage;
         private readonly IHttpClientFactory httpClientFactory;
-        public AuthService(ILocalStorageService localStorage)
+        public AuthService(ILocalStorageService localStorage, IHttpClientFactory httpClientFactory)
         {
             this.localStorage = localStorage;
+            this.httpClientFactory = httpClientFactory;
         }
 
         public override async Task<AuthenticationState> GetAuthenticationStateAsync()
@@ -115,7 +116,7 @@ namespace WebApp.Services.API.Main
                 var httpClient = httpClientFactory.CreateClient("API");
                 var loginAsJson = JsonSerializer.Serialize(User);
                 var requestContent = new StringContent(loginAsJson, Encoding.UTF8, "application/json");
-                var response = await httpClient.PostAsync("api/Users/Login", requestContent);
+                var response = await httpClient.PostAsync("api/User/Login", requestContent);
 
                 var loginResult = JsonSerializer.Deserialize<LoginResult>(await response.Content.ReadAsStringAsync(),
                     new JsonSerializerOptions
@@ -127,6 +128,33 @@ namespace WebApp.Services.API.Main
                 
             }
             catch (Exception ex)
+            {
+                throw;
+            }
+
+        }
+
+        public async Task<UserToken> Register(User User)
+        {
+            try
+            {
+                var httpClient = httpClientFactory.CreateClient("API");
+                var loginAsJson = JsonSerializer.Serialize(User);
+                var requestContent = new StringContent(loginAsJson, Encoding.UTF8, "application/json");
+                var response = await httpClient.PostAsync("api/User/Register", requestContent);
+                var responseContent = await response.Content.ReadAsStringAsync();
+                if (!response.IsSuccessStatusCode)
+                    throw new Exception(responseContent);
+                UserToken? loginResult = JsonSerializer.Deserialize<UserToken>(responseContent,
+                    new JsonSerializerOptions
+                    {
+                        PropertyNameCaseInsensitive = true
+                    });
+
+                return loginResult;
+
+            }
+            catch 
             {
                 throw;
             }
