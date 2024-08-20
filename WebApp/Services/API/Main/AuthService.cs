@@ -134,7 +134,7 @@ namespace WebApp.Services.API.Main
 
         }
 
-        public async Task<UserToken> Register(User User)
+        public async Task<User> Register(User User)
         {
             try
             {
@@ -145,7 +145,7 @@ namespace WebApp.Services.API.Main
                 var responseContent = await response.Content.ReadAsStringAsync();
                 if (!response.IsSuccessStatusCode)
                     throw new Exception(responseContent);
-                UserToken? loginResult = JsonSerializer.Deserialize<UserToken>(responseContent,
+                User? loginResult = JsonSerializer.Deserialize<User>(responseContent,
                     new JsonSerializerOptions
                     {
                         PropertyNameCaseInsensitive = true
