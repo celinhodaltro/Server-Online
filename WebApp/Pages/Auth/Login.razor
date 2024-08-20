@@ -2,6 +2,34 @@
 
 @inject NavigationManager NavigationManager
 @inject AuthService AuthService
+@using System.Text.RegularExpressions
+@using System.ComponentModel.DataAnnotations
+
+
+<div class="card">
+    <div class="card-body">
+        <EditForm Model="loginModel" OnValidSubmit="HandleLogin">
+            <DataAnnotationsValidator/>
+            <ValidationSummary/>
+
+            <div class="form-group mt-2"> 
+                <MudTextField T="string" @bind-Value="@loginModel.Email" InputType="InputType.Email" Label="Email" Required="true" RequiredError="Email is required!" />
+            </div>
+
+            <div class="form-group mt-2">
+                <MudTextField T="string" @bind-Value="@loginModel.Password" InputType="InputType.Password" Label="Password" Required="true" RequiredError="Password is required!" />
+            </div>
+
+            <MudButton Class="mt-4" Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.Send" Color="Color.Primary">Send</MudButton>
+        </EditForm>
+    </div>
+</div>
+
+@if (ShowErrors)
+{
+    <p>@Error</p>
+}
+
 
 @code {
     private User loginModel = new();
@@ -16,7 +44,7 @@
             ShowErrors = false;
             var result = await AuthService.Login(loginModel);
 
-            if(result.Token is not null)
+            if (result.Token is not null)
             {
                 NavigationManager.NavigateTo("/");
             }
@@ -33,39 +61,4 @@
 
     }
 }
-
-@if(ShowErrors)
-{
-    <p>@Error</p>
-}
-
-
-<div class="card">
-    <div class="card-body">
-        <EditForm Model="loginModel" OnValidSubmit="HandleLogin">
-            <DataAnnotationsValidator/>
-            <ValidationSummary/>
-
-            <div class="form-group mt-2"> 
-                <label for="email">Email</label>
-                <InputText class="form-control" id="email" @bind-Value="loginModel.Email" />
-                <ValidationMessage For="@(() => loginModel.Email)" />
-            </div>
-
-            <div class="form-group mt-2">
-                <label for="email">Password</label>
-                <InputText class="form-control" id="Password" @bind-Value="loginModel.Password" />
-                <ValidationMessage For="@(() => loginModel.Password)" />
-            </div>
-
-            <div class="form-group mt-2">
-                <label for="email">Repeat Passsword</label>
-                <InputText class="form-control" id="RepeatPasssword" @bind-Value="RepeatPasssword" />
-            </div>
-
-            <button type="submit" class="btn btn-primaty"></button>
-        </EditForm>
-    </div>
-</div>
-
 
