@@ -30,12 +30,15 @@ namespace API.Controllers
         {
             var user = new ApplicationUser { UserName = userInfo.Email, Email = userInfo.Email };
 
-            var result = await UserManager.CreateAsync(user, userInfo.Password);
+            var resultRegister = await UserManager.CreateAsync(user, userInfo.Password);
 
-            if (result.Succeeded)
-                return Ok(userInfo);
+            if (resultRegister.Succeeded)
+            {
+                var result = await this.Login(userInfo);
+                return result;
+            }
             else
-                return BadRequest(result.Errors);
+                return BadRequest(resultRegister.Errors);
 
         }
 

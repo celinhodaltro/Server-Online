@@ -45,8 +45,7 @@
         {
             ShowErrors = false;
             var result = await AuthService.Register(RegisterModel);
-            var token = await AuthService.Login(RegisterModel);
-            if (token.Token is not null)
+            if (result.Token is not null)
             {
                 NavigationManager.NavigateTo("/");
             }

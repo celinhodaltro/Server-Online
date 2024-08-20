@@ -54,13 +54,12 @@ namespace WebApp.Services.API.Main
             NotifyAuthenticationStateChanged(authState);
         }
 
-        private bool TokenExpired(String dataToken)
+        private bool TokenExpired(String dateToken)
         {
             DateTime dataNowUtc = DateTime.UtcNow;
-            DateTime dataExpiration =
-                DateTime.ParseExact(dataToken, "yyyy-MM-dd'T'HH>mm:ss.fffffff'Z'", null,System.Globalization.DateTimeStyles.RoundtripKind);
+            DateTime dateTokenExpiration = Convert.ToDateTime(dateToken).ToUniversalTime();
 
-            if( dataExpiration < dataNowUtc)
+            if(dateTokenExpiration < dataNowUtc)
             {
                 return true;
             }
@@ -72,44 +71,50 @@ namespace WebApp.Services.API.Main
             var claims = new List<Claim>();
             var payload = jwt.Split('.')[1];
             var jsonBytes = ParseBase64WithoutPadding(payload);
-            var keyValuePairs = JsonSerializer.Deserialize<Dictionary<string, string>>(jsonBytes);
+            var keyValuePairs = JsonSerializer.Deserialize<Dictionary<string, JsonElement>>(jsonBytes);
 
-            keyValuePairs.TryGetValue(ClaimTypes.Role, out var roles);
-
-            if( roles != null)
+            if (keyValuePairs.TryGetValue(ClaimTypes.Role, out var roles))
             {
-                if (roles.ToString().Trim().StartsWith("["))
+                if (roles.ValueKind == JsonValueKind.Array)
                 {
-                    var parsedRoles = JsonSerializer.Deserialize<string[]>(roles.ToString());
-                    foreach(var parsedRole in parsedRoles)
+                    foreach (var role in roles.EnumerateArray())
                     {
-                        claims.Add(new Claim(ClaimTypes.Role, parsedRole));
+                        claims.Add(new Claim(ClaimTypes.Role, role.GetString()));
                     }
                 }
                 else
                 {
-                    claims.Add(new Claim(ClaimTypes.Role, roles.ToString()));
+                    claims.Add(new Claim(ClaimTypes.Role, roles.GetString()));
                 }
                 keyValuePairs.Remove(ClaimTypes.Role);
             }
 
-            claims.AddRange(keyValuePairs.Select(x => new Claim(x.Key, x.Value)));
+            foreach (var kvp in keyValuePairs)
+            {
+                if (kvp.Value.ValueKind == JsonValueKind.String)
+                {
+                    claims.Add(new Claim(kvp.Key, kvp.Value.GetString()));
+                }
+                else
+                {
+
+                }
+            }
 
             return claims;
-
         }
 
         private byte[] ParseBase64WithoutPadding(string base64)
         {
-            switch( base64.Length % 4)
+            switch (base64.Length % 4)
             {
-                case 2: base64 += "=="; break; 
+                case 2: base64 += "=="; break;
                 case 3: base64 += "="; break;
             }
             return Convert.FromBase64String(base64);
         }
 
-        public async Task<LoginResult> Login(User User)
+        public async Task<UserToken> Login(User User)
         {
             try
             {
@@ -118,13 +123,21 @@ namespace WebApp.Services.API.Main
                 var requestContent = new StringContent(loginAsJson, Encoding.UTF8, "application/json");
                 var response = await httpClient.PostAsync("api/User/Login", requestContent);
 
-                var loginResult = JsonSerializer.Deserialize<LoginResult>(await response.Content.ReadAsStringAsync(),
+                var responseContent = await response.Content.ReadAsStringAsync();
+                if (!response.IsSuccessStatusCode)
+                    throw new Exception(responseContent);
+
+
+                var UserToken = JsonSerializer.Deserialize<UserToken>(await response.Content.ReadAsStringAsync(),
                     new JsonSerializerOptions
                     {
                         PropertyNameCaseInsensitive = true
                     });
 
-                return loginResult;
+                await AuthUserByToken(UserToken);
+
+
+                return UserToken;
                 
             }
             catch (Exception ex)
@@ -134,7 +147,9 @@ namespace WebApp.Services.API.Main
 
         }
 
-        public async Task<User> Register(User User)
+
+
+        public async Task<UserToken> Register(User User)
         {
             try
             {
@@ -142,16 +157,19 @@ namespace WebApp.Services.API.Main
                 var loginAsJson = JsonSerializer.Serialize(User);
                 var requestContent = new StringContent(loginAsJson, Encoding.UTF8, "application/json");
                 var response = await httpClient.PostAsync("api/User/Register", requestContent);
+
                 var responseContent = await response.Content.ReadAsStringAsync();
                 if (!response.IsSuccessStatusCode)
                     throw new Exception(responseContent);
-                User? loginResult = JsonSerializer.Deserialize<User>(responseContent,
+
+                UserToken? UserToken = JsonSerializer.Deserialize<UserToken>(responseContent,
                     new JsonSerializerOptions
                     {
                         PropertyNameCaseInsensitive = true
                     });
 
-                return loginResult;
+                await AuthUserByToken(UserToken);
+                return UserToken;
 
             }
             catch 
@@ -159,6 +177,11 @@ namespace WebApp.Services.API.Main
                 throw;
             }
 
+        }
+        public async Task AuthUserByToken(UserToken? UserToken)
+        {
+            await localStorage.SetItemAsync("authToken", UserToken.Token);
+            await localStorage.SetItemAsync("tokenExpiration", UserToken.Expiration);
         }
 
         public async Task Loggout()
