@@ -1,31 +1,30 @@
-﻿@page "/register/"
-
-@inject NavigationManager NavigationManager
+﻿@inject NavigationManager NavigationManager
 @inject AuthService AuthService
 @using System.Text.RegularExpressions
 @using System.ComponentModel.DataAnnotations
 
 
-<div class="card">
-    <div class="card-body">
+<MudCard Class="text-center">
+    <MudCardContent>
         <EditForm Model="RegisterModel" OnValidSubmit="HandleRegister">
+            <MudText Typo="Typo.h3">Register</MudText>
             <DataAnnotationsValidator />
             <ValidationSummary />
 
             <div class="form-group mt-2">
-                <MudTextField T="string" @bind-Value="@RegisterModel.Email" InputType="InputType.Email" Label="Email" Required="true" RequiredError="Email is required!" />
+                <MudTextField T="string" @bind-Value="@RegisterModel.Email" Variant="Variant.Outlined" InputType="InputType.Email" Label="Email" Required="true" RequiredError="Email is required!" />
             </div>
 
             <div class="form-group mt-2">
-                <MudTextField T="string" @bind-Value="@RegisterModel.Password" InputType="InputType.Password" Label="Password" Required="true" RequiredError="Password is required!" />
+                <MudTextField T="string" @bind-Value="@RegisterModel.Password" Variant="Variant.Outlined" InputType="InputType.Password" Label="Password" Required="true" RequiredError="Password is required!" />
             </div>
 
 
 
-            <MudButton ButtonType="ButtonType.Submit" Class="mt-4" Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.Send" Color="Color.Primary">Login</MudButton>
+            <MudButton ButtonType="ButtonType.Submit" Class="mt-4" Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.Send" Color="Color.Primary">Register</MudButton>
         </EditForm>
-    </div>
-</div>
+    </MudCardContent>
+</MudCard>
 
 @if (ShowErrors)
 {
