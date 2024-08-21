@@ -1,8 +1,10 @@
 ﻿using Blazored.LocalStorage;
 using Intersoft.Crosslight;
+using Intersoft.Crosslight.Forms;
 using Microsoft.AspNetCore.Components.Authorization;
 using Server.Entities;
 using System.Net.Http;
+using System.Runtime.InteropServices;
 using System.Security.Claims;
 using System.Text;
 using System.Text.Json;
@@ -33,6 +35,20 @@ namespace WebApp.Services.API.Main
 
             return new AuthenticationState(new ClaimsPrincipal(new ClaimsIdentity(ParseClaimsFromJwt(savedToken), "jwt")));
         }
+
+        public async Task<bool> IsAuthenticated()
+        {
+            var savedToken = await localStorage.GetItemAsync<string>("authToken");
+            var expirationToken = await localStorage.GetItemAsync<string>("tokenExpiration");
+
+            if (string.IsNullOrEmpty(savedToken) || TokenExpired(expirationToken))
+            {
+                return false;
+            }
+
+            return true;
+        }
+
 
         public void MarkUserAsAuthenticated(String email)
         {
@@ -133,7 +149,7 @@ namespace WebApp.Services.API.Main
                         PropertyNameCaseInsensitive = true
                     });
 
-                await AuthUserByToken(UserToken);
+                await AuthUserByToken(UserToken, User?.Email);
 
 
                 return UserToken;
@@ -167,7 +183,7 @@ namespace WebApp.Services.API.Main
                         PropertyNameCaseInsensitive = true
                     });
 
-                await AuthUserByToken(UserToken);
+                await AuthUserByToken(UserToken, User?.Email);
                 return UserToken;
 
             }
@@ -177,10 +193,13 @@ namespace WebApp.Services.API.Main
             }
 
         }
-        public async Task AuthUserByToken(UserToken? UserToken)
+        public async Task AuthUserByToken(UserToken? UserToken, [Optional] string Email)
         {
             await localStorage.SetItemAsync("authToken", UserToken.Token);
             await localStorage.SetItemAsync("tokenExpiration", UserToken.Expiration);
+
+            if (!String.IsNullOrEmpty(Email))
+                MarkUserAsAuthenticated(Email);
         }
 
         public async Task Loggout()
