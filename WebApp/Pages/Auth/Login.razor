@@ -1,23 +1,24 @@
-﻿@page "/login/"
-
-@inject NavigationManager NavigationManager
+﻿@inject NavigationManager NavigationManager
 @inject AuthService AuthService
 @using System.Text.RegularExpressions
 @using System.ComponentModel.DataAnnotations
 
 
-<div class="card">
-    <div class="card-body">
+
+
+<MudCard Class="text-center">
+    <MudCardContent>
         <EditForm Model="loginModel" OnValidSubmit="HandleLogin">
+            <MudText Typo="Typo.h3">Login</MudText>
             <DataAnnotationsValidator/>
             <ValidationSummary/>
 
             <div class="form-group mt-2"> 
-                <MudTextField T="string" @bind-Value="@loginModel.Email" InputType="InputType.Email" Label="Email" Required="true" RequiredError="Email is required!" />
+                <MudTextField T="string" @bind-Value="@loginModel.Email" Variant="Variant.Outlined" InputType="InputType.Email" Label="Email" Required="true" RequiredError="Email is required!" />
             </div>
 
             <div class="form-group mt-2">
-                <MudTextField T="string" @bind-Value="@loginModel.Password" InputType="InputType.Password" Label="Password" Required="true" RequiredError="Password is required!" />
+                <MudTextField T="string" @bind-Value="@loginModel.Password" Variant="Variant.Outlined" InputType="InputType.Password" Label="Password" Required="true" RequiredError="Password is required!" />
             </div>
 
             <MudButton ButtonType="ButtonType.Submit" Class="mt-4" Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.Send" Color="Color.Primary">Login</MudButton>
@@ -25,8 +26,8 @@
 
             
         </EditForm>
-    </div>
-</div>
+    </MudCardContent>
+</MudCard>
 
 
 @if (ShowErrors)
