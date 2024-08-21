@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using MySqlX.XDevAPI;
 using System;
 using System.Collections.Generic;
 using System.Entities;
@@ -31,6 +32,8 @@ namespace System.Provider
 
         public async Task<T> CreateAsync<T>(T entity) where T : class
         {
+            await ValidateEntity(entity);
+
             _context.Set<T>().Add(entity);
             await _context.SaveChangesAsync();
             return entity;
@@ -38,6 +41,8 @@ namespace System.Provider
 
         public async Task<T> UpdateAsync<T>(T entity) where T : class
         {
+            await ValidateEntity(entity);
+
             _context.Entry(entity).State = EntityState.Modified;
             await _context.SaveChangesAsync();
             return entity;
@@ -45,6 +50,7 @@ namespace System.Provider
 
         public async Task DeleteAsync<T>(int id) where T : class
         {
+
             var entity = await _context.Set<T>().FindAsync(id);
 
             if (entity == null)
@@ -72,6 +78,30 @@ namespace System.Provider
             else
             {
                 throw new Exception($"{typeof(T).Name} não suporta exclusão lógica!");
+            }
+        }
+
+
+        private async Task IsDataBaseObject<T>(T entity) where T : class
+        {
+            if (!typeof(DefaultDb).IsAssignableFrom(typeof(T)))
+            {
+                throw new InvalidDataException("This object is not Data Base Object.");
+            }
+        }
+
+        private async Task ValidateEntity<T>(T entity) where T : class
+        {
+            await this.IsDataBaseObject(entity);
+
+            var validateMethod = typeof(T).GetMethod("Validate");
+            if (validateMethod != null)
+            {
+                validateMethod.Invoke(entity, null);
+            }
+            else
+            {
+                throw new InvalidOperationException($"A entidade do tipo {typeof(T).Name} não possui um método Validate.");
             }
         }
     }
