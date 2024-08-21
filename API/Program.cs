@@ -1,3 +1,4 @@
+using API.Injecter;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -54,6 +55,7 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseMySQL("Server=localhost;Database=AppMain;Uid=root;Pwd=admin"));
 
+ConfigInjecter.Inject(builder.Services);
 
 var app = builder.Build();
 
