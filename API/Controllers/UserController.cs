@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
+using Server.BusinessRules;
 using Server.Entities;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -12,25 +13,16 @@ namespace API.Controllers
 
     [Route("api/[controller]")]
     [ApiController]
-    public class UserController : Controller
+    public class UserController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signManager, 
+                                IConfiguration configuration, LogBusinessRules logBusinessRules) : Controller
     {
-        private readonly UserManager<ApplicationUser> UserManager;
-        private readonly SignInManager<ApplicationUser> SignManager;
-        private readonly IConfiguration Configuration;
-
-        public UserController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signManager, IConfiguration configuration)
-        {
-            UserManager = userManager;
-            SignManager = signManager;
-            Configuration = configuration;
-        }
 
         [HttpPost("Register")]
         public async Task<ActionResult<UserToken>> CreateUser([FromBody] User userInfo)
         {
             var user = new ApplicationUser { UserName = userInfo.Email, Email = userInfo.Email };
 
-            var resultRegister = await UserManager.CreateAsync(user, userInfo.Password);
+            var resultRegister = await userManager.CreateAsync(user, userInfo.Password);
 
             if (resultRegister.Succeeded)
             {
@@ -46,13 +38,21 @@ namespace API.Controllers
         public async Task<ActionResult<UserToken>> Login([FromBody] User userInfo)
         {
 
-            var result = await SignManager.PasswordSignInAsync(userInfo?.Email, userInfo?.Password, isPersistent: false, lockoutOnFailure: false);
+            try
+            {
+                var result = await signManager.PasswordSignInAsync(userInfo?.Email, userInfo?.Password, isPersistent: false, lockoutOnFailure: false);
 
 
-            if (result.Succeeded)
-                return BuildToken(userInfo);
-            else
-                return BadRequest("User or Password Invalid!");
+                if (result.Succeeded)
+                    return BuildToken(userInfo);
+                else
+                    return BadRequest("User or Password Invalid!");
+            }
+            catch (Exception ex)
+            {
+                await logBusinessRules.CreateLog(new Log { Level = LogLevelEnum.Error, Message = "Error! Login", Details = ex.Message });
+                throw;
+            }
 
         }
 
@@ -62,14 +62,14 @@ namespace API.Controllers
             {
                 new Claim(JwtRegisteredClaimNames.UniqueName, userinfo.Email),
                 new Claim("AppMain", "Teste.com"),
-                new Claim(JwtRegisteredClaimNames.Aud, Configuration["Jwt:Audience"]),
-                new Claim(JwtRegisteredClaimNames.Iss, Configuration["Jwt:Issuer"]),
+                new Claim(JwtRegisteredClaimNames.Aud, configuration["Jwt:Audience"]),
+                new Claim(JwtRegisteredClaimNames.Iss, configuration["Jwt:Issuer"]),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
             };
 
             DateTime expiration = DateTime.UtcNow.AddHours(2);
 
-            SymmetricSecurityKey key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:key"]));
+            SymmetricSecurityKey key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["Jwt:key"]));
             SigningCredentials creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
             JwtSecurityToken token = new JwtSecurityToken(

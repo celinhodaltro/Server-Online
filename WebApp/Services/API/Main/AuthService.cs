@@ -32,7 +32,6 @@ namespace WebApp.Services.API.Main
             }
 
             return new AuthenticationState(new ClaimsPrincipal(new ClaimsIdentity(ParseClaimsFromJwt(savedToken), "jwt")));
-
         }
 
         public void MarkUserAsAuthenticated(String email)
