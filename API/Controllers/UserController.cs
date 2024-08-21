@@ -20,17 +20,25 @@ namespace API.Controllers
         [HttpPost("Register")]
         public async Task<ActionResult<UserToken>> CreateUser([FromBody] User userInfo)
         {
-            var user = new ApplicationUser { UserName = userInfo.Email, Email = userInfo.Email };
-
-            var resultRegister = await userManager.CreateAsync(user, userInfo.Password);
-
-            if (resultRegister.Succeeded)
+            try
             {
-                var result = await this.Login(userInfo);
-                return result;
+                var user = new ApplicationUser { UserName = userInfo.Email, Email = userInfo.Email };
+
+                var resultRegister = await userManager.CreateAsync(user, userInfo.Password);
+
+                if (resultRegister.Succeeded)
+                {
+                    var result = await this.Login(userInfo);
+                    return result;
+                }
+                else
+                    return BadRequest(resultRegister.Errors);
             }
-            else
-                return BadRequest(resultRegister.Errors);
+            catch (Exception ex)
+            {
+                await logBusinessRules.CreateLog(new Log { Level = LogLevelEnum.Error, Message = "Error! Login", Details = ex.Message });
+                throw;
+            }
 
         }
 
@@ -47,6 +55,7 @@ namespace API.Controllers
                     return BuildToken(userInfo);
                 else
                     return BadRequest("User or Password Invalid!");
+
             }
             catch (Exception ex)
             {
