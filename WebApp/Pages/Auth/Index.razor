@@ -3,7 +3,7 @@
 
 
 <MudGrid>
-    <MudItem xs="3"  Style="height:100vh;">
+    <MudItem xs="3" Style="height:100vh;">
         @if (showRegister || showLogin)
         {
             <MudFab Size="Size.Small" Color="Color.Error" OnClick="BackToStart" StartIcon="@Icons.Material.Filled.Close" />
@@ -13,8 +13,10 @@
             {
                 <MudCard>
                     <MudCardContent>
-                        <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="ShowLogin">Login</MudButton>
-                        <MudButton Variant="Variant.Filled" Color="Color.Secondary" OnClick="ShowRegister">Register</MudButton>
+                        <MudButtonGroup OverrideStyles="false" DropShadow="true" Color="Color.Primary" Variant="Variant.Outlined">
+                            <MudButton StartIcon="@Icons.Material.Filled.Person" Variant="Variant.Filled" Color="Color.Primary" OnClick="ShowLogin">Login</MudButton>
+                            <MudButton EndIcon="@Icons.Material.Filled.Edit" Variant="Variant.Filled" Color="Color.Secondary" OnClick="ShowRegister">Register</MudButton>
+                        </MudButtonGroup>
                     </MudCardContent>
                 </MudCard>
 
