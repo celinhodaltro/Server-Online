@@ -1,8 +1,51 @@
-﻿@page "/Auth/Index/"
+﻿@page "/Auth/Index"
 @inject NavigationManager NavigationManager
-@inject AuthService AuthService
 
+<MudContainer Class="text-center" MaxWidth="MaxWidth.Small" Style="margin-top: 20px;">
+    @if (!showLogin && !showRegister)
+    {
+        <MudCard>
+            <MudCardContent>
+                <MudButton Variant="Variant.Filled" Color="Color.Primary" OnClick="ShowLogin">Login</MudButton>
+                <MudButton Variant="Variant.Filled" Color="Color.Secondary" OnClick="ShowRegister">Register</MudButton>
+            </MudCardContent>
+        </MudCard>
 
-<Login/>
-<Register/>
+    }
+    else if (showLogin)
+    {
+        <Login />
+    }
+    else if (showRegister)
+    {
+        <Register />
+    }
 
+    @if(showRegister || showLogin)
+    {
+        <MudButton Variant="Variant.Filled" Color="Color.Error" OnClick="BackToStart">Back</MudButton>
+    }
+</MudContainer>
+
+@code {
+    private bool showLogin = false;
+    private bool showRegister = false;
+
+    private void ShowLogin()
+    {
+        showLogin = true;
+        showRegister = false;
+    }
+
+    private void ShowRegister()
+    {
+        showLogin = false;
+        showRegister = true;
+    }
+
+    private void BackToStart()
+    {
+        showLogin = false;
+        showRegister = false;
+    }
+}

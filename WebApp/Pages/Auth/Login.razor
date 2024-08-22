@@ -6,10 +6,10 @@
 
 
 
-<MudCard Class="text-center">
+<MudCard>
     <MudCardContent>
         <EditForm Model="loginModel" OnValidSubmit="HandleLogin">
-            <MudText Typo="Typo.h3">Login</MudText>
+            <MudText Typo="Typo.h4">Login</MudText>
             <DataAnnotationsValidator/>
             <ValidationSummary/>
 
@@ -21,7 +21,7 @@
                 <MudTextField T="string" @bind-Value="@loginModel.Password" Variant="Variant.Outlined" InputType="InputType.Password" Label="Password" Required="true" RequiredError="Password is required!" />
             </div>
 
-            <MudButton ButtonType="ButtonType.Submit" Class="mt-4" Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.Send" Color="Color.Primary">Login</MudButton>
+            <MudButton ButtonType="ButtonType.Submit" Class="mt-4" Variant="Variant.Filled" Color="Color.Primary">Login</MudButton>
 
 
             

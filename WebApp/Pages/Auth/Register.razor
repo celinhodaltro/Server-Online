@@ -4,10 +4,10 @@
 @using System.ComponentModel.DataAnnotations
 
 
-<MudCard Class="text-center">
+<MudCard>
     <MudCardContent>
         <EditForm Model="RegisterModel" OnValidSubmit="HandleRegister">
-            <MudText Typo="Typo.h3">Register</MudText>
+            <MudText Typo="Typo.h4">Register</MudText>
             <DataAnnotationsValidator />
             <ValidationSummary />
 
@@ -19,7 +19,11 @@
                 <MudTextField T="string" @bind-Value="@RegisterModel.Password" Variant="Variant.Outlined" InputType="InputType.Password" Label="Password" Required="true" RequiredError="Password is required!" />
             </div>
 
-            <MudButton ButtonType="ButtonType.Submit" Class="mt-4" Variant="Variant.Filled" EndIcon="@Icons.Material.Filled.Send" Color="Color.Primary">Register</MudButton>
+            <div class="form-group mt-2">
+                <MudTextField T="string" @bind-Value="@RepeatPasssword" Variant="Variant.Outlined" InputType="InputType.Password" Label="Repeat Password" Required="true" RequiredError="Repeat Password is required!" />
+            </div>
+
+            <MudButton ButtonType="ButtonType.Submit" Class="mt-4" Variant="Variant.Filled" Color="Color.Secondary">Register</MudButton>
         </EditForm>
     </MudCardContent>
 </MudCard>
