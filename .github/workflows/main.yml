@@ -23,18 +23,18 @@ jobs:
 
       - name: Restore dependencies
         run: dotnet restore
-
+       
       - name: Build API
-        run: dotnet build ./Server/API/API.csproj --no-restore
+        run: dotnet build ./API/API.csproj --no-restore
 
       - name: Build Blazor WebAssembly
-        run: dotnet build ./Front/WebApp/WebApp.csproj --no-restore
+        run: dotnet build ./WebApp/WebApp.csproj --no-restore
 
       - name: Publish API
-        run: dotnet publish ./Server/API/API.csproj -c Release -o ./Server/API/publish
+        run: dotnet publish ./API/API.csproj -c Release -o ./Server/API/publish
 
       - name: Publish Blazor WebAssembly
-        run: dotnet publish ./Front/WebApp/WebApp.csproj -c Release -o ./Front/WebApp/publish
+        run: dotnet publish ./WebApp/WebApp.csproj -c Release -o ./Front/WebApp/publish
 
   build-windows:
     runs-on: windows-latest
