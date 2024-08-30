@@ -2,13 +2,65 @@
 @inject NavigationManager NavigationManager
 
 
+
+<style>
+
+    .Menu-Login 
+    {
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 100.7vh;
+    }
+
+    .mud-card-content 
+    {
+        border-radius:20px;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    h4, p 
+    {
+        font-family: 'Cinzel', serif !important;
+        color:white;
+    }
+
+    body {
+        font-family: 'Cinzel', serif !important;
+        background-color: #f0f0f0;
+        color: #333; 
+    }
+
+    h1, h2, h3 {
+        font-family: 'Cinzel', serif !important;
+        color: #222; 
+    }
+
+    h4
+    {
+        font-family: 'Cinzel', serif !important;
+        letter-spacing: 3px !important;
+        text-transform: uppercase !important;
+    }
+
+    main{
+        background-image: url('/Images/Designer.jpeg') !important;
+        background-size: cover;
+    }
+
+    .Close-Button{
+        margin-left:80%;
+    }
+
+    
+
+</style>
+
 <MudGrid>
-    <MudItem xs="3" Style="height:100vh;">
+    <MudItem Class="Menu-Login" xs="3">
         @if (showRegister || showLogin)
         {
-            <MudFab Size="Size.Small" Color="Color.Error" OnClick="BackToStart" StartIcon="@Icons.Material.Filled.Close" />
+            <MudFab Size="Size.Small" Class="Close-Button"  Color="Color.Error" OnClick="BackToStart" StartIcon="@Icons.Material.Filled.Close" />
         }
-        <MudContainer Class="text-center" Style="margin-top:50%" MaxWidth="MaxWidth.Large">
+        <MudContainer Class="text-white text-center" Style="margin-top:35%;" MaxWidth="MaxWidth.Large">
             @if (!showLogin && !showRegister)
             {
                 <MudCard>
