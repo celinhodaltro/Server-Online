@@ -1,9 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Server.Entities;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Security.Principal;
 
 namespace System.Provider;
 public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
