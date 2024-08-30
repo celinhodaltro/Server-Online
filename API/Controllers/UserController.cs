@@ -32,7 +32,7 @@ namespace API.Controllers
                     return result;
                 }
                 else
-                    return BadRequest(resultRegister.Errors);
+                    return BadRequest(resultRegister.Errors.Select(Error => Error.Description));
             }
             catch (Exception ex)
             {
