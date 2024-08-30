@@ -23,15 +23,24 @@
                 <MudTextField T="string" @bind-Value="@RepeatPasssword" Variant="Variant.Outlined" InputType="InputType.Password" Label="Repeat Password" Required="true" RequiredError="Repeat Password is required!" />
             </div>
 
-            <MudButton ButtonType="ButtonType.Submit" Class="mt-4" StartIcon="@Icons.Material.Filled.Send" Variant="Variant.Filled" Color="Color.Secondary">Register</MudButton>
+            <div class="form-group mt-2">
+                <MudButton ButtonType="ButtonType.Submit" Class="mt-4" StartIcon="@Icons.Material.Filled.Send" Variant="Variant.Filled" Color="Color.Secondary">Register</MudButton>
+            </div>
+
+            @if (ShowErrors)
+            {
+                <div class="form-group mt-2">
+                    @foreach(var Error in Errors)
+                    {
+                        <MudAlert Severity="Severity.Error" Variant="Variant.Outlined">@Error </MudAlert>
+                    }
+                </div>
+            }
+
         </EditForm>
     </MudCardContent>
 </MudCard>
 
-@if (ShowErrors)
-{
-    <MudAlert Severity="Severity.Warning" Variant="Variant.Outlined">@Error </MudAlert>
-}
 
 
 @code {
@@ -40,7 +49,7 @@
     private User RegisterModel = new();
     String RepeatPasssword = "";
     bool ShowErrors = false;
-    string Error = String.Empty;
+    List<string> Errors = new();
 
     private async Task HandleRegister()
     {
@@ -59,7 +68,7 @@
         }
         catch (Exception ex)
         {
-            Error = ex.Message;
+            Errors = JsonConvert.DeserializeObject<List<string>>(ex.Message);
             ShowErrors = true;
         }
 
