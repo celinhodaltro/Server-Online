@@ -1,0 +1,64 @@
+name: Build and Test
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-ubuntu:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.x' 
+      - name: Restore dependencies
+        run: dotnet restore
+
+      - name: Build API
+        run: dotnet build ./Server/API/API.csproj --no-restore
+
+      - name: Build Blazor WebAssembly
+        run: dotnet build ./Front/WebApp/WebApp.csproj --no-restore
+
+      - name: Publish API
+        run: dotnet publish ./Server/API/API.csproj -c Release -o ./Server/API/publish
+
+      - name: Publish Blazor WebAssembly
+        run: dotnet publish ./Front/WebApp/WebApp.csproj -c Release -o ./Front/WebApp/publish
+
+  build-windows:
+    runs-on: windows-latest
+    needs: build-ubuntu 
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.x'  
+
+      - name: Restore dependencies
+        run: dotnet restore
+
+      - name: Build API
+        run: dotnet build ./Server/API/API.csproj --no-restore
+
+      - name: Build Blazor WebAssembly
+        run: dotnet build ./Front/WebApp/WebApp.csproj --no-restore
+
+      - name: Publish API
+        run: dotnet publish ./Server/API/API.csproj -c Release -o ./Server/API/publish
+
+      - name: Publish Blazor WebAssembly
+        run: dotnet publish ./Front/WebApp/WebApp.csproj -c Release -o ./Front/WebApp/publish
