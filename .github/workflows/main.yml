@@ -22,19 +22,10 @@ jobs:
           dotnet-version: '8.x' 
 
       - name: Restore dependencies
-        run: dotnet restore
+        run: dotnet restore Server.sln
        
-      - name: Build API
-        run: dotnet build ./API/API.csproj --no-restore
-
-      - name: Build Blazor WebAssembly
-        run: dotnet build ./WebApp/WebApp.csproj --no-restore
-
-      - name: Publish API
-        run: dotnet publish ./API/API.csproj -c Release -o ./Server/API/publish
-
-      - name: Publish Blazor WebAssembly
-        run: dotnet publish ./WebApp/WebApp.csproj -c Release -o ./Front/WebApp/publish
+      - name: Build solution
+        run: dotnet build Server.sln --no-restore
 
   build-windows:
     runs-on: windows-latest
@@ -49,16 +40,7 @@ jobs:
           dotnet-version: '8.x'
 
       - name: Restore dependencies
-        run: dotnet restore
-
-      - name: Build API
-        run: dotnet build ./API/API.csproj --no-restore
-
-      - name: Build Blazor WebAssembly
-        run: dotnet build ./WebApp/WebApp.csproj --no-restore
-
-      - name: Publish API
-        run: dotnet publish ./API/API.csproj -c Release -o ./Server/API/publish
-
-      - name: Publish Blazor WebAssembly
-        run: dotnet publish ./WebApp/WebApp.csproj -c Release -o ./Front/WebApp/publish
+        run: dotnet restore Server.sln
+       
+      - name: Build solution
+        run: dotnet build Server.sln --no-restore
