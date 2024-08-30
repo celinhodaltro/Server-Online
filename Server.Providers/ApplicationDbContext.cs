@@ -7,7 +7,7 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
 {
     public string ConnectionString { get; set; } = "Server=localhost;Database=AppMain;Uid=root;Pwd=admin";
 
-    public DbSet<Log> Logs { get; set; }
+    public DbSet<LogTrack> Logs { get; set; }
 
     public ApplicationDbContext() { }
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
