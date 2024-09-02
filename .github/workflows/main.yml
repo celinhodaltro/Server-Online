@@ -1,49 +1,69 @@
-name: Build and Test
-
+name: _Template Build
 on:
-  push:
-    branches:
-      - master
-  pull_request:
-    branches:
-      - master
-
+  workflow_call:
+    inputs:
+      project:
+        description: 'The *csproj project path passed from the caller workflow'
+        required: true
+        type: string
+      deploy:
+        description: 'enable publish code to enviroment'
+        required: true
+        type: boolean
+        default: false
+      test:
+        description: 'The test path passed from the caller workflow'
+        required: true
+        type: string
 jobs:
-  build-ubuntu:
-    runs-on: ubuntu-latest
-
+  build:
+    name: ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ ubuntu-latest, windows-latest, macOS-latest ]
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3.1.0
 
-      - name: Set up .NET
-        uses: actions/setup-dotnet@v3
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3.0.2
+
+      - name: Cache dependencies
+        uses: actions/cache@v3.0.11
         with:
-          dotnet-version: '8.x' 
+          path: ~/.nuget/packages
+          key: ${{ runner.os }}-nuget-${{ hashFiles('**/packages.lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-nuget  
 
-      - name: Clean NuGet cache
-        run: dotnet nuget locals all --clear
+      - name: Install dependencies
+        working-directory: ${{ inputs.project }}
+        run: dotnet restore
 
-      - name: Restore dependencies
-        run: dotnet restore Server.sln
+      - name: Install dependencies for testing
+        working-directory: ${{ inputs.test }}
+        run: dotnet restore
 
-      - name: List all files in repository
-        run: ls -R
+      - name: Build
+        working-directory: ${{ inputs.project }}
+        run: dotnet build --configuration Release --no-restore
 
-      - name: Build solution
-        run: dotnet build Server.sln
+      - name: Test
+        uses: nick-fields/retry@v2
+        with:
+          timeout_minutes: 15
+          max_attempts: 3
+          command: dotnet test ${{ inputs.test }} --no-restore --verbosity normal
 
-      - name: List files in Providers directory
-        run: ls -R Server/Providers
-
-      - name: List files in Entities directory
-        run: ls -R Server/Entities
-
-      - name: Check for missing namespaces
-        run: |
-          if grep -rnw 'Server/Providers/ApplicationDbContext.cs' -e 'LogTrack'; then
-            echo "Namespace 'LogTrack' found in ApplicationDbContext.cs"
-          else
-            echo "Namespace 'LogTrack' not found in ApplicationDbContext.cs"
-            exit 1
-          fi
+      - name: Publish
+        working-directory: ${{ inputs.project }}
+        if: ${{ inputs.deploy == true }}
+        run: dotnet publish --configuration Release --no-restore --no-build --output ./publish
+      
+      - name: Upload Artifact
+        if: ${{ inputs.deploy == true }}
+        uses: actions/upload-artifact@v3
+        with:
+          name: publish
+          path: ${{ inputs.project }}/publish
