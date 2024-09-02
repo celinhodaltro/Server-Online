@@ -6,19 +6,18 @@
 
 
 
-<MudCard>
-    <MudCardContent>
+
         <EditForm Model="loginModel" OnValidSubmit="HandleLogin">
             <MudText Typo="Typo.h4">Login</MudText>
             <DataAnnotationsValidator/>
             <ValidationSummary/>
 
-            <div class="form-group mt-2"> 
-                <MudTextField T="string" @bind-Value="@loginModel.Email" Variant="Variant.Outlined" InputType="InputType.Email" Label="Email" Required="true" RequiredError="Email is required!" />
+            <div class="form-group mt-2">
+                <MudTextField T="string" @bind-Value="@loginModel.Email" Variant="Variant.Outlined" ShrinkLabel="true" InputType="InputType.Email" Label="Email" Required="true" RequiredError="Email is required!" />
             </div>
 
             <div class="form-group mt-2">
-                <MudTextField T="string" @bind-Value="@loginModel.Password" Variant="Variant.Outlined" InputType="InputType.Password"  Label="Password" Required="true" RequiredError="Password is required!" />
+                <MudTextField T="string" @bind-Value="@loginModel.Password" Variant="Variant.Outlined" ShrinkLabel="true" InputType="InputType.Password"  Label="Password" Required="true" RequiredError="Password is required!" />
             </div>
 
             <MudButton ButtonType="ButtonType.Submit" StartIcon="@Icons.Material.Filled.Person" Class="mt-4" Variant="Variant.Filled" Color="Color.Primary">Login</MudButton>
@@ -26,8 +25,7 @@
 
             
         </EditForm>
-    </MudCardContent>
-</MudCard>
+
 
 
 @if (ShowErrors)
