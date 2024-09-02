@@ -1,13 +1,20 @@
-name: Build and Test
-
+﻿name: _Template Build
 on:
-  push:
-    branches:
-      - master
-  pull_request:
-    branches:
-      - master
-
+  workflow_call:
+    inputs:
+      project:
+        description: 'The *csproj project path passed from the caller workflow'
+        required: true
+        type: string
+      deploy:
+        description: 'enable publish code to enviroment'
+        required: true
+        type: boolean
+        default: false
+      test:
+        description: 'The test path passed from the caller workflow'
+        required: true
+        type: string
 jobs:
   build:
     name: ${{ matrix.os }}
