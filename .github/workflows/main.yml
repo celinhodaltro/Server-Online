@@ -31,7 +31,7 @@ jobs:
         run: ls -R
 
       - name: Build solution
-        run: dotnet build Server.sln --no-restore
+        run: dotnet build Server.sln
 
       - name: List files in Providers directory
         run: ls -R Server/Providers
