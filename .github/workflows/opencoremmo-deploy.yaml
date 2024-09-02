@@ -8,6 +8,6 @@ jobs:
     uses: ./.github/workflows/_workflow.yaml
     with:
       path: /
-      project: src/Standalone
+      project: /
       test: src
       deploy: true
