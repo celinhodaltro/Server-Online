@@ -4,42 +4,46 @@
 @using System.ComponentModel.DataAnnotations
 
 
-<MudCard>
-    <MudCardContent>
-        <EditForm Model="RegisterModel" OnValidSubmit="HandleRegister">
-            <MudText Typo="Typo.h4">Register</MudText>
-            <DataAnnotationsValidator />
-            <ValidationSummary />
 
-            <div class="form-group mt-2">
-                <MudTextField T="string" @bind-Value="@RegisterModel.Email" Variant="Variant.Outlined" InputType="InputType.Email" Label="Email" Required="true" RequiredError="Email is required!" />
-            </div>
+<EditForm Model="RegisterModel" OnValidSubmit="HandleRegister">
+    <MudText Typo="Typo.h4">Register</MudText>
+    <DataAnnotationsValidator />
+    <ValidationSummary />
 
-            <div class="form-group mt-2">
-                <MudTextField T="string" @bind-Value="@RegisterModel.Password" Variant="Variant.Outlined" InputType="InputType.Password" Label="Password" Required="true" RequiredError="Password is required!" />
-            </div>
+    <div class="form-group mt-2">
+        <MudTextField T="string" @bind-Value="@RegisterModel.Email" ShrinkLabel="true" Variant="Variant.Outlined" InputType="InputType.Email" Label="Email" Required="true" RequiredError="Email is required!" />
+    </div>
 
-            <div class="form-group mt-2">
-                <MudTextField T="string" @bind-Value="@RepeatPasssword" Variant="Variant.Outlined" InputType="InputType.Password" Label="Repeat Password" Required="true" RequiredError="Repeat Password is required!" />
-            </div>
+    <div class="form-group mt-2">
+        <MudTextField T="string" @bind-Value="@RegisterModel.Password" ShrinkLabel="true" Variant="Variant.Outlined" InputType="InputType.Password" Label="Password" Required="true" RequiredError="Password is required!" />
+    </div>
 
-            <div class="form-group mt-2">
-                <MudButton ButtonType="ButtonType.Submit" Class="mt-4" StartIcon="@Icons.Material.Filled.Send" Variant="Variant.Filled" Color="Color.Secondary">Register</MudButton>
-            </div>
+    <div class="form-group mt-2">
+        <MudTextField T="string" @bind-Value="@RepeatPasssword" ShrinkLabel="true" Variant="Variant.Outlined" InputType="InputType.Password" Label="Repeat Password" Required="true" RequiredError="Repeat Password is required!" />
+    </div>
 
-            @if (ShowErrors)
+    <div class="form-group mt-2">
+        <MudCheckBox @bind-Value="IsChecked" UncheckedColor="Color.Error" Dense="true" Color="Color.Success" Label="I agree to the rules to enter the game."></MudCheckBox>
+    </div>
+
+    <div class="form-group mt-2">
+        <MudButton ButtonType="ButtonType.Submit" Disabled="!IsChecked" Class="mt-4" StartIcon="@Icons.Material.Filled.Send" Variant="Variant.Filled" Color="Color.Secondary">Register</MudButton>
+    </div>
+
+
+
+    @if (ShowErrors)
+    {
+        <div class="form-group mt-2">
+            @foreach(var Error in Errors)
             {
-                <div class="form-group mt-2">
-                    @foreach(var Error in Errors)
-                    {
-                        <MudAlert Severity="Severity.Error" Variant="Variant.Outlined">@Error </MudAlert>
-                    }
-                </div>
+                <MudAlert Severity="Severity.Error" Variant="Variant.Outlined">@Error </MudAlert>
             }
+        </div>
+    }
 
-        </EditForm>
-    </MudCardContent>
-</MudCard>
+</EditForm>
+
 
 
 
@@ -48,6 +52,7 @@
 
     private User RegisterModel = new();
     String RepeatPasssword = "";
+    bool IsChecked = false;
     bool ShowErrors = false;
     List<string> Errors = new();
 
@@ -55,7 +60,17 @@
     {
         try
         {
+            Errors = new();
             ShowErrors = false;
+
+            if (RepeatPasssword != RegisterModel.Password)
+            {
+                Errors.Add("The password is different from the repeated password!");
+                ShowErrors = true;
+                throw new InvalidDataException();
+            }
+
+
             var result = await AuthService.Register(RegisterModel);
             if (result.Token is not null)
             {
@@ -66,11 +81,16 @@
                 ShowErrors = true;
             }
         }
+        catch (InvalidDataException ex)
+        {
+
+        }
         catch (Exception ex)
         {
             Errors = JsonConvert.DeserializeObject<List<string>>(ex.Message);
             ShowErrors = true;
         }
+
 
     }
 }
