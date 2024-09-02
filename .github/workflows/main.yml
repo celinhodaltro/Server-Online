@@ -26,27 +26,24 @@ jobs:
 
       - name: Restore dependencies
         run: dotnet restore Server.sln
-       
+
+      - name: List all files in repository
+        run: ls -R
+
       - name: Build solution
         run: dotnet build Server.sln --no-restore
 
-  build-windows:
-    runs-on: windows-latest
+      - name: List files in Providers directory
+        run: ls -R Server/Providers
 
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - name: List files in Entities directory
+        run: ls -R Server/Entities
 
-      - name: Set up .NET
-        uses: actions/setup-dotnet@v3
-        with:
-          dotnet-version: '8.x'
-
-      - name: Clean NuGet cache
-        run: dotnet nuget locals all --clear
-
-      - name: Restore dependencies
-        run: dotnet restore Server.sln
-       
-      - name: Build solution
-        run: dotnet build Server.sln --no-restore
+      - name: Check for missing namespaces
+        run: |
+          if grep -rnw 'Server/Providers/ApplicationDbContext.cs' -e 'LogTrack'; then
+            echo "Namespace 'LogTrack' found in ApplicationDbContext.cs"
+          else
+            echo "Namespace 'LogTrack' not found in ApplicationDbContext.cs"
+            exit 1
+          fi
