@@ -27,8 +27,17 @@ jobs:
       - name: Restore dependencies
         run: dotnet restore Server.sln
 
-      - name: List restored packages
-        run: dotnet list package
+      - name: List restored packages for Server.Entities
+        run: dotnet list Server.Entities package
+
+      - name: Build Server.Entities
+        run: dotnet build Server.Entities/Server.Entities.csproj --no-restore
+
+      - name: List restored packages for Server.Providers
+        run: dotnet list Server.Providers package
+
+      - name: Build Server.Providers
+        run: dotnet build Server.Providers/Server.Providers.csproj --no-restore
 
       - name: Build solution
         run: dotnet build Server.sln --no-restore
@@ -63,8 +72,17 @@ jobs:
       - name: Restore dependencies
         run: dotnet restore Server.sln
 
-      - name: List restored packages
-        run: dotnet list package
+      - name: List restored packages for Server.Entities
+        run: dotnet list Server.Entities package
+
+      - name: Build Server.Entities
+        run: dotnet build Server.Entities/Server.Entities.csproj --no-restore
+
+      - name: List restored packages for Server.Providers
+        run: dotnet list Server.Providers package
+
+      - name: Build Server.Providers
+        run: dotnet build Server.Providers/Server.Providers.csproj --no-restore
 
       - name: Build solution
         run: dotnet build Server.sln --no-restore
