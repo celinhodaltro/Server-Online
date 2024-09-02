@@ -26,33 +26,9 @@ jobs:
 
       - name: Restore dependencies
         run: dotnet restore Server.sln
-
-      - name: List restored packages for Server.Entities
-        run: dotnet list Server.Entities package
-
-      - name: Build Server.Entities
-        run: dotnet build Server.Entities/Server.Entities.csproj --no-restore
-
-      - name: List restored packages for Server.Providers
-        run: dotnet list Server.Providers package
-
-      - name: Build Server.Providers
-        run: dotnet build Server.Providers/Server.Providers.csproj --no-restore
-
+       
       - name: Build solution
         run: dotnet build Server.sln --no-restore
-
-      - name: Check for missing namespaces
-        run: |
-          if grep -rnw 'Server/Providers/ApplicationDbContext.cs' -e 'LogTrack'; then
-            echo "Namespace 'LogTrack' found in ApplicationDbContext.cs"
-          else
-            echo "Namespace 'LogTrack' not found in ApplicationDbContext.cs"
-            exit 1
-          fi
-
-      - name: List directory contents for debugging
-        run: ls -R
 
   build-windows:
     runs-on: windows-latest
@@ -71,30 +47,6 @@ jobs:
 
       - name: Restore dependencies
         run: dotnet restore Server.sln
-
-      - name: List restored packages for Server.Entities
-        run: dotnet list Server.Entities package
-
-      - name: Build Server.Entities
-        run: dotnet build Server.Entities/Server.Entities.csproj --no-restore
-
-      - name: List restored packages for Server.Providers
-        run: dotnet list Server.Providers package
-
-      - name: Build Server.Providers
-        run: dotnet build Server.Providers/Server.Providers.csproj --no-restore
-
+       
       - name: Build solution
         run: dotnet build Server.sln --no-restore
-
-      - name: Check for missing namespaces
-        run: |
-          if grep -rnw 'Server/Providers/ApplicationDbContext.cs' -e 'LogTrack'; then
-            echo "Namespace 'LogTrack' found in ApplicationDbContext.cs"
-          else
-            echo "Namespace 'LogTrack' not found in ApplicationDbContext.cs"
-            exit 1
-          fi
-
-      - name: List directory contents for debugging
-        run: dir
