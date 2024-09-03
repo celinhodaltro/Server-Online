@@ -1,13 +1,155 @@
-﻿@page "/Home/Index"
+﻿@page "/"
+@using MudBlazor
+
+<style>
 
 
-<PageTitle>Home</PageTitle>
+    body {
+        background-color: #121212;
+        color: #fff;
+        font-family: 'Cinzel', serif !important;
+    }
 
-<h1>Hello, world!</h1>
+    .logo {
+        font-family: 'Cinzel', serif !important;
+        font-size: 24px;
+        color: #ffffff;
+    }
 
-Welcome to your new app.
- 
-<AuthorizeView>
-    <Authorized><MudAlert Severity="Severity.Success" Variant="Variant.Filled">Authorized</MudAlert></Authorized>
-    <NotAuthorized><MudAlert Severity="Severity.Warning" Variant="Variant.Filled">Not Authorized</MudAlert></NotAuthorized>
-</AuthorizeView>
+    .hero-section {
+        color: #dc3545 !important;
+        background-image: url('/Images/Layout.jpeg') !important;
+        background-size: cover;
+        padding-top: 10% ;
+        color: #fff;
+        height: 60vh;
+    }
+
+    .hero-image {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .features-section {
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 40px 0;
+        height: 40vh;
+        width:100%
+    }
+
+
+    .story-section {
+        background-color: black;
+        padding: 40px 0;
+        height: 40vh;
+        width: 100%
+    }
+
+    .signup-section {
+        background-color: black;
+        padding: 40px 0;
+        text-align: center;
+        height: 40vh;
+        width: 100%
+    }
+
+    .Principal-Container{
+        width:100%;
+        padding:0px !important;
+        color: #dc3545 !important;
+    }
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+<div class="Principal-Container text-center">
+    <!-- Header Section -->
+    <MudAppBar Elevation="0" Color="Color.Transparent">
+        <MudToolBar>
+            <MudImage Width="10px" Height="10px" Src="Images/Ursulla-icon.png" />
+            <MudSpacer />
+        </MudToolBar>
+    </MudAppBar>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <MudGrid>
+            <MudItem xs="12" md="12">
+                <MudText Typo="Typo.h3" >Bem-vindo ao Mundo de Ursulla</MudText>
+                <MudText Typo="Typo.subtitle1" >Aventure-se no mundo medieval e torne-se uma lenda!</MudText>
+                <MudButton Link="/#signup"  Variant="Variant.Filled" Class="mt-4">Jogue Agora</MudButton>
+            </MudItem>
+        </MudGrid>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <MudGrid >
+            <MudItem xs="12">
+                <MudText Typo="Typo.h4" >Características do Jogo</MudText>
+            </MudItem>
+            <MudItem xs="12" md="4">
+                <MudCard>
+                    <MudCardHeader>
+                        <MudText Typo="Typo.h6">Mundo Aberto</MudText>
+                    </MudCardHeader>
+                    <MudCardContent>
+                        <MudText>Explore um vasto mundo medieval cheio de mistérios e aventuras.</MudText>
+                    </MudCardContent>
+                </MudCard>
+            </MudItem>
+            <MudItem xs="12" md="4">
+                <MudCard>
+                    <MudCardHeader>
+                        <MudText Typo="Typo.h6">PvP e PvE</MudText>
+                    </MudCardHeader>
+                    <MudCardContent>
+                        <MudText>Combates emocionantes contra outros jogadores e monstros poderosos.</MudText>
+                    </MudCardContent>
+                </MudCard>
+            </MudItem>
+            <MudItem xs="12" md="4">
+                <MudCard>
+                    <MudCardHeader>
+                        <MudText Typo="Typo.h6">Classes Diversas</MudText>
+                    </MudCardHeader>
+                    <MudCardContent>
+                        <MudText>Escolha entre várias classes únicas, cada uma com suas habilidades especiais.</MudText>
+                    </MudCardContent>
+                </MudCard>
+            </MudItem>
+        </MudGrid>
+    </section>
+
+    <!-- Story Section -->
+    <section id="story" class="story-section">
+        <MudGrid>
+            <MudItem xs="12">
+                <MudText Typo="Typo.h4" >A História de Eldoria</MudText>
+                <MudText>Em um mundo devastado pela guerra, heróis surgem para restaurar a paz e lutar contra forças malignas que ameaçam o reino...</MudText>
+            </MudItem>
+        </MudGrid>
+    </section>
+
+    <!-- Signup Section -->
+    <section id="signup" class="signup-section">
+        <MudGrid>
+            <MudItem xs="12">
+                <MudText Typo="Typo.h4" >Inscreva-se para o Beta!</MudText>
+                <MudText>Participe do nosso beta fechado e seja um dos primeiros a explorar Eldoria.</MudText>
+                <MudButton  Variant="Variant.Filled" Class="mt-4">Enviar</MudButton>
+            </MudItem>
+        </MudGrid>
+    </section>
+
+</div>
