@@ -8,7 +8,7 @@
     .Menu-Login 
     {
         background-color: rgba(0, 0, 0, 0.5);
-        height: 100.7vh;
+        height: 100vh;
     }
 
     .mud-card-content 
@@ -47,17 +47,20 @@
     }
 
     .Close-Button{
-        margin-left:80%;
+        margin:10%    
+    }
+
+    .mud-grid-spacing-xs-6 {
+        margin-top: 0 !important;
     }
 
 </style>
 
 <MudGrid>
     <MudItem Class="Menu-Login" xs="3">
-        @if (showRegister || showLogin)
-        {
-            <MudFab Size="Size.Small" Class="Close-Button"  Color="Color.Error" OnClick="BackToStart" StartIcon="@Icons.Material.Filled.Close" />
-        }
+
+        <MudFab Size="Size.Small" Class="Close-Button"  Color="Color.Error" OnClick="BackToStart" StartIcon="@Icons.Material.Filled.ArrowBack" />
+
         <MudContainer Class="text-white text-center" Style="margin-top:35%;" MaxWidth="MaxWidth.Large">
             @if (!showLogin && !showRegister)
             {
@@ -102,6 +105,8 @@
 
     private void BackToStart()
     {
+        if (!showLogin && !showRegister)
+            NavigationManager.NavigateTo("Home/Index");
         showLogin = false;
         showRegister = false;
     }
