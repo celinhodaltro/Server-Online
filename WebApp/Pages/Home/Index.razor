@@ -1,6 +1,7 @@
-﻿@page "/"
+﻿@page "/Home/Index"
 @using MudBlazor
-
+@inject IJSRuntime JS
+@inject NavigationManager NavigationManager
 <style>
 
 
@@ -17,12 +18,13 @@
     }
 
     .hero-section {
-        color: #dc3545 !important;
+        font-family: 'Cinzel', serif !important;
+        color: white !important;
         background-image: url('/Images/Layout.jpeg') !important;
-        background-size: cover;
-        padding-top: 10% ;
+        background-size: auto;
+        padding-top: 20%;
         color: #fff;
-        height: 60vh;
+        height: 100vh !important;
     }
 
     .hero-image {
@@ -32,17 +34,17 @@
     }
 
     .features-section {
-        background-color: rgba(0, 0, 0, 0.9);
-        padding: 40px 0;
-        height: 40vh;
-        width:100%
+        background-image: url('/Images/Card/Background.jpeg') !important;
+        background-size: auto;
+        background-position;
+        padding-top: 5%;
     }
 
 
     .story-section {
         background-color: black;
-        padding: 40px 0;
-        height: 40vh;
+        padding-top: 10%;
+        height: 70vh;
         width: 100%
     }
 
@@ -54,102 +56,110 @@
         width: 100%
     }
 
-    .Principal-Container{
-        width:100%;
-        padding:0px !important;
+    .Principal-Container {
+        width: 100%;
+        padding: 0px !important;
         color: #dc3545 !important;
     }
 
 
-
-
-
-
-
-
-
-
+    .mud-card {
+        color: white !important;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.9) !important;
+    }
 
 </style>
 
 <div class="Principal-Container text-center">
-    <!-- Header Section -->
-    <MudAppBar Fixed="true" Color="Color.Transparent">
-        <MudToolBar>
-            <img width="80" height="70" src="Images/Ursulla-icon.png" />
-            <MudSpacer />
-        </MudToolBar>
-    </MudAppBar>
 
-    <!-- Hero Section -->
+
     <section class="hero-section">
         <MudGrid>
             <MudItem xs="12" md="12">
-                <MudText Typo="Typo.h3" >Bem-vindo ao Mundo de Ursulla</MudText>
-                <MudText Typo="Typo.subtitle1" >Aventure-se no mundo medieval e torne-se uma lenda!</MudText>
-                <MudButton Link="/#signup"  Variant="Variant.Filled" Class="mt-4">Jogue Agora</MudButton>
+                <MudText Typo="Typo.h3">Bem-vindo ao Mundo de Ursulla</MudText>
+                <MudText Typo="Typo.subtitle1">Aventure-se no mundo medieval e torne-se uma lenda!</MudText>
+                <MudButtonGroup OverrideStyles="false">
+                    <MudButton StartIcon="@Icons.Material.Filled.PlayArrow" Color="Color.Primary" Variant="Variant.Filled" Class="mt-4">Jogue Agora</MudButton>
+                    <MudButton OnClick="NavigateToRegister" EndIcon="@Icons.Material.Filled.Person" Color="Color.Secondary" Variant="Variant.Filled" Class="mt-4">Registre-se</MudButton>
+                </MudButtonGroup>
+
             </MudItem>
         </MudGrid>
     </section>
 
-    <!-- Features Section -->
     <section id="features" class="features-section">
-        <MudGrid >
-            <MudItem xs="12">
-                <MudText Typo="Typo.h4" >Características do Jogo</MudText>
-            </MudItem>
+        <MudGrid style="padding:40px;">
             <MudItem xs="12" md="4">
                 <MudCard>
-                    <MudCardHeader>
-                        <MudText Typo="Typo.h6">Mundo Aberto</MudText>
-                    </MudCardHeader>
                     <MudCardContent>
-                        <MudText>Explore um vasto mundo medieval cheio de mistérios e aventuras.</MudText>
+                        <MudText Typo="Typo.h5">Mundo Aberto</MudText>
+                    </MudCardContent>
+                    <MudCardMedia Image="Images/Card/OpenWorld.jpeg" Widht="100" Height="200" />
+                    <MudCardContent>
+                        <MudText Typo="Typo.body2">This word.</MudText>
                     </MudCardContent>
                 </MudCard>
             </MudItem>
             <MudItem xs="12" md="4">
                 <MudCard>
-                    <MudCardHeader>
-                        <MudText Typo="Typo.h6">PvP e PvE</MudText>
-                    </MudCardHeader>
                     <MudCardContent>
-                        <MudText>Combates emocionantes contra outros jogadores e monstros poderosos.</MudText>
+                        <MudText Typo="Typo.h5">PVP e PVE</MudText>
+                    </MudCardContent>
+                    <MudCardMedia Image="Images/Card/PvpAndPve.jpeg" Widht="100" Height="200" />
+                    <MudCardContent>
+                        <MudText Typo="Typo.body2">This pvp and pve.</MudText>
                     </MudCardContent>
                 </MudCard>
             </MudItem>
             <MudItem xs="12" md="4">
                 <MudCard>
-                    <MudCardHeader>
-                        <MudText Typo="Typo.h6">Classes Diversas</MudText>
-                    </MudCardHeader>
                     <MudCardContent>
-                        <MudText>Escolha entre várias classes únicas, cada uma com suas habilidades especiais.</MudText>
+                        <MudText Typo="Typo.h5">Classes</MudText>
+                    </MudCardContent>
+                    <MudCardMedia Image="Images/Card/Classes.jpeg" Widht="100" Height="200" />
+                    <MudCardContent>
+                        <MudText Typo="Typo.body2">This Classes.</MudText>
                     </MudCardContent>
                 </MudCard>
             </MudItem>
         </MudGrid>
     </section>
 
-    <!-- Story Section -->
     <section id="story" class="story-section">
         <MudGrid>
             <MudItem xs="12">
-                <MudText Typo="Typo.h4" >A História de Eldoria</MudText>
+                <MudText Typo="Typo.h4">A História de Eldoria</MudText>
                 <MudText>Em um mundo devastado pela guerra, heróis surgem para restaurar a paz e lutar contra forças malignas que ameaçam o reino...</MudText>
             </MudItem>
         </MudGrid>
     </section>
 
-    <!-- Signup Section -->
     <section id="signup" class="signup-section">
         <MudGrid>
             <MudItem xs="12">
-                <MudText Typo="Typo.h4" >Inscreva-se para o Beta!</MudText>
+                <MudText Typo="Typo.h4">Inscreva-se para o Beta!</MudText>
                 <MudText>Participe do nosso beta fechado e seja um dos primeiros a explorar Eldoria.</MudText>
-                <MudButton  Variant="Variant.Filled" Class="mt-4">Enviar</MudButton>
+                <MudButton Variant="Variant.Filled" Class="mt-4">Enviar</MudButton>
             </MudItem>
         </MudGrid>
     </section>
 
 </div>
+
+
+
+
+@code {
+    public async Task NavigateToRegister()
+    {
+        NavigationManager.NavigateTo("Auth/Index");
+    }
+
+    @code {
+        private async Task ScrollToNextSection(string Section)
+        {
+            await JS.InvokeVoidAsync("scrollToElement", Section);
+        }
+    }
+}
