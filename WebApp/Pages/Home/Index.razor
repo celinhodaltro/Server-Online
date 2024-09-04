@@ -73,29 +73,34 @@
 
 <div class="Principal-Container text-center">
 
-
-    <section class="hero-section">
+    <MudCarousel Class="mud-width-full" Style="height:100vh;" TData="object" AutoCycle="true">
+        <!-- Slide 1: Hero Section -->
+        <MudCarouselItem>
+            <div class="hero-section text-center">
         <MudGrid>
             <MudItem xs="12" md="12">
-                <MudText Typo="Typo.h3">Bem-vindo ao Mundo de Ursulla</MudText>
-                <MudText Typo="Typo.subtitle1">Aventure-se no mundo medieval e torne-se uma lenda!</MudText>
+                        <MudText Typo="Typo.h3">Welcome to the World of Ursulla</MudText>
+                        <MudText Typo="Typo.subtitle1">Venture into the medieval world and become a legend!</MudText>
                 <MudButtonGroup OverrideStyles="false">
-                    <MudButton StartIcon="@Icons.Material.Filled.PlayArrow" Color="Color.Primary" Variant="Variant.Filled" Class="mt-4">Jogue Agora</MudButton>
-                    <MudButton OnClick="NavigateToRegister" EndIcon="@Icons.Material.Filled.Person" Color="Color.Secondary" Variant="Variant.Filled" Class="mt-4">Registre-se</MudButton>
+                            <MudButton OnClick="NavigateToRegister" StartIcon="@Icons.Material.Filled.Person" Color="Color.Secondary" Variant="Variant.Filled" Class="mt-4">Register</MudButton>
+                            <MudButton EndIcon="@Icons.Material.Filled.VideogameAsset" Color="Color.Primary" Variant="Variant.Filled" Class="mt-4">Play</MudButton>
                 </MudButtonGroup>
 
             </MudItem>
         </MudGrid>
-    </section>
+            </div>
+        </MudCarouselItem>
 
-    <section id="features" class="features-section">
+        <!-- Slide 2: Features Section -->
+        <MudCarouselItem>
+            <div id="features" class="features-section">
         <MudGrid style="padding:40px;">
             <MudItem xs="12" md="4">
                 <MudCard>
                     <MudCardContent>
-                        <MudText Typo="Typo.h5">Mundo Aberto</MudText>
+                                <MudText Typo="Typo.h5">Open World</MudText>
                     </MudCardContent>
-                    <MudCardMedia Image="Images/Card/OpenWorld.jpeg" Widht="100" Height="200" />
+                            <MudCardMedia Image="Images/Card/OpenWorld.jpeg" Width="100" Height="200" />
                     <MudCardContent>
                         <MudText Typo="Typo.body2">This word.</MudText>
                     </MudCardContent>
@@ -104,9 +109,9 @@
             <MudItem xs="12" md="4">
                 <MudCard>
                     <MudCardContent>
-                        <MudText Typo="Typo.h5">PVP e PVE</MudText>
+                                <MudText Typo="Typo.h5">PVP and PVE</MudText>
                     </MudCardContent>
-                    <MudCardMedia Image="Images/Card/PvpAndPve.jpeg" Widht="100" Height="200" />
+                            <MudCardMedia Image="Images/Card/PvpAndPve.jpeg" Width="100" Height="200" />
                     <MudCardContent>
                         <MudText Typo="Typo.body2">This pvp and pve.</MudText>
                     </MudCardContent>
@@ -117,33 +122,17 @@
                     <MudCardContent>
                         <MudText Typo="Typo.h5">Classes</MudText>
                     </MudCardContent>
-                    <MudCardMedia Image="Images/Card/Classes.jpeg" Widht="100" Height="200" />
+                            <MudCardMedia Image="Images/Card/Classes.jpeg" Width="100" Height="200" />
                     <MudCardContent>
                         <MudText Typo="Typo.body2">This Classes.</MudText>
                     </MudCardContent>
                 </MudCard>
             </MudItem>
         </MudGrid>
-    </section>
+            </div>
+        </MudCarouselItem>
 
-    <section id="story" class="story-section">
-        <MudGrid>
-            <MudItem xs="12">
-                <MudText Typo="Typo.h4">A História de Eldoria</MudText>
-                <MudText>Em um mundo devastado pela guerra, heróis surgem para restaurar a paz e lutar contra forças malignas que ameaçam o reino...</MudText>
-            </MudItem>
-        </MudGrid>
-    </section>
-
-    <section id="signup" class="signup-section">
-        <MudGrid>
-            <MudItem xs="12">
-                <MudText Typo="Typo.h4">Inscreva-se para o Beta!</MudText>
-                <MudText>Participe do nosso beta fechado e seja um dos primeiros a explorar Eldoria.</MudText>
-                <MudButton Variant="Variant.Filled" Class="mt-4">Enviar</MudButton>
-            </MudItem>
-        </MudGrid>
-    </section>
+    </MudCarousel>
 
 </div>
 
