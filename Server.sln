@@ -3,20 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35004.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{AA3A4ACB-A18A-4A74-9912-04A20103C86E}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API", "API\API.csproj", "{030C0FDD-2DE0-4832-98C1-F8F96D803E94}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Front", "Front", "{6E15056B-3081-4E56-BD4D-0D973FE4047C}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp", "WebApp\WebApp.csproj", "{828CC039-7766-4E77-AE0B-7F7E28FDB31B}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server.Providers", "Server.Providers\Server.Providers.csproj", "{4E14B79C-503C-45B4-87CB-C56711214DF8}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server.Entities", "Server.Entities\Server.Entities.csproj", "{EF09863B-0213-42AF-8D14-0D2625001810}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server.BusinessRules", "Server.BusinessRules\Server.BusinessRules.csproj", "{2F1AE686-37EC-4278-8902-867589A0C4EE}"
-EndProject
+
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
