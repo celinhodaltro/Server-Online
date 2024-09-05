@@ -1,14 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Game.Common.Location;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Tests.Helpers;
-using NeoServer.Game.World.Models.Tiles;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types;
+using Game.Common.Contracts.World;
+using Game.Common.Location;
+using Game.Common.Location.Structs;
+using Game.Tests.Helpers;
+using Game.World.Models.Tiles;
 
-namespace NeoServer.Game.World.Tests.TestData;
+namespace Game.World.Tests.TestData;
 
 public class MoveCumulativeItemTestData : IEnumerable<object[]>
 {

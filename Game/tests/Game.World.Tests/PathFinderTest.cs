@@ -1,15 +1,15 @@
 ﻿using FluentAssertions;
-using NeoServer.Game.Common.Location;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Creatures;
-using NeoServer.Game.Tests.Helpers;
-using NeoServer.Game.Tests.Helpers.Map;
-using NeoServer.Game.Tests.Helpers.Player;
-using NeoServer.Game.World.Algorithms.AStar;
-using NeoServer.Game.World.Models.Tiles;
+using Game.Common.Location;
+using Game.Common.Location.Structs;
+using Game.Creatures;
+using Game.Tests.Helpers;
+using Game.Tests.Helpers.Map;
+using Game.Tests.Helpers.Player;
+using Game.World.Algorithms.AStar;
+using Game.World.Models.Tiles;
 using Xunit;
 
-namespace NeoServer.Game.World.Tests;
+namespace Game.World.Tests;
 
 public class PathFinderTest
 {

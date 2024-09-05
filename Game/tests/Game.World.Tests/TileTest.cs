@@ -3,26 +3,26 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using FluentAssertions;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types;
-using NeoServer.Game.Common.Contracts.World.Tiles;
-using NeoServer.Game.Common.Creatures.Structs;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Common.Location;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Creatures.Services;
-using NeoServer.Game.Items;
-using NeoServer.Game.Items.Items;
-using NeoServer.Game.Tests.Helpers;
-using NeoServer.Game.Tests.Helpers.Map;
-using NeoServer.Game.Tests.Helpers.Player;
-using NeoServer.Game.Tests.Server;
-using NeoServer.Game.World.Models.Tiles;
-using NeoServer.Game.World.Services;
-using NeoServer.Server.Commands.Movements;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types;
+using Game.Common.Contracts.World.Tiles;
+using Game.Common.Creatures.Structs;
+using Game.Common.Item;
+using Game.Common.Location;
+using Game.Common.Location.Structs;
+using Game.Creatures.Services;
+using Game.Items;
+using Game.Items.Items;
+using Game.Tests.Helpers;
+using Game.Tests.Helpers.Map;
+using Game.Tests.Helpers.Player;
+using Game.Tests.Server;
+using Game.World.Models.Tiles;
+using Game.World.Services;
+using Server.Commands.Movements;
 using Xunit;
 
-namespace NeoServer.Game.World.Tests;
+namespace Game.World.Tests;
 
 public class RemoveThingTileTestData : IEnumerable<object[]>
 {

@@ -1,16 +1,16 @@
 ﻿using FluentAssertions;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Common.Location;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Tests.Helpers;
-using NeoServer.Game.Tests.Helpers.Map;
-using NeoServer.Game.Tests.Helpers.Player;
-using NeoServer.Game.World.Factories;
-using NeoServer.Game.World.Models.Tiles;
+using Game.Common.Contracts.Items;
+using Game.Common.Item;
+using Game.Common.Location;
+using Game.Common.Location.Structs;
+using Game.Tests.Helpers;
+using Game.Tests.Helpers.Map;
+using Game.Tests.Helpers.Player;
+using Game.World.Factories;
+using Game.World.Models.Tiles;
 using Xunit;
 
-namespace NeoServer.Game.World.Tests;
+namespace Game.World.Tests;
 
 public class TileHeightTests
 {

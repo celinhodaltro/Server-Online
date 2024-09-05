@@ -1,20 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using FluentAssertions;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.World.Tiles;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Common.Location;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Creatures.Events;
-using NeoServer.Game.Items;
-using NeoServer.Game.Items.Items;
-using NeoServer.Game.Tests.Helpers.Map;
-using NeoServer.Game.Tests.Helpers.Player;
-using NeoServer.Game.World.Map;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.World.Tiles;
+using Game.Common.Item;
+using Game.Common.Location;
+using Game.Common.Location.Structs;
+using Game.Creatures.Events;
+using Game.Items;
+using Game.Items.Items;
+using Game.Tests.Helpers.Map;
+using Game.Tests.Helpers.Player;
+using Game.World.Map;
 using Xunit;
 
-namespace NeoServer.Game.World.Tests;
+namespace Game.World.Tests;
 
 public class MapMoveCreatureTest
 {

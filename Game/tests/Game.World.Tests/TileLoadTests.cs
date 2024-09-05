@@ -1,12 +1,12 @@
 ﻿using System;
 using FluentAssertions;
-using NeoServer.Game.Common.Contracts.World.Tiles;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Tests.Helpers;
-using NeoServer.Game.Tests.Helpers.Map;
+using Game.Common.Contracts.World.Tiles;
+using Game.Common.Location.Structs;
+using Game.Tests.Helpers;
+using Game.Tests.Helpers.Map;
 using Xunit;
 
-namespace NeoServer.Game.World.Tests;
+namespace Game.World.Tests;
 
 public class TileLoadTests
 {
