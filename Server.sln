@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35004.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{AA3A4ACB-A18A-4A74-9912-04A20103C86E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{AA3A4ACB-A18A-4A74-9912-04A20103C86E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API", "API\API.csproj", "{030C0FDD-2DE0-4832-98C1-F8F96D803E94}"
 EndProject
@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server.Providers", "Server.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server.Entities", "Server.Entities\Server.Entities.csproj", "{EF09863B-0213-42AF-8D14-0D2625001810}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.BusinessRules", "Server.BusinessRules\Server.BusinessRules.csproj", "{2F1AE686-37EC-4278-8902-867589A0C4EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server.BusinessRules", "Server.BusinessRules\Server.BusinessRules.csproj", "{2F1AE686-37EC-4278-8902-867589A0C4EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

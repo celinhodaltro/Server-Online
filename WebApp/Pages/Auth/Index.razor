@@ -61,18 +61,13 @@
 
         <MudFab Size="Size.Small" Class="Close-Button"  Color="Color.Error" OnClick="BackToStart" StartIcon="@Icons.Material.Filled.ArrowBack" />
 
-        <MudContainer Class="text-white text-center" Style="margin-top:35%;" MaxWidth="MaxWidth.Large">
+        <MudContainer Class="text-white text-center" Style="margin-top:15%;" MaxWidth="MaxWidth.Large">
             @if (!showLogin && !showRegister)
             {
-                <MudCard>
-                    <MudCardContent>
-                        <MudButtonGroup OverrideStyles="false" DropShadow="true" Color="Color.Primary" Variant="Variant.Outlined">
-                            <MudButton StartIcon="@Icons.Material.Filled.Person" Variant="Variant.Filled" Color="Color.Primary" OnClick="ShowLogin">Login</MudButton>
-                            <MudButton EndIcon="@Icons.Material.Filled.Edit" Variant="Variant.Filled" Color="Color.Secondary" OnClick="ShowRegister">Register</MudButton>
-                        </MudButtonGroup>
-                    </MudCardContent>
-                </MudCard>
-
+                <MudButtonGroup OverrideStyles="false" DropShadow="true" Color="Color.Primary" Variant="Variant.Outlined">
+                    <MudButton StartIcon="@Icons.Material.Filled.Person" Variant="Variant.Filled" Color="Color.Primary" OnClick="ShowLogin">Login</MudButton>
+                    <MudButton EndIcon="@Icons.Material.Filled.Edit" Variant="Variant.Filled" Color="Color.Secondary" OnClick="ShowRegister">Register</MudButton>
+                </MudButtonGroup>
             }
             else if (showLogin)
             {
