@@ -4,7 +4,6 @@
 @inject NavigationManager NavigationManager
 <style>
 
-
     body {
         background-color: #121212;
         color: #fff;
@@ -34,18 +33,23 @@
     }
 
     .features-section {
-        background-image: url('/Images/Card/Background.jpeg') !important;
+        background-image: url('/Images/Home/Features/Background.jpeg') !important;
         background-size: auto;
-        background-position;
-        padding-top: 5%;
+        height: 100vh;
+        padding-top: 2%;
     }
 
+    .background-section {
+    }
 
     .story-section {
+        color: white !important;
         background-color: black;
-        padding-top: 10%;
-        height: 70vh;
-        width: 100%
+        padding-top: 2%;
+        height: 100vh;
+        width: 100%;
+        background-image: url('Images/Home/History/Background.png') !important;
+        background-size: auto;
     }
 
     .signup-section {
@@ -53,15 +57,14 @@
         padding: 40px 0;
         text-align: center;
         height: 40vh;
-        width: 100%
+        width: 100%;
     }
 
     .Principal-Container {
         width: 100%;
         padding: 0px !important;
-        color: #dc3545 !important;
+        color: white;
     }
-
 
     .mud-card {
         color: white !important;
@@ -77,67 +80,63 @@
         <!-- Slide 1: Hero Section -->
         <MudCarouselItem>
             <div class="hero-section text-center">
-        <MudGrid>
-            <MudItem xs="12" md="12">
+                <MudGrid>
+                    <MudItem xs="12" md="12">
                         <MudText Typo="Typo.h3">Welcome to the World of Ursulla</MudText>
                         <MudText Typo="Typo.subtitle1">Venture into the medieval world and become a legend!</MudText>
-                <MudButtonGroup OverrideStyles="false">
+                        <MudButtonGroup OverrideStyles="false">
                             <MudButton OnClick="NavigateToRegister" StartIcon="@Icons.Material.Filled.Person" Color="Color.Secondary" Variant="Variant.Filled" Class="mt-4">Register</MudButton>
                             <MudButton EndIcon="@Icons.Material.Filled.VideogameAsset" Color="Color.Primary" Variant="Variant.Filled" Class="mt-4">Play</MudButton>
-                </MudButtonGroup>
-
-            </MudItem>
-        </MudGrid>
+                        </MudButtonGroup>
+                    </MudItem>
+                </MudGrid>
             </div>
         </MudCarouselItem>
 
         <!-- Slide 2: Features Section -->
         <MudCarouselItem>
             <div id="features" class="features-section">
-        <MudGrid style="padding:40px;">
-            <MudItem xs="12" md="4">
-                <MudCard>
-                    <MudCardContent>
+                <MudGrid style="padding:40px;">
+                    <MudItem xs="12" md="4">
+                        <MudCard>
+                            <MudCardContent>
                                 <MudText Typo="Typo.h5">Open World</MudText>
-                    </MudCardContent>
+                            </MudCardContent>
                             <MudCardMedia Image="Images/Card/OpenWorld.jpeg" Width="100" Height="200" />
-                    <MudCardContent>
-                        <MudText Typo="Typo.body2">This word.</MudText>
-                    </MudCardContent>
-                </MudCard>
-            </MudItem>
-            <MudItem xs="12" md="4">
-                <MudCard>
-                    <MudCardContent>
+                            <MudCardContent>
+                                <MudText Typo="Typo.body2">This word.</MudText>
+                            </MudCardContent>
+                        </MudCard>
+                    </MudItem>
+                    <MudItem xs="12" md="4">
+                        <MudCard>
+                            <MudCardContent>
                                 <MudText Typo="Typo.h5">PVP and PVE</MudText>
-                    </MudCardContent>
+                            </MudCardContent>
                             <MudCardMedia Image="Images/Card/PvpAndPve.jpeg" Width="100" Height="200" />
-                    <MudCardContent>
-                        <MudText Typo="Typo.body2">This pvp and pve.</MudText>
-                    </MudCardContent>
-                </MudCard>
-            </MudItem>
-            <MudItem xs="12" md="4">
-                <MudCard>
-                    <MudCardContent>
-                        <MudText Typo="Typo.h5">Classes</MudText>
-                    </MudCardContent>
+                            <MudCardContent>
+                                <MudText Typo="Typo.body2">This pvp and pve.</MudText>
+                            </MudCardContent>
+                        </MudCard>
+                    </MudItem>
+                    <MudItem xs="12" md="4">
+                        <MudCard>
+                            <MudCardContent>
+                                <MudText Typo="Typo.h5">Classes</MudText>
+                            </MudCardContent>
                             <MudCardMedia Image="Images/Card/Classes.jpeg" Width="100" Height="200" />
-                    <MudCardContent>
-                        <MudText Typo="Typo.body2">This Classes.</MudText>
-                    </MudCardContent>
-                </MudCard>
-            </MudItem>
-        </MudGrid>
+                            <MudCardContent>
+                                <MudText Typo="Typo.body2">This Classes.</MudText>
+                            </MudCardContent>
+                        </MudCard>
+                    </MudItem>
+                </MudGrid>
             </div>
         </MudCarouselItem>
 
     </MudCarousel>
 
 </div>
-
-
-
 
 @code {
     public async Task NavigateToRegister()
