@@ -361,3 +361,4 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/WebApp/Back/Server.BusinessRules/Server.BusinessRules.csproj

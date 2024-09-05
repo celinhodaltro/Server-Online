@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="Server.Entities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Blazored.LocalStorage" Version="4.5.0" />
     <PackageReference Include="Intersoft.Crosslight" Version="6.0.5000.975" />
     <PackageReference Include="Microsoft.AspNetCore.Components.Authorization" Version="8.0.8" />
@@ -18,7 +22,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Server.Entities\Server.Entities.csproj" />
+    <ProjectReference Include="..\Back\Server.Entities\Server.Entities.csproj" />
   </ItemGroup>
+
+
 
 </Project>
