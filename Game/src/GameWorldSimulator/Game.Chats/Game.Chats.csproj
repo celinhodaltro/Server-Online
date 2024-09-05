@@ -6,7 +6,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\NeoServer.Game.Common\NeoServer.Game.Common.csproj"/>
+        <ProjectReference Include="..\Game.Common\Game.Common.csproj" />
     </ItemGroup>
 
 </Project>

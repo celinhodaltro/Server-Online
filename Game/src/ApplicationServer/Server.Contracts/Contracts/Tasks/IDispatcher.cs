@@ -1,6 +1,6 @@
 ﻿using System.Threading;
 
-namespace NeoServer.Server.Common.Contracts.Tasks;
+namespace Server.Common.Contracts.Tasks;
 
 public interface IDispatcher
 {

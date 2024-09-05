@@ -1,8 +1,8 @@
-﻿using NeoServer.Loaders.OTB.Enums;
-using NeoServer.Loaders.OTB.Parsers;
+﻿using Loader.OTB.Enums;
+using Loader.OTB.Parsers;
 using Xunit;
 
-namespace NeoServer.Loaders.Tests.OTB.Parsers;
+namespace Loader.Tests.OTB.Parsers;
 
 public class OTBBinaryTreeBuilderTest
 {

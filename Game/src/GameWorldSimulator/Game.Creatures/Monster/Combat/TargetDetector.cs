@@ -1,11 +1,11 @@
 ﻿using System;
-using NeoServer.Game.Combat;
-using NeoServer.Game.Combat.Validation;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Game.Common.Helpers;
-using NeoServer.Game.Common.Location;
+using Game.Combat;
+using Game.Combat.Validation;
+using Game.Common.Contracts.World;
+using Game.Common.Helpers;
+using Game.Common.Location;
 
-namespace NeoServer.Game.Creatures.Monster.Combat;
+namespace Game.Creatures.Monster.Combat;
 
 internal static class TargetDetector
 {

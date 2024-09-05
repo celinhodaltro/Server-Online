@@ -1,7 +1,7 @@
-﻿using NeoServer.Server.Common.Contracts;
-using NeoServer.Server.Tasks;
+﻿using Server.Common.Contracts;
+using Server.Tasks;
 
-namespace NeoServer.Server.Jobs.Items;
+namespace Server.Jobs.Items;
 
 public class GameItemJob
 {

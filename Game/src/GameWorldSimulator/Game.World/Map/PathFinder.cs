@@ -1,13 +1,13 @@
 ﻿using System;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Game.Common.Contracts.World.Tiles;
-using NeoServer.Game.Common.Helpers;
-using NeoServer.Game.Common.Location;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.World.Algorithms.AStar;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.World;
+using Game.Common.Contracts.World.Tiles;
+using Game.Common.Helpers;
+using Game.Common.Location;
+using Game.Common.Location.Structs;
+using Game.World.Algorithms.AStar;
 
-namespace NeoServer.Game.World.Map;
+namespace Game.World.Map;
 
 public class PathFinder : IPathFinder
 {

@@ -1,6 +1,6 @@
 ﻿using System.Threading;
 
-namespace NeoServer.Networking.Listeners;
+namespace Networking.Listeners;
 
 internal interface IListener
 {

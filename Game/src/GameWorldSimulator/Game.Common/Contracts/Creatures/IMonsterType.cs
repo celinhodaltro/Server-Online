@@ -1,12 +1,12 @@
 ﻿using System.Collections.Generic;
 using System.Collections.Immutable;
-using NeoServer.Game.Common.Contracts.Combat;
-using NeoServer.Game.Common.Contracts.Combat.Attacks;
-using NeoServer.Game.Common.Contracts.Creatures.Monsters;
-using NeoServer.Game.Common.Creatures;
-using NeoServer.Game.Common.Item;
+using Game.Common.Contracts.Combat;
+using Game.Common.Contracts.Combat.Attacks;
+using Game.Common.Contracts.Creatures.Monsters;
+using Game.Common.Creatures;
+using Game.Common.Item;
 
-namespace NeoServer.Game.Common.Contracts.Creatures;
+namespace Game.Common.Contracts.Creatures;
 
 public interface IMonsterType : ICreatureType
 {

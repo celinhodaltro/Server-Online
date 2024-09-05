@@ -1,7 +1,7 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Creatures.Monster.Summon;
+﻿using Game.Common.Contracts.Creatures;
+using Game.Creatures.Monster.Summon;
 
-namespace NeoServer.Game.Creatures.Experience;
+namespace Game.Creatures.Experience;
 
 /// <summary>
 ///     Modifies the base experience of the monster that the player receives based on the portion of the damage they dealt.

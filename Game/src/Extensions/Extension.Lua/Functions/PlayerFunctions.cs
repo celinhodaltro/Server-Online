@@ -1,12 +1,12 @@
 ﻿using System.Linq;
-using NeoServer.Game.Common;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Creatures.Players;
-using NeoServer.Game.Common.Helpers;
-using NeoServer.Game.Common.Results;
+using Game.Common;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items;
+using Game.Common.Creatures.Players;
+using Game.Common.Helpers;
+using Game.Common.Results;
 
-namespace NeoServer.Scripts.Lua.Functions;
+namespace Extension.Lua.Functions;
 
 public static class PlayerFunctions
 {

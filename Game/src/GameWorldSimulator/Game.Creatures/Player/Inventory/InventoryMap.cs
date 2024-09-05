@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Creatures.Players;
+using Game.Common.Contracts.Items;
+using Game.Common.Creatures.Players;
 
-namespace NeoServer.Game.Creatures.Player.Inventory;
+namespace Game.Creatures.Player.Inventory;
 
 internal class InventoryMap
 {

@@ -1,7 +1,7 @@
-﻿using NeoServer.Game.Common.Creatures.Players;
-using NeoServer.Server.Common.Contracts.Network;
+﻿using Game.Common.Creatures.Players;
+using Server.Common.Contracts.Network;
 
-namespace NeoServer.Networking.Packets.Incoming;
+namespace Networking.Packets.Incoming;
 
 public class ChangeModePacket : IncomingPacket
 {

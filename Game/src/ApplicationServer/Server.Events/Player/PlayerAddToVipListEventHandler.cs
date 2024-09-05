@@ -1,9 +1,9 @@
-﻿using NeoServer.Data.Interfaces;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Networking.Packets.Outgoing.Chat;
-using NeoServer.Server.Common.Contracts;
+﻿using Data.Interfaces;
+using Game.Common.Contracts.Creatures;
+using Networking.Packets.Outgoing.Chat;
+using Server.Common.Contracts;
 
-namespace NeoServer.Server.Events.Player;
+namespace Server.Events.Player;
 
 public class PlayerAddToVipListEventHandler
 {

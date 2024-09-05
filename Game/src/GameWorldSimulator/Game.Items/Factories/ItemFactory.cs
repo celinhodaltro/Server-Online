@@ -1,21 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using NeoServer.Game.Common.Contracts;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.DataStores;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types;
-using NeoServer.Game.Common.Creatures.Players;
-using NeoServer.Game.Common.Helpers;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Items.Items;
-using NeoServer.Game.Items.Items.Containers;
-using NeoServer.Game.Items.Items.UsableItems;
-using CreateItem = NeoServer.Game.Common.Contracts.Items.CreateItem;
+using Game.Common.Contracts;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.DataStores;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types;
+using Game.Common.Creatures.Players;
+using Game.Common.Helpers;
+using Game.Common.Item;
+using Game.Common.Location.Structs;
+using Game.Items.Items;
+using Game.Items.Items.Containers;
+using Game.Items.Items.UsableItems;
+using CreateItem = Game.Common.Contracts.Items.CreateItem;
 
-namespace NeoServer.Game.Items.Factories;
+namespace Game.Items.Factories;
 
 public class ItemFactory : IItemFactory
 {

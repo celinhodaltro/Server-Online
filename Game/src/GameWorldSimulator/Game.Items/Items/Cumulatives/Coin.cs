@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Common.Location.Structs;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types;
+using Game.Common.Item;
+using Game.Common.Location.Structs;
 
-namespace NeoServer.Game.Items.Items.Cumulatives;
+namespace Game.Items.Items.Cumulatives;
 
 public class Coin : Cumulative, ICoin
 {

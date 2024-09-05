@@ -1,12 +1,12 @@
 ﻿using System.Linq;
-using NeoServer.Game.Common.Contracts.Chats;
-using NeoServer.Game.Common.Contracts.DataStores;
-using NeoServer.Networking.Packets.Incoming.Chat;
-using NeoServer.Server.Common.Contracts;
-using NeoServer.Server.Common.Contracts.Network;
-using NeoServer.Server.Tasks;
+using Game.Common.Contracts.Chats;
+using Game.Common.Contracts.DataStores;
+using Networking.Packets.Incoming.Chat;
+using Server.Common.Contracts;
+using Server.Common.Contracts.Network;
+using Server.Tasks;
 
-namespace NeoServer.Networking.Handlers.Chat;
+namespace Networking.Handlers.Chat;
 
 public class PlayerOpenChannelHandler : PacketHandler
 {

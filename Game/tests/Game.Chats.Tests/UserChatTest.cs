@@ -1,8 +1,8 @@
 ﻿using System.Threading;
-using NeoServer.Game.Chats.Rules;
+using Game.Chats.Rules;
 using Xunit;
 
-namespace NeoServer.Game.Chats.Tests;
+namespace Game.Chats.Tests;
 
 public class UserChatTest
 {

@@ -1,7 +1,7 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items;
+﻿using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items;
 
-namespace NeoServer.Game.Common.Contracts.Services;
+namespace Game.Common.Contracts.Services;
 
 public interface IDealTransaction
 {

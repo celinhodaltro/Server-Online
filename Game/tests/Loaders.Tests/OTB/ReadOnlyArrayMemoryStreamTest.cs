@@ -1,8 +1,8 @@
 using System;
-using NeoServer.Loaders.OTB.DataStructures;
+using Loader.OTB.DataStructures;
 using Xunit;
 
-namespace NeoServer.Loaders.Tests.OTB;
+namespace Loader.Tests.OTB;
 
 public class ReadOnlyMemoryStreamTest
 {

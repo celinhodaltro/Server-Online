@@ -1,4 +1,4 @@
-﻿namespace NeoServer.Data.Entities;
+﻿namespace Data.Entities;
 
 public class WorldEntity
 {

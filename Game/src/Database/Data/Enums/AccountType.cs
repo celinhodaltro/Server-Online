@@ -1,4 +1,4 @@
-﻿namespace NeoServer.Data.Enums;
+﻿namespace Data.Enums;
 
 public enum AccountType
 {

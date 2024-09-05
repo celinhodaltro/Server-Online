@@ -1,9 +1,9 @@
-﻿using NeoServer.Game.Common.Effects.Magical;
-using NeoServer.Game.Common.Location;
-using NeoServer.Game.Common.Location.Structs;
+﻿using Game.Common.Effects.Magical;
+using Game.Common.Location;
+using Game.Common.Location.Structs;
 using Xunit;
 
-namespace NeoServer.Game.Common.Tests.Effects;
+namespace Game.Common.Tests.Effects;
 
 public class SpreadEffectTest
 {

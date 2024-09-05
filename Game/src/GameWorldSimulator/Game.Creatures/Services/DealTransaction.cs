@@ -1,15 +1,15 @@
 ﻿using System.Collections.Generic;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.DataStores;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types;
-using NeoServer.Game.Common.Contracts.Services;
-using NeoServer.Game.Common.Creatures;
-using NeoServer.Game.Common.Creatures.Players;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Common.Location.Structs;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.DataStores;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types;
+using Game.Common.Contracts.Services;
+using Game.Common.Creatures;
+using Game.Common.Creatures.Players;
+using Game.Common.Item;
+using Game.Common.Location.Structs;
 
-namespace NeoServer.Game.Creatures.Services;
+namespace Game.Creatures.Services;
 
 public class DealTransaction : IDealTransaction
 {

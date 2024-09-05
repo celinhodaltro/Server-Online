@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using System.Text;
 
-namespace NeoServer.Game.Common.Helpers;
+namespace Game.Common.Helpers;
 
 [ExcludeFromCodeCoverage]
 public static class StringBuilderExtension

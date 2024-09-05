@@ -1,4 +1,4 @@
-﻿namespace NeoServer.Game.Common.Location.Structs.Helpers;
+﻿namespace Game.Common.Location.Structs.Helpers;
 
 public static class HashHelper
 {

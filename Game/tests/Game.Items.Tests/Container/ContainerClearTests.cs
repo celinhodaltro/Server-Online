@@ -1,8 +1,8 @@
 ﻿using FluentAssertions;
-using NeoServer.Game.Tests.Helpers;
+using Game.Tests.Helpers;
 using Xunit;
 
-namespace NeoServer.Game.Items.Tests.Container;
+namespace Game.Items.Tests.Container;
 
 public class ContainerClearTests
 {

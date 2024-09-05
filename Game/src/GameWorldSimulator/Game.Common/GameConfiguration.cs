@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace NeoServer.Game.Common;
+namespace Game.Common;
 
 public record GameConfiguration
 (

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace NeoServer.Server.Helpers.Extensions;
+namespace Server.Helpers.Extensions;
 
 public static class DictionaryExtensions
 {

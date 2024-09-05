@@ -1,7 +1,7 @@
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Server.Common.Contracts.Network;
+using Game.Common.Contracts.Creatures;
+using Server.Common.Contracts.Network;
 
-namespace NeoServer.Networking.Packets.Outgoing.Player;
+namespace Networking.Packets.Outgoing.Player;
 
 public class PlayerWalkCancelPacket : OutgoingPacket
 {

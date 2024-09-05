@@ -1,6 +1,6 @@
-﻿using NeoServer.Game.Common.Creatures;
+﻿using Game.Common.Creatures;
 
-namespace NeoServer.Game.Common.Parsers;
+namespace Game.Common.Parsers;
 
 public static class ConditionIconParser
 {

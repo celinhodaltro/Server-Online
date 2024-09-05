@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using NeoServer.Game.Common;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types;
-using NeoServer.Game.Common.Contracts.Items.Types.Containers;
-using NeoServer.Game.Common.Results;
-using NeoServer.Game.Items.Items.Containers.Container.Queries;
+using Game.Common;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types;
+using Game.Common.Contracts.Items.Types.Containers;
+using Game.Common.Results;
+using Game.Items.Items.Containers.Container.Queries;
 
-namespace NeoServer.Game.Items.Items.Containers.Container.Rules;
+namespace Game.Items.Items.Containers.Container.Rules;
 
 public static class CanAddItemToContainerRule
 {

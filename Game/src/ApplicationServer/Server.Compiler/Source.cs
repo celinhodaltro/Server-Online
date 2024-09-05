@@ -2,9 +2,9 @@
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.Text;
-using NeoServer.Server.Compiler.Compilers;
+using Server.Compiler.Compilers;
 
-namespace NeoServer.Server.Compiler;
+namespace Server.Compiler;
 
 public class Source
 {

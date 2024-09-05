@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Threading;
 using Moq;
-using NeoServer.Server.Common.Contracts.Tasks;
-using NeoServer.Server.Tasks;
+using Server.Common.Contracts.Tasks;
+using Server.Tasks;
 using Xunit;
 
-namespace NeoServer.Server.Tests.Tasks;
+namespace Server.Tests.Tasks;
 
 public class OptimizedSchedulerTest
 {

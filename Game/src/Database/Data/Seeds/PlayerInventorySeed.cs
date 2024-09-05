@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using NeoServer.Data.Entities;
-using NeoServer.Game.Common.Creatures.Players;
+using Data.Entities;
+using Game.Common.Creatures.Players;
 
-namespace NeoServer.Data.Seeds;
+namespace Data.Seeds;
 
 internal static class PlayerInventorySeed
 {

@@ -1,9 +1,9 @@
-﻿using NeoServer.Game.Common.Contracts;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Items.Items.Attributes;
+﻿using Game.Common.Contracts;
+using Game.Common.Contracts.Items;
+using Game.Common.Item;
+using Game.Items.Items.Attributes;
 
-namespace NeoServer.Game.Items.Factories.AttributeFactory;
+namespace Game.Items.Factories.AttributeFactory;
 
 public class ChargeableFactory : IFactory
 {

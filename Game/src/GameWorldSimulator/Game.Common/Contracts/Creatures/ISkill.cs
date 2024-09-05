@@ -1,7 +1,7 @@
 ﻿using System;
-using NeoServer.Game.Common.Creatures;
+using Game.Common.Creatures;
 
-namespace NeoServer.Game.Common.Contracts.Creatures;
+namespace Game.Common.Contracts.Creatures;
 
 public delegate void LevelAdvance(SkillType skillType, int fromLevel, int toLevel);
 

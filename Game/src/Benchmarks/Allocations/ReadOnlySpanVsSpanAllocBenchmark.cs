@@ -2,7 +2,7 @@
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Engines;
 
-namespace NeoServer.Benchmarks.Allocations;
+namespace Benchmarks.Allocations;
 
 [SimpleJob(RunStrategy.ColdStart, 50)]
 [MemoryDiagnoser]

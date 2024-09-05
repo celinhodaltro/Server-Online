@@ -1,6 +1,6 @@
-﻿using NeoServer.Game.Common.Location.Structs;
+﻿using Game.Common.Location.Structs;
 
-namespace NeoServer.Game.Items.Items.Containers.Container.Operations.Update;
+namespace Game.Items.Items.Containers.Container.Operations.Update;
 
 internal static class ItemsLocationOperation
 {

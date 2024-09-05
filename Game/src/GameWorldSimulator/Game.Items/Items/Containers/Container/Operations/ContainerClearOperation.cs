@@ -1,8 +1,8 @@
 ﻿using System.Linq;
-using NeoServer.Game.Common.Contracts.Items.Types;
-using NeoServer.Game.Common.Contracts.Items.Types.Containers;
+using Game.Common.Contracts.Items.Types;
+using Game.Common.Contracts.Items.Types.Containers;
 
-namespace NeoServer.Game.Items.Items.Containers.Container.Operations;
+namespace Game.Items.Items.Containers.Container.Operations;
 
 internal static class ContainerClearOperation
 {

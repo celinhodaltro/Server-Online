@@ -1,8 +1,8 @@
-﻿using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Helpers;
-using NeoServer.Game.Items.Items.Attributes;
+﻿using Game.Common.Contracts.Items;
+using Game.Common.Helpers;
+using Game.Items.Items.Attributes;
 
-namespace NeoServer.Game.Items.Factories.AttributeFactory;
+namespace Game.Items.Factories.AttributeFactory;
 
 public class DecayableFactory
 {

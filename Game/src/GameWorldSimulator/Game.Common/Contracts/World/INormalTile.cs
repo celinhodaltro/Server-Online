@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.World.Tiles;
-using NeoServer.Game.Common.Location;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.World.Tiles;
+using Game.Common.Location;
 
-namespace NeoServer.Game.Common.Contracts.World;
+namespace Game.Common.Contracts.World;
 
 public delegate void RemoveThing(IThing thing, INormalTile tile, byte stackPosition);
 

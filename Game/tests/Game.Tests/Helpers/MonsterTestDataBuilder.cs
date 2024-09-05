@@ -1,18 +1,18 @@
-﻿using NeoServer.Game.Combat.Attacks;
-using NeoServer.Game.Common.Contracts.Combat.Attacks;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Game.Common.Creatures;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Creatures.Monster;
-using NeoServer.Game.Creatures.Monster.Summon;
-using NeoServer.Game.Tests.Helpers.Map;
-using NeoServer.Game.World.Models.Spawns;
-using NeoServer.Game.World.Services;
-using PathFinder = NeoServer.Game.World.Map.PathFinder;
+﻿using Game.Combat.Attacks;
+using Game.Common.Contracts.Combat.Attacks;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.World;
+using Game.Common.Creatures;
+using Game.Common.Item;
+using Game.Common.Location.Structs;
+using Game.Creatures.Monster;
+using Game.Creatures.Monster.Summon;
+using Game.Tests.Helpers.Map;
+using Game.World.Models.Spawns;
+using Game.World.Services;
+using PathFinder = Game.World.Map.PathFinder;
 
-namespace NeoServer.Game.Tests.Helpers;
+namespace Game.Tests.Helpers;
 
 public static class MonsterTestDataBuilder
 {

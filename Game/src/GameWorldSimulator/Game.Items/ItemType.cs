@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Creatures;
-using NeoServer.Game.Common.Creatures.Players;
-using NeoServer.Game.Common.Effects.Parsers;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Common.Item.Structs;
-using NeoServer.Game.Common.Parsers;
-using NeoServer.Game.Items.Helpers;
+using Game.Common.Contracts.Items;
+using Game.Common.Creatures;
+using Game.Common.Creatures.Players;
+using Game.Common.Effects.Parsers;
+using Game.Common.Item;
+using Game.Common.Item.Structs;
+using Game.Common.Parsers;
+using Game.Items.Helpers;
 
-namespace NeoServer.Game.Items;
+namespace Game.Items;
 
 public class ItemType : IItemType
 {

@@ -2,18 +2,18 @@
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
-using NeoServer.Data.Entities;
-using NeoServer.Data.Repositories;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.DataStores;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types.Containers;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Server.Helpers;
+using Data.Entities;
+using Data.Repositories;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.DataStores;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types.Containers;
+using Game.Common.Item;
+using Game.Common.Location.Structs;
+using Server.Helpers;
 using Serilog.Core;
 
-namespace NeoServer.Scripts.Lua.Functions;
+namespace Extension.Lua.Functions;
 
 public static class QuestFunctions
 {

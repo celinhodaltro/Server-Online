@@ -1,12 +1,12 @@
-﻿using NeoServer.Game.Common.Combat.Structs;
-using NeoServer.Game.Common.Contracts;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Game.Common.Creatures;
-using NeoServer.Game.Common.Item;
+﻿using Game.Common.Combat.Structs;
+using Game.Common.Contracts;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.World;
+using Game.Common.Creatures;
+using Game.Common.Item;
 
-namespace NeoServer.Game.Creatures.Events;
+namespace Game.Creatures.Events;
 
 public class CreatureDamagedEventHandler : IGameEventHandler
 {

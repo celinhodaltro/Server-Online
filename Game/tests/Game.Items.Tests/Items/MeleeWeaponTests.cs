@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using FluentAssertions;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items.Types.Body;
-using NeoServer.Game.Common.Creatures;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Creatures.Player;
-using NeoServer.Game.Tests.Helpers;
-using NeoServer.Game.Tests.Helpers.Player;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items.Types.Body;
+using Game.Common.Creatures;
+using Game.Common.Item;
+using Game.Creatures.Player;
+using Game.Tests.Helpers;
+using Game.Tests.Helpers.Player;
 using Xunit;
 
-namespace NeoServer.Game.Items.Tests.Items;
+namespace Game.Items.Tests.Items;
 
 public class MeleeWeaponTests
 {

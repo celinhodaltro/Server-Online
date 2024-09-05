@@ -1,12 +1,12 @@
 ﻿using System;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Game.Common.Contracts.World.Tiles;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Common.Location;
-using NeoServer.Game.Common.Location.Structs;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.World;
+using Game.Common.Contracts.World.Tiles;
+using Game.Common.Item;
+using Game.Common.Location;
+using Game.Common.Location.Structs;
 
-namespace NeoServer.Game.World.Algorithms;
+namespace Game.World.Algorithms;
 
 public static class TileDestinationCalculation
 {

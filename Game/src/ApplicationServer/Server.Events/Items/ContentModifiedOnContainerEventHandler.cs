@@ -1,12 +1,12 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.DataStores;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Helpers;
-using NeoServer.Networking.Packets.Outgoing.Item;
-using NeoServer.Networking.Packets.Outgoing.Npc;
-using NeoServer.Server.Common.Contracts;
+﻿using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.DataStores;
+using Game.Common.Contracts.Items;
+using Game.Common.Helpers;
+using Networking.Packets.Outgoing.Item;
+using Networking.Packets.Outgoing.Npc;
+using Server.Common.Contracts;
 
-namespace NeoServer.Server.Events.Items;
+namespace Server.Events.Items;
 
 public class ContentModifiedOnContainerEventHandler
 {

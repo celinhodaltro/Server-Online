@@ -1,6 +1,6 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
+﻿using Game.Common.Contracts.Creatures;
 
-namespace NeoServer.Game.Common.Contracts.Items;
+namespace Game.Common.Contracts.Items;
 
 public interface IDressable
 {

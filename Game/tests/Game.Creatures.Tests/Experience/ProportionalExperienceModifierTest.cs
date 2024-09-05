@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Collections.Immutable;
 using Moq;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Creatures.Experience;
+using Game.Common.Contracts.Creatures;
+using Game.Creatures.Experience;
 using Xunit;
 
-namespace NeoServer.Game.Creatures.Tests.Experience;
+namespace Game.Creatures.Tests.Experience;
 
 public class ProportionalExperienceModifierTest
 {

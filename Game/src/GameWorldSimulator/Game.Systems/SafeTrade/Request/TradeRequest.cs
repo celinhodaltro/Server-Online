@@ -1,9 +1,9 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Creatures.Player;
-using NeoServer.Game.Systems.SafeTrade.Trackers;
+﻿using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items;
+using Game.Creatures.Player;
+using Game.Systems.SafeTrade.Trackers;
 
-namespace NeoServer.Game.Systems.SafeTrade.Request;
+namespace Game.Systems.SafeTrade.Request;
 
 /// <summary>
 ///     Represents a trade request between two players in the game.

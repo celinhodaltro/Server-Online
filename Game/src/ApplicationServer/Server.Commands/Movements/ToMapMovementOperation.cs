@@ -1,10 +1,10 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Services;
-using NeoServer.Game.Common.Creatures.Structs;
-using NeoServer.Game.Common.Location;
-using NeoServer.Networking.Packets.Incoming;
+﻿using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Services;
+using Game.Common.Creatures.Structs;
+using Game.Common.Location;
+using Networking.Packets.Incoming;
 
-namespace NeoServer.Server.Commands.Movements;
+namespace Server.Commands.Movements;
 
 public class ToMapMovementOperation
 {

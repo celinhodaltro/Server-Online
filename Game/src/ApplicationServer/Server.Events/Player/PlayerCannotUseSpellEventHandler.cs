@@ -1,12 +1,12 @@
-﻿using NeoServer.Game.Common;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Spells;
-using NeoServer.Game.Common.Creatures;
-using NeoServer.Networking.Packets.Outgoing;
-using NeoServer.Networking.Packets.Outgoing.Effect;
-using NeoServer.Server.Common.Contracts;
+﻿using Game.Common;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Spells;
+using Game.Common.Creatures;
+using Networking.Packets.Outgoing;
+using Networking.Packets.Outgoing.Effect;
+using Server.Common.Contracts;
 
-namespace NeoServer.Server.Events.Player;
+namespace Server.Events.Player;
 
 public class PlayerCannotUseSpellEventHandler
 {

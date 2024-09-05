@@ -1,9 +1,9 @@
 ﻿using System;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.World.Tiles;
-using NeoServer.Game.Common.Location.Structs;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.World.Tiles;
+using Game.Common.Location.Structs;
 
-namespace NeoServer.Game.World.Algorithms.AStar;
+namespace Game.World.Algorithms.AStar;
 
 internal class Node
 {

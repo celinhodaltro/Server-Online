@@ -1,8 +1,8 @@
 ﻿using System;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Creatures;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Creatures;
 
-namespace NeoServer.Game.Combat.Conditions;
+namespace Game.Combat.Conditions;
 
 public abstract class BaseCondition : ICondition
 {

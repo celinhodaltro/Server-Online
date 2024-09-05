@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace NeoServer.Game.Common.Contracts.Creatures.Players;
+namespace Game.Common.Contracts.Creatures.Players;
 
 public interface IVip
 {

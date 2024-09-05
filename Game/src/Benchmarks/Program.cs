@@ -1,8 +1,8 @@
 ﻿using System;
 using BenchmarkDotNet.Running;
-using NeoServer.Benchmarks.Collections;
+using Benchmarks.Collections;
 
-namespace NeoServer.Benchmarks;
+namespace Benchmarks;
 
 internal class Program
 {

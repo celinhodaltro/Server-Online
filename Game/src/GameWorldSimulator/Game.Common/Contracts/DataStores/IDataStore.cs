@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace NeoServer.Game.Common.Contracts.DataStores;
+namespace Game.Common.Contracts.DataStores;
 
 public interface IDataStore
 {

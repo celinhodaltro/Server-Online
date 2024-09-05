@@ -1,9 +1,9 @@
-﻿using NeoServer.Game.Chats;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Services;
-using NeoServer.Game.Common.Services;
+﻿using Game.Chats;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Services;
+using Game.Common.Services;
 
-namespace NeoServer.Game.Creatures.Services;
+namespace Game.Creatures.Services;
 
 public class PartyInviteService : IPartyInviteService
 {

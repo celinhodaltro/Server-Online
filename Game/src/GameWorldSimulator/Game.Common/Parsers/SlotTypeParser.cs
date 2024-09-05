@@ -1,8 +1,8 @@
-﻿using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Creatures.Players;
-using NeoServer.Game.Common.Item;
+﻿using Game.Common.Contracts.Items;
+using Game.Common.Creatures.Players;
+using Game.Common.Item;
 
-namespace NeoServer.Game.Common.Parsers;
+namespace Game.Common.Parsers;
 
 public class SlotTypeParser
 {

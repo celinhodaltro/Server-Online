@@ -1,10 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using NeoServer.Data.Configurations;
-using NeoServer.Data.Configurations.ForSqLite;
-using NeoServer.Data.Entities;
+using Data.Configurations;
+using Data.Configurations.ForSqLite;
+using Data.Entities;
 using Serilog;
 
-namespace NeoServer.Data.Contexts;
+namespace Data.Contexts;
 
 public class NeoContext : DbContext
 {

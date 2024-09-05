@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.DataStores;
-using NeoServer.Networking.Packets.Outgoing.Npc;
-using NeoServer.Server.Common.Contracts;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.DataStores;
+using Networking.Packets.Outgoing.Npc;
+using Server.Common.Contracts;
 
-namespace NeoServer.Server.Events.Creature.Npcs;
+namespace Server.Events.Creature.Npcs;
 
 public class NpcShowShopEventHandler
 {

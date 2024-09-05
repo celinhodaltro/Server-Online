@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.Linq;
 using Serilog;
 
-namespace NeoServer.Server.Helpers.Extensions;
+namespace Server.Helpers.Extensions;
 
 public static class LoggerExtensions
 {

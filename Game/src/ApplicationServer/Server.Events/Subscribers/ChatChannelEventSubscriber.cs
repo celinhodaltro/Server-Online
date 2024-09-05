@@ -1,8 +1,8 @@
 ﻿using System;
-using NeoServer.Game.Common.Contracts.Chats;
-using NeoServer.Server.Events.Chat;
+using Game.Common.Contracts.Chats;
+using Server.Events.Chat;
 
-namespace NeoServer.Server.Events.Subscribers;
+namespace Server.Events.Subscribers;
 
 public class ChatChannelEventSubscriber : IChatChannelEventSubscriber
 {

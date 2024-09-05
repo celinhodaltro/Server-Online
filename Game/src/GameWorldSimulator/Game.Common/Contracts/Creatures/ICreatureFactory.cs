@@ -1,6 +1,6 @@
-﻿using NeoServer.Game.Common.Contracts.World;
+﻿using Game.Common.Contracts.World;
 
-namespace NeoServer.Game.Common.Contracts.Creatures;
+namespace Game.Common.Contracts.Creatures;
 
 public delegate void CreatureCreated(ICreature creature);
 

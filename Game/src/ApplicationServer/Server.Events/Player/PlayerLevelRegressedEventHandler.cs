@@ -1,10 +1,10 @@
-﻿using NeoServer.Game.Common.Creatures;
-using NeoServer.Game.Common.Parsers;
-using NeoServer.Networking.Packets.Outgoing;
-using NeoServer.Server.Common.Contracts;
-using NeoServer.Server.Common.Contracts.Network;
+﻿using Game.Common.Creatures;
+using Game.Common.Parsers;
+using Networking.Packets.Outgoing;
+using Server.Common.Contracts;
+using Server.Common.Contracts.Network;
 
-namespace NeoServer.Server.Events.Player;
+namespace Server.Events.Player;
 
 public class PlayerLevelRegressedEventHandler : PlayerLevelChangeEventHandler
 {

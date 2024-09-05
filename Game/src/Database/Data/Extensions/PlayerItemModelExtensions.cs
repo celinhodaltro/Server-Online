@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using NeoServer.Data.Entities;
-using NeoServer.Game.Common.Item;
+using Data.Entities;
+using Game.Common.Item;
 
-namespace NeoServer.Data.Extensions;
+namespace Data.Extensions;
 
 public static class PlayerItemModelExtensions
 {

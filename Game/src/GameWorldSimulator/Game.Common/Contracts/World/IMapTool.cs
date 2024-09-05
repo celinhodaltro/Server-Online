@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace NeoServer.Game.Common.Contracts.World;
+namespace Game.Common.Contracts.World;
 
 public interface IMapTool
 {

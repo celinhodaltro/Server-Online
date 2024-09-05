@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using NeoServer.Game.Common.Contracts.DataStores;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Services;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Game.Common.Contracts.World.Tiles;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Common.Location;
-using NeoServer.Game.Common.Location.Structs;
+using Game.Common.Contracts.DataStores;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Services;
+using Game.Common.Contracts.World;
+using Game.Common.Contracts.World.Tiles;
+using Game.Common.Item;
+using Game.Common.Location;
+using Game.Common.Location.Structs;
 
-namespace NeoServer.Game.World.Services;
+namespace Game.World.Services;
 
 public class StaticToDynamicTileService : IStaticToDynamicTileService
 {

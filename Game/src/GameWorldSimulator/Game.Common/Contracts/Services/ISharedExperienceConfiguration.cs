@@ -1,4 +1,4 @@
-﻿namespace NeoServer.Game.Common.Contracts.Services;
+﻿namespace Game.Common.Contracts.Services;
 
 public interface ISharedExperienceConfiguration
 {

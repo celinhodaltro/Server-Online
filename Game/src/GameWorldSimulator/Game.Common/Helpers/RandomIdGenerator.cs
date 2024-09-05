@@ -1,7 +1,7 @@
 ﻿using System;
-using NeoServer.Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Creatures;
 
-namespace NeoServer.Game.Common.Helpers;
+namespace Game.Common.Helpers;
 
 public class RandomIdGenerator
 {

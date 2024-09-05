@@ -1,4 +1,4 @@
-﻿namespace NeoServer.Game.Common.Contracts.Creatures.Monsters;
+﻿namespace Game.Common.Contracts.Creatures.Monsters;
 
 public interface IMonsterSummon
 {

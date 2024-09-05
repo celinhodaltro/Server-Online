@@ -1,12 +1,12 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Texts;
-using NeoServer.Networking.Packets.Outgoing;
-using NeoServer.Networking.Packets.Outgoing.Effect;
-using NeoServer.Networking.Packets.Outgoing.Player;
-using NeoServer.Server.Common.Contracts;
-using NeoServer.Server.Common.Contracts.Network;
+﻿using Game.Common.Contracts.Creatures;
+using Game.Common.Texts;
+using Networking.Packets.Outgoing;
+using Networking.Packets.Outgoing.Effect;
+using Networking.Packets.Outgoing.Player;
+using Server.Common.Contracts;
+using Server.Common.Contracts.Network;
 
-namespace NeoServer.Server.Events.Player;
+namespace Server.Events.Player;
 
 public class PlayerGainedExperienceEventHandler
 {

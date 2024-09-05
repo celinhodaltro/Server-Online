@@ -1,4 +1,4 @@
-﻿namespace NeoServer.Game.Systems.SafeTrade.Validations;
+﻿namespace Game.Systems.SafeTrade.Validations;
 
 public enum SafeTradeError
 {

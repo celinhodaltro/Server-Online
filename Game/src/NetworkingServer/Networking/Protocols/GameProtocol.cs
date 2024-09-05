@@ -1,9 +1,9 @@
 ﻿using System;
-using NeoServer.Networking.Handlers;
-using NeoServer.Networking.Packets.Security;
-using NeoServer.Server.Common.Contracts.Network;
+using Networking.Handlers;
+using Networking.Packets.Security;
+using Server.Common.Contracts.Network;
 
-namespace NeoServer.Networking.Protocols;
+namespace Networking.Protocols;
 
 public class GameProtocol : Protocol
 {

@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using NeoServer.Game.Common.Contracts.Chats;
-using NeoServer.Game.Common.Results;
+using Game.Common.Contracts.Chats;
+using Game.Common.Results;
 
-namespace NeoServer.Game.Common.Contracts.Creatures;
+namespace Game.Common.Contracts.Creatures;
 
 public delegate void PlayerJoinedParty(IParty party, IPlayer player);
 

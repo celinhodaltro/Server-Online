@@ -1,24 +1,24 @@
 ﻿using FluentAssertions;
-using NeoServer.Data.InMemory.DataStores;
-using NeoServer.Game.Common.Combat.Structs;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items.Types.Containers;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Game.Common.Creatures.Players;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Common.Location;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Items.Services;
-using NeoServer.Game.Systems.SafeTrade;
-using NeoServer.Game.Systems.SafeTrade.Operations;
-using NeoServer.Game.Systems.SafeTrade.Validations;
-using NeoServer.Game.Tests.Helpers;
-using NeoServer.Game.Tests.Helpers.Map;
-using NeoServer.Game.Tests.Helpers.Player;
-using NeoServer.Game.Tests.Server;
-using NeoServer.Game.World.Models.Tiles;
+using Data.InMemory;
+using Game.Common.Combat.Structs;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items.Types.Containers;
+using Game.Common.Contracts.World;
+using Game.Common.Creatures.Players;
+using Game.Common.Item;
+using Game.Common.Location;
+using Game.Common.Location.Structs;
+using Game.Items.Services;
+using Game.Systems.SafeTrade;
+using Game.Systems.SafeTrade.Operations;
+using Game.Systems.SafeTrade.Validations;
+using Game.Tests.Helpers;
+using Game.Tests.Helpers.Map;
+using Game.Tests.Helpers.Player;
+using Game.Tests.Server;
+using Game.World.Models.Tiles;
 
-namespace NeoServer.Game.Systems.Tests.SafeTrade;
+namespace Game.Systems.Tests.SafeTrade;
 
 public class TradeCancellationTests
 {

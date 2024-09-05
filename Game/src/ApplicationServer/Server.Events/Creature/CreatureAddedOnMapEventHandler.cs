@@ -1,14 +1,14 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Game.Common.Creatures;
-using NeoServer.Game.Common.Helpers;
-using NeoServer.Networking.Packets.Outgoing.Creature;
-using NeoServer.Networking.Packets.Outgoing.Effect;
-using NeoServer.Networking.Packets.Outgoing.Item;
-using NeoServer.Server.Common.Contracts;
-using NeoServer.Server.Common.Contracts.Network;
+﻿using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.World;
+using Game.Common.Creatures;
+using Game.Common.Helpers;
+using Networking.Packets.Outgoing.Creature;
+using Networking.Packets.Outgoing.Effect;
+using Networking.Packets.Outgoing.Item;
+using Server.Common.Contracts;
+using Server.Common.Contracts.Network;
 
-namespace NeoServer.Server.Events.Creature;
+namespace Server.Events.Creature;
 
 public class CreatureAddedOnMapEventHandler : IEventHandler
 {

@@ -1,7 +1,7 @@
 ﻿using System.Threading;
-using NeoServer.Server.Common.Contracts;
+using Server.Common.Contracts;
 
-namespace NeoServer.Game.Tests.Server;
+namespace Game.Tests.Server;
 
 public class ServerTestHelper
 {

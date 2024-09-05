@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace NeoServer.Data.Interfaces;
+namespace Data.Interfaces;
 
 public interface IBaseRepositoryNeo<TEntity> where TEntity : class
 {

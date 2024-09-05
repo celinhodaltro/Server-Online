@@ -1,4 +1,4 @@
-﻿namespace NeoServer.Game.Common.Contracts.DataStores;
+﻿namespace Game.Common.Contracts.DataStores;
 
 public interface IItemClientServerIdMapStore : IDataStore<ushort, ushort>
 {

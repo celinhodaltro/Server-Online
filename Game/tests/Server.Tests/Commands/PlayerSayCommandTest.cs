@@ -1,14 +1,14 @@
 ﻿using Moq;
-using NeoServer.Data.InMemory.DataStores;
-using NeoServer.Game.Common.Chats;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Networking.Packets.Incoming;
-using NeoServer.Server.Commands.Player;
-using NeoServer.Server.Common.Contracts;
-using NeoServer.Server.Common.Contracts.Network;
+using Data.InMemory;
+using Game.Common.Chats;
+using Game.Common.Contracts.Creatures;
+using Networking.Packets.Incoming;
+using Server.Commands.Player;
+using Server.Common.Contracts;
+using Server.Common.Contracts.Network;
 using Xunit;
 
-namespace NeoServer.Server.Tests.Commands;
+namespace Server.Tests.Commands;
 
 public class PlayerSayCommandTest
 {

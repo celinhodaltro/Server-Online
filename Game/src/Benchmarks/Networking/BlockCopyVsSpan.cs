@@ -1,7 +1,7 @@
 ﻿using System;
 using BenchmarkDotNet.Attributes;
 
-namespace NeoServer.Benchmarks.Networking;
+namespace Benchmarks.Networking;
 
 [SimpleJob(1)]
 public class BlockCopyVsSpan

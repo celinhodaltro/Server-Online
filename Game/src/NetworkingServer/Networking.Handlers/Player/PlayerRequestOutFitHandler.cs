@@ -1,11 +1,11 @@
-﻿using NeoServer.Data.Interfaces;
-using NeoServer.Game.Common.Contracts.DataStores;
-using NeoServer.Game.Common.Helpers;
-using NeoServer.Networking.Packets.Outgoing.Player;
-using NeoServer.Server.Common.Contracts;
-using NeoServer.Server.Common.Contracts.Network;
+﻿using Data.Interfaces;
+using Game.Common.Contracts.DataStores;
+using Game.Common.Helpers;
+using Networking.Packets.Outgoing.Player;
+using Server.Common.Contracts;
+using Server.Common.Contracts.Network;
 
-namespace NeoServer.Networking.Handlers.Player;
+namespace Networking.Handlers.Player;
 
 public class PlayerRequestOutFitHandler : PacketHandler
 {

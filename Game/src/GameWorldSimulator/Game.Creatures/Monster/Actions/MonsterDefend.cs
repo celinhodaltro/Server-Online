@@ -1,9 +1,9 @@
 ﻿using System;
-using NeoServer.Game.Common.Combat.Structs;
-using NeoServer.Game.Common.Helpers;
-using NeoServer.Game.Common.Parsers;
+using Game.Common.Combat.Structs;
+using Game.Common.Helpers;
+using Game.Common.Parsers;
 
-namespace NeoServer.Game.Creatures.Monster.Actions;
+namespace Game.Creatures.Monster.Actions;
 
 internal static class MonsterDefend
 {

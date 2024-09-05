@@ -1,8 +1,8 @@
 ﻿using System.Linq;
-using NeoServer.Game.Combat.Conditions;
-using NeoServer.Game.Common.Contracts.Creatures;
+using Game.Combat.Conditions;
+using Game.Common.Contracts.Creatures;
 
-namespace NeoServer.Server.Jobs.Creatures;
+namespace Server.Jobs.Creatures;
 
 public static class CreatureConditionJob
 {

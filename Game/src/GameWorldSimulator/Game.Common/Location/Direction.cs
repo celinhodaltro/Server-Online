@@ -1,4 +1,4 @@
-﻿namespace NeoServer.Game.Common.Location;
+﻿namespace Game.Common.Location;
 
 public enum Direction : byte
 {

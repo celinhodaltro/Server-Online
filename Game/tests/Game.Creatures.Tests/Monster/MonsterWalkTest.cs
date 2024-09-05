@@ -1,23 +1,23 @@
 ﻿using System;
 using System.Threading.Tasks;
 using FluentAssertions;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.World.Tiles;
-using NeoServer.Game.Common.Creatures;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Common.Location;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Items;
-using NeoServer.Game.Items.Bases;
-using NeoServer.Game.Tests.Helpers;
-using NeoServer.Game.Tests.Helpers.Map;
-using NeoServer.Game.Tests.Server;
-using NeoServer.Game.World.Models.Tiles;
-using NeoServer.Server.Events.Creature;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.World.Tiles;
+using Game.Common.Creatures;
+using Game.Common.Item;
+using Game.Common.Location;
+using Game.Common.Location.Structs;
+using Game.Items;
+using Game.Items.Bases;
+using Game.Tests.Helpers;
+using Game.Tests.Helpers.Map;
+using Game.Tests.Server;
+using Game.World.Models.Tiles;
+using Server.Events.Creature;
 using xRetry;
 using Xunit;
 
-namespace NeoServer.Game.Creatures.Tests.Monster;
+namespace Game.Creatures.Tests.Monster;
 
 public class MonsterWalkTest
 {

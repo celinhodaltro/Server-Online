@@ -1,4 +1,4 @@
-﻿namespace NeoServer.Game.Common.Creatures;
+﻿namespace Game.Common.Creatures;
 
 /// <summary>
 ///     A state machine no control monster

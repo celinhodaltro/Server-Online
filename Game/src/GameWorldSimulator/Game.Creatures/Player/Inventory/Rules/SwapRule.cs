@@ -1,8 +1,8 @@
-﻿using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types;
-using NeoServer.Game.Common.Creatures.Players;
+﻿using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types;
+using Game.Common.Creatures.Players;
 
-namespace NeoServer.Game.Creatures.Player.Inventory.Rules;
+namespace Game.Creatures.Player.Inventory.Rules;
 
 public abstract class SwapRule
 {

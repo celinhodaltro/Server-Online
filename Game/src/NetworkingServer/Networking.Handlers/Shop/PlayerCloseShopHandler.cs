@@ -1,8 +1,8 @@
-﻿using NeoServer.Server.Common.Contracts;
-using NeoServer.Server.Common.Contracts.Network;
-using NeoServer.Server.Tasks;
+﻿using Server.Common.Contracts;
+using Server.Common.Contracts.Network;
+using Server.Tasks;
 
-namespace NeoServer.Networking.Handlers.Shop;
+namespace Networking.Handlers.Shop;
 
 public class PlayerCloseShopHandler : PacketHandler
 {

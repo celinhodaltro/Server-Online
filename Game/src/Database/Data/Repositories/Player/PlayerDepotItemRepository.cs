@@ -2,14 +2,14 @@
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using NeoServer.Data.Contexts;
-using NeoServer.Data.Entities;
-using NeoServer.Data.Interfaces;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items.Types.Containers;
+using Data.Contexts;
+using Data.Entities;
+using Data.Interfaces;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items.Types.Containers;
 using Serilog;
 
-namespace NeoServer.Data.Repositories.Player;
+namespace Data.Repositories.Player;
 
 /// <summary>
 ///     Repository class for managing PlayerDepotItem entity.

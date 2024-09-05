@@ -1,13 +1,13 @@
 ﻿using FluentAssertions;
-using NeoServer.Game.Common;
-using NeoServer.Game.Common.Location;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Tests.Helpers.Map;
-using NeoServer.Game.Tests.Helpers.Player;
-using NeoServer.Game.World.Models.Tiles;
+using Game.Common;
+using Game.Common.Location;
+using Game.Common.Location.Structs;
+using Game.Tests.Helpers.Map;
+using Game.Tests.Helpers.Player;
+using Game.World.Models.Tiles;
 using Xunit;
 
-namespace NeoServer.Game.Creatures.Tests.Players;
+namespace Game.Creatures.Tests.Players;
 
 public class PlayerAttackTests
 {

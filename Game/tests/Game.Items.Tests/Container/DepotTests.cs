@@ -1,9 +1,9 @@
 using FluentAssertions;
-using NeoServer.Game.Tests.Helpers;
-using NeoServer.Game.Tests.Helpers.Player;
+using Game.Tests.Helpers;
+using Game.Tests.Helpers.Player;
 using Xunit;
 
-namespace NeoServer.Game.Items.Tests.Container;
+namespace Game.Items.Tests.Container;
 
 public class DepotTests
 {

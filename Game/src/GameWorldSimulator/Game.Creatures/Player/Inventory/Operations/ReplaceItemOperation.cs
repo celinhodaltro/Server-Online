@@ -1,6 +1,6 @@
-﻿using NeoServer.Game.Common.Contracts.Items;
+﻿using Game.Common.Contracts.Items;
 
-namespace NeoServer.Game.Creatures.Player.Inventory.Operations;
+namespace Game.Creatures.Player.Inventory.Operations;
 
 public static class ReplaceItemOperation
 {

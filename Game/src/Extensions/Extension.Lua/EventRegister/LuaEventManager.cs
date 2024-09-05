@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Server.Helpers;
+using Game.Common.Contracts.Items;
+using Server.Helpers;
 using NLua;
 using Serilog;
 
-namespace NeoServer.Scripts.Lua.EventRegister;
+namespace Extension.Lua.EventRegister;
 
 /// <summary>
 ///     A static class for registering Lua scripts to item methods.

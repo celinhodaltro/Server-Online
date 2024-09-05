@@ -1,6 +1,6 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
+﻿using Game.Common.Contracts.Creatures;
 
-namespace NeoServer.Game.Common.Contracts.Items.Types;
+namespace Game.Common.Contracts.Items.Types;
 
 public interface ITeleport
 {

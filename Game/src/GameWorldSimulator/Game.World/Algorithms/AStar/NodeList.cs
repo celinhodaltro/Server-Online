@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Runtime.CompilerServices;
-using NeoServer.Game.Common.Location.Structs;
+using Game.Common.Location.Structs;
 
-namespace NeoServer.Game.World.Algorithms.AStar;
+namespace Game.World.Algorithms.AStar;
 
 internal class NodeList
 {

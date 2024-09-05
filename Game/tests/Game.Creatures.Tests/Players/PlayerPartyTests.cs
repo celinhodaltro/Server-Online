@@ -1,14 +1,14 @@
 ﻿using FluentAssertions;
 using Moq;
-using NeoServer.Game.Chats;
-using NeoServer.Game.Common;
-using NeoServer.Game.Common.Contracts.Chats;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Tests.Helpers;
-using NeoServer.Game.Tests.Helpers.Player;
+using Game.Chats;
+using Game.Common;
+using Game.Common.Contracts.Chats;
+using Game.Common.Contracts.Creatures;
+using Game.Tests.Helpers;
+using Game.Tests.Helpers.Player;
 using Xunit;
 
-namespace NeoServer.Game.Creatures.Tests.Players;
+namespace Game.Creatures.Tests.Players;
 
 public class PlayerPartyTests
 {

@@ -1,11 +1,11 @@
-﻿using NeoServer.Game.Common.Contracts.DataStores;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Game.Items.Services;
-using NeoServer.Game.Items.Services.ItemTransform;
-using NeoServer.Game.World.Services;
-using NeoServer.Server.Managers;
+﻿using Game.Common.Contracts.DataStores;
+using Game.Common.Contracts.World;
+using Game.Items.Services;
+using Game.Items.Services.ItemTransform;
+using Game.World.Services;
+using Server.Managers;
 
-namespace NeoServer.Game.Tests.Server;
+namespace Game.Tests.Server;
 
 public class DecayableItemManagerTestBuilder
 {

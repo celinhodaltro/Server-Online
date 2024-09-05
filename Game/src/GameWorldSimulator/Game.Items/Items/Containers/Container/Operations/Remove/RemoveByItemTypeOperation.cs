@@ -1,7 +1,7 @@
-﻿using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Items.Items.Containers.Container.Queries;
+﻿using Game.Common.Contracts.Items;
+using Game.Items.Items.Containers.Container.Queries;
 
-namespace NeoServer.Game.Items.Items.Containers.Container.Operations.Remove;
+namespace Game.Items.Items.Containers.Container.Operations.Remove;
 
 internal static class RemoveByItemTypeOperation
 {

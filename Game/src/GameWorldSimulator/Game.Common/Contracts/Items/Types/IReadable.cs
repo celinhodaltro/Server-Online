@@ -1,8 +1,8 @@
 ﻿using System;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Results;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Results;
 
-namespace NeoServer.Game.Common.Contracts.Items.Types;
+namespace Game.Common.Contracts.Items.Types;
 
 public interface IReadable : IItem
 {

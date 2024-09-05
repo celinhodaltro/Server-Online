@@ -1,15 +1,15 @@
 ﻿using System.Threading;
 using Moq;
-using NeoServer.Game.Common.Chats;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Game.Common.Contracts.World.Tiles;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Creatures.Npcs;
-using NeoServer.Game.Tests.Helpers;
+using Game.Common.Chats;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.World;
+using Game.Common.Contracts.World.Tiles;
+using Game.Common.Location.Structs;
+using Game.Creatures.Npcs;
+using Game.Tests.Helpers;
 using Xunit;
 
-namespace NeoServer.Game.Creatures.Tests.Npcs;
+namespace Game.Creatures.Tests.Npcs;
 
 public class NpcTest
 {

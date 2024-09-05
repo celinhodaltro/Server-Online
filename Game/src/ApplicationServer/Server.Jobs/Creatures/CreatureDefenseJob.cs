@@ -1,8 +1,8 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Server.Common.Contracts;
-using NeoServer.Server.Tasks;
+﻿using Game.Common.Contracts.Creatures;
+using Server.Common.Contracts;
+using Server.Tasks;
 
-namespace NeoServer.Server.Jobs.Creatures;
+namespace Server.Jobs.Creatures;
 
 public static class CreatureDefenseJob
 {

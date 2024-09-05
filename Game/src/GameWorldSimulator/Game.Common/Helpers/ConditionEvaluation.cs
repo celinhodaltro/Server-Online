@@ -1,4 +1,4 @@
-﻿namespace NeoServer.Game.Common.Helpers;
+﻿namespace Game.Common.Helpers;
 
 public class ConditionEvaluation
 {

@@ -1,4 +1,4 @@
-﻿namespace NeoServer.Game.World.Algorithms.AStar;
+﻿namespace Game.World.Algorithms.AStar;
 
 internal readonly record struct NeighborsDirection
 {

@@ -1,17 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Game.Common.Contracts.World.Tiles;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Common.Location;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Items;
-using NeoServer.Game.Items.Items;
-using NeoServer.Game.World.Models.Tiles;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types;
+using Game.Common.Contracts.World;
+using Game.Common.Contracts.World.Tiles;
+using Game.Common.Item;
+using Game.Common.Location;
+using Game.Common.Location.Structs;
+using Game.Items;
+using Game.Items.Items;
+using Game.World.Models.Tiles;
 
-namespace NeoServer.Game.Tests.Helpers.Map;
+namespace Game.Tests.Helpers.Map;
 
 public static class MapTestDataBuilder
 {

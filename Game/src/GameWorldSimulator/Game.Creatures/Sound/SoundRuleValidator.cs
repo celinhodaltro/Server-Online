@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Linq;
-using NeoServer.Game.Common.Chats;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Helpers;
-using NeoServer.Game.Creatures.Sound.Rules;
+using Game.Common.Chats;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Helpers;
+using Game.Creatures.Sound.Rules;
 
-namespace NeoServer.Game.Creatures.Sound;
+namespace Game.Creatures.Sound;
 
 public static class SoundRuleValidator
 {

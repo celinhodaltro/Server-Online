@@ -1,7 +1,7 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.World;
+﻿using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.World;
 
-namespace NeoServer.Data.InMemory.DataStores;
+namespace Data.InMemory;
 
 public class GameToolStore : DataStore<GameToolStore, string, object>
 {

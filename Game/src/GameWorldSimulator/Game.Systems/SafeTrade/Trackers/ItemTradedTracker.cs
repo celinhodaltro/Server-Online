@@ -1,7 +1,7 @@
-﻿using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Systems.SafeTrade.Request;
+﻿using Game.Common.Contracts.Items;
+using Game.Systems.SafeTrade.Request;
 
-namespace NeoServer.Game.Systems.SafeTrade.Trackers;
+namespace Game.Systems.SafeTrade.Trackers;
 
 /// <summary>
 ///     A static class for tracking the trade requests associated with items.

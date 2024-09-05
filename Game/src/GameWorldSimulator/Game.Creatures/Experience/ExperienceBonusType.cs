@@ -1,4 +1,4 @@
-﻿namespace NeoServer.Game.Creatures.Experience;
+﻿namespace Game.Creatures.Experience;
 
 /// <summary>
 ///     Bonuses of the same group are added together and then multiplied to the base (monster) experience to get the bonus

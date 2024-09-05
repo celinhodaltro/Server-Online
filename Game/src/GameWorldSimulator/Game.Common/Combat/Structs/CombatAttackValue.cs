@@ -1,9 +1,9 @@
 ﻿using System;
-using NeoServer.Game.Common.Creatures;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Common.Location.Structs;
+using Game.Common.Creatures;
+using Game.Common.Item;
+using Game.Common.Location.Structs;
 
-namespace NeoServer.Game.Common.Combat.Structs;
+namespace Game.Common.Combat.Structs;
 
 public ref struct CombatAttackValue
 {

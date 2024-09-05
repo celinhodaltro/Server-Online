@@ -1,12 +1,12 @@
-﻿//using NeoServer.Game.Contracts.Items;
-//using NeoServer.Game.Common.Creatures;
-//using NeoServer.Game.Common.Location.Structs;
-//using NeoServer.Game.Common.Players;
+﻿//using Game.Contracts.Items;
+//using Game.Common.Creatures;
+//using Game.Common.Location.Structs;
+//using Game.Common.Players;
 //using System;
 //using System.Collections.Generic;
 //using System.Text;
 
-//namespace NeoServer.Game.Contracts.Creatures
+//namespace Game.Contracts.Creatures
 //{
 //    public interface IPlayerModel
 //    {

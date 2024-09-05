@@ -1,12 +1,12 @@
-﻿using NeoServer.Game.Common.Helpers;
-using NeoServer.Game.Systems.SafeTrade;
-using NeoServer.Game.Systems.SafeTrade.Request;
-using NeoServer.Networking.Packets.Outgoing;
-using NeoServer.Networking.Packets.Outgoing.Trade;
-using NeoServer.Server.Common.Contracts;
-using NeoServer.Server.Common.Contracts.Network;
+﻿using Game.Common.Helpers;
+using Game.Systems.SafeTrade;
+using Game.Systems.SafeTrade.Request;
+using Networking.Packets.Outgoing;
+using Networking.Packets.Outgoing.Trade;
+using Server.Common.Contracts;
+using Server.Common.Contracts.Network;
 
-namespace NeoServer.Server.Events.Player.Trade;
+namespace Server.Events.Player.Trade;
 
 public class TradeRequestedEventHandler : IEventHandler
 {

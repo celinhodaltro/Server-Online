@@ -1,8 +1,8 @@
-﻿using NeoServer.Game.Common.Creatures.Players;
-using NeoServer.Game.Common.Location;
+﻿using Game.Common.Creatures.Players;
+using Game.Common.Location;
 using Xunit;
 
-namespace NeoServer.Game.Common.Tests.Structs;
+namespace Game.Common.Tests.Structs;
 
 public class LocationTest
 {

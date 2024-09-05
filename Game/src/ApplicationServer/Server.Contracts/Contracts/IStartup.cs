@@ -1,11 +1,11 @@
-﻿namespace NeoServer.Server.Common.Contracts;
+﻿namespace Server.Common.Contracts;
 
 public interface IStartup
 {
     void Run();
 }
 
-public interface IRunBeforeLoaders
+public interface IRunBeforeLoader
 {
     void Run();
 }

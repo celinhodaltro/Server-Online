@@ -1,9 +1,9 @@
 ﻿using System.Linq;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types;
-using NeoServer.Game.Items.Items.Attributes;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types;
+using Game.Items.Items.Attributes;
 
-namespace NeoServer.Game.Items.Factories.AttributeFactory;
+namespace Game.Items.Factories.AttributeFactory;
 
 public class ProtectionFactory
 {

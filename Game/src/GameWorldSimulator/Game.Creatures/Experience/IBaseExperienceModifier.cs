@@ -1,6 +1,6 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
+﻿using Game.Common.Contracts.Creatures;
 
-namespace NeoServer.Game.Creatures.Experience;
+namespace Game.Creatures.Experience;
 
 public interface IBaseExperienceModifier
 {

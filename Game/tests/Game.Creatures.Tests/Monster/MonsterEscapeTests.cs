@@ -1,12 +1,12 @@
 ﻿using FluentAssertions;
-using NeoServer.Game.Common.Creatures;
-using NeoServer.Game.Tests.Helpers;
-using NeoServer.Game.Tests.Helpers.Map;
-using NeoServer.Game.Tests.Helpers.Player;
-using NeoServer.Game.World.Models.Tiles;
+using Game.Common.Creatures;
+using Game.Tests.Helpers;
+using Game.Tests.Helpers.Map;
+using Game.Tests.Helpers.Player;
+using Game.World.Models.Tiles;
 using Xunit;
 
-namespace NeoServer.Game.Creatures.Tests.Monster;
+namespace Game.Creatures.Tests.Monster;
 
 public class MonsterEscapeTests
 {

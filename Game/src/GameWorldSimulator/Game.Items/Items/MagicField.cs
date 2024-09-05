@@ -1,17 +1,17 @@
 ﻿using System;
-using NeoServer.Game.Combat.Conditions;
-using NeoServer.Game.Common;
-using NeoServer.Game.Common.Combat.Structs;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types;
-using NeoServer.Game.Common.Effects.Parsers;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Common.Parsers;
-using NeoServer.Game.Items.Bases;
+using Game.Combat.Conditions;
+using Game.Common;
+using Game.Common.Combat.Structs;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types;
+using Game.Common.Effects.Parsers;
+using Game.Common.Item;
+using Game.Common.Location.Structs;
+using Game.Common.Parsers;
+using Game.Items.Bases;
 
-namespace NeoServer.Game.Items.Items;
+namespace Game.Items.Items;
 
 public class MagicField : BaseItem, IMagicField
 {

@@ -1,16 +1,16 @@
 ﻿using Moq;
-using NeoServer.Data.InMemory.DataStores;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Creatures.Factories;
-using NeoServer.Game.Items.Factories;
-using NeoServer.Game.Tests.Helpers.Map;
-using NeoServer.Game.World.Models.Spawns;
-using NeoServer.Game.World.Services;
+using Data.InMemory;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Location.Structs;
+using Game.Creatures.Factories;
+using Game.Items.Factories;
+using Game.Tests.Helpers.Map;
+using Game.World.Models.Spawns;
+using Game.World.Services;
 using Serilog;
-using PathFinder = NeoServer.Game.World.Map.PathFinder;
+using PathFinder = Game.World.Map.PathFinder;
 
-namespace NeoServer.Game.Tests.Helpers;
+namespace Game.Tests.Helpers;
 
 public static class NpcTestDataBuilder
 {

@@ -1,11 +1,11 @@
 ﻿using System;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types;
-using NeoServer.Game.Common.Creatures.Players;
-using NeoServer.Game.Common.Helpers;
-using NeoServer.Game.Common.Item;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types;
+using Game.Common.Creatures.Players;
+using Game.Common.Helpers;
+using Game.Common.Item;
 
-namespace NeoServer.Game.Items.Helpers;
+namespace Game.Items.Helpers;
 
 internal static class ItemGroupQuery
 {

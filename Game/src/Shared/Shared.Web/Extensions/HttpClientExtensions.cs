@@ -1,9 +1,9 @@
 ﻿using System.Text;
-using NeoServer.Web.Shared.Exceptions;
-using NeoServer.Web.Shared.ViewModels.Response;
+using Web.Shared.Exceptions;
+using Web.Shared.ViewModels.Response;
 using Newtonsoft.Json;
 
-namespace NeoServer.Web.Shared.Extensions;
+namespace Web.Shared.Extensions;
 
 public static class HttpClientExtensions
 {

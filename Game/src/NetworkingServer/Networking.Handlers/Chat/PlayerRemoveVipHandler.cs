@@ -1,10 +1,10 @@
-﻿using NeoServer.Data.Interfaces;
-using NeoServer.Networking.Packets.Incoming.Chat;
-using NeoServer.Server.Common.Contracts;
-using NeoServer.Server.Common.Contracts.Network;
-using NeoServer.Server.Tasks;
+﻿using Data.Interfaces;
+using Networking.Packets.Incoming.Chat;
+using Server.Common.Contracts;
+using Server.Common.Contracts.Network;
+using Server.Tasks;
 
-namespace NeoServer.Networking.Handlers.Chat;
+namespace Networking.Handlers.Chat;
 
 public class PlayerRemoveVipHandler : PacketHandler
 {

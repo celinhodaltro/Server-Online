@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Linq;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Services;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Services;
 
-namespace NeoServer.Game.Creatures.Experience;
+namespace Game.Creatures.Experience;
 
 /// <summary>
 ///     The shared experience bonus applied to members of a party.

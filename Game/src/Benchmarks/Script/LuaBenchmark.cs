@@ -2,7 +2,7 @@
 using BenchmarkDotNet.Engines;
 using NLua;
 
-namespace NeoServer.Benchmarks.Script;
+namespace Benchmarks.Script;
 
 [MemoryDiagnoser]
 [SimpleJob(RunStrategy.ColdStart, 10)]

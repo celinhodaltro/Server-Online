@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net.Sockets;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Networking.Packets.Messages;
-using NeoServer.Networking.Packets.Outgoing.Login;
-using NeoServer.Networking.Packets.Security;
-using NeoServer.Server.Common.Contracts.Network;
+using Game.Common.Contracts.Creatures;
+using Networking.Packets.Messages;
+using Networking.Packets.Outgoing.Login;
+using Networking.Packets.Security;
+using Server.Common.Contracts.Network;
 using Serilog;
 
-namespace NeoServer.Networking.Packets.Connection;
+namespace Networking.Packets.Connection;
 
 public class Connection : IConnection
 {

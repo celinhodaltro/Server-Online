@@ -2,7 +2,7 @@ using System.Reflection;
 using System.Threading;
 using Xunit.Sdk;
 
-namespace NeoServer.Game.Tests.Helpers;
+namespace Game.Tests.Helpers;
 
 /// <summary>
 ///     Block the unit test to avoid concurrency

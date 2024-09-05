@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Common.Location.Structs;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types;
+using Game.Common.Item;
+using Game.Common.Location.Structs;
 
-namespace NeoServer.Game.Items.Bases;
+namespace Game.Items.Bases;
 
 //todo: code duplicated from cumulative class
 public abstract class CumulativeEquipment : Equipment, ICumulative

@@ -1,8 +1,8 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.World;
+﻿using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.World;
 
-namespace NeoServer.Game.Creatures.Monster.Summon;
+namespace Game.Creatures.Monster.Summon;
 
 public class Summon : Monster
 {

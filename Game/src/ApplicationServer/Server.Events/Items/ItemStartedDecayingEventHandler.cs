@@ -1,7 +1,7 @@
-﻿using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Server.Common.Contracts;
+﻿using Game.Common.Contracts.Items;
+using Server.Common.Contracts;
 
-namespace NeoServer.Server.Events.Items;
+namespace Server.Events.Items;
 
 public class ItemStartedDecayingEventHandler
 {

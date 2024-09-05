@@ -1,15 +1,15 @@
 using System;
 using System.Collections.Generic;
-using NeoServer.Networking.Handlers.Chat;
-using NeoServer.Networking.Handlers.LogIn;
-using NeoServer.Networking.Handlers.Player;
-using NeoServer.Networking.Handlers.Player.Movement;
-using NeoServer.Networking.Handlers.Player.Party;
-using NeoServer.Networking.Handlers.Shop;
-using NeoServer.Networking.Handlers.Trade;
-using NeoServer.Server.Common.Contracts.Network.Enums;
+using Networking.Handlers.Chat;
+using Networking.Handlers.LogIn;
+using Networking.Handlers.Player;
+using Networking.Handlers.Player.Movement;
+using Networking.Handlers.Player.Party;
+using Networking.Handlers.Shop;
+using Networking.Handlers.Trade;
+using Server.Common.Contracts.Network.Enums;
 
-namespace NeoServer.Networking.Handlers;
+namespace Networking.Handlers;
 
 public static class InputHandlerMap
 {

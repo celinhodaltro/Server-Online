@@ -1,12 +1,12 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types;
-using NeoServer.Game.Common.Contracts.Items.Types.Containers;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Systems.SafeTrade.Trackers;
+﻿using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types;
+using Game.Common.Contracts.Items.Types.Containers;
+using Game.Common.Contracts.World;
+using Game.Common.Location.Structs;
+using Game.Systems.SafeTrade.Trackers;
 
-namespace NeoServer.Game.Systems.SafeTrade.Request;
+namespace Game.Systems.SafeTrade.Request;
 
 internal static class TradeRequestEventHandler
 {

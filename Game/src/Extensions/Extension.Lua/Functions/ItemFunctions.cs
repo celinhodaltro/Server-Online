@@ -1,8 +1,8 @@
 using System.Linq;
 using System.Text;
-using NeoServer.Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items;
 
-namespace NeoServer.Scripts.Lua.Functions;
+namespace Extension.Lua.Functions;
 
 public static class ItemFunctions
 {

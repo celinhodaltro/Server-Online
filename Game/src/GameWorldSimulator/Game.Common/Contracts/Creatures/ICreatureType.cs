@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using NeoServer.Game.Common.Creatures;
+using Game.Common.Creatures;
 
-namespace NeoServer.Game.Common.Contracts.Creatures;
+namespace Game.Common.Contracts.Creatures;
 
 public interface ICreatureType
 {

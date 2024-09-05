@@ -1,7 +1,7 @@
-﻿using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Services;
+﻿using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Services;
 
-namespace NeoServer.Game.Items.Services;
+namespace Game.Items.Services;
 
 public class DecayService : IDecayService
 {

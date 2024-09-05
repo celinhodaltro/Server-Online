@@ -1,8 +1,8 @@
-﻿using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types.Usable;
-using NeoServer.Server.Events.Items;
+﻿using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types.Usable;
+using Server.Events.Items;
 
-namespace NeoServer.Server.Events.Subscribers;
+namespace Server.Events.Subscribers;
 
 public class ItemEventSubscriber : IItemEventSubscriber
 {

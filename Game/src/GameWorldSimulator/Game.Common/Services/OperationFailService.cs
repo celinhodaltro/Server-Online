@@ -1,7 +1,7 @@
 ﻿using System;
-using NeoServer.Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Creatures;
 
-namespace NeoServer.Game.Common.Services;
+namespace Game.Common.Services;
 
 public static class OperationFailService
 {

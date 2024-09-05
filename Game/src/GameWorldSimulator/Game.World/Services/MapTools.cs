@@ -1,9 +1,9 @@
 ﻿using System;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.World.Algorithms;
+using Game.Common.Contracts.World;
+using Game.Common.Location.Structs;
+using Game.World.Algorithms;
 
-namespace NeoServer.Game.World.Services;
+namespace Game.World.Services;
 
 public class MapTool : IMapTool
 {

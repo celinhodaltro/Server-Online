@@ -1,6 +1,6 @@
-﻿using NeoServer.Server.Common.Contracts.Network;
+﻿using Server.Common.Contracts.Network;
 
-namespace NeoServer.Networking.Packets.Incoming.Trade;
+namespace Networking.Packets.Incoming.Trade;
 
 public class LookInTradePacket : IncomingPacket
 {

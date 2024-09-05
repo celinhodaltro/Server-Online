@@ -1,15 +1,15 @@
 ﻿using System;
-using NeoServer.Game.Common;
-using NeoServer.Game.Common.Contracts;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Creatures.Players;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types;
-using NeoServer.Game.Common.Contracts.Items.Types.Containers;
-using NeoServer.Game.Common.Contracts.World.Tiles;
-using NeoServer.Game.Common.Results;
+using Game.Common;
+using Game.Common.Contracts;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Creatures.Players;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types;
+using Game.Common.Contracts.Items.Types.Containers;
+using Game.Common.Contracts.World.Tiles;
+using Game.Common.Results;
 
-namespace NeoServer.Game.Creatures.Player;
+namespace Game.Creatures.Player;
 
 public class PlayerHand : IPlayerHand
 {

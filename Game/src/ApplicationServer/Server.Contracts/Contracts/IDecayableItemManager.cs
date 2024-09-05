@@ -1,6 +1,6 @@
-﻿using NeoServer.Game.Common.Contracts.Items;
+﻿using Game.Common.Contracts.Items;
 
-namespace NeoServer.Server.Common.Contracts;
+namespace Server.Common.Contracts;
 
 public interface IDecayableItemManager
 {

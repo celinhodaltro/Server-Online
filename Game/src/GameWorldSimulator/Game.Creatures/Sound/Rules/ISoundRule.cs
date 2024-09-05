@@ -1,7 +1,7 @@
-﻿using NeoServer.Game.Common.Chats;
-using NeoServer.Game.Common.Contracts.Creatures;
+﻿using Game.Common.Chats;
+using Game.Common.Contracts.Creatures;
 
-namespace NeoServer.Game.Creatures.Sound.Rules;
+namespace Game.Creatures.Sound.Rules;
 
 internal interface ISoundRule
 {

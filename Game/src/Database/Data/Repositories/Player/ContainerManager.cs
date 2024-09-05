@@ -1,14 +1,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using NeoServer.Data.Contexts;
-using NeoServer.Data.Entities;
-using NeoServer.Data.Parsers;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items.Types.Containers;
-using NeoServer.Game.Common.Helpers;
+using Data.Contexts;
+using Data.Entities;
+using Data.Parsers;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items.Types.Containers;
+using Game.Common.Helpers;
 
-namespace NeoServer.Data.Repositories.Player;
+namespace Data.Repositories.Player;
 
 public static class ContainerManager
 {

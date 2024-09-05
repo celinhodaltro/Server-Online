@@ -1,22 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
 using Moq;
-using NeoServer.Game.Common.Chats;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items.Types.Usable;
-using NeoServer.Game.Common.Contracts.World.Tiles;
-using NeoServer.Game.Common.Creatures;
-using NeoServer.Game.Common.Creatures.Players;
-using NeoServer.Game.Common.Location;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Creatures.Player;
-using NeoServer.Game.Systems.Services;
-using NeoServer.Game.Tests.Helpers.Map;
-using NeoServer.Game.Tests.Helpers.Player;
-using NeoServer.Game.World.Models;
+using Game.Common.Chats;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items.Types.Usable;
+using Game.Common.Contracts.World.Tiles;
+using Game.Common.Creatures;
+using Game.Common.Creatures.Players;
+using Game.Common.Location;
+using Game.Common.Location.Structs;
+using Game.Creatures.Player;
+using Game.Systems.Services;
+using Game.Tests.Helpers.Map;
+using Game.Tests.Helpers.Player;
+using Game.World.Models;
 using Xunit;
 
-namespace NeoServer.Game.Creatures.Tests.Creature;
+namespace Game.Creatures.Tests.Creature;
 
 public class PlayerTest
 {

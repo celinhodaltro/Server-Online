@@ -1,17 +1,17 @@
 ﻿using Autofac;
-using NeoServer.Game.Combat.Spells;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Game.Common.Services;
-using NeoServer.Game.Systems.SafeTrade;
-using NeoServer.Server.Common.Contracts;
-using NeoServer.Server.Events.Combat;
-using NeoServer.Server.Events.Creature;
-using NeoServer.Server.Events.Player;
-using NeoServer.Server.Events.Player.Trade;
-using NeoServer.Server.Events.Server;
-using NeoServer.Server.Events.Tiles;
+using Game.Combat.Spells;
+using Game.Common.Contracts.World;
+using Game.Common.Services;
+using Game.Systems.SafeTrade;
+using Server.Common.Contracts;
+using Server.Events.Combat;
+using Server.Events.Creature;
+using Server.Events.Player;
+using Server.Events.Player.Trade;
+using Server.Events.Server;
+using Server.Events.Tiles;
 
-namespace NeoServer.Server.Events.Subscribers;
+namespace Server.Events.Subscribers;
 
 public sealed class EventSubscriber
 {

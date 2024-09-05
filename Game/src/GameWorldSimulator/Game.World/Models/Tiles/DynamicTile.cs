@@ -1,20 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using NeoServer.Game.Common;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types;
-using NeoServer.Game.Common.Contracts.Items.Types.Containers;
-using NeoServer.Game.Common.Contracts.World.Tiles;
-using NeoServer.Game.Common.Helpers;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Common.Location;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Common.Results;
-using NeoServer.Game.World.Structures;
+using Game.Common;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types;
+using Game.Common.Contracts.Items.Types.Containers;
+using Game.Common.Contracts.World.Tiles;
+using Game.Common.Helpers;
+using Game.Common.Item;
+using Game.Common.Location;
+using Game.Common.Location.Structs;
+using Game.Common.Results;
+using Game.World.Structures;
 
-namespace NeoServer.Game.World.Models.Tiles;
+namespace Game.World.Models.Tiles;
 
 public class DynamicTile : BaseTile, IDynamicTile
 {

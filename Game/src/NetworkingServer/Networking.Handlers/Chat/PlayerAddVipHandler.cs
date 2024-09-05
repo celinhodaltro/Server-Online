@@ -2,33 +2,33 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using NeoServer.Data.Entities;
-using NeoServer.Data.Interfaces;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Helpers;
-using NeoServer.Loaders.Interfaces;
-using NeoServer.Networking.Packets.Incoming.Chat;
-using NeoServer.Networking.Packets.Outgoing;
-using NeoServer.Server.Common.Contracts;
-using NeoServer.Server.Common.Contracts.Network;
-using NeoServer.Server.Tasks;
+using Data.Entities;
+using Data.Interfaces;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Helpers;
+using Loader.Interfaces;
+using Networking.Packets.Incoming.Chat;
+using Networking.Packets.Outgoing;
+using Server.Common.Contracts;
+using Server.Common.Contracts.Network;
+using Server.Tasks;
 using Serilog;
 
-namespace NeoServer.Networking.Handlers.Chat;
+namespace Networking.Handlers.Chat;
 
 public class PlayerAddVipHandler : PacketHandler
 {
     private readonly IGameServer _game;
     private readonly ILogger _logger;
-    private readonly IEnumerable<IPlayerLoader> _playerLoaders;
+    private readonly IEnumerable<IPlayerLoader> _playerLoader;
     private readonly IPlayerRepository _playerRepository;
 
     public PlayerAddVipHandler(IGameServer game, IPlayerRepository playerRepository,
-        IEnumerable<IPlayerLoader> playerLoaders, ILogger logger)
+        IEnumerable<IPlayerLoader> playerLoader, ILogger logger)
     {
         _game = game;
         _playerRepository = playerRepository;
-        _playerLoaders = playerLoaders;
+        _playerLoader = playerLoader;
         _logger = logger;
     }
 
@@ -64,7 +64,7 @@ public class PlayerAddVipHandler : PacketHandler
         var playerRecord = await GetPlayerRecord(addVipPacket);
         if (playerRecord is null) return null;
 
-        if (_playerLoaders.FirstOrDefault(x => x.IsApplicable(playerRecord)) is not { } playerLoader)
+        if (_playerLoader.FirstOrDefault(x => x.IsApplicable(playerRecord)) is not { } playerLoader)
             return null;
 
         vipPlayer = playerLoader.Load(playerRecord);

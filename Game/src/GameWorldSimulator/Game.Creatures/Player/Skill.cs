@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Creatures;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Creatures;
 
-namespace NeoServer.Game.Creatures.Player;
+namespace Game.Creatures.Player;
 
 public class Skill : ISkill
 {

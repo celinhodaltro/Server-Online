@@ -1,20 +1,20 @@
 ﻿using System.Collections.Generic;
-using NeoServer.Data.InMemory.DataStores;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.DataStores;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Game.Common.Creatures;
-using NeoServer.Game.Common.Creatures.Players;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Creatures.Player;
-using NeoServer.Game.Creatures.Vocation;
-using NeoServer.Game.Tests.Helpers.Map;
-using NeoServer.Game.World.Models;
-using NeoServer.Game.World.Services;
-using PathFinder = NeoServer.Game.World.Map.PathFinder;
+using Data.InMemory;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.DataStores;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.World;
+using Game.Common.Creatures;
+using Game.Common.Creatures.Players;
+using Game.Common.Location.Structs;
+using Game.Creatures.Player;
+using Game.Creatures.Vocation;
+using Game.Tests.Helpers.Map;
+using Game.World.Models;
+using Game.World.Services;
+using PathFinder = Game.World.Map.PathFinder;
 
-namespace NeoServer.Game.Tests.Helpers.Player;
+namespace Game.Tests.Helpers.Player;
 
 public static class PlayerTestDataBuilder
 {

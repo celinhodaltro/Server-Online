@@ -1,12 +1,12 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using NeoServer.Game.Common.Contracts;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Creatures.Experience;
-using NeoServer.Game.Creatures.Party;
+using Game.Common.Contracts;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items;
+using Game.Creatures.Experience;
+using Game.Creatures.Party;
 
-namespace NeoServer.Game.Creatures.Events.Monster;
+namespace Game.Creatures.Events.Monster;
 
 public class MonsterKilledEventHandler : IGameEventHandler
 {

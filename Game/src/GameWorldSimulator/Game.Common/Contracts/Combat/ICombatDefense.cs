@@ -1,6 +1,6 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
+﻿using Game.Common.Contracts.Creatures;
 
-namespace NeoServer.Game.Common.Contracts.Combat;
+namespace Game.Common.Contracts.Combat;
 
 public interface ICombatDefense : IProbability
 {

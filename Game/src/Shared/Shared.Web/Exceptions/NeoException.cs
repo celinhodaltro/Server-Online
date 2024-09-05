@@ -1,6 +1,6 @@
 ﻿using System.Net;
 
-namespace NeoServer.Web.Shared.Exceptions;
+namespace Web.Shared.Exceptions;
 
 public class NeoException : Exception
 {

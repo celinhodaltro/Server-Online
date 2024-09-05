@@ -1,10 +1,10 @@
 ﻿using System.Linq;
 using System.Text;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Creatures;
-using NeoServer.Game.Common.Creatures.Structs;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Creatures;
+using Game.Common.Creatures.Structs;
 
-namespace NeoServer.Game.Common.Contracts.Items.Types.Runes;
+namespace Game.Common.Contracts.Items.Types.Runes;
 
 public interface IRune : IUsableRequirement, IFormula
 {

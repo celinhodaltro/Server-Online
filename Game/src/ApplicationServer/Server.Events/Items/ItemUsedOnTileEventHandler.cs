@@ -1,10 +1,10 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items.Types.Usable;
-using NeoServer.Game.Common.Contracts.World.Tiles;
-using NeoServer.Networking.Packets.Outgoing.Effect;
-using NeoServer.Server.Common.Contracts;
+﻿using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items.Types.Usable;
+using Game.Common.Contracts.World.Tiles;
+using Networking.Packets.Outgoing.Effect;
+using Server.Common.Contracts;
 
-namespace NeoServer.Server.Events.Items;
+namespace Server.Events.Items;
 
 public class ItemUsedOnTileEventHandler
 {

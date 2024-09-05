@@ -1,8 +1,8 @@
-﻿using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Server.Common.Contracts.Tasks;
-using NeoServer.Server.Common.Enums;
+﻿using Game.Common.Contracts.World;
+using Server.Common.Contracts.Tasks;
+using Server.Common.Enums;
 
-namespace NeoServer.Server.Common.Contracts;
+namespace Server.Common.Contracts;
 
 public delegate void OpenServer();
 

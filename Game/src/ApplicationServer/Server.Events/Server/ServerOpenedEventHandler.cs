@@ -1,6 +1,6 @@
-﻿using NeoServer.Data.Interfaces;
+﻿using Data.Interfaces;
 
-namespace NeoServer.Server.Events.Server;
+namespace Server.Events.Server;
 
 public class ServerOpenedEventHandler
 {

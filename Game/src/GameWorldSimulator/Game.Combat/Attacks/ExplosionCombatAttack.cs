@@ -1,9 +1,9 @@
 ﻿using System.Linq;
-using NeoServer.Game.Common.Combat.Structs;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Effects.Magical;
+using Game.Common.Combat.Structs;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Effects.Magical;
 
-namespace NeoServer.Game.Combat.Attacks;
+namespace Game.Combat.Attacks;
 
 public class ExplosionCombatAttack : CombatAttack
 {

@@ -1,6 +1,6 @@
-﻿using NeoServer.Game.Common.Contracts.Services;
+﻿using Game.Common.Contracts.Services;
 
-namespace NeoServer.Game.Creatures.Party;
+namespace Game.Creatures.Party;
 
 public class SharedExperienceConfiguration : ISharedExperienceConfiguration
 {

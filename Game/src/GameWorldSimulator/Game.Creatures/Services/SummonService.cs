@@ -1,12 +1,12 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Services;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Game.Common.Contracts.World.Tiles;
-using NeoServer.Game.Common.Location;
-using NeoServer.Game.Creatures.Monster.Summon;
+﻿using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Services;
+using Game.Common.Contracts.World;
+using Game.Common.Contracts.World.Tiles;
+using Game.Common.Location;
+using Game.Creatures.Monster.Summon;
 using Serilog;
 
-namespace NeoServer.Game.Creatures.Services;
+namespace Game.Creatures.Services;
 
 public class SummonService : ISummonService
 {

@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\ApplicationServer\Server.Helpers\Server.Helpers.csproj"/>
+        <ProjectReference Include="..\..\Database\Data.InMemory.DataStores\Data.InMemory.DataStores.csproj"/>
+        <ProjectReference Include="..\..\GameWorldSimulator\Game.Chats\Game.Chats.csproj"/>
+        <ProjectReference Include="..\..\GameWorldSimulator\Game.Combat\Game.Combat.csproj"/>
+        <ProjectReference Include="..\..\GameWorldSimulator\Game.Common\Game.Common.csproj"/>
+        <ProjectReference Include="..\..\GameWorldSimulator\Game.Creatures\Game.Creatures.csproj"/>
+        <ProjectReference Include="..\..\GameWorldSimulator\Game.Items\Game.Items.csproj"/>
+        <ProjectReference Include="..\..\GameWorldSimulator\Game.World\Game.World.csproj"/>
+        <ProjectReference Include="..\..\ApplicationServer\Server\Server.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.3"/>
+        <PackageReference Include="serilog" Version="3.0.1"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Compile Remove="Attributes\**"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <EmbeddedResource Remove="Attributes\**"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Remove="Attributes\**"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Folder Include="OTBM\"/>
+        <Folder Include="OTB\"/>
+    </ItemGroup>
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Platforms>AnyCPU;x64</Platforms>
+        <IsPublishable>false</IsPublishable>
+    </PropertyGroup>
+
+</Project>

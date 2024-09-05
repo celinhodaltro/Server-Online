@@ -1,4 +1,4 @@
-﻿namespace NeoServer.Game.Common.Combat;
+﻿namespace Game.Common.Combat;
 
 public enum DrainType
 {

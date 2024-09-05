@@ -1,10 +1,10 @@
 ﻿using System.Diagnostics.CodeAnalysis;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Server.Common.Contracts;
-using NeoServer.Server.Common.Contracts.Tasks;
-using NeoServer.Server.Common.Enums;
+using Game.Common.Contracts.World;
+using Server.Common.Contracts;
+using Server.Common.Contracts.Tasks;
+using Server.Common.Enums;
 
-namespace NeoServer.Server;
+namespace Server;
 
 public class GameServer : IGameServer
 {

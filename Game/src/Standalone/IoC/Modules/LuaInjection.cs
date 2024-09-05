@@ -1,8 +1,8 @@
 ﻿using Autofac;
-using NeoServer.Scripts.Lua;
+using Extension.Lua;
 using NLua;
 
-namespace NeoServer.Server.Standalone.IoC.Modules;
+namespace Server.Standalone.IoC.Modules;
 
 public static class LuaInjection
 {

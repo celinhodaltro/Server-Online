@@ -1,7 +1,7 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Creatures;
+﻿using Game.Common.Contracts.Creatures;
+using Game.Common.Creatures;
 
-namespace NeoServer.Game.Common.Contracts.Spells;
+namespace Game.Common.Contracts.Spells;
 
 public delegate void InvokeSpell(ICombatActor creature, ISpell spell);
 

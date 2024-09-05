@@ -1,9 +1,9 @@
 using System.Linq;
-using NeoServer.Networking.Packets.Messages;
-using NeoServer.Networking.Packets.Security;
+using Networking.Packets.Messages;
+using Networking.Packets.Security;
 using Xunit;
 
-namespace NeoServer.Networking.Tests.Security;
+namespace Networking.Tests.Security;
 
 public class Xtea_EncryptShould
 {

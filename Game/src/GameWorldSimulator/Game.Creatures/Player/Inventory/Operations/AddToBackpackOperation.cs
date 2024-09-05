@@ -1,11 +1,11 @@
-﻿using NeoServer.Game.Common;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types.Containers;
-using NeoServer.Game.Common.Creatures.Players;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Common.Results;
+﻿using Game.Common;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types.Containers;
+using Game.Common.Creatures.Players;
+using Game.Common.Location.Structs;
+using Game.Common.Results;
 
-namespace NeoServer.Game.Creatures.Player.Inventory.Operations;
+namespace Game.Creatures.Player.Inventory.Operations;
 
 public static class AddToBackpackOperation
 {

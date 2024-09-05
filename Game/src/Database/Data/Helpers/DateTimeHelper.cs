@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace NeoServer.Data.Helpers;
+namespace Data.Helpers;
 
 public static class DateTimeHelper
 {

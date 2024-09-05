@@ -1,10 +1,10 @@
 ﻿using System;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Game.Common.Contracts.World.Tiles;
-using NeoServer.Game.Common.Location;
-using NeoServer.Game.Common.Location.Structs;
+using Game.Common.Contracts.World;
+using Game.Common.Contracts.World.Tiles;
+using Game.Common.Location;
+using Game.Common.Location.Structs;
 
-namespace NeoServer.Game.Common.Contracts.Creatures;
+namespace Game.Common.Contracts.Creatures;
 
 public delegate bool PathFinder(IWalkableCreature creature, Location.Structs.Location target, FindPathParams options,
     ITileEnterRule tileEnterRule, out Direction[] directions);

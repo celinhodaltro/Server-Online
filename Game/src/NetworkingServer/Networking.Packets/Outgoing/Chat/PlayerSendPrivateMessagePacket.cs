@@ -1,8 +1,8 @@
-﻿using NeoServer.Game.Common.Chats;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Server.Common.Contracts.Network;
+﻿using Game.Common.Chats;
+using Game.Common.Contracts.Creatures;
+using Server.Common.Contracts.Network;
 
-namespace NeoServer.Networking.Packets.Outgoing.Chat;
+namespace Networking.Packets.Outgoing.Chat;
 
 public class PlayerSendPrivateMessagePacket : OutgoingPacket
 {

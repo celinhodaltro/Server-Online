@@ -1,12 +1,12 @@
 ﻿using System.Collections.Generic;
 using FluentAssertions;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Creatures;
-using NeoServer.Game.Creatures.Player;
-using NeoServer.Game.Tests.Helpers.Player;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Creatures;
+using Game.Creatures.Player;
+using Game.Tests.Helpers.Player;
 using Xunit;
 
-namespace NeoServer.Game.Creatures.Tests.Players;
+namespace Game.Creatures.Tests.Players;
 
 public class PlayerStatsTests
 {

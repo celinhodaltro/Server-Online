@@ -1,12 +1,12 @@
 ﻿using System;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Game.Common.Contracts.World.Tiles;
-using NeoServer.Game.Common.Location;
-using NeoServer.Game.Common.Location.Structs;
-using PathFinder = NeoServer.Game.World.Map.PathFinder;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.World;
+using Game.Common.Contracts.World.Tiles;
+using Game.Common.Location;
+using Game.Common.Location.Structs;
+using PathFinder = Game.World.Map.PathFinder;
 
-namespace NeoServer.Game.World.Algorithms.AStar;
+namespace Game.World.Algorithms.AStar;
 
 public static class AStar
 {

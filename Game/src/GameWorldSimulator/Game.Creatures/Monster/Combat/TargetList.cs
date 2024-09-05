@@ -1,13 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using NeoServer.Game.Combat;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Game.Common.Location.Structs;
+using Game.Combat;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.World;
+using Game.Common.Location.Structs;
 
-namespace NeoServer.Game.Creatures.Monster.Combat;
+namespace Game.Creatures.Monster.Combat;
 
 public class TargetList : IEnumerable<CombatTarget>
 {

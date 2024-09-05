@@ -1,4 +1,4 @@
-﻿namespace NeoServer.Game.Common.Contracts.Items.Types;
+﻿namespace Game.Common.Contracts.Items.Types;
 
 public interface ICoin : ICumulative
 {

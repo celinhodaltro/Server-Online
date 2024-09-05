@@ -1,4 +1,4 @@
-﻿namespace NeoServer.Game.Common.Contracts.World.Tiles;
+﻿namespace Game.Common.Contracts.World.Tiles;
 
 public interface IStaticTile : ITile
 {

@@ -1,6 +1,6 @@
-﻿using NeoServer.Server.Common.Contracts.Network;
+﻿using Server.Common.Contracts.Network;
 
-namespace NeoServer.Networking.Handlers;
+namespace Networking.Handlers;
 
 public interface IPacketHandler
 {

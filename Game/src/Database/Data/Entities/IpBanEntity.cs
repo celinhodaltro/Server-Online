@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace NeoServer.Data.Entities;
+namespace Data.Entities;
 
 public class IpBanEntity
 {

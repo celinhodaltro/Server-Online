@@ -1,7 +1,7 @@
-﻿using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Server.Common.Contracts.Network;
+﻿using Game.Common.Location.Structs;
+using Server.Common.Contracts.Network;
 
-namespace NeoServer.Networking.Packets.Incoming;
+namespace Networking.Packets.Incoming;
 
 public class UseItemOnPacket : IncomingPacket
 {

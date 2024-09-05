@@ -1,7 +1,7 @@
-using NeoServer.Game.Common;
-using NeoServer.Networking.Packets.Outgoing;
+using Game.Common;
+using Networking.Packets.Outgoing;
 
-namespace NeoServer.Scripts.Lua;
+namespace Extension.Lua;
 
 public class LuaResult
 {

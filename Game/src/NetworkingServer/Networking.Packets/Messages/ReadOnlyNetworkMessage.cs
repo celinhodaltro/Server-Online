@@ -1,12 +1,12 @@
 using System;
 using System.Runtime.InteropServices;
 using System.Text;
-using NeoServer.Game.Common.Helpers;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Server.Common.Contracts.Network;
-using NeoServer.Server.Common.Contracts.Network.Enums;
+using Game.Common.Helpers;
+using Game.Common.Location.Structs;
+using Server.Common.Contracts.Network;
+using Server.Common.Contracts.Network.Enums;
 
-namespace NeoServer.Networking.Packets.Messages;
+namespace Networking.Packets.Messages;
 
 public class ReadOnlyNetworkMessage : IReadOnlyNetworkMessage
 {

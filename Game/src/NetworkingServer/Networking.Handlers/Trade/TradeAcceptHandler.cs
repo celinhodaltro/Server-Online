@@ -1,9 +1,9 @@
-﻿using NeoServer.Game.Systems.SafeTrade;
-using NeoServer.Server.Common.Contracts;
-using NeoServer.Server.Common.Contracts.Network;
-using NeoServer.Server.Tasks;
+﻿using Game.Systems.SafeTrade;
+using Server.Common.Contracts;
+using Server.Common.Contracts.Network;
+using Server.Tasks;
 
-namespace NeoServer.Networking.Handlers.Trade;
+namespace Networking.Handlers.Trade;
 
 public class TradeAcceptHandler : PacketHandler
 {

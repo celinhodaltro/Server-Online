@@ -1,23 +1,23 @@
 ﻿using System.Collections.Generic;
 using Autofac;
-using NeoServer.Game.Chats;
-using NeoServer.Game.Common.Contracts.Chats;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.DataStores;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.World.Tiles;
-using NeoServer.Game.Creatures.Factories;
-using NeoServer.Game.Creatures.Player;
-using NeoServer.Game.Items.Factories;
-using NeoServer.Game.Items.Factories.AttributeFactory;
-using NeoServer.Game.World.Factories;
-using NeoServer.Networking.Handlers;
-using NeoServer.Networking.Handlers.Invalid;
-using NeoServer.Server.Common.Contracts.Network;
-using NeoServer.Server.Common.Contracts.Network.Enums;
+using Game.Chats;
+using Game.Common.Contracts.Chats;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.DataStores;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.World.Tiles;
+using Game.Creatures.Factories;
+using Game.Creatures.Player;
+using Game.Items.Factories;
+using Game.Items.Factories.AttributeFactory;
+using Game.World.Factories;
+using Networking.Handlers;
+using Networking.Handlers.Invalid;
+using Server.Common.Contracts.Network;
+using Server.Common.Contracts.Network.Enums;
 using Serilog;
 
-namespace NeoServer.Server.Standalone.IoC.Modules;
+namespace Server.Standalone.IoC.Modules;
 
 public static class FactoryInjection
 {

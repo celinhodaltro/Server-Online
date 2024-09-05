@@ -1,10 +1,10 @@
-﻿using NeoServer.Game.Common.Chats;
-using NeoServer.Game.Common.Contracts.Chats;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Networking.Packets.Outgoing.Chat;
-using NeoServer.Server.Common.Contracts;
+﻿using Game.Common.Chats;
+using Game.Common.Contracts.Chats;
+using Game.Common.Contracts.Creatures;
+using Networking.Packets.Outgoing.Chat;
+using Server.Common.Contracts;
 
-namespace NeoServer.Server.Events.Chat;
+namespace Server.Events.Chat;
 
 public class ChatMessageAddedEventHandler
 {

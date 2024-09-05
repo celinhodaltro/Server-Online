@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using BenchmarkDotNet.Attributes;
 
-namespace NeoServer.Benchmarks.Collections;
+namespace Benchmarks.Collections;
 
 [MemoryDiagnoser]
 [SimpleJob(3)]

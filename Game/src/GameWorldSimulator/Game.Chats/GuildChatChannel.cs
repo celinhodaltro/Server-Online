@@ -1,9 +1,9 @@
-﻿using NeoServer.Game.Common.Chats;
-using NeoServer.Game.Common.Contracts.Chats;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Creatures.Guilds;
+﻿using Game.Common.Chats;
+using Game.Common.Contracts.Chats;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Creatures.Guilds;
 
-namespace NeoServer.Game.Chats;
+namespace Game.Chats;
 
 public class GuildChatChannel : ChatChannel, IChatChannel
 {

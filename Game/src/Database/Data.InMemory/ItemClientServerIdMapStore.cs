@@ -1,6 +1,6 @@
-﻿using NeoServer.Game.Common.Contracts.DataStores;
+﻿using Game.Common.Contracts.DataStores;
 
-namespace NeoServer.Data.InMemory.DataStores;
+namespace Data.InMemory;
 
 public class ItemClientServerIdMapStore : DataStore<ItemClientServerIdMapStore, ushort, ushort>,
     IItemClientServerIdMapStore

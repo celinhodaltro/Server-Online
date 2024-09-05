@@ -1,19 +1,19 @@
 ﻿using System.Collections.Generic;
 using FluentAssertions;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Creatures.Players;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Common.Location;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Creatures.Events;
-using NeoServer.Game.Items.Items.UsableItems;
-using NeoServer.Game.Tests.Helpers;
-using NeoServer.Game.Tests.Helpers.Map;
-using NeoServer.Game.Tests.Helpers.Player;
-using NeoServer.Game.World.Models.Tiles;
+using Game.Common.Contracts.Items;
+using Game.Common.Creatures.Players;
+using Game.Common.Item;
+using Game.Common.Location;
+using Game.Common.Location.Structs;
+using Game.Creatures.Events;
+using Game.Items.Items.UsableItems;
+using Game.Tests.Helpers;
+using Game.Tests.Helpers.Map;
+using Game.Tests.Helpers.Player;
+using Game.World.Models.Tiles;
 using Xunit;
 
-namespace NeoServer.Game.Items.Tests.Items;
+namespace Game.Items.Tests.Items;
 
 public class FloorChangerUsableItemTests
 {

@@ -1,13 +1,13 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Services;
-using NeoServer.Game.Common.Creatures.Players;
-using NeoServer.Game.Common.Helpers;
-using NeoServer.Game.Systems.SafeTrade.Request;
-using NeoServer.Game.Systems.SafeTrade.Trackers;
-using NeoServer.Game.Systems.SafeTrade.Validations;
+﻿using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Services;
+using Game.Common.Creatures.Players;
+using Game.Common.Helpers;
+using Game.Systems.SafeTrade.Request;
+using Game.Systems.SafeTrade.Trackers;
+using Game.Systems.SafeTrade.Validations;
 
-namespace NeoServer.Game.Systems.SafeTrade.Operations;
+namespace Game.Systems.SafeTrade.Operations;
 
 /// <summary>
 ///     A class that allows players to exchange items with each other in a game.

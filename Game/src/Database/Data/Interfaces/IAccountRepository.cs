@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
-using NeoServer.Data.Entities;
+using Data.Entities;
 
-namespace NeoServer.Data.Interfaces;
+namespace Data.Interfaces;
 
 public interface IAccountRepository : IBaseRepositoryNeo<AccountEntity>
 {

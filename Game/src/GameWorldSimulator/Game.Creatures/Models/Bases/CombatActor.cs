@@ -1,25 +1,25 @@
 ﻿using System.Collections.Generic;
-using NeoServer.Game.Combat.Validation;
-using NeoServer.Game.Common;
-using NeoServer.Game.Common.Combat;
-using NeoServer.Game.Common.Combat.Structs;
-using NeoServer.Game.Common.Contracts.Combat.Attacks;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types.Usable;
-using NeoServer.Game.Common.Contracts.Spells;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Game.Common.Contracts.World.Tiles;
-using NeoServer.Game.Common.Creatures;
-using NeoServer.Game.Common.Helpers;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Common.Location;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Common.Results;
-using NeoServer.Game.Common.Services;
-using NeoServer.Game.Common.Texts;
+using Game.Combat.Validation;
+using Game.Common;
+using Game.Common.Combat;
+using Game.Common.Combat.Structs;
+using Game.Common.Contracts.Combat.Attacks;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types.Usable;
+using Game.Common.Contracts.Spells;
+using Game.Common.Contracts.World;
+using Game.Common.Contracts.World.Tiles;
+using Game.Common.Creatures;
+using Game.Common.Helpers;
+using Game.Common.Item;
+using Game.Common.Location;
+using Game.Common.Location.Structs;
+using Game.Common.Results;
+using Game.Common.Services;
+using Game.Common.Texts;
 
-namespace NeoServer.Game.Creatures.Models.Bases;
+namespace Game.Creatures.Models.Bases;
 
 public abstract class CombatActor : WalkableCreature, ICombatActor
 {

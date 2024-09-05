@@ -1,8 +1,8 @@
 ﻿using System.Linq;
-using NeoServer.Game.Common.Creatures;
-using NeoServer.Game.Common.Helpers;
+using Game.Common.Creatures;
+using Game.Common.Helpers;
 
-namespace NeoServer.Game.Creatures.Monster.Actions;
+namespace Game.Creatures.Monster.Actions;
 
 internal static class MonsterYell
 {

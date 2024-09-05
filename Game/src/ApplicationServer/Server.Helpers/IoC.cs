@@ -1,6 +1,6 @@
 ﻿using Autofac;
 
-namespace NeoServer.Server.Helpers;
+namespace Server.Helpers;
 
 public static class IoC
 {

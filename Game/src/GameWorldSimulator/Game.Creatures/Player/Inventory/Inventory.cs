@@ -1,17 +1,17 @@
 ﻿using System.Collections.Generic;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.DataStores;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types;
-using NeoServer.Game.Common.Contracts.Items.Types.Body;
-using NeoServer.Game.Common.Contracts.Items.Types.Containers;
-using NeoServer.Game.Common.Creatures.Players;
-using NeoServer.Game.Common.Results;
-using NeoServer.Game.Creatures.Player.Inventory.Calculations;
-using NeoServer.Game.Creatures.Player.Inventory.Operations;
-using NeoServer.Game.Creatures.Player.Inventory.Rules;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.DataStores;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types;
+using Game.Common.Contracts.Items.Types.Body;
+using Game.Common.Contracts.Items.Types.Containers;
+using Game.Common.Creatures.Players;
+using Game.Common.Results;
+using Game.Creatures.Player.Inventory.Calculations;
+using Game.Creatures.Player.Inventory.Operations;
+using Game.Creatures.Player.Inventory.Rules;
 
-namespace NeoServer.Game.Creatures.Player.Inventory;
+namespace Game.Creatures.Player.Inventory;
 
 public class Inventory : IInventory
 {

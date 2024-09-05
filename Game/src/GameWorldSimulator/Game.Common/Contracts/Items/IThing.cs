@@ -1,9 +1,9 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Inspection;
-using NeoServer.Game.Common.Contracts.Items.Types.Usable;
-using NeoServer.Game.Common.Location;
+﻿using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Inspection;
+using Game.Common.Contracts.Items.Types.Usable;
+using Game.Common.Location;
 
-namespace NeoServer.Game.Common.Contracts.Items;
+namespace Game.Common.Contracts.Items;
 
 public interface IThing : IUsable
 {

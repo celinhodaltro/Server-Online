@@ -1,6 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace NeoServer.Game.Common.Location.Structs;
+namespace Game.Common.Location.Structs;
 
 [StructLayout(LayoutKind.Auto)]
 public struct FindPathParams

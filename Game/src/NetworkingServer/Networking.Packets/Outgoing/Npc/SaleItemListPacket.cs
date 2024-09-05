@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.DataStores;
-using NeoServer.Server.Common.Contracts.Network;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.DataStores;
+using Server.Common.Contracts.Network;
 
-namespace NeoServer.Networking.Packets.Outgoing.Npc;
+namespace Networking.Packets.Outgoing.Npc;
 
 public class SaleItemListPacket : OutgoingPacket
 {

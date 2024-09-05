@@ -1,14 +1,14 @@
 ﻿using System;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.World.Tiles;
-using NeoServer.Game.Common.Location;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Tests.Helpers;
-using NeoServer.Game.Tests.Helpers.Player;
-using NeoServer.Game.World.Models.Tiles;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.World.Tiles;
+using Game.Common.Location;
+using Game.Common.Location.Structs;
+using Game.Tests.Helpers;
+using Game.Tests.Helpers.Player;
+using Game.World.Models.Tiles;
 using Xunit;
 
-namespace NeoServer.Game.Items.Tests;
+namespace Game.Items.Tests;
 
 public class PickupableContainerTest
 {

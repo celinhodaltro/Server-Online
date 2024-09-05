@@ -1,10 +1,10 @@
 ﻿using System.Linq;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Game.Common.Location;
-using NeoServer.Server.Common.Contracts.Network;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.World;
+using Game.Common.Location;
+using Server.Common.Contracts.Network;
 
-namespace NeoServer.Networking.Packets.Outgoing.Map;
+namespace Networking.Packets.Outgoing.Map;
 
 public class MapDescriptionPacket : OutgoingPacket
 {

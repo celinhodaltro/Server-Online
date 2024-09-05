@@ -2,10 +2,10 @@
 using System.IO;
 using Autofac;
 using Microsoft.Extensions.Configuration;
-using NeoServer.Game.Common;
-using NeoServer.Server.Configurations;
+using Game.Common;
+using Server.Configurations;
 
-namespace NeoServer.Server.Standalone.IoC.Modules;
+namespace Server.Standalone.IoC.Modules;
 
 public static class ConfigurationInjection
 {

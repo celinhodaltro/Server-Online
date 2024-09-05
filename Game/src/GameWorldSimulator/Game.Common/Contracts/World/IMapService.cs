@@ -1,8 +1,8 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items.Types;
-using NeoServer.Game.Common.Contracts.World.Tiles;
+﻿using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items.Types;
+using Game.Common.Contracts.World.Tiles;
 
-namespace NeoServer.Game.Common.Contracts.World;
+namespace Game.Common.Contracts.World;
 
 public interface IMapService
 {

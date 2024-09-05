@@ -1,23 +1,23 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using NeoServer.Game.Common;
-using NeoServer.Game.Common.Combat.Structs;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Game.Common.Contracts.World.Tiles;
-using NeoServer.Game.Common.Location;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Common.Results;
-using NeoServer.Game.Common.Services;
-using NeoServer.Game.Common.Texts;
-using NeoServer.Game.World.Algorithms;
-using NeoServer.Game.World.Models;
-using NeoServer.Game.World.Models.Tiles;
+using Game.Common;
+using Game.Common.Combat.Structs;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types;
+using Game.Common.Contracts.World;
+using Game.Common.Contracts.World.Tiles;
+using Game.Common.Location;
+using Game.Common.Location.Structs;
+using Game.Common.Results;
+using Game.Common.Services;
+using Game.Common.Texts;
+using Game.World.Algorithms;
+using Game.World.Models;
+using Game.World.Models.Tiles;
 
-namespace NeoServer.Game.World.Map;
+namespace Game.World.Map;
 
 public class Map : IMap
 {

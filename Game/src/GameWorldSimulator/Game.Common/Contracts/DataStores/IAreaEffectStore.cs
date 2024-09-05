@@ -1,7 +1,7 @@
 ﻿using System.Reflection;
-using NeoServer.Game.Common.Location;
+using Game.Common.Location;
 
-namespace NeoServer.Game.Common.Contracts.DataStores;
+namespace Game.Common.Contracts.DataStores;
 
 public interface IAreaEffectStore
 {

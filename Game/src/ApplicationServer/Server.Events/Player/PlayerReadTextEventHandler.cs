@@ -1,11 +1,11 @@
-﻿using NeoServer.Data.InMemory.DataStores;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items.Types;
-using NeoServer.Game.Common.Helpers;
-using NeoServer.Networking.Packets.Outgoing.Window;
-using NeoServer.Server.Common.Contracts;
+﻿using Data.InMemory;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items.Types;
+using Game.Common.Helpers;
+using Networking.Packets.Outgoing.Window;
+using Server.Common.Contracts;
 
-namespace NeoServer.Server.Events.Player;
+namespace Server.Events.Player;
 
 public class PlayerReadTextEventHandler : IEventHandler
 {

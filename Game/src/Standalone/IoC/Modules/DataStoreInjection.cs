@@ -1,8 +1,8 @@
 ﻿using Autofac;
-using NeoServer.Data.InMemory.DataStores;
-using NeoServer.Game.Common.Contracts.DataStores;
+using Data.InMemory;
+using Game.Common.Contracts.DataStores;
 
-namespace NeoServer.Server.Standalone.IoC.Modules;
+namespace Server.Standalone.IoC.Modules;
 
 public static class DataStoreInjection
 {

@@ -1,15 +1,15 @@
 ﻿using System;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Inspection;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types;
-using NeoServer.Game.Common.Contracts.Items.Types.Containers;
-using NeoServer.Game.Common.Contracts.World.Tiles;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Common.Location;
-using NeoServer.Game.Common.Location.Structs;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Inspection;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types;
+using Game.Common.Contracts.Items.Types.Containers;
+using Game.Common.Contracts.World.Tiles;
+using Game.Common.Item;
+using Game.Common.Location;
+using Game.Common.Location.Structs;
 
-namespace NeoServer.Game.World.Models.Tiles;
+namespace Game.World.Models.Tiles;
 
 public abstract class BaseTile : ITile
 {

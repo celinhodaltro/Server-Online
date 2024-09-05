@@ -1,9 +1,9 @@
-﻿using NeoServer.Game.Common;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Creatures;
-using NeoServer.Game.Common.Helpers;
+﻿using Game.Common;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Creatures;
+using Game.Common.Helpers;
 
-namespace NeoServer.Game.Combat.Spells;
+namespace Game.Combat.Spells;
 
 public class HealSpell : Spell<HealSpell>
 {

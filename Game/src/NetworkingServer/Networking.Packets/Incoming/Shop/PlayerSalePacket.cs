@@ -1,6 +1,6 @@
-﻿using NeoServer.Server.Common.Contracts.Network;
+﻿using Server.Common.Contracts.Network;
 
-namespace NeoServer.Networking.Packets.Incoming.Shop;
+namespace Networking.Packets.Incoming.Shop;
 
 public class PlayerSalePacket : IncomingPacket
 {

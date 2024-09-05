@@ -1,17 +1,17 @@
 ﻿using System.Threading.Tasks;
-using NeoServer.Data.Entities;
-using NeoServer.Data.Interfaces;
-using NeoServer.Game.Common.Results;
-using NeoServer.Networking.Packets.Incoming;
-using NeoServer.Networking.Packets.Outgoing;
-using NeoServer.Server.Commands.Player;
-using NeoServer.Server.Common.Contracts;
-using NeoServer.Server.Common.Contracts.Network;
-using NeoServer.Server.Common.Enums;
-using NeoServer.Server.Configurations;
-using NeoServer.Server.Tasks;
+using Data.Entities;
+using Data.Interfaces;
+using Game.Common.Results;
+using Networking.Packets.Incoming;
+using Networking.Packets.Outgoing;
+using Server.Commands.Player;
+using Server.Common.Contracts;
+using Server.Common.Contracts.Network;
+using Server.Common.Enums;
+using Server.Configurations;
+using Server.Tasks;
 
-namespace NeoServer.Networking.Handlers.LogIn;
+namespace Networking.Handlers.LogIn;
 
 public class PlayerLogInHandler : PacketHandler
 {

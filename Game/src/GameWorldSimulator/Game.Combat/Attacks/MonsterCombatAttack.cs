@@ -1,10 +1,10 @@
 ﻿using System;
-using NeoServer.Game.Common.Combat.Structs;
-using NeoServer.Game.Common.Contracts.Combat.Attacks;
-using NeoServer.Game.Common.Creatures.Structs;
-using NeoServer.Game.Common.Item;
+using Game.Common.Combat.Structs;
+using Game.Common.Contracts.Combat.Attacks;
+using Game.Common.Creatures.Structs;
+using Game.Common.Item;
 
-namespace NeoServer.Game.Combat.Attacks;
+namespace Game.Combat.Attacks;
 
 public struct MonsterCombatAttack : IMonsterCombatAttack
 {

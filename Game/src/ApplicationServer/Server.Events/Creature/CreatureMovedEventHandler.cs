@@ -1,18 +1,18 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Game.Common.Contracts.World.Tiles;
-using NeoServer.Game.Common.Creatures;
-using NeoServer.Game.Common.Helpers;
-using NeoServer.Game.Common.Location;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Networking.Packets.Outgoing.Creature;
-using NeoServer.Networking.Packets.Outgoing.Effect;
-using NeoServer.Networking.Packets.Outgoing.Item;
-using NeoServer.Networking.Packets.Outgoing.Map;
-using NeoServer.Server.Common.Contracts;
-using NeoServer.Server.Common.Contracts.Network;
+﻿using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.World;
+using Game.Common.Contracts.World.Tiles;
+using Game.Common.Creatures;
+using Game.Common.Helpers;
+using Game.Common.Location;
+using Game.Common.Location.Structs;
+using Networking.Packets.Outgoing.Creature;
+using Networking.Packets.Outgoing.Effect;
+using Networking.Packets.Outgoing.Item;
+using Networking.Packets.Outgoing.Map;
+using Server.Common.Contracts;
+using Server.Common.Contracts.Network;
 
-namespace NeoServer.Server.Events.Creature;
+namespace Server.Events.Creature;
 
 public class CreatureMovedEventHandler
 {

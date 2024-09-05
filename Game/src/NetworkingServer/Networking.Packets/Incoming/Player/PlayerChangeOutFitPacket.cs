@@ -1,8 +1,8 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Creatures.Player;
-using NeoServer.Server.Common.Contracts.Network;
+﻿using Game.Common.Contracts.Creatures;
+using Game.Creatures.Player;
+using Server.Common.Contracts.Network;
 
-namespace NeoServer.Networking.Packets.Incoming.Player;
+namespace Networking.Packets.Incoming.Player;
 
 public class PlayerChangeOutFitPacket : IncomingPacket
 {

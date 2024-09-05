@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types.Runes;
-using NeoServer.Game.Common.Contracts.Items.Types.Usable;
-using NeoServer.Game.Common.Contracts.World.Tiles;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Common.Location.Structs;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types.Runes;
+using Game.Common.Contracts.Items.Types.Usable;
+using Game.Common.Contracts.World.Tiles;
+using Game.Common.Item;
+using Game.Common.Location.Structs;
 
-namespace NeoServer.Game.Items.Items.UsableItems.Runes;
+namespace Game.Items.Items.UsableItems.Runes;
 
 public class FieldRune : Rune, IFieldRune
 {

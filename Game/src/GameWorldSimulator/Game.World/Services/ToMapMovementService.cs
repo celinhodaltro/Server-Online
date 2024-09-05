@@ -1,15 +1,15 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Services;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Game.Common.Contracts.World.Tiles;
-using NeoServer.Game.Common.Creatures.Structs;
-using NeoServer.Game.Common.Location;
-using NeoServer.Game.Common.Services;
-using NeoServer.Game.Common.Texts;
-using NeoServer.Game.World.Algorithms;
-using NeoServer.Game.World.Models.Tiles;
+﻿using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Services;
+using Game.Common.Contracts.World;
+using Game.Common.Contracts.World.Tiles;
+using Game.Common.Creatures.Structs;
+using Game.Common.Location;
+using Game.Common.Services;
+using Game.Common.Texts;
+using Game.World.Algorithms;
+using Game.World.Models.Tiles;
 
-namespace NeoServer.Game.World.Services;
+namespace Game.World.Services;
 
 public class ToMapMovementService : IToMapMovementService
 {

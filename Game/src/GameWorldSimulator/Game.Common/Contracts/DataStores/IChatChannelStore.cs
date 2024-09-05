@@ -1,6 +1,6 @@
-﻿using NeoServer.Game.Common.Contracts.Chats;
+﻿using Game.Common.Contracts.Chats;
 
-namespace NeoServer.Game.Common.Contracts.DataStores;
+namespace Game.Common.Contracts.DataStores;
 
 public interface IChatChannelStore : IDataStore<ushort, IChatChannel>
 {

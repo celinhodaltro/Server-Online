@@ -1,6 +1,6 @@
-﻿using NeoServer.Game.Common.Creatures;
+﻿using Game.Common.Creatures;
 
-namespace NeoServer.Game.Common.Effects.Parsers;
+namespace Game.Common.Effects.Parsers;
 
 public class EffectParser
 {

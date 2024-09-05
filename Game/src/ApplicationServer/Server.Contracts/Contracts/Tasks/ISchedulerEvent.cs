@@ -1,4 +1,4 @@
-namespace NeoServer.Server.Common.Contracts.Tasks;
+namespace Server.Common.Contracts.Tasks;
 
 public interface ISchedulerEvent : IEvent
 {

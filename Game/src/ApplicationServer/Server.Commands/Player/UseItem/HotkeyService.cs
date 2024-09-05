@@ -1,10 +1,10 @@
 ﻿using System;
 using Microsoft.Extensions.Caching.Memory;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types.Containers;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types.Containers;
 
-namespace NeoServer.Server.Commands.Player.UseItem;
+namespace Server.Commands.Player.UseItem;
 
 public class HotkeyService
 {

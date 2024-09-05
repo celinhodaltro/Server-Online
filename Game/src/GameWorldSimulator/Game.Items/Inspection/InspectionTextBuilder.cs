@@ -1,13 +1,13 @@
 ﻿using System.Globalization;
 using System.Text;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.DataStores;
-using NeoServer.Game.Common.Contracts.Inspection;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types;
-using NeoServer.Game.Common.Helpers;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.DataStores;
+using Game.Common.Contracts.Inspection;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types;
+using Game.Common.Helpers;
 
-namespace NeoServer.Game.Items.Inspection;
+namespace Game.Items.Inspection;
 
 public class InspectionTextBuilder : IInspectionTextBuilder
 {

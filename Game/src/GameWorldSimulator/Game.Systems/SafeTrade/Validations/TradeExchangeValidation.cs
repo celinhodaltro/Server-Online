@@ -1,10 +1,10 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Creatures.Players;
-using NeoServer.Game.Common.Services;
-using NeoServer.Game.Systems.SafeTrade.Operations;
+﻿using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items;
+using Game.Common.Creatures.Players;
+using Game.Common.Services;
+using Game.Systems.SafeTrade.Operations;
 
-namespace NeoServer.Game.Systems.SafeTrade.Validations;
+namespace Game.Systems.SafeTrade.Validations;
 
 internal static class TradeExchangeValidation
 {

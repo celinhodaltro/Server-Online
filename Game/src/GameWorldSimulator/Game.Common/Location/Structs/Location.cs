@@ -1,8 +1,8 @@
 using System;
 using System.Buffers;
-using NeoServer.Game.Common.Creatures.Players;
+using Game.Common.Creatures.Players;
 
-namespace NeoServer.Game.Common.Location.Structs;
+namespace Game.Common.Location.Structs;
 
 public struct Location : IEquatable<Location>, IConvertible
 {

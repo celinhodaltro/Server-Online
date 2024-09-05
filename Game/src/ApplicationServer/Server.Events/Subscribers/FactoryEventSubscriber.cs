@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using NeoServer.Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Creatures;
 
-namespace NeoServer.Server.Events.Subscribers;
+namespace Server.Events.Subscribers;
 
 public class FactoryEventSubscriber
 {

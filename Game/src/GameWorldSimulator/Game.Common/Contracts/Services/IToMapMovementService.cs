@@ -1,7 +1,7 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Creatures.Structs;
+﻿using Game.Common.Contracts.Creatures;
+using Game.Common.Creatures.Structs;
 
-namespace NeoServer.Game.Common.Contracts.Services;
+namespace Game.Common.Contracts.Services;
 
 public interface IToMapMovementService
 {

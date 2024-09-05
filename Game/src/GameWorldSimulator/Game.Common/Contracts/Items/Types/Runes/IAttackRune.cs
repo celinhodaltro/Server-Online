@@ -1,8 +1,8 @@
-﻿using NeoServer.Game.Common.Contracts.Items.Types.Usable;
-using NeoServer.Game.Common.Creatures;
-using NeoServer.Game.Common.Item;
+﻿using Game.Common.Contracts.Items.Types.Usable;
+using Game.Common.Creatures;
+using Game.Common.Item;
 
-namespace NeoServer.Game.Common.Contracts.Items.Types.Runes;
+namespace Game.Common.Contracts.Items.Types.Runes;
 
 public interface IAttackRune : IUsableAttackOnCreature, IUsableAttackOnTile, IRune
 {

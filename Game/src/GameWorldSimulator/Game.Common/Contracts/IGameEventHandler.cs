@@ -1,4 +1,4 @@
-﻿namespace NeoServer.Game.Common.Contracts;
+﻿namespace Game.Common.Contracts;
 
 public interface IGameEventHandler
 {

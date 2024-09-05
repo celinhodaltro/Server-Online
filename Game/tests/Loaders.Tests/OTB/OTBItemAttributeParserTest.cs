@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
-using NeoServer.Loaders.OTB.Enums;
-using NeoServer.Loaders.OTB.Parsers;
+using Loader.OTB.Enums;
+using Loader.OTB.Parsers;
 using Xunit;
 
-namespace NeoServer.Loaders.Tests.OTB;
+namespace Loader.Tests.OTB;
 
 public class OTBItemAttributeParserTest
 {

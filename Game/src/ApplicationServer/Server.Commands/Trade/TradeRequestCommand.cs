@@ -1,14 +1,14 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Creatures.Players;
-using NeoServer.Game.Common.Helpers;
-using NeoServer.Game.Common.Location;
-using NeoServer.Game.Systems.SafeTrade;
-using NeoServer.Networking.Packets.Incoming.Trade;
-using NeoServer.Server.Common.Contracts;
-using NeoServer.Server.Common.Contracts.Commands;
+﻿using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items;
+using Game.Common.Creatures.Players;
+using Game.Common.Helpers;
+using Game.Common.Location;
+using Game.Systems.SafeTrade;
+using Networking.Packets.Incoming.Trade;
+using Server.Common.Contracts;
+using Server.Common.Contracts.Commands;
 
-namespace NeoServer.Server.Commands.Trade;
+namespace Server.Commands.Trade;
 
 public class TradeRequestCommand : ICommand
 {

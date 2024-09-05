@@ -3,10 +3,10 @@ using System.Threading;
 using System.Threading.Channels;
 using System.Threading.Tasks;
 using BenchmarkDotNet.Attributes;
-using NeoServer.Server.Common.Contracts.Tasks;
-using NeoServer.Server.Tasks;
+using Server.Common.Contracts.Tasks;
+using Server.Tasks;
 
-namespace NeoServer.Benchmarks.Tasks;
+namespace Benchmarks.Tasks;
 
 [MemoryDiagnoser]
 public class SchedulerQueueBenchmark

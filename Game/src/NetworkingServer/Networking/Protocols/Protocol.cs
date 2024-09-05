@@ -1,6 +1,6 @@
-﻿using NeoServer.Server.Common.Contracts.Network;
+﻿using Server.Common.Contracts.Network;
 
-namespace NeoServer.Networking.Protocols;
+namespace Networking.Protocols;
 
 public abstract class Protocol : IProtocol
 {

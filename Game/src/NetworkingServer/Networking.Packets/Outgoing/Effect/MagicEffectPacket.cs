@@ -1,8 +1,8 @@
-﻿using NeoServer.Game.Common.Creatures;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Server.Common.Contracts.Network;
+﻿using Game.Common.Creatures;
+using Game.Common.Location.Structs;
+using Server.Common.Contracts.Network;
 
-namespace NeoServer.Networking.Packets.Outgoing.Effect;
+namespace Networking.Packets.Outgoing.Effect;
 
 public class MagicEffectPacket : OutgoingPacket
 {

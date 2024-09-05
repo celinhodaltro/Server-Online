@@ -1,7 +1,7 @@
-﻿using NeoServer.Game.Common;
-using NeoServer.Game.Common.Texts;
+﻿using Game.Common;
+using Game.Common.Texts;
 
-namespace NeoServer.Networking.Packets.Outgoing;
+namespace Networking.Packets.Outgoing;
 
 public static class TextMessageOutgoingParser
 {

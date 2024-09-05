@@ -3,25 +3,25 @@ using System.Buffers;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
-using NeoServer.Game.Combat;
-using NeoServer.Game.Common;
-using NeoServer.Game.Common.Combat.Structs;
-using NeoServer.Game.Common.Contracts.Combat;
-using NeoServer.Game.Common.Contracts.Combat.Attacks;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Inspection;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Services;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Game.Common.Creatures;
-using NeoServer.Game.Common.Helpers;
-using NeoServer.Game.Common.Location;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Common.Results;
-using NeoServer.Game.Creatures.Monster.Actions;
-using NeoServer.Game.Creatures.Monster.Combat;
+using Game.Combat;
+using Game.Common;
+using Game.Common.Combat.Structs;
+using Game.Common.Contracts.Combat;
+using Game.Common.Contracts.Combat.Attacks;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Inspection;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Services;
+using Game.Common.Contracts.World;
+using Game.Common.Creatures;
+using Game.Common.Helpers;
+using Game.Common.Location;
+using Game.Common.Location.Structs;
+using Game.Common.Results;
+using Game.Creatures.Monster.Actions;
+using Game.Creatures.Monster.Combat;
 
-namespace NeoServer.Game.Creatures.Monster;
+namespace Game.Creatures.Monster;
 
 public class Monster : WalkableMonster, IMonster
 {

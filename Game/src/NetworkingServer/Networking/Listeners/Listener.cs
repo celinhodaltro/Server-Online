@@ -3,12 +3,12 @@ using System.Net;
 using System.Net.Sockets;
 using System.Threading;
 using System.Threading.Tasks;
-using NeoServer.Networking.Packets.Connection;
-using NeoServer.Networking.Protocols;
-using NeoServer.Server.Common.Contracts.Network;
+using Networking.Packets.Connection;
+using Networking.Protocols;
+using Server.Common.Contracts.Network;
 using Serilog;
 
-namespace NeoServer.Networking.Listeners;
+namespace Networking.Listeners;
 
 public abstract class Listener : TcpListener, IListener
 {

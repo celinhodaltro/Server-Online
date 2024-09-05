@@ -1,10 +1,10 @@
-﻿using NeoServer.Game.Common.Chats;
-using NeoServer.Game.Common.Contracts;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Game.Creatures.Sound;
+﻿using Game.Common.Chats;
+using Game.Common.Contracts;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.World;
+using Game.Creatures.Sound;
 
-namespace NeoServer.Game.Creatures.Events;
+namespace Game.Creatures.Events;
 
 public class CreatureSayEventHandler : IGameEventHandler
 {

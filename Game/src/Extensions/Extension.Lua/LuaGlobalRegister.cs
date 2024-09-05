@@ -1,20 +1,20 @@
 ﻿using System;
 using System.IO;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Services;
-using NeoServer.Game.Common.Helpers;
-using NeoServer.Game.Common.Services;
-using NeoServer.Scripts.Lua.EventRegister;
-using NeoServer.Scripts.Lua.Functions;
-using NeoServer.Scripts.Lua.Functions.Libs;
-using NeoServer.Server.Common.Contracts;
-using NeoServer.Server.Configurations;
-using NeoServer.Server.Helpers.Extensions;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Services;
+using Game.Common.Helpers;
+using Game.Common.Services;
+using Extension.Lua.EventRegister;
+using Extension.Lua.Functions;
+using Extension.Lua.Functions.Libs;
+using Server.Common.Contracts;
+using Server.Configurations;
+using Server.Helpers.Extensions;
 using NLua;
 using Serilog;
 
-namespace NeoServer.Scripts.Lua;
+namespace Extension.Lua;
 
 public class LuaGlobalRegister
 {

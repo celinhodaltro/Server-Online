@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using NeoServer.Game.Common;
-using NeoServer.Game.Common.Contracts.Chats;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Helpers;
-using NeoServer.Game.Common.Results;
+using Game.Common;
+using Game.Common.Contracts.Chats;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Helpers;
+using Game.Common.Results;
 
-namespace NeoServer.Game.Creatures.Party;
+namespace Game.Creatures.Party;
 
 public class Party : IParty
 {

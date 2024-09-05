@@ -1,4 +1,4 @@
-﻿namespace NeoServer.Game.Common.Creatures;
+﻿namespace Game.Common.Creatures;
 
 public enum GuildEmblem : byte
 {

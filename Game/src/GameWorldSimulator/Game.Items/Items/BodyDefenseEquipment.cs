@@ -1,13 +1,13 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types.Body;
-using NeoServer.Game.Common.Creatures.Players;
-using NeoServer.Game.Common.Helpers;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Items.Bases;
+﻿using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types.Body;
+using Game.Common.Creatures.Players;
+using Game.Common.Helpers;
+using Game.Common.Item;
+using Game.Common.Location.Structs;
+using Game.Items.Bases;
 
-namespace NeoServer.Game.Items.Items;
+namespace Game.Items.Items;
 
 public class BodyDefenseEquipment : Equipment, IDefenseEquipment
 {

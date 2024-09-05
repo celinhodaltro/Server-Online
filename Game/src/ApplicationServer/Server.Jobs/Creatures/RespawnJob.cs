@@ -1,7 +1,7 @@
 ﻿using System;
-using NeoServer.Game.World.Models.Spawns;
+using Game.World.Models.Spawns;
 
-namespace NeoServer.Server.Jobs.Creatures;
+namespace Server.Jobs.Creatures;
 
 public static class RespawnJob
 {

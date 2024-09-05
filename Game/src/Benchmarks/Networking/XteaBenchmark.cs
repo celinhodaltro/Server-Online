@@ -4,10 +4,10 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Engines;
-using NeoServer.Networking.Packets.Messages;
-using NeoServer.Server.Common.Contracts.Network;
+using Networking.Packets.Messages;
+using Server.Common.Contracts.Network;
 
-namespace NeoServer.Benchmarks.Networking;
+namespace Benchmarks.Networking;
 
 [SimpleJob(RunStrategy.ColdStart, 30)]
 public class XteaBenchmark

@@ -28,9 +28,9 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\..\src\GameWorldSimulator\NeoServer.Game.Creatures\NeoServer.Game.Creatures.csproj"/>
-        <ProjectReference Include="..\..\src\NetworkingServer\NeoServer.Networking.Packets\NeoServer.Networking.Packets.csproj"/>
-        <ProjectReference Include="..\..\src\ApplicationServer\NeoServer.Server\NeoServer.Server.csproj"/>
+        <ProjectReference Include="..\..\src\GameWorldSimulator\Game.Creatures\Game.Creatures.csproj"/>
+        <ProjectReference Include="..\..\src\NetworkingServer\Networking.Packets\Networking.Packets.csproj"/>
+        <ProjectReference Include="..\..\src\ApplicationServer\Server\Server.csproj"/>
     </ItemGroup>
 
 </Project>

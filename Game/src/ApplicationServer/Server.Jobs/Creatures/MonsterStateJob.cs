@@ -1,8 +1,8 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Services;
-using NeoServer.Game.Creatures.Monster.Managers;
+﻿using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Services;
+using Game.Creatures.Monster.Managers;
 
-namespace NeoServer.Server.Jobs.Creatures;
+namespace Server.Jobs.Creatures;
 
 public static class MonsterStateJob
 {

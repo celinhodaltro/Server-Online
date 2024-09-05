@@ -1,16 +1,16 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Game.Common.Creatures;
-using NeoServer.Game.Common.Helpers;
-using NeoServer.Game.Common.Parsers;
-using NeoServer.Networking.Packets.Outgoing.Creature;
-using NeoServer.Networking.Packets.Outgoing.Effect;
-using NeoServer.Networking.Packets.Outgoing.Map;
-using NeoServer.Networking.Packets.Outgoing.Player;
-using NeoServer.Server.Common.Contracts;
-using NeoServer.Server.Common.Contracts.Network;
+﻿using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.World;
+using Game.Common.Creatures;
+using Game.Common.Helpers;
+using Game.Common.Parsers;
+using Networking.Packets.Outgoing.Creature;
+using Networking.Packets.Outgoing.Effect;
+using Networking.Packets.Outgoing.Map;
+using Networking.Packets.Outgoing.Player;
+using Server.Common.Contracts;
+using Server.Common.Contracts.Network;
 
-namespace NeoServer.Server.Events.Player;
+namespace Server.Events.Player;
 
 public class PlayerSelfAppearOnMapEventHandler : IEventHandler
 {

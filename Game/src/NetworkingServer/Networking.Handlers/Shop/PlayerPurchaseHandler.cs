@@ -1,12 +1,12 @@
-﻿using NeoServer.Data.InMemory.DataStores;
-using NeoServer.Game.Common.Contracts.DataStores;
-using NeoServer.Game.Common.Contracts.Services;
-using NeoServer.Networking.Packets.Incoming.Shop;
-using NeoServer.Server.Common.Contracts;
-using NeoServer.Server.Common.Contracts.Network;
-using NeoServer.Server.Tasks;
+﻿using Data.InMemory;
+using Game.Common.Contracts.DataStores;
+using Game.Common.Contracts.Services;
+using Networking.Packets.Incoming.Shop;
+using Server.Common.Contracts;
+using Server.Common.Contracts.Network;
+using Server.Tasks;
 
-namespace NeoServer.Networking.Handlers.Shop;
+namespace Networking.Handlers.Shop;
 
 public class PlayerPurchaseHandler : PacketHandler
 {

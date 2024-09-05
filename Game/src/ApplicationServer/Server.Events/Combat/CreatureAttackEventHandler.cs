@@ -1,16 +1,16 @@
 ﻿using System.Linq;
-using NeoServer.Game.Common.Combat.Structs;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Creatures;
-using NeoServer.Game.Common.Effects.Parsers;
-using NeoServer.Game.Common.Helpers;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Networking.Packets.Outgoing.Effect;
-using NeoServer.Server.Common.Contracts;
-using NeoServer.Server.Common.Contracts.Network;
+using Game.Common.Combat.Structs;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Creatures;
+using Game.Common.Effects.Parsers;
+using Game.Common.Helpers;
+using Game.Common.Item;
+using Game.Common.Location.Structs;
+using Networking.Packets.Outgoing.Effect;
+using Server.Common.Contracts;
+using Server.Common.Contracts.Network;
 
-namespace NeoServer.Server.Events.Combat;
+namespace Server.Events.Combat;
 
 public class CreatureAttackEventHandler
 {

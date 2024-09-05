@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using NeoServer.Game.Common.Location;
-using NeoServer.Game.Common.Location.Structs;
+using Game.Common.Location;
+using Game.Common.Location.Structs;
 
-namespace NeoServer.Game.World.Algorithms.AStar;
+namespace Game.World.Algorithms.AStar;
 
 internal static class AStarDirections
 {

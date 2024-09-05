@@ -1,11 +1,11 @@
-﻿using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Items;
-using NeoServer.Game.Items.Bases;
-using NeoServer.Networking.Packets.Messages;
-using NeoServer.Networking.Packets.Outgoing.Item;
+﻿using Game.Common.Location.Structs;
+using Game.Items;
+using Game.Items.Bases;
+using Networking.Packets.Messages;
+using Networking.Packets.Outgoing.Item;
 using Xunit;
 
-namespace NeoServer.Networking.Tests.Packets.Outgoing;
+namespace Networking.Tests.Packets.Outgoing;
 
 public class RemoveTileItemPacketTest
 {

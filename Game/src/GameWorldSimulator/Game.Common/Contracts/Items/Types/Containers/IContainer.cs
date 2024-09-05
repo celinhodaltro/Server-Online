@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items.Types.Body;
-using NeoServer.Game.Common.Results;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items.Types.Body;
+using Game.Common.Results;
 
-namespace NeoServer.Game.Common.Contracts.Items.Types.Containers;
+namespace Game.Common.Contracts.Items.Types.Containers;
 
 public delegate void RemoveItem(IContainer fromContainer, byte slotIndex, IItem item, byte amountRemoved);
 

@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using NeoServer.Game.Common.Combat.Structs;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Creatures;
-using NeoServer.Game.Common.Creatures.Structs;
-using NeoServer.Game.Common.Effects.Parsers;
-using NeoServer.Game.Common.Helpers;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Common.Parsers;
+using Game.Common.Combat.Structs;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Creatures;
+using Game.Common.Creatures.Structs;
+using Game.Common.Effects.Parsers;
+using Game.Common.Helpers;
+using Game.Common.Item;
+using Game.Common.Parsers;
 
-namespace NeoServer.Game.Combat.Conditions;
+namespace Game.Combat.Conditions;
 
 public class DamageCondition : BaseCondition
 {

@@ -1,27 +1,27 @@
 using System.Collections.Generic;
 using System.Linq;
-using NeoServer.Data.Entities;
-using NeoServer.Loaders.Guilds;
-using NeoServer.Loaders.Interfaces;
-using NeoServer.Server.Common.Contracts;
-using NeoServer.Server.Common.Contracts.Commands;
-using NeoServer.Server.Common.Contracts.Network;
+using Data.Entities;
+using Loader.Guilds;
+using Loader.Interfaces;
+using Server.Common.Contracts;
+using Server.Common.Contracts.Commands;
+using Server.Common.Contracts.Network;
 using Serilog;
 
-namespace NeoServer.Server.Commands.Player;
+namespace Server.Commands.Player;
 
 public class PlayerLogInCommand : ICommand
 {
     private readonly ILogger _logger;
     private readonly IGameServer game;
     private readonly GuildLoader guildLoader;
-    private readonly IEnumerable<IPlayerLoader> playerLoaders;
+    private readonly IEnumerable<IPlayerLoader> playerLoader;
 
-    public PlayerLogInCommand(IGameServer game, IEnumerable<IPlayerLoader> playerLoaders, GuildLoader guildLoader,
+    public PlayerLogInCommand(IGameServer game, IEnumerable<IPlayerLoader> playerLoader, GuildLoader guildLoader,
         ILogger logger)
     {
         this.game = game;
-        this.playerLoaders = playerLoaders;
+        this.playerLoader = playerLoader;
         this.guildLoader = guildLoader;
         _logger = logger;
     }
@@ -34,7 +34,7 @@ public class PlayerLogInCommand : ICommand
 
         if (!game.CreatureManager.TryGetLoggedPlayer((uint)playerRecord.Id, out var player))
         {
-            if (playerLoaders.FirstOrDefault(x => x.IsApplicable(playerRecord)) is not { } playerLoader)
+            if (playerLoader.FirstOrDefault(x => x.IsApplicable(playerRecord)) is not { } playerLoader)
                 return;
 
             guildLoader.Load(playerRecord.GuildMember?.Guild);

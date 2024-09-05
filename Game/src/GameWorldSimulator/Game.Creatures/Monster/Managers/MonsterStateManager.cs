@@ -1,9 +1,9 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Services;
-using NeoServer.Game.Common.Creatures;
-using NeoServer.Game.Common.Helpers;
+﻿using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Services;
+using Game.Common.Creatures;
+using Game.Common.Helpers;
 
-namespace NeoServer.Game.Creatures.Monster.Managers;
+namespace Game.Creatures.Monster.Managers;
 
 public static class MonsterStateManager
 {

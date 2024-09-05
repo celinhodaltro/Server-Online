@@ -1,10 +1,10 @@
 ﻿using Autofac;
-using NeoServer.Server.Jobs.Channels;
-using NeoServer.Server.Jobs.Creatures;
-using NeoServer.Server.Jobs.Items;
-using NeoServer.Server.Jobs.Persistence;
+using Server.Jobs.Channels;
+using Server.Jobs.Creatures;
+using Server.Jobs.Items;
+using Server.Jobs.Persistence;
 
-namespace NeoServer.Server.Standalone.IoC.Modules;
+namespace Server.Standalone.IoC.Modules;
 
 public static class JobInjection
 {

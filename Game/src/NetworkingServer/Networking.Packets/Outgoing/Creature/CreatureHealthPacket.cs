@@ -1,8 +1,8 @@
 ﻿using System;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Server.Common.Contracts.Network;
+using Game.Common.Contracts.Creatures;
+using Server.Common.Contracts.Network;
 
-namespace NeoServer.Networking.Packets.Outgoing.Creature;
+namespace Networking.Packets.Outgoing.Creature;
 
 public class CreatureHealthPacket : OutgoingPacket
 {

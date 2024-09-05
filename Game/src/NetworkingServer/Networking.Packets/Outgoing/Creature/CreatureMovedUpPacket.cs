@@ -1,11 +1,11 @@
 using System.Linq;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Game.Common.Location;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Server.Common.Contracts.Network;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.World;
+using Game.Common.Location;
+using Game.Common.Location.Structs;
+using Server.Common.Contracts.Network;
 
-namespace NeoServer.Networking.Packets.Outgoing.Creature;
+namespace Networking.Packets.Outgoing.Creature;
 
 public class CreatureMovedUpPacket : OutgoingPacket
 {

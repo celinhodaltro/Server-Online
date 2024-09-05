@@ -1,9 +1,9 @@
-﻿using NeoServer.Game.Common.Combat.Structs;
-using NeoServer.Game.Common.Contracts.Combat.Attacks;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Helpers;
+﻿using Game.Common.Combat.Structs;
+using Game.Common.Contracts.Combat.Attacks;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Helpers;
 
-namespace NeoServer.Game.Combat.Attacks;
+namespace Game.Combat.Attacks;
 
 public abstract class CombatAttack : ICombatAttack
 {

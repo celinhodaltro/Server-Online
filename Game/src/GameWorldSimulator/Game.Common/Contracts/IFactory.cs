@@ -1,6 +1,6 @@
-﻿using NeoServer.Game.Common.Contracts.Items;
+﻿using Game.Common.Contracts.Items;
 
-namespace NeoServer.Game.Common.Contracts;
+namespace Game.Common.Contracts;
 
 public interface IFactory
 {

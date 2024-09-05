@@ -1,6 +1,6 @@
-using NeoServer.Game.Common.Location.Structs;
+using Game.Common.Location.Structs;
 
-namespace NeoServer.Game.Common.Contracts.World;
+namespace Game.Common.Contracts.World;
 
 public interface IWaypoint
 {

@@ -1,6 +1,6 @@
-﻿using NeoServer.Server.Common.Contracts.Network;
+﻿using Server.Common.Contracts.Network;
 
-namespace NeoServer.Networking.Packets.Outgoing.Chat;
+namespace Networking.Packets.Outgoing.Chat;
 
 public class PlayerOpenPrivateChannelPacket : OutgoingPacket
 {

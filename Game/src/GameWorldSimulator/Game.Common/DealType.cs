@@ -1,4 +1,4 @@
-﻿namespace NeoServer.Game.Common;
+﻿namespace Game.Common;
 
 public enum DealType
 {

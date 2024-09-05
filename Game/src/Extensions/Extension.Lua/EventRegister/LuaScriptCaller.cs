@@ -1,7 +1,7 @@
 using System.Linq;
-using NeoServer.Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items;
 
-namespace NeoServer.Scripts.Lua.EventRegister;
+namespace Extension.Lua.EventRegister;
 
 /// <summary>
 ///     Utility class for calling Lua scripts with flexible parameters.

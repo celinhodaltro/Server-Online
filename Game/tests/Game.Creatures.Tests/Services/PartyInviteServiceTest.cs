@@ -1,13 +1,13 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using NeoServer.Data.InMemory.DataStores;
-using NeoServer.Game.Chats;
-using NeoServer.Game.Common.Contracts.Chats;
-using NeoServer.Game.Creatures.Services;
-using NeoServer.Game.Tests.Helpers.Player;
+using Data.InMemory;
+using Game.Chats;
+using Game.Common.Contracts.Chats;
+using Game.Creatures.Services;
+using Game.Tests.Helpers.Player;
 using Xunit;
 
-namespace NeoServer.Game.Creatures.Tests.Services;
+namespace Game.Creatures.Tests.Services;
 
 public class PartyInviteServiceTest
 {

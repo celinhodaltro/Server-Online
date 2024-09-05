@@ -1,8 +1,8 @@
-﻿using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Networking.Packets.Messages;
+﻿using Game.Common.Location.Structs;
+using Networking.Packets.Messages;
 using Xunit;
 
-namespace NeoServer.Networking.Tests.Packets;
+namespace Networking.Tests.Packets;
 
 public class NetworkMessageTest
 {

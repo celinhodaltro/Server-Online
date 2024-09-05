@@ -1,7 +1,7 @@
-﻿using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types.Containers;
+﻿using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types.Containers;
 
-namespace NeoServer.Game.Items.Items.Containers.Container.Queries;
+namespace Game.Items.Items.Containers.Container.Queries;
 
 internal static class FindRootParentQuery
 {

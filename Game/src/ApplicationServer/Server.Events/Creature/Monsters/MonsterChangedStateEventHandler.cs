@@ -1,7 +1,7 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Creatures;
+﻿using Game.Common.Contracts.Creatures;
+using Game.Common.Creatures;
 
-namespace NeoServer.Server.Events.Creature.Monsters;
+namespace Server.Events.Creature.Monsters;
 
 public class MonsterChangedStateEventHandler
 {

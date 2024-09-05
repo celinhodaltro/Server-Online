@@ -1,7 +1,7 @@
-﻿using NeoServer.Game.Common.Contracts.Chats;
-using NeoServer.Game.Common.Contracts.Creatures;
+﻿using Game.Common.Contracts.Chats;
+using Game.Common.Contracts.Creatures;
 
-namespace NeoServer.Game.Chats;
+namespace Game.Chats;
 
 public abstract class PersonalChatChannel : ChatChannel, IChatChannel
 {

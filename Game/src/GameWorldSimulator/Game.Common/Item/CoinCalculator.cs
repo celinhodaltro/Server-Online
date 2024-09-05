@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using NeoServer.Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items;
 
-namespace NeoServer.Game.Common.Item;
+namespace Game.Common.Item;
 
 public static class CoinCalculator
 {

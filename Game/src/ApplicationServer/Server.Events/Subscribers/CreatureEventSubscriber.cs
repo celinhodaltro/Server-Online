@@ -1,10 +1,10 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Server.Events.Combat;
-using NeoServer.Server.Events.Creature;
-using NeoServer.Server.Events.Creature.Npcs;
-using NeoServer.Server.Events.Talks;
+﻿using Game.Common.Contracts.Creatures;
+using Server.Events.Combat;
+using Server.Events.Creature;
+using Server.Events.Creature.Npcs;
+using Server.Events.Talks;
 
-namespace NeoServer.Server.Events.Subscribers;
+namespace Server.Events.Subscribers;
 
 public class CreatureEventSubscriber : ICreatureEventSubscriber
 {

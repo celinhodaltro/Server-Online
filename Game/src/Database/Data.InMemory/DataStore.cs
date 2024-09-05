@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using NeoServer.Game.Common.Contracts.DataStores;
+using Game.Common.Contracts.DataStores;
 
-namespace NeoServer.Data.InMemory.DataStores;
+namespace Data.InMemory;
 
 public class DataStore<TStore, TKey, TValue> : IDataStore<TKey, TValue> where TStore : DataStore<TStore, TKey, TValue>
 {

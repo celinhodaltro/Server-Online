@@ -1,15 +1,15 @@
 ﻿using FluentAssertions;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Systems.Services;
-using NeoServer.Game.Tests.Helpers;
-using NeoServer.Game.Tests.Helpers.Map;
-using NeoServer.Game.Tests.Helpers.Player;
-using NeoServer.Game.Tests.Server;
-using NeoServer.Game.World.Models.Tiles;
-using NeoServer.Server.Commands.Movements;
+using Game.Common.Location.Structs;
+using Game.Systems.Services;
+using Game.Tests.Helpers;
+using Game.Tests.Helpers.Map;
+using Game.Tests.Helpers.Player;
+using Game.Tests.Server;
+using Game.World.Models.Tiles;
+using Server.Commands.Movements;
 using Xunit;
 
-namespace NeoServer.Game.Creatures.Tests.Players;
+namespace Game.Creatures.Tests.Players;
 
 public class PlayerUse
 {

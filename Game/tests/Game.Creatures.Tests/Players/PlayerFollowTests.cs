@@ -1,14 +1,14 @@
 ﻿using FluentAssertions;
-using NeoServer.Game.Common.Combat.Structs;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Tests.Helpers;
-using NeoServer.Game.Tests.Helpers.Map;
-using NeoServer.Game.Tests.Helpers.Player;
-using NeoServer.Game.World.Models.Tiles;
+using Game.Common.Combat.Structs;
+using Game.Common.Item;
+using Game.Common.Location.Structs;
+using Game.Tests.Helpers;
+using Game.Tests.Helpers.Map;
+using Game.Tests.Helpers.Player;
+using Game.World.Models.Tiles;
 using Xunit;
 
-namespace NeoServer.Game.Creatures.Tests.Players;
+namespace Game.Creatures.Tests.Players;
 
 public class PlayerFollowTests
 {

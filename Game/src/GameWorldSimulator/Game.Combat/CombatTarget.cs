@@ -1,7 +1,7 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Location;
+﻿using Game.Common.Contracts.Creatures;
+using Game.Common.Location;
 
-namespace NeoServer.Game.Combat;
+namespace Game.Combat;
 
 public class CombatTarget
 {

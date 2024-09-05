@@ -4,7 +4,7 @@ using System.Linq.Expressions;
 using FluentAssertions.Events;
 using FluentAssertions.Execution;
 
-namespace NeoServer.Game.Tests.Helpers;
+namespace Game.Tests.Helpers;
 
 public static class EventAssertHelper
 {

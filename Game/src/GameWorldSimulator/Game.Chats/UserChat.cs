@@ -1,9 +1,9 @@
 ﻿using System;
-using NeoServer.Game.Chats.Rules;
-using NeoServer.Game.Common.Contracts.Chats;
-using NeoServer.Game.Common.Contracts.Creatures;
+using Game.Chats.Rules;
+using Game.Common.Contracts.Chats;
+using Game.Common.Contracts.Creatures;
 
-namespace NeoServer.Game.Chats;
+namespace Game.Chats;
 
 public class UserChat : IUserChat
 {

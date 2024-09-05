@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types;
-using NeoServer.Game.Common.Contracts.World.Tiles;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Common.Location.Structs.Helpers;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types;
+using Game.Common.Contracts.World.Tiles;
+using Game.Common.Location.Structs;
+using Game.Common.Location.Structs.Helpers;
 
-namespace NeoServer.Game.World.Models.Tiles;
+namespace Game.World.Models.Tiles;
 
 public class StaticTile : BaseTile, IStaticTile
 {

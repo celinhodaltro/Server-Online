@@ -2,16 +2,16 @@
 using System.Threading;
 using System.Threading.Tasks;
 using FluentAssertions;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.World.Tiles;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Items.Items.Attributes;
-using NeoServer.Game.Tests.Helpers;
-using NeoServer.Game.Tests.Helpers.Map;
-using NeoServer.Game.Tests.Server;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.World.Tiles;
+using Game.Common.Item;
+using Game.Items.Items.Attributes;
+using Game.Tests.Helpers;
+using Game.Tests.Helpers.Map;
+using Game.Tests.Server;
 using Xunit;
 
-namespace NeoServer.Game.Items.Tests.Items.Attributes;
+namespace Game.Items.Tests.Items.Attributes;
 
 public class DecayableTests
 {

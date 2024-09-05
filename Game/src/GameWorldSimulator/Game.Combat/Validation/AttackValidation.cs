@@ -1,9 +1,9 @@
-﻿using NeoServer.Game.Common;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Helpers;
-using NeoServer.Game.Common.Results;
+﻿using Game.Common;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Helpers;
+using Game.Common.Results;
 
-namespace NeoServer.Game.Combat.Validation;
+namespace Game.Combat.Validation;
 
 public static class AttackValidation
 {

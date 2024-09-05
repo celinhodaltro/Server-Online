@@ -1,13 +1,13 @@
 ﻿using System.Linq;
 using FluentAssertions;
-using NeoServer.Data.InMemory.DataStores;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Creatures.Vocation;
-using NeoServer.Game.Items.Inspection;
-using NeoServer.Game.Tests.Helpers;
+using Data.InMemory;
+using Game.Common.Item;
+using Game.Creatures.Vocation;
+using Game.Items.Inspection;
+using Game.Tests.Helpers;
 using Xunit;
 
-namespace NeoServer.Game.Items.Tests.Inspection;
+namespace Game.Items.Tests.Inspection;
 
 public class RequirementInspectionTextBuilderTests
 {

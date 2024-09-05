@@ -4,12 +4,12 @@ using System.Linq;
 using AutoFixture;
 using FluentAssertions;
 using Moq;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Creatures.Players;
-using NeoServer.Game.Tests.Helpers.Player;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Creatures.Players;
+using Game.Tests.Helpers.Player;
 using Xunit;
 
-namespace NeoServer.Game.Creatures.Tests.Players;
+namespace Game.Creatures.Tests.Players;
 
 public class PlayerVipListTests
 {

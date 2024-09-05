@@ -3,10 +3,10 @@ using System.Threading.Tasks;
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Diagnosers;
 using BenchmarkDotNet.Engines;
-using NeoServer.Server.Common.Contracts.Tasks;
-using NeoServer.Server.Tasks;
+using Server.Common.Contracts.Tasks;
+using Server.Tasks;
 
-namespace NeoServer.Benchmarks.Tasks;
+namespace Benchmarks.Tasks;
 
 [HardwareCounters(HardwareCounter.TotalCycles)]
 [RankColumn]

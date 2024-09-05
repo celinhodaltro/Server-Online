@@ -1,12 +1,12 @@
 ﻿using System;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Inspection;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types.Containers;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Items.Factories.AttributeFactory;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Inspection;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types.Containers;
+using Game.Common.Location.Structs;
+using Game.Items.Factories.AttributeFactory;
 
-namespace NeoServer.Game.Items.Bases;
+namespace Game.Items.Bases;
 
 public abstract class BaseItem : IItem
 {

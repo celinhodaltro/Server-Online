@@ -1,15 +1,15 @@
 ﻿using System;
 using Moq;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Server;
-using NeoServer.Server.Common.Contracts;
-using NeoServer.Server.Managers;
-using NeoServer.Server.Tasks;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.World;
+using Server;
+using Server.Common.Contracts;
+using Server.Managers;
+using Server.Tasks;
 using Serilog;
 
-namespace NeoServer.Game.Tests.Server;
+namespace Game.Tests.Server;
 
 public static class GameServerTestBuilder
 {

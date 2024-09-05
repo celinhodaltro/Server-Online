@@ -1,9 +1,9 @@
 ﻿using System.Threading;
-using NeoServer.Game.Chats.Rules;
-using NeoServer.Game.Tests.Helpers.Player;
+using Game.Chats.Rules;
+using Game.Tests.Helpers.Player;
 using Xunit;
 
-namespace NeoServer.Game.Chats.Tests;
+namespace Game.Chats.Tests;
 
 public class ChatChannelTest
 {

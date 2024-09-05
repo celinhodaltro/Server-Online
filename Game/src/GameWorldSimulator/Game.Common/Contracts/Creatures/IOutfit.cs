@@ -1,6 +1,6 @@
-using NeoServer.Game.Common.Creatures.Players;
+using Game.Common.Creatures.Players;
 
-namespace NeoServer.Game.Common.Contracts.Creatures;
+namespace Game.Common.Contracts.Creatures;
 
 public interface IOutfit
 {

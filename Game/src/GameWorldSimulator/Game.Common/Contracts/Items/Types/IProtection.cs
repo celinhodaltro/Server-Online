@@ -1,6 +1,6 @@
-﻿using NeoServer.Game.Common.Combat.Structs;
+﻿using Game.Common.Combat.Structs;
 
-namespace NeoServer.Game.Common.Contracts.Items.Types;
+namespace Game.Common.Contracts.Items.Types;
 
 public interface IProtection
 {

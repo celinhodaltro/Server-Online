@@ -1,9 +1,9 @@
 ﻿using System;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Creatures.Players;
-using NeoServer.Server.Common.Contracts.Network;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Creatures.Players;
+using Server.Common.Contracts.Network;
 
-namespace NeoServer.Networking.Packets.Outgoing.Player;
+namespace Networking.Packets.Outgoing.Player;
 
 public class PlayerInventoryPacket : OutgoingPacket
 {

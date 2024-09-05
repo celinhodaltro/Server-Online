@@ -1,19 +1,19 @@
 ﻿using System.Collections.Generic;
 using FluentAssertions;
 using Moq;
-using NeoServer.Data.InMemory.DataStores;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types;
-using NeoServer.Game.Common.Contracts.Services;
-using NeoServer.Game.Common.Creatures.Players;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Creatures.Services;
-using NeoServer.Game.Tests.Helpers;
-using NeoServer.Game.Tests.Helpers.Player;
+using Data.InMemory;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types;
+using Game.Common.Contracts.Services;
+using Game.Common.Creatures.Players;
+using Game.Common.Location.Structs;
+using Game.Creatures.Services;
+using Game.Tests.Helpers;
+using Game.Tests.Helpers.Player;
 using Xunit;
 
-namespace NeoServer.Game.Creatures.Tests.Services;
+namespace Game.Creatures.Tests.Services;
 
 public class DealTransactionTest
 {

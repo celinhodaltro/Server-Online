@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using NeoServer.Data.InMemory.DataStores;
-using NeoServer.Game.Chats;
-using NeoServer.Game.Common.Contracts.Chats;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Services;
-using NeoServer.Game.Creatures.Services;
+using Data.InMemory;
+using Game.Chats;
+using Game.Common.Contracts.Chats;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Services;
+using Game.Creatures.Services;
 
-namespace NeoServer.Game.Tests.Helpers;
+namespace Game.Tests.Helpers;
 
 public static class PartyTestDataBuilder
 {

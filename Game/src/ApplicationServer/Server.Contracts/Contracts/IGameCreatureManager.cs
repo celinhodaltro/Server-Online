@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Server.Common.Contracts.Network;
+using Game.Common.Contracts.Creatures;
+using Server.Common.Contracts.Network;
 
-namespace NeoServer.Server.Common.Contracts;
+namespace Server.Common.Contracts;
 
 public interface IGameCreatureManager
 {

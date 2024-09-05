@@ -2,14 +2,14 @@ using System.Collections.Generic;
 using AutoFixture;
 using FluentAssertions;
 using Moq;
-using NeoServer.Data.InMemory.DataStores;
-using NeoServer.Game.Chats;
-using NeoServer.Game.Common.Contracts.DataStores;
-using NeoServer.Server.Configurations;
+using Data.InMemory;
+using Game.Chats;
+using Game.Common.Contracts.DataStores;
+using Server.Configurations;
 using Serilog;
 using Xunit;
 
-namespace NeoServer.Loaders.Tests.ChannelLoader;
+namespace Loader.Tests.ChannelLoader;
 
 public class ChannelLoaderTests
 {

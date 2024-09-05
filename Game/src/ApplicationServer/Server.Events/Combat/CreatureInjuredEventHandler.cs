@@ -1,17 +1,17 @@
-﻿using NeoServer.Game.Common.Combat.Structs;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Game.Common.Creatures;
-using NeoServer.Game.Common.Effects.Parsers;
-using NeoServer.Game.Common.Item;
-using NeoServer.Networking.Packets.Outgoing;
-using NeoServer.Networking.Packets.Outgoing.Creature;
-using NeoServer.Networking.Packets.Outgoing.Effect;
-using NeoServer.Networking.Packets.Outgoing.Player;
-using NeoServer.Server.Common.Contracts;
+﻿using Game.Common.Combat.Structs;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.World;
+using Game.Common.Creatures;
+using Game.Common.Effects.Parsers;
+using Game.Common.Item;
+using Networking.Packets.Outgoing;
+using Networking.Packets.Outgoing.Creature;
+using Networking.Packets.Outgoing.Effect;
+using Networking.Packets.Outgoing.Player;
+using Server.Common.Contracts;
 
-namespace NeoServer.Server.Events.Combat;
+namespace Server.Events.Combat;
 
 public class CreatureInjuredEventHandler
 {

@@ -1,9 +1,9 @@
 ﻿using System;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.World.Tiles;
-using NeoServer.Game.Common.Results;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.World.Tiles;
+using Game.Common.Results;
 
-namespace NeoServer.Game.World.Models.Tiles;
+namespace Game.World.Models.Tiles;
 
 public static class TileOperationEvent
 {

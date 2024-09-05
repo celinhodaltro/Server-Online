@@ -1,17 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using NeoServer.Game.Common.Chats;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Game.Common.Contracts.World.Tiles;
-using NeoServer.Game.Common.Creatures;
-using NeoServer.Game.Common.Helpers;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Creatures.Models.Bases;
-using NeoServer.Game.Creatures.Npcs.Dialogs;
+using Game.Common.Chats;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.World;
+using Game.Common.Contracts.World.Tiles;
+using Game.Common.Creatures;
+using Game.Common.Helpers;
+using Game.Common.Location.Structs;
+using Game.Creatures.Models.Bases;
+using Game.Creatures.Npcs.Dialogs;
 
-namespace NeoServer.Game.Creatures.Npcs;
+namespace Game.Creatures.Npcs;
 
 public class Npc : WalkableCreature, INpc
 {

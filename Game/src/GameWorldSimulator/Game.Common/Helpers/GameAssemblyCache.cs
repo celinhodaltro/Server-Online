@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace NeoServer.Game.Common.Helpers;
+namespace Game.Common.Helpers;
 
 public static class GameAssemblyCache
 {

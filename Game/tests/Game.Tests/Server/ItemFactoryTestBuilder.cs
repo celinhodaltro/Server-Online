@@ -1,10 +1,10 @@
-﻿using NeoServer.Game.Common.Contracts.DataStores;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Game.Items.Factories;
-using NeoServer.Game.Items.Factories.AttributeFactory;
+﻿using Game.Common.Contracts.DataStores;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.World;
+using Game.Items.Factories;
+using Game.Items.Factories.AttributeFactory;
 
-namespace NeoServer.Game.Tests.Server;
+namespace Game.Tests.Server;
 
 public static class ItemFactoryTestBuilder
 {

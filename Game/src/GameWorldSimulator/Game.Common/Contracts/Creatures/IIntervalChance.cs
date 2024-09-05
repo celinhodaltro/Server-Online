@@ -1,4 +1,4 @@
-﻿namespace NeoServer.Game.Common.Contracts.Creatures;
+﻿namespace Game.Common.Contracts.Creatures;
 
 public interface IIntervalChance
 {

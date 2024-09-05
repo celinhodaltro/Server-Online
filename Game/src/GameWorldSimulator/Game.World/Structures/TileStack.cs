@@ -1,9 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using NeoServer.Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items;
 
-namespace NeoServer.Game.World.Structures;
+namespace Game.World.Structures;
 
 public class TileStack<T> : IEnumerable<T> where T : IThing
 {

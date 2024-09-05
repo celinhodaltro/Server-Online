@@ -1,9 +1,9 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Helpers;
-using NeoServer.Networking.Packets.Outgoing.Chat;
-using NeoServer.Server.Common.Contracts;
+﻿using Game.Common.Contracts.Creatures;
+using Game.Common.Helpers;
+using Networking.Packets.Outgoing.Chat;
+using Server.Common.Contracts;
 
-namespace NeoServer.Server.Events.Player;
+namespace Server.Events.Player;
 
 public class PlayerChangedOnlineStatusEventHandler : IEventHandler
 {

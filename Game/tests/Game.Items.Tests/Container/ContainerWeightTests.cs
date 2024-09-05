@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using FluentAssertions;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Tests.Helpers;
+using Game.Common.Contracts.Items;
+using Game.Tests.Helpers;
 using Xunit;
 
-namespace NeoServer.Game.Items.Tests.Container;
+namespace Game.Items.Tests.Container;
 
 public class ContainerWeightTests
 {

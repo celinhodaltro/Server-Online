@@ -1,7 +1,7 @@
 ﻿using System;
-using NeoServer.Server.Common.Contracts.Tasks;
+using Server.Common.Contracts.Tasks;
 
-namespace NeoServer.Server.Tasks;
+namespace Server.Tasks;
 
 public class Event : IEvent
 {

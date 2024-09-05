@@ -1,4 +1,4 @@
-﻿namespace NeoServer.Web.Shared.ViewModels.Response;
+﻿namespace Web.Shared.ViewModels.Response;
 
 [Serializable]
 public class BaseResponseViewModel

@@ -1,11 +1,11 @@
-﻿using NeoServer.Game.Combat.Attacks;
-using NeoServer.Game.Common;
-using NeoServer.Game.Common.Combat.Structs;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Creatures;
-using NeoServer.Game.Common.Item;
+﻿using Game.Combat.Attacks;
+using Game.Common;
+using Game.Common.Combat.Structs;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Creatures;
+using Game.Common.Item;
 
-namespace NeoServer.Game.Combat.Spells;
+namespace Game.Combat.Spells;
 
 public abstract class AttackSpell : Spell<AttackSpell>
 {

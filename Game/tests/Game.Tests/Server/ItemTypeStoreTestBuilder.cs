@@ -1,7 +1,7 @@
-﻿using NeoServer.Data.InMemory.DataStores;
-using NeoServer.Game.Common.Contracts.Items;
+﻿using Data.InMemory;
+using Game.Common.Contracts.Items;
 
-namespace NeoServer.Game.Tests.Server;
+namespace Game.Tests.Server;
 
 public static class ItemTypeStoreTestBuilder
 {

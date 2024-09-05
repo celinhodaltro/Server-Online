@@ -1,6 +1,6 @@
-﻿using NeoServer.Game.Common.Item;
+﻿using Game.Common.Item;
 
-namespace NeoServer.Game.Common.Contracts.Items.Types.Body;
+namespace Game.Common.Contracts.Items.Types.Body;
 
 public interface IDistanceWeapon : IWeapon
 {

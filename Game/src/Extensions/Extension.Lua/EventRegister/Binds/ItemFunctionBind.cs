@@ -1,8 +1,8 @@
-using NeoServer.Game.Common.Contracts.Items.Types.Usable;
-using NeoServer.Game.Items.Bases;
-using NeoServer.Game.Items.Items.Containers.Container;
+using Game.Common.Contracts.Items.Types.Usable;
+using Game.Items.Bases;
+using Game.Items.Items.Containers.Container;
 
-namespace NeoServer.Scripts.Lua.EventRegister.Binds;
+namespace Extension.Lua.EventRegister.Binds;
 
 public static class ItemFunctionBind
 {

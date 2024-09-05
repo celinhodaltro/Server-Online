@@ -1,4 +1,4 @@
-namespace NeoServer.Game.Common.Creatures.Players;
+namespace Game.Common.Creatures.Players;
 
 public enum FightMode : byte
 {

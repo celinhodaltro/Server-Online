@@ -1,10 +1,10 @@
-﻿using NeoServer.Game.Common.Contracts.Items.Types;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Items.Items.Cumulatives;
+﻿using Game.Common.Contracts.Items.Types;
+using Game.Common.Item;
+using Game.Common.Location.Structs;
+using Game.Items.Items.Cumulatives;
 using Xunit;
 
-namespace NeoServer.Game.Items.Tests;
+namespace Game.Items.Tests;
 
 public class CumulativeItemTest
 {

@@ -1,4 +1,4 @@
-﻿namespace NeoServer.Game.Common.Chats;
+﻿namespace Game.Common.Chats;
 
 public enum SpeechType : byte
 {

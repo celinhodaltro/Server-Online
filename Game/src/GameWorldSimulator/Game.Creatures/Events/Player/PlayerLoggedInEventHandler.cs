@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Linq;
-using NeoServer.Game.Common.Contracts;
-using NeoServer.Game.Common.Contracts.Chats;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.DataStores;
-using NeoServer.Game.Common.Contracts.World;
+using Game.Common.Contracts;
+using Game.Common.Contracts.Chats;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.DataStores;
+using Game.Common.Contracts.World;
 
-namespace NeoServer.Game.Creatures.Events.Player;
+namespace Game.Creatures.Events.Player;
 
 public class PlayerLoggedInEventHandler : IGameEventHandler
 {

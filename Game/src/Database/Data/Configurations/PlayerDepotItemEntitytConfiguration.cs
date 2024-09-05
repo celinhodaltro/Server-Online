@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using NeoServer.Data.Entities;
+using Data.Entities;
 
-namespace NeoServer.Data.Configurations;
+namespace Data.Configurations;
 
 public class PlayerDepotItemEntitytConfiguration : IEntityTypeConfiguration<PlayerDepotItemEntity>
 {

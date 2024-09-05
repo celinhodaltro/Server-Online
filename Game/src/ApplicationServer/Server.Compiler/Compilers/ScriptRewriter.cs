@@ -1,9 +1,9 @@
 ﻿using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
-using NeoServer.Server.Attributes;
+using Server.Attributes;
 
-namespace NeoServer.Server.Compiler.Compilers;
+namespace Server.Compiler.Compilers;
 
 internal class ScriptRewriter : CSharpSyntaxRewriter
 {

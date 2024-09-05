@@ -1,13 +1,13 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Services;
-using NeoServer.Networking.Packets.Incoming;
-using NeoServer.Server.Commands.Movements;
-using NeoServer.Server.Commands.Movements.ToContainer;
-using NeoServer.Server.Commands.Movements.ToInventory;
-using NeoServer.Server.Common.Contracts;
-using NeoServer.Server.Common.Contracts.Commands;
+﻿using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Services;
+using Networking.Packets.Incoming;
+using Server.Commands.Movements;
+using Server.Commands.Movements.ToContainer;
+using Server.Commands.Movements.ToInventory;
+using Server.Common.Contracts;
+using Server.Common.Contracts.Commands;
 
-namespace NeoServer.Server.Commands.Player;
+namespace Server.Commands.Player;
 
 public class PlayerThrowItemCommand : ICommand
 {

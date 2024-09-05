@@ -1,8 +1,8 @@
-﻿using NeoServer.Game.Common.Contracts.Items.Types;
-using NeoServer.Game.Common.Contracts.World.Tiles;
-using NeoServer.Server.Common.Contracts;
+﻿using Game.Common.Contracts.Items.Types;
+using Game.Common.Contracts.World.Tiles;
+using Server.Common.Contracts;
 
-namespace NeoServer.Server.Jobs.Items;
+namespace Server.Jobs.Items;
 
 public class LiquidPoolJob
 {

@@ -1,13 +1,13 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using NeoServer.Data.Entities;
-using NeoServer.Data.Extensions;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types;
-using NeoServer.Game.Common.Contracts.Items.Types.Containers;
-using NeoServer.Game.Common.Location.Structs;
+using Data.Entities;
+using Data.Extensions;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types;
+using Game.Common.Contracts.Items.Types.Containers;
+using Game.Common.Location.Structs;
 
-namespace NeoServer.Data.Parsers;
+namespace Data.Parsers;
 
 public static class ItemEntityParser
 {

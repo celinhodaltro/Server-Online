@@ -1,13 +1,13 @@
 ﻿using System.Collections.Generic;
 using System.Text;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types;
-using NeoServer.Game.Common.Creatures;
-using NeoServer.Game.Common.Helpers;
-using NeoServer.Game.Common.Parsers;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types;
+using Game.Common.Creatures;
+using Game.Common.Helpers;
+using Game.Common.Parsers;
 
-namespace NeoServer.Game.Items.Items.Attributes;
+namespace Game.Items.Items.Attributes;
 
 public sealed class SkillBonus : ISkillBonus
 {

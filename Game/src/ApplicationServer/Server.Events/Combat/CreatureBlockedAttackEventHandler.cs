@@ -1,10 +1,10 @@
-﻿using NeoServer.Game.Common.Combat;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Creatures;
-using NeoServer.Networking.Packets.Outgoing.Effect;
-using NeoServer.Server.Common.Contracts;
+﻿using Game.Common.Combat;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Creatures;
+using Networking.Packets.Outgoing.Effect;
+using Server.Common.Contracts;
 
-namespace NeoServer.Server.Events.Combat;
+namespace Server.Events.Combat;
 
 public class CreatureBlockedAttackEventHandler
 {

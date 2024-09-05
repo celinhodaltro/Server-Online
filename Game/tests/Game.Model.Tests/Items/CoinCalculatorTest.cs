@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Items;
+using Game.Common.Contracts.Items;
+using Game.Common.Item;
+using Game.Items;
 using Xunit;
 
-namespace NeoServer.Game.Common.Tests.Items;
+namespace Game.Common.Tests.Items;
 
 public class CoinCalculatorTest
 {

@@ -1,4 +1,4 @@
-namespace NeoServer.Web.Shared.ViewModels.Request;
+namespace Web.Shared.ViewModels.Request;
 
 public class PlayerPostRequest
 {

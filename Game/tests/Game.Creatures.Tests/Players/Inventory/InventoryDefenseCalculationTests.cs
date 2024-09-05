@@ -1,12 +1,12 @@
 ﻿using System;
 using FluentAssertions;
-using NeoServer.Game.Common.Creatures.Players;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Tests.Helpers;
-using NeoServer.Game.Tests.Helpers.Player;
+using Game.Common.Creatures.Players;
+using Game.Common.Item;
+using Game.Tests.Helpers;
+using Game.Tests.Helpers.Player;
 using Xunit;
 
-namespace NeoServer.Game.Creatures.Tests.Players.Inventory;
+namespace Game.Creatures.Tests.Players.Inventory;
 
 public class InventoryDefenseCalculationTests
 {

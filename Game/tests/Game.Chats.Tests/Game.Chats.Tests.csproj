@@ -10,8 +10,8 @@
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
-        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.6.3"/>
-        <PackageReference Include="xunit" Version="2.4.2"/>
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.6.3" />
+        <PackageReference Include="xunit" Version="2.4.2" />
         <PackageReference Include="xunit.runner.visualstudio" Version="2.4.5">
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
             <PrivateAssets>all</PrivateAssets>
@@ -23,9 +23,9 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\NeoServer.Game.Tests\NeoServer.Game.Tests.csproj"/>
-        <ProjectReference Include="..\..\src\GameWorldSimulator\NeoServer.Game.Chats\NeoServer.Game.Chats.csproj"/>
-        <ProjectReference Include="..\..\src\GameWorldSimulator\NeoServer.Game.Creatures\NeoServer.Game.Creatures.csproj"/>
+        <ProjectReference Include="..\Game.Tests\Game.Tests.csproj" />
+        <ProjectReference Include="..\..\src\GameWorldSimulator\Game.Chats\Game.Chats.csproj" />
+        <ProjectReference Include="..\..\src\GameWorldSimulator\Game.Creatures\Game.Creatures.csproj" />
     </ItemGroup>
 
 </Project>

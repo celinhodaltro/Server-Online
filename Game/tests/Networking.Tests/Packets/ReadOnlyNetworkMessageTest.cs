@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Networking.Packets.Messages;
-using NeoServer.Server.Common.Contracts.Network.Enums;
+using Game.Common.Location.Structs;
+using Networking.Packets.Messages;
+using Server.Common.Contracts.Network.Enums;
 using Xunit;
 
-namespace NeoServer.Networking.Tests.Packets;
+namespace Networking.Tests.Packets;
 
 public class ReadOnlyNetworkMessageShould
 {

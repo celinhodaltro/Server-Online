@@ -1,21 +1,21 @@
 using System.Collections.Generic;
 using FluentAssertions;
-using NeoServer.Game.Common;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types;
-using NeoServer.Game.Common.Contracts.Items.Types.Containers;
-using NeoServer.Game.Common.Creatures.Players;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Creatures.Monster.Loot;
-using NeoServer.Game.Items.Bases;
-using NeoServer.Game.Items.Items.Cumulatives;
-using NeoServer.Game.Tests.Helpers;
-using NeoServer.Game.Tests.Helpers.Player;
+using Game.Common;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types;
+using Game.Common.Contracts.Items.Types.Containers;
+using Game.Common.Creatures.Players;
+using Game.Common.Item;
+using Game.Common.Location.Structs;
+using Game.Creatures.Monster.Loot;
+using Game.Items.Bases;
+using Game.Items.Items.Cumulatives;
+using Game.Tests.Helpers;
+using Game.Tests.Helpers.Player;
 using Xunit;
 
-namespace NeoServer.Game.Items.Tests.Container;
+namespace Game.Items.Tests.Container;
 
 public class ContainerTests
 {

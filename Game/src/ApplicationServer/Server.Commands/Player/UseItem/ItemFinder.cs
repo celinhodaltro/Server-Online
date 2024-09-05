@@ -1,11 +1,11 @@
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Creatures.Players;
-using NeoServer.Game.Common.Location;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Server.Common.Contracts;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items;
+using Game.Common.Creatures.Players;
+using Game.Common.Location;
+using Game.Common.Location.Structs;
+using Server.Common.Contracts;
 
-namespace NeoServer.Server.Commands.Player.UseItem;
+namespace Server.Commands.Player.UseItem;
 
 public class ItemFinderService
 {

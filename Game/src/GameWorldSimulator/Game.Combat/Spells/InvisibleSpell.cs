@@ -1,8 +1,8 @@
-﻿using NeoServer.Game.Common;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Creatures;
+﻿using Game.Common;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Creatures;
 
-namespace NeoServer.Game.Combat.Spells;
+namespace Game.Combat.Spells;
 
 public class InvisibleSpell : Spell<InvisibleSpell>
 {

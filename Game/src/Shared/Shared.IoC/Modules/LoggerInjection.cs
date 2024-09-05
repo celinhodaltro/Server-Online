@@ -4,7 +4,7 @@ using Serilog;
 using Serilog.Settings.Configuration;
 using Serilog.Sinks.SystemConsole.Themes;
 
-namespace NeoServer.Shared.IoC.Modules;
+namespace Shared.IoC.Modules;
 
 public static class LoggerInjection
 {

@@ -1,8 +1,8 @@
 ﻿using System;
-using NeoServer.Game.Common.Contracts.Items.Types.Containers;
-using NeoServer.Server.Common.Contracts.Network;
+using Game.Common.Contracts.Items.Types.Containers;
+using Server.Common.Contracts.Network;
 
-namespace NeoServer.Networking.Packets.Outgoing.Player;
+namespace Networking.Packets.Outgoing.Player;
 
 public class OpenContainerPacket : OutgoingPacket
 {

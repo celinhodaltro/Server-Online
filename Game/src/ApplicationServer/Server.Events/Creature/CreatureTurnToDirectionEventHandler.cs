@@ -1,11 +1,11 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Game.Common.Helpers;
-using NeoServer.Game.Common.Location;
-using NeoServer.Networking.Packets.Outgoing.Creature;
-using NeoServer.Server.Common.Contracts;
+﻿using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.World;
+using Game.Common.Helpers;
+using Game.Common.Location;
+using Networking.Packets.Outgoing.Creature;
+using Server.Common.Contracts;
 
-namespace NeoServer.Server.Events.Creature;
+namespace Server.Events.Creature;
 
 public class CreatureTurnedToDirectionEventHandler
 {

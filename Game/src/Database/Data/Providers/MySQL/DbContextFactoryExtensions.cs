@@ -1,9 +1,9 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
-using NeoServer.Data.Contexts;
-using NeoServer.Data.Factory;
+using Data.Contexts;
+using Data.Factory;
 
-namespace NeoServer.Data.Providers.MySQL;
+namespace Data.Providers.MySQL;
 
 public static class DbContextFactoryExtensions
 {

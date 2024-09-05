@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Buffers;
-using NeoServer.Game.Common.Location;
-using NeoServer.Game.Common.Location.Structs;
+using Game.Common.Location;
+using Game.Common.Location.Structs;
 
-namespace NeoServer.Game.Common.Effects.Magical;
+namespace Game.Common.Effects.Magical;
 
 public class SpreadEffect
 {

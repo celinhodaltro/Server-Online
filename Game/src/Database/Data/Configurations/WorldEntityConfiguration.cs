@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using NeoServer.Data.Entities;
-using NeoServer.Data.Seeds;
+using Data.Entities;
+using Data.Seeds;
 
-namespace NeoServer.Data.Configurations;
+namespace Data.Configurations;
 
 public class WorldEntityConfiguration : IEntityTypeConfiguration<WorldEntity>
 {

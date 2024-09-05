@@ -1,6 +1,6 @@
 using System;
 
-namespace NeoServer.Game.Common.Location;
+namespace Game.Common.Location;
 
 /// <summary>
 ///     This enum is meant to store in a memory-efficient way a collection

@@ -1,4 +1,4 @@
-﻿namespace NeoServer.Game.World.Map;
+﻿namespace Game.World.Map;
 
 //public class MapConstants
 //{

@@ -1,4 +1,4 @@
-﻿namespace NeoServer.Game.Common.Texts;
+﻿namespace Game.Common.Texts;
 
 public static class TextConstants
 {

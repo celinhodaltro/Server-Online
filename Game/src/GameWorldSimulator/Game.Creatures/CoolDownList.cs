@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using NeoServer.Game.Common.Creatures;
-using NeoServer.Game.Common.Creatures.Structs;
+using Game.Common.Creatures;
+using Game.Common.Creatures.Structs;
 
-namespace NeoServer.Game.Creatures;
+namespace Game.Creatures;
 
 public class CooldownList
 {

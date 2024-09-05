@@ -1,4 +1,4 @@
-﻿namespace NeoServer.Game.Creatures.Player.Inventory.Calculations;
+﻿namespace Game.Creatures.Player.Inventory.Calculations;
 
 internal static class InventoryWeightCalculation
 {

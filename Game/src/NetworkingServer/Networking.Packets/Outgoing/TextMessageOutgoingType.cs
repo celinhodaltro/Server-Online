@@ -1,4 +1,4 @@
-﻿namespace NeoServer.Networking.Packets.Outgoing;
+﻿namespace Networking.Packets.Outgoing;
 
 public enum TextMessageOutgoingType : byte
 {

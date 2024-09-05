@@ -1,9 +1,9 @@
-﻿using NeoServer.Data.Interfaces;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Helpers;
-using NeoServer.Server.Common.Contracts;
+﻿using Data.Interfaces;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Helpers;
+using Server.Common.Contracts;
 
-namespace NeoServer.Server.Events.Player;
+namespace Server.Events.Player;
 
 public class PlayerLoggedInEventHandler : IEventHandler
 {

@@ -1,8 +1,8 @@
 ﻿using System;
-using NeoServer.Game.Common.Location;
-using NeoServer.Server.Common.Contracts.Network;
+using Game.Common.Location;
+using Server.Common.Contracts.Network;
 
-namespace NeoServer.Networking.Packets.Incoming;
+namespace Networking.Packets.Incoming;
 
 public class AutoWalkPacket : IncomingPacket
 {

@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using NeoServer.Game.Common.Contracts.Chats;
-using NeoServer.Game.Common.Contracts.DataStores;
+using Game.Common.Contracts.Chats;
+using Game.Common.Contracts.DataStores;
 
-namespace NeoServer.Game.Common.Contracts.Creatures.Players;
+namespace Game.Common.Contracts.Creatures.Players;
 
 public delegate void PlayerJoinChannel(IPlayer player, IChatChannel channel);
 

@@ -1,4 +1,4 @@
-﻿namespace NeoServer.Game.Common.Contracts.Combat;
+﻿namespace Game.Common.Contracts.Combat;
 
 public interface IProbability
 {

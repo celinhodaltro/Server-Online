@@ -1,7 +1,7 @@
-﻿using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types;
+﻿using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types;
 
-namespace NeoServer.Game.Items.Items.Containers.Container.Calculations;
+namespace Game.Items.Items.Containers.Container.Calculations;
 
 internal static class PossibleAmountToAddCalculation
 {

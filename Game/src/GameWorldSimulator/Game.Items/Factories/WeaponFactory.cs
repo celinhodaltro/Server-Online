@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using NeoServer.Game.Common.Contracts;
-using NeoServer.Game.Common.Contracts.DataStores;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Items.Factories.AttributeFactory;
-using NeoServer.Game.Items.Items.Weapons;
+using Game.Common.Contracts;
+using Game.Common.Contracts.DataStores;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types;
+using Game.Common.Item;
+using Game.Common.Location.Structs;
+using Game.Items.Factories.AttributeFactory;
+using Game.Items.Items.Weapons;
 
-namespace NeoServer.Game.Items.Factories;
+namespace Game.Items.Factories;
 
 public class WeaponFactory : IFactory
 {

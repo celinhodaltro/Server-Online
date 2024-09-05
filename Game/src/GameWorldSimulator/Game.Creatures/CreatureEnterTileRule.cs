@@ -1,11 +1,11 @@
 ﻿using System;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.World.Tiles;
-using NeoServer.Game.Common.Creatures;
-using NeoServer.Game.Common.Helpers;
-using NeoServer.Game.Common.Location;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.World.Tiles;
+using Game.Common.Creatures;
+using Game.Common.Helpers;
+using Game.Common.Location;
 
-namespace NeoServer.Game.Creatures;
+namespace Game.Creatures;
 
 public abstract class CreatureEnterTileRule<T> : ITileEnterRule
 {

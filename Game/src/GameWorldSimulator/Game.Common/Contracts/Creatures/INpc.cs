@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using NeoServer.Game.Common.Chats;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Game.Common.Item;
+using Game.Common.Chats;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.World;
+using Game.Common.Item;
 
-namespace NeoServer.Game.Common.Contracts.Creatures;
+namespace Game.Common.Contracts.Creatures;
 
 public delegate string KeywordReplacement(string message, INpc npc, ISociableCreature to);
 

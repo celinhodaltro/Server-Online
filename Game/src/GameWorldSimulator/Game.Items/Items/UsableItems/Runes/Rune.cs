@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
-using NeoServer.Game.Common;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types.Runes;
-using NeoServer.Game.Common.Creatures.Structs;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Items.Items.Cumulatives;
+using Game.Common;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types.Runes;
+using Game.Common.Creatures.Structs;
+using Game.Common.Item;
+using Game.Common.Location.Structs;
+using Game.Items.Items.Cumulatives;
 
-namespace NeoServer.Game.Items.Items.UsableItems.Runes;
+namespace Game.Items.Items.UsableItems.Runes;
 
 public abstract class Rune : Cumulative, IRune
 {

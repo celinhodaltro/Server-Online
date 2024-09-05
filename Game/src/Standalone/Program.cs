@@ -5,36 +5,36 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Autofac;
-using NeoServer.Data.Contexts;
-using NeoServer.Game.Common;
-using NeoServer.Game.Common.Helpers;
-using NeoServer.Game.World.Models.Spawns;
-using NeoServer.Loaders.Interfaces;
-using NeoServer.Loaders.Items;
-using NeoServer.Loaders.Monsters;
-using NeoServer.Loaders.Quest;
-using NeoServer.Loaders.Spawns;
-using NeoServer.Loaders.Spells;
-using NeoServer.Loaders.Vocations;
-using NeoServer.Loaders.World;
-using NeoServer.Networking.Listeners;
-using NeoServer.Scripts.Lua;
-using NeoServer.Server.Common.Contracts;
-using NeoServer.Server.Common.Contracts.Tasks;
-using NeoServer.Server.Compiler;
-using NeoServer.Server.Configurations;
-using NeoServer.Server.Events.Subscribers;
-using NeoServer.Server.Helpers.Extensions;
-using NeoServer.Server.Jobs.Channels;
-using NeoServer.Server.Jobs.Creatures;
-using NeoServer.Server.Jobs.Items;
-using NeoServer.Server.Jobs.Persistence;
-using NeoServer.Server.Security;
-using NeoServer.Server.Standalone.IoC;
-using NeoServer.Server.Tasks;
+using Data.Contexts;
+using Game.Common;
+using Game.Common.Helpers;
+using Game.World.Models.Spawns;
+using Loader.Interfaces;
+using Loader.Items;
+using Loader.Monsters;
+using Loader.Quest;
+using Loader.Spawns;
+using Loader.Spells;
+using Loader.Vocations;
+using Loader.World;
+using Networking.Listeners;
+using Extension.Lua;
+using Server.Common.Contracts;
+using Server.Common.Contracts.Tasks;
+using Server.Compiler;
+using Server.Configurations;
+using Server.Events.Subscribers;
+using Server.Helpers.Extensions;
+using Server.Jobs.Channels;
+using Server.Jobs.Creatures;
+using Server.Jobs.Items;
+using Server.Jobs.Persistence;
+using Server.Security;
+using Server.Standalone.IoC;
+using Server.Tasks;
 using Serilog;
 
-namespace NeoServer.Server.Standalone;
+namespace Server.Standalone;
 
 public class Program
 {
@@ -72,7 +72,7 @@ public class Program
 
         Rsa.LoadPem(serverConfiguration.Data);
 
-        container.Resolve<IEnumerable<IRunBeforeLoaders>>().ToList().ForEach(x => x.Run());
+        container.Resolve<IEnumerable<IRunBeforeLoader>>().ToList().ForEach(x => x.Run());
         container.Resolve<FactoryEventSubscriber>().AttachEvents();
 
         container.Resolve<ItemTypeLoader>().Load();

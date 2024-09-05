@@ -1,12 +1,12 @@
 ﻿using System.Collections.Generic;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Creatures.Players;
-using NeoServer.Game.Common.Creatures.Players;
-using NeoServer.Game.Common.Helpers;
-using NeoServer.Game.Common.Services;
-using NeoServer.Game.Common.Texts;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Creatures.Players;
+using Game.Common.Creatures.Players;
+using Game.Common.Helpers;
+using Game.Common.Services;
+using Game.Common.Texts;
 
-namespace NeoServer.Game.Creatures.Player;
+namespace Game.Creatures.Player;
 
 public class Vip : IVip
 {

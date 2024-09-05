@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Helpers;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Server.Common.Contracts;
-using NeoServer.Server.Tasks;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Helpers;
+using Game.Common.Location.Structs;
+using Server.Common.Contracts;
+using Server.Tasks;
 
-namespace NeoServer.Server.Events.Creature;
+namespace Server.Events.Creature;
 
 public class CreatureStartedFollowingEventHandler
 {

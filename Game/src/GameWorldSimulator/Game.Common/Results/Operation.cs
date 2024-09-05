@@ -1,4 +1,4 @@
-﻿namespace NeoServer.Game.Common.Results;
+﻿namespace Game.Common.Results;
 
 public enum Operation
 {

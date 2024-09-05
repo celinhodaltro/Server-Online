@@ -3,21 +3,21 @@ using System.Linq;
 using System.Reflection;
 using Autofac;
 using Microsoft.Extensions.Caching.Memory;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Game.Creatures;
-using NeoServer.Game.World;
-using NeoServer.Game.World.Map;
-using NeoServer.Networking.Handlers;
-using NeoServer.Server.Commands.Movements;
-using NeoServer.Server.Commands.Player;
-using NeoServer.Server.Common.Contracts.Tasks;
-using NeoServer.Server.Standalone.IoC.Modules;
-using NeoServer.Server.Tasks;
-using NeoServer.Shared.IoC.Modules;
-using PathFinder = NeoServer.Game.World.Map.PathFinder;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.World;
+using Game.Creatures;
+using Game.World;
+using Game.World.Map;
+using Networking.Handlers;
+using Server.Commands.Movements;
+using Server.Commands.Player;
+using Server.Common.Contracts.Tasks;
+using Server.Standalone.IoC.Modules;
+using Server.Tasks;
+using Shared.IoC.Modules;
+using PathFinder = Game.World.Map.PathFinder;
 
-namespace NeoServer.Server.Standalone.IoC;
+namespace Server.Standalone.IoC;
 
 public static class Container
 {
@@ -66,7 +66,7 @@ public static class Container
 
         builder.AddFactories()
             .AddServices()
-            .AddLoaders()
+            .AddLoader()
             .AddDatabases(configuration)
             .AddRepositories()
             .AddConfigurations(configuration)

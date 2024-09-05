@@ -1,9 +1,9 @@
-﻿using NeoServer.Networking.Packets.Outgoing;
-using NeoServer.Server.Common.Contracts;
-using NeoServer.Server.Common.Contracts.Network;
-using NeoServer.Server.Tasks;
+﻿using Networking.Packets.Outgoing;
+using Server.Common.Contracts;
+using Server.Common.Contracts.Network;
+using Server.Tasks;
 
-namespace NeoServer.Networking.Handlers.Player.Party;
+namespace Networking.Handlers.Player.Party;
 
 public class PlayerRevokeInvitePartyHandler : PacketHandler
 {

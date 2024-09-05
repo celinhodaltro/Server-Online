@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
 using Moq;
-using NeoServer.Data.InMemory.DataStores;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.DataStores;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Game.Common.Creatures;
-using NeoServer.Game.Creatures.Events.Monster;
-using NeoServer.Game.Creatures.Monster.Summon;
-using NeoServer.Game.Tests.Helpers;
-using NeoServer.Game.Tests.Helpers.Player;
+using Data.InMemory;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.DataStores;
+using Game.Common.Contracts.World;
+using Game.Common.Creatures;
+using Game.Creatures.Events.Monster;
+using Game.Creatures.Monster.Summon;
+using Game.Tests.Helpers;
+using Game.Tests.Helpers.Player;
 using Xunit;
 
-namespace NeoServer.Game.Creatures.Tests.Events.Monsters;
+namespace Game.Creatures.Tests.Events.Monsters;
 
 public class MonsterKilledEventHandlerTest
 {

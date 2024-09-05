@@ -1,7 +1,7 @@
-﻿using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Location.Structs;
+﻿using Game.Common.Contracts.Items;
+using Game.Common.Location.Structs;
 
-namespace NeoServer.Game.Items.Bases;
+namespace Game.Items.Bases;
 
 public class Item : BaseItem
 {

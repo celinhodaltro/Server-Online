@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
-using NeoServer.Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Creatures;
 
-namespace NeoServer.Game.Creatures;
+namespace Game.Creatures;
 
 public class CreatureGameInstance : ICreatureGameInstance
 {

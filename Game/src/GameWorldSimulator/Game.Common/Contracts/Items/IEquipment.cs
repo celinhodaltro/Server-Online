@@ -1,8 +1,8 @@
 ﻿using System;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items.Types;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items.Types;
 
-namespace NeoServer.Game.Common.Contracts.Items;
+namespace Game.Common.Contracts.Items;
 
 public interface IEquipment : IDecay, ISkillBonus, IDressable, IProtection, ITransformableEquipment, IChargeable,
     IHasDecay,

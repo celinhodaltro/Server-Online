@@ -1,7 +1,7 @@
-﻿using NeoServer.Game.Common.Creatures;
-using NeoServer.Game.Common.Item;
+﻿using Game.Common.Creatures;
+using Game.Common.Item;
 
-namespace NeoServer.Game.Common.Parsers;
+namespace Game.Common.Parsers;
 
 public static class DamageTypeParser
 {

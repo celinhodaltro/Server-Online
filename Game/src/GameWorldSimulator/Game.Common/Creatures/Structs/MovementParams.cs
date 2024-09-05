@@ -1,4 +1,4 @@
-﻿namespace NeoServer.Game.Common.Creatures.Structs;
+﻿namespace Game.Common.Creatures.Structs;
 
 public readonly ref struct MovementParams
 {

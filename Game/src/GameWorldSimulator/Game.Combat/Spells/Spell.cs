@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Linq;
-using NeoServer.Game.Combat.Conditions;
-using NeoServer.Game.Common;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Spells;
-using NeoServer.Game.Common.Creatures;
+using Game.Combat.Conditions;
+using Game.Common;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Spells;
+using Game.Common.Creatures;
 
-namespace NeoServer.Game.Combat.Spells;
+namespace Game.Combat.Spells;
 
 public abstract class BaseSpell : ISpell
 {

@@ -1,10 +1,10 @@
 ﻿using System.Linq;
-using NeoServer.Game.Common.Contracts.DataStores;
-using NeoServer.Networking.Packets.Incoming.Player;
-using NeoServer.Server.Common.Contracts;
-using NeoServer.Server.Common.Contracts.Network;
+using Game.Common.Contracts.DataStores;
+using Networking.Packets.Incoming.Player;
+using Server.Common.Contracts;
+using Server.Common.Contracts.Network;
 
-namespace NeoServer.Networking.Handlers.Player;
+namespace Networking.Handlers.Player;
 
 public class PlayerChangeCompletedOutFitHandler : PacketHandler
 {

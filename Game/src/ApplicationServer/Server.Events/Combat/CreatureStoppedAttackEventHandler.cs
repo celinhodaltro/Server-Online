@@ -1,9 +1,9 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Helpers;
-using NeoServer.Networking.Packets.Outgoing.Player;
-using NeoServer.Server.Common.Contracts;
+﻿using Game.Common.Contracts.Creatures;
+using Game.Common.Helpers;
+using Networking.Packets.Outgoing.Player;
+using Server.Common.Contracts;
 
-namespace NeoServer.Server.Events.Combat;
+namespace Server.Events.Combat;
 
 public class CreatureStoppedAttackEventHandler
 {

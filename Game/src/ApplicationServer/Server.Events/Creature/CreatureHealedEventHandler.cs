@@ -1,10 +1,10 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Networking.Packets.Outgoing.Creature;
-using NeoServer.Networking.Packets.Outgoing.Player;
-using NeoServer.Server.Common.Contracts;
+﻿using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.World;
+using Networking.Packets.Outgoing.Creature;
+using Networking.Packets.Outgoing.Player;
+using Server.Common.Contracts;
 
-namespace NeoServer.Server.Events.Creature;
+namespace Server.Events.Creature;
 
 public class CreatureHealedEventHandler
 {

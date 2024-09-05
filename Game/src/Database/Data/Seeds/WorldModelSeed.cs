@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using NeoServer.Data.Entities;
+using Data.Entities;
 
-namespace NeoServer.Data.Seeds;
+namespace Data.Seeds;
 
 public class WorldModelSeed
 {

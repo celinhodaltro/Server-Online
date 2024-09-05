@@ -1,9 +1,9 @@
 ﻿using System;
-using NeoServer.Networking.Packets.Messages;
-using NeoServer.Server.Common.Contracts.Network;
-using NeoServer.Server.Security;
+using Networking.Packets.Messages;
+using Server.Common.Contracts.Network;
+using Server.Security;
 
-namespace NeoServer.Networking.Packets.Incoming;
+namespace Networking.Packets.Incoming;
 
 public class PlayerLogInPacket : IncomingPacket
 {

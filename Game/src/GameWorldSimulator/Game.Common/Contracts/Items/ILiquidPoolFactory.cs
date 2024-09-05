@@ -1,7 +1,7 @@
-﻿using NeoServer.Game.Common.Contracts.Items.Types;
-using NeoServer.Game.Common.Item;
+﻿using Game.Common.Contracts.Items.Types;
+using Game.Common.Item;
 
-namespace NeoServer.Game.Common.Contracts.Items;
+namespace Game.Common.Contracts.Items;
 
 public interface ILiquidPoolFactory : IFactory
 {

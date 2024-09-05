@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using NeoServer.Game.Common.Contracts;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types.Containers;
-using NeoServer.Game.Common.Item;
+using Game.Common.Contracts;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types.Containers;
+using Game.Common.Item;
 
-namespace NeoServer.Game.Creatures.Events.Player;
+namespace Game.Creatures.Events.Player;
 
 public class PlayerOpenedContainerEventHandler : IGameEventHandler
 {

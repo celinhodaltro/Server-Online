@@ -1,6 +1,6 @@
-﻿using NeoServer.Game.Common.Item;
+﻿using Game.Common.Item;
 
-namespace NeoServer.Game.Common.Parsers;
+namespace Game.Common.Parsers;
 
 public static class WeaponTypeParser
 {

@@ -1,12 +1,12 @@
 ﻿using System;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Items.Factories;
-using NeoServer.Game.World.Models.Tiles;
-using NeoServer.Server.Helpers;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.World;
+using Game.Common.Item;
+using Game.Items.Factories;
+using Game.World.Models.Tiles;
+using Server.Helpers;
 
-namespace NeoServer.Scripts.Lua.Functions.Libs;
+namespace Extension.Lua.Functions.Libs;
 
 public static class LeverFunctions
 {

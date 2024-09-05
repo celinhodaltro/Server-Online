@@ -1,8 +1,8 @@
-﻿using NeoServer.Game.Common.Contracts;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.World.Tiles;
+﻿using Game.Common.Contracts;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.World.Tiles;
 
-namespace NeoServer.Game.Common.Creatures.Structs;
+namespace Game.Common.Creatures.Structs;
 
 public readonly ref struct ToTileMovementParams
 {

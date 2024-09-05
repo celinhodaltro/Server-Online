@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace NeoServer.Data.Entities;
+namespace Data.Entities;
 
 public sealed class GuildEntity
 {

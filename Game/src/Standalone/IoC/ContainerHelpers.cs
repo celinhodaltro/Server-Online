@@ -2,7 +2,7 @@
 using System.Linq;
 using Autofac;
 
-namespace NeoServer.Server.Standalone.IoC;
+namespace Server.Standalone.IoC;
 
 public static class ContainerHelpers
 {

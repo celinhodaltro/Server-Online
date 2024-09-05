@@ -1,9 +1,9 @@
 ﻿using Autofac;
-using NeoServer.Networking.Handlers.ClientVersion;
-using NeoServer.Networking.Listeners;
-using NeoServer.Networking.Protocols;
+using Networking.Handlers.ClientVersion;
+using Networking.Listeners;
+using Networking.Protocols;
 
-namespace NeoServer.Server.Standalone.IoC.Modules;
+namespace Server.Standalone.IoC.Modules;
 
 public static class NetworkInjection
 {

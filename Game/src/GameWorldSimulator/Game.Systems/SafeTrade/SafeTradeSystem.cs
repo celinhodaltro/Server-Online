@@ -1,16 +1,16 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types.Containers;
-using NeoServer.Game.Common.Contracts.Services;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Game.Common.Helpers;
-using NeoServer.Game.Common.Services;
-using NeoServer.Game.Systems.SafeTrade.Operations;
-using NeoServer.Game.Systems.SafeTrade.Request;
-using NeoServer.Game.Systems.SafeTrade.Trackers;
-using NeoServer.Game.Systems.SafeTrade.Validations;
+﻿using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types.Containers;
+using Game.Common.Contracts.Services;
+using Game.Common.Contracts.World;
+using Game.Common.Helpers;
+using Game.Common.Services;
+using Game.Systems.SafeTrade.Operations;
+using Game.Systems.SafeTrade.Request;
+using Game.Systems.SafeTrade.Trackers;
+using Game.Systems.SafeTrade.Validations;
 
-namespace NeoServer.Game.Systems.SafeTrade;
+namespace Game.Systems.SafeTrade;
 
 /// <summary>
 ///     Provides functionality for trading items between two players.

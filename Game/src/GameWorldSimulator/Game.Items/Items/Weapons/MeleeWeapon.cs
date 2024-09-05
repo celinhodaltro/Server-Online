@@ -1,18 +1,18 @@
 ﻿using System;
 using System.Collections;
-using NeoServer.Game.Combat.Attacks;
-using NeoServer.Game.Common.Combat.Structs;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types.Body;
-using NeoServer.Game.Common.Contracts.Items.Types.Usable;
-using NeoServer.Game.Common.Helpers;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Common.Parsers;
-using NeoServer.Game.Items.Bases;
+using Game.Combat.Attacks;
+using Game.Common.Combat.Structs;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types.Body;
+using Game.Common.Contracts.Items.Types.Usable;
+using Game.Common.Helpers;
+using Game.Common.Item;
+using Game.Common.Location.Structs;
+using Game.Common.Parsers;
+using Game.Items.Bases;
 
-namespace NeoServer.Game.Items.Items.Weapons;
+namespace Game.Items.Items.Weapons;
 
 public class MeleeWeapon : Equipment, IWeaponItem, IUsableOnItem
 {

@@ -1,12 +1,12 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.DataStores;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Services;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Game.Common.Results;
-using NeoServer.Game.Items.Services.ItemTransform.Operations;
+﻿using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.DataStores;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Services;
+using Game.Common.Contracts.World;
+using Game.Common.Results;
+using Game.Items.Services.ItemTransform.Operations;
 
-namespace NeoServer.Game.Items.Services.ItemTransform;
+namespace Game.Items.Services.ItemTransform;
 
 public class ItemTransformService : IItemTransformService
 {

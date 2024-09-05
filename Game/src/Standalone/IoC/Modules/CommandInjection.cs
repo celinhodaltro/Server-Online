@@ -1,8 +1,8 @@
 ﻿using Autofac;
-using NeoServer.Server.Commands.Movements.ToContainer;
-using NeoServer.Server.Commands.Movements.ToInventory;
+using Server.Commands.Movements.ToContainer;
+using Server.Commands.Movements.ToInventory;
 
-namespace NeoServer.Server.Standalone.IoC.Modules;
+namespace Server.Standalone.IoC.Modules;
 
 public static class CommandInjection
 {

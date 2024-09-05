@@ -1,28 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using NeoServer.Data.InMemory.DataStores;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.DataStores;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types;
-using NeoServer.Game.Common.Contracts.Items.Types.Body;
-using NeoServer.Game.Common.Contracts.Items.Types.Runes;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Common.Parsers;
-using NeoServer.Game.Items;
-using NeoServer.Game.Items.Bases;
-using NeoServer.Game.Items.Factories;
-using NeoServer.Game.Items.Items;
-using NeoServer.Game.Items.Items.Attributes;
-using NeoServer.Game.Items.Items.Containers;
-using NeoServer.Game.Items.Items.Containers.Container;
-using NeoServer.Game.Items.Items.Cumulatives;
-using NeoServer.Game.Items.Items.UsableItems;
-using NeoServer.Game.Items.Items.Weapons;
+using Data.InMemory;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.DataStores;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types;
+using Game.Common.Contracts.Items.Types.Body;
+using Game.Common.Contracts.Items.Types.Runes;
+using Game.Common.Item;
+using Game.Common.Location.Structs;
+using Game.Common.Parsers;
+using Game.Items;
+using Game.Items.Bases;
+using Game.Items.Factories;
+using Game.Items.Items;
+using Game.Items.Items.Attributes;
+using Game.Items.Items.Containers;
+using Game.Items.Items.Containers.Container;
+using Game.Items.Items.Cumulatives;
+using Game.Items.Items.UsableItems;
+using Game.Items.Items.Weapons;
 
-namespace NeoServer.Game.Tests.Helpers;
+namespace Game.Tests.Helpers;
 
 public class ItemTestData
 {

@@ -1,7 +1,7 @@
-﻿using NeoServer.Game.Common.Contracts.DataStores;
-using NeoServer.Game.Common.Item;
+﻿using Game.Common.Contracts.DataStores;
+using Game.Common.Item;
 
-namespace NeoServer.Game.Creatures.Player.Inventory.Calculations;
+namespace Game.Creatures.Player.Inventory.Calculations;
 
 public static class InventoryMoneyCalculation
 {

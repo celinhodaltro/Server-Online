@@ -1,8 +1,8 @@
 ﻿using System;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Item;
+using Game.Common.Contracts.Items;
+using Game.Common.Item;
 
-namespace NeoServer.Game.Items.Items.Attributes;
+namespace Game.Items.Items.Attributes;
 
 public class Decayable : IDecayable
 {

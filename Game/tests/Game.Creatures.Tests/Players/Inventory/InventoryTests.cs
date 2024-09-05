@@ -2,19 +2,19 @@
 using System.Collections.Generic;
 using System.Linq;
 using FluentAssertions;
-using NeoServer.Game.Common;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types;
-using NeoServer.Game.Common.Contracts.Items.Types.Containers;
-using NeoServer.Game.Common.Creatures.Players;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Items.Items.Weapons;
-using NeoServer.Game.Tests.Helpers;
-using NeoServer.Game.Tests.Helpers.Player;
+using Game.Common;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types;
+using Game.Common.Contracts.Items.Types.Containers;
+using Game.Common.Creatures.Players;
+using Game.Common.Item;
+using Game.Common.Location.Structs;
+using Game.Items.Items.Weapons;
+using Game.Tests.Helpers;
+using Game.Tests.Helpers.Player;
 using Xunit;
 
-namespace NeoServer.Game.Creatures.Tests.Players.Inventory;
+namespace Game.Creatures.Tests.Players.Inventory;
 
 public class InventoryTests
 {

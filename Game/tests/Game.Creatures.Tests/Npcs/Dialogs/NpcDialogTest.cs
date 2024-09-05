@@ -1,10 +1,10 @@
 ﻿using Moq;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Creatures.Npcs;
-using NeoServer.Game.Creatures.Npcs.Dialogs;
+using Game.Common.Contracts.Creatures;
+using Game.Creatures.Npcs;
+using Game.Creatures.Npcs.Dialogs;
 using Xunit;
 
-namespace NeoServer.Game.Creatures.Tests.Npcs.Dialogs;
+namespace Game.Creatures.Tests.Npcs.Dialogs;
 
 public class NpcDialogTest
 {

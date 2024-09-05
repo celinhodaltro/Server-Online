@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Services;
-using NeoServer.Server.Common.Contracts;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Services;
+using Server.Common.Contracts;
 
-namespace NeoServer.Server.Managers;
+namespace Server.Managers;
 
 public class DecayableItemManager : IDecayableItemManager
 {

@@ -1,4 +1,4 @@
-﻿namespace NeoServer.Game.Common.Item;
+﻿namespace Game.Common.Item;
 
 public class QuestData
 {

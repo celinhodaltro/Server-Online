@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using NeoServer.Game.Common.Contracts.Chats;
-using NeoServer.Game.Common.Creatures.Guilds;
+using Game.Common.Contracts.Chats;
+using Game.Common.Creatures.Guilds;
 
-namespace NeoServer.Game.Common.Contracts.Creatures;
+namespace Game.Common.Contracts.Creatures;
 
 public interface IGuild
 {

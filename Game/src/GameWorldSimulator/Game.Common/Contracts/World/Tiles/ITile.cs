@@ -1,8 +1,8 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Location;
+﻿using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items;
+using Game.Common.Location;
 
-namespace NeoServer.Game.Common.Contracts.World.Tiles;
+namespace Game.Common.Contracts.World.Tiles;
 
 public interface ITile : IThing
 {

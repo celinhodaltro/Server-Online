@@ -1,17 +1,17 @@
 ﻿using System;
 using System.Linq;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.DataStores;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Game.Common.Creatures;
-using NeoServer.Game.Common.Helpers;
-using NeoServer.Game.Creatures.Npcs;
-using NeoServer.Game.Creatures.Npcs.Shop;
-using NeoServer.Game.Creatures.Player;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.DataStores;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.World;
+using Game.Common.Creatures;
+using Game.Common.Helpers;
+using Game.Creatures.Npcs;
+using Game.Creatures.Npcs.Shop;
+using Game.Creatures.Player;
 using Serilog;
 
-namespace NeoServer.Game.Creatures.Factories;
+namespace Game.Creatures.Factories;
 
 public class NpcFactory : INpcFactory
 {

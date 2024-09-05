@@ -1,13 +1,13 @@
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using NeoServer.Data.Contexts;
-using NeoServer.Data.Entities;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Creatures.Players;
-using NeoServer.Game.Common.Helpers;
+using Data.Contexts;
+using Data.Entities;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Creatures.Players;
+using Game.Common.Helpers;
 
-namespace NeoServer.Data.Repositories.Player;
+namespace Data.Repositories.Player;
 
 internal static class InventoryManager
 {

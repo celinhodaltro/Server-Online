@@ -1,8 +1,8 @@
 ﻿using System;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Location.Structs;
+using Game.Common.Contracts.Items;
+using Game.Common.Location.Structs;
 
-namespace NeoServer.Server.Common.Contracts.Network;
+namespace Server.Common.Contracts.Network;
 
 public interface INetworkMessage : IReadOnlyNetworkMessage
 {

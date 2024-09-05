@@ -3,9 +3,9 @@ using System.Collections.Concurrent;
 using System.Threading;
 using System.Threading.Channels;
 using System.Threading.Tasks;
-using NeoServer.Server.Common.Contracts.Tasks;
+using Server.Common.Contracts.Tasks;
 
-namespace NeoServer.Server.Tasks;
+namespace Server.Tasks;
 
 public class Scheduler : IScheduler
 {

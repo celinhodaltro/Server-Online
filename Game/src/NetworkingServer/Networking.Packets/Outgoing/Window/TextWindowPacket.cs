@@ -1,7 +1,7 @@
-﻿using NeoServer.Game.Common.Contracts.Items.Types;
-using NeoServer.Server.Common.Contracts.Network;
+﻿using Game.Common.Contracts.Items.Types;
+using Server.Common.Contracts.Network;
 
-namespace NeoServer.Networking.Packets.Outgoing.Window;
+namespace Networking.Packets.Outgoing.Window;
 
 public class TextWindowPacket : OutgoingPacket
 {

@@ -1,11 +1,11 @@
-﻿using NeoServer.Game.Common.Contracts;
-using NeoServer.Game.Common.Contracts.DataStores;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Items.Factories.AttributeFactory;
-using NeoServer.Game.Items.Items;
+﻿using Game.Common.Contracts;
+using Game.Common.Contracts.DataStores;
+using Game.Common.Contracts.Items;
+using Game.Common.Location.Structs;
+using Game.Items.Factories.AttributeFactory;
+using Game.Items.Items;
 
-namespace NeoServer.Game.Items.Factories;
+namespace Game.Items.Factories;
 
 public class DefenseEquipmentFactory : IFactory
 {

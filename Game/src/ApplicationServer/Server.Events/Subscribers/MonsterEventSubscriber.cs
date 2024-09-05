@@ -1,9 +1,9 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Server.Events.Combat;
-using NeoServer.Server.Events.Creature;
-using NeoServer.Server.Events.Creature.Monsters;
+﻿using Game.Common.Contracts.Creatures;
+using Server.Events.Combat;
+using Server.Events.Creature;
+using Server.Events.Creature.Monsters;
 
-namespace NeoServer.Server.Events.Subscribers;
+namespace Server.Events.Subscribers;
 
 public class MonsterEventSubscriber : ICreatureEventSubscriber
 {

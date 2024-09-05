@@ -1,23 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types;
-using NeoServer.Game.Common.Contracts.Items.Types.Containers;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Common.Results;
-using NeoServer.Game.Items.Bases;
-using NeoServer.Game.Items.Items.Containers.Container.Builders;
-using NeoServer.Game.Items.Items.Containers.Container.Calculations;
-using NeoServer.Game.Items.Items.Containers.Container.Operations;
-using NeoServer.Game.Items.Items.Containers.Container.Operations.Add;
-using NeoServer.Game.Items.Items.Containers.Container.Operations.Remove;
-using NeoServer.Game.Items.Items.Containers.Container.Operations.Update;
-using NeoServer.Game.Items.Items.Containers.Container.Queries;
-using NeoServer.Game.Items.Items.Containers.Container.Rules;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types;
+using Game.Common.Contracts.Items.Types.Containers;
+using Game.Common.Item;
+using Game.Common.Location.Structs;
+using Game.Common.Results;
+using Game.Items.Bases;
+using Game.Items.Items.Containers.Container.Builders;
+using Game.Items.Items.Containers.Container.Calculations;
+using Game.Items.Items.Containers.Container.Operations;
+using Game.Items.Items.Containers.Container.Operations.Add;
+using Game.Items.Items.Containers.Container.Operations.Remove;
+using Game.Items.Items.Containers.Container.Operations.Update;
+using Game.Items.Items.Containers.Container.Queries;
+using Game.Items.Items.Containers.Container.Rules;
 
-namespace NeoServer.Game.Items.Items.Containers.Container;
+namespace Game.Items.Items.Containers.Container;
 
 public class Container : BaseItem, IContainer
 {

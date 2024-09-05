@@ -1,8 +1,8 @@
 ﻿// using System.Collections.Generic;
 // using System.Collections.Immutable;
-// using NeoServer.Game.Common.Contracts.Creatures;
+// using Game.Common.Contracts.Creatures;
 //
-// namespace NeoServer.Game.Creatures.Vocations
+// namespace Game.Creatures.Vocations
 // {
 //     public class VocationStore
 //     {

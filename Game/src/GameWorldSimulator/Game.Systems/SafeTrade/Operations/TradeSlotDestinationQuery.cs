@@ -1,8 +1,8 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Creatures.Players;
+﻿using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items;
+using Game.Common.Creatures.Players;
 
-namespace NeoServer.Game.Systems.SafeTrade.Operations;
+namespace Game.Systems.SafeTrade.Operations;
 
 internal static class TradeSlotDestinationQuery
 {

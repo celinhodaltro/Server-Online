@@ -3,14 +3,14 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using NeoServer.Data.Interfaces;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Systems.Depot;
-using NeoServer.Server.Common.Contracts;
-using NeoServer.Server.Configurations;
+using Data.Interfaces;
+using Game.Common.Contracts.Creatures;
+using Game.Systems.Depot;
+using Server.Common.Contracts;
+using Server.Configurations;
 using Serilog;
 
-namespace NeoServer.Server.Jobs.Persistence;
+namespace Server.Jobs.Persistence;
 
 public class PlayerPersistenceJob
 {

@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using NeoServer.Data.Entities;
-using NeoServer.Game.Common.Contracts.Creatures;
+using Data.Entities;
+using Game.Common.Contracts.Creatures;
 
-namespace NeoServer.Data.Interfaces;
+namespace Data.Interfaces;
 
 public interface IPlayerRepository : IBaseRepositoryNeo<PlayerEntity>
 {

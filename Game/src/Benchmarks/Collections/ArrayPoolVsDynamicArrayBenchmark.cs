@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Engines;
 
-namespace NeoServer.Benchmarks.Collections;
+namespace Benchmarks.Collections;
 
 [SimpleJob(RunStrategy.ColdStart, 100)]
 [MemoryDiagnoser]

@@ -1,9 +1,9 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Creatures.Players;
-using NeoServer.Game.Common.Location.Structs;
+﻿using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items;
+using Game.Common.Creatures.Players;
+using Game.Common.Location.Structs;
 
-namespace NeoServer.Game.Items.Items.Containers.Container.Operations;
+namespace Game.Items.Items.Containers.Container.Operations;
 
 internal static class SetContainerParentOperation
 {

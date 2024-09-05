@@ -1,7 +1,7 @@
-﻿using NeoServer.Server.Configurations;
+﻿using Server.Configurations;
 using Serilog;
 
-namespace NeoServer.Networking.Handlers.ClientVersion;
+namespace Networking.Handlers.ClientVersion;
 
 public class ClientProtocolVersion
 {

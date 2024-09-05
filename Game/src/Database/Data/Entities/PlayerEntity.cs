@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using NeoServer.Game.Common.Creatures.Players;
+using Game.Common.Creatures.Players;
 
-namespace NeoServer.Data.Entities;
+namespace Data.Entities;
 
 public sealed class PlayerEntity
 {

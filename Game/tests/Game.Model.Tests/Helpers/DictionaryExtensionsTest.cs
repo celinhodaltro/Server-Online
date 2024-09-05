@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using NeoServer.Game.Common.Helpers;
+using Game.Common.Helpers;
 using Xunit;
 
-namespace NeoServer.Game.Common.Tests.Helpers;
+namespace Game.Common.Tests.Helpers;
 
 public class DictionaryExtensionsTest
 {

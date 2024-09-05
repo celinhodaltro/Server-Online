@@ -1,6 +1,6 @@
-using NeoServer.Scripts.Lua.EventRegister.Binds;
+using Extension.Lua.EventRegister.Binds;
 
-namespace NeoServer.Scripts.Lua.EventRegister;
+namespace Extension.Lua.EventRegister;
 
 public static class LuaBind
 {

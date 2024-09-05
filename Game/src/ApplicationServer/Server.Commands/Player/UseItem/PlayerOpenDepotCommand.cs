@@ -1,14 +1,14 @@
 using System.Linq;
-using NeoServer.Data.Interfaces;
-using NeoServer.Data.Parsers;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types.Containers;
-using NeoServer.Game.Common.Contracts.Services;
-using NeoServer.Game.Systems.Depot;
-using NeoServer.Networking.Packets.Incoming;
+using Data.Interfaces;
+using Data.Parsers;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types.Containers;
+using Game.Common.Contracts.Services;
+using Game.Systems.Depot;
+using Networking.Packets.Incoming;
 
-namespace NeoServer.Server.Commands.Player.UseItem;
+namespace Server.Commands.Player.UseItem;
 
 public class PlayerOpenDepotCommand
 {

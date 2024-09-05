@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using NeoServer.Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items;
 
-namespace NeoServer.Game.Common.Contracts.Creatures;
+namespace Game.Common.Contracts.Creatures;
 
 public delegate void ShowShop(INpc npc, ISociableCreature to, IEnumerable<IShopItem> shopItems);
 

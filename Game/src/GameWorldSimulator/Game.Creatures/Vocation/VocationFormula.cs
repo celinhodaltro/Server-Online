@@ -1,6 +1,6 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
+﻿using Game.Common.Contracts.Creatures;
 
-namespace NeoServer.Game.Creatures.Vocation;
+namespace Game.Creatures.Vocation;
 
 public class VocationFormula : IVocationFormula
 {

@@ -1,4 +1,4 @@
-﻿namespace NeoServer.Game.Common.Creatures.Guilds;
+﻿namespace Game.Common.Creatures.Guilds;
 
 public enum GuildRank
 {

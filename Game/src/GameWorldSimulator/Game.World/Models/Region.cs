@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Location;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Location;
 
-namespace NeoServer.Game.World.Models;
+namespace Game.World.Models;
 
 public class Region
 {

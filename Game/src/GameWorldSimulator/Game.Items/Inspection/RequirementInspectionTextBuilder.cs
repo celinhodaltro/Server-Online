@@ -1,9 +1,9 @@
 ﻿using System.Text;
-using NeoServer.Game.Common.Contracts.DataStores;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Helpers;
+using Game.Common.Contracts.DataStores;
+using Game.Common.Contracts.Items;
+using Game.Common.Helpers;
 
-namespace NeoServer.Game.Items.Inspection;
+namespace Game.Items.Inspection;
 
 public static class RequirementInspectionTextBuilder
 {

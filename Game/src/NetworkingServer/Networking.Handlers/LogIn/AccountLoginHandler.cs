@@ -1,11 +1,11 @@
-﻿using NeoServer.Data.Interfaces;
-using NeoServer.Networking.Handlers.ClientVersion;
-using NeoServer.Networking.Packets.Incoming;
-using NeoServer.Networking.Packets.Outgoing.Login;
-using NeoServer.Server.Common.Contracts.Network;
-using NeoServer.Server.Configurations;
+﻿using Data.Interfaces;
+using Networking.Handlers.ClientVersion;
+using Networking.Packets.Incoming;
+using Networking.Packets.Outgoing.Login;
+using Server.Common.Contracts.Network;
+using Server.Configurations;
 
-namespace NeoServer.Networking.Handlers.LogIn;
+namespace Networking.Handlers.LogIn;
 
 public class AccountLoginHandler : PacketHandler
 {

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using NeoServer.Game.Common.Item;
+using Game.Common.Item;
 
-namespace NeoServer.Game.Items.Mappers;
+namespace Game.Items.Mappers;
 
 public class LiquidTypeMap
 {

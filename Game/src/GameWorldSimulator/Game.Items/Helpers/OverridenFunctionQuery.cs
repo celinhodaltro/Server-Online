@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using NeoServer.Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items;
 
-namespace NeoServer.Game.Items.Helpers;
+namespace Game.Items.Helpers;
 
 public static class OverridenFunctionQuery
 {

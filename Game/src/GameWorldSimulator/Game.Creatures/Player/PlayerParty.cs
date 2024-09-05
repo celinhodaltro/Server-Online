@@ -1,13 +1,13 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using NeoServer.Game.Common;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Creatures.Players;
-using NeoServer.Game.Common.Results;
-using NeoServer.Game.Common.Services;
-using NeoServer.Game.Common.Texts;
+using Game.Common;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Creatures.Players;
+using Game.Common.Results;
+using Game.Common.Services;
+using Game.Common.Texts;
 
-namespace NeoServer.Game.Creatures.Player;
+namespace Game.Creatures.Player;
 
 public class PlayerParty : IPlayerParty
 {

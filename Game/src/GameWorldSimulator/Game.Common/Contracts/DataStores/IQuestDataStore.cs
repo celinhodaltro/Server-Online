@@ -1,6 +1,6 @@
-﻿using NeoServer.Game.Common.Item;
+﻿using Game.Common.Item;
 
-namespace NeoServer.Game.Common.Contracts.DataStores;
+namespace Game.Common.Contracts.DataStores;
 
 public interface IQuestDataStore : IDataStore<(ushort ActionId, uint UniqueId), QuestData>
 {

@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types;
-using NeoServer.Game.Common.Location;
-using NeoServer.Game.Common.Results;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types;
+using Game.Common.Location;
+using Game.Common.Results;
 
-namespace NeoServer.Game.Common.Contracts.World.Tiles;
+namespace Game.Common.Contracts.World.Tiles;
 
 public delegate void AddCreatureToTile(ICreature creature, ITile tile);
 

@@ -1,12 +1,12 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Game.Common.Helpers;
-using NeoServer.Game.Common.Services;
-using NeoServer.Game.Systems.SafeTrade.Trackers;
-using NeoServer.Game.World.Algorithms;
+﻿using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.World;
+using Game.Common.Helpers;
+using Game.Common.Services;
+using Game.Systems.SafeTrade.Trackers;
+using Game.World.Algorithms;
 
-namespace NeoServer.Game.Systems.SafeTrade.Validations;
+namespace Game.Systems.SafeTrade.Validations;
 
 internal class TradeRequestValidation
 {

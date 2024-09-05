@@ -1,7 +1,7 @@
-﻿using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Server.Common.Contracts.Network;
+﻿using Game.Common.Contracts.Items;
+using Server.Common.Contracts.Network;
 
-namespace NeoServer.Networking.Packets.Outgoing.Item;
+namespace Networking.Packets.Outgoing.Item;
 
 public class UpdateItemContainerPacket : OutgoingPacket
 {

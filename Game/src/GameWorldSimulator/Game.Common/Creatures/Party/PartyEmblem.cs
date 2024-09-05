@@ -1,4 +1,4 @@
-﻿namespace NeoServer.Game.Common.Creatures.Party;
+﻿namespace Game.Common.Creatures.Party;
 
 public enum PartyEmblem
 {

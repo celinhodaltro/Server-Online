@@ -1,14 +1,14 @@
-﻿using NeoServer.Game.Combat;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Game.Common.Contracts.World.Tiles;
-using NeoServer.Game.Common.Creatures;
-using NeoServer.Game.Common.Helpers;
-using NeoServer.Game.Common.Location;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Creatures.Models.Bases;
+﻿using Game.Combat;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.World;
+using Game.Common.Contracts.World.Tiles;
+using Game.Common.Creatures;
+using Game.Common.Helpers;
+using Game.Common.Location;
+using Game.Common.Location.Structs;
+using Game.Creatures.Models.Bases;
 
-namespace NeoServer.Game.Creatures.Monster;
+namespace Game.Creatures.Monster;
 
 public abstract class WalkableMonster : CombatActor, IWalkableMonster
 {

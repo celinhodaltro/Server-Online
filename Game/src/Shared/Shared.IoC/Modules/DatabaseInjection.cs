@@ -1,17 +1,17 @@
 ﻿using Autofac;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using NeoServer.Data.Contexts;
-using NeoServer.Data.Factory;
-using NeoServer.Data.Interfaces;
-using NeoServer.Data.Providers.InMemory;
-using NeoServer.Data.Providers.MySQL;
-using NeoServer.Data.Providers.SQLite;
-using NeoServer.Data.Repositories;
-using NeoServer.Data.Repositories.Player;
-using NeoServer.Server.Configurations;
+using Data.Contexts;
+using Data.Factory;
+using Data.Interfaces;
+using Data.Providers.InMemory;
+using Data.Providers.MySQL;
+using Data.Providers.SQLite;
+using Data.Repositories;
+using Data.Repositories.Player;
+using Server.Configurations;
 
-namespace NeoServer.Shared.IoC.Modules;
+namespace Shared.IoC.Modules;
 
 public static class DatabaseInjection
 {

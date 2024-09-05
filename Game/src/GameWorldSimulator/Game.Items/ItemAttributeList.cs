@@ -2,13 +2,13 @@
 using System.Buffers;
 using System.Collections.Generic;
 using System.Globalization;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Creatures;
-using NeoServer.Game.Common.Helpers;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Common.Location;
+using Game.Common.Contracts.Items;
+using Game.Common.Creatures;
+using Game.Common.Helpers;
+using Game.Common.Item;
+using Game.Common.Location;
 
-namespace NeoServer.Game.Items;
+namespace Game.Items;
 
 public sealed class ItemAttributeList : IItemAttributeList
 {

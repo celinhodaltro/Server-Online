@@ -1,6 +1,6 @@
-﻿using NeoServer.Server.Common.Contracts.Network;
+﻿using Server.Common.Contracts.Network;
 
-namespace NeoServer.Networking.Packets.Outgoing;
+namespace Networking.Packets.Outgoing;
 
 public abstract class OutgoingPacket : IOutgoingPacket
 {

@@ -1,7 +1,7 @@
-﻿using NeoServer.Data.Entities;
-using NeoServer.Server.Common.Contracts.Network;
+﻿using Data.Entities;
+using Server.Common.Contracts.Network;
 
-namespace NeoServer.Networking.Packets.Outgoing.Login;
+namespace Networking.Packets.Outgoing.Login;
 
 public class CharacterListPacket : OutgoingPacket
 {

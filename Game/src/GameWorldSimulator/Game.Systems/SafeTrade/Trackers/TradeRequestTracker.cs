@@ -1,7 +1,7 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Systems.SafeTrade.Request;
+﻿using Game.Common.Contracts.Creatures;
+using Game.Systems.SafeTrade.Request;
 
-namespace NeoServer.Game.Systems.SafeTrade.Trackers;
+namespace Game.Systems.SafeTrade.Trackers;
 
 internal static class TradeRequestTracker
 {

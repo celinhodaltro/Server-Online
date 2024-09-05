@@ -1,9 +1,9 @@
-﻿using NeoServer.Game.Common;
-using NeoServer.Game.Common.Contracts.Items.Types;
-using NeoServer.Game.Common.Results;
-using NeoServer.Game.Items.Items.Containers.Container.Operations.Add;
+﻿using Game.Common;
+using Game.Common.Contracts.Items.Types;
+using Game.Common.Results;
+using Game.Items.Items.Containers.Container.Operations.Add;
 
-namespace NeoServer.Game.Items.Items.Containers.Container.Operations.Update;
+namespace Game.Items.Items.Containers.Container.Operations.Update;
 
 internal static class JoinCumulativeItemOperation
 {

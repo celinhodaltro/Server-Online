@@ -1,18 +1,18 @@
 ﻿using Autofac;
-using NeoServer.Game.Common.Contracts.Inspection;
-using NeoServer.Game.Common.Contracts.Services;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Game.Creatures.Party;
-using NeoServer.Game.Creatures.Services;
-using NeoServer.Game.Items.Services;
-using NeoServer.Game.Items.Services.ItemTransform;
-using NeoServer.Game.Systems.SafeTrade;
-using NeoServer.Game.Systems.SafeTrade.Operations;
-using NeoServer.Game.Systems.Services;
-using NeoServer.Game.World.Services;
-using NeoServer.Server.Commands.Player.UseItem;
+using Game.Common.Contracts.Inspection;
+using Game.Common.Contracts.Services;
+using Game.Common.Contracts.World;
+using Game.Creatures.Party;
+using Game.Creatures.Services;
+using Game.Items.Services;
+using Game.Items.Services.ItemTransform;
+using Game.Systems.SafeTrade;
+using Game.Systems.SafeTrade.Operations;
+using Game.Systems.Services;
+using Game.World.Services;
+using Server.Commands.Player.UseItem;
 
-namespace NeoServer.Server.Standalone.IoC.Modules;
+namespace Server.Standalone.IoC.Modules;
 
 /// <summary>
 ///     Contains the registration of various game services and operations for the dependency injection container.

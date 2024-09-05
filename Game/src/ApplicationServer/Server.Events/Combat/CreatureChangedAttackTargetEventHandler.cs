@@ -1,9 +1,9 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Results;
-using NeoServer.Server.Common.Contracts;
-using NeoServer.Server.Tasks;
+﻿using Game.Common.Contracts.Creatures;
+using Game.Common.Results;
+using Server.Common.Contracts;
+using Server.Tasks;
 
-namespace NeoServer.Server.Events.Combat;
+namespace Server.Events.Combat;
 
 public class CreatureChangedAttackTargetEventHandler
 {

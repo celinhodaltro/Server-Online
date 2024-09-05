@@ -1,4 +1,4 @@
-﻿namespace NeoServer.Game.Chats.Rules;
+﻿namespace Game.Chats.Rules;
 
 public struct ChannelRule
 {

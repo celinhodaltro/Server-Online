@@ -1,9 +1,9 @@
 ﻿using System.Linq;
-using NeoServer.Game.Common.Contracts;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.DataStores;
+using Game.Common.Contracts;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.DataStores;
 
-namespace NeoServer.Game.Creatures.Events.Player;
+namespace Game.Creatures.Events.Player;
 
 public class PlayerLoggedOutEventHandler : IGameEventHandler
 {

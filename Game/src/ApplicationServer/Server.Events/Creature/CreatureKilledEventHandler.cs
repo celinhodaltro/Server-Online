@@ -1,11 +1,11 @@
-﻿using NeoServer.Data.Interfaces;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Networking.Packets.Outgoing.Login;
-using NeoServer.Server.Common.Contracts;
-using NeoServer.Server.Tasks;
+﻿using Data.Interfaces;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items;
+using Networking.Packets.Outgoing.Login;
+using Server.Common.Contracts;
+using Server.Tasks;
 
-namespace NeoServer.Server.Events.Creature;
+namespace Server.Events.Creature;
 
 public class CreatureKilledEventHandler
 {

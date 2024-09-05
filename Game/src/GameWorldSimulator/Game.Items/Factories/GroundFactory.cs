@@ -1,9 +1,9 @@
-﻿using NeoServer.Game.Common.Contracts;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Items.Items;
+﻿using Game.Common.Contracts;
+using Game.Common.Contracts.Items;
+using Game.Common.Location.Structs;
+using Game.Items.Items;
 
-namespace NeoServer.Game.Items.Factories;
+namespace Game.Items.Factories;
 
 public class GroundFactory : IFactory
 {

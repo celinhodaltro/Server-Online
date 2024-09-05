@@ -1,6 +1,6 @@
-//using NeoServer.Server.Schedulers.Contracts;
+//using Server.Schedulers.Contracts;
 
-//namespace NeoServer.Server.Contracts
+//namespace Server.Contracts
 //{
 //    public interface IDispatcher
 //    {

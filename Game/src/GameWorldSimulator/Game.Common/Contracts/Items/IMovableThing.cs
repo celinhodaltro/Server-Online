@@ -1,4 +1,4 @@
-﻿namespace NeoServer.Game.Common.Contracts.Items;
+﻿namespace Game.Common.Contracts.Items;
 
 public interface IMovableThing : IThing
 {

@@ -1,4 +1,4 @@
-﻿namespace NeoServer.Game.Common.Item.Structs;
+﻿namespace Game.Common.Item.Structs;
 
 public readonly struct LightBlock
 {

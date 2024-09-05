@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Reflection;
-using NeoServer.Game.Common.Contracts.DataStores;
-using NeoServer.Game.Common.Location;
+using Game.Common.Contracts.DataStores;
+using Game.Common.Location;
 
-namespace NeoServer.Data.InMemory.DataStores;
+namespace Data.InMemory;
 
 public class AreaEffectStore : IAreaEffectStore
 {

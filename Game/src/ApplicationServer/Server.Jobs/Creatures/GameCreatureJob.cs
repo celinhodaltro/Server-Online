@@ -1,12 +1,12 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Services;
-using NeoServer.Game.World.Models.Spawns;
-using NeoServer.Server.Commands.Player;
-using NeoServer.Server.Common.Contracts;
-using NeoServer.Server.Jobs.Creatures.Npc;
-using NeoServer.Server.Tasks;
+﻿using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Services;
+using Game.World.Models.Spawns;
+using Server.Commands.Player;
+using Server.Common.Contracts;
+using Server.Jobs.Creatures.Npc;
+using Server.Tasks;
 
-namespace NeoServer.Server.Jobs.Creatures;
+namespace Server.Jobs.Creatures;
 
 public class GameCreatureJob
 {

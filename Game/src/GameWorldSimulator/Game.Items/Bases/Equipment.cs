@@ -1,17 +1,17 @@
 ﻿using System;
 using System.Linq;
 using System.Text;
-using NeoServer.Game.Common.Combat.Structs;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types;
-using NeoServer.Game.Common.Helpers;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Items.Factories.AttributeFactory;
-using NeoServer.Game.Items.Items.Attributes;
+using Game.Common.Combat.Structs;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types;
+using Game.Common.Helpers;
+using Game.Common.Item;
+using Game.Common.Location.Structs;
+using Game.Items.Factories.AttributeFactory;
+using Game.Items.Items.Attributes;
 
-namespace NeoServer.Game.Items.Bases;
+namespace Game.Items.Bases;
 
 public abstract class Equipment : BaseItem, IEquipment
 {

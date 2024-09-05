@@ -5,7 +5,7 @@ using System.Threading.Channels;
 using System.Threading.Tasks;
 using BenchmarkDotNet.Attributes;
 
-namespace NeoServer.Benchmarks.Tasks;
+namespace Benchmarks.Tasks;
 
 [MemoryDiagnoser]
 public class JobQueueBenchmark

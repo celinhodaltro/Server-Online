@@ -1,7 +1,7 @@
-﻿using NeoServer.Game.Common.Contracts.DataStores;
-using NeoServer.Game.Common.Contracts.Items;
+﻿using Game.Common.Contracts.DataStores;
+using Game.Common.Contracts.Items;
 
-namespace NeoServer.Data.InMemory.DataStores;
+namespace Data.InMemory;
 
 public class ItemTypeStore : DataStore<ItemTypeStore, ushort, IItemType>, IItemTypeStore
 {

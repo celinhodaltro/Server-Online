@@ -1,4 +1,4 @@
-﻿namespace NeoServer.Game.Common.Contracts.Items.Types.Body;
+﻿namespace Game.Common.Contracts.Items.Types.Body;
 
 public interface IThrowableDistanceWeaponItem : ICumulative, IWeapon
 {

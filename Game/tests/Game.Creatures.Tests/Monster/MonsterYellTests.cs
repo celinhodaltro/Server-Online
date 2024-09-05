@@ -1,13 +1,13 @@
 ﻿using System;
 using AutoFixture;
 using FluentAssertions;
-using NeoServer.Game.Common.Chats;
-using NeoServer.Game.Common.Creatures;
-using NeoServer.Game.Creatures.Monster.Combat;
-using NeoServer.Game.Tests.Helpers;
+using Game.Common.Chats;
+using Game.Common.Creatures;
+using Game.Creatures.Monster.Combat;
+using Game.Tests.Helpers;
 using Xunit;
 
-namespace NeoServer.Game.Creatures.Tests.Monster;
+namespace Game.Creatures.Tests.Monster;
 
 public class MonsterYellTests
 {

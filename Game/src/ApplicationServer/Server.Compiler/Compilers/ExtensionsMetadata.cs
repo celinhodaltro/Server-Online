@@ -5,7 +5,7 @@ using System.Reflection;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace NeoServer.Server.Compiler.Compilers;
+namespace Server.Compiler.Compilers;
 
 public class ExtensionsMetadata
 {

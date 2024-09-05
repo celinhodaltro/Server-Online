@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using NeoServer.Data.Contexts;
-using NeoServer.Data.Interfaces;
+using Data.Contexts;
+using Data.Interfaces;
 using Serilog;
 
-namespace NeoServer.Data.Repositories;
+namespace Data.Repositories;
 
 /// <summary>
 ///     This class represents the generic repository base from application.

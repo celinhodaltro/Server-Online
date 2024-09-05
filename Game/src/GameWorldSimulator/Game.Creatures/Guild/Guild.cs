@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using NeoServer.Game.Common.Contracts.Chats;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Creatures.Guilds;
+using Game.Common.Contracts.Chats;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Creatures.Guilds;
 
-namespace NeoServer.Game.Creatures.Guild;
+namespace Game.Creatures.Guild;
 
 public class Guild : IGuild
 {

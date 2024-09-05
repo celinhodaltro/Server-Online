@@ -1,15 +1,15 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types.Containers;
-using NeoServer.Game.Common.Creatures.Players;
-using NeoServer.Game.Common.Location;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Common.Services;
-using NeoServer.Game.Common.Texts;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types.Containers;
+using Game.Common.Creatures.Players;
+using Game.Common.Location;
+using Game.Common.Location.Structs;
+using Game.Common.Services;
+using Game.Common.Texts;
 
-namespace NeoServer.Game.Creatures.Player;
+namespace Game.Creatures.Player;
 
 public class PlayerContainerList : IPlayerContainerList
 {

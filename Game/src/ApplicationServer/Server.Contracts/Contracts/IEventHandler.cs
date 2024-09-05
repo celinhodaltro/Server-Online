@@ -1,4 +1,4 @@
-﻿namespace NeoServer.Server.Common.Contracts;
+﻿namespace Server.Common.Contracts;
 
 public interface IEventHandler
 {

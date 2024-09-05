@@ -1,9 +1,9 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items.Types.Containers;
-using NeoServer.Networking.Packets.Outgoing.Player;
-using NeoServer.Server.Common.Contracts;
+﻿using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items.Types.Containers;
+using Networking.Packets.Outgoing.Player;
+using Server.Common.Contracts;
 
-namespace NeoServer.Server.Events.Player.Containers;
+namespace Server.Events.Player.Containers;
 
 public class PlayerOpenedContainerEventHandler
 {

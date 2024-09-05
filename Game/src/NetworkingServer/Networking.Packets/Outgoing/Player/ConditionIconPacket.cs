@@ -1,6 +1,6 @@
-﻿using NeoServer.Server.Common.Contracts.Network;
+﻿using Server.Common.Contracts.Network;
 
-namespace NeoServer.Networking.Packets.Outgoing.Player;
+namespace Networking.Packets.Outgoing.Player;
 
 public class ConditionIconPacket : OutgoingPacket
 {

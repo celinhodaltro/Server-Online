@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace NeoServer.Game.Common.Results;
+namespace Game.Common.Results;
 
 public struct OperationResultList<T>
 {

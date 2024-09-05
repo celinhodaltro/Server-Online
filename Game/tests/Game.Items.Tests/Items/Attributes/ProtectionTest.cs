@@ -2,19 +2,19 @@
 using System.Collections.Generic;
 using FluentAssertions;
 using Moq;
-using NeoServer.Game.Common.Combat.Structs;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Items.Items;
-using NeoServer.Game.Items.Items.Attributes;
-using NeoServer.Game.Tests.Helpers;
-using NeoServer.Game.Tests.Helpers.Map;
-using NeoServer.Game.Tests.Helpers.Player;
-using NeoServer.Game.World.Models.Tiles;
+using Game.Common.Combat.Structs;
+using Game.Common.Contracts.Items;
+using Game.Common.Item;
+using Game.Common.Location.Structs;
+using Game.Items.Items;
+using Game.Items.Items.Attributes;
+using Game.Tests.Helpers;
+using Game.Tests.Helpers.Map;
+using Game.Tests.Helpers.Player;
+using Game.World.Models.Tiles;
 using Xunit;
 
-namespace NeoServer.Game.Items.Tests.Items.Attributes;
+namespace Game.Items.Tests.Items.Attributes;
 
 public class ProtectionTest
 {

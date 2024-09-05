@@ -1,11 +1,11 @@
-﻿using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types;
-using NeoServer.Game.Common.Creatures.Players;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Common.Results;
-using NeoServer.Game.Creatures.Player.Inventory.Rules;
+﻿using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types;
+using Game.Common.Creatures.Players;
+using Game.Common.Location.Structs;
+using Game.Common.Results;
+using Game.Creatures.Player.Inventory.Rules;
 
-namespace NeoServer.Game.Creatures.Player.Inventory.Operations;
+namespace Game.Creatures.Player.Inventory.Operations;
 
 public abstract class AddToSlotOperation
 {

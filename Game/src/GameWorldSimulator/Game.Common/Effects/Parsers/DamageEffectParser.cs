@@ -1,8 +1,8 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Creatures;
-using NeoServer.Game.Common.Item;
+﻿using Game.Common.Contracts.Creatures;
+using Game.Common.Creatures;
+using Game.Common.Item;
 
-namespace NeoServer.Game.Common.Effects.Parsers;
+namespace Game.Common.Effects.Parsers;
 
 public static class DamageEffectParser
 {

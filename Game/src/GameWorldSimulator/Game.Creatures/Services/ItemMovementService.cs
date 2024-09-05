@@ -1,13 +1,13 @@
-﻿using NeoServer.Game.Common.Contracts;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Services;
-using NeoServer.Game.Common.Location;
-using NeoServer.Game.Common.Results;
-using NeoServer.Game.Common.Services;
-using NeoServer.Game.Common.Texts;
+﻿using Game.Common.Contracts;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Services;
+using Game.Common.Location;
+using Game.Common.Results;
+using Game.Common.Services;
+using Game.Common.Texts;
 
-namespace NeoServer.Game.Creatures.Services;
+namespace Game.Creatures.Services;
 
 public class ItemMovementService : IItemMovementService
 {

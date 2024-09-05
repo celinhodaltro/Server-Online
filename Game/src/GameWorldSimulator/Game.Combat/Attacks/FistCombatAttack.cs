@@ -1,8 +1,8 @@
-﻿using NeoServer.Game.Common.Combat.Structs;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Item;
+﻿using Game.Common.Combat.Structs;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Item;
 
-namespace NeoServer.Game.Combat.Attacks;
+namespace Game.Combat.Attacks;
 
 public static class FistCombatAttack
 {

@@ -1,9 +1,9 @@
-﻿using NeoServer.Networking.Packets.Incoming;
-using NeoServer.Server.Common.Contracts;
-using NeoServer.Server.Common.Contracts.Network;
-using NeoServer.Server.Tasks;
+﻿using Networking.Packets.Incoming;
+using Server.Common.Contracts;
+using Server.Common.Contracts.Network;
+using Server.Tasks;
 
-namespace NeoServer.Networking.Handlers.Player;
+namespace Networking.Handlers.Player;
 
 public class PlayerChangesModeHandler : PacketHandler
 {

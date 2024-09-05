@@ -2,12 +2,12 @@
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using NeoServer.Data.Contexts;
-using NeoServer.Data.Entities;
-using NeoServer.Data.Interfaces;
+using Data.Contexts;
+using Data.Entities;
+using Data.Interfaces;
 using Serilog;
 
-namespace NeoServer.Data.Repositories;
+namespace Data.Repositories;
 
 public class AccountRepository : BaseRepository<AccountEntity>, IAccountRepository
 {

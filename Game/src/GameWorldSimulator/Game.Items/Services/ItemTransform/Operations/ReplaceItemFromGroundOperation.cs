@@ -1,11 +1,11 @@
-﻿using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Game.Common.Contracts.World.Tiles;
-using NeoServer.Game.Common.Location;
-using NeoServer.Game.Common.Results;
+﻿using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types;
+using Game.Common.Contracts.World;
+using Game.Common.Contracts.World.Tiles;
+using Game.Common.Location;
+using Game.Common.Results;
 
-namespace NeoServer.Game.Items.Services.ItemTransform.Operations;
+namespace Game.Items.Services.ItemTransform.Operations;
 
 internal static class ReplaceItemFromGroundOperation
 {

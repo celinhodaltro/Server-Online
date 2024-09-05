@@ -1,6 +1,6 @@
-﻿using NeoServer.Game.Common.Item;
+﻿using Game.Common.Item;
 
-namespace NeoServer.Game.Common.Contracts.Items.Types;
+namespace Game.Common.Contracts.Items.Types;
 
 public delegate void ItemReduce(ICumulative item, byte amount);
 

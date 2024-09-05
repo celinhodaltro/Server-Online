@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
-using NeoServer.Game.Common.Contracts;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Items.Items.Containers;
-using NeoServer.Game.Items.Items.Containers.Container;
+using Game.Common.Contracts;
+using Game.Common.Contracts.Items;
+using Game.Common.Location.Structs;
+using Game.Items.Items.Containers;
+using Game.Items.Items.Containers.Container;
 
-namespace NeoServer.Game.Items.Factories;
+namespace Game.Items.Factories;
 
 public class ContainerFactory : IFactory
 {

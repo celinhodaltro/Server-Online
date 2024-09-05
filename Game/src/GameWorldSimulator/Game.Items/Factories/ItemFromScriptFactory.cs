@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Helpers;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Common.Location.Structs;
+using Game.Common.Contracts.Items;
+using Game.Common.Helpers;
+using Game.Common.Item;
+using Game.Common.Location.Structs;
 
-namespace NeoServer.Game.Items.Factories;
+namespace Game.Items.Factories;
 
 /// <summary>
 ///     A factory class that creates an instance of <see cref="IItem" /> based on a C# script file.

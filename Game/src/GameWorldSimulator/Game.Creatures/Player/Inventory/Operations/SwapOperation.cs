@@ -1,9 +1,9 @@
-﻿using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types;
-using NeoServer.Game.Common.Creatures.Players;
-using NeoServer.Game.Common.Results;
+﻿using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types;
+using Game.Common.Creatures.Players;
+using Game.Common.Results;
 
-namespace NeoServer.Game.Creatures.Player.Inventory.Operations;
+namespace Game.Creatures.Player.Inventory.Operations;
 
 public static class SwapOperation
 {

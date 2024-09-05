@@ -1,6 +1,6 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
+﻿using Game.Common.Contracts.Creatures;
 
-namespace NeoServer.Server.Jobs.Creatures.Npc;
+namespace Server.Jobs.Creatures.Npc;
 
 public class NpcJob
 {

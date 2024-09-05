@@ -1,7 +1,7 @@
 using System;
-using NeoServer.Server.Common.Contracts.Network;
+using Server.Common.Contracts.Network;
 
-namespace NeoServer.Networking.Packets.Security;
+namespace Networking.Packets.Security;
 
 public static class Xtea
 {

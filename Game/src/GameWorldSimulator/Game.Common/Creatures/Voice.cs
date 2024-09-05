@@ -1,6 +1,6 @@
-﻿using NeoServer.Game.Common.Chats;
+﻿using Game.Common.Chats;
 
-namespace NeoServer.Game.Common.Creatures;
+namespace Game.Common.Creatures;
 
 public readonly struct Voice
 {

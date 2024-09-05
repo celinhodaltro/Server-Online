@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using NeoServer.Game.Common.Combat.Structs;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Common.Parsers;
+using Game.Common.Combat.Structs;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types;
+using Game.Common.Item;
+using Game.Common.Parsers;
 
-namespace NeoServer.Game.Items.Items.Attributes;
+namespace Game.Items.Items.Attributes;
 
 public sealed class Protection : IProtection
 {

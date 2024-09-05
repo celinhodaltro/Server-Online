@@ -1,33 +1,33 @@
 ﻿using Autofac;
-using NeoServer.Loaders.Interfaces;
-using NeoServer.Loaders.Items;
-using NeoServer.Loaders.Monsters;
-using NeoServer.Loaders.Quest;
-using NeoServer.Loaders.Spawns;
-using NeoServer.Loaders.Spells;
-using NeoServer.Loaders.Vocations;
-using NeoServer.Loaders.World;
-using NeoServer.Server.Common.Contracts;
+using Loader.Interfaces;
+using Loader.Items;
+using Loader.Monsters;
+using Loader.Quest;
+using Loader.Spawns;
+using Loader.Spells;
+using Loader.Vocations;
+using Loader.World;
+using Server.Common.Contracts;
 
-namespace NeoServer.Server.Standalone.IoC.Modules;
+namespace Server.Standalone.IoC.Modules;
 
 public static class LoaderInjection
 {
-    public static ContainerBuilder AddLoaders(this ContainerBuilder builder)
+    public static ContainerBuilder AddLoader(this ContainerBuilder builder)
     {
         builder.RegisterType<ItemTypeLoader>().SingleInstance();
         builder.RegisterType<WorldLoader>().SingleInstance();
         builder.RegisterType<SpawnLoader>().SingleInstance();
         builder.RegisterType<MonsterLoader>().SingleInstance();
         builder.RegisterType<VocationLoader>().SingleInstance();
-        builder.RegisterPlayerLoaders();
-        builder.RegisterStartupLoaders();
+        builder.RegisterPlayerLoader();
+        builder.RegisterStartupLoader();
         builder.RegisterType<SpellLoader>().SingleInstance();
         builder.RegisterType<QuestDataLoader>().SingleInstance();
 
-        builder.RegisterCustomLoaders();
+        builder.RegisterCustomLoader();
 
-        builder.RegisterAssemblyTypes(Container.AssemblyCache).As<IRunBeforeLoaders>()
+        builder.RegisterAssemblyTypes(Container.AssemblyCache).As<IRunBeforeLoader>()
             .SingleInstance();
         builder.RegisterAssemblyTypes(Container.AssemblyCache).As<IStartup>().SingleInstance();
 
@@ -35,19 +35,19 @@ public static class LoaderInjection
         return builder;
     }
 
-    private static void RegisterPlayerLoaders(this ContainerBuilder builder)
+    private static void RegisterPlayerLoader(this ContainerBuilder builder)
     {
         var types = Container.AssemblyCache;
         builder.RegisterAssemblyTypes(types).As<IPlayerLoader>().SingleInstance();
     }
 
-    private static void RegisterStartupLoaders(this ContainerBuilder builder)
+    private static void RegisterStartupLoader(this ContainerBuilder builder)
     {
         var types = Container.AssemblyCache;
         builder.RegisterAssemblyTypes(types).As<IStartupLoader>().SingleInstance();
     }
 
-    private static void RegisterCustomLoaders(this ContainerBuilder builder)
+    private static void RegisterCustomLoader(this ContainerBuilder builder)
     {
         builder.RegisterAssembliesByInterface(typeof(ICustomLoader));
     }

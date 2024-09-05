@@ -1,9 +1,9 @@
-﻿using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Helpers;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Server.Common.Contracts.Network;
+﻿using Game.Common.Contracts.Items;
+using Game.Common.Helpers;
+using Game.Common.Location.Structs;
+using Server.Common.Contracts.Network;
 
-namespace NeoServer.Networking.Packets.Outgoing.Item;
+namespace Networking.Packets.Outgoing.Item;
 
 public class RemoveTileItemPacket : OutgoingPacket
 {

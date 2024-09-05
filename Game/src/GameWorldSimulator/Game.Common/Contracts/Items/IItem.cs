@@ -1,8 +1,8 @@
 ﻿using System;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Common.Location;
+using Game.Common.Item;
+using Game.Common.Location;
 
-namespace NeoServer.Game.Common.Contracts.Items;
+namespace Game.Common.Contracts.Items;
 
 public delegate void ItemDelete(IItem item);
 

@@ -1,11 +1,11 @@
 ﻿using FluentAssertions;
-using NeoServer.Data.InMemory.DataStores;
-using NeoServer.Game.Common.Contracts.DataStores;
-using NeoServer.Game.Tests.Helpers;
-using NeoServer.Game.Tests.Helpers.Player;
+using Data.InMemory;
+using Game.Common.Contracts.DataStores;
+using Game.Tests.Helpers;
+using Game.Tests.Helpers.Player;
 using Xunit;
 
-namespace NeoServer.Game.Creatures.Tests.Players.Inventory;
+namespace Game.Creatures.Tests.Players.Inventory;
 
 public class InventoryMoneyCalculationTests
 {

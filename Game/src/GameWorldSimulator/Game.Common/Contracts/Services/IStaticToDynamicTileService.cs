@@ -1,6 +1,6 @@
-﻿using NeoServer.Game.Common.Contracts.World.Tiles;
+﻿using Game.Common.Contracts.World.Tiles;
 
-namespace NeoServer.Game.Common.Contracts.Services;
+namespace Game.Common.Contracts.Services;
 
 public interface IStaticToDynamicTileService
 {

@@ -1,7 +1,7 @@
-﻿using NeoServer.Networking.Protocols;
+﻿using Networking.Protocols;
 using Serilog;
 
-namespace NeoServer.Networking.Listeners;
+namespace Networking.Listeners;
 
 public class LoginListener : Listener
 {

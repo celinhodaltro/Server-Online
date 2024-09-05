@@ -1,9 +1,9 @@
-﻿using NeoServer.Data.Interfaces;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Systems.Depot;
-using NeoServer.Server.Common.Contracts;
+﻿using Data.Interfaces;
+using Game.Common.Contracts.Creatures;
+using Game.Systems.Depot;
+using Server.Common.Contracts;
 
-namespace NeoServer.Server.Events.Player;
+namespace Server.Events.Player;
 
 public class PlayerLoggedOutEventHandler : IEventHandler
 {

@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using NeoServer.Data.Entities;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Server.Common.Contracts.Network;
+using Data.Entities;
+using Game.Common.Contracts.Creatures;
+using Server.Common.Contracts.Network;
 
-namespace NeoServer.Networking.Packets.Outgoing.Player;
+namespace Networking.Packets.Outgoing.Player;
 
 public class PlayerOutFitWindowPacket : OutgoingPacket
 {

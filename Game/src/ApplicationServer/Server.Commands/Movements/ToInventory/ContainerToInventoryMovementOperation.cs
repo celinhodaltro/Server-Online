@@ -1,8 +1,8 @@
-﻿using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Location;
-using NeoServer.Networking.Packets.Incoming;
+﻿using Game.Common.Contracts.Creatures;
+using Game.Common.Location;
+using Networking.Packets.Incoming;
 
-namespace NeoServer.Server.Commands.Movements.ToInventory;
+namespace Server.Commands.Movements.ToInventory;
 
 public class ContainerToInventoryMovementOperation
 {

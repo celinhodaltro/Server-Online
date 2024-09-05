@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Buffers;
 using System.Text;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Server.Common.Contracts.Network;
-using NeoServer.Server.Security;
+using Game.Common.Contracts.Items;
+using Game.Common.Location.Structs;
+using Server.Common.Contracts.Network;
+using Server.Security;
 
-namespace NeoServer.Networking.Packets.Messages;
+namespace Networking.Packets.Messages;
 
 /// <summary>
 ///     Contains all the methods to handle incoming and outgoing message from/to client

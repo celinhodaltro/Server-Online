@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.DataStores;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Creatures.Players;
-using NeoServer.Game.Creatures.Player.Inventory;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.DataStores;
+using Game.Common.Contracts.Items;
+using Game.Common.Creatures.Players;
+using Game.Creatures.Player.Inventory;
 
-namespace NeoServer.Game.Tests.Helpers.Player;
+namespace Game.Tests.Helpers.Player;
 
 public static class InventoryTestDataBuilder
 {
