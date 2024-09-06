@@ -1,10 +1,10 @@
-import('NeoServer.Game.Common')
-import('NeoServer.Game.Common', 'NeoServer.Game.Common.Chats')
-import('NeoServer.Game.Common','NeoServer.Game.Common.Texts')
-import('NeoServer.Game.Common','NeoServer.Game.Common.Location.Structs')
+import('Game.Common')
+import('Game.Common', 'Game.Common.Chats')
+import('Game.Common','Game.Common.Texts')
+import('Game.Common','Game.Common.Location.Structs')
 
-import('NeoServer.Server', 'NeoServer.Server.Tasks')
+import('Server', 'Server.Tasks')
 
-import('NeoServer.Networking.Packets', 'NeoServer.Networking.Packets.Outgoing.Creature')
-import('NeoServer.Networking.Packets', 'NeoServer.Networking.Packets.Connection')
-import('NeoServer.Networking.Packets', 'NeoServer.Networking.Packets.Outgoing.Effect')
+import('Networking.Packets', 'Networking.Packets.Outgoing.Creature')
+import('Networking.Packets', 'Networking.Packets.Connection')
+import('Networking.Packets', 'Networking.Packets.Outgoing.Effect')
