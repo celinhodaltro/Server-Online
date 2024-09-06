@@ -5,7 +5,7 @@ using Microsoft.Extensions.Configuration;
 using Game.Common;
 using Server.Configurations;
 
-namespace Server.Standalone.IoC.Modules;
+namespace Server.Start.IoC.Modules;
 
 public static class ConfigurationInjection
 {

@@ -17,7 +17,7 @@ using Server.Common.Contracts.Network;
 using Server.Common.Contracts.Network.Enums;
 using Serilog;
 
-namespace Server.Standalone.IoC.Modules;
+namespace Server.Start.IoC.Modules;
 
 public static class FactoryInjection
 {

@@ -2,7 +2,7 @@
 using Server.Commands.Movements.ToContainer;
 using Server.Commands.Movements.ToInventory;
 
-namespace Server.Standalone.IoC.Modules;
+namespace Server.Start.IoC.Modules;
 
 public static class CommandInjection
 {

@@ -3,7 +3,7 @@ using Networking.Handlers.ClientVersion;
 using Networking.Listeners;
 using Networking.Protocols;
 
-namespace Server.Standalone.IoC.Modules;
+namespace Server.Start.IoC.Modules;
 
 public static class NetworkInjection
 {

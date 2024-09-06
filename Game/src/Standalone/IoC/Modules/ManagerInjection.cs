@@ -6,7 +6,7 @@ using Game.World.Models.Spawns;
 using Server.Common.Contracts;
 using Server.Managers;
 
-namespace Server.Standalone.IoC.Modules;
+namespace Server.Start.IoC.Modules;
 
 public static class ManagerInjection
 {

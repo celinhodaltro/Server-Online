@@ -2,7 +2,7 @@
 using Data.InMemory;
 using Game.Common.Contracts.DataStores;
 
-namespace Server.Standalone.IoC.Modules;
+namespace Server.Start.IoC.Modules;
 
 public static class DataStoreInjection
 {

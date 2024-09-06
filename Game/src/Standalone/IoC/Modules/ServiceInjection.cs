@@ -12,7 +12,7 @@ using Game.Systems.Services;
 using Game.World.Services;
 using Server.Commands.Player.UseItem;
 
-namespace Server.Standalone.IoC.Modules;
+namespace Server.Start.IoC.Modules;
 
 /// <summary>
 ///     Contains the registration of various game services and operations for the dependency injection container.

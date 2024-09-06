@@ -7,7 +7,7 @@ using Game.Common.Contracts.Items;
 using Server.Events.Creature;
 using Server.Events.Subscribers;
 
-namespace Server.Standalone.IoC.Modules;
+namespace Server.Start.IoC.Modules;
 
 public static class EventInjection
 {

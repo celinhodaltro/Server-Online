@@ -2,7 +2,7 @@
 using Extension.Lua;
 using NLua;
 
-namespace Server.Standalone.IoC.Modules;
+namespace Server.Start.IoC.Modules;
 
 public static class LuaInjection
 {

@@ -9,7 +9,7 @@ using Loader.Vocations;
 using Loader.World;
 using Server.Common.Contracts;
 
-namespace Server.Standalone.IoC.Modules;
+namespace Server.Start.IoC.Modules;
 
 public static class LoaderInjection
 {

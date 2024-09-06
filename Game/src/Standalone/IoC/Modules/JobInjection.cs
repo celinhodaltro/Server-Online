@@ -4,7 +4,7 @@ using Server.Jobs.Creatures;
 using Server.Jobs.Items;
 using Server.Jobs.Persistence;
 
-namespace Server.Standalone.IoC.Modules;
+namespace Server.Start.IoC.Modules;
 
 public static class JobInjection
 {
