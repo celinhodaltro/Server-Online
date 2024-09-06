@@ -1,10 +1,10 @@
-﻿using NeoServer.Game.Combat.Spells;
-using NeoServer.Game.Common;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Server.Common.Contracts;
-using NeoServer.Server.Helpers;
+﻿using Game.Combat.Spells;
+using Game.Common;
+using Game.Common.Contracts.Creatures;
+using Server.Common.Contracts;
+using Server.Helpers;
 
-namespace NeoServer.Extensions.Spells.Commands;
+namespace Extensions.Spells.Commands;
 
 public class PullPlayerCommand : CommandSpell
 {

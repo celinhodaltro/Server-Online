@@ -1,8 +1,8 @@
-﻿using NeoServer.Game.Common.Chats;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Location.Structs;
+﻿using Game.Common.Chats;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Location.Structs;
 
-namespace NeoServer.Extensions.Npcs;
+namespace Extensions.Npcs;
 
 public class NpcActionHandler
 {

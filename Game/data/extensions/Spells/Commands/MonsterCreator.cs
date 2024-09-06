@@ -1,12 +1,12 @@
-﻿using NeoServer.Game.Combat.Spells;
-using NeoServer.Game.Common;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.World.Tiles;
-using NeoServer.Game.Common.Location;
-using NeoServer.Game.Creatures.Factories;
-using NeoServer.Game.World.Map;
+﻿using Game.Combat.Spells;
+using Game.Common;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.World.Tiles;
+using Game.Common.Location;
+using Game.Creatures.Factories;
+using Game.World.Map;
 
-namespace NeoServer.Extensions.Spells.Commands;
+namespace Extensions.Spells.Commands;
 
 public class MonsterCreator : CommandSpell
 {

@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Items.Bases;
-using NeoServer.Game.Items.Factories;
-using NeoServer.Game.World.Map;
-using NeoServer.Game.World.Models.Tiles;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items;
+using Game.Common.Item;
+using Game.Common.Location.Structs;
+using Game.Items.Bases;
+using Game.Items.Factories;
+using Game.World.Map;
+using Game.World.Models.Tiles;
 
-namespace NeoServer.Extensions.Items;
+namespace Extensions.Items;
 
 public class Lever : BaseItem
 {

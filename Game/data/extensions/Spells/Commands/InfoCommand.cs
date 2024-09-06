@@ -1,18 +1,18 @@
 ﻿using System;
 using System.Linq;
-using NeoServer.Game.Combat.Spells;
-using NeoServer.Game.Common;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types;
-using NeoServer.Game.Common.Creatures;
-using NeoServer.Game.Items;
-using NeoServer.Networking.Packets.Outgoing;
-using NeoServer.Server.Common.Contracts;
-using NeoServer.Server.Configurations;
-using NeoServer.Server.Helpers;
+using Game.Combat.Spells;
+using Game.Common;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types;
+using Game.Common.Creatures;
+using Game.Items;
+using Networking.Packets.Outgoing;
+using Server.Common.Contracts;
+using Server.Configurations;
+using Server.Helpers;
 
-namespace NeoServer.Extensions.Spells.Commands;
+namespace Extensions.Spells.Commands;
 
 public class InfoCommand : CommandSpell
 {

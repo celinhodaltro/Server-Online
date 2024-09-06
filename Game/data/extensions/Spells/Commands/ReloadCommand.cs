@@ -1,21 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using NeoServer.Game.Combat.Spells;
-using NeoServer.Game.Common;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Common.Services;
-using NeoServer.Game.Items.Factories;
-using NeoServer.Loaders.Quest;
-using NeoServer.Loaders.Vocations;
-using NeoServer.Scripts.Lua;
-using NeoServer.Scripts.Lua.Functions;
-using NeoServer.Server.Helpers;
+using Game.Combat.Spells;
+using Game.Common;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items;
+using Game.Common.Item;
+using Game.Common.Services;
+using Game.Items.Factories;
+using Loader.Quest;
+using Loader.Vocations;
+using Extension.Lua;
+using Extension.Lua.Functions;
+using Server.Helpers;
 using NLua;
 
-namespace NeoServer.Extensions.Spells.Commands;
+namespace Extensions.Spells.Commands;
 
 public class ReloadCommand : CommandSpell
 {

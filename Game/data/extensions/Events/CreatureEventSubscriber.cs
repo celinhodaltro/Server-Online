@@ -1,9 +1,9 @@
-﻿using NeoServer.Extensions.Events.Creatures;
-using NeoServer.Extensions.Npcs;
-using NeoServer.Game.Common.Contracts;
-using NeoServer.Game.Common.Contracts.Creatures;
+﻿using Extensions.Events.Creatures;
+using Extensions.Npcs;
+using Game.Common.Contracts;
+using Game.Common.Contracts.Creatures;
 
-namespace NeoServer.Extensions.Events;
+namespace Extensions.Events;
 
 public class CreatureEventSubscriber : ICreatureEventSubscriber, IGameEventSubscriber
 {

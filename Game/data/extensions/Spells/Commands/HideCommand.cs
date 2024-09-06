@@ -1,8 +1,8 @@
-﻿using NeoServer.Game.Combat.Spells;
-using NeoServer.Game.Common;
-using NeoServer.Game.Common.Contracts.Creatures;
+﻿using Game.Combat.Spells;
+using Game.Common;
+using Game.Common.Contracts.Creatures;
 
-namespace NeoServer.Extensions.Spells.Commands;
+namespace Extensions.Spells.Commands;
 
 public class HideCommand : CommandSpell
 {

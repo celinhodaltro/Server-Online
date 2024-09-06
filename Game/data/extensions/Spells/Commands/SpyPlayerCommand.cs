@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Text;
-using NeoServer.Game.Combat.Spells;
-using NeoServer.Game.Common;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Items;
-using NeoServer.Server.Common.Contracts;
-using NeoServer.Server.Configurations;
-using NeoServer.Server.Helpers;
+using Game.Combat.Spells;
+using Game.Common;
+using Game.Common.Contracts.Creatures;
+using Game.Items;
+using Server.Common.Contracts;
+using Server.Configurations;
+using Server.Helpers;
 
-namespace NeoServer.Extensions.Spells.Commands;
+namespace Extensions.Spells.Commands;
 
 public class SpyPlayerCommand : CommandSpell
 {

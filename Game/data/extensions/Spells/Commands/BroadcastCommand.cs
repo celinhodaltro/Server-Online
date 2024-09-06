@@ -1,14 +1,14 @@
-﻿using NeoServer.Game.Combat.Spells;
-using NeoServer.Game.Common;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Networking.Packets.Outgoing;
-using NeoServer.Server.Common.Contracts;
-using NeoServer.Server.Helpers;
+﻿using Game.Combat.Spells;
+using Game.Common;
+using Game.Common.Contracts.Creatures;
+using Networking.Packets.Outgoing;
+using Server.Common.Contracts;
+using Server.Helpers;
 
 using System;
 using System.Text.RegularExpressions;
 
-namespace NeoServer.Extensions.Spells.Commands
+namespace Extensions.Spells.Commands
 {
     public class BroadcastCommand : CommandSpell
     {

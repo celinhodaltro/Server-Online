@@ -1,20 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types.Usable;
-using NeoServer.Game.Common.Contracts.World.Tiles;
-using NeoServer.Game.Common.Item;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Common.Services;
-using NeoServer.Game.Common.Texts;
-using NeoServer.Game.Creatures;
-using NeoServer.Game.Items.Items.UsableItems;
-using NeoServer.Game.World.Map;
-using NeoServer.Game.World.Services;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types.Usable;
+using Game.Common.Contracts.World.Tiles;
+using Game.Common.Item;
+using Game.Common.Location.Structs;
+using Game.Common.Services;
+using Game.Common.Texts;
+using Game.Creatures;
+using Game.Items.Items.UsableItems;
+using Game.World.Map;
+using Game.World.Services;
 
-namespace NeoServer.Extensions.Items.Tools;
+namespace Extensions.Items.Tools;
 
 public class Rope : FloorChangerUsableItem, IUsableOnItem
 {

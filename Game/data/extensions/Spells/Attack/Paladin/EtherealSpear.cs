@@ -1,10 +1,10 @@
-﻿using NeoServer.Game.Combat.Attacks;
-using NeoServer.Game.Combat.Spells;
-using NeoServer.Game.Common;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Item;
+﻿using Game.Combat.Attacks;
+using Game.Combat.Spells;
+using Game.Common;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Item;
 
-namespace NeoServer.Extensions.Spells.Attack.Paladin;
+namespace Extensions.Spells.Attack.Paladin;
 
 public class EtherealSpear : AttackSpell
 {

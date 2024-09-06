@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using NeoServer.Game.Common.Chats;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Game.Creatures.Npcs;
+using Game.Common.Chats;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.World;
+using Game.Creatures.Npcs;
 
-namespace NeoServer.Extensions.Npcs.Rookgaard;
+namespace Extensions.Npcs.Rookgaard;
 
 public class Cipfried : Npc
 {

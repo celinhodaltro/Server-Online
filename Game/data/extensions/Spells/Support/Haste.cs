@@ -1,7 +1,7 @@
-﻿using NeoServer.Game.Combat.Spells;
-using NeoServer.Game.Common.Creatures;
+﻿using Game.Combat.Spells;
+using Game.Common.Creatures;
 
-namespace NeoServer.Extensions.Spells.Support;
+namespace Extensions.Spells.Support;
 
 public class Haste : HasteSpell
 {

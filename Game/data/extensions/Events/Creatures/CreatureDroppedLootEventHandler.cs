@@ -1,11 +1,11 @@
-﻿using NeoServer.Extensions.Chat;
-using NeoServer.Game.Common.Contracts;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Services;
-using NeoServer.Game.Creatures.Monster.Summon;
+﻿using Extensions.Chat;
+using Game.Common.Contracts;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items;
+using Game.Common.Services;
+using Game.Creatures.Monster.Summon;
 
-namespace NeoServer.Extensions.Events.Creatures;
+namespace Extensions.Events.Creatures;
 
 public class CreatureDroppedLootEventHandler : IGameEventHandler
 {

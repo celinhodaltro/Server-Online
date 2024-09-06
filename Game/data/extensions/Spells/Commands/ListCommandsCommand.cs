@@ -3,21 +3,21 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
-using NeoServer.Game.Combat.Spells;
-using NeoServer.Game.Common;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.Items.Types;
-using NeoServer.Game.Common.Helpers;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Common.Results;
-using NeoServer.Game.Items;
-using NeoServer.Game.Items.Bases;
-using NeoServer.Server.Configurations;
-using NeoServer.Server.Helpers;
+using Game.Combat.Spells;
+using Game.Common;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types;
+using Game.Common.Helpers;
+using Game.Common.Location.Structs;
+using Game.Common.Results;
+using Game.Items;
+using Game.Items.Bases;
+using Server.Configurations;
+using Server.Helpers;
 using Newtonsoft.Json;
 
-namespace NeoServer.Extensions.Spells.Commands;
+namespace Extensions.Spells.Commands;
 
 public class ListCommandsCommand : CommandSpell
 {

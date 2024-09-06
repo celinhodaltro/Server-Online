@@ -1,17 +1,17 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Server.Common.Contracts;
+using Game.Common.Contracts.Creatures;
+using Server.Common.Contracts;
 
-namespace NeoServer.Extensions;
+namespace Extensions;
 
-public class AttachEventLoaders : IRunBeforeLoaders
+public class AttachEventLoader : IRunBeforeLoader
 {
     private readonly IEnumerable<ICreatureEventSubscriber> _creatureEventSubscribers;
     private readonly ICreatureFactory _creatureFactory;
 
-    public AttachEventLoaders(ICreatureFactory creatureFactory,
+    public AttachEventLoader(ICreatureFactory creatureFactory,
         IEnumerable<ICreatureEventSubscriber> creatureEventSubscribers)
     {
         _creatureFactory = creatureFactory;

@@ -1,14 +1,14 @@
-﻿using NeoServer.Game.Combat.Spells;
-using NeoServer.Game.Common;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.World.Tiles;
-using NeoServer.Game.Common.Location;
-using NeoServer.Game.Creatures.Factories;
-using NeoServer.Game.Creatures.Monster;
-using NeoServer.Game.World.Map;
-using NeoServer.Game.World.Models.Spawns;
+﻿using Game.Combat.Spells;
+using Game.Common;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.World.Tiles;
+using Game.Common.Location;
+using Game.Creatures.Factories;
+using Game.Creatures.Monster;
+using Game.World.Map;
+using Game.World.Models.Spawns;
 
-namespace NeoServer.Extensions.Spells.Commands;
+namespace Extensions.Spells.Commands;
 
 public class NpcCreator : CommandSpell
 {

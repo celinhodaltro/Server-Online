@@ -1,18 +1,18 @@
-﻿using NeoServer.Data.Entities;
-using NeoServer.Game.Chats;
-using NeoServer.Game.Common;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.DataStores;
-using NeoServer.Game.Common.Contracts.Items;
-using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Game.Common.Helpers;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Game.Creatures.Player;
-using NeoServer.Game.World;
-using NeoServer.Loaders.Players;
+﻿using Data.Entities;
+using Game.Chats;
+using Game.Common;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.DataStores;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.World;
+using Game.Common.Helpers;
+using Game.Common.Location.Structs;
+using Game.Creatures.Player;
+using Game.World;
+using Loader.Players;
 using Serilog;
 
-namespace NeoServer.Extensions.Players.Loaders;
+namespace Extensions.Players.Loader;
 
 public class TutorLoader : PlayerLoader
 {

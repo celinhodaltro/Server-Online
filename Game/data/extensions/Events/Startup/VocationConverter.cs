@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using NeoServer.Game.Common.Contracts.DataStores;
-using NeoServer.Game.Common.Item;
-using NeoServer.Server.Common.Contracts;
+using Game.Common.Contracts.DataStores;
+using Game.Common.Item;
+using Server.Common.Contracts;
 using Serilog;
 
-namespace NeoServer.Extensions.Events.Startup;
+namespace Extensions.Events.Startup;
 
 /// <summary>
 ///     Converts vocations array string to byte type. ie: ["paladins"] -> [2]

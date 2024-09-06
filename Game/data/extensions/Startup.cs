@@ -1,8 +1,8 @@
-﻿using NeoServer.Extensions.Services;
-using NeoServer.Server.Common.Contracts;
+﻿using Extensions.Services;
+using Server.Common.Contracts;
 using NLua;
 
-namespace NeoServer.Extensions;
+namespace Extensions;
 
 public class Startup : IStartup
 {

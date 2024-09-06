@@ -1,11 +1,11 @@
-﻿using NeoServer.Game.Combat.Attacks;
-using NeoServer.Game.Combat.Spells;
-using NeoServer.Game.Common;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Contracts.DataStores;
-using NeoServer.Server.Helpers;
+﻿using Game.Combat.Attacks;
+using Game.Combat.Spells;
+using Game.Common;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.DataStores;
+using Server.Helpers;
 
-namespace NeoServer.Extensions.Spells.Attack;
+namespace Extensions.Spells.Attack;
 
 public abstract class WaveSpell : AttackSpell
 {

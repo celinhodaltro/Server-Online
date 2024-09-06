@@ -1,8 +1,8 @@
-﻿using NeoServer.Game.Common;
-using NeoServer.Game.Common.Contracts.Creatures;
-using NeoServer.Game.Common.Item;
+﻿using Game.Common;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Item;
 
-namespace NeoServer.Extensions.Spells.Attack;
+namespace Extensions.Spells.Attack;
 
 public class FireWave : WaveSpell
 {

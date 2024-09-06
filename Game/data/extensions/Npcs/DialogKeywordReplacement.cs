@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using NeoServer.Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Creatures;
 
-namespace NeoServer.Extensions.Npcs;
+namespace Extensions.Npcs;
 
 public class DialogKeywordReplacement
 {

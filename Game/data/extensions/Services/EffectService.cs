@@ -1,11 +1,11 @@
-﻿using NeoServer.Game.Common.Contracts.World;
-using NeoServer.Game.Common.Creatures;
-using NeoServer.Game.Common.Location.Structs;
-using NeoServer.Networking.Packets.Outgoing.Effect;
-using NeoServer.Server.Common.Contracts;
-using NeoServer.Server.Helpers;
+﻿using Game.Common.Contracts.World;
+using Game.Common.Creatures;
+using Game.Common.Location.Structs;
+using Networking.Packets.Outgoing.Effect;
+using Server.Common.Contracts;
+using Server.Helpers;
 
-namespace NeoServer.Extensions.Services;
+namespace Extensions.Services;
 
 public static class EffectService
 {

@@ -1,8 +1,8 @@
-﻿using NeoServer.Game.Chats;
-using NeoServer.Game.Chats.Rules;
-using NeoServer.Game.Common.Chats;
+﻿using Game.Chats;
+using Game.Chats.Rules;
+using Game.Common.Chats;
 
-namespace NeoServer.Extensions.Chat;
+namespace Extensions.Chat;
 
 public class LootChannel : PersonalChatChannel
 {
