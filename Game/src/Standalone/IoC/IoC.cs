@@ -12,12 +12,12 @@ using Networking.Handlers;
 using Server.Commands.Movements;
 using Server.Commands.Player;
 using Server.Common.Contracts.Tasks;
-using Server.Standalone.IoC.Modules;
+using Server.Start.IoC.Modules;
 using Server.Tasks;
 using Shared.IoC.Modules;
 using PathFinder = Game.World.Map.PathFinder;
 
-namespace Server.Standalone.IoC;
+namespace Server.Start.IoC;
 
 public static class Container
 {
