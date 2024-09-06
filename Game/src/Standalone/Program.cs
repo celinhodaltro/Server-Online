@@ -30,11 +30,11 @@ using Server.Jobs.Creatures;
 using Server.Jobs.Items;
 using Server.Jobs.Persistence;
 using Server.Security;
-using Server.Standalone.IoC;
+using Server.Start.IoC;
 using Server.Tasks;
 using Serilog;
 
-namespace Server.Standalone;
+namespace Server.Start;
 
 public class Program
 {
