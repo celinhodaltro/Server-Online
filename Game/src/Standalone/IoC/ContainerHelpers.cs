@@ -2,7 +2,7 @@
 using System.Linq;
 using Autofac;
 
-namespace Server.Standalone.IoC;
+namespace Server.Start.IoC;
 
 public static class ContainerHelpers
 {
@@ -10,12 +10,19 @@ public static class ContainerHelpers
 
     public static void RegisterAssembliesByInterface(this ContainerBuilder builder, Type interfaceType)
     {
-        var types = AssemblyCache.Where(interfaceType.IsAssignableFrom);
-
-        foreach (var type in types)
+        try
         {
-            if (type == interfaceType) continue;
-            builder.RegisterType(type).SingleInstance();
+             var types = AssemblyCache.Where(interfaceType.IsAssignableFrom);
+
+            foreach (var type in types)
+            {
+                if (type == interfaceType) continue;
+                builder.RegisterType(type).SingleInstance();
+            }
+        }
+        catch( Exception ex)
+        {
+            throw new Exception(ex.Message);
         }
     }
 }
