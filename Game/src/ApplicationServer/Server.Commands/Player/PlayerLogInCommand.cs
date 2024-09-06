@@ -15,13 +15,13 @@ public class PlayerLogInCommand : ICommand
     private readonly ILogger _logger;
     private readonly IGameServer game;
     private readonly GuildLoader guildLoader;
-    private readonly IEnumerable<IPlayerLoader> playerLoader;
+    private readonly IEnumerable<IPlayerLoader> playerLoaders;
 
     public PlayerLogInCommand(IGameServer game, IEnumerable<IPlayerLoader> playerLoader, GuildLoader guildLoader,
         ILogger logger)
     {
         this.game = game;
-        this.playerLoader = playerLoader;
+        this.playerLoaders = playerLoader;
         this.guildLoader = guildLoader;
         _logger = logger;
     }
@@ -34,7 +34,7 @@ public class PlayerLogInCommand : ICommand
 
         if (!game.CreatureManager.TryGetLoggedPlayer((uint)playerRecord.Id, out var player))
         {
-            if (playerLoader.FirstOrDefault(x => x.IsApplicable(playerRecord)) is not { } playerLoader)
+            if (playerLoaders.FirstOrDefault(x => x.IsApplicable(playerRecord)) is not { } playerLoader)
                 return;
 
             guildLoader.Load(playerRecord.GuildMember?.Guild);
