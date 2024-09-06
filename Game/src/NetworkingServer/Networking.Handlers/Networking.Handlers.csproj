@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Platforms>AnyCPU;x64</Platforms>
+        <IsPublishable>false</IsPublishable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Serilog" Version="3.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\Database\Data.InMemory\Data.InMemory.csproj" />
+        <ProjectReference Include="..\..\GameWorldSimulator\Game.Common\Game.Common.csproj" />
+        <ProjectReference Include="..\..\GameWorldSimulator\Game.Systems\Game.Systems.csproj" />
+        <ProjectReference Include="..\..\NetworkingServer\Networking.Packets\Networking.Packets.csproj" />
+        <ProjectReference Include="..\..\ApplicationServer\Server.Contracts\Server.Common.csproj" />
+        <ProjectReference Include="..\..\ApplicationServer\Server\Server.csproj" />
+        <ProjectReference Include="..\..\ApplicationServer\Server.Commands\Server.Commands.csproj" />
+    </ItemGroup>
+
+</Project>

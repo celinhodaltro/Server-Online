@@ -1,0 +1,219 @@
+[
+	{
+		"name":"WhirlwindThrow",
+		"words":"exori hur",
+		"script": "WhirlwindThrow",
+		"mana": 40,
+		"vocations":["knight","elite knight"],
+		"cooldown":"1000",
+		"level": 500
+	},
+  {
+    "name": "Create Item",
+    "words": "/i",
+    "script": "ItemCreator",
+    "description": "",
+    "mana": 0,
+    "cooldown": "0",
+    "level": 1,
+    "type": "command"
+  },
+  {
+    "name": "Create Monster",
+    "words": "/m",
+    "script": "MonsterCreator",
+    "description": "",
+    "mana": 0,
+    "cooldown": "0",
+    "level": 1,
+    "type": "command"
+  },
+  {
+    "name": "Create Summon",
+    "words": "/s",
+    "script": "SummonCreator",
+    "description": "",
+    "mana": 0,
+    "cooldown": "0",
+    "level": 1,
+    "type": "command"
+  },
+  {
+    "name": "Create Npc",
+    "words": "/npc",
+    "script": "NpcCreator",
+    "description": "",
+    "mana": 0,
+    "cooldown": "0",
+    "level": 1,
+    "type": "command"
+  },
+  {
+    "name": "Up",
+    "words": "/up",
+    "script": "UpDownCommand",
+    "description": "",
+    "mana": 0,
+    "cooldown": "0",
+    "level": 1,
+    "type": "command"
+  },
+  {
+    "name": "Down",
+    "words": "/down",
+    "script": "UpDownCommand",
+    "description": "",
+    "mana": 0,
+    "cooldown": "0",
+    "level": 1,
+    "type": "command"
+  },
+  {
+    "name": "Teleport",
+    "words": "/a",
+    "script": "TeleportCommand",
+    "description": "",
+    "mana": 0,
+    "cooldown": "0",
+    "level": 1,
+    "type": "command"
+  },
+  {
+    "name": "Hide",
+    "words": "/hide",
+    "script": "HideCommand",
+    "description": "",
+    "mana": 0,
+    "cooldown": "0",
+    "level": 1,
+    "type": "command"
+  },
+  {
+    "name": "Reload",
+    "words": "/reload",
+    "script": "ReloadCommand",
+    "description": "",
+    "mana": 0,
+    "cooldown": "0",
+    "level": 1,
+    "type": "command"
+  },
+  {
+    "name": "PullPlayer",
+    "words": "/c",
+    "script": "PullPlayerCommand",
+    "description": "",
+    "mana": 0,
+    "cooldown": "0",
+    "level": 1,
+    "type": "command"
+  },
+  {
+    "name": "TeleportToTemple",
+    "words": "/t",
+    "script": "TeleportToTempleCommand",
+    "description": "For teleport the temple.",
+    "mana": 0,
+    "cooldown": "0",
+    "level": 1,
+    "type": "command"
+  },
+  {
+    "name": "GoTo",
+    "words": "/goto",
+    "script": "GoToCommand",
+    "description": "For teleport the player for some location.",
+    "mana": 0,
+    "cooldown": "0",
+    "level": 1,
+    "type": "command"
+  },
+  {
+    "name": "Kick Player",
+    "words": "/kick",
+    "script": "KickPlayerCommand",
+    "description": "To kick an player.",
+    "mana": 0,
+    "cooldown": "0",
+    "level": 1,
+    "vocations": [11],
+    "type": "command"
+  },
+  {
+    "name": "Kick All Players",
+    "words": "/masskick",
+    "script": "MassKickPlayersCommand",
+    "description": "To masskick list of player.",
+    "mana": 0,
+    "cooldown": "0",
+    "level": 1,
+    "vocations": [11],
+    "type": "command"
+  },
+  {
+    "name": "Ban Player",
+    "words": "/ban",
+    "script": "BanPlayerCommand",
+    "description": "To ban someone player.",
+    "mana": 0,
+    "cooldown": "0",
+    "level": 1,
+    "vocations": [11],
+    "type": "command"
+  },
+  {
+    "name": "Attributes on Player",
+    "words": "/attr",
+    "script": "AttrPlayerCommand",
+    "description": "Add attributes for the player.",
+    "mana": 0,
+    "cooldown": "0",
+    "level": 1,
+    "vocations": [11],
+    "type": "command"
+  },
+  {
+    "name": "List Commands",
+    "words": "/commands",
+    "script": "ListCommandsCommand",
+    "description": "Get list of server commands.",
+    "mana": 0,
+    "cooldown": "0",
+    "level": 1,
+    "vocations": [11],
+    "type": "command"
+  },
+  {
+    "name": "Broadcast",
+    "words": "/bc",
+    "script": "BroadcastCommand",
+    "description": "Send message for everyone on Server.",
+    "mana": 0,
+    "cooldown": "0",
+    "level": 1,
+    "vocations": [11],
+    "type": "command"
+ },
+ {
+    "name": "Info",
+    "words": "/info",
+    "description": "Get informations about the player!",
+    "script": "InfoCommand",
+    "mana": 0,
+    "cooldown": "0",
+    "level": 1,
+    "vocations": [11],
+    "type": "command"
+ },
+{
+    "name": "Spy",
+    "words": "/spy",
+    "description": "Get informations of  Player inventory!",
+    "script": "SpyPlayerCommand",
+    "mana": 0,
+    "cooldown": "0",
+    "level": 1,
+    "vocations": [11],
+    "type": "command"
+ }
+]
