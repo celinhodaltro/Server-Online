@@ -1,4 +1,5 @@
 ﻿using Game.Common.Location;
+using Game.Common.Location.Structs;
 using Server.Entities.Models.Contracts.Creatures;
 using Server.Entities.Models.Contracts.Inspection;
 using Server.Entities.Models.Contracts.Items.Types.Usable;
@@ -11,7 +12,7 @@ public interface IThing : IUsable
 
     public byte Amount => 1;
 
-    Location.Structs.Location Location { get; }
+    Location Location { get; }
 
     string GetLookText(IInspectionTextBuilder inspectionTextBuilder, IPlayer player, bool isClose = false);
 
@@ -23,5 +24,5 @@ public interface IThing : IUsable
         return Location.IsNextTo(thing.Location);
     }
 
-    void SetNewLocation(Location.Structs.Location location);
+    void SetNewLocation(Location location);
 }

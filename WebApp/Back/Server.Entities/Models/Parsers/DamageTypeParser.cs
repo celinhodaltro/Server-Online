@@ -1,5 +1,4 @@
-﻿using Game.Common.Creatures;
-using Server.Entities.Models.Creatures;
+﻿using Server.Entities.Models.Creatures;
 using Server.Entities.Models.Item;
 
 namespace Server.Entities.Models.Parsers;

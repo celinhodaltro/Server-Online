@@ -1,11 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using MySqlX.XDevAPI;
-using System;
-using System.Collections.Generic;
-using System.Entities;
-using System.Linq;
-using System.Reflection;
-using System.Threading.Tasks;
+using Server.Entities;
 
 namespace System.Provider
 {

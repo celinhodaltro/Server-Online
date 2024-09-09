@@ -41,7 +41,7 @@ public class Guard
     public static bool AnyNull(params object[] values)
     {
         foreach (var value in values)
-            if (value.IsNull())
+            if (value is null)
                 return true;
         return false;
     }

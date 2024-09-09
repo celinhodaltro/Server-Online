@@ -24,7 +24,7 @@ public delegate void FailedMoveThing(IThing thing, InvalidOperation error);
 
 public interface IMap
 {
-    ITile this[Location.Structs.Location location] { get; }
+    ITile this[Location location] { get; }
     ITile this[ushort x, ushort y, byte z] { get; }
 
     event PlaceCreatureOnMap OnCreatureAddedOnMap;
@@ -37,38 +37,38 @@ public interface IMap
     IList<byte> GetDescription(IThing thing, ushort fromX, ushort fromY, byte currentZ,
         byte windowSizeX = 18, byte windowSizeY = 14);
 
-    bool ArePlayersAround(Location.Structs.Location location);
+    bool ArePlayersAround(Location location);
     void PlaceCreature(ICreature creature);
-    ITile GetNextTile(Location.Structs.Location fromLocation, Direction direction);
+    ITile GetNextTile(Location fromLocation, Direction direction);
 
     IList<byte> GetFloorDescription(IThing thing, ushort fromX, ushort fromY, byte currentZ, byte width,
         byte height, int verticalOffset, ref int skip);
 
-    IEnumerable<ICreature> GetPlayersAtPositionZone(Location.Structs.Location location);
+    IEnumerable<ICreature> GetPlayersAtPositionZone(Location location);
 
-    bool IsInRange(Location.Structs.Location start, Location.Structs.Location current, Location.Structs.Location target,
+    bool IsInRange(Location start, Location current, Location target,
         FindPathParams fpp);
 
-    HashSet<ICreature> GetCreaturesAtPositionZone(Location.Structs.Location location,
-        Location.Structs.Location toLocation);
+    HashSet<ICreature> GetCreaturesAtPositionZone(Location location,
+        Location toLocation);
 
     void PropagateAttack(ICombatActor actor, CombatDamage damage, AffectedLocation[] area);
     void MoveCreature(IWalkableCreature creature);
     void CreateBloodPool(ILiquid liquid, IDynamicTile tile);
     ITile GetTileDestination(ITile tile);
-    bool TryMoveCreature(ICreature creature, Location.Structs.Location toLocation);
+    bool TryMoveCreature(ICreature creature, Location toLocation);
     void RemoveCreature(ICreature creature);
 
-    void SwapCreatureBetweenSectors(ICreature creature, Location.Structs.Location fromLocation,
-        Location.Structs.Location toLocation);
+    void SwapCreatureBetweenSectors(ICreature creature, Location fromLocation,
+        Location toLocation);
 
-    HashSet<ICreature> GetSpectators(Location.Structs.Location fromLocation, Location.Structs.Location toLocation,
+    HashSet<ICreature> GetSpectators(Location fromLocation, Location toLocation,
         bool onlyPlayers = false);
 
-    HashSet<ICreature> GetSpectators(Location.Structs.Location fromLocation, bool onlyPlayers = false);
-    IEnumerable<ICreature> GetCreaturesAtPositionZone(Location.Structs.Location location, bool onlyPlayers = false);
+    HashSet<ICreature> GetSpectators(Location fromLocation, bool onlyPlayers = false);
+    IEnumerable<ICreature> GetCreaturesAtPositionZone(Location location, bool onlyPlayers = false);
     bool CanGoToDirection(ICreature creature, Direction direction, ITileEnterRule rule);
-    ITile GetTile(Location.Structs.Location location);
+    ITile GetTile(Location location);
     ITile GetFinalTile(ITile toTile);
     void ReplaceTile(ITile newTile);
 }

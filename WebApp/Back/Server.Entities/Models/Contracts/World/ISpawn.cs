@@ -1,10 +1,11 @@
 ﻿using Game.Common.Location;
+using Game.Common.Location.Structs;
 
 namespace Server.Entities.Models.Contracts.World;
 
 public interface ISpawn
 {
-    Location.Structs.Location Location { get; set; }
+    Location Location { get; set; }
     ICreature[] Monsters { get; set; }
     ICreature[] Npcs { get; set; }
 
@@ -17,7 +18,7 @@ public interface ISpawn
 
 public interface ISpawnPoint
 {
-    Location.Structs.Location Location { get; }
+    Location Location { get; }
     ushort SpawnTime { get; }
     Direction Direction { get; set; }
 }
