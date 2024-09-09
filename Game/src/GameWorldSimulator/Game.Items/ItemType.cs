@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using Game.Common.Contracts.Items;
-using Game.Common.Creatures;
-using Game.Common.Creatures.Players;
-using Game.Common.Effects.Parsers;
-using Game.Common.Item;
-using Game.Common.Item.Structs;
-using Game.Common.Parsers;
+using Server.Entities.Contracts.Items;
+using Server.Entities.Creatures;
+using Server.Entities.Creatures.Players;
+using Server.Entities.Effects.Parsers;
+using Server.Entities.Item;
+using Server.Entities.Item.Structs;
+using Server.Entities.Parsers;
 using Game.Items.Helpers;
 
 namespace Game.Items;

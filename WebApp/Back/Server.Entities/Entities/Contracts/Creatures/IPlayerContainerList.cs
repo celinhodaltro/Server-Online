@@ -1,7 +1,7 @@
-﻿using Game.Common.Contracts.Items;
-using Game.Common.Contracts.Items.Types.Containers;
+﻿using Server.Entities.Contracts.Items;
+using Server.Entities.Contracts.Items.Types.Containers;
 
-namespace Game.Common.Contracts.Creatures;
+namespace Server.Entities.Contracts.Creatures;
 
 public delegate void RemoveItemFromOpenedContainer(IPlayer player, byte containerId, byte slotIndex, IItem item);
 

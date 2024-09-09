@@ -1,6 +1,6 @@
-﻿using Game.Common.Item;
+﻿using Server.Entities.Item;
 
-namespace Game.Common.Contracts.DataStores;
+namespace Server.Entities.Contracts.DataStores;
 
 public interface IQuestDataStore : IDataStore<(ushort ActionId, uint UniqueId), QuestData>
 {

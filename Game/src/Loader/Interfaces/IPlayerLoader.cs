@@ -1,5 +1,5 @@
 ﻿using Data.Entities;
-using Game.Common.Contracts.Creatures;
+using Server.Entities.Contracts.Creatures;
 
 namespace Loader.Interfaces;
 

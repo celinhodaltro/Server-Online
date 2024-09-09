@@ -1,6 +1,6 @@
-﻿using Game.Common.Contracts.Creatures;
+﻿using Server.Entities.Contracts.Creatures;
 
-namespace Game.Common.Contracts.Services;
+namespace Server.Entities.Contracts.Services;
 
 public interface ICoinTransaction
 {

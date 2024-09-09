@@ -1,4 +1,4 @@
-﻿namespace Game.Common.Combat;
+﻿namespace Server.Entities.Combat;
 
 public enum BlockType
 {

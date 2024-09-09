@@ -1,14 +1,14 @@
 ﻿using System.Collections.Generic;
-using Game.Common.Combat;
-using Game.Common.Combat.Structs;
-using Game.Common.Contracts.Combat.Attacks;
-using Game.Common.Contracts.Items;
-using Game.Common.Contracts.Items.Types.Usable;
-using Game.Common.Contracts.Spells;
-using Game.Common.Creatures;
-using Game.Common.Results;
+using Server.Entities.Combat;
+using Server.Entities.Combat.Structs;
+using Server.Entities.Contracts.Combat.Attacks;
+using Server.Entities.Contracts.Items;
+using Server.Entities.Contracts.Items.Types.Usable;
+using Server.Entities.Contracts.Spells;
+using Server.Entities.Creatures;
+using Server.Entities.Results;
 
-namespace Game.Common.Contracts.Creatures;
+namespace Server.Entities.Contracts.Creatures;
 
 public delegate void AttackTargetChange(ICombatActor actor, uint oldTargetId, uint newTargetId);
 

@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Creatures.Players;
+using Server.Entities.Contracts.Creatures;
+using Server.Entities.Creatures.Players;
 
-namespace Game.Common.Contracts.DataStores;
+namespace Server.Entities.Contracts.DataStores;
 
 public interface IPlayerOutFitStore : IDataStore<Gender, IEnumerable<IPlayerOutFit>>
 {

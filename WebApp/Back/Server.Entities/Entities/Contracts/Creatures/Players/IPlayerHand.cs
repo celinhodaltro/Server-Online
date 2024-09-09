@@ -1,8 +1,8 @@
-﻿using Game.Common.Contracts.Items;
-using Game.Common.Contracts.World.Tiles;
-using Game.Common.Results;
+﻿using Server.Entities.Contracts.Items;
+using Server.Entities.Contracts.World.Tiles;
+using Server.Entities.Results;
 
-namespace Game.Common.Contracts.Creatures.Players;
+namespace Server.Entities.Contracts.Creatures.Players;
 
 public interface IPlayerHand
 {

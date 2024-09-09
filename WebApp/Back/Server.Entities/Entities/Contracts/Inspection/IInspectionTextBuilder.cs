@@ -1,8 +1,8 @@
 ﻿using System;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.Items;
+using Server.Entities.Contracts.Creatures;
+using Server.Entities.Contracts.Items;
 
-namespace Game.Common.Contracts.Inspection;
+namespace Server.Entities.Contracts.Inspection;
 
 public interface IInspectionTextBuilder
 {

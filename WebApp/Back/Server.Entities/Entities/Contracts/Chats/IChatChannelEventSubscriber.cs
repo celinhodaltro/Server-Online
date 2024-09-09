@@ -1,4 +1,4 @@
-﻿namespace Game.Common.Contracts.Chats;
+﻿namespace Server.Entities.Contracts.Chats;
 
 public interface IChatChannelEventSubscriber
 {

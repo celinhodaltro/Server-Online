@@ -1,6 +1,6 @@
-﻿using Game.Common.Creatures.Players;
+﻿using Server.Entities.Creatures.Players;
 
-namespace Game.Common.Contracts.Creatures;
+namespace Server.Entities.Contracts.Creatures;
 
 public interface IPlayerOutFit
 {

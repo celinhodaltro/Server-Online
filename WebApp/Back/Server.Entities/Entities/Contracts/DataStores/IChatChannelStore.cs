@@ -1,6 +1,6 @@
-﻿using Game.Common.Contracts.Chats;
+﻿using Server.Entities.Contracts.Chats;
 
-namespace Game.Common.Contracts.DataStores;
+namespace Server.Entities.Contracts.DataStores;
 
 public interface IChatChannelStore : IDataStore<ushort, IChatChannel>
 {

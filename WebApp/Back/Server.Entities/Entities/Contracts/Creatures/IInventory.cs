@@ -1,12 +1,12 @@
 ﻿using System.Collections.Generic;
-using Game.Common.Contracts.DataStores;
-using Game.Common.Contracts.Items;
-using Game.Common.Contracts.Items.Types.Body;
-using Game.Common.Contracts.Items.Types.Containers;
-using Game.Common.Creatures.Players;
-using Game.Common.Results;
+using Server.Entities.Contracts.DataStores;
+using Server.Entities.Contracts.Items;
+using Server.Entities.Contracts.Items.Types.Body;
+using Server.Entities.Contracts.Items.Types.Containers;
+using Server.Entities.Creatures.Players;
+using Server.Entities.Results;
 
-namespace Game.Common.Contracts.Creatures;
+namespace Server.Entities.Contracts.Creatures;
 
 public delegate void RemoveItemFromSlot(IInventory inventory, IItem item, Slot slot, byte amount = 1);
 

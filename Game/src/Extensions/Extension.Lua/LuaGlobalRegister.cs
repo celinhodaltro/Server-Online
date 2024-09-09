@@ -1,10 +1,10 @@
 ﻿using System;
 using System.IO;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.Items;
-using Game.Common.Contracts.Services;
-using Game.Common.Helpers;
-using Game.Common.Services;
+using Server.Entities.Contracts.Creatures;
+using Server.Entities.Contracts.Items;
+using Server.Entities.Contracts.Services;
+using Server.Entities.Helpers;
+using Server.Entities.Services;
 using Extension.Lua.EventRegister;
 using Extension.Lua.Functions;
 using Extension.Lua.Functions.Libs;

@@ -1,7 +1,7 @@
 ﻿using Moq;
 using Data.InMemory;
-using Game.Common.Chats;
-using Game.Common.Contracts.Creatures;
+using Server.Entities.Chats;
+using Server.Entities.Contracts.Creatures;
 using Networking.Packets.Incoming;
 using Server.Commands.Player;
 using Server.Common.Contracts;

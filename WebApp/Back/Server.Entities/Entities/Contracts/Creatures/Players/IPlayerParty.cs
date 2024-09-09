@@ -1,6 +1,6 @@
-﻿using Game.Common.Results;
+﻿using Server.Entities.Results;
 
-namespace Game.Common.Contracts.Creatures.Players;
+namespace Server.Entities.Contracts.Creatures.Players;
 
 public delegate void InviteToParty(IPlayer leader, IPlayer invited, IParty party);
 

@@ -1,7 +1,7 @@
 ﻿using System;
-using Game.Common.Contracts.Items;
+using Server.Entities.Contracts.Items;
 
-namespace Game.Common.Contracts.Creatures;
+namespace Server.Entities.Contracts.Creatures;
 
 public interface ILootItem
 {

@@ -1,19 +1,19 @@
 ﻿using System.Collections.Generic;
-using Game.Common.Chats;
-using Game.Common.Contracts.Creatures.Players;
-using Game.Common.Contracts.DataStores;
-using Game.Common.Contracts.Items;
-using Game.Common.Contracts.Items.Types;
-using Game.Common.Contracts.Items.Types.Containers;
-using Game.Common.Contracts.Items.Types.Usable;
-using Game.Common.Contracts.Spells;
-using Game.Common.Contracts.World;
-using Game.Common.Contracts.World.Tiles;
-using Game.Common.Creatures;
-using Game.Common.Creatures.Players;
-using Game.Common.Results;
+using Server.Entities.Chats;
+using Server.Entities.Contracts.Creatures.Players;
+using Server.Entities.Contracts.DataStores;
+using Server.Entities.Contracts.Items;
+using Server.Entities.Contracts.Items.Types;
+using Server.Entities.Contracts.Items.Types.Containers;
+using Server.Entities.Contracts.Items.Types.Usable;
+using Server.Entities.Contracts.Spells;
+using Server.Entities.Contracts.World;
+using Server.Entities.Contracts.World.Tiles;
+using Server.Entities.Creatures;
+using Server.Entities.Creatures.Players;
+using Server.Entities.Results;
 
-namespace Game.Common.Contracts.Creatures;
+namespace Server.Entities.Contracts.Creatures;
 
 public delegate void ChangeChaseMode(IPlayer player, ChaseMode oldChaseMode, ChaseMode newChaseMode);
 

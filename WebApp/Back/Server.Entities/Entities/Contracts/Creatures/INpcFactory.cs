@@ -1,6 +1,6 @@
-﻿using Game.Common.Contracts.World;
+﻿using Server.Entities.Contracts.World;
 
-namespace Game.Common.Contracts.Creatures;
+namespace Server.Entities.Contracts.Creatures;
 
 public interface INpcFactory
 {

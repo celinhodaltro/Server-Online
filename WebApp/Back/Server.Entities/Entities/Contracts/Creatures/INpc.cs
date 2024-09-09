@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using Game.Common.Chats;
-using Game.Common.Contracts.Items;
-using Game.Common.Contracts.World;
-using Game.Common.Item;
+using Server.Entities.Chats;
+using Server.Entities.Contracts.Items;
+using Server.Entities.Contracts.World;
+using Server.Entities.Item;
 
-namespace Game.Common.Contracts.Creatures;
+namespace Server.Entities.Contracts.Creatures;
 
 public delegate string KeywordReplacement(string message, INpc npc, ISociableCreature to);
 

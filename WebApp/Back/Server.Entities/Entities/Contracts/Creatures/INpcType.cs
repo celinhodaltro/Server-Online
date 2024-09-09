@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Game.Common.Contracts.Creatures;
+namespace Server.Entities.Contracts.Creatures;
 
 public interface INpcType : ICreatureType
 {

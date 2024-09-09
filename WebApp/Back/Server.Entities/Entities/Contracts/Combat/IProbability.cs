@@ -1,4 +1,4 @@
-﻿namespace Game.Common.Contracts.Combat;
+﻿namespace Server.Entities.Contracts.Combat;
 
 public interface IProbability
 {

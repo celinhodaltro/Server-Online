@@ -1,7 +1,7 @@
 ﻿using System.Reflection;
-using Game.Common.Location;
+using Server.Entities.Location;
 
-namespace Game.Common.Contracts.DataStores;
+namespace Server.Entities.Contracts.DataStores;
 
 public interface IAreaEffectStore
 {

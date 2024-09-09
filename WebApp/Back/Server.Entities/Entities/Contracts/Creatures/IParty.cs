@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using Game.Common.Contracts.Chats;
-using Game.Common.Results;
+using Server.Entities.Contracts.Chats;
+using Server.Entities.Results;
 
-namespace Game.Common.Contracts.Creatures;
+namespace Server.Entities.Contracts.Creatures;
 
 public delegate void PlayerJoinedParty(IParty party, IPlayer player);
 

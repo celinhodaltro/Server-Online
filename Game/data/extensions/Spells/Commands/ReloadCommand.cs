@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using Game.Combat.Spells;
-using Game.Common;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.Items;
-using Game.Common.Item;
-using Game.Common.Services;
+using Server.Entities;
+using Server.Entities.Contracts.Creatures;
+using Server.Entities.Contracts.Items;
+using Server.Entities.Item;
+using Server.Entities.Services;
 using Game.Items.Factories;
 using Loader.Quest;
 using Loader.Vocations;

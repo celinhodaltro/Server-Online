@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using Game.Common.Chats;
-using Game.Common.Contracts.Creatures;
+using Server.Entities.Chats;
+using Server.Entities.Contracts.Creatures;
 
-namespace Game.Common.Contracts.Chats;
+namespace Server.Entities.Contracts.Chats;
 
 public delegate void AddMessage(ISociableCreature creature, IChatChannel channel, SpeechType speechType,
     string message);

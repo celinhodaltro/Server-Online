@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Game.Common.Contracts.Creatures.Players;
+namespace Server.Entities.Contracts.Creatures.Players;
 
 public interface IVip
 {

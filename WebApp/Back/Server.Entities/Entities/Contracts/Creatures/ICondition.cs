@@ -1,6 +1,6 @@
-﻿using Game.Common.Creatures;
+﻿using Server.Entities.Creatures;
 
-namespace Game.Common.Contracts.Creatures;
+namespace Server.Entities.Contracts.Creatures;
 
 public interface ICondition
 {

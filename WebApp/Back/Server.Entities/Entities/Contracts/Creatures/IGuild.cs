@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using Game.Common.Contracts.Chats;
-using Game.Common.Creatures.Guilds;
+using Server.Entities.Contracts.Chats;
+using Server.Entities.Creatures.Guilds;
 
-namespace Game.Common.Contracts.Creatures;
+namespace Server.Entities.Contracts.Creatures;
 
 public interface IGuild
 {

@@ -1,7 +1,7 @@
-﻿using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.Items;
+﻿using Server.Entities.Contracts.Creatures;
+using Server.Entities.Contracts.Items;
 
-namespace Game.Common.Contracts.Services;
+namespace Server.Entities.Contracts.Services;
 
 public interface IDealTransaction
 {

@@ -1,4 +1,4 @@
-﻿namespace Game.Common.Chats;
+﻿namespace Server.Entities.Chats;
 
 public enum SpeechType : byte
 {

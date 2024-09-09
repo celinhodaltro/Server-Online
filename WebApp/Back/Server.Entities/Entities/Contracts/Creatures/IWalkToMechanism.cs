@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Game.Common.Contracts.Creatures;
+namespace Server.Entities.Contracts.Creatures;
 
 public interface IWalkToMechanism
 {

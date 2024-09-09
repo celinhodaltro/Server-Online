@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using Game.Common.Contracts.Creatures;
+using Server.Entities.Contracts.Creatures;
 using Server.Common.Contracts;
 
 namespace Extensions;
