@@ -14,7 +14,7 @@ public sealed class Player
     }
 
     public int Id { get; set; }
-    public int AccountId { get; set; }
+    public int UserId { get; set; }
     public int TownId { get; set; }
     public string Name { get; set; }
     public int PlayerType { get; set; }
@@ -70,7 +70,7 @@ public sealed class Player
     public Gender Gender { get; set; }
     public byte Vocation { get; set; }
     public int RemainingRecoverySeconds { get; set; }
-    public Account Account { get; set; }
+    public User Account { get; set; }
 
     public ICollection<PlayerItem> PlayerItems { get; set; }
     public ICollection<PlayerDepotItem> PlayerDepotItems { get; set; }
