@@ -10,4 +10,9 @@
     <PackageReference Include="Microsoft.AspNet.Identity.EntityFramework" Version="2.2.4" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.8" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Entities\Contracts\Creatures\Factories\" />
+    <Folder Include="Entities\Contracts\Creatures\Schedulers\" />
+  </ItemGroup>
 </Project>
