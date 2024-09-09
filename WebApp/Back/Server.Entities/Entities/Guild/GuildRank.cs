@@ -1,8 +1,7 @@
-﻿namespace Data.Entities;
+﻿namespace Server.Entities;
 
-public sealed class GuildRank
+public sealed class GuildRank : DefaultDb
 {
-    public int Id { get; set; }
     public int GuildId { get; set; }
     public string Name { get; set; }
     public int Level { get; set; }
