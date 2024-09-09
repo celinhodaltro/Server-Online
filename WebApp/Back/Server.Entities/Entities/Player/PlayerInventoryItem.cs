@@ -1,6 +1,6 @@
 ﻿namespace Server.Entities;
 
-public sealed class PlayerInventoryItem
+public sealed class PlayerInventoryItem : DefaultDb
 {
     public int Id { get; set; }
     public int PlayerId { get; set; }

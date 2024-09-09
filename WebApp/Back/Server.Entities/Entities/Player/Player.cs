@@ -3,7 +3,7 @@ using Server.Entities.Models.Creatures.Players;
 
 namespace Server.Entities;
 
-public sealed class Player
+public sealed class Player : DefaultDb
 {
     public Player()
     {
@@ -13,7 +13,6 @@ public sealed class Player
         PlayerDepotItems = new List<PlayerDepotItem>();
     }
 
-    public int Id { get; set; }
     public int UserId { get; set; }
     public int TownId { get; set; }
     public string Name { get; set; }

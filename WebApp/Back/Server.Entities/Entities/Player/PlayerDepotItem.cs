@@ -1,5 +1,5 @@
 namespace Server.Entities;
 
-public class PlayerDepotItem : PlayerItemBase
+public class PlayerDepotItem : PlayerItemBase 
 {
 }

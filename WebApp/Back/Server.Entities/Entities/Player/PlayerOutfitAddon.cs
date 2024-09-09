@@ -2,7 +2,7 @@
 
 namespace Server.Entities;
 
-public class PlayerOutfitAddon
+public class PlayerOutfitAddon : DefaultDb
 {
     public Player Player { get; set; }
     public int PlayerId { get; set; }

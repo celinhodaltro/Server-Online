@@ -1,6 +1,6 @@
 namespace Server.Entities;
 
-public abstract class PlayerItemBase
+public abstract class PlayerItemBase : DefaultDb
 {
     public int Id { get; set; }
     public int PlayerId { get; set; }
