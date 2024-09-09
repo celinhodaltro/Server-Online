@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Server.BusinessRules;
+using Server.Entities;
 
 namespace API.Controllers
 {
@@ -7,8 +9,10 @@ namespace API.Controllers
 
     [Route("api/[controller]")]
     [ApiController]
-    public class PlayerController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signManager, 
-                                IConfiguration configuration, AccountBusinessRules logBusinessRules) : Controller
+    public class PlayerController(UserManager<ApplicationUser> userManager, 
+                                  SignInManager<ApplicationUser> signManager, 
+                                  IConfiguration configuration, 
+                                  AccountBusinessRules logBusinessRules) : BaseController
     {
 
         [HttpGet]
