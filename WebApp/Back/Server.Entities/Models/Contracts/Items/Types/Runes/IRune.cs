@@ -1,10 +1,7 @@
-﻿using System.Linq;
-using System.Text;
-using Game.Common.Creatures;
-using Game.Common.Creatures.Structs;
-using Server.Entities.Models.Contracts;
+﻿using System.Text;
 using Server.Entities.Models.Contracts.Creatures;
-using Server.Entities.Models.Contracts.Items;
+using Server.Entities.Models.Creatures;
+using Server.Entities.Models.Creatures.Structs;
 
 namespace Server.Entities.Models.Contracts.Items.Types.Runes;
 
