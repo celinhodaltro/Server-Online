@@ -1,6 +1,4 @@
 ﻿using System.Collections.Generic;
-using Game.Common.Creatures;
-using Game.Common.Creatures.Players;
 using Server.Entities.Models;
 using Server.Entities.Models.Chats;
 using Server.Entities.Models.Contracts;
@@ -13,6 +11,8 @@ using Server.Entities.Models.Contracts.Items.Types.Usable;
 using Server.Entities.Models.Contracts.Spells;
 using Server.Entities.Models.Contracts.World;
 using Server.Entities.Models.Contracts.World.Tiles;
+using Server.Entities.Models.Creatures;
+using Server.Entities.Models.Creatures.Players;
 using Server.Entities.Models.Results;
 
 namespace Server.Entities.Models.Contracts.Creatures;

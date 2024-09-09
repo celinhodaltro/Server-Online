@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Game.Common.Creatures;
+using Server.Entities.Models.Creatures;
 
 namespace Server.Entities.Models.Contracts.Creatures;
 

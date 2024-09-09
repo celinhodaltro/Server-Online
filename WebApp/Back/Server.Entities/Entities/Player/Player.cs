@@ -1,3 +1,6 @@
+using Game.World;
+using Server.Entities.Models.Creatures.Players;
+
 namespace Server.Entities;
 
 public sealed class Player

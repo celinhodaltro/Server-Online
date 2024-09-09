@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
-using Game.Common.Creatures;
 using Server.Entities.Models.Combat;
 using Server.Entities.Models.Combat.Structs;
 using Server.Entities.Models.Contracts.Combat.Attacks;
 using Server.Entities.Models.Contracts.Items;
 using Server.Entities.Models.Contracts.Items.Types.Usable;
 using Server.Entities.Models.Contracts.Spells;
+using Server.Entities.Models.Creatures;
 using Server.Entities.Models.Results;
 
 namespace Server.Entities.Models.Contracts.Creatures;

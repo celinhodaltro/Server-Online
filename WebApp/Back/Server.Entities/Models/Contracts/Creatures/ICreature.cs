@@ -1,9 +1,9 @@
-using Game.Common.Creatures;
 using Game.Common.Location;
 using Server.Entities.Models.Chats;
 using Server.Entities.Models.Contracts.Items;
 using Server.Entities.Models.Contracts.World;
 using Server.Entities.Models.Contracts.World.Tiles;
+using Server.Entities.Models.Creatures;
 
 namespace Server.Entities.Models.Contracts.Creatures;
 

@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using Game.Common.Creatures.Guilds;
 using Server.Entities.Models.Contracts.Chats;
 
 namespace Server.Entities.Models.Contracts.Creatures;

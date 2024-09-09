@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
-using Game.Common.Creatures.Players;
 using Server.Entities.Models;
 using Server.Entities.Models.Contracts;
 using Server.Entities.Models.Contracts.DataStores;
 using Server.Entities.Models.Contracts.Items;
 using Server.Entities.Models.Contracts.Items.Types.Body;
 using Server.Entities.Models.Contracts.Items.Types.Containers;
+using Server.Entities.Models.Creatures.Players;
 using Server.Entities.Models.Results;
 
 namespace Server.Entities.Models.Contracts.Creatures;

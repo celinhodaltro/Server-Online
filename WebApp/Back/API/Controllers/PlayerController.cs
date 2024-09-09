@@ -1,7 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Server.BusinessRules;
-using Server.Entities;
 
 namespace API.Controllers
 {
