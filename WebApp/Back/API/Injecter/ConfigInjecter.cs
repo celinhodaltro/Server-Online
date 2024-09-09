@@ -21,6 +21,8 @@ namespace API.Injecter
         public static void InjecterBusinessRules(IServiceCollection Services)
         {
             Services.AddScoped<LogBusinessRules>();
+            Services.AddScoped<AccountBusinessRules>();
+            Services.AddScoped<PlayerBusinessRules>();
 
         }
 
