@@ -1,11 +1,11 @@
-﻿using Server.Entities.Models.Contracts.Creatures;
-using Server.Entities.Models.Contracts.Items;
+﻿using Game.Common.Location.Structs;
+using Server.Entities.Models.Contracts.Creatures;
 
 namespace Server.Entities.Models.Contracts.Items.Types;
 
 public interface IMagicField
 {
-    Location.Structs.Location Location { get; }
+    Location Location { get; }
     IItemType Metadata { get; }
 
     void CauseDamage(ICreature toCreature);
