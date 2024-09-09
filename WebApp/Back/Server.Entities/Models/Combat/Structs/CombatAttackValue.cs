@@ -1,6 +1,6 @@
 ﻿using System;
-using Game.Common.Creatures;
 using Game.Common.Location.Structs;
+using Server.Entities.Models.Creatures;
 using Server.Entities.Models.Item;
 
 namespace Server.Entities.Models.Combat.Structs;
