@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace Server.Entities.Models.Helpers;
+namespace Game.Common.Helpers;
 
 public static class GameAssemblyCache
 {

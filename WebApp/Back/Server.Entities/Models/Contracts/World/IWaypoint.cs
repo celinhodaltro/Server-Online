@@ -1,4 +1,4 @@
-using Server.Entities.Models.Location.Structs;
+using Game.Common.Location.Structs;
 
 namespace Server.Entities.Models.Contracts.World;
 

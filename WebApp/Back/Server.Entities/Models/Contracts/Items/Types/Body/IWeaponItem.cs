@@ -1,5 +1,5 @@
 ﻿using System;
-using Server.Entities.Models.Creatures.Players;
+using Game.Common.Creatures.Players;
 using Server.Entities.Models.Combat.Structs;
 using Server.Entities.Models.Contracts.Creatures;
 using Server.Entities.Models.Item;

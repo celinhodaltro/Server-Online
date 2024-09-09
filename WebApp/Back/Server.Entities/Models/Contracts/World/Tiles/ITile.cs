@@ -1,4 +1,4 @@
-﻿using Server.Entities.Models.Location;
+﻿using Game.Common.Location;
 using Server.Entities.Models.Contracts.Creatures;
 using Server.Entities.Models.Contracts.Items;
 

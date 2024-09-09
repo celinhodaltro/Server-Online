@@ -1,4 +1,4 @@
-﻿namespace Server.Entities.Models.Helpers;
+﻿namespace Game.Common.Helpers;
 
 public class ConditionEvaluation
 {

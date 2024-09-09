@@ -1,7 +1,8 @@
+using System;
 using System.Buffers;
-using Server.Entities.Models.Creatures.Players;
+using Game.Common.Creatures.Players;
 
-namespace Server.Entities.Models.Location.Structs;
+namespace Game.Common.Location.Structs;
 
 public struct Location : IEquatable<Location>, IConvertible
 {

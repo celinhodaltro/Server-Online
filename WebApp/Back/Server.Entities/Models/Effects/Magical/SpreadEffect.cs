@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Buffers;
-using Server.Entities.Models.Location;
-using Server.Entities.Models.Location.Structs;
+using Game.Common.Location;
+using Game.Common.Location.Structs;
 
-namespace Server.Entities.Models.Effects.Magical;
+namespace Game.Common.Effects.Magical;
 
 public class SpreadEffect
 {

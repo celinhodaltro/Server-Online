@@ -1,7 +1,7 @@
 ﻿using System.Collections.Immutable;
 using System.Text;
-using Server.Entities.Models.Creatures;
-using Server.Entities.Models.Creatures.Players;
+using Game.Common.Creatures;
+using Game.Common.Creatures.Players;
 using Server.Entities.Models.Contracts.Items;
 using Server.Entities.Models.Item;
 

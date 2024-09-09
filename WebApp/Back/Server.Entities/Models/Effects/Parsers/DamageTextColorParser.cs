@@ -1,9 +1,9 @@
-﻿using Server.Entities.Models.Creatures;
+﻿using Game.Common.Creatures;
 using Server.Entities.Models.Contracts.Creatures;
 using Server.Entities.Models.Item;
 using Server.Entities.Models.Texts;
 
-namespace Server.Entities.Models.Effects.Parsers;
+namespace Game.Common.Effects.Parsers;
 
 public static class DamageTextColorParser
 {

@@ -2,9 +2,9 @@
 using System.Buffers;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Server.Entities.Models.Location.Structs;
+using Game.Common.Location.Structs;
 
-namespace Server.Entities.Models.Effects.Magical;
+namespace Game.Common.Effects.Magical;
 
 public static partial class AreaEffect
 {

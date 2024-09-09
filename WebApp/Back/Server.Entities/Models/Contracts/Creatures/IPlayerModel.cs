@@ -1,7 +1,7 @@
 ﻿//using Game.Contracts.Items;
-//using Server.Entities.Models.Creatures;
-//using Server.Entities.Models.Location.Structs;
-//using Server.Entities.Models.Players;
+//using Game.Common.Creatures;
+//using Game.Common.Location.Structs;
+//using Game.Common.Players;
 //using System;
 //using System.Collections.Generic;
 //using System.Text;

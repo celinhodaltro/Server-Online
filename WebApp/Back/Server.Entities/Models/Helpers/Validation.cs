@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace Server.Entities.Models.Helpers;
+namespace Game.Common.Helpers;
 
 public static class Validation
 {

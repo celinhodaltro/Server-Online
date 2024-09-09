@@ -1,4 +1,4 @@
-﻿namespace Server.Entities.Models.Location;
+﻿namespace Game.Common.Location;
 
 public enum StackPositionType
 {

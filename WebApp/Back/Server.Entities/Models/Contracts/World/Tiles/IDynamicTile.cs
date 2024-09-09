@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using Server.Entities.Models.Location;
+using Game.Common.Location;
 using Server.Entities.Models.Contracts;
 using Server.Entities.Models.Contracts.Creatures;
 using Server.Entities.Models.Contracts.Items;

@@ -1,17 +1,17 @@
-﻿using Server.Entities.Models.Location.Structs;
+﻿using Game.Common.Location.Structs;
 
 namespace Server.Entities.Models.Creatures.Structs;
 
 public readonly ref struct MovementParams
 {
-    public MovementParams(Location.Structs.Location fromLocation, Location.Structs.Location toLocation, byte amount)
+    public MovementParams(Location fromLocation, Location toLocation, byte amount)
     {
         FromLocation = fromLocation;
         ToLocation = toLocation;
         Amount = amount;
     }
 
-    public Location.Structs.Location FromLocation { get; }
-    public Location.Structs.Location ToLocation { get; }
+    public Location FromLocation { get; }
+    public Location ToLocation { get; }
     public byte Amount { get; }
 }

@@ -1,4 +1,4 @@
-﻿using Server.Entities.Models.Creatures.Structs;
+﻿using Game.Common.Creatures.Structs;
 using Server.Entities.Models.Combat.Structs;
 using Server.Entities.Models.Item;
 

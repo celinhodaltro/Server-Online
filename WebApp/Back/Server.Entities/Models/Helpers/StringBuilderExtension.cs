@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using System.Text;
 
-namespace Server.Entities.Models.Helpers;
+namespace Game.Common.Helpers;
 
 [ExcludeFromCodeCoverage]
 public static class StringBuilderExtension

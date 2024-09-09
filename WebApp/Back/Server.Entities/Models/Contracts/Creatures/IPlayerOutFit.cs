@@ -1,4 +1,4 @@
-﻿using Server.Entities.Models.Creatures.Players;
+﻿using Game.Common.Creatures.Players;
 
 namespace Server.Entities.Models.Contracts.Creatures;
 

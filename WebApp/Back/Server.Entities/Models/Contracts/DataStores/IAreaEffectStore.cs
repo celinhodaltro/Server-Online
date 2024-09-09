@@ -1,5 +1,5 @@
 ﻿using System.Reflection;
-using Server.Entities.Models.Location;
+using Game.Common.Location;
 
 namespace Server.Entities.Models.Contracts.DataStores;
 

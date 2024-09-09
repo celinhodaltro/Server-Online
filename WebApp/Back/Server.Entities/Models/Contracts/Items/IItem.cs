@@ -1,5 +1,5 @@
 ﻿using System;
-using Server.Entities.Models.Location;
+using Game.Common.Location;
 using Server.Entities.Models.Item;
 
 namespace Server.Entities.Models.Contracts.Items;

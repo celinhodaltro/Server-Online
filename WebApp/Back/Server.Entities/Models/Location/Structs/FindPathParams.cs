@@ -1,6 +1,6 @@
 ﻿using System.Runtime.InteropServices;
 
-namespace Server.Entities.Models.Location.Structs;
+namespace Game.Common.Location.Structs;
 
 [StructLayout(LayoutKind.Auto)]
 public struct FindPathParams

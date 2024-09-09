@@ -1,5 +1,5 @@
 ﻿using System;
-using Server.Entities.Models.Location.Structs;
+using Game.Common.Location.Structs;
 using Server.Entities.Models.Creatures;
 using Server.Entities.Models.Item;
 
