@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Entities;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Server.Entities
+﻿namespace Server.Entities
 {
     public class User : DefaultDb
     {
@@ -19,6 +12,6 @@ namespace Server.Entities
         public uint? BannedBy { get; set; }
 
         public ICollection<Player> Players { get; set; }
-        public ICollection<AccountVipList> VipList { get; set; }
+        public ICollection<UserVipList> VipList { get; set; }
     }
 }
