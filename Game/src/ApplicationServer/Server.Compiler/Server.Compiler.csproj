@@ -17,7 +17,6 @@
         <ProjectReference Include="..\..\GameWorldSimulator\Game.Chats\Game.Chats.csproj" />
         <ProjectReference Include="..\..\GameWorldSimulator\Game.Combat\Game.Combat.csproj" />
         <ProjectReference Include="..\..\GameWorldSimulator\Game.Creatures\Game.Creatures.csproj" />
-        <ProjectReference Include="..\..\GameWorldSimulator\Game.Common\Game.Common.csproj" />
         <ProjectReference Include="..\..\GameWorldSimulator\Game.Items\Game.Items.csproj" />
         <ProjectReference Include="..\..\GameWorldSimulator\Game.World\Game.World.csproj" />
         <ProjectReference Include="..\..\Loader\Loader.csproj" />

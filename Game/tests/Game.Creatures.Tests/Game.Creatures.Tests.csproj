@@ -29,7 +29,6 @@
 
     <ItemGroup>
         <ProjectReference Include="..\..\src\Database\Data.InMemory\Data.InMemory.csproj" />
-        <ProjectReference Include="..\..\src\GameWorldSimulator\Game.Common\Game.Common.csproj" />
         <ProjectReference Include="..\..\src\GameWorldSimulator\Game.Creatures\Game.Creatures.csproj" />
         <ProjectReference Include="..\..\src\GameWorldSimulator\Game.Items\Game.Items.csproj" />
         <ProjectReference Include="..\..\src\GameWorldSimulator\Game.World\Game.World.csproj" />

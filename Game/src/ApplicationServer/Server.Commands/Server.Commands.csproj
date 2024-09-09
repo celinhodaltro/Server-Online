@@ -15,7 +15,6 @@
         <ProjectReference Include="..\..\GameWorldSimulator\Game.Systems\Game.Systems.csproj" />
         <ProjectReference Include="..\..\Loader\Loader.csproj" />
         <ProjectReference Include="..\..\ApplicationServer\Server\Server.csproj" />
-        <ProjectReference Include="..\..\GameWorldSimulator\Game.Common\Game.Common.csproj" />
         <ProjectReference Include="..\..\Database\Data\Data.csproj" />
 
         <ProjectReference Include="..\Server.Contracts\Server.Common.csproj" />

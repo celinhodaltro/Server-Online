@@ -5,8 +5,4 @@
         <IsPublishable>false</IsPublishable>
     </PropertyGroup>
 
-    <ItemGroup>
-        <ProjectReference Include="..\Game.Common\Game.Common.csproj" />
-    </ItemGroup>
-
 </Project>

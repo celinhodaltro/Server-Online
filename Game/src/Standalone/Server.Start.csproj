@@ -33,7 +33,6 @@
     <ItemGroup>
         <ProjectReference Include="..\Database\Data\Data.csproj" />
         <ProjectReference Include="..\Extensions\Extension.Lua\Extension.Lua.csproj" />
-        <ProjectReference Include="..\GameWorldSimulator\Game.Common\Game.Common.csproj" />
         <ProjectReference Include="..\GameWorldSimulator\Game.Systems\Game.Systems.csproj" />
         <ProjectReference Include="..\NetworkingServer\Networking.Handlers\Networking.Handlers.csproj" />
         <ProjectReference Include="..\NetworkingServer\Networking\Networking.csproj" />

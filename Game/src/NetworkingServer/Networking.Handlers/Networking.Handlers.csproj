@@ -12,7 +12,6 @@
 
     <ItemGroup>
         <ProjectReference Include="..\..\Database\Data.InMemory\Data.InMemory.csproj" />
-        <ProjectReference Include="..\..\GameWorldSimulator\Game.Common\Game.Common.csproj" />
         <ProjectReference Include="..\..\GameWorldSimulator\Game.Systems\Game.Systems.csproj" />
         <ProjectReference Include="..\..\NetworkingServer\Networking.Packets\Networking.Packets.csproj" />
         <ProjectReference Include="..\..\ApplicationServer\Server.Contracts\Server.Common.csproj" />
