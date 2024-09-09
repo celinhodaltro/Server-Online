@@ -1,4 +1,6 @@
-﻿namespace Server.Entities
+﻿using Server.Entities.Entities.Auth;
+
+namespace Server.Entities
 {
     public class UserInfo : DefaultDb
     {
