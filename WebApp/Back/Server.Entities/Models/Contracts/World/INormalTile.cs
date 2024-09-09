@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Game.Common.Location;
+using Game.Common.Location.Structs;
 using Server.Entities.Models;
 using Server.Entities.Models.Contracts.Items;
 using Server.Entities.Models.Contracts.World.Tiles;
@@ -18,7 +19,7 @@ public interface INormalTile : ITile
 
     IEnumerable<IItem> ItemsWithSeparation { get; }
 
-    new Location.Structs.Location Location { get; }
+    new Location Location { get; }
 
     byte Flags { get; }
 
