@@ -6,28 +6,29 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="System.Collections" Version="4.3.0" />
-        <PackageReference Include="System.Collections.Immutable" Version="7.0.0" />
+        <PackageReference Include="System.Collections" Version="4.3.0"/>
+        <PackageReference Include="System.Collections.Immutable" Version="7.0.0"/>
     </ItemGroup>
     <ItemGroup>
-        <ProjectReference Include="..\..\src\ApplicationServer\Server.Contracts\Server.Common.csproj" />
-        <ProjectReference Include="..\..\src\GameWorldSimulator\Game.Chats\Game.Chats.csproj" />
-        <ProjectReference Include="..\..\src\GameWorldSimulator\Game.Combat\Game.Combat.csproj" />
-        <ProjectReference Include="..\..\src\GameWorldSimulator\Game.Creatures\Game.Creatures.csproj" />
-        <ProjectReference Include="..\..\src\GameWorldSimulator\Game.Items\Game.Items.csproj" />
-        <ProjectReference Include="..\..\src\GameWorldSimulator\Game.World\Game.World.csproj" />
-        <ProjectReference Include="..\..\src\Loader\Loader.csproj" />
-        <ProjectReference Include="..\..\src\Standalone\Server.Start.csproj" />
-        <ProjectReference Include="..\..\src\NetworkingServer\Networking.Handlers\Networking.Handlers.csproj" />
-        <ProjectReference Include="..\..\src\NetworkingServer\Networking\Networking.csproj" />
-        <ProjectReference Include="..\..\src\ApplicationServer\Server.Commands\Server.Commands.csproj" />
-        <ProjectReference Include="..\..\src\ApplicationServer\Server.Contracts\Server.Common.csproj" />
-        <ProjectReference Include="..\..\src\ApplicationServer\Server.Events\Server.Events.csproj" />
-        <ProjectReference Include="..\..\src\ApplicationServer\Server.Jobs\Server.Jobs.csproj" />
-        <ProjectReference Include="..\..\src\ApplicationServer\Server\Server.csproj" />
+        <ProjectReference Include="..\..\src\ApplicationServer\Server.Contracts\Server.Common.csproj"/>
+        <ProjectReference Include="..\..\src\GameWorldSimulator\Game.Chats\Game.Chats.csproj"/>
+        <ProjectReference Include="..\..\src\GameWorldSimulator\Game.Combat\Game.Combat.csproj"/>
+        <ProjectReference Include="..\..\src\GameWorldSimulator\Game.Common\Game.Common.csproj"/>
+        <ProjectReference Include="..\..\src\GameWorldSimulator\Game.Creatures\Game.Creatures.csproj"/>
+        <ProjectReference Include="..\..\src\GameWorldSimulator\Game.Items\Game.Items.csproj"/>
+        <ProjectReference Include="..\..\src\GameWorldSimulator\Game.World\Game.World.csproj"/>
+        <ProjectReference Include="..\..\src\Loader\Loader.csproj"/>
+        <ProjectReference Include="..\..\src\Standalone\Server.Start.csproj"/>
+        <ProjectReference Include="..\..\src\NetworkingServer\Networking.Handlers\Networking.Handlers.csproj"/>
+        <ProjectReference Include="..\..\src\NetworkingServer\Networking\Networking.csproj"/>
+        <ProjectReference Include="..\..\src\ApplicationServer\Server.Commands\Server.Commands.csproj"/>
+        <ProjectReference Include="..\..\src\ApplicationServer\Server.Contracts\Server.Common.csproj"/>
+        <ProjectReference Include="..\..\src\ApplicationServer\Server.Events\Server.Events.csproj"/>
+        <ProjectReference Include="..\..\src\ApplicationServer\Server.Jobs\Server.Jobs.csproj"/>
+        <ProjectReference Include="..\..\src\ApplicationServer\Server\Server.csproj"/>
     </ItemGroup>
     <ItemGroup>
-        <Compile Remove="Items\Sign.cs" />
+        <Compile Remove="Items\Sign.cs"/>
     </ItemGroup>
 
 </Project>

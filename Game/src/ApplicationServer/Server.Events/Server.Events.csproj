@@ -12,6 +12,7 @@
         <ProjectReference Include="..\..\NetworkingServer\Networking.Packets\Networking.Packets.csproj" />
         <ProjectReference Include="..\..\ApplicationServer\Server\Server.csproj" />
         <ProjectReference Include="..\Server.Contracts\Server.Common.csproj" />
+        <ProjectReference Include="..\..\GameWorldSimulator\Game.Common\Game.Common.csproj" />
     </ItemGroup>
 
     <PropertyGroup>

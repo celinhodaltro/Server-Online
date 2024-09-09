@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
     <ItemGroup>
         <PackageReference Include="Microsoft.Extensions.ObjectPool" Version="7.0.8" />
@@ -7,6 +7,7 @@
     <ItemGroup>
         <ProjectReference Include="..\Game.Chats\Game.Chats.csproj" />
         <ProjectReference Include="..\Game.Combat\Game.Combat.csproj" />
+        <ProjectReference Include="..\Game.Common\Game.Common.csproj" />
     </ItemGroup>
 
     <PropertyGroup>

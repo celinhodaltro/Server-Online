@@ -17,4 +17,8 @@
         <PackageReference Include="System.Collections" Version="$(SystemCollections_Version)" />
     </ItemGroup>
 
+    <ItemGroup>
+        <ProjectReference Include="..\Game.Common\Game.Common.csproj" />
+    </ItemGroup>
+
 </Project>

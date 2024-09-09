@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <TargetFramework>net8.0</TargetFramework>
@@ -25,6 +25,7 @@
     </ItemGroup>
 
     <ItemGroup>
+        <ProjectReference Include="..\..\src\GameWorldSimulator\Game.Common\Game.Common.csproj" />
         <ProjectReference Include="..\..\src\GameWorldSimulator\Game.Items\Game.Items.csproj" />
     </ItemGroup>
 
