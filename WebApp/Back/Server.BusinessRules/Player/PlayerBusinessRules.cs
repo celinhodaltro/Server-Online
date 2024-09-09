@@ -1,4 +1,5 @@
 ﻿using Server.Entities;
+using Server.Entities.Models.Creatures.Players;
 using System.Provider;
 
 namespace Server.BusinessRules
@@ -14,29 +15,27 @@ namespace Server.BusinessRules
             DefaultProvider = defaultProvider;
         }
 
-        public async Task<IEnumerable<PlayerResponseViewModel>> GetAll()
+        public async Task<IEnumerable<Player>> GetAll()
         {
-            var players = await _playerRepository.GetAllAsync();
-            var response = Mapper.Map<IEnumerable<PlayerResponseViewModel>>(players);
-            return response;
+            var players = await DefaultProvider.GetAllAsync<Player>();
+            return players;
         }
 
-        public async Task<PlayerResponseViewModel> GetById(int playerId)
+        public async Task<Player> GetById(int Id)
         {
-            var player = await _playerRepository.GetAsync(playerId);
-            var response = Mapper.Map<PlayerResponseViewModel>(player);
-            return response;
+            var player = await DefaultProvider.GetAsync<Player>(Id);
+            return player;
         }
 
-        public async Task Create(PlayerPostRequest playerPostRequest)
+        public async Task Create(Player player)
         {
-            await _playerRepository.Add(new PlayerEntity
+            await DefaultProvider.CreateAsync(new Player
             {
-                AccountId = playerPostRequest.AccountId,
+                UserId = player.UserId,
                 Level = 8,
                 Capacity = 470,
                 Experience = 4200,
-                Gender = (Gender)playerPostRequest.Sex,
+                Gender = Gender.Male,
                 WorldId = 1,
                 Health = 185,
                 MaxHealth = 185,
@@ -44,7 +43,7 @@ namespace Server.BusinessRules
                 MaxMana = 90,
                 Soul = 100,
                 Speed = 234,
-                Name = playerPostRequest.Name,
+                Name = player.Name,
                 FightMode = FightMode.Balanced,
                 LookType = 130,
                 LookBody = 69,
@@ -52,20 +51,20 @@ namespace Server.BusinessRules
                 LookHead = 78,
                 LookLegs = 58,
                 MagicLevel = 1,
-                Vocation = (byte)playerPostRequest.Vocation,
+                Vocation = (byte)player.Vocation,
                 ChaseMode = ChaseMode.Stand,
                 MaxSoul = 100,
                 PlayerType = 1,
-                PosX = playerPostRequest.PosX,
-                PosY = playerPostRequest.PosY,
-                PosZ = playerPostRequest.PosZ,
+                PosX = player.PosX,
+                PosY = player.PosY,
+                PosZ = player.PosZ,
                 SkillAxe = 10,
                 SkillDist = 10,
                 SkillClub = 10,
                 SkillSword = 10,
                 SkillShielding = 10,
                 SkillFist = 10,
-                TownId = playerPostRequest.Town,
+                TownId = player.TownId,
                 SkillFishing = 10
             });
         }

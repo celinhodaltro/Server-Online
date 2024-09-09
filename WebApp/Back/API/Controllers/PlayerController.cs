@@ -12,25 +12,26 @@ namespace API.Controllers
     public class PlayerController(UserManager<ApplicationUser> userManager, 
                                   SignInManager<ApplicationUser> signManager, 
                                   IConfiguration configuration, 
-                                  AccountBusinessRules logBusinessRules) : BaseController
+                                  AccountBusinessRules logBusinessRules,
+                                  PlayerBusinessRules playerBusinessRules) : BaseController
     {
 
         [HttpGet]
         public async Task<IActionResult> GetAllAsync()
         {
-            return Response(await _playerService.GetAll());
+            return Response(await playerBusinessRules.GetAll());
         }
 
         [HttpGet("{playerId}")]
         public async Task<IActionResult> GetById([FromRoute] int playerId)
         {
-            return Response(await _playerService.GetById(playerId));
+            return Response(await playerBusinessRules.GetById(playerId));
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody] PlayerPostRequest player)
+        public async Task<IActionResult> Post([FromBody] Player player)
         {
-            await _playerService.Create(player);
+            await playerBusinessRules.Create(player);
             return Ok();
         }
 
