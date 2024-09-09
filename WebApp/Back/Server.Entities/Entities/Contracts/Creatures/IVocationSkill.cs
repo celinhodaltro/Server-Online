@@ -1,4 +1,4 @@
-﻿namespace Server.Entities.Contracts.Creatures;
+﻿namespace Game.Common.Contracts.Creatures;
 
 public interface IVocationSkill
 {

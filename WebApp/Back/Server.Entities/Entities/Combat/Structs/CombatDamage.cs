@@ -1,7 +1,7 @@
-﻿using Server.Entities.Creatures;
-using Server.Entities.Item;
+﻿using Game.Common.Creatures;
+using Game.Common.Item;
 
-namespace Server.Entities.Combat.Structs;
+namespace Game.Common.Combat.Structs;
 
 public ref struct CombatDamage
 {

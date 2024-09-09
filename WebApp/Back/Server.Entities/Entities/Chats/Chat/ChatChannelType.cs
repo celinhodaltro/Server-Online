@@ -1,4 +1,4 @@
-﻿namespace Server.Entities.Chats.Chat;
+﻿namespace Game.Common.Chats.Chat;
 
 public enum ChatChannelType : ushort
 {

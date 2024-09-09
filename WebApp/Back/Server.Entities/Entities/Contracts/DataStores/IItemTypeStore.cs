@@ -1,6 +1,6 @@
-﻿using Server.Entities.Contracts.Items;
+﻿using Game.Common.Contracts.Items;
 
-namespace Server.Entities.Contracts.DataStores;
+namespace Game.Common.Contracts.DataStores;
 
 public interface IItemTypeStore : IDataStore<ushort, IItemType>
 {

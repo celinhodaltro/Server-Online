@@ -1,6 +1,6 @@
-﻿using Server.Entities.Contracts.Creatures;
+﻿using Game.Common.Contracts.Creatures;
 
-namespace Server.Entities.Contracts.DataStores;
+namespace Game.Common.Contracts.DataStores;
 
 public interface IGuildStore : IDataStore<ushort, IGuild>
 {

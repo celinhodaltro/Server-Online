@@ -1,11 +1,11 @@
-using Server.Entities.Chats;
-using Server.Entities.Contracts.Items;
-using Server.Entities.Contracts.World;
-using Server.Entities.Contracts.World.Tiles;
-using Server.Entities.Creatures;
-using Server.Entities.Location;
+using Game.Common.Chats;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.World;
+using Game.Common.Contracts.World.Tiles;
+using Game.Common.Creatures;
+using Game.Common.Location;
 
-namespace Server.Entities.Contracts.Creatures;
+namespace Game.Common.Contracts.Creatures;
 
 public delegate void CreatureStateChange();
 

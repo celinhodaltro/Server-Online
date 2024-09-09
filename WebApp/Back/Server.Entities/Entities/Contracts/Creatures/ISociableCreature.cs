@@ -1,6 +1,6 @@
-﻿using Server.Entities.Chats;
+﻿using Game.Common.Chats;
 
-namespace Server.Entities.Contracts.Creatures;
+namespace Game.Common.Contracts.Creatures;
 
 public delegate void Hear(ICreature from, ISociableCreature receiver, SpeechType speechType, string message);
 

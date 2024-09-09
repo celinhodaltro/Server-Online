@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using Server.Entities.Contracts.Chats;
-using Server.Entities.Contracts.DataStores;
+using Game.Common.Contracts.Chats;
+using Game.Common.Contracts.DataStores;
 
-namespace Server.Entities.Contracts.Creatures.Players;
+namespace Game.Common.Contracts.Creatures.Players;
 
 public delegate void PlayerJoinChannel(IPlayer player, IChatChannel channel);
 

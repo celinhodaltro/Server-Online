@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using Server.Entities.Creatures;
+using Game.Common.Creatures;
 
-namespace Server.Entities.Contracts.Creatures;
+namespace Game.Common.Contracts.Creatures;
 
 public interface ICreatureType
 {

@@ -1,6 +1,6 @@
-﻿using Server.Entities.Contracts.Items;
+﻿using Game.Common.Contracts.Items;
 
-namespace Server.Entities.Contracts.Services;
+namespace Game.Common.Contracts.Services;
 
 public interface IDecayService
 {

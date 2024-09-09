@@ -1,10 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using Server.Entities.Contracts.Items;
-using Server.Entities.Contracts.Items.Types;
-using Server.Entities.Contracts.World;
-using Server.Entities.Location;
-using Server.Entities.Location.Structs;
+using Game.Common.Contracts.Items;
+using Game.Common.Contracts.Items.Types;
+using Game.Common.Contracts.World;
+using Game.Common.Location;
+using Game.Common.Location.Structs;
 using Game.Tests.Helpers;
 using Game.World.Models.Tiles;
 

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Server.Entities.Contracts.DataStores;
+namespace Game.Common.Contracts.DataStores;
 
 public interface IDataStore
 {

@@ -1,6 +1,6 @@
-using Server.Entities.Creatures.Players;
+using Game.Common.Creatures.Players;
 
-namespace Server.Entities.Contracts.Creatures;
+namespace Game.Common.Contracts.Creatures;
 
 public interface IOutfit
 {

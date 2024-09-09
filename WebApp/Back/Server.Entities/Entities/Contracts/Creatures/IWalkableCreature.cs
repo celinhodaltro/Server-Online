@@ -1,10 +1,10 @@
 ﻿using System;
-using Server.Entities.Contracts.World;
-using Server.Entities.Contracts.World.Tiles;
-using Server.Entities.Location;
-using Server.Entities.Location.Structs;
+using Game.Common.Contracts.World;
+using Game.Common.Contracts.World.Tiles;
+using Game.Common.Location;
+using Game.Common.Location.Structs;
 
-namespace Server.Entities.Contracts.Creatures;
+namespace Game.Common.Contracts.Creatures;
 
 public delegate bool PathFinder(IWalkableCreature creature, Location.Structs.Location target, FindPathParams options,
     ITileEnterRule tileEnterRule, out Direction[] directions);

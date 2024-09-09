@@ -1,6 +1,6 @@
-﻿using Server.Entities.Contracts.Items;
+﻿using Game.Common.Contracts.Items;
 
-namespace Server.Entities.Contracts.Creatures;
+namespace Game.Common.Contracts.Creatures;
 
 public interface IShopItem
 {

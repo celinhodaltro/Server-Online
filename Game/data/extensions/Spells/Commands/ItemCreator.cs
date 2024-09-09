@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using Game.Combat.Spells;
-using Server.Entities;
-using Server.Entities.Contracts.Creatures;
-using Server.Entities.Contracts.Items;
-using Server.Entities.Creatures.Players;
-using Server.Entities.Item;
+using Game.Common;
+using Game.Common.Contracts.Creatures;
+using Game.Common.Contracts.Items;
+using Game.Common.Creatures.Players;
+using Game.Common.Item;
 using Game.Items.Factories;
 
 namespace Extensions.Spells.Commands;

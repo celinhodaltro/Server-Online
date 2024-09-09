@@ -1,9 +1,9 @@
 ﻿using System.Collections.Immutable;
-using Server.Entities.Contracts.Services;
-using Server.Entities.Contracts.World;
-using Server.Entities.Creatures;
+using Game.Common.Contracts.Services;
+using Game.Common.Contracts.World;
+using Game.Common.Creatures;
 
-namespace Server.Entities.Contracts.Creatures;
+namespace Game.Common.Contracts.Creatures;
 
 public delegate void Born(IMonster monster, Location.Structs.Location location);
 

@@ -1,4 +1,4 @@
-﻿namespace Server.Entities.Contracts.Creatures.Monsters;
+﻿namespace Game.Common.Contracts.Creatures.Monsters;
 
 public interface IMonsterSummon
 {

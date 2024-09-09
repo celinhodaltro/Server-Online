@@ -1,6 +1,6 @@
-﻿using Server.Entities.Contracts.Creatures;
+﻿using Game.Common.Contracts.Creatures;
 
-namespace Server.Entities.Contracts.Combat;
+namespace Game.Common.Contracts.Combat;
 
 public interface ICombatDefense : IProbability
 {

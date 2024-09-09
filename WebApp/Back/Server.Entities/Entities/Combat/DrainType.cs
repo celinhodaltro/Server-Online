@@ -1,4 +1,4 @@
-﻿namespace Server.Entities.Combat;
+﻿namespace Game.Common.Combat;
 
 public enum DrainType
 {

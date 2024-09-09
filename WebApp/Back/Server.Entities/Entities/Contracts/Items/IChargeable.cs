@@ -1,4 +1,4 @@
-﻿namespace Server.Entities.Contracts.Items;
+﻿namespace Game.Common.Contracts.Items;
 
 public interface IChargeable
 {

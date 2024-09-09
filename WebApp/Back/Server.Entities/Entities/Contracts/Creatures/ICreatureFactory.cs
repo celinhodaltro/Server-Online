@@ -1,6 +1,6 @@
-﻿using Server.Entities.Contracts.World;
+﻿using Game.Common.Contracts.World;
 
-namespace Server.Entities.Contracts.Creatures;
+namespace Game.Common.Contracts.Creatures;
 
 public delegate void CreatureCreated(ICreature creature);
 

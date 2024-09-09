@@ -1,9 +1,9 @@
 ﻿using System;
-using Server.Entities.Creatures;
-using Server.Entities.Item;
-using Server.Entities.Location.Structs;
+using Game.Common.Creatures;
+using Game.Common.Item;
+using Game.Common.Location.Structs;
 
-namespace Server.Entities.Combat.Structs;
+namespace Game.Common.Combat.Structs;
 
 public ref struct CombatAttackValue
 {
