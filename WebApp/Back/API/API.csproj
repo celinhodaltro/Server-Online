@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Game\src\Shared\Shared.Web\Shared.Web.csproj" />
     <ProjectReference Include="..\Server.BusinessRules\Server.BusinessRules.csproj" />
     <ProjectReference Include="..\Server.Entities\Server.Entities.csproj" />
     <ProjectReference Include="..\Server.Providers\Server.Providers.csproj" />

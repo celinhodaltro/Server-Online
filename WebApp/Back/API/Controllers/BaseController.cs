@@ -1,15 +1,13 @@
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
-using NeoServer.Web.Shared.Exceptions;
-using NeoServer.Web.Shared.ViewModels.Response;
+using Web.Shared.Exceptions;
+using Web.Shared.ViewModels.Response;
 
-namespace NeoServer.Web.API.Controllers;
+namespace API.Controllers;
 
 [Produces("application/json")]
 public abstract class BaseController : ControllerBase
 {
-    #region protected methods implementation
-
     protected new IActionResult Response(object result = null)
     {
         if (result != null)
@@ -102,5 +100,4 @@ public abstract class BaseController : ControllerBase
         });
     }
 
-    #endregion protected methods implementation
 }
