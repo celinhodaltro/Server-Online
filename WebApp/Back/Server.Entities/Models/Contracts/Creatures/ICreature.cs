@@ -1,4 +1,5 @@
 using Game.Common.Location;
+using Game.Common.Location.Structs;
 using Server.Entities.Models.Chats;
 using Server.Entities.Models.Contracts.Items;
 using Server.Entities.Models.Contracts.World;
@@ -154,7 +155,7 @@ public interface ICreature : IMovableThing
     ///     Checks if creature can see location
     /// </summary>
     /// <returns></returns>
-    bool CanSee(Location.Structs.Location pos);
+    bool CanSee(Location pos);
 
     /// <summary>
     ///     Change creature outfit
@@ -166,7 +167,7 @@ public interface ICreature : IMovableThing
     /// </summary>
     void BackToOldOutfit();
 
-    void OnAppear(Location.Structs.Location location, ICylinderSpectator[] spectators);
+    void OnAppear(Location location, ICylinderSpectator[] spectators);
 
     /// <summary>
     ///     Says a message

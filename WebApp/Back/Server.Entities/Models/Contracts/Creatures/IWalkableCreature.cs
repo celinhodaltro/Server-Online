@@ -6,20 +6,20 @@ using Server.Entities.Models.Contracts.World.Tiles;
 
 namespace Server.Entities.Models.Contracts.Creatures;
 
-public delegate bool PathFinder(IWalkableCreature creature, Location.Structs.Location target, FindPathParams options,
+public delegate bool PathFinder(IWalkableCreature creature, Location target, FindPathParams options,
     ITileEnterRule tileEnterRule, out Direction[] directions);
 
 public delegate void StartFollow(IWalkableCreature creature, ICreature following, FindPathParams fpp);
 
 public delegate void ChangeSpeed(IWalkableCreature creature, ushort speed);
 
-public delegate bool CanGoToDirection(ICreature creature, Location.Structs.Location location, Direction direction,
+public delegate bool CanGoToDirection(ICreature creature, Location location, Direction direction,
     ITileEnterRule rule);
 
-public delegate void TeleportTo(IWalkableCreature creature, Location.Structs.Location location);
+public delegate void TeleportTo(IWalkableCreature creature, Location location);
 
-public delegate void Moved(IWalkableCreature creature, Location.Structs.Location fromLocation,
-    Location.Structs.Location toLocation,
+public delegate void Moved(IWalkableCreature creature, Location fromLocation,
+    Location toLocation,
     ICylinderSpectator[] spectators);
 
 public interface IWalkableCreature : ICreature
@@ -73,12 +73,12 @@ public interface IWalkableCreature : ICreature
     /// </summary>
     /// <param name="location"></param>
     /// <returns></returns>
-    bool WalkTo(Location.Structs.Location location);
+    bool WalkTo(Location location);
 
     /// <summary>
     ///     Walks to a given location and call a action when finished
     /// </summary>
-    bool WalkTo(Location.Structs.Location location, Action<ICreature> callbackAction);
+    bool WalkTo(Location location, Action<ICreature> callbackAction);
 
     /// <summary>
     ///     Walks to a sequence of direction
@@ -91,7 +91,7 @@ public interface IWalkableCreature : ICreature
     ///     Teleport creature to a given location
     /// </summary>
     /// <param name="location"></param>
-    void TeleportTo(Location.Structs.Location location);
+    void TeleportTo(Location location);
 
     /// <summary>
     ///     Teleport creature to a given coordinate
