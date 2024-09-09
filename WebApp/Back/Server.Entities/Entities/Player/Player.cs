@@ -1,5 +1,5 @@
+using Game.Common.Creatures.Players;
 using Game.World;
-using Server.Entities.Models.Creatures.Players;
 
 namespace Server.Entities;
 

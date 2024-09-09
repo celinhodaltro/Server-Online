@@ -1,5 +1,5 @@
-﻿using Server.Entities;
-using Server.Entities.Models.Creatures.Players;
+﻿using Game.Common.Creatures.Players;
+using Server.Entities;
 using System.Provider;
 
 namespace Server.BusinessRules
