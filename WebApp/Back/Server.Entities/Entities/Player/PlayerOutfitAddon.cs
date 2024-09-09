@@ -1,4 +1,6 @@
-﻿namespace Server.Entities;
+﻿using Server.Entities.Models.Creatures.Players;
+
+namespace Server.Entities;
 
 public class PlayerOutfitAddon
 {
