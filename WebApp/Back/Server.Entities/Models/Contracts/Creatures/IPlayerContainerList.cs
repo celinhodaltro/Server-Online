@@ -1,4 +1,4 @@
-﻿using Game.Common.Location.Structs;
+﻿using Server.Entities.Models.Location.Structs;
 using Server.Entities.Models.Contracts.Items;
 using Server.Entities.Models.Contracts.Items.Types.Containers;
 
@@ -30,7 +30,7 @@ public interface IPlayerContainerList
     void CloseDistantContainers();
     void GoBackContainer(byte containerId);
 
-    void MoveItemBetweenContainers(Location fromLocation, Location toLocation,
+    void MoveItemBetweenContainers(Location.Structs.Location fromLocation, Location.Structs.Location toLocation,
         byte count = 1);
 
     void OpenContainerAt(IContainer containerToOpen, byte containerLevel);

@@ -1,4 +1,4 @@
-﻿namespace Game.Common.Location.Structs.Helpers;
+﻿namespace Server.Entities.Models.Location.Structs.Helpers;
 
 public static class HashHelper
 {

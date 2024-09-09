@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using Game.Common.Location.Structs;
+using Server.Entities.Models.Location.Structs;
 using Server.Entities.Models.Chats;
 using Server.Entities.Models.Contracts.Items;
 using Server.Entities.Models.Contracts.World;
@@ -17,7 +17,7 @@ public delegate void DialogAction(INpc from, ICreature to, IDialog dialog, strin
 
 public delegate void CustomerLeft(ICreature creature);
 
-public delegate IItem CreateItem(ushort typeId, Location location,
+public delegate IItem CreateItem(ushort typeId, Location.Structs.Location location,
     IDictionary<ItemAttribute, IConvertible> attributes, IEnumerable<IItem> children = null);
 
 public interface INpc : ISociableCreature

@@ -1,4 +1,4 @@
-﻿using Game.Common.Creatures;
+﻿using Server.Entities.Models.Creatures;
 using Server.Entities.Models;
 using Server.Entities.Models.Contracts.Creatures;
 

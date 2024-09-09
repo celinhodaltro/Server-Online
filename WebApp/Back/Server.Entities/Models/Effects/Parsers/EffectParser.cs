@@ -1,6 +1,6 @@
-﻿using Game.Common.Creatures;
+﻿using Server.Entities.Models.Creatures;
 
-namespace Game.Common.Effects.Parsers;
+namespace Server.Entities.Models.Effects.Parsers;
 
 public class EffectParser
 {

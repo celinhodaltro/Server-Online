@@ -1,4 +1,4 @@
-﻿namespace Game.Common.Effects.Magical;
+﻿namespace Server.Entities.Models.Effects.Magical;
 
 public static partial class AreaEffect
 {

@@ -1,12 +1,12 @@
 ﻿using System.Collections.Immutable;
-using Game.Common.Location.Structs;
+using Server.Entities.Models.Location.Structs;
 using Server.Entities.Models.Contracts.Services;
 using Server.Entities.Models.Contracts.World;
 using Server.Entities.Models.Creatures;
 
 namespace Server.Entities.Models.Contracts.Creatures;
 
-public delegate void Born(IMonster monster, Location location);
+public delegate void Born(IMonster monster, Location.Structs.Location location);
 
 public delegate void MonsterChangeState(IMonster monster, MonsterState fromState, MonsterState toState);
 
@@ -87,6 +87,6 @@ public interface IMonster : IWalkableMonster, ICombatActor
     void UpdateState();
 
     void Escape();
-    void Born(Location location);
+    void Born(Location.Structs.Location location);
     void Summon(ISummonService summonService);
 }

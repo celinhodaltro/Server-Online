@@ -1,4 +1,4 @@
-﻿using Game.Common.Creatures.Structs;
+﻿using Server.Entities.Models.Creatures.Structs;
 using Server.Entities.Models.Contracts.Creatures;
 
 namespace Server.Entities.Models.Contracts.Services;

@@ -1,6 +1,6 @@
 using System;
 
-namespace Game.Common.Location;
+namespace Server.Entities.Models.Location;
 
 /// <summary>
 ///     This enum is meant to store in a memory-efficient way a collection

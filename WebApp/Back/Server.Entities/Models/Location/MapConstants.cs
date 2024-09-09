@@ -1,4 +1,4 @@
-﻿namespace Game.Common.Location;
+﻿namespace Server.Entities.Models.Location;
 
 public class MapConstants
 {

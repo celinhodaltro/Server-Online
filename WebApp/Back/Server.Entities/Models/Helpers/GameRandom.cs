@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Game.Common.Helpers;
+namespace Server.Entities.Models.Helpers;
 
 public class GameRandom : Random
 {

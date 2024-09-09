@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Game.Common.Effects;
+namespace Server.Entities.Models.Effects;
 
 [AttributeUsage(AttributeTargets.Field)]
 public class AreaEffectAttribute : Attribute

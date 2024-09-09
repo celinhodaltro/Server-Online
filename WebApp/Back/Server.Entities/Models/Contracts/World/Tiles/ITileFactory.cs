@@ -1,5 +1,5 @@
-﻿using Game.Common.Location;
-using Game.Common.Location.Structs;
+﻿using Server.Entities.Models.Location;
+using Server.Entities.Models.Location.Structs;
 using Server.Entities.Models.Contracts.Items;
 
 namespace Server.Entities.Models.Contracts.World.Tiles;

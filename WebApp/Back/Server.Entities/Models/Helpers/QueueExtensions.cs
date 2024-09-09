@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Game.Common.Helpers;
+namespace Server.Entities.Models.Helpers;
 
 public static class QueueExtensions
 {

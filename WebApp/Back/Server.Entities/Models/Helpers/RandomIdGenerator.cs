@@ -1,7 +1,7 @@
 ﻿using System;
 using Server.Entities.Models.Contracts.Creatures;
 
-namespace Game.Common.Helpers;
+namespace Server.Entities.Models.Helpers;
 
 public class RandomIdGenerator
 {

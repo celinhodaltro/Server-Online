@@ -1,6 +1,6 @@
 using System;
 
-namespace Game.Common.Location.Structs;
+namespace Server.Entities.Models.Location.Structs;
 
 /// <summary>
 ///     Represents a 3D point with integer coordinates.

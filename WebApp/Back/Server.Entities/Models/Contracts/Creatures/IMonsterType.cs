@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Collections.Immutable;
-using Game.Common.Creatures;
+using Server.Entities.Models.Creatures;
 using Server.Entities.Models.Contracts.Combat;
 using Server.Entities.Models.Contracts.Combat.Attacks;
 using Server.Entities.Models.Contracts.Creatures.Monsters;

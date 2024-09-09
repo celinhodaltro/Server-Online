@@ -1,8 +1,8 @@
-﻿using Game.Common.Creatures;
+﻿using Server.Entities.Models.Creatures;
 using Server.Entities.Models.Contracts.Creatures;
 using Server.Entities.Models.Item;
 
-namespace Game.Common.Effects.Parsers;
+namespace Server.Entities.Models.Effects.Parsers;
 
 public static class DamageEffectParser
 {
