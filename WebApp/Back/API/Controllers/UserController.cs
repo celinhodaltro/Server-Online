@@ -13,8 +13,11 @@ namespace API.Controllers
 
     [Route("api/[controller]")]
     [ApiController]
-    public class UserController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signManager, 
-                                IConfiguration configuration, LogBusinessRules logBusinessRules) : Controller
+    public class UserController(UserManager<ApplicationUser> userManager, 
+                                SignInManager<ApplicationUser> signManager, 
+                                IConfiguration configuration, 
+                                LogBusinessRules logBusinessRules,
+                                AccountBusinessRules accountBusinessRules) : Controller
     {
 
         [HttpPost("Register")]
@@ -28,6 +31,7 @@ namespace API.Controllers
 
                 if (resultRegister.Succeeded)
                 {
+                    await accountBusinessRules.CreateUserInfo(userInfo.Id);
                     var result = await this.Login(userInfo);
                     return result;
                 }

@@ -8,6 +8,7 @@
         public DateTime? BanishedAt { get; set; }
         public string BanishmentReason { get; set; }
         public uint? BannedBy { get; set; }
+        public int UserId { get; set; }
 
         public ICollection<Player> Players { get; set; }
         public ICollection<UserVipList> VipList { get; set; }

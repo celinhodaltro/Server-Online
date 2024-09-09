@@ -1,29 +1,32 @@
 ﻿using Server.Entities;
 using System.Provider;
 
-namespace Server.BusinessRules
+namespace Server.BusinessRules;
+
+public class AccountBusinessRules
 {
 
-    public class AccountBusinessRules
+    public DefaultProvider DefaultProvider { get; set; }
+
+    public AccountBusinessRules(DefaultProvider defaultProvider)
+    {
+        DefaultProvider = defaultProvider;
+    }
+
+    public async Task CreateUserInfo(int UserId)
     {
 
-        public DefaultProvider DefaultProvider { get; set; }
+        if (UserId is 0 or <0)
+            throw new Exception("User is Null");
 
-        public AccountBusinessRules(DefaultProvider defaultProvider)
+        var UserInfo = new UserInfo 
         {
-            DefaultProvider = defaultProvider;
-        }
+            PremiumTime = 0,
+            Secret = "",
+            UserId = UserId
+        };
 
-        public async Task Create(AccountPostRequest request)
-        {
-            await _accountRepository.Insert(new AccountEntity
-            {
-                Password = request.Password,
-                CreatedAt = DateTime.UtcNow,
-                EmailAddress = request.Email,
-                PremiumTime = request.PremiumDays,
-                AllowManyOnline = false
-            });
-        }
+        await DefaultProvider.CreateAsync(UserInfo);
     }
 }
+
