@@ -1,5 +1,5 @@
-﻿namespace Server.Entities;
-public sealed class UserVipList
+﻿namespace Server.Entities.Entities.Auth;
+public sealed class UserVipList : DefaultDb
 {
     public int AccountId { get; set; }
     public int PlayerId { get; set; }
