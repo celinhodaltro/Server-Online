@@ -1,9 +1,10 @@
-﻿using Server.BusinessRules;
+﻿using Microsoft.Extensions.DependencyInjection;
+using Server.BusinessRules;
 using System.Provider;
 
-namespace API.Injecter
+namespace Server.Util
 {
-    public static class ConfigInjecter
+    public static class InjecterUtil
     {
 
         public static void Inject(IServiceCollection Services)
