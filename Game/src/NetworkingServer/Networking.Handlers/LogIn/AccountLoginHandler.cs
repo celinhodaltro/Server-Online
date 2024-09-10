@@ -4,6 +4,7 @@ using Networking.Packets.Outgoing.Login;
 using Server.BusinessRules;
 using Server.Common.Contracts.Network;
 using Server.Configurations;
+using System.Security.Principal;
 
 namespace Networking.Handlers.LogIn;
 
@@ -41,15 +42,20 @@ public class AccountLoginHandler : PacketHandler
             return;
         }
 
-        if (!account.IsValid())
+        if (string.IsNullOrWhiteSpace(account.Account))
         {
-            connection.Disconnect("Invalid account name or password."); 
+            connection.Disconnect("Account is Empty!"); 
+            return;
+        }
+        else if (string.IsNullOrWhiteSpace(account.Password))
+        {
+            connection.Disconnect("Password is Empty!");
             return;
         }
 
         var foundedAccount = await UserBusinessRules.GetUser(account.Account, account.Password);
 
-        if (foundedAccount == null)
+        if (foundedAccount is null)
         {
             connection.Disconnect("Account name or password is not correct.");
             return;
