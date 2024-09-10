@@ -1,4 +1,6 @@
-﻿namespace Server.Entities
+﻿using System.Net.Mail;
+
+namespace Server.Entities
 {
     public class User : DefaultDb
     {
@@ -7,5 +9,11 @@
 
         public UserInfo UserInfo { get; set; }
 
+
+        public bool IsValid()
+        {
+            return !string.IsNullOrWhiteSpace(Email) &&
+                   !string.IsNullOrWhiteSpace(Password);
+        }
     }
 }
