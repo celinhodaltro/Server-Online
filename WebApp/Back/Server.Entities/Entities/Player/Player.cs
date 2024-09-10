@@ -78,3 +78,4 @@ public sealed class Player : DefaultDb
     public World World { get; set; }
     public int WorldId { get; set; }
 }
+
