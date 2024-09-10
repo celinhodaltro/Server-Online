@@ -28,7 +28,7 @@ public class UserBusinessRules
     public async Task CreateUserInfo(int UserId)
     {
 
-        if (UserId is 0 or < 0)
+        if (UserId is (0 or <0))
             throw new Exception("User is Null");
 
         var UserInfo = new UserInfo 
