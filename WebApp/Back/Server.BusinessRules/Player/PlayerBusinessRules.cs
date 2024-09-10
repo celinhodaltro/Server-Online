@@ -27,6 +27,25 @@ namespace Server.BusinessRules
             return player;
         }
 
+        public async Task<Player?> GetPlayer(string accountName, string password, string charName)
+        {
+
+            var Players = await DefaultProvider.GetAllAsync<Player>();
+
+            return Players.FirstOrDefault(x => x.Account.Email.Equals(accountName) &&
+                                                    x.Account.Password.Equals(password) &&
+                                                    x.Name.Equals(charName));
+
+        }
+
+        public async Task<Player?> GetOnlinePlayer(string accountName)
+        {
+            var Players = await DefaultProvider.GetAllAsync<Player>();
+
+            return Players.FirstOrDefault(x => x.Account.Email.Equals(accountName) && x.Online);
+
+        }
+
         public async Task Create(Player player)
         {
             await DefaultProvider.CreateAsync(new Player
