@@ -40,7 +40,7 @@ namespace API.Controllers
             }
             catch (Exception ex)
             {
-                await logBusinessRules.CreateLog(new LogTrack { Level = LogLevelEnum.Error, Message = "Error! Login", Details = ex.Message });
+                await logBusinessRules.CreateLog(new LogTrack(LogLevelEnum.Error, "Error! Login", ex.Message));
                 throw;
             }
 
@@ -61,7 +61,7 @@ namespace API.Controllers
             }
             catch (Exception ex)
             {
-                await logBusinessRules.CreateLog(new LogTrack { Level = LogLevelEnum.Error, Message = "Error! Login", Details = ex.Message });
+                await logBusinessRules.CreateLog(new LogTrack (LogLevelEnum.Error, "Error! Login", ex.Message));
                 throw;
             }
 
