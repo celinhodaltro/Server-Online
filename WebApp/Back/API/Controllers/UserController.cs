@@ -15,7 +15,7 @@ namespace API.Controllers
     [ApiController]
     public class UserController(UserManager<ApplicationUser> userManager, 
                                 SignInManager<ApplicationUser> signManager, 
-                                IConfiguration configuration, 
+                                IConfiguration Configuration, 
                                 LogBusinessRules logBusinessRules,
                                 UserBusinessRules userBusinessRules) : Controller
     {
@@ -54,7 +54,7 @@ namespace API.Controllers
             {
                 var result = await signManager.PasswordSignInAsync(userInfo?.Email, userInfo?.Password, isPersistent: false, lockoutOnFailure: false);
                 if (result.Succeeded)
-                    return userBusinessRules.BuildToken(userInfo);
+                    return BuildToken(userInfo);
                 else
                     return BadRequest("User or Password Invalid!");
 
@@ -65,6 +65,36 @@ namespace API.Controllers
                 throw;
             }
 
+        }
+
+        private UserToken BuildToken(User userinfo)
+        {
+            Claim[] claims = new[]
+            {
+                new Claim(JwtRegisteredClaimNames.UniqueName, userinfo.Email),
+                new Claim("AppMain", "Teste.com"),
+                new Claim(JwtRegisteredClaimNames.Aud, Configuration["Jwt:Audience"]),
+                new Claim(JwtRegisteredClaimNames.Iss, Configuration["Jwt:Issuer"]),
+                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
+            };
+
+            DateTime expiration = DateTime.UtcNow.AddHours(2);
+
+            SymmetricSecurityKey key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:key"]));
+            SigningCredentials creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+
+            JwtSecurityToken token = new JwtSecurityToken(
+                issuer: null,
+                audience: null,
+                claims: claims,
+                expires: expiration,
+                signingCredentials: creds);
+
+            return new UserToken()
+            {
+                Token = new JwtSecurityTokenHandler().WriteToken(token),
+                Expiration = expiration
+            };
         }
 
 

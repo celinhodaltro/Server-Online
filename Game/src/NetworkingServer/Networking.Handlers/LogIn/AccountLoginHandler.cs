@@ -1,5 +1,4 @@
-﻿using Data.Interfaces;
-using Networking.Handlers.ClientVersion;
+﻿using Networking.Handlers.ClientVersion;
 using Networking.Packets.Incoming;
 using Networking.Packets.Outgoing.Login;
 using Server.BusinessRules;
@@ -10,23 +9,24 @@ namespace Networking.Handlers.LogIn;
 
 public class AccountLoginHandler : PacketHandler
 {
-    private readonly ClientProtocolVersion _clientProtocolVersion;
+    private readonly ClientProtocolVersion ClientProtocolVersion;
     private readonly UserBusinessRules UserBusinessRules;
-    private readonly ServerConfiguration _serverConfiguration;
+    private readonly ServerConfiguration ServerConfiguration;
 
-    public AccountLoginHandler(IAccountRepository repositoryNeo, ServerConfiguration serverConfiguration,
-        ClientProtocolVersion clientProtocolVersion, UserBusinessRules UserBusinessRules)
+    public AccountLoginHandler(ServerConfiguration serverConfiguration,
+                               ClientProtocolVersion clientProtocolVersion, 
+                               UserBusinessRules UserBusinessRules)
     {
-        UserBusinessRules = UserBusinessRules;
-        _serverConfiguration = serverConfiguration;
-        _clientProtocolVersion = clientProtocolVersion;
+        this.UserBusinessRules = UserBusinessRules;
+        this.ServerConfiguration = serverConfiguration;
+        this.ClientProtocolVersion = clientProtocolVersion;
     }
 
     public override async void HandleMessage(IReadOnlyNetworkMessage message, IConnection connection)
     {
         var account = new AccountLoginPacket(message);
 
-        if (!_clientProtocolVersion.IsSupported(account.ProtocolVersion))
+        if (!ClientProtocolVersion.IsSupported(account.ProtocolVersion))
         {
             connection.Close();
             return;
@@ -43,7 +43,7 @@ public class AccountLoginHandler : PacketHandler
 
         if (!account.IsValid())
         {
-            connection.Disconnect("Invalid account name or password."); //todo: use gameserverdisconnect
+            connection.Disconnect("Invalid account name or password."); 
             return;
         }
 
@@ -61,7 +61,7 @@ public class AccountLoginHandler : PacketHandler
             return;
         }
 
-        connection.Send(new CharacterListPacket(foundedAccount, _serverConfiguration.ServerName,
-            _serverConfiguration.ServerIp));
+        connection.Send(new CharacterListPacket(foundedAccount, ServerConfiguration.ServerName,
+            ServerConfiguration.ServerIp));
     }
 }

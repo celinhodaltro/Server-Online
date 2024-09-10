@@ -13,16 +13,12 @@ public class UserBusinessRules
 {
 
     public DefaultProvider DefaultProvider { get; set; }
-    public SignInManager<ApplicationUser> SignManager { get; set; }
     public LogBusinessRules LogBusinessRules { get; set; }
-    public IConfiguration Configuration { get; set; }
 
-    public UserBusinessRules(DefaultProvider defaultProvider, SignInManager<ApplicationUser> signManager, LogBusinessRules logBusinessRules, IConfiguration configuration)
+    public UserBusinessRules(DefaultProvider defaultProvider, LogBusinessRules logBusinessRules)
     {
         DefaultProvider = defaultProvider;
-        SignManager = signManager;
         LogBusinessRules = logBusinessRules;
-        Configuration = configuration;
     }
 
     public async Task CreateUserInfo(int UserId)
@@ -59,35 +55,6 @@ public class UserBusinessRules
         }
     }
 
-    public UserToken BuildToken(User userinfo)
-    {
-        Claim[] claims = new[]
-        {
-                new Claim(JwtRegisteredClaimNames.UniqueName, userinfo.Email),
-                new Claim("AppMain", "Teste.com"),
-                new Claim(JwtRegisteredClaimNames.Aud, Configuration["Jwt:Audience"]),
-                new Claim(JwtRegisteredClaimNames.Iss, Configuration["Jwt:Issuer"]),
-                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
-            };
-
-        DateTime expiration = DateTime.UtcNow.AddHours(2);
-
-        SymmetricSecurityKey key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:key"]));
-        SigningCredentials creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-
-        JwtSecurityToken token = new JwtSecurityToken(
-            issuer: null,
-            audience: null,
-            claims: claims,
-            expires: expiration,
-            signingCredentials: creds);
-
-        return new UserToken()
-        {
-            Token = new JwtSecurityTokenHandler().WriteToken(token),
-            Expiration = expiration
-        };
-    }
 
 }
 
