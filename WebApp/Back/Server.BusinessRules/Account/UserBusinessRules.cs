@@ -28,7 +28,7 @@ public class UserBusinessRules
     public async Task CreateUserInfo(int UserId)
     {
 
-        if (UserId is 0 or <0)
+        if (UserId is 0 or < 0)
             throw new Exception("User is Null");
 
         var UserInfo = new UserInfo 
@@ -54,7 +54,7 @@ public class UserBusinessRules
         }
         catch (Exception ex)
         {
-            await LogBusinessRules.CreateLog(new LogTrack { Level = LogLevelEnum.Error, Details = ex.ToString(), Message = ex.Message });
+            await LogBusinessRules.CreateLog(new LogTrack (LogLevelEnum.Error, ex.ToString(), ex.Message ));
             throw;
         }
     }
