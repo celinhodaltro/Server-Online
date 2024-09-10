@@ -16,6 +16,8 @@ using Server.Start.IoC.Modules;
 using Server.Tasks;
 using Shared.IoC.Modules;
 using PathFinder = Game.World.Map.PathFinder;
+using Server.BusinessRules;
+using System.Provider;
 
 namespace Server.Start.IoC;
 
@@ -63,6 +65,9 @@ public static class Container
         builder.RegisterType<World>().SingleInstance();
 
         var configuration = ConfigurationInjection.GetConfiguration();
+
+        builder.RegisterType<DefaultProvider>().AsSelf().InstancePerLifetimeScope();
+        builder.RegisterType<ApplicationDbContext>().AsSelf().InstancePerLifetimeScope();
 
         builder.AddFactories()
             .AddServices()

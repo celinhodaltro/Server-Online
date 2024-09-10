@@ -28,10 +28,11 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Serilog" Version="3.0.1" />
+        <PackageReference Include="Serilog" Version="4.0.1" />
     </ItemGroup>
 
     <ItemGroup>
+        <ProjectReference Include="..\..\..\..\WebApp\Back\Server.Entities\Server.Entities.csproj" />
         <ProjectReference Include="..\..\ApplicationServer\Server.Contracts\Server.Common.csproj" />
         <ProjectReference Include="..\..\ApplicationServer\Server.Security\Server.Security.csproj" />
         <ProjectReference Include="..\..\GameWorldSimulator\Game.Creatures\Game.Creatures.csproj" />

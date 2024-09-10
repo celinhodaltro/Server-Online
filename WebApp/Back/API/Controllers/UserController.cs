@@ -15,9 +15,9 @@ namespace API.Controllers
     [ApiController]
     public class UserController(UserManager<ApplicationUser> userManager, 
                                 SignInManager<ApplicationUser> signManager, 
-                                IConfiguration configuration, 
+                                IConfiguration Configuration, 
                                 LogBusinessRules logBusinessRules,
-                                AccountBusinessRules accountBusinessRules) : Controller
+                                UserBusinessRules userBusinessRules) : Controller
     {
 
         [HttpPost("Register")]
@@ -31,7 +31,7 @@ namespace API.Controllers
 
                 if (resultRegister.Succeeded)
                 {
-                    await accountBusinessRules.CreateUserInfo(userInfo.Id);
+                    await userBusinessRules.CreateUserInfo(userInfo.Id);
                     var result = await this.Login(userInfo);
                     return result;
                 }
@@ -40,7 +40,7 @@ namespace API.Controllers
             }
             catch (Exception ex)
             {
-                await logBusinessRules.CreateLog(new LogTrack { Level = LogLevelEnum.Error, Message = "Error! Login", Details = ex.Message });
+                await logBusinessRules.CreateLog(new LogTrack(LogLevelEnum.Error, "Error! Login", ex.Message));
                 throw;
             }
 
@@ -53,8 +53,6 @@ namespace API.Controllers
             try
             {
                 var result = await signManager.PasswordSignInAsync(userInfo?.Email, userInfo?.Password, isPersistent: false, lockoutOnFailure: false);
-
-
                 if (result.Succeeded)
                     return BuildToken(userInfo);
                 else
@@ -63,7 +61,7 @@ namespace API.Controllers
             }
             catch (Exception ex)
             {
-                await logBusinessRules.CreateLog(new LogTrack { Level = LogLevelEnum.Error, Message = "Error! Login", Details = ex.Message });
+                await logBusinessRules.CreateLog(new LogTrack (LogLevelEnum.Error, "Error! Login", ex.Message));
                 throw;
             }
 
@@ -75,14 +73,14 @@ namespace API.Controllers
             {
                 new Claim(JwtRegisteredClaimNames.UniqueName, userinfo.Email),
                 new Claim("AppMain", "Teste.com"),
-                new Claim(JwtRegisteredClaimNames.Aud, configuration["Jwt:Audience"]),
-                new Claim(JwtRegisteredClaimNames.Iss, configuration["Jwt:Issuer"]),
+                new Claim(JwtRegisteredClaimNames.Aud, Configuration["Jwt:Audience"]),
+                new Claim(JwtRegisteredClaimNames.Iss, Configuration["Jwt:Issuer"]),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
             };
 
             DateTime expiration = DateTime.UtcNow.AddHours(2);
 
-            SymmetricSecurityKey key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["Jwt:key"]));
+            SymmetricSecurityKey key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:key"]));
             SigningCredentials creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
             JwtSecurityToken token = new JwtSecurityToken(
@@ -98,6 +96,8 @@ namespace API.Controllers
                 Expiration = expiration
             };
         }
+
+
 
     }
 }

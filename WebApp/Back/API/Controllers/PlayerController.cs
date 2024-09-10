@@ -12,7 +12,7 @@ namespace API.Controllers
     public class PlayerController(UserManager<ApplicationUser> userManager, 
                                   SignInManager<ApplicationUser> signManager, 
                                   IConfiguration configuration, 
-                                  AccountBusinessRules logBusinessRules,
+                                  UserBusinessRules logBusinessRules,
                                   PlayerBusinessRules playerBusinessRules) : BaseController
     {
 

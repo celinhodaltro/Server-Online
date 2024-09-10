@@ -10,6 +10,9 @@ using Data.Providers.SQLite;
 using Data.Repositories;
 using Data.Repositories.Player;
 using Server.Configurations;
+using Server.BusinessRules;
+using Autofac.Core;
+using System.Configuration;
 
 namespace Shared.IoC.Modules;
 
@@ -21,6 +24,8 @@ public static class DatabaseInjection
         builder.RegisterType<GuildRepository>().As<IGuildRepository>().SingleInstance();
         builder.RegisterType<PlayerDepotItemRepository>().As<IPlayerDepotItemRepository>().SingleInstance();
         builder.RegisterType<PlayerRepository>().As<IPlayerRepository>().SingleInstance();
+        builder.RegisterType<UserBusinessRules>().SingleInstance();
+        builder.RegisterType<LogBusinessRules>().SingleInstance();
         builder.RegisterGeneric(typeof(BaseRepository<>));
 
         return builder;

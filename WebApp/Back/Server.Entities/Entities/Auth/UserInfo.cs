@@ -1,4 +1,4 @@
-﻿using Server.Entities.Entities.Auth;
+﻿using System.Net.Mail;
 
 namespace Server.Entities
 {
@@ -14,5 +14,7 @@ namespace Server.Entities
 
         public ICollection<Player> Players { get; set; }
         public ICollection<UserVipList> VipList { get; set; }
+
+
     }
 }

@@ -1,31 +1,33 @@
-﻿using Data.Interfaces;
-using Networking.Handlers.ClientVersion;
+﻿using Networking.Handlers.ClientVersion;
 using Networking.Packets.Incoming;
 using Networking.Packets.Outgoing.Login;
+using Server.BusinessRules;
 using Server.Common.Contracts.Network;
 using Server.Configurations;
+using System.Security.Principal;
 
 namespace Networking.Handlers.LogIn;
 
 public class AccountLoginHandler : PacketHandler
 {
-    private readonly ClientProtocolVersion _clientProtocolVersion;
-    private readonly IAccountRepository _repositoryNeo;
-    private readonly ServerConfiguration _serverConfiguration;
+    private readonly ClientProtocolVersion ClientProtocolVersion;
+    private readonly UserBusinessRules UserBusinessRules;
+    private readonly ServerConfiguration ServerConfiguration;
 
-    public AccountLoginHandler(IAccountRepository repositoryNeo, ServerConfiguration serverConfiguration,
-        ClientProtocolVersion clientProtocolVersion)
+    public AccountLoginHandler(ServerConfiguration serverConfiguration,
+                               ClientProtocolVersion clientProtocolVersion, 
+                               UserBusinessRules UserBusinessRules)
     {
-        _repositoryNeo = repositoryNeo;
-        _serverConfiguration = serverConfiguration;
-        _clientProtocolVersion = clientProtocolVersion;
+        this.UserBusinessRules = UserBusinessRules;
+        this.ServerConfiguration = serverConfiguration;
+        this.ClientProtocolVersion = clientProtocolVersion;
     }
 
     public override async void HandleMessage(IReadOnlyNetworkMessage message, IConnection connection)
     {
         var account = new AccountLoginPacket(message);
 
-        if (!_clientProtocolVersion.IsSupported(account.ProtocolVersion))
+        if (!ClientProtocolVersion.IsSupported(account.ProtocolVersion))
         {
             connection.Close();
             return;
@@ -40,27 +42,32 @@ public class AccountLoginHandler : PacketHandler
             return;
         }
 
-        if (!account.IsValid())
+        if (string.IsNullOrWhiteSpace(account.Account))
         {
-            connection.Disconnect("Invalid account name or password."); //todo: use gameserverdisconnect
+            connection.Disconnect("Account is Empty!"); 
+            return;
+        }
+        else if (string.IsNullOrWhiteSpace(account.Password))
+        {
+            connection.Disconnect("Password is Empty!");
             return;
         }
 
-        var foundedAccount = await _repositoryNeo.GetAccount(account.Account, account.Password);
+        var foundedAccount = await UserBusinessRules.GetUser(account.Account, account.Password);
 
-        if (foundedAccount == null)
+        if (foundedAccount is null)
         {
             connection.Disconnect("Account name or password is not correct.");
             return;
         }
 
-        if (foundedAccount.BanishedAt is not null)
+        if (foundedAccount.UserInfo.BanishedAt is not null)
         {
-            connection.Disconnect("Your account has been banished. Reason: " + foundedAccount.BanishmentReason);
+            connection.Disconnect("Your account has been banished. Reason: " + foundedAccount.UserInfo.BanishmentReason);
             return;
         }
 
-        connection.Send(new CharacterListPacket(foundedAccount, _serverConfiguration.ServerName,
-            _serverConfiguration.ServerIp));
+        connection.Send(new CharacterListPacket(foundedAccount, ServerConfiguration.ServerName,
+            ServerConfiguration.ServerIp));
     }
 }

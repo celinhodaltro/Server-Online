@@ -115,6 +115,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{CAA82AF3-0
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server.Extensions", "Game\data\extensions\Server.Extensions.csproj", "{C6BFA9DB-02EE-42A7-AA23-0BBDFF90377D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.Util", "Server.Util\Server.Util.csproj", "{53CD09FE-AF56-41A3-AFB5-C84BE17D7434}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -459,6 +461,14 @@ Global
 		{C6BFA9DB-02EE-42A7-AA23-0BBDFF90377D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C6BFA9DB-02EE-42A7-AA23-0BBDFF90377D}.Release|x64.ActiveCfg = Release|Any CPU
 		{C6BFA9DB-02EE-42A7-AA23-0BBDFF90377D}.Release|x64.Build.0 = Release|Any CPU
+		{53CD09FE-AF56-41A3-AFB5-C84BE17D7434}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53CD09FE-AF56-41A3-AFB5-C84BE17D7434}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53CD09FE-AF56-41A3-AFB5-C84BE17D7434}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{53CD09FE-AF56-41A3-AFB5-C84BE17D7434}.Debug|x64.Build.0 = Debug|Any CPU
+		{53CD09FE-AF56-41A3-AFB5-C84BE17D7434}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53CD09FE-AF56-41A3-AFB5-C84BE17D7434}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53CD09FE-AF56-41A3-AFB5-C84BE17D7434}.Release|x64.ActiveCfg = Release|Any CPU
+		{53CD09FE-AF56-41A3-AFB5-C84BE17D7434}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -518,6 +528,7 @@ Global
 		{C404F1F5-EE17-4124-AF1D-D9DB24DBDD55} = {BFC4B6E2-33C4-4E7D-9448-03AB71720413}
 		{CAA82AF3-0080-472D-AAB5-4E9CDB228FFC} = {9A04298D-06EE-40C1-B9E4-3B2255DD6086}
 		{C6BFA9DB-02EE-42A7-AA23-0BBDFF90377D} = {CAA82AF3-0080-472D-AAB5-4E9CDB228FFC}
+		{53CD09FE-AF56-41A3-AFB5-C84BE17D7434} = {D218A842-F78C-4D43-938E-24ECE1157875}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {09380CFE-F022-4681-9D38-B40FAE3AAAC6}
