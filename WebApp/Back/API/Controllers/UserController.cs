@@ -17,7 +17,7 @@ namespace API.Controllers
                                 SignInManager<ApplicationUser> signManager, 
                                 IConfiguration configuration, 
                                 LogBusinessRules logBusinessRules,
-                                AccountBusinessRules accountBusinessRules) : Controller
+                                UserBusinessRules userBusinessRules) : Controller
     {
 
         [HttpPost("Register")]
@@ -31,7 +31,7 @@ namespace API.Controllers
 
                 if (resultRegister.Succeeded)
                 {
-                    await accountBusinessRules.CreateUserInfo(userInfo.Id);
+                    await userBusinessRules.CreateUserInfo(userInfo.Id);
                     var result = await this.Login(userInfo);
                     return result;
                 }
