@@ -32,6 +32,7 @@
     </ItemGroup>
 
     <ItemGroup>
+        <ProjectReference Include="..\..\..\..\WebApp\Back\Server.Entities\Server.Entities.csproj" />
         <ProjectReference Include="..\..\ApplicationServer\Server.Contracts\Server.Common.csproj" />
         <ProjectReference Include="..\..\ApplicationServer\Server.Security\Server.Security.csproj" />
         <ProjectReference Include="..\..\GameWorldSimulator\Game.Creatures\Game.Creatures.csproj" />

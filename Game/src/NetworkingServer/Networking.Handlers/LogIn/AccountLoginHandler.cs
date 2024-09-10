@@ -2,6 +2,7 @@
 using Networking.Handlers.ClientVersion;
 using Networking.Packets.Incoming;
 using Networking.Packets.Outgoing.Login;
+using Server.BusinessRules;
 using Server.Common.Contracts.Network;
 using Server.Configurations;
 
@@ -10,13 +11,13 @@ namespace Networking.Handlers.LogIn;
 public class AccountLoginHandler : PacketHandler
 {
     private readonly ClientProtocolVersion _clientProtocolVersion;
-    private readonly IAccountRepository _repositoryNeo;
+    private readonly UserBusinessRules UserBusinessRules;
     private readonly ServerConfiguration _serverConfiguration;
 
     public AccountLoginHandler(IAccountRepository repositoryNeo, ServerConfiguration serverConfiguration,
-        ClientProtocolVersion clientProtocolVersion)
+        ClientProtocolVersion clientProtocolVersion, UserBusinessRules UserBusinessRules)
     {
-        _repositoryNeo = repositoryNeo;
+        UserBusinessRules = UserBusinessRules;
         _serverConfiguration = serverConfiguration;
         _clientProtocolVersion = clientProtocolVersion;
     }
@@ -46,7 +47,7 @@ public class AccountLoginHandler : PacketHandler
             return;
         }
 
-        var foundedAccount = await _repositoryNeo.GetAccount(account.Account, account.Password);
+        var foundedAccount = await UserBusinessRules.GetUser(account.Account, account.Password);
 
         if (foundedAccount == null)
         {
@@ -54,9 +55,9 @@ public class AccountLoginHandler : PacketHandler
             return;
         }
 
-        if (foundedAccount.BanishedAt is not null)
+        if (foundedAccount.UserInfo.BanishedAt is not null)
         {
-            connection.Disconnect("Your account has been banished. Reason: " + foundedAccount.BanishmentReason);
+            connection.Disconnect("Your account has been banished. Reason: " + foundedAccount.UserInfo.BanishmentReason);
             return;
         }
 
