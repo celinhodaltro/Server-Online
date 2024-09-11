@@ -1,6 +1,5 @@
 ﻿using System.Reflection;
 using Microsoft.EntityFrameworkCore;
-
 public static class IQueryableExtensions
 {
     public static IQueryable<T> IncludeNavigations<T>(this IQueryable<T> query) where T : class
@@ -14,7 +13,6 @@ public static class IQueryableExtensions
         {
             query = query.Include(property.Name);
         }
-
         return query;
     }
 }
