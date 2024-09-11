@@ -5,9 +5,9 @@ using Data.Seeds;
 
 namespace Data.Configurations.ForSqLite;
 
-public class ForSqLitePlayerItemEntityConfiguration : IEntityTypeConfiguration<PlayerItemEntity>
+public class ForSqLitePlayerItemEntityConfiguration : IEntityTypeConfiguration<Server.Entities.PlayerItem>
 {
-    public void Configure(EntityTypeBuilder<PlayerItemEntity> entity)
+    public void Configure(EntityTypeBuilder<Server.Entities.PlayerItem> entity)
     {
         entity.ToTable("PlayerItem");
 

@@ -11,7 +11,7 @@ namespace Data.Parsers;
 
 public static class ItemEntityParser
 {
-    public static T ToPlayerItemEntity<T>(IItem item) where T : PlayerItemBaseEntity, new()
+    public static T ToPlayerItemEntity<T>(IItem item) where T : Server.Entities.PlayerItemBase, new()
     {
         var itemModel = new T
         {
@@ -27,7 +27,7 @@ public static class ItemEntityParser
     }
 
     public static IItem BuildContainer<T>(IContainer container, List<T> items, Location location,
-        IItemFactory itemFactory) where T : PlayerItemBaseEntity
+        IItemFactory itemFactory) where T : Server.Entities.PlayerItemBase
     {
         if (items == null || !items.Any())
             return container;

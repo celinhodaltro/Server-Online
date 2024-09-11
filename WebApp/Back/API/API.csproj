@@ -16,6 +16,7 @@
     <ProjectReference Include="..\Server.BusinessRules\Server.BusinessRules.csproj" />
     <ProjectReference Include="..\Server.Entities\Server.Entities.csproj" />
     <ProjectReference Include="..\Server.Providers\Server.Providers.csproj" />
+    <ProjectReference Include="..\Server.Util\Server.Util.csproj" />
   </ItemGroup>
 
 </Project>

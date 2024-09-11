@@ -73,6 +73,7 @@ public static class Container
             .AddBusinessRules()
             .AddContext()
             .AddProvider()
+            .AddDatabases(configuration)
             .AddServices()
             .AddLoader()
             .AddRepositories()

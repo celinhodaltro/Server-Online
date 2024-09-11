@@ -25,12 +25,12 @@ public class TutorLoader : PlayerLoader
     {
     }
 
-    public override bool IsApplicable(PlayerEntity player)
+    public override bool IsApplicable(Server.Entities.Player player)
     {
         return player?.PlayerType == 2;
     }
 
-    public override IPlayer Load(PlayerEntity playerEntity)
+    public override IPlayer Load(Server.Entities.Player playerEntity)
     {
         if (Guard.IsNull(playerEntity)) return null;
 
@@ -57,7 +57,7 @@ public class TutorLoader : PlayerLoader
             MapTool,
             town)
         {
-            AccountId = (uint)playerEntity.AccountId,
+            AccountId = (uint)playerEntity.UserId,
             Guild = GuildStore.Get((ushort)(playerEntity.GuildMember?.GuildId ?? 0)),
             GuildLevel = (ushort)(playerEntity.GuildMember?.RankId ?? 0)
         };

@@ -1,3 +1,5 @@
+using Game.Common.Item;
+
 namespace Server.Entities;
 
 public abstract class PlayerItemBase : DefaultDb
@@ -15,4 +17,23 @@ public abstract class PlayerItemBase : DefaultDb
 
     public ushort? Charges { get; set; }
     public int ContainerId { get; set; } = 0;
+
+    public Dictionary<ItemAttribute, IConvertible> GetAttributes()
+    {
+        var attributes = new Dictionary<ItemAttribute, IConvertible>
+        {
+            { ItemAttribute.Count, this.Amount }
+        };
+
+        if (this.Charges > 0) attributes.Add(ItemAttribute.Charges, this.Charges);
+
+        if (this.DecayDuration > 0)
+        {
+            attributes.Add(ItemAttribute.DecayTo, this.DecayTo);
+            attributes.Add(ItemAttribute.DecayElapsed, this.DecayElapsed);
+            attributes.Add(ItemAttribute.Duration, this.DecayDuration);
+        }
+
+        return attributes;
+    }
 }

@@ -17,6 +17,7 @@
         <PackageReference Include="Serilog" Version="4.0.1" />
     </ItemGroup>
     <ItemGroup>
+        <ProjectReference Include="..\..\..\..\WebApp\Back\Server.Entities\Server.Entities.csproj" />
         <ProjectReference Include="..\..\GameWorldSimulator\Game.Creatures\Game.Creatures.csproj" />
         <ProjectReference Include="..\..\GameWorldSimulator\Game.Common\Game.Common.csproj" />
     </ItemGroup>

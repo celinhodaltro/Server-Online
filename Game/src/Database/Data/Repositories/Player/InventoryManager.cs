@@ -19,7 +19,7 @@ internal static class InventoryManager
 
         neoContext.PlayerItems.RemoveRange(neoContext.PlayerItems.Where(x => x.PlayerId == player.Id));
 
-        await ContainerManager.Save<PlayerItemEntity>(player, player.Inventory?.BackpackSlot, neoContext);
+        await ContainerManager.Save<Server.Entities.PlayerItem>(player, player.Inventory?.BackpackSlot, neoContext);
     }
 
     public static async Task SavePlayerInventory(IPlayer player, NeoContext neoContext)

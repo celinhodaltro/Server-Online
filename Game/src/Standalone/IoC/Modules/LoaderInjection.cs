@@ -2,6 +2,7 @@
 using Loader.Interfaces;
 using Loader.Items;
 using Loader.Monsters;
+using Loader.Players;
 using Loader.Quest;
 using Loader.Spawns;
 using Loader.Spells;
@@ -38,7 +39,7 @@ public static class LoaderInjection
     private static void RegisterPlayerLoader(this ContainerBuilder builder)
     {
         var types = Container.AssemblyCache;
-        builder.RegisterAssemblyTypes(types).As<IPlayerLoader>().SingleInstance();
+        builder.RegisterAssemblyTypes(types).As<PlayerLoader>().SingleInstance();
     }
 
     private static void RegisterStartupLoader(this ContainerBuilder builder)

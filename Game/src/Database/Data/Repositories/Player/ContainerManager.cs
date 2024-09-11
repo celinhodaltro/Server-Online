@@ -13,7 +13,7 @@ namespace Data.Repositories.Player;
 public static class ContainerManager
 {
     public static async Task Save<TPlayerItemEntity>(IPlayer player, IContainer container, NeoContext neoContext)
-        where TPlayerItemEntity : PlayerItemBaseEntity, new()
+        where TPlayerItemEntity : Server.Entities.PlayerItemBase, new()
     {
         if (Guard.AnyNull(player, container)) return;
 
