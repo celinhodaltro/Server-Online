@@ -10,9 +10,11 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
   </ItemGroup>
 
+
   <ItemGroup>
-    <ProjectReference Include="..\WebApp\Back\Server.BusinessRules\Server.BusinessRules.csproj" />
-    <ProjectReference Include="..\WebApp\Back\Server.Providers\Server.Providers.csproj" />
+    <ProjectReference Include="..\Server.BusinessRules\Server.BusinessRules.csproj" />
+    <ProjectReference Include="..\Server.Entities\Server.Entities.csproj" />
   </ItemGroup>
+
 
 </Project>

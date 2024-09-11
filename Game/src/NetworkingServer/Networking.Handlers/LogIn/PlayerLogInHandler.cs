@@ -4,6 +4,7 @@ using Data.Interfaces;
 using Game.Common.Results;
 using Networking.Packets.Incoming;
 using Networking.Packets.Outgoing;
+using Server.BusinessRules;
 using Server.Commands.Player;
 using Server.Common.Contracts;
 using Server.Common.Contracts.Network;
@@ -16,6 +17,7 @@ namespace Networking.Handlers.LogIn;
 public class PlayerLogInHandler : PacketHandler
 {
     private readonly IAccountRepository _accountRepository;
+    private readonly PlayerBusinessRules playerBusinessRules;
     private readonly IGameServer _game;
     private readonly PlayerLogInCommand _playerLogInCommand;
     private readonly PlayerLogOutCommand _playerLogOutCommand;
@@ -60,8 +62,7 @@ public class PlayerLogInHandler : PacketHandler
 
         if (ValidateOnlineStatus(connection, playerOnline, packet).Failed) return;
 
-        var playerRecord =
-            await _accountRepository.GetPlayer(packet.Account, packet.Password, packet.CharacterName);
+        var playerRecord = await playerBusinessRules.GetPlayer(packet.Account, packet.Password, packet.CharacterName);
 
         if (playerRecord is null)
         {
@@ -69,7 +70,7 @@ public class PlayerLogInHandler : PacketHandler
             return;
         }
 
-        if (playerRecord.Account.BanishedAt is not null)
+        if (playerRecord.Account.UserInfo.BanishedAt is not null)
         {
             Disconnect(connection, "Your account is banned.");
             return;

@@ -6,7 +6,9 @@ using Loader.Interfaces;
 using Server.Common.Contracts;
 using Server.Common.Contracts.Commands;
 using Server.Common.Contracts.Network;
+using Server.Entities;
 using Serilog;
+using Loader.Players;
 
 namespace Server.Commands.Player;
 
@@ -15,9 +17,9 @@ public class PlayerLogInCommand : ICommand
     private readonly ILogger _logger;
     private readonly IGameServer game;
     private readonly GuildLoader guildLoader;
-    private readonly IEnumerable<IPlayerLoader> playerLoaders;
+    private readonly IEnumerable<PlayerLoader> playerLoaders;
 
-    public PlayerLogInCommand(IGameServer game, IEnumerable<IPlayerLoader> playerLoader, GuildLoader guildLoader,
+    public PlayerLogInCommand(IGameServer game, IEnumerable<PlayerLoader> playerLoader, GuildLoader guildLoader,
         ILogger logger)
     {
         this.game = game;
@@ -26,7 +28,7 @@ public class PlayerLogInCommand : ICommand
         _logger = logger;
     }
 
-    public void Execute(PlayerEntity playerRecord, IConnection connection)
+    public void Execute(Server.Entities.Player playerRecord, IConnection connection)
     {
         if (playerRecord is null)
             //todo validations here
@@ -44,7 +46,7 @@ public class PlayerLogInCommand : ICommand
         game.CreatureManager.AddPlayer(player, connection);
 
         player.Login();
-        player.Vip.LoadVipList(playerRecord.Account.VipList.Select(x => ((uint)x.PlayerId, x.Player?.Name)));
+        player.Vip.LoadVipList(playerRecord.Account.UserInfo.VipList.Select(x => ((uint)x.PlayerId, x.Player?.Name)));
         _logger.Information("Player {PlayerName} logged in", player.Name);
     }
 }

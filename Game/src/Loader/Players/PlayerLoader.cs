@@ -25,7 +25,7 @@ using Serilog;
 
 namespace Loader.Players;
 
-public class PlayerLoader : IPlayerLoader
+public class PlayerLoader
 {
     private readonly GameConfiguration _gameConfiguration;
     protected readonly ChatChannelFactory ChatChannelFactory;
@@ -58,12 +58,12 @@ public class PlayerLoader : IPlayerLoader
         _gameConfiguration = gameConfiguration;
     }
 
-    public virtual bool IsApplicable(PlayerEntity player)
+    public virtual bool IsApplicable(Server.Entities.Player player)
     {
         return player?.PlayerType == 1;
     }
 
-    public virtual IPlayer Load(PlayerEntity playerEntity)
+    public virtual IPlayer Load(Server.Entities.Player playerEntity)
     {
         if (Guard.IsNull(playerEntity)) return null;
 
@@ -104,8 +104,8 @@ public class PlayerLoader : IPlayerLoader
             MapTool,
             town)
         {
-            PremiumTime = playerEntity.Account?.PremiumTime ?? 0,
-            AccountId = (uint)playerEntity.AccountId,
+            PremiumTime = playerEntity.Account?.UserInfo.PremiumTime ?? 0,
+            AccountId = (uint)playerEntity.UserId,
             Guild = GuildStore.Get((ushort)(playerEntity.GuildMember?.GuildId ?? 0)),
             GuildLevel = (ushort)(playerEntity.GuildMember?.RankId ?? 0)
         };
@@ -120,14 +120,14 @@ public class PlayerLoader : IPlayerLoader
         return CreatureFactory.CreatePlayer(player);
     }
 
-    protected ITown GetTown(PlayerEntity playerEntity)
+    protected ITown GetTown(Server.Entities.Player playerEntity)
     {
         if (!World.TryGetTown((ushort)playerEntity.TownId, out var town))
             Logger.Error("player town not found: {PlayerModelTownId}", playerEntity.TownId);
         return town;
     }
 
-    protected IVocation GetVocation(PlayerEntity playerEntity)
+    protected IVocation GetVocation(Server.Entities.Player playerEntity)
     {
         if (!VocationStore.TryGetValue(playerEntity.Vocation, out var vocation))
             Logger.Error("Player vocation not found: {PlayerModelVocation}", playerEntity.Vocation);
@@ -157,7 +157,7 @@ public class PlayerLoader : IPlayerLoader
         player.SetCurrentTile(playerTile);
     }
 
-    private static void AddRegenerationCondition(PlayerEntity playerEntity, IPlayer player)
+    private static void AddRegenerationCondition(Server.Entities.Player playerEntity, IPlayer player)
     {
         if (playerEntity.RemainingRecoverySeconds != 0)
         {
@@ -188,7 +188,7 @@ public class PlayerLoader : IPlayerLoader
         }
     }
 
-    protected Dictionary<SkillType, ISkill> ConvertToSkills(PlayerEntity playerRecord)
+    protected Dictionary<SkillType, ISkill> ConvertToSkills(Server.Entities.Player playerRecord)
     {
         return new Dictionary<SkillType, ISkill>
         {
@@ -225,7 +225,7 @@ public class PlayerLoader : IPlayerLoader
         };
     }
 
-    protected IInventory ConvertToInventory(IPlayer player, PlayerEntity playerRecord)
+    protected IInventory ConvertToInventory(IPlayer player, Server.Entities.Player playerRecord)
     {
         var inventory = new Dictionary<Slot, (IItem Item, ushort Id)>();
         var attrs = new Dictionary<ItemAttribute, IConvertible> { { ItemAttribute.Count, 0 } };

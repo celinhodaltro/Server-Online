@@ -13,6 +13,8 @@ using Server.Common.Contracts;
 using Server.Common.Contracts.Network;
 using Server.Tasks;
 using Serilog;
+using Loader.Players;
+using Server.BusinessRules;
 
 namespace Networking.Handlers.Chat;
 
@@ -20,14 +22,14 @@ public class PlayerAddVipHandler : PacketHandler
 {
     private readonly IGameServer _game;
     private readonly ILogger _logger;
-    private readonly IEnumerable<IPlayerLoader> _playerLoader;
-    private readonly IPlayerRepository _playerRepository;
+    private readonly IEnumerable<PlayerLoader> _playerLoader;
+    private readonly PlayerBusinessRules PlayerBusinessRules;
 
-    public PlayerAddVipHandler(IGameServer game, IPlayerRepository playerRepository,
-        IEnumerable<IPlayerLoader> playerLoader, ILogger logger)
+    public PlayerAddVipHandler(IGameServer game, PlayerBusinessRules PlayerBusinessRules,
+        IEnumerable<PlayerLoader> playerLoader, ILogger logger)
     {
         _game = game;
-        _playerRepository = playerRepository;
+        this.PlayerBusinessRules = PlayerBusinessRules;
         _playerLoader = playerLoader;
         _logger = logger;
     }
@@ -72,13 +74,13 @@ public class PlayerAddVipHandler : PacketHandler
         return vipPlayer;
     }
 
-    private async Task<PlayerEntity> GetPlayerRecord(AddVipPacket addVipPacket)
+    private async Task<Server.Entities.Player> GetPlayerRecord(AddVipPacket addVipPacket)
     {
-        PlayerEntity playerRecord = null;
+        Server.Entities.Player playerRecord = null;
 
         try
         {
-            playerRecord = await _playerRepository.GetPlayer(addVipPacket.Name);
+            playerRecord = await PlayerBusinessRules.GetPlayer(addVipPacket.Name);
         }
         catch (Exception ex)
         {

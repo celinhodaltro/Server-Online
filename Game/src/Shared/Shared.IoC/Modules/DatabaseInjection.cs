@@ -13,6 +13,7 @@ using Server.Configurations;
 using Server.BusinessRules;
 using Autofac.Core;
 using System.Configuration;
+using System.Provider;
 
 namespace Shared.IoC.Modules;
 
@@ -24,10 +25,30 @@ public static class DatabaseInjection
         builder.RegisterType<GuildRepository>().As<IGuildRepository>().SingleInstance();
         builder.RegisterType<PlayerDepotItemRepository>().As<IPlayerDepotItemRepository>().SingleInstance();
         builder.RegisterType<PlayerRepository>().As<IPlayerRepository>().SingleInstance();
-        builder.RegisterType<UserBusinessRules>().SingleInstance();
-        builder.RegisterType<LogBusinessRules>().SingleInstance();
+
         builder.RegisterGeneric(typeof(BaseRepository<>));
 
+        return builder;
+    }
+
+
+    public static ContainerBuilder AddContext(this ContainerBuilder builder)
+    {
+        builder.RegisterType<ApplicationDbContext>().AsSelf().InstancePerLifetimeScope();
+        return builder;
+
+    }
+    public static ContainerBuilder AddBusinessRules(this ContainerBuilder builder)
+    {
+        builder.RegisterType<PlayerBusinessRules>().SingleInstance();
+        builder.RegisterType<UserBusinessRules>().SingleInstance();
+        builder.RegisterType<LogBusinessRules>().SingleInstance();
+        return builder;
+    }
+
+    public static ContainerBuilder AddProvider(this ContainerBuilder builder)
+    {
+        builder.RegisterType<DefaultProvider>().AsSelf().InstancePerLifetimeScope();
         return builder;
     }
 

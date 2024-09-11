@@ -27,6 +27,16 @@ namespace Server.BusinessRules
             return player;
         }
 
+
+        #region Player
+        public async Task<Player?> GetPlayer(string playerName)
+        {
+            var Players = await DefaultProvider.GetAllAsync<Player>();
+
+            return Players.FirstOrDefault(x => x.Name.Equals(playerName));
+        }
+
+
         public async Task<Player?> GetPlayer(string accountName, string password, string charName)
         {
 
@@ -87,5 +97,17 @@ namespace Server.BusinessRules
                 SkillFishing = 10
             });
         }
+
+        #endregion
+
+        #region PlayerDepot 
+
+        public async Task<IEnumerable<PlayerDepotItem>> GetPlayerDepotItems(uint id)
+        {
+            var PlayersDepotItems = await DefaultProvider.GetAllAsync<PlayerDepotItem>();
+            return PlayersDepotItems.Where(x => x.PlayerId == id);
+        }
+
+        #endregion
     }
 }

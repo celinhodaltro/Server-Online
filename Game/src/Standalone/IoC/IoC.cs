@@ -66,13 +66,16 @@ public static class Container
 
         var configuration = ConfigurationInjection.GetConfiguration();
 
-        builder.RegisterType<DefaultProvider>().AsSelf().InstancePerLifetimeScope();
-        builder.RegisterType<ApplicationDbContext>().AsSelf().InstancePerLifetimeScope();
+
+
 
         builder.AddFactories()
+            .AddBusinessRules()
+            .AddContext()
+            .AddProvider()
+            .AddDatabases(configuration)
             .AddServices()
             .AddLoader()
-            .AddDatabases(configuration)
             .AddRepositories()
             .AddConfigurations(configuration)
             .AddNetwork()

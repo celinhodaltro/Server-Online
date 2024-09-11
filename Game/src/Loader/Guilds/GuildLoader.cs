@@ -24,7 +24,7 @@ public class GuildLoader : ICustomLoader
         _guildStore = guildStore;
     }
 
-    public void Load(GuildEntity guildEntity)
+    public void Load(Server.Entities.Guild guildEntity)
     {
         if (guildEntity is null) return;
 
@@ -47,7 +47,7 @@ public class GuildLoader : ICustomLoader
         _logger.Debug("Guild {Guild} loaded", guildEntity.Name);
     }
 
-    private static void AddMembers(GuildEntity guildEntity, IGuild guild)
+    private static void AddMembers(Server.Entities.Guild guildEntity, IGuild guild)
     {
         foreach (var memberRank in guildEntity.Members.Select(x => x.Rank))
         {
@@ -60,7 +60,7 @@ public class GuildLoader : ICustomLoader
         }
     }
 
-    private IGuild GetOrCreateGuild(GuildEntity guildEntity, out bool shouldAddToStore)
+    private IGuild GetOrCreateGuild(Server.Entities.Guild guildEntity, out bool shouldAddToStore)
     {
         var guild = _guildStore.Get((ushort)guildEntity.Id);
 
