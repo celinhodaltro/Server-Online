@@ -28,10 +28,11 @@ namespace API.Controllers
                 var user = new ApplicationUser { UserName = userInfo.Email, Email = userInfo.Email };
 
                 var resultRegister = await userManager.CreateAsync(user, userInfo.Password);
+                await userBusinessRules.CreateUserInfo(user);
 
                 if (resultRegister.Succeeded)
                 {
-                    await userBusinessRules.CreateUserInfo(userInfo.Id);
+
                     var result = await this.Login(userInfo);
                     return result;
                 }
