@@ -1,4 +1,5 @@
 ﻿using Data.Entities;
+using Microsoft.AspNet.Identity;
 using Server.Common.Contracts.Network;
 using Server.Entities;
 
@@ -24,7 +25,7 @@ public class CharacterListPacket : OutgoingPacket
 
     private void AddCharList(INetworkMessage message)
     {
-        message.AddByte(0x64); //todo charlist
+        message.AddByte(0x64);
         message.AddByte((byte)_user.UserInfo.Players.Count);
 
         var ipAddress = ParseIpAddress(_ipAddress);

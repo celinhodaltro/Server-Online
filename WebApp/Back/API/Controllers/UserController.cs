@@ -29,9 +29,10 @@ namespace API.Controllers
 
                 var resultRegister = await userManager.CreateAsync(user, userInfo.Password);
 
+
                 if (resultRegister.Succeeded)
                 {
-                    await userBusinessRules.CreateUserInfo(userInfo.Id);
+                    await userBusinessRules.CreateUserInfo(userInfo, user);
                     var result = await this.Login(userInfo);
                     return result;
                 }

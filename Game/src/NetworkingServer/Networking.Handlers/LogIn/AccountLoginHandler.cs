@@ -4,6 +4,7 @@ using Networking.Packets.Outgoing.Login;
 using Server.BusinessRules;
 using Server.Common.Contracts.Network;
 using Server.Configurations;
+using System;
 using System.Security.Principal;
 
 namespace Networking.Handlers.LogIn;
@@ -64,6 +65,12 @@ public class AccountLoginHandler : PacketHandler
         if (foundedAccount.UserInfo.BanishedAt is not null)
         {
             connection.Disconnect("Your account has been banished. Reason: " + foundedAccount.UserInfo.BanishmentReason);
+            return;
+        }
+
+        if(foundedAccount.UserInfo.Players is null || foundedAccount.UserInfo.Players.Count == 0)
+        {
+            connection.Disconnect("Your account not have Characters.");
             return;
         }
 

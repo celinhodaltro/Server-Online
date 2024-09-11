@@ -7,12 +7,12 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
 {
     public string ConnectionString { get; set; } = "Server=localhost;Database=AppMain;Uid=root;Pwd=admin";
 
-
+    public DbSet<UserVipList> UserVipList { get; set; }
+    public DbSet<UserInfo> UserInfo { get; set; }
     public DbSet<Player> Players { get; set; }
     public DbSet<PlayerItem> PlayerItems { get; set; }
     public DbSet<PlayerDepotItem> PlayerDepotItems { get; set; }
     public DbSet<PlayerInventoryItem> PlayerInventoryItems { get; set; }
-    public DbSet<UserVipList> AccountsVipList { get; set; }
     public DbSet<Guild> Guilds { get; set; }
     public DbSet<GuildMembership> GuildMemberships { get; set; }
     public DbSet<World> Worlds { get; set; }
