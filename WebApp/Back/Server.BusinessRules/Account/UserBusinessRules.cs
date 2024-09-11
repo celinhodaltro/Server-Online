@@ -21,17 +21,27 @@ public class UserBusinessRules
         LogBusinessRules = logBusinessRules;
     }
 
-    public async Task CreateUserInfo(int UserId)
+    public async Task CreateUserInfo(ApplicationUser UserApp)
     {
 
-        if (UserId is (0 or <0))
+        if (Guid.Parse(UserApp.Id) == Guid.Empty)
             throw new Exception("User is Null");
 
-        var UserInfo = new UserInfo 
+
+        var User = new User { 
+            Email = UserApp.Email,
+            Password = UserApp.PasswordHash,
+            UserType = 0,
+            UniqueId = Guid.Parse(UserApp.Id)
+        };
+
+        User = await DefaultProvider.CreateAsync(User);
+
+
+        var UserInfo = new UserInfo
         {
-            PremiumTime = 0,
-            Secret = "",
-            UserId = UserId
+            UniqueId = User.UniqueId,
+            UserId = User.Id
         };
 
         await DefaultProvider.CreateAsync(UserInfo);

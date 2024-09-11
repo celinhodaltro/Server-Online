@@ -1,4 +1,5 @@
 ﻿using System.Net.Mail;
+using System.Text.Json.Serialization;
 
 namespace Server.Entities;
 
@@ -7,7 +8,8 @@ public class User : DefaultDb
     public string? Email { get; set; }
     public string? Password { get; set; }
 
-    public UserInfo UserInfo { get; set; }
+    [JsonIgnore]
+    public UserInfo? UserInfo { get; set; }
 
     public UserType UserType { get; set; }
 
