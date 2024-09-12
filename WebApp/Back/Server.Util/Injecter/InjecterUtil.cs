@@ -15,7 +15,6 @@ namespace Server.Util
             InjecterDefault(Services);
             InjecterBusinessRules(Services);
             InjecterProvider(Services);
-            InjecterService(Services);
         }
 
         public static void InjecterDefault(IServiceCollection Services)
@@ -36,12 +35,5 @@ namespace Server.Util
             Services.AddScoped<DefaultProvider>();
         }
 
-        public static void InjecterService (IServiceCollection Services)
-        {
-            Services.AddScoped<AuthenticationStateProvider, AuthService>();
-            Services.AddScoped<AuthService>();
-            Services.AddScoped<ApiService>();
-            Services.AddScoped<CharacterService>();
-        }
     }
 }

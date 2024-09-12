@@ -3,7 +3,6 @@ using Front;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using MudBlazor.Services;
-using Server.Util;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");
@@ -23,5 +22,10 @@ builder.Services.AddBlazoredLocalStorage();
 builder.Services.AddAuthorizationCore();
 builder.Services.AddMudServices();
 builder.Services.AddCascadingAuthenticationState();
+
+builder.Services.AddScoped<AuthenticationStateProvider, AuthService>();
+builder.Services.AddScoped<AuthService>();
+builder.Services.AddScoped<ApiService>();
+builder.Services.AddScoped<CharacterService>();
 
 await builder.Build().RunAsync();
