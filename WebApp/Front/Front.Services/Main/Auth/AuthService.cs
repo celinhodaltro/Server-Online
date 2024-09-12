@@ -177,11 +177,16 @@ namespace Front.Services
 
         public async Task AuthUserByToken(UserToken? UserToken, [Optional] string Email)
         {
-            await LocalStorage.SetItemAsync("authToken", UserToken.Token);
-            await LocalStorage.SetItemAsync("tokenExpiration", UserToken.Expiration);
+            if (UserToken?.Token == null || UserToken?.Expiration == null)
+                MarkUserAsLoggedOut();
+            else
+            {
+                await LocalStorage.SetItemAsync("authToken", UserToken.Token);
+                await LocalStorage.SetItemAsync("tokenExpiration", UserToken.Expiration);
 
-            if (!String.IsNullOrEmpty(Email))
-                MarkUserAsAuthenticated(Email);
+                if (!String.IsNullOrEmpty(Email))
+                    MarkUserAsAuthenticated(Email);
+            }
         }
 
         public async Task Loggout()

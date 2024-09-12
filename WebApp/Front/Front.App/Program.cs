@@ -1,5 +1,7 @@
 using Blazored.LocalStorage;
 using Front;
+using Front.Services;
+using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using MudBlazor.Services;
@@ -16,7 +18,7 @@ builder.Services.AddHttpClient("API", options =>
     options.BaseAddress = new Uri("https://localhost:8000/");
 });
 
-builder.Services.InjectDefaultServices();
+
 
 builder.Services.AddBlazoredLocalStorage();
 builder.Services.AddAuthorizationCore();
