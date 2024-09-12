@@ -17,6 +17,11 @@ namespace System.Provider
             return await _context.Set<T>().FindAsync(id);
         }
 
+        public async Task<T> GetAsync<T>(Guid UniqueId) where T : class
+        {
+            return await _context.Set<T>().FindAsync(UniqueId);
+        }
+
         public async Task<IEnumerable<T>> GetAllAsync<T>() where T : class
         {
             return await _context.Set<T>().IncludeNavigations().ToListAsync();
