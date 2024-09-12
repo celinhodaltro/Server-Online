@@ -80,7 +80,7 @@ namespace Server.BusinessRules
                 LookHead = 78,
                 LookLegs = 58,
                 MagicLevel = 1,
-                Vocation = (byte)player.Vocation,
+                Vocation = 1,
                 ChaseMode = ChaseMode.Stand,
                 MaxSoul = 100,
                 PlayerType = 1,
