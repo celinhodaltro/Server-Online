@@ -9,7 +9,7 @@ namespace API.Controllers
 
     [Route("api/[controller]")]
     [ApiController]
-    public class PlayerController(UserManager<ApplicationUser> userManager, 
+    public class CharacterController(UserManager<ApplicationUser> userManager, 
                                   SignInManager<ApplicationUser> signManager, 
                                   IConfiguration configuration, 
                                   UserBusinessRules logBusinessRules,

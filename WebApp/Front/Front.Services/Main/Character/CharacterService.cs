@@ -39,7 +39,7 @@ namespace Front.Services
                 var httpClient = HttpClientFactory.CreateClient("API");
                 var UserIdAsJson = JsonSerializer.Serialize(UserId);
                 var requestContent = new StringContent(UserIdAsJson, Encoding.UTF8, "application/json");
-                var response = await httpClient.PostAsync("api/Player/GetById", requestContent);
+                var response = await httpClient.PostAsync("api/Character/GetById", requestContent);
 
                 var responseContent = await response.Content.ReadAsStringAsync();
                 if (!response.IsSuccessStatusCode)
@@ -65,7 +65,7 @@ namespace Front.Services
         {
             try
             {
-                var player = await ApiService.SendRequestAsync<Guid, List<Player>>("api/Player/GetByUserUniqueId", HttpMethod.Post, UserUniqueId);
+                var player = await ApiService.SendRequestAsync<Guid, List<Player>>("api/Character/GetByUserUniqueId", HttpMethod.Post, UserUniqueId);
                 return player;
             }
             catch
