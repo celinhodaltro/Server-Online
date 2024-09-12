@@ -26,7 +26,7 @@ namespace Server.Util
         {
             Services.AddScoped<LogBusinessRules>();
             Services.AddScoped<UserBusinessRules>();
-            Services.AddScoped<PlayerBusinessRules>();
+            Services.AddScoped<CharacterBusinessRules>();
 
         }
 

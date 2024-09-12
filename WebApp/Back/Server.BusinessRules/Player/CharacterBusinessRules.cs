@@ -5,12 +5,12 @@ using System.Provider;
 namespace Server.BusinessRules
 {
 
-    public class PlayerBusinessRules
+    public class CharacterBusinessRules
     {
 
         public DefaultProvider DefaultProvider { get; set; }
 
-        public PlayerBusinessRules(DefaultProvider defaultProvider)
+        public CharacterBusinessRules(DefaultProvider defaultProvider)
         {
             DefaultProvider = defaultProvider;
         }

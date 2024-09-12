@@ -13,7 +13,7 @@ namespace API.Controllers
                                   SignInManager<ApplicationUser> signManager, 
                                   IConfiguration configuration, 
                                   UserBusinessRules logBusinessRules,
-                                  PlayerBusinessRules playerBusinessRules) : BaseController
+                                  CharacterBusinessRules playerBusinessRules) : BaseController
     {
 
         [HttpGet]

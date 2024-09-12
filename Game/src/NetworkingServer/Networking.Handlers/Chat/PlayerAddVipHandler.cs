@@ -23,9 +23,9 @@ public class PlayerAddVipHandler : PacketHandler
     private readonly IGameServer _game;
     private readonly ILogger _logger;
     private readonly IEnumerable<PlayerLoader> _playerLoader;
-    private readonly PlayerBusinessRules PlayerBusinessRules;
+    private readonly CharacterBusinessRules PlayerBusinessRules;
 
-    public PlayerAddVipHandler(IGameServer game, PlayerBusinessRules PlayerBusinessRules,
+    public PlayerAddVipHandler(IGameServer game, CharacterBusinessRules PlayerBusinessRules,
         IEnumerable<PlayerLoader> playerLoader, ILogger logger)
     {
         _game = game;
