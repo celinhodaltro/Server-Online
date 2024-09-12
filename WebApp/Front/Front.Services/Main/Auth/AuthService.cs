@@ -43,7 +43,7 @@ namespace Front.Services
         }
 
 
-        public async Task<string> GetUserId()
+        public async Task<int> GetUserId()
         {
             var authState = await GetAuthenticationStateAsync();
             var user = authState.User;
@@ -51,10 +51,10 @@ namespace Front.Services
             if (user.Identity.IsAuthenticated)
             {
                 var userIdClaim = user.FindFirst("UserId");
-                return userIdClaim?.Value;
+                return Convert.ToInt32(userIdClaim?.Value);
             }
 
-            return null;
+            return 0;
         }
 
         public async Task<bool> IsAuthenticated()
