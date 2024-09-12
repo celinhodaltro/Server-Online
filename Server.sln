@@ -93,6 +93,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server.Extensions", "Game\d
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server.Util", "WebApp\Back\Server.Util\Server.Util.csproj", "{6FA207EB-6AEF-4B70-96DE-733990C27834}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Front.Services", "Front.Services\Front.Services.csproj", "{773C7478-B8F3-4922-9AF5-1ABAC7D3DFE2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -357,6 +359,14 @@ Global
 		{6FA207EB-6AEF-4B70-96DE-733990C27834}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6FA207EB-6AEF-4B70-96DE-733990C27834}.Release|x64.ActiveCfg = Release|Any CPU
 		{6FA207EB-6AEF-4B70-96DE-733990C27834}.Release|x64.Build.0 = Release|Any CPU
+		{773C7478-B8F3-4922-9AF5-1ABAC7D3DFE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{773C7478-B8F3-4922-9AF5-1ABAC7D3DFE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{773C7478-B8F3-4922-9AF5-1ABAC7D3DFE2}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{773C7478-B8F3-4922-9AF5-1ABAC7D3DFE2}.Debug|x64.Build.0 = Debug|Any CPU
+		{773C7478-B8F3-4922-9AF5-1ABAC7D3DFE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{773C7478-B8F3-4922-9AF5-1ABAC7D3DFE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{773C7478-B8F3-4922-9AF5-1ABAC7D3DFE2}.Release|x64.ActiveCfg = Release|Any CPU
+		{773C7478-B8F3-4922-9AF5-1ABAC7D3DFE2}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -405,6 +415,7 @@ Global
 		{CAA82AF3-0080-472D-AAB5-4E9CDB228FFC} = {9A04298D-06EE-40C1-B9E4-3B2255DD6086}
 		{C6BFA9DB-02EE-42A7-AA23-0BBDFF90377D} = {CAA82AF3-0080-472D-AAB5-4E9CDB228FFC}
 		{6FA207EB-6AEF-4B70-96DE-733990C27834} = {D218A842-F78C-4D43-938E-24ECE1157875}
+		{773C7478-B8F3-4922-9AF5-1ABAC7D3DFE2} = {979E2A6A-D782-4955-BFFC-66F0C4FF8D9E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {09380CFE-F022-4681-9D38-B40FAE3AAAC6}

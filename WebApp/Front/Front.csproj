@@ -23,6 +23,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Back\Server.Entities\Server.Entities.csproj" />
+    <ProjectReference Include="..\Back\Server.Util\Server.Util.csproj" />
   </ItemGroup>
 
 
