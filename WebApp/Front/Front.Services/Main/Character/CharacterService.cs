@@ -14,7 +14,7 @@ namespace Front.Services
         }
 
 
-        public async Task CreateCharacter(Player Character)
+        public async Task CreateCharacter(Player? Character)
         {
             try
             {

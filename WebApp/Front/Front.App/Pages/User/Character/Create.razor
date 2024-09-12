@@ -1,0 +1,43 @@
+﻿@page "/User/Character/Create"
+@using Game.Common.Creatures.Players
+@inject CharacterService CharacterService
+@inject AuthService AuthService
+
+
+
+<EditForm Model="@Player" OnValidSubmit="CreateCharacter">
+    <div class="form-group mt-2">
+        <MudTextField T="string"
+                      @bind-Value="@Player.Name"
+                      Variant="Variant.Outlined"
+                      ShrinkLabel="true"
+                      InputType="InputType.Text"
+                      Label="Name"
+                      Required="true"
+                      RequiredError="Name for Character is required!" />
+    </div>
+
+    <div class="form-group mt-2">
+        <MudSelect T="Gender" @bind-Value="@Player.Gender" Label="Gender" Required="true">
+            <MudSelectItem T="Gender" Value="@Gender.Male">Male</MudSelectItem>
+            <MudSelectItem T="Gender" Value="@Gender.Female">Female</MudSelectItem>
+        </MudSelect>
+    </div>
+
+    <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary">
+        Submit
+    </MudButton>
+
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+</EditForm>
+
+
+@code {
+    private Player? Player { get; set; }
+
+    private async Task CreateCharacter()
+    {
+        await CharacterService.CreateCharacter(this.Player);
+    }
+}
