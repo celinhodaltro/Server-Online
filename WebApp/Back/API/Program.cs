@@ -52,7 +52,7 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseMySQL("Server=localhost;Database=AppMain;Uid=root;Pwd=admin"));
 
-InjecterUtil.Inject(builder.Services);
+builder.Services.InjectDefaultServices();
 
 var app = builder.Build();
 
