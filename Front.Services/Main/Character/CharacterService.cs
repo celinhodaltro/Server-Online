@@ -4,16 +4,19 @@ using System.Text;
 using System.Text.Json;
 
 
-namespace WebApp.Services.API.Main
+namespace Front.Services
 {
-    public class CharacterService(IHttpClientFactory httpClientFactory)
+    public class CharacterService : AuthService
     {
+        public CharacterService(ApiService ApiService, ILocalStorageService LocalStorage, IHttpClientFactory HttpClientFactory) : base(ApiService, LocalStorage, HttpClientFactory)
+        {
+        }
 
         public async Task<Player?> Create(Player? Character)
         {
             try
             {
-                var httpClient = httpClientFactory.CreateClient("API");
+                var httpClient = this.HttpClientFactory.CreateClient("API");
                 var characterAsJson = JsonSerializer.Serialize(Character);
                 var requestContent = new StringContent(characterAsJson, Encoding.UTF8, "application/json");
                 var response = await httpClient.PostAsync("api/Player/Create", requestContent);
@@ -43,7 +46,7 @@ namespace WebApp.Services.API.Main
             try
             {
 
-                var httpClient = httpClientFactory.CreateClient("API");
+                var httpClient = HttpClientFactory.CreateClient("API");
                 var UserIdAsJson = JsonSerializer.Serialize(UserId);
                 var requestContent = new StringContent(UserIdAsJson, Encoding.UTF8, "application/json");
                 var response = await httpClient.PostAsync("api/Player/Create", requestContent);
