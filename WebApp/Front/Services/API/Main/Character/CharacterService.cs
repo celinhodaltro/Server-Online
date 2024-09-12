@@ -38,7 +38,7 @@ namespace WebApp.Services.API.Main
 
         }
 
-        public async Task<List<Player>> Create(int UserId)
+        public async Task<List<Player>> GetCharacters(int UserId)
         {
             try
             {
