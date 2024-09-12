@@ -67,7 +67,6 @@ namespace Front.Services
             {
                 var player = await ApiService.SendRequestAsync<Guid, List<Player>>("api/Player/GetByUserUniqueId", HttpMethod.Post, UserUniqueId);
                 return player;
-
             }
             catch
             {
