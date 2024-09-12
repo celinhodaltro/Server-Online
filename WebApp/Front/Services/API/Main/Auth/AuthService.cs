@@ -208,5 +208,20 @@ namespace WebApp.Services.API.Main
             httpClient.DefaultRequestHeaders.Authorization = null;
         }
 
+        public async Task<string> GetUserId()
+        {
+            var authState = await GetAuthenticationStateAsync();
+            var user = authState.User;
+
+            if (user.Identity.IsAuthenticated)
+            {
+                var userIdClaim = user.FindFirst("UserId");
+                return userIdClaim?.Value;
+            }
+
+            return null;
+        }
+
+
     }
 }
