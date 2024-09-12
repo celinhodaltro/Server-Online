@@ -1,13 +1,16 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Game.World.Services;
+using Microsoft.AspNetCore.Components.Authorization;
+using Microsoft.Extensions.DependencyInjection;
 using Server.BusinessRules;
 using System.Provider;
+using Front.Services;
 
 namespace Server.Util
 {
     public static class InjecterUtil
     {
 
-        public static void Inject(IServiceCollection Services)
+        public static void InjectDefaultServices(this IServiceCollection Services)
         {
             InjecterDefault(Services);
             InjecterBusinessRules(Services);
@@ -23,7 +26,7 @@ namespace Server.Util
         {
             Services.AddScoped<LogBusinessRules>();
             Services.AddScoped<UserBusinessRules>();
-            Services.AddScoped<PlayerBusinessRules>();
+            Services.AddScoped<CharacterBusinessRules>();
 
         }
 
@@ -31,5 +34,6 @@ namespace Server.Util
         {
             Services.AddScoped<DefaultProvider>();
         }
+
     }
 }

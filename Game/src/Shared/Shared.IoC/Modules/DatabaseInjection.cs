@@ -40,7 +40,7 @@ public static class DatabaseInjection
     }
     public static ContainerBuilder AddBusinessRules(this ContainerBuilder builder)
     {
-        builder.RegisterType<PlayerBusinessRules>().SingleInstance();
+        builder.RegisterType<CharacterBusinessRules>().SingleInstance();
         builder.RegisterType<UserBusinessRules>().SingleInstance();
         builder.RegisterType<LogBusinessRules>().SingleInstance();
         return builder;

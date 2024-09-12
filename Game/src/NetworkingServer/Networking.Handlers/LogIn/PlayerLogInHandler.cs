@@ -17,7 +17,7 @@ namespace Networking.Handlers.LogIn;
 public class PlayerLogInHandler : PacketHandler
 {
     private readonly IAccountRepository _accountRepository;
-    private readonly PlayerBusinessRules playerBusinessRules;
+    private readonly CharacterBusinessRules playerBusinessRules;
     private readonly IGameServer _game;
     private readonly PlayerLogInCommand _playerLogInCommand;
     private readonly PlayerLogOutCommand _playerLogOutCommand;

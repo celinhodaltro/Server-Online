@@ -16,7 +16,7 @@ public class PlayerOpenDepotCommand
     private readonly DepotManager _depotManager;
     private readonly IItemFactory _itemFactory;
     private readonly IPlayerDepotItemRepository _playerDepotItemRepository;
-    private readonly PlayerBusinessRules PlayerBusinessRules;
+    private readonly CharacterBusinessRules PlayerBusinessRules;
     private readonly IPlayerUseService _playerUseService;
 
     public PlayerOpenDepotCommand(IPlayerUseService playerUseService,

@@ -90,7 +90,14 @@
                         <MudText Typo="Typo.h3">Welcome to the World of Ursulla</MudText>
                         <MudText Typo="Typo.subtitle1">Venture into the medieval world and become a legend!</MudText>
                         <MudButtonGroup OverrideStyles="false">
-                            <MudButton OnClick="NavigateToRegister" StartIcon="@Icons.Material.Filled.Person" Color="Color.Secondary" Variant="Variant.Filled" Class="mt-4">Sign</MudButton>
+                            <AuthorizeView>
+                                <Authorized>
+                                    <MudButton OnClick="NavigateToAccount" StartIcon="@Icons.Material.Filled.Person" Color="Color.Secondary" Variant="Variant.Filled" Class="mt-4">My Account</MudButton>
+                                </Authorized>
+                                <NotAuthorized>
+                                    <MudButton OnClick="NavigateToRegister" StartIcon="@Icons.Material.Filled.Person" Color="Color.Secondary" Variant="Variant.Filled" Class="mt-4">Sign</MudButton>
+                                </NotAuthorized>
+                            </AuthorizeView>
                             <MudButton EndIcon="@Icons.Material.Filled.VideogameAsset" Color="Color.Primary" Variant="Variant.Filled" Class="mt-4">Play</MudButton>
                         </MudButtonGroup>
                     </MudItem>
@@ -148,9 +155,14 @@
 </div>
 
 @code {
-    public async Task NavigateToRegister()
+    public void NavigateToRegister()
     {
         NavigationManager.NavigateTo("Auth/Index");
+    }
+
+    public void NavigateToAccount()
+    {
+        NavigationManager.NavigateTo("User/Index");
     }
 
     @code {

@@ -74,6 +74,7 @@ namespace API.Controllers
             {
                 new Claim(JwtRegisteredClaimNames.UniqueName, userinfo.Email),
                 new Claim("AppMain", "Teste.com"),
+                new Claim("UserId", userinfo.UniqueId.ToString()),
                 new Claim(JwtRegisteredClaimNames.Aud, Configuration["Jwt:Audience"]),
                 new Claim(JwtRegisteredClaimNames.Iss, Configuration["Jwt:Issuer"]),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())

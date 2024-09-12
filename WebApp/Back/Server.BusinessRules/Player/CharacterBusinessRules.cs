@@ -5,12 +5,12 @@ using System.Provider;
 namespace Server.BusinessRules
 {
 
-    public class PlayerBusinessRules
+    public class CharacterBusinessRules
     {
 
         public DefaultProvider DefaultProvider { get; set; }
 
-        public PlayerBusinessRules(DefaultProvider defaultProvider)
+        public CharacterBusinessRules(DefaultProvider defaultProvider)
         {
             DefaultProvider = defaultProvider;
         }
@@ -80,7 +80,7 @@ namespace Server.BusinessRules
                 LookHead = 78,
                 LookLegs = 58,
                 MagicLevel = 1,
-                Vocation = (byte)player.Vocation,
+                Vocation = 1,
                 ChaseMode = ChaseMode.Stand,
                 MaxSoul = 100,
                 PlayerType = 1,
