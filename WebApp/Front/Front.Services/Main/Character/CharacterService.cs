@@ -1,5 +1,6 @@
 ﻿using Blazored.LocalStorage;
 using Server.Entities;
+using System.Net.Http;
 using System.Text;
 using System.Text.Json;
 
@@ -12,34 +13,23 @@ namespace Front.Services
         {
         }
 
-        public async Task<Player?> Create(Player? Character)
+
+        public async Task CreateCharacter(Player Character)
         {
             try
             {
-                var httpClient = this.HttpClientFactory.CreateClient("API");
-                var characterAsJson = JsonSerializer.Serialize(Character);
-                var requestContent = new StringContent(characterAsJson, Encoding.UTF8, "application/json");
-                var response = await httpClient.PostAsync("api/Player/Create", requestContent);
-
-                var responseContent = await response.Content.ReadAsStringAsync();
-                if (!response.IsSuccessStatusCode)
-                    throw new Exception(responseContent);
-
-               Character = JsonSerializer.Deserialize<Player>(responseContent,
-                    new JsonSerializerOptions
-                    {
-                        PropertyNameCaseInsensitive = true
-                    });
-
-                return Character;
-
+                var result = await ApiService.SendRequestAsync<Player, object>("api/Player", HttpMethod.Post, Character);
+                Console.WriteLine("Player created successfully");
             }
-            catch
+            catch (Exception ex)
             {
+                Console.WriteLine($"Error: {ex.Message}");
                 throw;
             }
-
         }
+
+
+        
 
         public async Task<List<Player>> GetCharacters(int UserId)
         {
