@@ -1,5 +1,6 @@
 ﻿@page "/User/Index"
 @inject CharacterService CharacterService
+@inject AuthService AuthService
 
 <MudText Typo="Typo.h4">Lista de Personagens</MudText>
 
@@ -24,6 +25,7 @@
 
     protected override async Task OnInitializedAsync()
     {
-        Players = await CharacterService.GetCharacters(1);
+        var UserId = await AuthService.GetUserId();
+        Players = await CharacterService.GetCharacters(UserId);
     }
 }
