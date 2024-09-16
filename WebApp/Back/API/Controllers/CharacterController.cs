@@ -9,7 +9,7 @@ namespace API.Controllers
 
     [Route("api/[controller]")]
     [ApiController]
-    public class PlayerController(UserManager<ApplicationUser> userManager, 
+    public class CharacterController(UserManager<ApplicationUser> userManager, 
                                   SignInManager<ApplicationUser> signManager, 
                                   IConfiguration configuration, 
                                   UserBusinessRules logBusinessRules,
@@ -26,6 +26,12 @@ namespace API.Controllers
         public async Task<IActionResult> GetById([FromRoute] int playerId)
         {
             return Response(await playerBusinessRules.GetById(playerId));
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> GetByUserUniqueId([FromBody] Guid userUniqueId)
+        {
+            return Response(await playerBusinessRules.GetByUserUniqueId(userUniqueId));
         }
 
         [HttpPost]

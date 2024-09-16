@@ -1,8 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
-using Web.Shared.Exceptions;
-using Web.Shared.ViewModels.Response;
-
 namespace API.Controllers;
 
 [Produces("application/json")]
@@ -90,14 +87,18 @@ public abstract class BaseController : ControllerBase
         });
     }
 
-    protected IActionResult ExceptionResponse(NeoException ex)
-    {
-        return StatusCode((int)ex.HttpStatusCode, new
-        {
-            Success = false,
-            Data = new { },
-            Errors = new List<string> { ex.Message }
-        });
-    }
 
+
+
+
+
+}
+
+
+[Serializable]
+public class BaseResponseViewModel
+{
+    public bool Success { get; set; }
+    public object Data { get; set; }
+    public List<string> Errors { get; set; }
 }

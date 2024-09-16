@@ -15,6 +15,10 @@ namespace Server.BusinessRules
             DefaultProvider = defaultProvider;
         }
 
+
+
+        #region Player
+
         public async Task<IEnumerable<Player>> GetAll()
         {
             var players = await DefaultProvider.GetAllAsync<Player>();
@@ -27,8 +31,14 @@ namespace Server.BusinessRules
             return player;
         }
 
+        public async Task<List<Player>> GetByUserUniqueId(Guid userUniqueId)
+        {
+            var User = await DefaultProvider.GetAsync<User>(userUniqueId);
+            var Players = await DefaultProvider.GetAsync<List<Player>>(User.Id);
 
-        #region Player
+            return Players;
+        }
+
         public async Task<Player?> GetPlayer(string playerName)
         {
             var Players = await DefaultProvider.GetAllAsync<Player>();
