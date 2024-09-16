@@ -35,22 +35,7 @@ namespace Front.Services
         {
             try
             {
-
-                var httpClient = HttpClientFactory.CreateClient("API");
-                var UserIdAsJson = JsonSerializer.Serialize(UserId);
-                var requestContent = new StringContent(UserIdAsJson, Encoding.UTF8, "application/json");
-                var response = await httpClient.PostAsync("api/Character/GetById", requestContent);
-
-                var responseContent = await response.Content.ReadAsStringAsync();
-                if (!response.IsSuccessStatusCode)
-                    throw new Exception(responseContent);
-
-                var Characters = JsonSerializer.Deserialize<List<Player>>(responseContent,
-                     new JsonSerializerOptions
-                     {
-                         PropertyNameCaseInsensitive = true
-                     });
-
+                var Characters = await ApiService.SendRequestAsync<Guid, List<Player>>("api/Character/GetByUserId", HttpMethod.Post, UserUniqueId);
                 return Characters;
 
             }
@@ -65,14 +50,13 @@ namespace Front.Services
         {
             try
             {
-                var player = await ApiService.SendRequestAsync<Guid, List<Player>>("api/Character/GetByUserUniqueId", HttpMethod.Post, UserUniqueId);
-                return player;
+                var Characters = await ApiService.SendRequestAsync<Guid, List<Player>>("api/Character/GetByUserUniqueId", HttpMethod.Post, UserUniqueId);
+                return Characters;
             }
             catch
             {
                 throw;
             }
-
         }
 
     }
