@@ -28,7 +28,7 @@ namespace API.Controllers
             return Response(await playerBusinessRules.GetById(playerId));
         }
 
-        [HttpGet]
+        [HttpPost]
         public async Task<IActionResult> GetByUserUniqueId([FromBody] Guid userUniqueId)
         {
             return Response(await playerBusinessRules.GetByUserUniqueId(userUniqueId));
