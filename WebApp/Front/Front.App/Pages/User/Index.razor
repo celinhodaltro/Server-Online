@@ -2,19 +2,19 @@
 @inject CharacterService CharacterService
 @inject AuthService AuthService
 
-<MudText Typo="Typo.h4">Lista de Personagens</MudText>
+<MudText Typo="Typo.h3">Characters</MudText>
 
 <MudTable Items="Players" Dense="true" Hover="true">
     <HeaderContent>
-        <MudTh>Nome</MudTh>
-        <MudTh>Nível</MudTh>
-        <MudTh>Saúde</MudTh>
+        <MudTh>Name</MudTh>
+        <MudTh>Level</MudTh>
+        <MudTh>Health</MudTh>
         <MudTh>Online</MudTh>
     </HeaderContent>
     <RowTemplate>
         <MudTd>@context.Name</MudTd>
         <MudTd>@context.Level</MudTd>
-        <MudTd>@context.Health / @context.MaxHealth</MudTd>
+        <MudTd>@context.MaxHealth</MudTd>
         <MudTd>@(context.Online ? "Sim" : "Não")</MudTd>
     </RowTemplate>
 </MudTable>
