@@ -79,3 +79,13 @@ public sealed class Player : DefaultDb
     public int WorldId { get; set; }
 }
 
+
+public enum AccountType
+{
+    Player,
+    Tutor,
+    SeniorTutor,
+    GameMaster,
+    God
+}
+
