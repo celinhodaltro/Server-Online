@@ -3,7 +3,7 @@ using Game.Common.Creatures.Players;
 
 namespace Server.Entities;
 
-public class PlayerOutfitAddon : DefaultDb
+public class CharacterOutfitAddon : DefaultDb
 {
     public Character Player { get; set; }
     public int PlayerId { get; set; }
