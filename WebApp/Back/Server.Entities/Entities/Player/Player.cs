@@ -39,29 +39,6 @@ public sealed class Player : DefaultDb
     public int PosX { get; set; }
     public int PosY { get; set; }
     public int PosZ { get; set; }
-    public int SkillFist { get; set; }
-    public double SkillFistTries { get; set; }
-
-    public int SkillClub { get; set; }
-    public double SkillClubTries { get; set; }
-
-    public int SkillSword { get; set; }
-    public double SkillSwordTries { get; set; }
-
-    public int SkillAxe { get; set; }
-    public double SkillAxeTries { get; set; }
-
-    public int SkillDist { get; set; }
-    public double SkillDistTries { get; set; }
-
-    public int SkillShielding { get; set; }
-    public double SkillShieldingTries { get; set; }
-
-    public int SkillFishing { get; set; }
-    public double SkillFishingTries { get; set; }
-
-    public int MagicLevel { get; set; }
-    public double MagicLevelTries { get; set; }
     public double Experience { get; set; }
 
     public ChaseMode ChaseMode { get; set; }
@@ -71,11 +48,22 @@ public sealed class Player : DefaultDb
     public int RemainingRecoverySeconds { get; set; }
     public User Account { get; set; }
 
+    public ICollection<PlayerSkill> PlayerSkills { get; set; }
     public ICollection<PlayerItem> PlayerItems { get; set; }
     public ICollection<PlayerDepotItem> PlayerDepotItems { get; set; }
     public ICollection<PlayerInventoryItem> PlayerInventoryItems { get; set; }
     public GuildMembership GuildMember { get; set; }
     public World World { get; set; }
     public int WorldId { get; set; }
+}
+
+
+public enum AccountType
+{
+    Player,
+    Tutor,
+    SeniorTutor,
+    GameMaster,
+    God
 }
 
