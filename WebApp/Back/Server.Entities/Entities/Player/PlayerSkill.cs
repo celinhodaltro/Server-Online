@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Server.Entities.Entities.Player
+namespace Server.Entities
 {
     public sealed class PlayerSkill : DefaultDb
     {
