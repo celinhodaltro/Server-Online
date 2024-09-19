@@ -1,6 +1,6 @@
 ﻿namespace Server.Entities;
 
-public class PlayerQuest : DefaultDb
+public class CharacterQuest : DefaultDb
 {
     public int PlayerId { get; set; }
     public Character Player { get; set; }
