@@ -35,7 +35,7 @@ namespace Front.Services
         {
             try
             {
-                var Characters = await ApiService.SendRequestAsync<Guid, List<Character>>("api/Character/GetByUserId", HttpMethod.Post, UserUniqueId);
+                var Characters = await ApiService.SendRequestAsync<Guid, List<Character>>("api/Character/GetByUserId", HttpMethod.Post, UserId);
                 return Characters;
 
             }
