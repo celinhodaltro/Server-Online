@@ -48,7 +48,7 @@ public sealed class Character : DefaultDb
     public int RemainingRecoverySeconds { get; set; }
     public User Account { get; set; }
 
-    public ICollection<PlayerSkill> PlayerSkills { get; set; }
+    public ICollection<CharacterSkill> PlayerSkills { get; set; }
     public ICollection<PlayerItem> PlayerItems { get; set; }
     public ICollection<PlayerDepotItem> PlayerDepotItems { get; set; }
     public ICollection<PlayerInventoryItem> PlayerInventoryItems { get; set; }
