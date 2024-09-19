@@ -8,6 +8,7 @@ namespace Server.Entities
 {
     public sealed class PlayerSkill : DefaultDb
     {
+        public int PlayerId { get; set; }
         public int SkillFist { get; set; }
         public double SkillFistTries { get; set; }
 
@@ -28,5 +29,6 @@ namespace Server.Entities
 
         public int SkillFishing { get; set; }
         public double SkillFishingTries { get; set; }
+
     }
 }
