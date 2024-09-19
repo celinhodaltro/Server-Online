@@ -112,9 +112,9 @@ namespace Server.BusinessRules
 
         #region PlayerDepot 
 
-        public async Task<IEnumerable<PlayerDepotItem>> GetPlayerDepotItems(uint id)
+        public async Task<IEnumerable<CharacterDepotItem>> GetPlayerDepotItems(uint id)
         {
-            var PlayersDepotItems = await DefaultProvider.GetAllAsync<PlayerDepotItem>();
+            var PlayersDepotItems = await DefaultProvider.GetAllAsync<CharacterDepotItem>();
             return PlayersDepotItems.Where(x => x.PlayerId == id);
         }
 

@@ -50,7 +50,7 @@ public class PlayerDepotItemRepository : BaseRepository<PlayerDepotItemEntity>,
 
         if (depot is null) return;
 
-        await ContainerManager.Save<Server.Entities.PlayerDepotItem>(player, depot, context);
+        await ContainerManager.Save<Server.Entities.CharacterDepotItem>(player, depot, context);
         await context.SaveChangesAsync();
     }
 

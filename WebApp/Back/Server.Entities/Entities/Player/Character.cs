@@ -8,9 +8,9 @@ public sealed class Character : DefaultDb
     public Character()
     {
         PlayerInventoryItems = new List<PlayerInventoryItem>();
-        PlayerDepotItems = new List<PlayerDepotItem>();
+        PlayerDepotItems = new List<CharacterDepotItem>();
         PlayerItems = new List<PlayerItem>();
-        PlayerDepotItems = new List<PlayerDepotItem>();
+        PlayerDepotItems = new List<CharacterDepotItem>();
     }
 
     public int UserId { get; set; }
@@ -50,7 +50,7 @@ public sealed class Character : DefaultDb
 
     public ICollection<CharacterSkill> PlayerSkills { get; set; }
     public ICollection<PlayerItem> PlayerItems { get; set; }
-    public ICollection<PlayerDepotItem> PlayerDepotItems { get; set; }
+    public ICollection<CharacterDepotItem> PlayerDepotItems { get; set; }
     public ICollection<PlayerInventoryItem> PlayerInventoryItems { get; set; }
     public GuildMembership GuildMember { get; set; }
     public World World { get; set; }
