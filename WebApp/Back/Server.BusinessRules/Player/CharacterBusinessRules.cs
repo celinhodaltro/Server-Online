@@ -19,38 +19,38 @@ namespace Server.BusinessRules
 
         #region Player
 
-        public async Task<IEnumerable<Player>> GetAll()
+        public async Task<IEnumerable<Character>> GetAll()
         {
-            var players = await DefaultProvider.GetAllAsync<Player>();
+            var players = await DefaultProvider.GetAllAsync<Character>();
             return players;
         }
 
-        public async Task<Player> GetById(int Id)
+        public async Task<Character> GetById(int Id)
         {
-            var player = await DefaultProvider.GetAsync<Player>(Id);
+            var player = await DefaultProvider.GetAsync<Character>(Id);
             return player;
         }
 
-        public async Task<List<Player>> GetByUserUniqueId(Guid userUniqueId)
+        public async Task<List<Character>> GetByUserUniqueId(Guid userUniqueId)
         {
             var User = await DefaultProvider.GetAsync<User>(userUniqueId);
-            var Players = await DefaultProvider.GetAsync<List<Player>>(User.Id);
+            var Players = await DefaultProvider.GetAsync<List<Character>>(User.Id);
 
             return Players;
         }
 
-        public async Task<Player?> GetPlayer(string playerName)
+        public async Task<Character?> GetPlayer(string playerName)
         {
-            var Players = await DefaultProvider.GetAllAsync<Player>();
+            var Players = await DefaultProvider.GetAllAsync<Character>();
 
             return Players.FirstOrDefault(x => x.Name.Equals(playerName));
         }
 
 
-        public async Task<Player?> GetPlayer(string accountName, string password, string charName)
+        public async Task<Character?> GetPlayer(string accountName, string password, string charName)
         {
 
-            var Players = await DefaultProvider.GetAllAsync<Player>();
+            var Players = await DefaultProvider.GetAllAsync<Character>();
 
             return Players.FirstOrDefault(x => x.Account.Email.Equals(accountName) &&
                                                     x.Account.Password.Equals(password) &&
@@ -58,17 +58,17 @@ namespace Server.BusinessRules
 
         }
 
-        public async Task<Player?> GetOnlinePlayer(string accountName)
+        public async Task<Character?> GetOnlinePlayer(string accountName)
         {
-            var Players = await DefaultProvider.GetAllAsync<Player>();
+            var Players = await DefaultProvider.GetAllAsync<Character>();
 
             return Players.FirstOrDefault(x => x.Account.Email.Equals(accountName) && x.Online);
 
         }
 
-        public async Task Create(Player player)
+        public async Task Create(Character player)
         {
-            await DefaultProvider.CreateAsync(new Player
+            await DefaultProvider.CreateAsync(new Character
             {
                 UserId = player.UserId,
                 Level = 8,

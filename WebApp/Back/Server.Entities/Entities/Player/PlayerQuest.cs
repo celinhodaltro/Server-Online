@@ -3,7 +3,7 @@
 public class PlayerQuest : DefaultDb
 {
     public int PlayerId { get; set; }
-    public Player Player { get; set; }
+    public Character Player { get; set; }
     public string Group { get; set; }
     public string GroupKey { get; set; }
     public int ActionId { get; set; }

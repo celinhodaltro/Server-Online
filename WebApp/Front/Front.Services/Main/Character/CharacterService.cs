@@ -14,11 +14,11 @@ namespace Front.Services
         }
 
 
-        public async Task CreateCharacter(Player? Character)
+        public async Task CreateCharacter(Character? Character)
         {
             try
             {
-                var result = await ApiService.SendRequestAsync<Player, object>("api/Player", HttpMethod.Post, Character);
+                var result = await ApiService.SendRequestAsync<Character, object>("api/Player", HttpMethod.Post, Character);
                 Console.WriteLine("Player created successfully");
             }
             catch (Exception ex)
@@ -31,11 +31,11 @@ namespace Front.Services
 
         
 
-        public async Task<List<Player>> GetCharacters(int UserId)
+        public async Task<List<Character>> GetCharacters(int UserId)
         {
             try
             {
-                var Characters = await ApiService.SendRequestAsync<Guid, List<Player>>("api/Character/GetByUserId", HttpMethod.Post, UserUniqueId);
+                var Characters = await ApiService.SendRequestAsync<Guid, List<Character>>("api/Character/GetByUserId", HttpMethod.Post, UserUniqueId);
                 return Characters;
 
             }
@@ -46,11 +46,11 @@ namespace Front.Services
 
         }
 
-        public async Task<List<Player>> GetCharacters(Guid UserUniqueId)
+        public async Task<List<Character>> GetCharacters(Guid UserUniqueId)
         {
             try
             {
-                var Characters = await ApiService.SendRequestAsync<Guid, List<Player>>("api/Character/GetByUserUniqueId", HttpMethod.Post, UserUniqueId);
+                var Characters = await ApiService.SendRequestAsync<Guid, List<Character>>("api/Character/GetByUserUniqueId", HttpMethod.Post, UserUniqueId);
                 return Characters;
             }
             catch

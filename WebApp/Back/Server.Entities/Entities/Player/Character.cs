@@ -3,9 +3,9 @@ using Game.World;
 
 namespace Server.Entities;
 
-public sealed class Player : DefaultDb
+public sealed class Character : DefaultDb
 {
-    public Player()
+    public Character()
     {
         PlayerInventoryItems = new List<PlayerInventoryItem>();
         PlayerDepotItems = new List<PlayerDepotItem>();

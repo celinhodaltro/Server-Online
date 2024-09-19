@@ -8,5 +8,5 @@ public sealed class PlayerInventoryItem : DefaultDb
     public int SlotId { get; set; }
     public short Amount { get; set; }
 
-    public Player Player { get; set; }
+    public Character Player { get; set; }
 }

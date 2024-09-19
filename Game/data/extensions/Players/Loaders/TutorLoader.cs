@@ -25,12 +25,12 @@ public class TutorLoader : PlayerLoader
     {
     }
 
-    public override bool IsApplicable(Server.Entities.Player player)
+    public override bool IsApplicable(Server.Entities.Character player)
     {
         return player?.PlayerType == 2;
     }
 
-    public override IPlayer Load(Server.Entities.Player playerEntity)
+    public override IPlayer Load(Server.Entities.Character playerEntity)
     {
         if (Guard.IsNull(playerEntity)) return null;
 

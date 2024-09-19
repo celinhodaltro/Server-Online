@@ -10,7 +10,7 @@ public abstract class PlayerItemBase : DefaultDb
     public int ParentId { get; set; }
     public int ServerId { get; set; }
 
-    public virtual Player Player { get; set; }
+    public virtual Character Player { get; set; }
     public ushort? DecayTo { get; set; }
     public uint? DecayDuration { get; set; }
     public uint? DecayElapsed { get; set; }

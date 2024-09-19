@@ -35,7 +35,7 @@ namespace API.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody] Player player)
+        public async Task<IActionResult> Post([FromBody] Character player)
         {
             await playerBusinessRules.Create(player);
             return Ok();

@@ -58,12 +58,12 @@ public class PlayerLoader
         _gameConfiguration = gameConfiguration;
     }
 
-    public virtual bool IsApplicable(Server.Entities.Player player)
+    public virtual bool IsApplicable(Server.Entities.Character player)
     {
         return player?.PlayerType == 1;
     }
 
-    public virtual IPlayer Load(Server.Entities.Player playerEntity)
+    public virtual IPlayer Load(Server.Entities.Character playerEntity)
     {
         if (Guard.IsNull(playerEntity)) return null;
 
@@ -120,14 +120,14 @@ public class PlayerLoader
         return CreatureFactory.CreatePlayer(player);
     }
 
-    protected ITown GetTown(Server.Entities.Player playerEntity)
+    protected ITown GetTown(Server.Entities.Character playerEntity)
     {
         if (!World.TryGetTown((ushort)playerEntity.TownId, out var town))
             Logger.Error("player town not found: {PlayerModelTownId}", playerEntity.TownId);
         return town;
     }
 
-    protected IVocation GetVocation(Server.Entities.Player playerEntity)
+    protected IVocation GetVocation(Server.Entities.Character playerEntity)
     {
         if (!VocationStore.TryGetValue(playerEntity.Vocation, out var vocation))
             Logger.Error("Player vocation not found: {PlayerModelVocation}", playerEntity.Vocation);
@@ -157,7 +157,7 @@ public class PlayerLoader
         player.SetCurrentTile(playerTile);
     }
 
-    private static void AddRegenerationCondition(Server.Entities.Player playerEntity, IPlayer player)
+    private static void AddRegenerationCondition(Server.Entities.Character playerEntity, IPlayer player)
     {
         if (playerEntity.RemainingRecoverySeconds != 0)
         {
@@ -188,7 +188,7 @@ public class PlayerLoader
         }
     }
 
-    protected Dictionary<SkillType, ISkill> ConvertToSkills(Server.Entities.Player playerRecord)
+    protected Dictionary<SkillType, ISkill> ConvertToSkills(Server.Entities.Character playerRecord)
     {
         return new Dictionary<SkillType, ISkill>
         {
@@ -225,7 +225,7 @@ public class PlayerLoader
         };
     }
 
-    protected IInventory ConvertToInventory(IPlayer player, Server.Entities.Player playerRecord)
+    protected IInventory ConvertToInventory(IPlayer player, Server.Entities.Character playerRecord)
     {
         var inventory = new Dictionary<Slot, (IItem Item, ushort Id)>();
         var attrs = new Dictionary<ItemAttribute, IConvertible> { { ItemAttribute.Count, 0 } };
