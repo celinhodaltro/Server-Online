@@ -29,6 +29,8 @@ namespace Server.Entities
 
         public int SkillFishing { get; set; }
         public double SkillFishingTries { get; set; }
+        public int MagicLevel { get; set; }
+        public double MagicLevelTries { get; set; }
 
     }
 }
