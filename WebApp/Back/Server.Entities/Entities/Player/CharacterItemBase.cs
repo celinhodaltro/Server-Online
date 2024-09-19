@@ -2,7 +2,7 @@ using Game.Common.Item;
 
 namespace Server.Entities;
 
-public abstract class PlayerItemBase : DefaultDb
+public abstract class CharacterItemBase : DefaultDb
 {
     public int Id { get; set; }
     public int PlayerId { get; set; }
