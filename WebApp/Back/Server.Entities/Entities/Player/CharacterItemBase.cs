@@ -5,12 +5,12 @@ namespace Server.Entities;
 public abstract class CharacterItemBase : DefaultDb
 {
     public int Id { get; set; }
-    public int PlayerId { get; set; }
+    public int CharacterId { get; set; }
     public short Amount { get; set; }
     public int ParentId { get; set; }
     public int ServerId { get; set; }
 
-    public virtual Character Player { get; set; }
+    public virtual Character Character { get; set; }
     public ushort? DecayTo { get; set; }
     public uint? DecayDuration { get; set; }
     public uint? DecayElapsed { get; set; }
