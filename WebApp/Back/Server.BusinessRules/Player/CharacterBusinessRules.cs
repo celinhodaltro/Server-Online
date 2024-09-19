@@ -89,7 +89,6 @@ namespace Server.BusinessRules
                 LookFeet = 95,
                 LookHead = 78,
                 LookLegs = 58,
-                MagicLevel = 1,
                 Vocation = 1,
                 ChaseMode = ChaseMode.Stand,
                 MaxSoul = 100,
@@ -97,14 +96,20 @@ namespace Server.BusinessRules
                 PosX = player.PosX,
                 PosY = player.PosY,
                 PosZ = player.PosZ,
+                TownId = player.TownId
+
+            });
+
+            await DefaultProvider.CreateAsync(new CharacterSkill
+            {
+                MagicLevel = 1,
                 SkillAxe = 10,
                 SkillDist = 10,
                 SkillClub = 10,
                 SkillSword = 10,
                 SkillShielding = 10,
                 SkillFist = 10,
-                TownId = player.TownId,
-                SkillFishing = 10
+                SkillFishing = 10,
             });
         }
 
@@ -115,7 +120,7 @@ namespace Server.BusinessRules
         public async Task<IEnumerable<CharacterDepotItem>> GetPlayerDepotItems(uint id)
         {
             var PlayersDepotItems = await DefaultProvider.GetAllAsync<CharacterDepotItem>();
-            return PlayersDepotItems.Where(x => x.PlayerId == id);
+            return PlayersDepotItems.Where(x => x.CharacterId == id);
         }
 
         #endregion

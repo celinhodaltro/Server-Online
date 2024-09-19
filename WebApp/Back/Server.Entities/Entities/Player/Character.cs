@@ -7,10 +7,10 @@ public sealed class Character : DefaultDb
 {
     public Character()
     {
-        PlayerInventoryItems = new List<CharacterInventoryItem>();
-        PlayerDepotItems = new List<CharacterDepotItem>();
-        PlayerItems = new List<CharacterItem>();
-        PlayerDepotItems = new List<CharacterDepotItem>();
+        CharacterInventoryItems = new List<CharacterInventoryItem>();
+        CharacterDepotItems = new List<CharacterDepotItem>();
+        CharacterItems = new List<CharacterItem>();
+        CharacterDepotItems = new List<CharacterDepotItem>();
     }
 
     public int UserId { get; set; }
