@@ -1,5 +1,5 @@
-using Game.Common.Creatures.Players;
 using Game.World;
+using Server.Entities.Common.Characters;
 
 namespace Server.Entities;
 
@@ -65,5 +65,11 @@ public enum AccountType
     SeniorTutor,
     GameMaster,
     God
+}
+
+public enum Gender : byte
+{
+    Male = 1,
+    Female = 0
 }
 
