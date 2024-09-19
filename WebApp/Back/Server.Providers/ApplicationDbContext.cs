@@ -15,7 +15,7 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     public DbSet<Character> Players { get; set; }
     public DbSet<PlayerItem> PlayerItems { get; set; }
     public DbSet<CharacterDepotItem> PlayerDepotItems { get; set; }
-    public DbSet<PlayerInventoryItem> PlayerInventoryItems { get; set; }
+    public DbSet<CharacterInventoryItem> PlayerInventoryItems { get; set; }
     public DbSet<PlayerQuest> PlayerQuests { get; set; }
     public DbSet<PlayerOutfitAddon> PlayerOutfitAddons { get; set; }
     public DbSet<CharacterSkill> PlayerSkill { get; set; }
