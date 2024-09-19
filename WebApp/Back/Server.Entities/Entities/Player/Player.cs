@@ -39,9 +39,6 @@ public sealed class Player : DefaultDb
     public int PosX { get; set; }
     public int PosY { get; set; }
     public int PosZ { get; set; }
-
-    public int MagicLevel { get; set; }
-    public double MagicLevelTries { get; set; }
     public double Experience { get; set; }
 
     public ChaseMode ChaseMode { get; set; }
