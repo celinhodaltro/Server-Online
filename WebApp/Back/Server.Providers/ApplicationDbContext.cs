@@ -13,7 +13,7 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     #endregion
     #region Player
     public DbSet<Character> Players { get; set; }
-    public DbSet<PlayerItem> PlayerItems { get; set; }
+    public DbSet<CharacterItem> PlayerItems { get; set; }
     public DbSet<CharacterDepotItem> PlayerDepotItems { get; set; }
     public DbSet<CharacterInventoryItem> PlayerInventoryItems { get; set; }
     public DbSet<PlayerQuest> PlayerQuests { get; set; }

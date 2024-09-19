@@ -9,7 +9,7 @@ public sealed class Character : DefaultDb
     {
         PlayerInventoryItems = new List<CharacterInventoryItem>();
         PlayerDepotItems = new List<CharacterDepotItem>();
-        PlayerItems = new List<PlayerItem>();
+        PlayerItems = new List<CharacterItem>();
         PlayerDepotItems = new List<CharacterDepotItem>();
     }
 
@@ -49,7 +49,7 @@ public sealed class Character : DefaultDb
     public User Account { get; set; }
 
     public ICollection<CharacterSkill> PlayerSkills { get; set; }
-    public ICollection<PlayerItem> PlayerItems { get; set; }
+    public ICollection<CharacterItem> PlayerItems { get; set; }
     public ICollection<CharacterDepotItem> PlayerDepotItems { get; set; }
     public ICollection<CharacterInventoryItem> PlayerInventoryItems { get; set; }
     public GuildMembership GuildMember { get; set; }
