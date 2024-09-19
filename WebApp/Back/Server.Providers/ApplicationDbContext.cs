@@ -11,7 +11,6 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     public DbSet<UserVipList> UserVipList { get; set; }
     public DbSet<UserInfo> UserInfo { get; set; }
     #endregion
-
     #region Player
     public DbSet<Player> Players { get; set; }
     public DbSet<PlayerItem> PlayerItems { get; set; }
@@ -24,10 +23,10 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     public DbSet<GuildMembership> GuildMemberships { get; set; }
     public DbSet<World> Worlds { get; set; }
     #endregion
-
     #region Logs
     public DbSet<LogTrack> Logs { get; set; }
     #endregion
+
     public ApplicationDbContext() { }
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
       : base(options)
