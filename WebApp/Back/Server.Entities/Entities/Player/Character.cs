@@ -1,16 +1,16 @@
-using Game.Common.Creatures.Players;
 using Game.World;
+using Server.Entities.Common.Characters;
 
 namespace Server.Entities;
 
-public sealed class Player : DefaultDb
+public sealed class Character : DefaultDb
 {
-    public Player()
+    public Character()
     {
-        PlayerInventoryItems = new List<PlayerInventoryItem>();
-        PlayerDepotItems = new List<PlayerDepotItem>();
-        PlayerItems = new List<PlayerItem>();
-        PlayerDepotItems = new List<PlayerDepotItem>();
+        CharacterInventoryItems = new List<CharacterInventoryItem>();
+        CharacterDepotItems = new List<CharacterDepotItem>();
+        CharacterItems = new List<CharacterItem>();
+        CharacterDepotItems = new List<CharacterDepotItem>();
     }
 
     public int UserId { get; set; }
@@ -48,10 +48,10 @@ public sealed class Player : DefaultDb
     public int RemainingRecoverySeconds { get; set; }
     public User Account { get; set; }
 
-    public ICollection<PlayerSkill> PlayerSkills { get; set; }
-    public ICollection<PlayerItem> PlayerItems { get; set; }
-    public ICollection<PlayerDepotItem> PlayerDepotItems { get; set; }
-    public ICollection<PlayerInventoryItem> PlayerInventoryItems { get; set; }
+    public ICollection<CharacterSkill> CharacterSkills { get; set; }
+    public ICollection<CharacterItem> CharacterItems { get; set; }
+    public ICollection<CharacterDepotItem> CharacterDepotItems { get; set; }
+    public ICollection<CharacterInventoryItem> CharacterInventoryItems { get; set; }
     public GuildMembership GuildMember { get; set; }
     public World World { get; set; }
     public int WorldId { get; set; }
@@ -60,10 +60,16 @@ public sealed class Player : DefaultDb
 
 public enum AccountType
 {
-    Player,
+    Character,
     Tutor,
     SeniorTutor,
     GameMaster,
     God
+}
+
+public enum Gender : byte
+{
+    Male = 1,
+    Female = 0
 }
 

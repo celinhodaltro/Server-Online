@@ -11,23 +11,22 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     public DbSet<UserVipList> UserVipList { get; set; }
     public DbSet<UserInfo> UserInfo { get; set; }
     #endregion
-
     #region Player
-    public DbSet<Player> Players { get; set; }
-    public DbSet<PlayerItem> PlayerItems { get; set; }
-    public DbSet<PlayerDepotItem> PlayerDepotItems { get; set; }
-    public DbSet<PlayerInventoryItem> PlayerInventoryItems { get; set; }
-    public DbSet<PlayerQuest> PlayerQuests { get; set; }
-    public DbSet<PlayerOutfitAddon> PlayerOutfitAddons { get; set; }
-    public DbSet<PlayerSkill> PlayerSkill { get; set; }
+    public DbSet<Character> Players { get; set; }
+    public DbSet<CharacterItem> PlayerItems { get; set; }
+    public DbSet<CharacterDepotItem> PlayerDepotItems { get; set; }
+    public DbSet<CharacterInventoryItem> PlayerInventoryItems { get; set; }
+    public DbSet<CharacterQuest> PlayerQuests { get; set; }
+    public DbSet<CharacterOutfitAddon> PlayerOutfitAddons { get; set; }
+    public DbSet<CharacterSkill> PlayerSkill { get; set; }
     public DbSet<Guild> Guilds { get; set; }
     public DbSet<GuildMembership> GuildMemberships { get; set; }
     public DbSet<World> Worlds { get; set; }
     #endregion
-
     #region Logs
     public DbSet<LogTrack> Logs { get; set; }
     #endregion
+
     public ApplicationDbContext() { }
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
       : base(options)

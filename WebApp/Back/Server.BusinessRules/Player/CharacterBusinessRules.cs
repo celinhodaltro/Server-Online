@@ -1,5 +1,5 @@
-﻿using Game.Common.Creatures.Players;
-using Server.Entities;
+﻿using Server.Entities;
+using Server.Entities.Common.Characters;
 using System.Provider;
 
 namespace Server.BusinessRules
@@ -19,38 +19,38 @@ namespace Server.BusinessRules
 
         #region Player
 
-        public async Task<IEnumerable<Player>> GetAll()
+        public async Task<IEnumerable<Character>> GetAll()
         {
-            var players = await DefaultProvider.GetAllAsync<Player>();
+            var players = await DefaultProvider.GetAllAsync<Character>();
             return players;
         }
 
-        public async Task<Player> GetById(int Id)
+        public async Task<Character> GetById(int Id)
         {
-            var player = await DefaultProvider.GetAsync<Player>(Id);
+            var player = await DefaultProvider.GetAsync<Character>(Id);
             return player;
         }
 
-        public async Task<List<Player>> GetByUserUniqueId(Guid userUniqueId)
+        public async Task<List<Character>> GetByUserUniqueId(Guid userUniqueId)
         {
             var User = await DefaultProvider.GetAsync<User>(userUniqueId);
-            var Players = await DefaultProvider.GetAsync<List<Player>>(User.Id);
+            var Players = await DefaultProvider.GetAsync<List<Character>>(User.Id);
 
             return Players;
         }
 
-        public async Task<Player?> GetPlayer(string playerName)
+        public async Task<Character?> GetPlayer(string playerName)
         {
-            var Players = await DefaultProvider.GetAllAsync<Player>();
+            var Players = await DefaultProvider.GetAllAsync<Character>();
 
             return Players.FirstOrDefault(x => x.Name.Equals(playerName));
         }
 
 
-        public async Task<Player?> GetPlayer(string accountName, string password, string charName)
+        public async Task<Character?> GetPlayer(string accountName, string password, string charName)
         {
 
-            var Players = await DefaultProvider.GetAllAsync<Player>();
+            var Players = await DefaultProvider.GetAllAsync<Character>();
 
             return Players.FirstOrDefault(x => x.Account.Email.Equals(accountName) &&
                                                     x.Account.Password.Equals(password) &&
@@ -58,17 +58,17 @@ namespace Server.BusinessRules
 
         }
 
-        public async Task<Player?> GetOnlinePlayer(string accountName)
+        public async Task<Character?> GetOnlinePlayer(string accountName)
         {
-            var Players = await DefaultProvider.GetAllAsync<Player>();
+            var Players = await DefaultProvider.GetAllAsync<Character>();
 
             return Players.FirstOrDefault(x => x.Account.Email.Equals(accountName) && x.Online);
 
         }
 
-        public async Task Create(Player player)
+        public async Task Create(Character player)
         {
-            await DefaultProvider.CreateAsync(new Player
+            await DefaultProvider.CreateAsync(new Character
             {
                 UserId = player.UserId,
                 Level = 8,
@@ -89,7 +89,6 @@ namespace Server.BusinessRules
                 LookFeet = 95,
                 LookHead = 78,
                 LookLegs = 58,
-                MagicLevel = 1,
                 Vocation = 1,
                 ChaseMode = ChaseMode.Stand,
                 MaxSoul = 100,
@@ -97,14 +96,20 @@ namespace Server.BusinessRules
                 PosX = player.PosX,
                 PosY = player.PosY,
                 PosZ = player.PosZ,
+                TownId = player.TownId
+
+            });
+
+            await DefaultProvider.CreateAsync(new CharacterSkill
+            {
+                MagicLevel = 1,
                 SkillAxe = 10,
                 SkillDist = 10,
                 SkillClub = 10,
                 SkillSword = 10,
                 SkillShielding = 10,
                 SkillFist = 10,
-                TownId = player.TownId,
-                SkillFishing = 10
+                SkillFishing = 10,
             });
         }
 
@@ -112,10 +117,10 @@ namespace Server.BusinessRules
 
         #region PlayerDepot 
 
-        public async Task<IEnumerable<PlayerDepotItem>> GetPlayerDepotItems(uint id)
+        public async Task<IEnumerable<CharacterDepotItem>> GetPlayerDepotItems(uint id)
         {
-            var PlayersDepotItems = await DefaultProvider.GetAllAsync<PlayerDepotItem>();
-            return PlayersDepotItems.Where(x => x.PlayerId == id);
+            var PlayersDepotItems = await DefaultProvider.GetAllAsync<CharacterDepotItem>();
+            return PlayersDepotItems.Where(x => x.CharacterId == id);
         }
 
         #endregion

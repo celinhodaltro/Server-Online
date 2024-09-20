@@ -28,7 +28,7 @@ public class PlayerLogInCommand : ICommand
         _logger = logger;
     }
 
-    public void Execute(Server.Entities.Player playerRecord, IConnection connection)
+    public void Execute(Server.Entities.Character playerRecord, IConnection connection)
     {
         if (playerRecord is null)
             //todo validations here

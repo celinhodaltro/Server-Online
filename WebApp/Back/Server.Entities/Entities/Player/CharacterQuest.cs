@@ -1,9 +1,9 @@
 ﻿namespace Server.Entities;
 
-public class PlayerQuest : DefaultDb
+public class CharacterQuest : DefaultDb
 {
-    public int PlayerId { get; set; }
-    public Player Player { get; set; }
+    public int CharacterId { get; set; }
+    public Character Character { get; set; }
     public string Group { get; set; }
     public string GroupKey { get; set; }
     public int ActionId { get; set; }

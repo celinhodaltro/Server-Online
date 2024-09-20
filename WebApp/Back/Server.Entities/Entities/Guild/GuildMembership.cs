@@ -7,7 +7,7 @@ public sealed class GuildMembership : DefaultDb
     public int RankId { get; set; }
     public string Nick { get; set; }
 
-    public Player Player { get; set; }
+    public Character Player { get; set; }
     public Guild Guild { get; set; }
     public GuildRank Rank { get; set; }
 }

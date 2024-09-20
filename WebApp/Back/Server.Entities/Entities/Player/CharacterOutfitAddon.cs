@@ -3,10 +3,10 @@ using Game.Common.Creatures.Players;
 
 namespace Server.Entities;
 
-public class PlayerOutfitAddon : DefaultDb
+public class CharacterOutfitAddon : DefaultDb
 {
-    public Player Player { get; set; }
-    public int PlayerId { get; set; }
+    public Character Character { get; set; }
+    public int CharacterId { get; set; }
     public int LookType { get; set; }
     public OutfitAddon AddonLevel { get; set; } = OutfitAddon.None;
 }

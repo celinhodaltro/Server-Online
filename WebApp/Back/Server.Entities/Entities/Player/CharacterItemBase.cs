@@ -2,15 +2,15 @@ using Game.Common.Item;
 
 namespace Server.Entities;
 
-public abstract class PlayerItemBase : DefaultDb
+public abstract class CharacterItemBase : DefaultDb
 {
     public int Id { get; set; }
-    public int PlayerId { get; set; }
+    public int CharacterId { get; set; }
     public short Amount { get; set; }
     public int ParentId { get; set; }
     public int ServerId { get; set; }
 
-    public virtual Player Player { get; set; }
+    public virtual Character Character { get; set; }
     public ushort? DecayTo { get; set; }
     public uint? DecayDuration { get; set; }
     public uint? DecayElapsed { get; set; }

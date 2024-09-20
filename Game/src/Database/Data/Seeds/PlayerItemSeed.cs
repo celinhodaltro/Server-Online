@@ -5,10 +5,10 @@ namespace Data.Seeds;
 
 internal sealed class PlayerItemSeed
 {
-    public static void Seed(EntityTypeBuilder<Server.Entities.PlayerItem> builder)
+    public static void Seed(EntityTypeBuilder<Server.Entities.CharacterItem> builder)
     {
         builder.HasData(
-            new Server.Entities.PlayerItem
+            new Server.Entities.CharacterItem
             {
                 Id = -1,
                 ContainerId = 1,
@@ -17,7 +17,7 @@ internal sealed class PlayerItemSeed
                 ServerId = 1988,
                 Amount = 1
             },
-            new Server.Entities.PlayerItem
+            new Server.Entities.CharacterItem
             {
                 Id = -2,
                 PlayerId = 1,
@@ -25,7 +25,7 @@ internal sealed class PlayerItemSeed
                 ServerId = 2666,
                 Amount = 10
             },
-            new Server.Entities.PlayerItem
+            new Server.Entities.CharacterItem
             {
                 Id = -3,
                 PlayerId = 1,
@@ -33,7 +33,7 @@ internal sealed class PlayerItemSeed
                 ServerId = 7618,
                 Amount = 10
             },
-            new Server.Entities.PlayerItem
+            new Server.Entities.CharacterItem
             {
                 Id = -4,
                 PlayerId = 1,
@@ -41,7 +41,7 @@ internal sealed class PlayerItemSeed
                 ServerId = 2311,
                 Amount = 10
             },
-            new Server.Entities.PlayerItem
+            new Server.Entities.CharacterItem
             {
                 Id = -5,
                 PlayerId = 1,

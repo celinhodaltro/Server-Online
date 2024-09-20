@@ -5,9 +5,9 @@ using Data.Seeds;
 
 namespace Data.Configurations;
 
-public class PlayerItemEntityConfiguration : IEntityTypeConfiguration<Server.Entities.PlayerItem>
+public class PlayerItemEntityConfiguration : IEntityTypeConfiguration<Server.Entities.CharacterItem>
 {
-    public void Configure(EntityTypeBuilder<Server.Entities.PlayerItem> entity)
+    public void Configure(EntityTypeBuilder<Server.Entities.CharacterItem> entity)
     {
         entity.ToTable("PlayerItem");
 

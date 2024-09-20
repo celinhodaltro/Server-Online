@@ -1,14 +1,14 @@
 ﻿@page "/User/Character/Create"
-@using Game.Common.Creatures.Players
+@using Server.Entities
 @inject CharacterService CharacterService
 @inject AuthService AuthService
 
 
 <MudText Typo="Typo.h3">Create you character</MudText>
-<EditForm Model="@Player" OnValidSubmit="CreateCharacter">
+<EditForm Model="@Character" OnValidSubmit="CreateCharacter">
     <div class="form-group mt-2">
         <MudTextField T="string"
-                      @bind-Value="@Player.Name"
+                      @bind-Value="@Character.Name"
                       Variant="Variant.Outlined"
                       ShrinkLabel="true"
                       InputType="InputType.Text"
@@ -18,7 +18,7 @@
     </div>
 
     <div class="form-group mt-2">
-        <MudSelect T="Gender" @bind-Value="@Player.Gender" Label="Gender" Required="true">
+        <MudSelect T="Gender" @bind-Value="@Character.Gender" Label="Gender" Required="true">
             <MudSelectItem T="Gender" Value="@Gender.Male">Male</MudSelectItem>
             <MudSelectItem T="Gender" Value="@Gender.Female">Female</MudSelectItem>
         </MudSelect>
@@ -34,10 +34,10 @@
 
 
 @code {
-    private Player? Player { get; set; }
+    private Character? Character { get; set; }
 
     private async Task CreateCharacter()
     {
-        await CharacterService.CreateCharacter(this.Player);
+        await CharacterService.CreateCharacter(this.Character);
     }
 }

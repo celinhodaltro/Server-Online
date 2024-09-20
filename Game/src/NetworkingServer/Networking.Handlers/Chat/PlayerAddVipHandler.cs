@@ -74,9 +74,9 @@ public class PlayerAddVipHandler : PacketHandler
         return vipPlayer;
     }
 
-    private async Task<Server.Entities.Player> GetPlayerRecord(AddVipPacket addVipPacket)
+    private async Task<Server.Entities.Character> GetPlayerRecord(AddVipPacket addVipPacket)
     {
-        Server.Entities.Player playerRecord = null;
+        Server.Entities.Character playerRecord = null;
 
         try
         {

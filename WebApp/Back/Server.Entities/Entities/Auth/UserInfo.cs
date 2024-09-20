@@ -12,7 +12,7 @@ namespace Server.Entities
         public uint? BannedBy { get; set; } = 0;
         public int UserId { get; set; } = 0;
 
-        public ICollection<Player>? Players { get; set; }
+        public ICollection<Character>? Players { get; set; }
         public ICollection<UserVipList>? VipList { get; set; }
 
 
