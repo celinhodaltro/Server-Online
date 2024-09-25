@@ -48,15 +48,8 @@ namespace Front.Services
 
         public async Task<List<Character>> GetCharacters(Guid UserUniqueId)
         {
-            try
-            {
-                var Characters = await ApiService.SendRequestAsync<Guid, List<Character>>("api/Character/GetByUserUniqueId", HttpMethod.Post, UserUniqueId);
-                return Characters;
-            }
-            catch
-            {
-                throw;
-            }
+            var Characters = await ApiService.SendRequestAsync<Guid, List<Character>>("api/Character/GetByUserUniqueId", HttpMethod.Post, UserUniqueId);
+            return Characters;
         }
 
     }
