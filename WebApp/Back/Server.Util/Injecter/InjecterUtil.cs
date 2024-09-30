@@ -4,6 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Server.BusinessRules;
 using System.Provider;
 using Front.Services;
+using Server.Providers;
 
 namespace Server.Util
 {
@@ -33,6 +34,8 @@ namespace Server.Util
         public static void InjecterProvider(IServiceCollection Services)
         {
             Services.AddScoped<DefaultProvider>();
+            Services.AddScoped<UserProvider>();
+            Services.AddScoped<CharacterProvider>();
         }
 
     }
