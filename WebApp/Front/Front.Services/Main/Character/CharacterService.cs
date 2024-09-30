@@ -16,22 +16,22 @@ namespace Front.Services
 
         public async Task CreateCharacter(Character? Character)
         {
-            var result = await ApiService.SendRequestAsync<Character, object>("api/Player", HttpMethod.Post, Character);
-            Console.WriteLine("Player created successfully");
+            var result = await ApiService.SendRequestAsync<Character, object>("api/Character", HttpMethod.Post, Character);
+            Console.WriteLine("Character created successfully");
         }
 
 
         
 
-        public async Task<List<Character>> GetCharacters(int UserId)
+        public async Task<List<Character>?> GetCharacters(int UserId)
         {
-            var Characters = await ApiService.SendRequestAsync<int, List<Character>>("api/Character/GetByUserId", HttpMethod.Post, UserId);
+            var Characters = await ApiService.SendRequestAsync<int, List<Character>>("api/Character/GetByUserId", HttpMethod.Get, UserId);
             return Characters;
         }
 
-        public async Task<List<Character>> GetCharacters(Guid UserUniqueId)
+        public async Task<List<Character>?> GetCharacters(Guid UserUniqueId)
         {
-            var Characters = await ApiService.SendRequestAsync<Guid, List<Character>>("api/Character/GetByUserUniqueId", HttpMethod.Post, UserUniqueId);
+            var Characters = await ApiService.SendRequestAsync<Guid, List<Character>>($"api/Character/User/{UserUniqueId}", HttpMethod.Get);
             return Characters;
         }
 
