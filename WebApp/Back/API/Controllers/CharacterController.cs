@@ -28,8 +28,8 @@ namespace API.Controllers
             return Response(await playerBusinessRules.GetById(playerId));
         }
 
-        [HttpPost]
-        public async Task<IActionResult> GetByUserUniqueId([FromBody] Guid userUniqueId)
+        [HttpGet("User/{userUniqueId}")]
+        public async Task<IActionResult> GetByUserUniqueId([FromRoute] Guid userUniqueId)
         {
             return Response(await playerBusinessRules.GetByUserUniqueId(userUniqueId));
         }
