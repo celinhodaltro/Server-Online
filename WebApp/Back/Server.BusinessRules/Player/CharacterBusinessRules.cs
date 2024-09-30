@@ -1,5 +1,6 @@
 ﻿using Server.Entities;
 using Server.Entities.Common.Characters;
+using Server.Providers;
 using System.Provider;
 
 namespace Server.BusinessRules
@@ -8,11 +9,11 @@ namespace Server.BusinessRules
     public class CharacterBusinessRules
     {
 
-        public DefaultProvider DefaultProvider { get; set; }
+        public CharacterProvider CharacterProvider { get; set; }
 
-        public CharacterBusinessRules(DefaultProvider defaultProvider)
+        public CharacterBusinessRules(CharacterProvider CharacterProvider)
         {
-            DefaultProvider = defaultProvider;
+            this.CharacterProvider = CharacterProvider;
         }
 
 
@@ -21,27 +22,25 @@ namespace Server.BusinessRules
 
         public async Task<IEnumerable<Character>> GetAll()
         {
-            var players = await DefaultProvider.GetAllAsync<Character>();
+            var players = await CharacterProvider.GetAllAsync<Character>();
             return players;
         }
 
         public async Task<Character> GetById(int Id)
         {
-            var player = await DefaultProvider.GetAsync<Character>(Id);
+            var player = await CharacterProvider.GetAsync<Character>(Id);
             return player;
         }
 
         public async Task<List<Character>> GetByUserUniqueId(Guid userUniqueId)
         {
-            var User = await DefaultProvider.GetAsync<User>(userUniqueId);
-            var Players = await DefaultProvider.GetAsync<List<Character>>(User.Id);
-
+            var Players = await CharacterProvider.GetCharacterByUserUniqueIdAsync(userUniqueId);
             return Players;
         }
 
         public async Task<Character?> GetPlayer(string playerName)
         {
-            var Players = await DefaultProvider.GetAllAsync<Character>();
+            var Players = await CharacterProvider.GetAllAsync<Character>();
 
             return Players.FirstOrDefault(x => x.Name.Equals(playerName));
         }
@@ -50,7 +49,7 @@ namespace Server.BusinessRules
         public async Task<Character?> GetPlayer(string accountName, string password, string charName)
         {
 
-            var Players = await DefaultProvider.GetAllAsync<Character>();
+            var Players = await CharacterProvider.GetAllAsync<Character>();
 
             return Players.FirstOrDefault(x => x.Account.Email.Equals(accountName) &&
                                                     x.Account.Password.Equals(password) &&
@@ -60,7 +59,7 @@ namespace Server.BusinessRules
 
         public async Task<Character?> GetOnlinePlayer(string accountName)
         {
-            var Players = await DefaultProvider.GetAllAsync<Character>();
+            var Players = await CharacterProvider.GetAllAsync<Character>();
 
             return Players.FirstOrDefault(x => x.Account.Email.Equals(accountName) && x.Online);
 
@@ -68,7 +67,7 @@ namespace Server.BusinessRules
 
         public async Task Create(Character player)
         {
-            await DefaultProvider.CreateAsync(new Character
+            var Character = await CharacterProvider.CreateAsync(new Character
             {
                 UserId = player.UserId,
                 Level = 8,
@@ -100,8 +99,9 @@ namespace Server.BusinessRules
 
             });
 
-            await DefaultProvider.CreateAsync(new CharacterSkill
+            await CharacterProvider.CreateAsync(new CharacterSkill
             {
+                CharacterId = Character.Id,
                 MagicLevel = 1,
                 SkillAxe = 10,
                 SkillDist = 10,
@@ -119,7 +119,7 @@ namespace Server.BusinessRules
 
         public async Task<IEnumerable<CharacterDepotItem>> GetPlayerDepotItems(uint id)
         {
-            var PlayersDepotItems = await DefaultProvider.GetAllAsync<CharacterDepotItem>();
+            var PlayersDepotItems = await CharacterProvider.GetAllAsync<CharacterDepotItem>();
             return PlayersDepotItems.Where(x => x.CharacterId == id);
         }
 

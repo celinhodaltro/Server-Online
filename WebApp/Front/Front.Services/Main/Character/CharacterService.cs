@@ -16,47 +16,23 @@ namespace Front.Services
 
         public async Task CreateCharacter(Character? Character)
         {
-            try
-            {
-                var result = await ApiService.SendRequestAsync<Character, object>("api/Player", HttpMethod.Post, Character);
-                Console.WriteLine("Player created successfully");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"Error: {ex.Message}");
-                throw;
-            }
+            var result = await ApiService.SendRequestAsync<Character, object>("api/Character", HttpMethod.Post, Character);
+            Console.WriteLine("Character created successfully");
         }
 
 
         
 
-        public async Task<List<Character>> GetCharacters(int UserId)
+        public async Task<List<Character>?> GetCharacters(int UserId)
         {
-            try
-            {
-                var Characters = await ApiService.SendRequestAsync<int, List<Character>>("api/Character/GetByUserId", HttpMethod.Post, UserId);
-                return Characters;
-
-            }
-            catch
-            {
-                throw;
-            }
-
+            var Characters = await ApiService.SendRequestAsync<int, List<Character>>("api/Character/GetByUserId", HttpMethod.Get, UserId);
+            return Characters;
         }
 
-        public async Task<List<Character>> GetCharacters(Guid UserUniqueId)
+        public async Task<List<Character>?> GetCharacters(Guid UserUniqueId)
         {
-            try
-            {
-                var Characters = await ApiService.SendRequestAsync<Guid, List<Character>>("api/Character/GetByUserUniqueId", HttpMethod.Post, UserUniqueId);
-                return Characters;
-            }
-            catch
-            {
-                throw;
-            }
+            var Characters = await ApiService.SendRequestAsync<Guid, List<Character>>($"api/Character/User/{UserUniqueId}", HttpMethod.Get);
+            return Characters;
         }
 
     }

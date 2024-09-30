@@ -12,12 +12,12 @@ namespace System.Provider
             _context = context;
         }
 
-        public async Task<T> GetAsync<T>(int id) where T : class
+        public async Task<T?> GetAsync<T>(int id) where T : class
         {
             return await _context.Set<T>().FindAsync(id);
         }
 
-        public async Task<T> GetAsync<T>(Guid UniqueId) where T : class
+        public async Task<T?> GetAsync<T>(Guid UniqueId) where T : class
         {
             return await _context.Set<T>().FindAsync(UniqueId);
         }

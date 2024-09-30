@@ -28,9 +28,7 @@ namespace Front.Services
         public async Task<UserToken> Login(User user)
         {
             var userToken = await ApiService.SendRequestAsync<User, UserToken>("api/User/Login", HttpMethod.Post, user);
-
             await AuthUserByToken(userToken, user?.Email);
-
             return userToken;
         }
 
@@ -38,7 +36,6 @@ namespace Front.Services
         {
             var userToken = await ApiService.SendRequestAsync<User, UserToken>("api/User/Register", HttpMethod.Post, user);
             await AuthUserByToken(userToken, user?.Email);
-
             return userToken;
         }
 
@@ -78,7 +75,7 @@ namespace Front.Services
             var savedToken = await LocalStorage.GetItemAsync<string>("authToken");
             var expirationToken = await LocalStorage.GetItemAsync<string>("tokenExpiration");
 
-            if(string.IsNullOrEmpty(savedToken)|| TokenExpired(expirationToken))
+            if (string.IsNullOrEmpty(savedToken) || TokenExpired(expirationToken))
             {
                 MarkUserAsLoggedOut();
                 return new AuthenticationState(new ClaimsPrincipal(new ClaimsIdentity()));
@@ -100,7 +97,7 @@ namespace Front.Services
             var authState = Task.FromResult(new AuthenticationState(authenticatedUser));
             NotifyAuthenticationStateChanged(authState);
         }
-        
+
         public void MarkUserAsLoggedOut()
         {
             var anonymousUser = new ClaimsPrincipal(new ClaimsIdentity());
@@ -114,7 +111,7 @@ namespace Front.Services
             DateTime dataNowUtc = DateTime.UtcNow;
             DateTime dateTokenExpiration = Convert.ToDateTime(dateToken).ToUniversalTime();
 
-            if(dateTokenExpiration < dataNowUtc)
+            if (dateTokenExpiration < dataNowUtc)
             {
                 return true;
             }
