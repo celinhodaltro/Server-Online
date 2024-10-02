@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Server.BusinessRules;
 using Server.Entities;
+using Server.Util;
+
 
 namespace API.Controllers
 {
@@ -31,7 +33,8 @@ namespace API.Controllers
         [HttpGet("User/{userUniqueId}")]
         public async Task<IActionResult> GetByUserUniqueId([FromRoute] Guid userUniqueId)
         {
-            return Response(await playerBusinessRules.GetByUserUniqueId(userUniqueId));
+            var characters = await playerBusinessRules.GetByUserUniqueId(userUniqueId);
+            return Ok(characters);
         }
 
         [HttpPost]
