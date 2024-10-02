@@ -1,8 +1,8 @@
-﻿using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.Items;
-using Game.Common.Contracts.Items.Types.Usable;
-using Game.Common.Contracts.Services;
-using Game.Common.Location;
+﻿using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Contracts.Items.Types.Usable;
+using Server.Entities.Common.Contracts.Services;
+using Server.Entities.Common.Location;
 using Networking.Packets.Incoming;
 using Server.Common.Contracts;
 using Server.Common.Contracts.Commands;
