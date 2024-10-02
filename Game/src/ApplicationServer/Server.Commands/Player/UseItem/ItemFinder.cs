@@ -1,8 +1,8 @@
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.Items;
-using Game.Common.Creatures.Players;
-using Game.Common.Location;
-using Game.Common.Location.Structs;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Creatures.Players;
+using Server.Entities.Common.Location;
+using Server.Entities.Common.Location.Structs;
 using Server.Common.Contracts;
 
 namespace Server.Commands.Player.UseItem;
