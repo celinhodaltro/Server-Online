@@ -63,7 +63,7 @@ namespace Server.Providers
             var User = Users.FirstOrDefault(u => u.UniqueId == userUniqueId);
 
             if (User == null)
-                throw new Exception("Error! Account not exist.");
+                return new List<Character>();
 
 
             return await _context.Characters
