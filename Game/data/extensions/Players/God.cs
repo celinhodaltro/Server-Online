@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using Game.Common.Combat.Structs;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.Items;
-using Game.Common.Contracts.World;
-using Game.Common.Contracts.World.Tiles;
-using Game.Common.Creatures;
-using Game.Common.Creatures.Players;
-using Game.Common.Location.Structs;
+using Server.Entities.Common.Characters;
+using Server.Entities.Common.Combat.Structs;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Contracts.World;
+using Server.Entities.Common.Contracts.World.Tiles;
+using Server.Entities.Common.Creatures;
+using Server.Entities.Common.Creatures.Players;
+using Server.Entities.Common.Location.Structs;
 
 namespace Extensions.Players;
 
