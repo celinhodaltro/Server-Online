@@ -119,7 +119,7 @@ Contribuições são bem-vindas! Para começar:
 
 ## License
 
-Este projeto está licenciado sob a MIT License - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+Este projeto está licenciado sob a MIT License - veja o arquivo [LICENSE](LICENSE) para mais detalhes.\
 *Dou total credito como base do projeto a este projeto do @caioavidal: https://github.com/caioavidal/OpenCoreMMO* (Juro que conforme eu for avançando com este projeto irei me dedicar a resolver issues la no projeto do Caio!)
 
 ---
