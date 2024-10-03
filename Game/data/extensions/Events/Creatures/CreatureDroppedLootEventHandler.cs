@@ -1,8 +1,8 @@
 ﻿using Extensions.Chat;
-using Game.Common.Contracts;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.Items;
-using Game.Common.Services;
+using Server.Entities.Common.Contracts;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Services;
 using Game.Creatures.Monster.Summon;
 
 namespace Extensions.Events.Creatures;
