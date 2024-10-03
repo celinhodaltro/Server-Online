@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Linq;
 using Game.Combat.Spells;
-using Game.Common;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.Items;
-using Game.Common.Contracts.Items.Types;
-using Game.Common.Creatures;
+using Server.Entities.Common;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Contracts.Items.Types;
+using Server.Entities.Common.Creatures;
 using Game.Items;
 using Networking.Packets.Outgoing;
 using Server.Common.Contracts;

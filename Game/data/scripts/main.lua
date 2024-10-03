@@ -1,7 +1,7 @@
-import('Game.Common')
-import('Game.Common', 'Game.Common.Chats')
-import('Game.Common','Game.Common.Texts')
-import('Game.Common','Game.Common.Location.Structs')
+import('Server.Entities')
+import('Server.Entities', 'Server.Entities.Common.Chats')
+import('Server.Entities','Server.Entities.Common.Texts')
+import('Server.Entities','Server.Entities.Common.Location.Structs')
 
 import('Server', 'Server.Tasks')
 

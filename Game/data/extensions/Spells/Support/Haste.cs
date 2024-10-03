@@ -1,5 +1,5 @@
 ﻿using Game.Combat.Spells;
-using Game.Common.Creatures;
+using Server.Entities.Common.Creatures;
 
 namespace Extensions.Spells.Support;
 

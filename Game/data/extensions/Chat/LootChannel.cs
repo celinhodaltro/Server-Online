@@ -1,6 +1,6 @@
 ﻿using Game.Chats;
 using Game.Chats.Rules;
-using Game.Common.Chats;
+using Server.Entities.Common.Chats;
 
 namespace Extensions.Chat;
 

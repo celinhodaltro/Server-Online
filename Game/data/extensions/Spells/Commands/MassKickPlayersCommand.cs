@@ -1,6 +1,6 @@
 ﻿using Game.Combat.Spells;
-using Game.Common;
-using Game.Common.Contracts.Creatures;
+using Server.Entities.Common;
+using Server.Entities.Common.Contracts.Creatures;
 using Server.Commands.Player;
 using Server.Common.Contracts;
 using Server.Helpers;
