@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using Game.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Creatures;
 
 namespace Server.Common.Contracts.Network;
 
