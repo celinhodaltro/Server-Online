@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Game.Common.Contracts.DataStores;
-using Game.Common.Item;
+using Server.Entities.Common.Contracts;
+using Server.Entities.Common.Item;
 using Server.Common.Contracts;
 using Serilog;
 
