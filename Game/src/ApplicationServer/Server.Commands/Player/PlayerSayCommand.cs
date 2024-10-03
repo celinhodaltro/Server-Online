@@ -1,7 +1,7 @@
 ﻿using System.Linq;
-using Game.Common.Chats;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.DataStores;
+using Server.Entities.Common.Chats;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts;
 using Networking.Packets.Incoming;
 using Networking.Packets.Outgoing;
 using Server.Common.Contracts;
