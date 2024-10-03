@@ -1,5 +1,5 @@
-﻿using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.Services;
+﻿using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Services;
 using Networking.Packets.Incoming;
 using Server.Commands.Movements;
 using Server.Commands.Movements.ToContainer;
