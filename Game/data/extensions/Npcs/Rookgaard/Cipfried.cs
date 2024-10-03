@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using Game.Common.Chats;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.World;
+using Server.Entities.Common.Chats;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.World;
 using Game.Creatures.Npcs;
 
 namespace Extensions.Npcs.Rookgaard;
