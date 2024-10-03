@@ -1,9 +1,9 @@
 ﻿using Game.Combat.Spells;
-using Game.Common;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.Services;
-using Game.Common.Contracts.World.Tiles;
-using Game.Common.Location;
+using Server.Entities.Common;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Services;
+using Server.Entities.Common.Contracts.World.Tiles;
+using Server.Entities.Common.Location;
 using Game.Creatures.Factories;
 using Game.World.Map;
 using Server.Helpers;

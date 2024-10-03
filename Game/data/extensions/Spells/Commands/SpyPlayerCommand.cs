@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Text;
 using Game.Combat.Spells;
-using Game.Common;
-using Game.Common.Contracts.Creatures;
+using Server.Entities.Common;
+using Server.Entities.Common.Contracts.Creatures;
 using Game.Items;
 using Server.Common.Contracts;
 using Server.Configurations;

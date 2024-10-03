@@ -1,9 +1,9 @@
 ﻿using Game.Combat.Spells;
-using Game.Common;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.World.Tiles;
-using Game.Common.Services;
-using Game.Common.Texts;
+using Server.Entities.Common;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.World.Tiles;
+using Server.Entities.Common.Services;
+using Server.Entities.Common.Texts;
 using Game.World.Map;
 
 namespace Extensions.Spells.Commands;
