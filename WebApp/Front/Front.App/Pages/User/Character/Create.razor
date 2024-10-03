@@ -4,7 +4,7 @@
 @inject AuthService AuthService
 
 
-<MudText Typo="Typo.h3">Create you character</MudText>
+<MudText Typo="Typo.h4">Create you character</MudText>
 <EditForm Model="@Character" OnValidSubmit="CreateCharacter">
     <div class="form-group mt-2">
         <MudTextField T="string"
@@ -19,8 +19,8 @@
 
     <div class="form-group mt-2">
         <MudSelect T="Gender" @bind-Value="@Character.Gender" Label="Gender" Required="true">
-            <MudSelectItem T="Gender" Value="@Gender.Male">Male</MudSelectItem>
-            <MudSelectItem T="Gender" Value="@Gender.Female">Female</MudSelectItem>
+            <MudSelectItem  Value="@((int)Gender.Male)">Male</MudSelectItem>
+            <MudSelectItem  Value="@((int)Gender.Female)">Female</MudSelectItem>
         </MudSelect>
     </div>
 
@@ -34,7 +34,7 @@
 
 
 @code {
-    private Character? Character { get; set; }
+    private Character? Character { get; set; } = new Character();
 
     private async Task CreateCharacter()
     {

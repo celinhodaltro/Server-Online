@@ -1,5 +1,5 @@
-﻿using Game.Common.Contracts.Creatures;
-using Game.Common.Location;
+﻿using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Location;
 using Networking.Packets.Incoming;
 
 namespace Server.Commands.Movements.ToInventory;

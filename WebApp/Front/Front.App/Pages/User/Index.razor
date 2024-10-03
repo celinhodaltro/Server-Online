@@ -2,9 +2,10 @@
 @inject CharacterService CharacterService
 @inject AuthService AuthService
 
-<MudText Typo="Typo.h3">Characters</MudText>
+@using Front.Pages.User.Character;
 
-<MudTable Items="Players" Dense="true" Hover="true">
+<MudText Typo="Typo.h3">Characters</MudText>
+<MudTable Items="Characters" Dense="true" Hover="true">
     <HeaderContent>
         <MudTh>Name</MudTh>
         <MudTh>Level</MudTh>
@@ -19,14 +20,14 @@
     </RowTemplate>
 </MudTable>
 
-
+<Create></Create>
 @code 
 {
-    private List<Server.Entities.Character>? Players;
+    private List<Server.Entities.Character>? Characters;
 
     protected override async Task OnInitializedAsync()
     {
         var UserId = await AuthService.GetUserId();
-        Players = await CharacterService.GetCharacters(UserId);
+        Characters = await CharacterService.GetCharacters(UserId);
     }
 }

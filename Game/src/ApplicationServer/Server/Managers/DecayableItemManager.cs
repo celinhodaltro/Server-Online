@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using Game.Common.Contracts.Items;
-using Game.Common.Contracts.Services;
+using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Contracts.Services;
 using Server.Common.Contracts;
 
 namespace Server.Managers;

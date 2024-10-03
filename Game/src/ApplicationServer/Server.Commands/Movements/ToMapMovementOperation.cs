@@ -1,7 +1,7 @@
-﻿using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.Services;
-using Game.Common.Creatures.Structs;
-using Game.Common.Location;
+﻿using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Services;
+using Server.Entities.Common.Creatures.Structs;
+using Server.Entities.Common.Location;
 using Networking.Packets.Incoming;
 
 namespace Server.Commands.Movements;

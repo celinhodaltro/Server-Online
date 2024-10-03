@@ -1,5 +1,5 @@
 ﻿using System.Diagnostics.CodeAnalysis;
-using Game.Common.Contracts.World;
+using Server.Entities.Common.Contracts.World;
 using Server.Common.Contracts;
 using Server.Common.Contracts.Tasks;
 using Server.Common.Enums;
