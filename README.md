@@ -1,9 +1,9 @@
 
 # Ursulla Project
 
-![License](https://img.shields.io/github/license/yourusername/ursulla) ![Issues](https://img.shields.io/github/issues/yourusername/ursulla)
+![License](https://img.shields.io/github/license/celinhodaltro/ursulla) ![Issues](https://img.shields.io/github/issues/celinhodaltro/ursulla)
 
-## Table of Contents
+## Conteudos
 
 - [Overview](#overview)
 - [Project Structure](#project-structure)
@@ -17,7 +17,7 @@
 
 **Ursulla** é um projeto de jogo e aplicação web que visa fornecer uma experiência integrada entre uma aplicação de jogo nativa e uma interface web moderna. O sistema foi projetado com uma arquitetura modular para garantir escalabilidade, facilidade de manutenção e suporte a novas funcionalidades.
 
-## Project Structure
+## Estrutura
 
 A estrutura do projeto é dividida em três principais módulos:
 
@@ -25,7 +25,7 @@ A estrutura do projeto é dividida em três principais módulos:
 - **Clients**: Contém as aplicações que interagem com os usuários, tanto o jogo quanto a aplicação web.
 - **Docs**: Documentação técnica e diagramas de arquitetura.
 
-### Diretórios
+### Arquitetura
 
 ```bash
 /Ursulla
@@ -48,31 +48,24 @@ A estrutura do projeto é dividida em três principais módulos:
     └── ReadMe.md                   # Documentação do projeto
 ```
 
-### Principais Arquivos
 
-- `Character.cs`, `Game.cs`, `User.cs`: Entidades que representam o domínio do jogo e do sistema.
-- `CharacterBusinessRules.cs`: Regras de negócios aplicadas a personagens.
-- `DefaultProvider.cs`, `CharacterProvider.cs`: Camada de persistência e gerenciamento de dados das entidades.
-- `GameApp.cpp`: Aplicação de jogo em C++.
-- `WebAppBlazor.csproj`: Projeto da aplicação web em Blazor.
-
-## Technologies Used
+## Tecnologias
 
 - **Backend**: ASP.NET Core, Entity Framework Core
 - **Frontend**: Blazor, MudBlazor
-- **Database**: SQL Server, SQLite
+- **Database**: MySql
 - **Game Client**: C++ (GameApp)
 - **Documentation**: Draw.io, Markdown
 
 ## Getting Started
 
-### Prerequisites
+### Requisitos
 
 - [.NET 8 SDK](https://dotnet.microsoft.com/download)
 - [C++ Compiler](https://gcc.gnu.org/)
 - [Node.js](https://nodejs.org/en/) (opcional, para ferramentas de desenvolvimento da WebApp)
 
-### Running the Application
+### Rodando o projeto:
 
 #### 1. Clonar o Repositório
 
@@ -112,7 +105,7 @@ dotnet run
 
 ## API Documentation
 
-A API oferece endpoints para gerenciar entidades como `Character`, `Game`, e `User`. Para acessar a documentação completa e exemplos de requisições, utilize o Swagger disponível na URL `/swagger` após o servidor estar em execução.
+A API oferece endpoints para gerenciar entidades como `Character` e `User`. Para acessar a documentação completa e exemplos de requisições, utilize o Swagger disponível na URL `/swagger` após o servidor estar em execução.
 
 ## Contributing
 
@@ -130,4 +123,5 @@ Este projeto está licenciado sob a MIT License - veja o arquivo [LICENSE](LICEN
 
 ---
 
-*Projetado com ❤️ por [Seu Nome](https://github.com/seunome).*
+*Projetado com ❤️ por [João Marcelo Daltro Marques](https://github.com/celinhodaltro).*
+*Dou total credito como base do projeto a este projeto do @caioavidal: https://github.com/caioavidal/OpenCoreMMO
