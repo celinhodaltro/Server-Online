@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Linq;
-using Game.Common.Chats;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Helpers;
+using Server.Entities.Common.Chats;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Helpers;
 using Game.Creatures.Sound.Rules;
 
 namespace Game.Creatures.Sound;
