@@ -1,11 +1,11 @@
-﻿using Game.Common.Contracts;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.Items;
-using Game.Common.Contracts.Services;
-using Game.Common.Location;
-using Game.Common.Results;
-using Game.Common.Services;
-using Game.Common.Texts;
+﻿using Server.Entities.Common.Contracts;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Contracts.Services;
+using Server.Entities.Common.Location;
+using Server.Entities.Common.Results;
+using Server.Entities.Common.Services;
+using Server.Entities.Common.Texts;
 
 namespace Game.Creatures.Services;
 

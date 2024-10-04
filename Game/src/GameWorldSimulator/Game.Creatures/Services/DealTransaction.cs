@@ -1,13 +1,13 @@
 ﻿using System.Collections.Generic;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.DataStores;
-using Game.Common.Contracts.Items;
-using Game.Common.Contracts.Items.Types;
-using Game.Common.Contracts.Services;
-using Game.Common.Creatures;
-using Game.Common.Creatures.Players;
-using Game.Common.Item;
-using Game.Common.Location.Structs;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts;
+using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Contracts.Items.Types;
+using Server.Entities.Common.Contracts.Services;
+using Server.Entities.Common.Creatures;
+using Server.Entities.Common.Creatures.Players;
+using Server.Entities.Common.Item;
+using Server.Entities.Common.Location.Structs;
 
 namespace Game.Creatures.Services;
 
