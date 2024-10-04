@@ -1,4 +1,4 @@
-﻿using Game.Common.Helpers;
+﻿using Server.Entities.Common.Helpers;
 using Game.Systems.SafeTrade;
 using Game.Systems.SafeTrade.Request;
 using Networking.Packets.Outgoing;
