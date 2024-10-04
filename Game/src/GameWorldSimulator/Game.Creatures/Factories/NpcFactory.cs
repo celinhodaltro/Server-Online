@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Linq;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.DataStores;
-using Game.Common.Contracts.Items;
-using Game.Common.Contracts.World;
-using Game.Common.Creatures;
-using Game.Common.Helpers;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts;
+using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Contracts.World;
+using Server.Entities.Common.Creatures;
+using Server.Entities.Common.Helpers;
 using Game.Creatures.Npcs;
 using Game.Creatures.Npcs.Shop;
 using Game.Creatures.Player;
