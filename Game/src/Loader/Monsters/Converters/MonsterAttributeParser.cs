@@ -1,4 +1,4 @@
-﻿using Game.Common.Creatures;
+﻿using Server.Entities.Common.Creatures;
 
 namespace Loader.Monsters.Converters;
 

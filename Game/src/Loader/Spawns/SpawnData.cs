@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using Game.Common.Location;
+using Server.Entities.Common.Location;
 using Loader.Helpers;
 using Newtonsoft.Json;
 

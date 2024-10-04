@@ -1,6 +1,6 @@
 ﻿using Data.InMemory;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.World;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.World;
 using Loader.Interfaces;
 
 namespace Loader.Configurations;

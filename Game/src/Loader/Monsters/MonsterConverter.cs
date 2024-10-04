@@ -2,11 +2,11 @@
 using System.Collections.Immutable;
 using System.Linq;
 using Game.Combat.Attacks;
-using Game.Common;
-using Game.Common.Chats;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.DataStores;
-using Game.Common.Creatures;
+using Server.Entities.Common;
+using Server.Entities.Common.Chats;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts;
+using Server.Entities.Common.Creatures;
 using Game.Creatures.Monster;
 using Game.Creatures.Monster.Combat;
 using Loader.Monsters.Converters;

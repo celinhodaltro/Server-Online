@@ -1,5 +1,5 @@
-using Game.Common.Contracts.Items;
-using Game.Common.Item.Structs;
+using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Item.Structs;
 using Game.Items;
 using Loader.OTB.Structure;
 

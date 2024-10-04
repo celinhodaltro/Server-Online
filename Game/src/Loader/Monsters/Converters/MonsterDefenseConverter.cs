@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using Game.Combat.Defenses;
-using Game.Common.Contracts.Combat;
-using Game.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Combat;
+using Server.Entities.Common.Contracts.Creatures;
 using Server.Helpers.Extensions;
 using Newtonsoft.Json.Linq;
 

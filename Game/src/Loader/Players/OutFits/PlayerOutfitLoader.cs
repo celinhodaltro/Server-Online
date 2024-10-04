@@ -1,12 +1,13 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using Game.Common.Contracts.DataStores;
-using Game.Common.Creatures.Players;
+using Server.Entities.Common.Contracts;
+using Server.Entities.Common.Creatures.Players;
 using Loader.Interfaces;
 using Server.Configurations;
 using Newtonsoft.Json;
 using Serilog;
+using Server.Entities.Common.Characters;
 
 namespace Loader.Players.OutFits;
 

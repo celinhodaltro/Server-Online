@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
-using Game.Common.Location;
-using Game.Common.Location.Structs;
+using Server.Entities.Common.Location;
+using Server.Entities.Common.Location.Structs;
 using Loader.OTB.Enums;
 using Loader.OTB.Parsers;
 using Loader.OTB.Structure;

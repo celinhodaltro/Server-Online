@@ -1,4 +1,4 @@
-using Game.Common.Location.Structs;
+using Server.Entities.Common.Location.Structs;
 using Loader.OTB.Parsers;
 using Loader.OTB.Structure;
 

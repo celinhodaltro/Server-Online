@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
-using Game.Common.Contracts.Items;
-using Game.Common.Item;
+using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Item;
 using Game.Items;
 using Loader.OTB.Parsers;
 using Newtonsoft.Json.Linq;

@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using Game.Common.Location.Structs;
+using Server.Entities.Common.Location.Structs;
 using Loader.OTB.Parsers;
 using Loader.OTBM.Enums;
 
