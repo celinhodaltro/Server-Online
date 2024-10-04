@@ -1,5 +1,5 @@
-﻿using Game.Common.Creatures;
-using Game.Common.Parsers;
+﻿using Server.Entities.Common.Creatures;
+using Server.Entities.Common.Parsers;
 using Networking.Packets.Outgoing;
 using Server.Common.Contracts;
 using Server.Common.Contracts.Network;

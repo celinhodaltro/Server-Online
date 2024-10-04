@@ -1,7 +1,7 @@
 ﻿using Data.InMemory;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.Items.Types;
-using Game.Common.Helpers;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Items.Types;
+using Server.Entities.Common.Helpers;
 using Networking.Packets.Outgoing.Window;
 using Server.Common.Contracts;
 

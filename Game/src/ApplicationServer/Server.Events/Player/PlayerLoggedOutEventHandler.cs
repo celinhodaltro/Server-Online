@@ -1,5 +1,5 @@
 ﻿using Data.Interfaces;
-using Game.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Creatures;
 using Game.Systems.Depot;
 using Server.Common.Contracts;
 
