@@ -1,6 +1,6 @@
 ﻿// using System.Collections.Generic;
 // using System.Collections.Immutable;
-// using Game.Common.Contracts.Creatures;
+// using Server.Entities.Common.Contracts.Creatures;
 //
 // namespace Game.Creatures.Vocations
 // {
