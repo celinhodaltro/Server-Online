@@ -1,9 +1,9 @@
 ﻿using System;
 using Game.Combat.Conditions;
-using Game.Common.Combat.Structs;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Creatures;
-using Game.Common.Helpers;
+using Server.Entities.Common.Combat.Structs;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Creatures;
+using Server.Entities.Common.Helpers;
 
 namespace Game.Combat.Attacks;
 

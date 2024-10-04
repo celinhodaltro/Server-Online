@@ -1,8 +1,8 @@
-﻿using Game.Common.Combat.Structs;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Helpers;
-using Game.Common.Item;
-using Game.Common.Location.Structs;
+﻿using Server.Entities.Common.Combat.Structs;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Helpers;
+using Server.Entities.Common.Item;
+using Server.Entities.Common.Location.Structs;
 
 namespace Game.Combat.Attacks;
 
