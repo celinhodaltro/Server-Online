@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.DataStores;
-using Game.Common.Creatures.Players;
+using Server.Entities.Common.Characters;
+using Server.Entities.Common.Contracts;
+using Server.Entities.Common.Contracts.Creatures;
+
 
 namespace Data.InMemory;
 

@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Reflection;
-using Game.Common.Contracts.DataStores;
-using Game.Common.Location;
+using Server.Entities.Common.Contracts;
+using Server.Entities.Common.Location;
 
 namespace Data.InMemory;
 

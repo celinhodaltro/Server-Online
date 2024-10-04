@@ -1,5 +1,5 @@
-﻿using Game.Common.Contracts.DataStores;
-using Game.Common.Contracts.Items;
+﻿using Server.Entities.Common.Contracts;
+using Server.Entities.Common.Contracts.Items;
 
 namespace Data.InMemory;
 

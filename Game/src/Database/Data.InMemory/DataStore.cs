@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Game.Common.Contracts.DataStores;
+using Server.Entities.Common.Contracts;
 
 namespace Data.InMemory;
 

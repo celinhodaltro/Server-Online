@@ -6,11 +6,11 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\..\GameWorldSimulator\Game.Common\Game.Common.csproj" />
+        <Compile Remove="ItemIdMapStore.cs" />
     </ItemGroup>
 
     <ItemGroup>
-        <Compile Remove="ItemIdMapStore.cs" />
+      <ProjectReference Include="..\..\..\..\WebApp\Back\Server.Entities\Server.Entities.csproj" />
     </ItemGroup>
 
 </Project>
