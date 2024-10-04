@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Game.Common;
-using Game.Common.Contracts.Chats;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Helpers;
-using Game.Common.Results;
+using Server.Entities.Common;
+using Server.Entities.Common.Contracts.Chats;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Helpers;
+using Server.Entities.Common.Results;
 
 namespace Game.Creatures.Party;
 
