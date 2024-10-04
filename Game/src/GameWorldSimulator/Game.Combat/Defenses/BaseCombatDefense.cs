@@ -1,5 +1,5 @@
-﻿using Game.Common.Contracts.Combat;
-using Game.Common.Contracts.Creatures;
+﻿using Server.Entities.Common.Contracts.Combat;
+using Server.Entities.Common.Contracts.Creatures;
 
 namespace Game.Combat.Defenses;
 
