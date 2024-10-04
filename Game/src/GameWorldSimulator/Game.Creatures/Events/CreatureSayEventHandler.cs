@@ -1,7 +1,7 @@
-﻿using Game.Common.Chats;
-using Game.Common.Contracts;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.World;
+﻿using Server.Entities.Common.Chats;
+using Server.Entities.Common.Contracts;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.World;
 using Game.Creatures.Sound;
 
 namespace Game.Creatures.Events;

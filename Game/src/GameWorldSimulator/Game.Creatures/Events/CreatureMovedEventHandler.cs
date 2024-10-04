@@ -1,7 +1,7 @@
-﻿using Game.Common.Contracts;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.World;
-using Game.Common.Location.Structs;
+﻿using Server.Entities.Common.Contracts;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.World;
+using Server.Entities.Common.Location.Structs;
 
 namespace Game.Creatures.Events;
 
