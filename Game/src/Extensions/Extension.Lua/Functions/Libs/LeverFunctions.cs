@@ -1,7 +1,7 @@
 ﻿using System;
-using Game.Common.Contracts.Items;
-using Game.Common.Contracts.World;
-using Game.Common.Item;
+using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Contracts.World;
+using Server.Entities.Common.Item;
 using Game.Items.Factories;
 using Game.World.Models.Tiles;
 using Server.Helpers;
