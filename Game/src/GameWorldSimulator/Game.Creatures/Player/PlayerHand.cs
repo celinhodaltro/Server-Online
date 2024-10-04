@@ -1,13 +1,13 @@
 ﻿using System;
-using Game.Common;
-using Game.Common.Contracts;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.Creatures.Players;
-using Game.Common.Contracts.Items;
-using Game.Common.Contracts.Items.Types;
-using Game.Common.Contracts.Items.Types.Containers;
-using Game.Common.Contracts.World.Tiles;
-using Game.Common.Results;
+using Server.Entities.Common;
+using Server.Entities.Common.Contracts;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Creatures.Players;
+using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Contracts.Items.Types;
+using Server.Entities.Common.Contracts.Items.Types.Containers;
+using Server.Entities.Common.Contracts.World.Tiles;
+using Server.Entities.Common.Results;
 
 namespace Game.Creatures.Player;
 

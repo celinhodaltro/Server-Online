@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.Creatures.Players;
-using Game.Common.Creatures.Players;
-using Game.Common.Helpers;
-using Game.Common.Services;
-using Game.Common.Texts;
+using Server.Entities.Common.Creatures.Players;
+using Server.Entities.Common.Helpers;
+using Server.Entities.Common.Services;
+using Server.Entities.Common.Texts;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Creatures.Players;
 
 namespace Game.Creatures.Player;
 

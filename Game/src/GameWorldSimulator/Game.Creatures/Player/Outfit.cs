@@ -1,5 +1,6 @@
-using Game.Common.Contracts.Creatures;
-using Game.Common.Creatures.Players;
+using Server.Entities.Common.Characters;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Creatures.Players;
 
 namespace Game.Creatures.Player;
 

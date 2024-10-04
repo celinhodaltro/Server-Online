@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Game.Common;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.Creatures.Players;
-using Game.Common.Results;
-using Game.Common.Services;
-using Game.Common.Texts;
+using Server.Entities.Common;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Creatures.Players;
+using Server.Entities.Common.Results;
+using Server.Entities.Common.Services;
+using Server.Entities.Common.Texts;
 
 namespace Game.Creatures.Player;
 
