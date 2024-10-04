@@ -12,7 +12,6 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\..\GameWorldSimulator\Game.Common\Game.Common.csproj" />
         <ProjectReference Include="..\..\GameWorldSimulator\Game.Items\Game.Items.csproj" />
         <ProjectReference Include="..\..\ApplicationServer\Server.Helpers\Server.Helpers.csproj" />
         <ProjectReference Include="..\..\ApplicationServer\Server\Server.csproj" />
