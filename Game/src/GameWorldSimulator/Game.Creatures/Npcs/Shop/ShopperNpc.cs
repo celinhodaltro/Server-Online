@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Game.Common.Chats;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.Items;
-using Game.Common.Contracts.World;
-using Game.Common.Creatures.Players;
-using Game.Common.Item;
-using Game.Common.Location.Structs;
+using Server.Entities.Common.Chats;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Contracts.World;
+using Server.Entities.Common.Creatures.Players;
+using Server.Entities.Common.Item;
+using Server.Entities.Common.Location.Structs;
 
 namespace Game.Creatures.Npcs.Shop;
 
