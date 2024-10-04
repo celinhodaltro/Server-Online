@@ -1,5 +1,5 @@
-﻿using Game.Common.Contracts.Chats;
-using Game.Common.Contracts.Creatures;
+﻿using Server.Entities.Common.Contracts.Chats;
+using Server.Entities.Common.Contracts.Creatures;
 
 namespace Game.Chats;
 

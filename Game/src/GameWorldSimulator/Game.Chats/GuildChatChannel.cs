@@ -1,7 +1,7 @@
-﻿using Game.Common.Chats;
-using Game.Common.Contracts.Chats;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Creatures.Guilds;
+﻿using Server.Entities.Common.Chats;
+using Server.Entities.Common.Contracts.Chats;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Creatures.Guilds;
 
 namespace Game.Chats;
 
@@ -34,10 +34,10 @@ public class GuildChatChannel : ChatChannel, IChatChannel
     {
         if (Guild.GetMemberLevel(player) is not { } guildMember) return SpeechType.ChannelYellowText;
 
-        return guildMember.Level switch
+        switch (guildMember.Level)
         {
-            GuildRank.Leader => SpeechType.ChannelOrangeText,
-            _ => SpeechType.ChannelYellowText
+            case GuildRank.Leader:  return SpeechType.ChannelOrangeText;
+            default: return SpeechType.ChannelYellowText;
         };
     }
 }

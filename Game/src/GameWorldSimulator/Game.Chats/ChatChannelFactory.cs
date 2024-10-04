@@ -2,12 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using Game.Chats.Rules;
-using Game.Common.Chats;
-using Game.Common.Contracts;
-using Game.Common.Contracts.Chats;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.DataStores;
-using Game.Common.Helpers;
+using Server.Entities.Common.Chats;
+using Server.Entities.Common.Contracts;
+using Server.Entities.Common.Contracts.Chats;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Helpers;
 
 namespace Game.Chats;
 
