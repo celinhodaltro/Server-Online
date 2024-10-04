@@ -1,5 +1,5 @@
 ﻿using System;
-using Game.Common.Contracts.Chats;
+using Server.Entities.Common.Contracts.Chats;
 using Server.Events.Chat;
 
 namespace Server.Events.Subscribers;

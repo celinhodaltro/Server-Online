@@ -1,4 +1,4 @@
-﻿using Game.Common.Contracts.Creatures;
+﻿using Server.Entities.Common.Contracts.Creatures;
 using Server.Events.Combat;
 using Server.Events.Creature;
 using Server.Events.Creature.Monsters;
