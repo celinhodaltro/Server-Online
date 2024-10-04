@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using Game.Common.Contracts.Chats;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Creatures.Guilds;
+using Server.Entities.Common.Contracts.Chats;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Creatures.Guilds;
 
 namespace Game.Creatures.Guild;
 
