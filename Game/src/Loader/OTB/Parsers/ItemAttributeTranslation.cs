@@ -1,4 +1,4 @@
-﻿using Game.Common.Item;
+﻿using Server.Entities.Common.Item;
 
 namespace Loader.OTB.Parsers;
 

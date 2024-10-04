@@ -1,4 +1,4 @@
-﻿using Game.Common.Location;
+﻿using Server.Entities.Common.Location;
 using Server.Common.Contracts;
 using Server.Common.Contracts.Network;
 using Server.Common.Contracts.Network.Enums;

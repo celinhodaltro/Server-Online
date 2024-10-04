@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using Game.Common.Combat.Structs;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.Items;
-using Game.Common.Contracts.Items.Types.Runes;
-using Game.Common.Contracts.World.Tiles;
-using Game.Common.Creatures;
-using Game.Common.Effects.Magical;
-using Game.Common.Helpers;
-using Game.Common.Item;
-using Game.Common.Location.Structs;
+using Server.Entities.Common.Combat.Structs;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Contracts.Items.Types.Runes;
+using Server.Entities.Common.Contracts.World.Tiles;
+using Server.Entities.Common.Creatures;
+using Server.Entities.Common.Effects.Magical;
+using Server.Entities.Common.Helpers;
+using Server.Entities.Common.Item;
+using Server.Entities.Common.Location.Structs;
 
 namespace Game.Items.Items.UsableItems.Runes;
 

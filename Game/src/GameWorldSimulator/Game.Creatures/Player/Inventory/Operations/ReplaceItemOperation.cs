@@ -1,4 +1,4 @@
-﻿using Game.Common.Contracts.Items;
+﻿using Server.Entities.Common.Contracts.Items;
 
 namespace Game.Creatures.Player.Inventory.Operations;
 

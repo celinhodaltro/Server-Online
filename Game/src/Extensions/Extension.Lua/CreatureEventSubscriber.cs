@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
-using Game.Common.Contracts;
-using Game.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts;
+using Server.Entities.Common.Contracts.Creatures;
 using Server.Configurations;
 
 namespace Extension.Lua;

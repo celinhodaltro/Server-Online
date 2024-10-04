@@ -1,5 +1,5 @@
-﻿using Game.Common.Contracts.Items;
-using Game.Common.Contracts.Services;
+﻿using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Contracts.Services;
 
 namespace Game.Items.Services;
 

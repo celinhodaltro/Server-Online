@@ -1,4 +1,4 @@
-﻿using Game.Common.Contracts.Items;
+﻿using Server.Entities.Common.Contracts.Items;
 using Game.Systems.SafeTrade.Request;
 
 namespace Game.Systems.SafeTrade.Trackers;

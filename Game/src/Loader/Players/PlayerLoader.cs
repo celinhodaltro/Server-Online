@@ -6,22 +6,22 @@ using Data.Entities;
 using Data.Parsers;
 using Game.Chats;
 using Game.Combat.Conditions;
-using Game.Common;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.DataStores;
-using Game.Common.Contracts.Items;
-using Game.Common.Contracts.Items.Types.Containers;
-using Game.Common.Contracts.World;
-using Game.Common.Contracts.World.Tiles;
-using Game.Common.Creatures;
-using Game.Common.Creatures.Players;
-using Game.Common.Helpers;
-using Game.Common.Item;
-using Game.Common.Location.Structs;
+using Server.Entities.Common;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Contracts.Items.Types.Containers;
+using Server.Entities.Common.Contracts.World;
+using Server.Entities.Common.Contracts.World.Tiles;
+using Server.Entities.Common.Creatures;
+using Server.Entities.Common.Creatures.Players;
+using Server.Entities.Common.Helpers;
+using Server.Entities.Common.Item;
+using Server.Entities.Common.Location.Structs;
 using Game.Creatures.Player;
 using Game.Creatures.Player.Inventory;
 using Loader.Interfaces;
 using Serilog;
+using Server.Entities.Common.Contracts;
 
 namespace Loader.Players;
 
@@ -188,39 +188,39 @@ public class PlayerLoader
         }
     }
 
-    protected Dictionary<SkillType, ISkill> ConvertToSkills(Server.Entities.Character playerRecord)
+    protected Dictionary<SkillType, ISkill> ConvertToSkills(Server.Entities.Character CharacterRecord)
     {
         return new Dictionary<SkillType, ISkill>
         {
-            [SkillType.Axe] = new Skill(SkillType.Axe, (ushort)playerRecord.SkillAxe, playerRecord.SkillAxeTries)
+            [SkillType.Axe] = new Skill(SkillType.Axe, (ushort)CharacterRecord.CharacterSkills.SkillAxe, CharacterRecord.CharacterSkills.SkillAxeTries)
                 { GetIncreaseRate = () => _gameConfiguration.SkillsRate["axe"] },
 
-            [SkillType.Club] = new Skill(SkillType.Club, (ushort)playerRecord.SkillClub, playerRecord.SkillClubTries)
+            [SkillType.Club] = new Skill(SkillType.Club, (ushort)CharacterRecord.CharacterSkills.SkillClub, CharacterRecord.CharacterSkills.SkillClubTries)
                 { GetIncreaseRate = () => _gameConfiguration.SkillsRate["club"] },
 
-            [SkillType.Distance] = new Skill(SkillType.Distance, (ushort)playerRecord.SkillDist,
-                    playerRecord.SkillDistTries)
+            [SkillType.Distance] = new Skill(SkillType.Distance, (ushort)CharacterRecord.CharacterSkills.SkillDist,
+                    CharacterRecord.CharacterSkills.SkillDistTries)
                 { GetIncreaseRate = () => _gameConfiguration.SkillsRate["distance"] },
 
-            [SkillType.Fishing] = new Skill(SkillType.Fishing, (ushort)playerRecord.SkillFishing,
-                    playerRecord.SkillFishingTries)
+            [SkillType.Fishing] = new Skill(SkillType.Fishing, (ushort)CharacterRecord.CharacterSkills.SkillFishing,
+                    CharacterRecord.CharacterSkills.SkillFishingTries)
                 { GetIncreaseRate = () => _gameConfiguration.SkillsRate["fishing"] },
 
-            [SkillType.Fist] = new Skill(SkillType.Fist, (ushort)playerRecord.SkillFist, playerRecord.SkillFistTries)
+            [SkillType.Fist] = new Skill(SkillType.Fist, (ushort)CharacterRecord.CharacterSkills.SkillFist, CharacterRecord.CharacterSkills.SkillFistTries)
                 { GetIncreaseRate = () => _gameConfiguration.SkillsRate["fist"] },
 
-            [SkillType.Shielding] = new Skill(SkillType.Shielding, (ushort)playerRecord.SkillShielding,
-                    playerRecord.SkillShieldingTries)
+            [SkillType.Shielding] = new Skill(SkillType.Shielding, (ushort)CharacterRecord.CharacterSkills.SkillShielding,
+                    CharacterRecord.CharacterSkills.SkillShieldingTries)
                 { GetIncreaseRate = () => _gameConfiguration.SkillsRate["shielding"] },
 
-            [SkillType.Level] = new Skill(SkillType.Level, playerRecord.Level, playerRecord.Experience),
+            [SkillType.Level] = new Skill(SkillType.Level, CharacterRecord.Level, CharacterRecord.Experience),
 
             [SkillType.Magic] =
-                new Skill(SkillType.Magic, (ushort)playerRecord.MagicLevel, playerRecord.MagicLevelTries)
+                new Skill(SkillType.Magic, (ushort)CharacterRecord.CharacterSkills.MagicLevel, CharacterRecord.CharacterSkills.MagicLevelTries)
                     { GetIncreaseRate = () => _gameConfiguration.SkillsRate["magic"] },
 
             [SkillType.Sword] =
-                new Skill(SkillType.Sword, (ushort)playerRecord.SkillSword, playerRecord.SkillSwordTries)
+                new Skill(SkillType.Sword, (ushort)CharacterRecord.CharacterSkills.SkillSword, CharacterRecord.CharacterSkills.SkillSwordTries)
                     { GetIncreaseRate = () => _gameConfiguration.SkillsRate["sword"] }
         };
     }
@@ -230,7 +230,7 @@ public class PlayerLoader
         var inventory = new Dictionary<Slot, (IItem Item, ushort Id)>();
         var attrs = new Dictionary<ItemAttribute, IConvertible> { { ItemAttribute.Count, 0 } };
 
-        foreach (var item in playerRecord.PlayerInventoryItems)
+        foreach (var item in playerRecord.CharacterInventoryItems)
         {
             attrs[ItemAttribute.Count] = (byte)item.Amount;
             var location = item.SlotId <= 10 ? Location.Inventory((Slot)item.SlotId) : Location.Container(0, 0);
@@ -244,7 +244,7 @@ public class PlayerLoader
             {
                 if (createdItem is not IContainer container) continue;
 
-                ItemEntityParser.BuildContainer(container, playerRecord.PlayerItems.ToList(), location, ItemFactory);
+                ItemEntityParser.BuildContainer(container, playerRecord.CharacterItems.ToList(), location, ItemFactory);
             }
 
             inventory.Add((Slot)item.SlotId, (createdItem, (ushort)item.ServerId));

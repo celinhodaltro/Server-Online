@@ -18,7 +18,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\Game.Common\Game.Common.csproj" />
+      <ProjectReference Include="..\..\..\..\WebApp\Back\Server.Entities\Server.Entities.csproj" />
     </ItemGroup>
 
 </Project>

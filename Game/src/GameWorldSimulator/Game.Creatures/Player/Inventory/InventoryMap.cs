@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
-using Game.Common.Contracts.Items;
-using Game.Common.Creatures.Players;
+using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Creatures.Players;
 
 namespace Game.Creatures.Player.Inventory;
 

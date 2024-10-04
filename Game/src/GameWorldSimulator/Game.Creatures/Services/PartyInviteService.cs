@@ -1,7 +1,7 @@
 ﻿using Game.Chats;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.Services;
-using Game.Common.Services;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Services;
+using Server.Entities.Common.Services;
 
 namespace Game.Creatures.Services;
 

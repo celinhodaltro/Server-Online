@@ -1,5 +1,5 @@
-﻿using Game.Common.Contracts.Items;
-using Game.Common.Contracts.Items.Types;
+﻿using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Contracts.Items.Types;
 
 namespace Game.Items.Items.Containers.Container.Calculations;
 

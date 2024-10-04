@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using Game.Common.Contracts.Items;
-using Game.Common.Helpers;
-using Game.Common.Item;
-using Game.Common.Location.Structs;
+using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Helpers;
+using Server.Entities.Common.Item;
+using Server.Entities.Common.Location.Structs;
 
 namespace Game.Items.Factories;
 

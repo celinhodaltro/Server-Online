@@ -1,6 +1,6 @@
 ﻿using Data.InMemory;
-using Game.Common.Contracts.DataStores;
-using Game.Common.Contracts.Services;
+using Server.Entities.Common.Contracts;
+using Server.Entities.Common.Contracts.Services;
 using Networking.Packets.Incoming.Shop;
 using Server.Common.Contracts;
 using Server.Common.Contracts.Network;

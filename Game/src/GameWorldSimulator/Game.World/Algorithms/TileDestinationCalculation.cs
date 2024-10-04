@@ -1,10 +1,10 @@
 ﻿using System;
-using Game.Common.Contracts.Items;
-using Game.Common.Contracts.World;
-using Game.Common.Contracts.World.Tiles;
-using Game.Common.Item;
-using Game.Common.Location;
-using Game.Common.Location.Structs;
+using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Contracts.World;
+using Server.Entities.Common.Contracts.World.Tiles;
+using Server.Entities.Common.Item;
+using Server.Entities.Common.Location;
+using Server.Entities.Common.Location.Structs;
 
 namespace Game.World.Algorithms;
 

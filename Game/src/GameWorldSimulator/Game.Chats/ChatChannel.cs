@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Game.Chats.Rules;
-using Game.Common.Chats;
-using Game.Common.Contracts.Chats;
-using Game.Common.Contracts.Creatures;
+using Server.Entities.Common.Chats;
+using Server.Entities.Common.Contracts.Chats;
+using Server.Entities.Common.Contracts.Creatures;
 
 namespace Game.Chats;
 

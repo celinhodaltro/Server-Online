@@ -1,8 +1,8 @@
 ﻿using System.Linq;
-using Game.Common.Combat.Structs;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Effects.Magical;
-using Game.Common.Item;
+using Server.Entities.Common.Combat.Structs;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Effects.Magical;
+using Server.Entities.Common.Item;
 
 namespace Game.Combat.Attacks;
 

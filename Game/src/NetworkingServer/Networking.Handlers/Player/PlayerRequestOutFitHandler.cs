@@ -1,6 +1,6 @@
 ﻿using Data.Interfaces;
-using Game.Common.Contracts.DataStores;
-using Game.Common.Helpers;
+using Server.Entities.Common.Contracts;
+using Server.Entities.Common.Helpers;
 using Networking.Packets.Outgoing.Player;
 using Server.Common.Contracts;
 using Server.Common.Contracts.Network;

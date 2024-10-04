@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.Items;
-using Game.Common.Contracts.Items.Types.Body;
-using Game.Common.Helpers;
-using Game.Common.Item;
-using Game.Common.Location.Structs;
-using Game.Common.Parsers;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Contracts.Items.Types.Body;
+using Server.Entities.Common.Helpers;
+using Server.Entities.Common.Item;
+using Server.Entities.Common.Location.Structs;
+using Server.Entities.Common.Parsers;
 using Game.Items.Bases;
 
 namespace Game.Items.Items.Weapons;

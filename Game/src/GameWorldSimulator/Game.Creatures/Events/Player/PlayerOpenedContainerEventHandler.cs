@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using Game.Common.Contracts;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.Items;
-using Game.Common.Contracts.Items.Types.Containers;
-using Game.Common.Item;
+using Server.Entities.Common.Contracts;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Contracts.Items.Types.Containers;
+using Server.Entities.Common.Item;
 
 namespace Game.Creatures.Events.Player;
 

@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
-using Game.Common;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.Items;
-using Game.Common.Contracts.Items.Types.Runes;
-using Game.Common.Creatures.Structs;
-using Game.Common.Item;
-using Game.Common.Location.Structs;
+using Server.Entities.Common;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Contracts.Items.Types.Runes;
+using Server.Entities.Common.Creatures.Structs;
+using Server.Entities.Common.Item;
+using Server.Entities.Common.Location.Structs;
 using Game.Items.Items.Cumulatives;
 
 namespace Game.Items.Items.UsableItems.Runes;

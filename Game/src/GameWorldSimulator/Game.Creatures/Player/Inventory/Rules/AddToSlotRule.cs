@@ -1,11 +1,11 @@
 ﻿using System;
-using Game.Common;
-using Game.Common.Contracts.Items;
-using Game.Common.Contracts.Items.Types;
-using Game.Common.Contracts.Items.Types.Body;
-using Game.Common.Creatures.Players;
-using Game.Common.Helpers;
-using Game.Common.Results;
+using Server.Entities.Common;
+using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Contracts.Items.Types;
+using Server.Entities.Common.Contracts.Items.Types.Body;
+using Server.Entities.Common.Creatures.Players;
+using Server.Entities.Common.Helpers;
+using Server.Entities.Common.Results;
 
 namespace Game.Creatures.Player.Inventory.Rules;
 

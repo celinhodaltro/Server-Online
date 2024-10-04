@@ -1,5 +1,5 @@
-﻿using Game.Common.Contracts.Items.Types.Body;
-using Game.Common.Creatures.Players;
+﻿using Server.Entities.Common.Contracts.Items.Types.Body;
+using Server.Entities.Common.Creatures.Players;
 
 namespace Game.Creatures.Player.Inventory.Calculations;
 

@@ -1,6 +1,6 @@
 ﻿using System.Linq;
-using Game.Common.Contracts.Items;
-using Game.Common.Contracts.Items.Types;
+using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Contracts.Items.Types;
 using Game.Items.Items.Attributes;
 
 namespace Game.Items.Factories.AttributeFactory;

@@ -1,7 +1,7 @@
 ﻿using System;
-using Game.Common.Combat.Structs;
-using Game.Common.Helpers;
-using Game.Common.Parsers;
+using Server.Entities.Common.Combat.Structs;
+using Server.Entities.Common.Helpers;
+using Server.Entities.Common.Parsers;
 
 namespace Game.Creatures.Monster.Actions;
 

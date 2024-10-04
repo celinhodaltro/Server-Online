@@ -1,6 +1,6 @@
 ﻿using System;
-using Game.Common.Contracts.World;
-using Game.Common.Location.Structs;
+using Server.Entities.Common.Contracts.World;
+using Server.Entities.Common.Location.Structs;
 using Game.World.Algorithms;
 
 namespace Game.World.Services;

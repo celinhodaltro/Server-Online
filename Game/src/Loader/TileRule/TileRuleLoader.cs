@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.World;
-using Game.Common.Contracts.World.Tiles;
-using Game.Common.Location.Structs;
-using Game.Common.Services;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.World;
+using Server.Entities.Common.Contracts.World.Tiles;
+using Server.Entities.Common.Location.Structs;
+using Server.Entities.Common.Services;
 using Loader.Interfaces;
 using Server.Configurations;
 using Server.Helpers.Extensions;

@@ -1,7 +1,7 @@
 ﻿using System.Linq;
-using Game.Common.Combat.Structs;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Effects.Magical;
+using Server.Entities.Common.Combat.Structs;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Effects.Magical;
 
 namespace Game.Combat.Attacks;
 

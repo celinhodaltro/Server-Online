@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Game.Common.Helpers;
+using Server.Entities.Common.Helpers;
 using Server.Attributes;
 
 namespace Loader;

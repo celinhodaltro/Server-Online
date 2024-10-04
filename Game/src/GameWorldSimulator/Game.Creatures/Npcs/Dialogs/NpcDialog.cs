@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Game.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Creatures;
 
 namespace Game.Creatures.Npcs.Dialogs;
 

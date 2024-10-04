@@ -1,13 +1,13 @@
 ﻿using System;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.Inspection;
-using Game.Common.Contracts.Items;
-using Game.Common.Contracts.Items.Types;
-using Game.Common.Contracts.Items.Types.Containers;
-using Game.Common.Contracts.World.Tiles;
-using Game.Common.Item;
-using Game.Common.Location;
-using Game.Common.Location.Structs;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Inspection;
+using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Contracts.Items.Types;
+using Server.Entities.Common.Contracts.Items.Types.Containers;
+using Server.Entities.Common.Contracts.World.Tiles;
+using Server.Entities.Common.Item;
+using Server.Entities.Common.Location;
+using Server.Entities.Common.Location.Structs;
 
 namespace Game.World.Models.Tiles;
 

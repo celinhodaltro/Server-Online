@@ -1,6 +1,6 @@
 ﻿using System;
-using Game.Common.Contracts.Items;
-using Game.Common.Item;
+using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Item;
 
 namespace Game.Items.Items.Attributes;
 

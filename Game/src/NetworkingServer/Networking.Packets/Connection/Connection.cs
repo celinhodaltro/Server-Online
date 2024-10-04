@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Net.Sockets;
-using Game.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Creatures;
 using Networking.Packets.Messages;
 using Networking.Packets.Outgoing.Login;
 using Networking.Packets.Security;

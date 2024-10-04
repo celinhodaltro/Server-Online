@@ -1,13 +1,13 @@
-﻿using Game.Common;
-using Game.Common.Chats;
-using Game.Common.Contracts;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.Items;
-using Game.Common.Contracts.Items.Types.Usable;
-using Game.Common.Contracts.World;
-using Game.Common.Contracts.World.Tiles;
-using Game.Common.Location;
-using Game.Common.Results;
+﻿using Server.Entities.Common;
+using Server.Entities.Common.Chats;
+using Server.Entities.Common.Contracts;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Contracts.Items.Types.Usable;
+using Server.Entities.Common.Contracts.World;
+using Server.Entities.Common.Contracts.World.Tiles;
+using Server.Entities.Common.Location;
+using Server.Entities.Common.Results;
 
 namespace Game.Items.Events;
 

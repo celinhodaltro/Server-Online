@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using Game.Common.Helpers;
+using Server.Entities.Common.Helpers;
 
 namespace Loader.OTB.DataStructures;
 

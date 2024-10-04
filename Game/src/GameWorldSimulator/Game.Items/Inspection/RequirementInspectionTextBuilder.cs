@@ -1,7 +1,7 @@
 ﻿using System.Text;
-using Game.Common.Contracts.DataStores;
-using Game.Common.Contracts.Items;
-using Game.Common.Helpers;
+using Server.Entities.Common.Contracts;
+using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Helpers;
 
 namespace Game.Items.Inspection;
 

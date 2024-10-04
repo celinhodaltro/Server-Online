@@ -2,9 +2,9 @@
 using System.Linq;
 using Data.Entities;
 using Game.Chats;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.DataStores;
-using Game.Common.Creatures.Guilds;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts;
+using Server.Entities.Common.Creatures.Guilds;
 using Game.Creatures.Guild;
 using Loader.Interfaces;
 using Serilog;

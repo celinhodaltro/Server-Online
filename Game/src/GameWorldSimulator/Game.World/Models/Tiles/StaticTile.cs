@@ -1,12 +1,13 @@
-﻿using System;
+﻿using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Contracts.Items.Types;
+using Server.Entities.Common.Contracts.World.Tiles;
+using Server.Entities.Common.Location.Structs;
+using Server.Entities.Common.Location.Structs.Helpers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.Items;
-using Game.Common.Contracts.Items.Types;
-using Game.Common.Contracts.World.Tiles;
-using Game.Common.Location.Structs;
-using Game.Common.Location.Structs.Helpers;
+
 
 namespace Game.World.Models.Tiles;
 

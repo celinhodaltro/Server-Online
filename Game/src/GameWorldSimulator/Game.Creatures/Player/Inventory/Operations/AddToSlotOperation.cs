@@ -1,8 +1,8 @@
-﻿using Game.Common.Contracts.Items;
-using Game.Common.Contracts.Items.Types;
-using Game.Common.Creatures.Players;
-using Game.Common.Location.Structs;
-using Game.Common.Results;
+﻿using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Contracts.Items.Types;
+using Server.Entities.Common.Creatures.Players;
+using Server.Entities.Common.Location.Structs;
+using Server.Entities.Common.Results;
 using Game.Creatures.Player.Inventory.Rules;
 
 namespace Game.Creatures.Player.Inventory.Operations;

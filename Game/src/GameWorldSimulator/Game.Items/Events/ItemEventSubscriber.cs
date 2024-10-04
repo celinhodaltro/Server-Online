@@ -1,7 +1,7 @@
-﻿using Game.Common.Contracts;
-using Game.Common.Contracts.Items;
-using Game.Common.Contracts.Items.Types.Runes;
-using Game.Common.Contracts.Items.Types.Usable;
+﻿using Server.Entities.Common.Contracts;
+using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Contracts.Items.Types.Runes;
+using Server.Entities.Common.Contracts.Items.Types.Usable;
 
 namespace Game.Items.Events;
 

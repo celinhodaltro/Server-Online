@@ -1,6 +1,6 @@
-﻿using Game.Common;
-using Game.Common.Contracts.Items.Types;
-using Game.Common.Results;
+﻿using Server.Entities.Common;
+using Server.Entities.Common.Contracts.Items.Types;
+using Server.Entities.Common.Results;
 using Game.Items.Items.Containers.Container.Operations.Add;
 
 namespace Game.Items.Items.Containers.Container.Operations.Update;

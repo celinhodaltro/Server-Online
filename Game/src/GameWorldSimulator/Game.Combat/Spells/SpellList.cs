@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using Game.Common.Contracts.Spells;
+using Server.Entities.Common.Contracts.Spells;
 
 namespace Game.Combat.Spells;
 

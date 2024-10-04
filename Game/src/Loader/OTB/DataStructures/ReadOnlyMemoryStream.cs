@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Buffers.Binary;
-using Game.Common.Helpers;
+using Server.Entities.Common.Helpers;
 
 namespace Loader.OTB.DataStructures;
 

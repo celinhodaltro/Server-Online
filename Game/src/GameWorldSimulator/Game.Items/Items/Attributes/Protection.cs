@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Game.Common.Combat.Structs;
-using Game.Common.Contracts.Items;
-using Game.Common.Contracts.Items.Types;
-using Game.Common.Item;
-using Game.Common.Parsers;
+using Server.Entities.Common.Combat.Structs;
+using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Contracts.Items.Types;
+using Server.Entities.Common.Item;
+using Server.Entities.Common.Parsers;
 
 namespace Game.Items.Items.Attributes;
 

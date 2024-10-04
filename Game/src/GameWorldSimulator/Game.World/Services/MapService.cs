@@ -1,8 +1,8 @@
-﻿using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.Items.Types;
-using Game.Common.Contracts.World;
-using Game.Common.Contracts.World.Tiles;
-using Game.Common.Location.Structs;
+﻿using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Items.Types;
+using Server.Entities.Common.Contracts.World;
+using Server.Entities.Common.Contracts.World.Tiles;
+using Server.Entities.Common.Location.Structs;
 using Game.World.Models.Tiles;
 
 namespace Game.World.Services;

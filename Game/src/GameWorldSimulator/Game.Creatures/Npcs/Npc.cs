@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Game.Common.Chats;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.World;
-using Game.Common.Contracts.World.Tiles;
-using Game.Common.Creatures;
-using Game.Common.Helpers;
-using Game.Common.Location.Structs;
+using Server.Entities.Common.Chats;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.World;
+using Server.Entities.Common.Contracts.World.Tiles;
+using Server.Entities.Common.Creatures;
+using Server.Entities.Common.Helpers;
+using Server.Entities.Common.Location.Structs;
 using Game.Creatures.Models.Bases;
 using Game.Creatures.Npcs.Dialogs;
 

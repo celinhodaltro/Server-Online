@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.DataStores;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts;
 using Game.Creatures.Monster.Loot;
 using static Loader.Monsters.MonsterData;
 

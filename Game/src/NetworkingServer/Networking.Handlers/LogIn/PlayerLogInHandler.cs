@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using Data.Entities;
 using Data.Interfaces;
-using Game.Common.Results;
+using Server.Entities.Common.Results;
 using Networking.Packets.Incoming;
 using Networking.Packets.Outgoing;
 using Server.BusinessRules;

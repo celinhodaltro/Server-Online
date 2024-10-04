@@ -1,8 +1,8 @@
-﻿using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.Items;
-using Game.Common.Contracts.World;
-using Game.Common.Helpers;
-using Game.Common.Services;
+﻿using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Contracts.World;
+using Server.Entities.Common.Helpers;
+using Server.Entities.Common.Services;
 using Game.Systems.SafeTrade.Trackers;
 using Game.World.Algorithms;
 

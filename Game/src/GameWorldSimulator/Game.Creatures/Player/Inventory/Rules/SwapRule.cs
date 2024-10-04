@@ -1,6 +1,6 @@
-﻿using Game.Common.Contracts.Items;
-using Game.Common.Contracts.Items.Types;
-using Game.Common.Creatures.Players;
+﻿using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Contracts.Items.Types;
+using Server.Entities.Common.Creatures.Players;
 
 namespace Game.Creatures.Player.Inventory.Rules;
 

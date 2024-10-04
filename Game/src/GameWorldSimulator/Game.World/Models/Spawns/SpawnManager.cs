@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.World;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.World;
 
 namespace Game.World.Models.Spawns;
 

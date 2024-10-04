@@ -1,9 +1,9 @@
 ﻿using System.Linq;
 using System.Reflection;
-using Game.Common.Contracts.DataStores;
-using Game.Common.Effects;
-using Game.Common.Helpers;
-using Game.Common.Location;
+using Server.Entities.Common.Contracts;
+using Server.Entities.Common.Effects;
+using Server.Entities.Common.Helpers;
+using Server.Entities.Common.Location;
 using Loader.Interfaces;
 
 namespace Loader.Effects;

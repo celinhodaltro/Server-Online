@@ -1,4 +1,4 @@
-﻿using Game.Common.Contracts.Creatures.Monsters;
+﻿using Server.Entities.Common.Contracts.Creatures.Monsters;
 
 namespace Game.Creatures.Monster.Summon;
 

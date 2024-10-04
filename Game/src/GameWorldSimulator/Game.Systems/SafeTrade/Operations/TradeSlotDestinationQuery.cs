@@ -1,6 +1,6 @@
-﻿using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.Items;
-using Game.Common.Creatures.Players;
+﻿using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Creatures.Players;
 
 namespace Game.Systems.SafeTrade.Operations;
 

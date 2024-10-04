@@ -1,5 +1,5 @@
-﻿using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.World;
+﻿using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.World;
 using Game.Creatures.Monster.Summon;
 using Serilog;
 

@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.DataStores;
-using Game.Common.Contracts.Items;
-using Game.Common.Contracts.Items.Types;
-using Game.Common.Contracts.Items.Types.Containers;
-using Game.Common.Contracts.Services;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts;
+using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Contracts.Items.Types;
+using Server.Entities.Common.Contracts.Items.Types.Containers;
+using Server.Entities.Common.Contracts.Services;
 
 namespace Game.Creatures.Services;
 

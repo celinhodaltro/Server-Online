@@ -1,8 +1,8 @@
 ﻿using Game.Combat.Spells;
-using Game.Common;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.Spells;
-using Game.Common.Creatures;
+using Server.Entities.Common;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Spells;
+using Server.Entities.Common.Creatures;
 
 namespace Game.Combat.Defenses;
 

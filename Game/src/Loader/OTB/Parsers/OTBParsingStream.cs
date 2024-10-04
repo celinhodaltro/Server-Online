@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Text;
-using Game.Common.Location.Structs;
+using Server.Entities.Common.Location.Structs;
 using Loader.OTB.DataStructures;
 using Loader.OTB.Enums;
 

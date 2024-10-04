@@ -1,6 +1,6 @@
 ﻿using System.Linq;
-using Game.Common.Creatures;
-using Game.Common.Helpers;
+using Server.Entities.Common.Creatures;
+using Server.Entities.Common.Helpers;
 
 namespace Game.Creatures.Monster.Actions;
 

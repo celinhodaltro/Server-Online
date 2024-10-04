@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Game.Common.Contracts;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.Items;
+using Server.Entities.Common.Contracts;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Items;
 using Game.Creatures.Experience;
 using Game.Creatures.Party;
 

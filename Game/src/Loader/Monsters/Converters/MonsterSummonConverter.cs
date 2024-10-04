@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Game.Common.Contracts.Creatures.Monsters;
+using Server.Entities.Common.Contracts.Creatures.Monsters;
 using Game.Creatures.Monster.Summon;
 
 namespace Loader.Monsters.Converters;

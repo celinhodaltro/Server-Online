@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Linq;
-using Game.Common.Contracts;
-using Game.Common.Contracts.Chats;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.DataStores;
-using Game.Common.Contracts.World;
+using Server.Entities.Common.Contracts;
+using Server.Entities.Common.Contracts.Chats;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.World;
 
 namespace Game.Creatures.Events.Player;
 

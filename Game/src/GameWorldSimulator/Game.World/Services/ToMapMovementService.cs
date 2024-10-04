@@ -1,11 +1,11 @@
-﻿using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.Services;
-using Game.Common.Contracts.World;
-using Game.Common.Contracts.World.Tiles;
-using Game.Common.Creatures.Structs;
-using Game.Common.Location;
-using Game.Common.Services;
-using Game.Common.Texts;
+﻿using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Services;
+using Server.Entities.Common.Contracts.World;
+using Server.Entities.Common.Contracts.World.Tiles;
+using Server.Entities.Common.Creatures.Structs;
+using Server.Entities.Common.Location;
+using Server.Entities.Common.Services;
+using Server.Entities.Common.Texts;
 using Game.World.Algorithms;
 using Game.World.Models.Tiles;
 

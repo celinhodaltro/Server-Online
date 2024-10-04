@@ -1,9 +1,9 @@
-﻿using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.Items;
-using Game.Common.Contracts.Items.Types;
-using Game.Common.Contracts.Items.Types.Containers;
-using Game.Common.Contracts.World;
-using Game.Common.Location.Structs;
+﻿using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Contracts.Items.Types;
+using Server.Entities.Common.Contracts.Items.Types.Containers;
+using Server.Entities.Common.Contracts.World;
+using Server.Entities.Common.Location.Structs;
 using Game.Systems.SafeTrade.Trackers;
 
 namespace Game.Systems.SafeTrade.Request;

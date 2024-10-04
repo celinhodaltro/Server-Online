@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using Game.Common.Contracts;
-using Game.Common.Contracts.Items;
-using Game.Common.Location.Structs;
+using Server.Entities.Common.Contracts;
+using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Location.Structs;
 using Game.Items.Items.Containers;
 using Game.Items.Items.Containers.Container;
 

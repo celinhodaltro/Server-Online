@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using Game.Common.Contracts.World;
-using Game.Common.Location.Structs;
+using Server.Entities.Common.Contracts.World;
+using Server.Entities.Common.Location.Structs;
 using Game.World.Models.Spawns;
 
 namespace Loader.Spawns;

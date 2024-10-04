@@ -1,8 +1,8 @@
-﻿using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.Items;
-using Game.Common.Contracts.Items.Types.Containers;
-using Game.Common.Location;
-using Game.Common.Results;
+﻿using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Contracts.Items.Types.Containers;
+using Server.Entities.Common.Location;
+using Server.Entities.Common.Results;
 
 namespace Game.Items.Services.ItemTransform.Operations;
 

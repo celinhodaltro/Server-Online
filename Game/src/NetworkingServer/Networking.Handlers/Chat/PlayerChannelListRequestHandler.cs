@@ -1,5 +1,5 @@
 ﻿using System.Linq;
-using Game.Common.Contracts.DataStores;
+using Server.Entities.Common.Contracts;
 using Networking.Packets.Outgoing.Chat;
 using Server.Common.Contracts;
 using Server.Common.Contracts.Network;

@@ -1,11 +1,11 @@
-﻿using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.Items;
-using Game.Common.Contracts.Items.Types.Containers;
-using Game.Common.Contracts.Items.Types.Usable;
-using Game.Common.Contracts.Services;
-using Game.Common.Contracts.World;
-using Game.Common.Contracts.World.Tiles;
-using Game.Common.Helpers;
+﻿using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Contracts.Items.Types.Containers;
+using Server.Entities.Common.Contracts.Items.Types.Usable;
+using Server.Entities.Common.Contracts.Services;
+using Server.Entities.Common.Contracts.World;
+using Server.Entities.Common.Contracts.World.Tiles;
+using Server.Entities.Common.Helpers;
 
 namespace Game.Systems.Services;
 
