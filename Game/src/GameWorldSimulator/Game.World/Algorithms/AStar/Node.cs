@@ -1,7 +1,7 @@
 ﻿using System;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.World.Tiles;
-using Game.Common.Location.Structs;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.World.Tiles;
+using Server.Entities.Common.Location.Structs;
 
 namespace Game.World.Algorithms.AStar;
 

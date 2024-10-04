@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Runtime.CompilerServices;
-using Game.Common.Location.Structs;
+using Server.Entities.Common.Location.Structs;
 
 namespace Game.World.Algorithms.AStar;
 
