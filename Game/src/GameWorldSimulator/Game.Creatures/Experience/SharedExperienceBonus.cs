@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.Services;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Services;
 
 namespace Game.Creatures.Experience;
 
