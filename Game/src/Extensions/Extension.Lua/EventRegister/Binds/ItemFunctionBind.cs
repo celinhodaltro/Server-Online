@@ -1,4 +1,4 @@
-using Game.Common.Contracts.Items.Types.Usable;
+using Server.Entities.Common.Contracts.Items.Types.Usable;
 using Game.Items.Bases;
 using Game.Items.Items.Containers.Container;
 
