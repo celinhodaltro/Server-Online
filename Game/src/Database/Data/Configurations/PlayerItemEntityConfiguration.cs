@@ -16,7 +16,7 @@ public class PlayerItemEntityConfiguration : IEntityTypeConfiguration<Server.Ent
         entity.Property(e => e.Id)
             .ValueGeneratedOnAdd();
 
-        entity.Property(e => e.PlayerId)
+        entity.Property(e => e.CharacterId)
             .IsRequired()
             .HasColumnType("int(11)");
 
@@ -37,9 +37,9 @@ public class PlayerItemEntityConfiguration : IEntityTypeConfiguration<Server.Ent
             .HasColumnType("smallint(5)")
             .HasDefaultValueSql("0");
 
-        entity.HasOne(d => d.Player)
-            .WithMany(p => p.PlayerItems)
-            .HasForeignKey(d => d.PlayerId)
+        entity.HasOne(d => d.Character)
+            .WithMany(p => p.CharacterItems)
+            .HasForeignKey(d => d.CharacterId)
             .HasConstraintName("player_items_ibfk_1");
 
         entity.Property(e => e.DecayTo)

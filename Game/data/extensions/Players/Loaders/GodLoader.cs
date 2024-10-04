@@ -45,7 +45,7 @@ public class GodLoader : PlayerLoader
             ConvertToSkills(playerEntity),
             new Outfit
             {
-                Addon = (byte)playerEntity.LookAddons,
+                Addon= (byte)playerEntity.LookAddons,
                 Body = (byte)playerEntity.LookBody,
                 Feet = (byte)playerEntity.LookFeet,
                 Head = (byte)playerEntity.LookHead,

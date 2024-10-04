@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.Inspection;
-using Game.Common.Contracts.Items;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Inspection;
+using Server.Entities.Common.Contracts.Items;
 using Networking.Packets.Outgoing;
 using Server.Common.Contracts;
 

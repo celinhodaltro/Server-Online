@@ -1,5 +1,5 @@
-﻿using Game.Common.Contracts.Items.Types;
-using Game.Common.Contracts.World.Tiles;
+﻿using Server.Entities.Common.Contracts.Items.Types;
+using Server.Entities.Common.Contracts.World.Tiles;
 using Server.Common.Contracts;
 
 namespace Server.Jobs.Items;

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Helpers;
-using Game.Common.Location.Structs;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Helpers;
+using Server.Entities.Common.Location.Structs;
 using Server.Common.Contracts;
 using Server.Tasks;
 

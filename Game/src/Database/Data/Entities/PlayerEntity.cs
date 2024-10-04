@@ -1,5 +1,6 @@
 using System.Collections.Generic;
-using Game.Common.Creatures.Players;
+using Server.Entities.Common.Characters;
+using Server.Entities.Common.Creatures.Players;
 
 namespace Data.Entities;
 

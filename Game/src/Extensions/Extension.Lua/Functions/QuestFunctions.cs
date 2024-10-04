@@ -4,12 +4,12 @@ using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using Data.Entities;
 using Data.Repositories;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.DataStores;
-using Game.Common.Contracts.Items;
-using Game.Common.Contracts.Items.Types.Containers;
-using Game.Common.Item;
-using Game.Common.Location.Structs;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts;
+using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Contracts.Items.Types.Containers;
+using Server.Entities.Common.Item;
+using Server.Entities.Common.Location.Structs;
 using Server.Helpers;
 using Serilog.Core;
 

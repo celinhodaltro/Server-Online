@@ -1,10 +1,10 @@
-﻿using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.World;
-using Game.Common.Contracts.World.Tiles;
-using Game.Common.Creatures;
-using Game.Common.Helpers;
-using Game.Common.Location;
-using Game.Common.Location.Structs;
+﻿using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.World;
+using Server.Entities.Common.Contracts.World.Tiles;
+using Server.Entities.Common.Creatures;
+using Server.Entities.Common.Helpers;
+using Server.Entities.Common.Location;
+using Server.Entities.Common.Location.Structs;
 using Networking.Packets.Outgoing.Creature;
 using Networking.Packets.Outgoing.Effect;
 using Networking.Packets.Outgoing.Item;

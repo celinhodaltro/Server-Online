@@ -1,6 +1,6 @@
-﻿using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.Items.Types.Usable;
-using Game.Common.Contracts.World.Tiles;
+﻿using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Items.Types.Usable;
+using Server.Entities.Common.Contracts.World.Tiles;
 using Networking.Packets.Outgoing.Effect;
 using Server.Common.Contracts;
 

@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 using Game.Combat.Conditions;
-using Game.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Creatures;
 
 namespace Server.Jobs.Creatures;
 

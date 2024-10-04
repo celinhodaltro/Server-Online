@@ -1,4 +1,4 @@
-﻿using Game.Common;
+﻿using Server.Entities.Common;
 using Networking.Packets.Outgoing;
 using Server.Common.Contracts;
 

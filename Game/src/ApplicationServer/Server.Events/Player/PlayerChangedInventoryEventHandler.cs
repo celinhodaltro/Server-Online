@@ -1,8 +1,8 @@
-﻿using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.DataStores;
-using Game.Common.Contracts.Items;
-using Game.Common.Creatures.Players;
-using Game.Common.Helpers;
+﻿using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts;
+using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Creatures.Players;
+using Server.Entities.Common.Helpers;
 using Networking.Packets.Outgoing.Npc;
 using Networking.Packets.Outgoing.Player;
 using Server.Common.Contracts;

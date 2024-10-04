@@ -7,8 +7,8 @@ using Microsoft.EntityFrameworkCore;
 using Data.Contexts;
 using Data.Entities;
 using Data.Interfaces;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Creatures;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Creatures;
 using Serilog;
 
 namespace Data.Repositories.Player;

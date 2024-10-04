@@ -9,7 +9,7 @@ public class ForSqLitePlayerItemEntityConfiguration : IEntityTypeConfiguration<S
 {
     public void Configure(EntityTypeBuilder<Server.Entities.CharacterItem> entity)
     {
-        entity.ToTable("PlayerItem");
+        entity.ToTable("CharacterItem");
 
         entity.HasKey(e => e.Id);
 
@@ -24,7 +24,7 @@ public class ForSqLitePlayerItemEntityConfiguration : IEntityTypeConfiguration<S
         entity.Property(e => e.ParentId)
             .HasDefaultValueSql("0");
 
-        entity.Property(e => e.PlayerId)
+        entity.Property(e => e.CharacterId)
             .IsRequired();
 
         entity.Property(e => e.ServerId)
@@ -34,10 +34,10 @@ public class ForSqLitePlayerItemEntityConfiguration : IEntityTypeConfiguration<S
             .IsRequired()
             .HasDefaultValueSql("0");
 
-        entity.HasOne(d => d.Player)
-            .WithMany(p => p.PlayerItems)
-            .HasForeignKey(d => d.PlayerId)
-            .HasConstraintName("player_items_ibfk_1");
+        entity.HasOne(d => d.Character)
+            .WithMany(p => p.CharacterItems)
+            .HasForeignKey(d => d.CharacterId)
+            .HasConstraintName("Character_items_ibfk_1");
 
         entity.Property(e => e.DecayTo)
             .HasDefaultValueSql("0");

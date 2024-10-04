@@ -1,10 +1,10 @@
-﻿using Game.Common.Combat.Structs;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.Items;
-using Game.Common.Contracts.World;
-using Game.Common.Creatures;
-using Game.Common.Effects.Parsers;
-using Game.Common.Item;
+﻿using Server.Entities.Common.Combat.Structs;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Contracts.World;
+using Server.Entities.Common.Creatures;
+using Server.Entities.Common.Effects.Parsers;
+using Server.Entities.Common.Item;
 using Networking.Packets.Outgoing;
 using Networking.Packets.Outgoing.Creature;
 using Networking.Packets.Outgoing.Effect;

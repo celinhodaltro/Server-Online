@@ -1,6 +1,6 @@
 using System.Linq;
 using System.Text;
-using Game.Common.Contracts.Items;
+using Server.Entities.Common.Contracts.Items;
 
 namespace Extension.Lua.Functions;
 

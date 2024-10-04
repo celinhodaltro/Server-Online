@@ -1,5 +1,5 @@
 using System.Linq;
-using Game.Common.Contracts.Items;
+using Server.Entities.Common.Contracts.Items;
 
 namespace Extension.Lua.EventRegister;
 

@@ -1,5 +1,5 @@
-﻿using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.Spells;
+﻿using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Spells;
 using Networking.Packets.Outgoing.Effect;
 using Server.Common.Contracts;
 

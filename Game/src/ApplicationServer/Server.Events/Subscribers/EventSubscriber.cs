@@ -1,7 +1,7 @@
 ﻿using Autofac;
 using Game.Combat.Spells;
-using Game.Common.Contracts.World;
-using Game.Common.Services;
+using Server.Entities.Common.Contracts.World;
+using Server.Entities.Common.Services;
 using Game.Systems.SafeTrade;
 using Server.Common.Contracts;
 using Server.Events.Combat;
