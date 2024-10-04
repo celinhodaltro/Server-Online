@@ -1,4 +1,4 @@
-﻿using Game.Common.Contracts.Creatures;
+﻿using Server.Entities.Common.Contracts.Creatures;
 using Game.Systems.SafeTrade.Request;
 
 namespace Game.Systems.SafeTrade.Trackers;
