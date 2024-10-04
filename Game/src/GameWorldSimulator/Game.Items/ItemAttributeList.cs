@@ -2,11 +2,11 @@
 using System.Buffers;
 using System.Collections.Generic;
 using System.Globalization;
-using Game.Common.Contracts.Items;
-using Game.Common.Creatures;
-using Game.Common.Helpers;
-using Game.Common.Item;
-using Game.Common.Location;
+using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Creatures;
+using Server.Entities.Common.Helpers;
+using Server.Entities.Common.Item;
+using Server.Entities.Common.Location;
 
 namespace Game.Items;
 

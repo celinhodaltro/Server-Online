@@ -1,5 +1,5 @@
-﻿using Game.Common.Contracts.Items;
-using Game.Common.Location.Structs;
+﻿using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Location.Structs;
 
 namespace Game.Items.Bases;
 

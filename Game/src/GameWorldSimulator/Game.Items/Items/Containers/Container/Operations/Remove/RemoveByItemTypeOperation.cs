@@ -1,4 +1,4 @@
-﻿using Game.Common.Contracts.Items;
+﻿using Server.Entities.Common.Contracts.Items;
 using Game.Items.Items.Containers.Container.Queries;
 
 namespace Game.Items.Items.Containers.Container.Operations.Remove;

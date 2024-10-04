@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Game.Common.Contracts.Items;
-using Game.Common.Contracts.Items.Types;
-using Game.Common.Results;
+using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Contracts.Items.Types;
+using Server.Entities.Common.Results;
 using Game.Items.Items.Containers.Container.Operations.Update;
 using Game.Items.Items.Containers.Container.Queries;
 using Game.Items.Items.Containers.Container.Rules;

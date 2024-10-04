@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using Game.Common.Contracts.Items;
+using Server.Entities.Common.Contracts.Items;
 
 namespace Game.Items.Helpers;
 

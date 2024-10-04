@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using Game.Common.Item;
+using Server.Entities.Common.Item;
 
 namespace Game.Items.Mappers;
 

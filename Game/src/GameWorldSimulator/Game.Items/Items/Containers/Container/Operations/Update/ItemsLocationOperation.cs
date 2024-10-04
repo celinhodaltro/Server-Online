@@ -1,4 +1,4 @@
-﻿using Game.Common.Location.Structs;
+﻿using Server.Entities.Common.Location.Structs;
 
 namespace Game.Items.Items.Containers.Container.Operations.Update;
 

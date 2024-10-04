@@ -1,5 +1,5 @@
-﻿using Game.Common.Contracts.Items;
-using Game.Common.Helpers;
+﻿using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Helpers;
 using Game.Items.Items.Attributes;
 
 namespace Game.Items.Factories.AttributeFactory;

@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 using System.Text;
-using Game.Common.Contracts.Items.Types.Containers;
+using Server.Entities.Common.Contracts.Items.Types.Containers;
 
 namespace Game.Items.Items.Containers.Container.Builders;
 

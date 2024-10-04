@@ -1,19 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Game.Common.Contracts;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.DataStores;
-using Game.Common.Contracts.Items;
-using Game.Common.Contracts.Items.Types;
-using Game.Common.Creatures.Players;
-using Game.Common.Helpers;
-using Game.Common.Item;
-using Game.Common.Location.Structs;
+using Server.Entities.Common.Contracts;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Contracts.Items.Types;
+using Server.Entities.Common.Creatures.Players;
+using Server.Entities.Common.Helpers;
+using Server.Entities.Common.Item;
+using Server.Entities.Common.Location.Structs;
 using Game.Items.Items;
 using Game.Items.Items.Containers;
 using Game.Items.Items.UsableItems;
-using CreateItem = Game.Common.Contracts.Items.CreateItem;
+using CreateItem = Server.Entities.Common.Contracts.Items.CreateItem;
 
 namespace Game.Items.Factories;
 
