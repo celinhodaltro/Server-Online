@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Data.Entities;
-using Game.Common.Item;
+using Server.Entities.Common.Item;
 
 namespace Data.Extensions;
 

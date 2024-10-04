@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Data.Entities;
-using Game.Common.Creatures.Players;
+using Server.Entities.Common.Creatures.Players;
 
 namespace Data.Seeds;
 

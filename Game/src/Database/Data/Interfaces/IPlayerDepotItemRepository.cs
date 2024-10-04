@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Data.Entities;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.Items.Types.Containers;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Items.Types.Containers;
 
 namespace Data.Interfaces;
 

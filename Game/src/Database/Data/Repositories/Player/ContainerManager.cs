@@ -4,9 +4,9 @@ using System.Threading.Tasks;
 using Data.Contexts;
 using Data.Entities;
 using Data.Parsers;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.Items.Types.Containers;
-using Game.Common.Helpers;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Items.Types.Containers;
+using Server.Entities.Common.Helpers;
 
 namespace Data.Repositories.Player;
 
@@ -33,7 +33,7 @@ public static class ContainerManager
                 var itemModel = ItemEntityParser.ToPlayerItemEntity<TPlayerItemEntity>(item);
                 if (itemModel is null) continue;
 
-                itemModel.PlayerId = (int)player.Id;
+                itemModel.CharacterId = (int)player.Id;
                 itemModel.ParentId = dequeuedContainer.ParentId;
 
                 if (item is IContainer innerContainer)

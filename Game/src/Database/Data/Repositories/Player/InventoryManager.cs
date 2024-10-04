@@ -3,9 +3,9 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Data.Contexts;
 using Data.Entities;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Creatures.Players;
-using Game.Common.Helpers;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Creatures.Players;
+using Server.Entities.Common.Helpers;
 
 namespace Data.Repositories.Player;
 

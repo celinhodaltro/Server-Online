@@ -5,8 +5,8 @@ using Microsoft.EntityFrameworkCore;
 using Data.Contexts;
 using Data.Entities;
 using Data.Interfaces;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.Items.Types.Containers;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Items.Types.Containers;
 using Serilog;
 
 namespace Data.Repositories.Player;
