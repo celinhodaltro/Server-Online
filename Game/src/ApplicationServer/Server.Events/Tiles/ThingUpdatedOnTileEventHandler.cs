@@ -1,6 +1,6 @@
-﻿using Game.Common.Contracts.Items;
-using Game.Common.Contracts.World;
-using Game.Common.Helpers;
+﻿using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Contracts.World;
+using Server.Entities.Common.Helpers;
 using Networking.Packets.Outgoing.Item;
 using Server.Common.Contracts;
 
