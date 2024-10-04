@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using Game.Common.Contracts.Items;
+using Server.Entities.Common.Contracts.Items;
 
 namespace Game.World.Structures;
 

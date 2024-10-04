@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Location;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Location;
 
 namespace Game.World.Models;
 

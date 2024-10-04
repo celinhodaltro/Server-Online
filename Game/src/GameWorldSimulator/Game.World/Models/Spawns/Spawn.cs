@@ -1,6 +1,6 @@
-﻿using Game.Common.Contracts.World;
-using Game.Common.Location;
-using Game.Common.Location.Structs;
+﻿using Server.Entities.Common.Contracts.World;
+using Server.Entities.Common.Location;
+using Server.Entities.Common.Location.Structs;
 
 namespace Game.World.Models.Spawns;
 
