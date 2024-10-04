@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using Game.Common.Combat.Structs;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Creatures;
-using Game.Common.Creatures.Structs;
-using Game.Common.Effects.Parsers;
-using Game.Common.Helpers;
-using Game.Common.Item;
-using Game.Common.Parsers;
+using Server.Entities.Common.Combat.Structs;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Creatures;
+using Server.Entities.Common.Creatures.Structs;
+using Server.Entities.Common.Effects.Parsers;
+using Server.Entities.Common.Helpers;
+using Server.Entities.Common.Item;
+using Server.Entities.Common.Parsers;
 
 namespace Game.Combat.Conditions;
 

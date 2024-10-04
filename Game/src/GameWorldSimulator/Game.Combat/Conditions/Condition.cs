@@ -1,5 +1,5 @@
 ﻿using System;
-using Game.Common.Creatures;
+using Server.Entities.Common.Creatures;
 
 namespace Game.Combat.Conditions;
 
