@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Collections.Immutable;
-using Game.Common.Contracts.Combat;
-using Game.Common.Contracts.Combat.Attacks;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.Creatures.Monsters;
-using Game.Common.Creatures;
-using Game.Common.Item;
+using Server.Entities.Common.Contracts.Combat;
+using Server.Entities.Common.Contracts.Combat.Attacks;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Creatures.Monsters;
+using Server.Entities.Common.Creatures;
+using Server.Entities.Common.Item;
 using Game.Creatures.Monster.Combat;
 
 namespace Game.Creatures.Monster;

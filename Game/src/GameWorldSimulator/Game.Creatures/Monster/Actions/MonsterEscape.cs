@@ -1,5 +1,5 @@
 ﻿using Game.Combat;
-using Game.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Creatures;
 using Game.Creatures.Monster.Combat;
 
 namespace Game.Creatures.Monster.Actions;

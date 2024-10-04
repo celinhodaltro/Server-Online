@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using Game.Combat;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.Items;
-using Game.Common.Contracts.World;
-using Game.Common.Location.Structs;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Contracts.World;
+using Server.Entities.Common.Location.Structs;
 
 namespace Game.Creatures.Monster.Combat;
 

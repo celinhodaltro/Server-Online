@@ -1,9 +1,9 @@
 ﻿using System;
 using Game.Combat;
 using Game.Combat.Validation;
-using Game.Common.Contracts.World;
-using Game.Common.Helpers;
-using Game.Common.Location;
+using Server.Entities.Common.Contracts.World;
+using Server.Entities.Common.Helpers;
+using Server.Entities.Common.Location;
 
 namespace Game.Creatures.Monster.Combat;
 
