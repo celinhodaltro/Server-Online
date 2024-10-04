@@ -1,9 +1,9 @@
 ﻿using System;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.World.Tiles;
-using Game.Common.Creatures;
-using Game.Common.Helpers;
-using Game.Common.Location;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.World.Tiles;
+using Server.Entities.Common.Creatures;
+using Server.Entities.Common.Helpers;
+using Server.Entities.Common.Location;
 
 namespace Game.Creatures;
 

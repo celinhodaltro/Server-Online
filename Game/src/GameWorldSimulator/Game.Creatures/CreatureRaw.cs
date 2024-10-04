@@ -2,9 +2,9 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Creatures;
-using Game.Common.Creatures.Party;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Creatures;
+using Server.Entities.Common.Creatures.Party;
 
 namespace Game.Creatures;
 

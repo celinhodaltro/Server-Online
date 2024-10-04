@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using Game.Common.Creatures;
-using Game.Common.Creatures.Structs;
+using Server.Entities.Common.Creatures;
+using Server.Entities.Common.Creatures.Structs;
 
 namespace Game.Creatures;
 
