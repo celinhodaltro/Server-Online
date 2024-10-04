@@ -1,5 +1,5 @@
 ﻿using System.Linq;
-using Game.Common.Contracts.Chats;
+using Server.Entities.Common.Contracts.Chats;
 
 namespace Server.Jobs.Channels;
 

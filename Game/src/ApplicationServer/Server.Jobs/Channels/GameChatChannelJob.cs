@@ -1,4 +1,4 @@
-﻿using Game.Common.Contracts.DataStores;
+﻿using Server.Entities.Common.Contracts;
 using Server.Common.Contracts;
 using Server.Tasks;
 
