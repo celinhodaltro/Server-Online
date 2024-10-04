@@ -1,5 +1,5 @@
-﻿using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.Services;
+﻿using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Services;
 using Game.Creatures.Monster.Managers;
 
 namespace Server.Jobs.Creatures;
