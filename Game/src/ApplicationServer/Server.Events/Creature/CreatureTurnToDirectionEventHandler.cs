@@ -1,7 +1,7 @@
-﻿using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.World;
-using Game.Common.Helpers;
-using Game.Common.Location;
+﻿using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.World;
+using Server.Entities.Common.Helpers;
+using Server.Entities.Common.Location;
 using Networking.Packets.Outgoing.Creature;
 using Server.Common.Contracts;
 
