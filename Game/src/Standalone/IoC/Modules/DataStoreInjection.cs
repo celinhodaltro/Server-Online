@@ -1,6 +1,6 @@
 ﻿using Autofac;
 using Data.InMemory;
-using Game.Common.Contracts.DataStores;
+using Server.Entities.Common.Contracts;
 
 namespace Server.Start.IoC.Modules;
 

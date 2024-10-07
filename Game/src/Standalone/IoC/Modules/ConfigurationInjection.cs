@@ -2,7 +2,7 @@
 using System.IO;
 using Autofac;
 using Microsoft.Extensions.Configuration;
-using Game.Common;
+using Server.Entities.Common;
 using Server.Configurations;
 
 namespace Server.Start.IoC.Modules;

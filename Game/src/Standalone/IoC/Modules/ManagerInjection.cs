@@ -1,5 +1,5 @@
 ﻿using Autofac;
-using Game.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Creatures;
 using Game.Creatures.Monster.Managers;
 using Game.Systems.Depot;
 using Game.World.Models.Spawns;

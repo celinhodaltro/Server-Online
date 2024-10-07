@@ -3,8 +3,8 @@ using System.Linq;
 using System.Reflection;
 using Autofac;
 using Microsoft.Extensions.Caching.Memory;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.World;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.World;
 using Game.Creatures;
 using Game.World;
 using Game.World.Map;
@@ -88,9 +88,7 @@ public static class Container
             .AddCommands()
             .AddDataStores();
 
-        //creature
         builder.RegisterType<CreatureGameInstance>().As<ICreatureGameInstance>().SingleInstance();
-
         builder.RegisterInstance(new MemoryCache(new MemoryCacheOptions())).As<IMemoryCache>();
 
         return builder.Build();
