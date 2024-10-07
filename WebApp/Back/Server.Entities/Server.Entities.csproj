@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Game\src\GameWorldSimulator\Game.World\Game.World.csproj" />
+    <Folder Include="Common\Contracts\Creatures\Factories\" />
+    <Folder Include="Common\Contracts\Creatures\Schedulers\" />
   </ItemGroup>
 </Project>
