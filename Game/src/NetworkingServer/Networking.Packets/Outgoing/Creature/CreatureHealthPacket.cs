@@ -1,5 +1,5 @@
 ﻿using System;
-using Game.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Creatures;
 using Server.Common.Contracts.Network;
 
 namespace Networking.Packets.Outgoing.Creature;
