@@ -1,5 +1,5 @@
-﻿using Game.Common.Contracts.Creatures;
-using Game.Common.Creatures.Party;
+﻿using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Creatures.Party;
 using Server.Common.Contracts.Network;
 
 namespace Networking.Packets.Outgoing.Party;
