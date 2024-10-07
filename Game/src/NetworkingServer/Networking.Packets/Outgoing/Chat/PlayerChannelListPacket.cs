@@ -1,4 +1,4 @@
-﻿using Game.Common.Contracts.Chats;
+﻿using Server.Entities.Common.Contracts.Chats;
 using Server.Common.Contracts.Network;
 
 namespace Networking.Packets.Outgoing.Chat;
