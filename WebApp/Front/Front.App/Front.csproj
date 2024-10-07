@@ -22,6 +22,10 @@
     <ProjectReference Include="..\Front.Services\Front.Services.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\Images\User\" />
+  </ItemGroup>
+
 
 
 
