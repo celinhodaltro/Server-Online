@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
 using Autofac;
 using Game.Chats;
-using Game.Common.Contracts.Chats;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Contracts.DataStores;
-using Game.Common.Contracts.Items;
-using Game.Common.Contracts.World.Tiles;
+using Server.Entities.Common.Contracts.Chats;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts;
+using Server.Entities.Common.Contracts.Items;
+using Server.Entities.Common.Contracts.World.Tiles;
 using Game.Creatures.Factories;
 using Game.Creatures.Player;
 using Game.Items.Factories;

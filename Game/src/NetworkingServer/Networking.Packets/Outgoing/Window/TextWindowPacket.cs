@@ -1,4 +1,4 @@
-﻿using Game.Common.Contracts.Items.Types;
+﻿using Server.Entities.Common.Contracts.Items.Types;
 using Server.Common.Contracts.Network;
 
 namespace Networking.Packets.Outgoing.Window;

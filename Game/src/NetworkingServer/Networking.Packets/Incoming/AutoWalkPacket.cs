@@ -1,5 +1,5 @@
 ﻿using System;
-using Game.Common.Location;
+using Server.Entities.Common.Location;
 using Server.Common.Contracts.Network;
 
 namespace Networking.Packets.Incoming;

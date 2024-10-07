@@ -1,4 +1,4 @@
-﻿using Game.Common.Chats;
+﻿using Server.Entities.Common.Chats;
 using Server.Common.Contracts.Network;
 
 namespace Networking.Packets.Incoming;

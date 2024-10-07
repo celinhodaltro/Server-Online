@@ -1,5 +1,5 @@
-﻿using Game.Common.Location.Structs;
-using Game.Common.Texts;
+﻿using Server.Entities.Common.Location.Structs;
+using Server.Entities.Common.Texts;
 using Server.Common.Contracts.Network;
 
 namespace Networking.Packets.Outgoing.Effect;

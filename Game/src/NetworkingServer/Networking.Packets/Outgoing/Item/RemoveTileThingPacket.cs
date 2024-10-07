@@ -1,4 +1,4 @@
-﻿using Game.Common.Contracts.World.Tiles;
+﻿using Server.Entities.Common.Contracts.World.Tiles;
 using Server.Common.Contracts.Network;
 
 namespace Networking.Packets.Outgoing.Item;

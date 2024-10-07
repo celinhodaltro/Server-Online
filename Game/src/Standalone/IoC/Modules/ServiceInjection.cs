@@ -1,7 +1,7 @@
 ﻿using Autofac;
-using Game.Common.Contracts.Inspection;
-using Game.Common.Contracts.Services;
-using Game.Common.Contracts.World;
+using Server.Entities.Common.Contracts.Inspection;
+using Server.Entities.Common.Contracts.Services;
+using Server.Entities.Common.Contracts.World;
 using Game.Creatures.Party;
 using Game.Creatures.Services;
 using Game.Items.Services;

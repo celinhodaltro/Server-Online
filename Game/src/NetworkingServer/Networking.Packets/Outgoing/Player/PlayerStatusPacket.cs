@@ -1,6 +1,6 @@
 ﻿using System;
-using Game.Common.Contracts.Creatures;
-using Game.Common.Creatures;
+using Server.Entities.Common.Contracts.Creatures;
+using Server.Entities.Common.Creatures;
 using Server.Common.Contracts.Network;
 
 namespace Networking.Packets.Outgoing.Player;

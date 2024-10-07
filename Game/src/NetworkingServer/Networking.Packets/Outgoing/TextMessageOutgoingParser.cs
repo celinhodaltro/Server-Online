@@ -1,5 +1,5 @@
-﻿using Game.Common;
-using Game.Common.Texts;
+﻿using Server.Entities.Common;
+using Server.Entities.Common.Texts;
 
 namespace Networking.Packets.Outgoing;
 
