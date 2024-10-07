@@ -1,5 +1,5 @@
 ﻿using System;
-using Game.Common.Contracts.Items.Types.Containers;
+using Server.Entities.Common.Contracts.Items.Types.Containers;
 using Server.Common.Contracts.Network;
 
 namespace Networking.Packets.Outgoing.Player;

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using Data.Entities;
-using Game.Common.Contracts.Creatures;
+using Server.Entities.Common.Contracts.Creatures;
 using Server.Common.Contracts.Network;
 
 namespace Networking.Packets.Outgoing.Player;
