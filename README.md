@@ -1,7 +1,7 @@
 
 # Ursulla Project
 
-![License](https://img.shields.io/github/license/celinhodaltro/ursulla) ![Issues](https://img.shields.io/github/issues/celinhodaltro/ursulla)
+![License](https://img.shields.io/github/license/celinhodaltro/Server-Online) ![Issues](https://img.shields.io/github/issues/celinhodaltro/Server-Online)
 
 ## Conteudos
 
