@@ -4,73 +4,67 @@
 
 
 <style>
-    * {
-        color:white
-    }
-    .Menu-Login 
-    {
-        background-color: rgba(0, 0, 0, 0.5);
+    .login-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: 100vh;
+        background-image: url('/Images/Designer.jpeg') !important;
+        background-size: cover;
+        padding: 20px
     }
 
-    .mud-card-content 
-    {
-        border-radius:20px;
-        background-color: rgba(0, 0, 0, 0.9);
+    .login-card {
+        width: 400px;
+        max-width: 400px;
+        border-radius: 13px;
+        padding: 20px;
     }
 
-    .mud-input > input.mud-input-root, div.mud-input-slot.mud-input-root {
-        color:white !important;
+    .mud-paper, .login-card {
+        background-color: rgba(0, 0, 0, 0.8) !important;
     }
 
-    h4, p 
-    {
+    .mud-card-content {
+        background-color: transparent;
+    }
+
+    .mud-input > input.mud-input-root,
+    div.mud-input-slot.mud-input-root {
+        color: white !important;
+    }
+
+    h4, p, h1, h2, h3 {
         font-family: 'Cinzel', serif !important;
-        color:white;
-    }
-
-    body {
-        font-family: 'Cinzel', serif !important;
-        background-color: #f0f0f0;
         color: white;
     }
 
-    h1, h2, h3 {
-        font-family: 'Cinzel', serif !important;
-        color: white;
-    }
-
-    h4
-    {
-        font-family: 'Cinzel', serif !important;
+    h4 {
         letter-spacing: 3px !important;
         text-transform: uppercase !important;
     }
 
-    main{
-        background-image: url('/Images/Designer.jpeg') !important;
-        background-size: cover;
+    .close-button {
+        margin-bottom: 20px;
+        align-self: flex-start;
     }
 
-    .Close-Button{
-        margin:10%    
-    }
-
-    .mud-grid-spacing-xs-6 {
-        margin-top: 0 !important;
+    .button-group {
+        margin-top: 20px;
     }
 
 </style>
 
-<MudGrid>
-    <MudItem Class="Menu-Login" xs="3">
+<div class="login-container">
+    <MudCard Class="login-card">
+        <MudFab Size="Size.Small" Class="close-button" Color="Color.Error" OnClick="BackToStart" StartIcon="@Icons.Material.Filled.ArrowBack" />
 
-        <MudFab Size="Size.Small" Class="Close-Button"  Color="Color.Error" OnClick="BackToStart" StartIcon="@Icons.Material.Filled.ArrowBack" />
-
-        <MudContainer Class="text-white text-center" Style="margin-top:15%;" MaxWidth="MaxWidth.Large">
+        <MudCardContent Class="text-center">
             @if (!showLogin && !showRegister)
             {
-                <MudButtonGroup OverrideStyles="false" DropShadow="true" Color="Color.Primary" Variant="Variant.Outlined">
+                <MudText Class="mb-5" Typo="Typo.h4">Auth</MudText>
+                <MudDivider DividerType="DividerType.Middle" />
+                <MudButtonGroup OverrideStyles="false" Class="button-group" DropShadow="true" Color="Color.Primary" Variant="Variant.Outlined">
                     <MudButton StartIcon="@Icons.Material.Filled.Person" Variant="Variant.Filled" Color="Color.Primary" OnClick="ShowLogin">Login</MudButton>
                     <MudButton EndIcon="@Icons.Material.Filled.Edit" Variant="Variant.Filled" Color="Color.Secondary" OnClick="ShowRegister">Register</MudButton>
                 </MudButtonGroup>
@@ -83,12 +77,12 @@
             {
                 <Register />
             }
+        </MudCardContent>
+    </MudCard>
+</div>
 
-        </MudContainer>
-    </MudItem>
-</MudGrid>
-
-@code {
+@code
+{
     private bool showLogin = false;
     private bool showRegister = false;
 
@@ -108,6 +102,7 @@
     {
         if (!showLogin && !showRegister)
             NavigationManager.NavigateTo("Home/Index");
+
         showLogin = false;
         showRegister = false;
     }
