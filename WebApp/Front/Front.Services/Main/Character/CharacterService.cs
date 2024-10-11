@@ -16,7 +16,7 @@ namespace Front.Services
 
         public async Task CreateCharacter(Character? Character)
         {
-            var result = await ApiService.SendRequestAsync<Character, object>("api/Character", HttpMethod.Post, Character);
+            var result = await ApiService.SendRequestAsync<Character, object>("api/Character/Register", HttpMethod.Post, Character);
             Console.WriteLine("Character created successfully");
         }
 
