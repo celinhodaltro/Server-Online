@@ -45,14 +45,14 @@ public sealed class Character : DefaultDb
     public Gender Gender { get; set; }
     public byte Vocation { get; set; }
     public int RemainingRecoverySeconds { get; set; }
-    public User Account { get; set; }
+    public User? Account { get; set; }
 
-    public CharacterSkill CharacterSkills { get; set; }
+    public CharacterSkill? CharacterSkills { get; set; }
     public ICollection<CharacterItem> CharacterItems { get; set; }
     public ICollection<CharacterDepotItem> CharacterDepotItems { get; set; }
     public ICollection<CharacterInventoryItem> CharacterInventoryItems { get; set; }
-    public GuildMembership GuildMember { get; set; }
-    public World World { get; set; }
+    public GuildMembership? GuildMember { get; set; }
+    public World? World { get; set; }
     public int WorldId { get; set; }
 
 

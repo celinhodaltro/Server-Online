@@ -1,33 +1,64 @@
 ﻿@page "/User/Index"
 @inject CharacterService CharacterService
 @inject AuthService AuthService
-
 @using Front.Pages.User.Character;
+@inject NavigationManager NavigationManager
 
-<MudText Typo="Typo.h3">Characters</MudText>
-<MudTable Items="Characters" Dense="true" Hover="true">
-    <HeaderContent>
-        <MudTh>Name</MudTh>
-        <MudTh>Level</MudTh>
-        <MudTh>Health</MudTh>
-        <MudTh>Online</MudTh>
-    </HeaderContent>
-    <RowTemplate>
-        <MudTd>@context.Name</MudTd>
-        <MudTd>@context.Level</MudTd>
-        <MudTd>@context.MaxHealth</MudTd>
-        <MudTd>@(context.Online ? "Sim" : "Não")</MudTd>
-    </RowTemplate>
-</MudTable>
+<style>
+    .main {
+        font-family: 'Cinzel', serif !important;
+        color: white !important;
+        background-image: url('/Images/User/Layout.jpeg') !important;
+        background-size: auto;
+        color: #fff;
+        height: 102.5vh !important;
+    }
+</style>
 
-<Create></Create>
-@code 
+
+<MudGrid style="padding:40px;" Class="main">
+
+    <MudItem xs="12" md="3">
+        <MudCard>
+            <MudCardContent>
+                <Create />
+            </MudCardContent>
+        </MudCard>
+    </MudItem>
+    @if (Characters?.Count > 0)
+        @foreach (var character in Characters)
+        {
+            <MudItem xs="12" md="3">
+                <MudCard>
+                    <MudCardMedia Image="images/door.jpg" Height="100" />
+                    <MudCardContent>
+                        <MudText Typo="Typo.h5">@character.Name</MudText>
+                        <MudText Typo="Typo.body2">@character.Level</MudText>
+                        <MudText Typo="Typo.body2">@(character.Online ? "Sim" : "Não")</MudText>
+                    </MudCardContent>
+                    <MudCardActions>
+                        <MudButton Variant="Variant.Text" Color="Color.Error" EndIcon="@Icons.Material.Filled.Delete">Delete</MudButton>
+                    </MudCardActions>
+                </MudCard>
+            </MudItem>
+        }
+</MudGrid>
+
+
+
+@code
 {
     private List<Server.Entities.Character>? Characters;
 
     protected override async Task OnInitializedAsync()
     {
+
+        if (!await AuthService.IsAuthenticated())
+            NavigationManager.NavigateTo("Auth/Index");
+
+
         var UserId = await AuthService.GetUserId();
         Characters = await CharacterService.GetCharacters(UserId);
     }
+
 }

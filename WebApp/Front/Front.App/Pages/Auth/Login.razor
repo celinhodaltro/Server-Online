@@ -7,24 +7,24 @@
 
 
 
-        <EditForm Model="loginModel" OnValidSubmit="HandleLogin">
-            <MudText Typo="Typo.h4">Login</MudText>
-            <DataAnnotationsValidator/>
-            <ValidationSummary/>
+<EditForm Model="loginModel" OnValidSubmit="HandleLogin">
+    <MudText Class="mb-5" Typo="Typo.h4">Login</MudText>
+    <MudDivider DividerType="DividerType.Middle"/>
+    <DataAnnotationsValidator />
+    <ValidationSummary />
 
-            <div class="form-group mt-2">
-                <MudTextField T="string" @bind-Value="@loginModel.Email" Variant="Variant.Outlined" ShrinkLabel="true" InputType="InputType.Email" Label="Email" Required="true" RequiredError="Email is required!" />
-            </div>
+    <div class="form-group mt-2">
+        <MudTextField T="string" @bind-Value="@loginModel.Email" Variant="Variant.Outlined" ShrinkLabel="true" InputType="InputType.Email" Label="Email" Required="true" RequiredError="Email is required!" />
+    </div>
 
-            <div class="form-group mt-2">
-                <MudTextField T="string" @bind-Value="@loginModel.Password" Variant="Variant.Outlined" ShrinkLabel="true" InputType="InputType.Password"  Label="Password" Required="true" RequiredError="Password is required!" />
-            </div>
+    <div class="form-group mt-2">
+        <MudTextField T="string" @bind-Value="@loginModel.Password" Variant="Variant.Outlined" ShrinkLabel="true" InputType="InputType.Password" Label="Password" Required="true" RequiredError="Password is required!" />
+    </div>
 
-            <MudButton ButtonType="ButtonType.Submit" StartIcon="@Icons.Material.Filled.Person" Class="mt-4" Variant="Variant.Filled" Color="Color.Primary">Login</MudButton>
+    <MudButton ButtonType="ButtonType.Submit" StartIcon="@Icons.Material.Filled.Person" Class="mt-4" Variant="Variant.Filled" Color="Color.Primary">Login</MudButton>
 
 
-            
-        </EditForm>
+</EditForm>
 
 
 
@@ -49,7 +49,7 @@
 
             if (result.Token is not null)
             {
-                NavigationManager.NavigateTo("/");
+                NavigationManager.NavigateTo("/", true);
             }
             else
             {

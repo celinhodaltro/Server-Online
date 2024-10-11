@@ -11,14 +11,14 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     public DbSet<UserVipList> UserVipList { get; set; }
     public DbSet<UserInfo> UserInfo { get; set; }
     #endregion
-    #region Player
+    #region Character
     public DbSet<Character> Characters { get; set; }
-    public DbSet<CharacterItem> PlayerItems { get; set; }
-    public DbSet<CharacterDepotItem> PlayerDepotItems { get; set; }
-    public DbSet<CharacterInventoryItem> PlayerInventoryItems { get; set; }
-    public DbSet<CharacterQuest> PlayerQuests { get; set; }
-    public DbSet<CharacterOutfitAddon> PlayerOutfitAddons { get; set; }
-    public DbSet<CharacterSkill> PlayerSkill { get; set; }
+    public DbSet<CharacterItem> CharacterItems { get; set; }
+    public DbSet<CharacterDepotItem> CharacterDepotItems { get; set; }
+    public DbSet<CharacterInventoryItem> CharacterInventoryItems { get; set; }
+    public DbSet<CharacterQuest> CharacterQuests { get; set; }
+    public DbSet<CharacterOutfitAddon> CharacterOutfitAddons { get; set; }
+    public DbSet<CharacterSkill> CharacterSkill { get; set; }
     public DbSet<Guild> Guilds { get; set; }
     public DbSet<GuildMembership> GuildMemberships { get; set; }
     public DbSet<World> Worlds { get; set; }

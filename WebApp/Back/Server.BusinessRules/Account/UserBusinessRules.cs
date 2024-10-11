@@ -66,5 +66,24 @@ public class UserBusinessRules
     }
 
 
+    public async Task<User?> GetUser(Guid UniqueId)
+    {
+        try
+        {
+            if (Guid.Empty == UniqueId)
+                throw new Exception("Name or Password is empty");
+
+            var Users = await DefaultProvider.GetAllAsync<User>();
+            return Users.FirstOrDefault(x => x.UniqueId == UniqueId);
+
+        }
+        catch (Exception ex)
+        {
+            await LogBusinessRules.CreateLog(new LogTrack(LogLevelEnum.Error, ex.ToString(), ex.Message));
+            throw;
+        }
+    }
+
+
 }
 

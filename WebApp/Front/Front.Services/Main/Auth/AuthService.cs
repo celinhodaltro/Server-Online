@@ -54,6 +54,17 @@ namespace Front.Services
             return Guid.Empty;
         }
 
+        public async Task<User> GetUser()
+        {
+            var UserUniqueId = await GetUserId();
+            var result = await ApiService.SendRequestAsync<Guid, User>($"api/User/GetUser/{UserUniqueId}", HttpMethod.Get);
+
+            if (result is not null)
+                return result;
+
+            return new User();
+        }
+
         public async Task<bool> IsAuthenticated()
         {
             var savedToken = await LocalStorage.GetItemAsync<string>("authToken");
