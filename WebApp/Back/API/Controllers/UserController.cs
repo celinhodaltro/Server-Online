@@ -55,7 +55,10 @@ namespace API.Controllers
             {
                 var result = await signManager.PasswordSignInAsync(userInfo?.Email, userInfo?.Password, isPersistent: false, lockoutOnFailure: false);
                 if (result.Succeeded)
-                    return BuildToken(userInfo);
+                {
+                    var UserResult = await userBusinessRules.GetUser(userInfo.Email, userInfo.Password);
+                    return BuildToken(UserResult);
+                }
                 else
                     return BadRequest("User or Password Invalid!");
 
@@ -63,6 +66,24 @@ namespace API.Controllers
             catch (Exception ex)
             {
                 await logBusinessRules.CreateLog(new LogTrack (LogLevelEnum.Error, "Error! Login", ex.Message));
+                throw;
+            }
+
+        }
+
+        [HttpGet("GetUser/{UserUniqueId}")]
+        public async Task<ActionResult<User>>? GetUser([FromRoute] Guid UserUniqueId)
+        {
+
+            try
+            {
+                var result = await userBusinessRules.GetUser(UserUniqueId);
+                return result;
+
+            }
+            catch (Exception ex)
+            {
+                await logBusinessRules.CreateLog(new LogTrack(LogLevelEnum.Error, "Error! Login", ex.Message));
                 throw;
             }
 
