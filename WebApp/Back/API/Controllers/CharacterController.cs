@@ -37,8 +37,8 @@ namespace API.Controllers
             return Ok(characters);
         }
 
-        [HttpPost]
-        public async Task<IActionResult> Post([FromBody] Character player)
+        [HttpPost("Register")]
+        public async Task<IActionResult> Register([FromBody] Character player)
         {
             await playerBusinessRules.Create(player);
             return Ok();
