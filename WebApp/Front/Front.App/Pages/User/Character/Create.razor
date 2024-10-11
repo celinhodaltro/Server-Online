@@ -3,11 +3,11 @@
 @using Server.Entities.Common.Characters
 @inject CharacterService CharacterService
 @inject AuthService AuthService
-
+@inject NavigationManager NavigationManager
 
 
 <MudText Align="Align.Center" Typo="Typo.h4"> <MudIcon Color="Color.Primary" Icon="@Icons.Material.Filled.Person" Title="Person" />  </MudText>
-<EditForm Model="@Character" OnValidSubmit="CreateCharacter">
+<EditForm Model="@Character" OnSubmit="CreateCharacter">
 
 
         <MudTextField T="string"
@@ -16,12 +16,10 @@
                       ShrinkLabel="true"
                       InputType="InputType.Text"
                       Label="Name"
-                      Class="mt-4"
-                      Required="true"
-                      RequiredError="Name for Character is required!" />
+                      Class="mt-4"/>
 
 
-    <MudSelect Class="mt-4" AnchorOrigin="Origin.BottomCenter" @bind-Value="@Character.Gender" Label="Gender" Required="true">
+    <MudSelect Class="mt-4" AnchorOrigin="Origin.BottomCenter" @bind-Value="@Character.Gender" Label="Gender">
         <MudSelectItem Value="Gender.Male"> <MudIcon Color="Color.Info" Icon="@Icons.Material.Filled.Male" Title="Male" /> Male </MudSelectItem>
         <MudSelectItem Value="Gender.Female"> <MudIcon Color="Color.Secondary" Icon="@Icons.Material.Filled.Female" Title="Female" /> Female </MudSelectItem>
     </MudSelect>
@@ -38,6 +36,13 @@
 
     private async Task CreateCharacter()
     {
+        var User = await AuthService.GetUser();
+
+        if(User is {Id: 0 })
+            NavigationManager.NavigateTo("Auth/Index");
+
+        Character.UserId = User.Id;
+
         await CharacterService.CreateCharacter(this.Character);
     }
 }
