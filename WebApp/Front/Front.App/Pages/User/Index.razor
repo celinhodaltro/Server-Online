@@ -54,15 +54,11 @@
     {
 
         if (!await AuthService.IsAuthenticated())
-            this.NavigateToAccount();
+            NavigationManager.NavigateTo("Auth/Index");
 
 
         var UserId = await AuthService.GetUserId();
         Characters = await CharacterService.GetCharacters(UserId);
     }
 
-    public void NavigateToAccount()
-    {
-        NavigationManager.NavigateTo("Auth/Index");
-    }
 }
