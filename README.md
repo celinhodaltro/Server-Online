@@ -31,17 +31,18 @@ A estrutura do projeto é dividida em três principais módulos:
 /Ursulla
 │
 ├── /Server
-│   ├── /API                # Endpoints da API
-│   ├── /Entities            # Entidades do domínio (Character, Game, User)
-│   ├── /Business            # Regras de negócios
-│   ├── /Util                # Utilitários comuns do servidor
-│   └── /Provider            # Acesso a dados e lógica de persistência
+│   ├── /Server.API                 # Endpoints da API
+│   ├── /Server.Entities            # Entidades do domínio (Character, Game, User)
+│   ├── /Server.Bussiness            # Regras de negócios
+│   ├── /Server.Util                # Utilitários comuns do servidor
+│   └── /Server.Provider            # Acesso a dados e lógica de persistência
 │
-├── /Clients
-│   ├── /GameApp             # Código fonte da aplicação de jogo
-│   └── /WebApp              # Aplicação web Blazor
-│       ├── /Pages           # Páginas da aplicação Blazor
-│       └── /Shared          # Componentes compartilhados da aplicação Blazor
+├── /Application
+│   ├── /Application.Services   # Código fonte para requisição com o back (Pensar em alterar nome para Application.Request)
+│   ├── /Application.GameClient # Client do jogo
+│   └── /Application.WebApp     # Aplicação web Blazor
+│       ├── /Pages              # Páginas da aplicação Blazor
+│       └── /Shared             # Componentes compartilhados da aplicação Blazor
 │
 └── /Docs
     ├── ArchitectureDiagram.drawio  # Diagrama da arquitetura do projeto
@@ -54,7 +55,7 @@ A estrutura do projeto é dividida em três principais módulos:
 - **Backend**: ASP.NET Core, Entity Framework Core
 - **Frontend**: Blazor, MudBlazor
 - **Database**: MySql
-- **Game Client**: C++ (GameApp)
+- **Game Client**: Unity
 - **Documentation**: Draw.io, Markdown
 
 ## Getting Started
