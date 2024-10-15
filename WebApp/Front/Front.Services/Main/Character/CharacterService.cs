@@ -5,7 +5,7 @@ using System.Text;
 using System.Text.Json;
 
 
-namespace Front.Services
+namespace Application.Services
 {
     public class CharacterService : AuthService
     {
