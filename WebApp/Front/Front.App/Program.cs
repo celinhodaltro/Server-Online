@@ -1,6 +1,6 @@
+using Application.Web;
 using Blazored.LocalStorage;
-using Front;
-using Front.Services;
+using Application.Services;
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;

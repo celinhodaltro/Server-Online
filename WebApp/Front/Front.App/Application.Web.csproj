@@ -19,7 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Back\Server.Entities\Server.Entities.csproj" />
-    <ProjectReference Include="..\Front.Services\Front.Services.csproj" />
+    <ProjectReference Include="..\Front.Services\Application.Services.csproj" />
   </ItemGroup>
 
   <ItemGroup>
