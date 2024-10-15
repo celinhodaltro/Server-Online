@@ -63,7 +63,6 @@ A estrutura do projeto é dividida em três principais módulos:
 ### Requisitos
 
 - [.NET 8 SDK](https://dotnet.microsoft.com/download)
-- [C++ Compiler](https://gcc.gnu.org/)
 - [Node.js](https://nodejs.org/en/) (opcional, para ferramentas de desenvolvimento da WebApp)
 
 ### Rodando o projeto:
@@ -89,11 +88,6 @@ dotnet run
 
 No diretório `GameApp`, compile e execute a aplicação:
 
-```bash
-cd Clients/GameApp
-g++ GameApp.cpp -o GameApp
-./GameApp
-```
 
 #### 4. Executar a Aplicação Web
 
