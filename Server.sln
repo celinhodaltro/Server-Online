@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Main", "Main", "{D84D51DF-7
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{D218A842-F78C-4D43-938E-24ECE1157875}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "App", "App", "{979E2A6A-D782-4955-BFFC-66F0C4FF8D9E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{979E2A6A-D782-4955-BFFC-66F0C4FF8D9E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server.BusinessRules", "WebApp\Back\Server.BusinessRules\Server.BusinessRules.csproj", "{67C6E48E-A6B2-4FE0-8D04-F99A0A21F3A2}"
 EndProject
@@ -87,9 +87,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server.Extensions", "Game\d
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server.Util", "WebApp\Back\Server.Util\Server.Util.csproj", "{6FA207EB-6AEF-4B70-96DE-733990C27834}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.Web", "WebApp\Front\Front.App\App.Web.csproj", "{7FFC473F-AA0E-46F4-8B6F-447A08B4BB4D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.Web", "WebApp\Front\Front.App\Application.Web.csproj", "{7FFC473F-AA0E-46F4-8B6F-447A08B4BB4D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.Services", "WebApp\Front\Front.Services\App.Services.csproj", "{AC7D7010-F025-4B1A-B44E-A051565B708D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.Services", "WebApp\Front\Front.Services\Application.Services.csproj", "{AC7D7010-F025-4B1A-B44E-A051565B708D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
