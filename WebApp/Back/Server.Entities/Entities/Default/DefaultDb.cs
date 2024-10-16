@@ -7,21 +7,16 @@ namespace Server.Entities
     {
 
         [Key]
-        [JsonIgnore]
-        public int Id { get; set; }
+        public int? Id { get; set; }
 
 
-        [JsonIgnore]
-        public Guid UniqueId { get; set; } = Guid.NewGuid();
+        public Guid? UniqueId { get; set; } = Guid.NewGuid();
 
-        [JsonIgnore]
-        public bool IsDeleted { get; set; } = false;
+        public bool? IsDeleted { get; set; } = false;
 
-        [JsonIgnore]
-        public DateTime LastUpdate { get; set; } = DateTime.MinValue;
+        public DateTime? LastUpdate { get; set; } = DateTime.MinValue;
 
-        [JsonIgnore]
-        public DateTime DeleteDate { get; set; } = DateTime.MinValue;
+        public DateTime? DeleteDate { get; set; } = DateTime.MinValue;
 
         public virtual bool Validate()
         {

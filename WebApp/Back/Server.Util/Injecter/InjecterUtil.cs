@@ -23,7 +23,7 @@ namespace Server.Util
 
         public static void InjecterBusinessRules(IServiceCollection Services)
         {
-            Services.AddScoped<LogBusinessRules>();
+            Services.AddScoped<LoggerBusinessRules>();
             Services.AddScoped<UserBusinessRules>();
             Services.AddScoped<CharacterBusinessRules>();
 

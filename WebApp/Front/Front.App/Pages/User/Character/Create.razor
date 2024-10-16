@@ -31,18 +31,30 @@
 </EditForm>
 
 
+@if (!String.IsNullOrEmpty(@Error))
+{
+    <MudAlert Severity="Severity.Warning" Variant="Variant.Outlined">@Error </MudAlert>
+}
+
+
 @code {
     private Character? Character { get; set; } = new Character();
-
+    private string? Error { get; set; }
     private async Task CreateCharacter()
     {
         var User = await AuthService.GetUser();
 
-        if(User is {Id: 0 })
+        if(User is { Id: 0 })
             NavigationManager.NavigateTo("Auth/Index");
 
         Character.UserId = User.Id;
 
-        await CharacterService.CreateCharacter(this.Character);
+        var result = await CharacterService.CreateCharacter(this.Character);
+
+        if (result is true)
+            NavigationManager.Refresh();
+        else
+            Error = "Falha ao criar personagem.";            
+
     }
 }

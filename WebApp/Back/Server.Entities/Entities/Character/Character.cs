@@ -12,7 +12,7 @@ public sealed class Character : DefaultDb
         CharacterDepotItems = new List<CharacterDepotItem>();
     }
 
-    public int UserId { get; set; }
+    public int? UserId { get; set; }
     public int TownId { get; set; }
     public string Name { get; set; }
     public int PlayerType { get; set; }

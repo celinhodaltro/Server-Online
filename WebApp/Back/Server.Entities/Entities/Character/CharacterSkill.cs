@@ -8,7 +8,7 @@ namespace Server.Entities
 {
     public sealed class CharacterSkill : DefaultDb
     {
-        public int CharacterId { get; set; }
+        public int? CharacterId { get; set; }
         public int SkillFist { get; set; }
         public double SkillFistTries { get; set; }
 

@@ -13,9 +13,9 @@ public class UserBusinessRules
 {
 
     public DefaultProvider DefaultProvider { get; set; }
-    public LogBusinessRules LogBusinessRules { get; set; }
+    public LoggerBusinessRules LogBusinessRules { get; set; }
 
-    public UserBusinessRules(DefaultProvider defaultProvider, LogBusinessRules logBusinessRules)
+    public UserBusinessRules(DefaultProvider defaultProvider, LoggerBusinessRules logBusinessRules)
     {
         DefaultProvider = defaultProvider;
         LogBusinessRules = logBusinessRules;
@@ -55,7 +55,7 @@ public class UserBusinessRules
                 throw new Exception("Name or Password is empty");
 
             var Users = await DefaultProvider.GetAllAsync<User>();
-            return Users.FirstOrDefault(x => x.Email.Equals(name) && x.Password.Equals(password));
+            return Users.FirstOrDefault(x => x.Email.Equals(name, StringComparison.OrdinalIgnoreCase) && x.Password.Equals(password, StringComparison.OrdinalIgnoreCase));
 
         }
         catch (Exception ex)

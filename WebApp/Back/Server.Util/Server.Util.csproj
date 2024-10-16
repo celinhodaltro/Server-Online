@@ -12,7 +12,6 @@
 
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Front\Application.Services\Application.Services.csproj" />
     <ProjectReference Include="..\Server.BusinessRules\Server.BusinessRules.csproj" />
     <ProjectReference Include="..\Server.Entities\Server.Entities.csproj" />
   </ItemGroup>

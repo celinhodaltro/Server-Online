@@ -10,7 +10,7 @@ namespace Server.Entities
         public DateTime? BanishedAt { get; set; } 
         public string? BanishmentReason { get; set; } = string.Empty;
         public uint? BannedBy { get; set; } = 0;
-        public int UserId { get; set; } = 0;
+        public int? UserId { get; set; } = 0;
 
         public ICollection<Character>? Players { get; set; }
         public ICollection<UserVipList>? VipList { get; set; }
