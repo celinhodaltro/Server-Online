@@ -16,7 +16,7 @@ namespace API.Controllers
     public class UserController(UserManager<ApplicationUser> userManager, 
                                 SignInManager<ApplicationUser> signManager, 
                                 IConfiguration Configuration, 
-                                LogBusinessRules logBusinessRules,
+                                LoggerBusinessRules logBusinessRules,
                                 UserBusinessRules userBusinessRules) : Controller
     {
 
@@ -72,7 +72,7 @@ namespace API.Controllers
         }
 
         [HttpGet("GetUser/{UserUniqueId}")]
-        public async Task<ActionResult<User>>? GetUser([FromRoute] Guid UserUniqueId)
+        public async Task<ActionResult<User>> GetUser([FromRoute] Guid UserUniqueId)
         {
 
             try
