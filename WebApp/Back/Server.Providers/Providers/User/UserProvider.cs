@@ -16,21 +16,21 @@ namespace Server.Providers
         public async Task<UserInfo?> GetUserByIdAsync(int id)
         {
             return await _context.UserInfo
-                                 .Where(u => !u.IsDeleted) 
+                                 .Where(u => !u.IsDeleted.Value) 
                                  .FirstOrDefaultAsync(u => u.Id == id);
         }
 
         public async Task<UserInfo?> GetUserByUniqueIdAsync(Guid uniqueId)
         {
             return await _context.UserInfo
-                                 .Where(u => !u.IsDeleted)  
+                                 .Where(u => !u.IsDeleted.Value)  
                                  .FirstOrDefaultAsync(u => u.UniqueId == uniqueId);
         }
 
         public async Task<bool> SoftDeleteUserByIdAsync(int id)
         {
             var user = await _context.UserInfo.FirstOrDefaultAsync(u => u.Id == id);
-            if (user == null || user.IsDeleted)
+            if (user == null || user.IsDeleted.Value)
             {
                 return false; 
             }
@@ -44,7 +44,7 @@ namespace Server.Providers
         public async Task<bool> SoftDeleteUserByUniqueIdAsync(Guid uniqueId)
         {
             var user = await _context.UserInfo.FirstOrDefaultAsync(u => u.UniqueId == uniqueId);
-            if (user == null || user.IsDeleted)
+            if (user == null || user.IsDeleted.Value)
             {
                 return false; 
             }

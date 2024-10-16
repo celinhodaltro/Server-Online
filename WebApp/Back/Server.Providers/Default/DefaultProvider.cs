@@ -47,7 +47,7 @@ namespace System.Provider
             return entity;
         }
 
-        public async Task DeleteAsync<T>(int id) where T : class
+        public async Task DeleteAsync<T>(int? id) where T : class
         {
 
             var entity = await _context.Set<T>().FindAsync(id);

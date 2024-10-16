@@ -41,7 +41,7 @@ namespace API.Controllers
         public async Task<IActionResult> Register([FromBody] Character player)
         {
             await playerBusinessRules.Create(player);
-            return Ok();
+            return Ok(true);
         }
 
     }

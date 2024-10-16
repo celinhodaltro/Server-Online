@@ -17,7 +17,7 @@
         <ProjectReference Include="..\..\src\GameWorldSimulator\Game.Items\Game.Items.csproj" />
         <ProjectReference Include="..\..\src\GameWorldSimulator\Game.World\Game.World.csproj" />
         <ProjectReference Include="..\..\src\Loader\Loader.csproj" />
-        <ProjectReference Include="..\..\src\Standalone\Server.Start.csproj" />
+        <ProjectReference Include="..\..\src\Standalone\Server.Game.csproj" />
         <ProjectReference Include="..\..\src\NetworkingServer\Networking.Handlers\Networking.Handlers.csproj" />
         <ProjectReference Include="..\..\src\NetworkingServer\Networking\Networking.csproj" />
         <ProjectReference Include="..\..\src\ApplicationServer\Server.Commands\Server.Commands.csproj" />

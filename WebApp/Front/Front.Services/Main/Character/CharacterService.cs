@@ -14,10 +14,9 @@ namespace Application.Services
         }
 
 
-        public async Task CreateCharacter(Character? Character)
+        public async Task<bool> CreateCharacter(Character? Character)
         {
-            var result = await ApiService.SendRequestAsync<Character, object>("api/Character/Register", HttpMethod.Post, Character);
-            Console.WriteLine("Character created successfully");
+            return await ApiService.SendRequestAsync<Character, bool>("api/Character/Register", HttpMethod.Post, Character);
         }
 
 

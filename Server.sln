@@ -19,7 +19,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server.Entities", "WebApp\B
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server.API", "WebApp\Back\API\Server.API.csproj", "{446DDF43-6343-4BB1-A7C0-6E45BEF86D64}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server.Start", "Game\src\Standalone\Server.Start.csproj", "{A4AA3A7F-9A11-46B6-A7A9-A4659D602882}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server.Game", "Game\src\Standalone\Server.Game.csproj", "{A4AA3A7F-9A11-46B6-A7A9-A4659D602882}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{D58D68E1-C698-4E71-B00F-FE0A1362126A}"
 EndProject
