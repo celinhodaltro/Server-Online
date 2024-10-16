@@ -1,0 +1,63 @@
+﻿@page "/User/Index"
+@inject CharacterService CharacterService
+@inject AuthService AuthService
+
+@inject NavigationManager NavigationManager
+
+<style>
+    .main {
+        font-family: 'Cinzel', serif !important;
+        color: white !important;
+        background-image: url('/Images/User/Layout.jpeg') !important;
+        background-size: auto;
+        color: #fff;
+        height: 102.5vh !important;
+    }
+</style>
+
+
+<MudGrid style="padding:40px;" Class="main">
+
+    <MudItem xs="12" md="3">
+        <MudCard>
+            <MudCardContent>
+                <Create />
+            </MudCardContent>
+        </MudCard>
+    </MudItem>
+    @if (Characters?.Count > 0)
+        @foreach (var character in Characters)
+        {
+            <MudItem xs="12" md="3">
+                <MudCard>
+                    <MudCardContent>
+                        <MudText Typo="Typo.h5">@character.Name</MudText>
+                        <MudText Typo="Typo.body2">@character.Level</MudText>
+                        <MudText Typo="Typo.body2">@(character.Online ? "Sim" : "Não")</MudText>
+                    </MudCardContent>
+                    <MudCardActions>
+                        <MudButton Variant="Variant.Text" Color="Color.Error" EndIcon="@Icons.Material.Filled.Delete">Delete</MudButton>
+                    </MudCardActions>
+                </MudCard>
+            </MudItem>
+        }
+</MudGrid>
+
+
+
+@code
+{
+    private List<Server.Entities.Character>? Characters;
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        if (!await AuthService.IsAuthenticated())
+            NavigationManager.NavigateTo("Auth/Index");
+
+
+        var UserId = await AuthService.GetUserId();
+        Characters = await CharacterService.GetCharacters(UserId);
+    }
+
+}
