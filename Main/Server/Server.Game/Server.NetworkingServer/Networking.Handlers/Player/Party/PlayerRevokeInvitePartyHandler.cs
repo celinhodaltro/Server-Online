@@ -1,6 +1,6 @@
 ﻿using Networking.Packets.Outgoing;
-using Server.Common.Contracts;
-using Server.Common.Contracts.Network;
+using Server.Contracts.Contracts;
+using Server.Contracts.Contracts.Network;
 using Server.Tasks;
 
 namespace Networking.Handlers.Player.Party;

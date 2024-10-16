@@ -4,7 +4,7 @@ using Server.Entities.Common.Contracts.Items;
 using Server.Entities.Common.Helpers;
 using Networking.Packets.Outgoing.Item;
 using Networking.Packets.Outgoing.Npc;
-using Server.Common.Contracts;
+using Server.Contracts.Contracts;
 
 namespace Server.Events.Items;
 

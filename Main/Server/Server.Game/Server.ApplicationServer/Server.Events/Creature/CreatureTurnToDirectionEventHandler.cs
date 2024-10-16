@@ -3,7 +3,7 @@ using Server.Entities.Common.Contracts.World;
 using Server.Entities.Common.Helpers;
 using Server.Entities.Common.Location;
 using Networking.Packets.Outgoing.Creature;
-using Server.Common.Contracts;
+using Server.Contracts.Contracts;
 
 namespace Server.Events.Creature;
 

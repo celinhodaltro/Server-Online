@@ -2,7 +2,7 @@
 using Server.Entities.Common.Contracts.Creatures;
 using Server.Entities.Common.Contracts.World;
 using Server.Entities.Common.Location;
-using Server.Common.Contracts.Network;
+using Server.Contracts.Contracts.Network;
 
 namespace Networking.Packets.Outgoing.Map;
 

@@ -8,7 +8,7 @@ using Loader.Spawns;
 using Loader.Spells;
 using Loader.Vocations;
 using Loader.World;
-using Server.Common.Contracts;
+using Server.Contracts.Contracts;
 
 namespace Server.Start.IoC.Modules;
 

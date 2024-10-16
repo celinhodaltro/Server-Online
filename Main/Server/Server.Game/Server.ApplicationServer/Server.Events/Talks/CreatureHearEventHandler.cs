@@ -1,7 +1,7 @@
 ﻿using Server.Entities.Common.Chats;
 using Server.Entities.Common.Contracts.Creatures;
 using Networking.Packets.Outgoing.Creature;
-using Server.Common.Contracts;
+using Server.Contracts.Contracts;
 
 namespace Server.Events.Talks;
 

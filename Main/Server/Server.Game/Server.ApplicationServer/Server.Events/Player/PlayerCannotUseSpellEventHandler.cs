@@ -4,7 +4,7 @@ using Server.Entities.Common.Contracts.Spells;
 using Server.Entities.Common.Creatures;
 using Networking.Packets.Outgoing;
 using Networking.Packets.Outgoing.Effect;
-using Server.Common.Contracts;
+using Server.Contracts.Contracts;
 
 namespace Server.Events.Player;
 

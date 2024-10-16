@@ -5,7 +5,7 @@ using Server.Entities.Common.Creatures;
 using Server.Entities.Common.Helpers;
 using Networking.Packets.Outgoing.Effect;
 using Networking.Packets.Outgoing.Item;
-using Server.Common.Contracts;
+using Server.Contracts.Contracts;
 
 namespace Server.Events.Tiles;
 

@@ -4,7 +4,7 @@ using Server.Entities.Common.Contracts.World;
 using Server.Entities.Common.Contracts.World.Tiles;
 using Server.Entities.Common.Location;
 using Networking.Packets.Incoming;
-using Server.Common.Contracts;
+using Server.Contracts.Contracts;
 
 namespace Server.Commands.Movements.ToContainer;
 

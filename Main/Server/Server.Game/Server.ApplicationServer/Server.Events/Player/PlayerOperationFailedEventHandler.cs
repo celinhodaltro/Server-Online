@@ -1,6 +1,6 @@
 ﻿using Server.Entities.Common;
 using Networking.Packets.Outgoing;
-using Server.Common.Contracts;
+using Server.Contracts.Contracts;
 
 namespace Server.Events.Player;
 

@@ -2,7 +2,7 @@
 using Server.Entities.Common.Contracts.Services;
 using Game.World.Models.Spawns;
 using Server.Commands.Player;
-using Server.Common.Contracts;
+using Server.Contracts.Contracts;
 using Server.Jobs.Creatures.Npc;
 using Server.Tasks;
 

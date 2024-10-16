@@ -1,7 +1,7 @@
 ﻿using Data.Interfaces;
 using Server.Entities.Common.Contracts.Creatures;
 using Game.Systems.Depot;
-using Server.Common.Contracts;
+using Server.Contracts.Contracts;
 
 namespace Server.Events.Player;
 

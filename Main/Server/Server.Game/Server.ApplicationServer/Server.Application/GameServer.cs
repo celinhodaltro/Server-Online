@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using Server.Entities.Common.Contracts.World;
-using Server.Common.Contracts;
-using Server.Common.Contracts.Tasks;
+using Server.Contracts.Contracts;
+using Server.Contracts.Contracts.Tasks;
 using Server.Common.Enums;
 
 namespace Server;

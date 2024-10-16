@@ -11,7 +11,7 @@ using Game.World.Map;
 using Networking.Handlers;
 using Server.Commands.Movements;
 using Server.Commands.Player;
-using Server.Common.Contracts.Tasks;
+using Server.Contracts.Contracts.Tasks;
 using Server.Start.IoC.Modules;
 using Server.Tasks;
 using Shared.IoC.Modules;

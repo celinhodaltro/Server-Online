@@ -2,7 +2,7 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Server.Common.Contracts.Tasks;
+namespace Server.Contracts.Contracts.Tasks;
 
 public interface IPersistenceDispatcher
 {

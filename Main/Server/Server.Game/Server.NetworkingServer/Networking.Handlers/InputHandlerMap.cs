@@ -7,7 +7,7 @@ using Networking.Handlers.Player.Movement;
 using Networking.Handlers.Player.Party;
 using Networking.Handlers.Shop;
 using Networking.Handlers.Trade;
-using Server.Common.Contracts.Network.Enums;
+using Server.Contracts.Contracts.Network.Enums;
 
 namespace Networking.Handlers;
 

@@ -2,8 +2,8 @@
 using Server.Entities.Common.Contracts;
 using Server.Entities.Common.Helpers;
 using Networking.Packets.Outgoing.Player;
-using Server.Common.Contracts;
-using Server.Common.Contracts.Network;
+using Server.Contracts.Contracts;
+using Server.Contracts.Contracts.Network;
 
 namespace Networking.Handlers.Player;
 

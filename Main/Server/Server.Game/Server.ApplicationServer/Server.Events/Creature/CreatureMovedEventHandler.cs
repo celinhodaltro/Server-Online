@@ -9,8 +9,8 @@ using Networking.Packets.Outgoing.Creature;
 using Networking.Packets.Outgoing.Effect;
 using Networking.Packets.Outgoing.Item;
 using Networking.Packets.Outgoing.Map;
-using Server.Common.Contracts;
-using Server.Common.Contracts.Network;
+using Server.Contracts.Contracts;
+using Server.Contracts.Contracts.Network;
 
 namespace Server.Events.Creature;
 

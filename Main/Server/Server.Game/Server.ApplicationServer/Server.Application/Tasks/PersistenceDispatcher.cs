@@ -2,7 +2,7 @@ using System;
 using System.Threading;
 using System.Threading.Channels;
 using System.Threading.Tasks;
-using Server.Common.Contracts.Tasks;
+using Server.Contracts.Contracts.Tasks;
 using Serilog;
 
 namespace Server.Tasks;

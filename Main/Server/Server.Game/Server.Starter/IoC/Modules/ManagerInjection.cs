@@ -3,7 +3,7 @@ using Server.Entities.Common.Contracts.Creatures;
 using Game.Creatures.Monster.Managers;
 using Game.Systems.Depot;
 using Game.World.Models.Spawns;
-using Server.Common.Contracts;
+using Server.Contracts.Contracts;
 using Server.Managers;
 
 namespace Server.Start.IoC.Modules;

@@ -2,7 +2,7 @@
 using Server.Entities.Common.Contracts.Creatures;
 using Networking.Packets.Outgoing;
 using Server.Commands.Player;
-using Server.Common.Contracts;
+using Server.Contracts.Contracts;
 
 namespace Server.Jobs.Creatures;
 

@@ -1,6 +1,6 @@
 using Server.Entities.Common.Contracts.Creatures;
-using Server.Common.Contracts;
-using Server.Common.Contracts.Commands;
+using Server.Contracts.Contracts;
+using Server.Contracts.Contracts.Commands;
 
 namespace Server.Commands.Player;
 

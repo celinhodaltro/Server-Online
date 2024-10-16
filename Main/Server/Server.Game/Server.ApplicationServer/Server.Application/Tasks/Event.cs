@@ -1,5 +1,5 @@
 ﻿using System;
-using Server.Common.Contracts.Tasks;
+using Server.Contracts.Contracts.Tasks;
 
 namespace Server.Tasks;
 

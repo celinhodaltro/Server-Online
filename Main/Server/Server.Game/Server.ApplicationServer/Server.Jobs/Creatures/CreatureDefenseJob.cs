@@ -1,5 +1,5 @@
 ﻿using Server.Entities.Common.Contracts.Creatures;
-using Server.Common.Contracts;
+using Server.Contracts.Contracts;
 using Server.Tasks;
 
 namespace Server.Jobs.Creatures;

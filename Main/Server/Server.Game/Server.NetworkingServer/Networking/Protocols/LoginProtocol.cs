@@ -1,6 +1,6 @@
 ﻿using System;
 using Networking.Handlers;
-using Server.Common.Contracts.Network;
+using Server.Contracts.Contracts.Network;
 
 namespace Networking.Protocols;
 

@@ -20,8 +20,10 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\..\GameWorldSimulator\Game.World\Game.World.csproj" />
-        <ProjectReference Include="..\..\NetworkingServer\Networking.Packets\Networking.Packets.csproj" />
+        <ProjectReference Include="..\..\..\Server.Entities\Server.Entities.csproj" />
+        <ProjectReference Include="..\..\Server.GameWorldSimulator\Game.World\Game.World.csproj" />
+        <ProjectReference Include="..\..\Server.NetworkingServer\Networking.Packets\Networking.Packets.csproj" />
+        <ProjectReference Include="..\Server.Contracts\Server.Contracts.csproj" />
     </ItemGroup>
 
 </Project>

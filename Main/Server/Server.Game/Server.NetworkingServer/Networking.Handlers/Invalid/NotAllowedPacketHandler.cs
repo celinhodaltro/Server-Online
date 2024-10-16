@@ -1,6 +1,6 @@
 using System;
-using Server.Common.Contracts.Network;
-using Server.Common.Contracts.Network.Enums;
+using Server.Contracts.Contracts.Network;
+using Server.Contracts.Contracts.Network.Enums;
 using Serilog;
 
 namespace Networking.Handlers.Invalid;

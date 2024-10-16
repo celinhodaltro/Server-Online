@@ -1,6 +1,6 @@
 ﻿using Server.Entities.Common.Contracts.Creatures;
 using Server.Entities.Common.Results;
-using Server.Common.Contracts;
+using Server.Contracts.Contracts;
 using Server.Tasks;
 
 namespace Server.Events.Combat;

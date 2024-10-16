@@ -2,7 +2,7 @@
 using Server.Entities.Common.Contracts.Items.Types.Usable;
 using Server.Entities.Common.Contracts.World.Tiles;
 using Networking.Packets.Outgoing.Effect;
-using Server.Common.Contracts;
+using Server.Contracts.Contracts;
 
 namespace Server.Events.Items;
 

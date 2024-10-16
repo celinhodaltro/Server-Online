@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <ItemGroup>
         <Compile Remove="Combat\**" />
@@ -11,15 +11,13 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\..\..\..\WebApp\Back\Server.BusinessRules\Server.BusinessRules.csproj" />
-        <ProjectReference Include="..\..\..\..\WebApp\Back\Server.Entities\Server.Entities.csproj" />
-        <ProjectReference Include="..\..\GameWorldSimulator\Game.Creatures\Game.Creatures.csproj" />
-        <ProjectReference Include="..\..\GameWorldSimulator\Game.Systems\Game.Systems.csproj" />
-        <ProjectReference Include="..\..\Loader\Loader.csproj" />
-        <ProjectReference Include="..\..\ApplicationServer\Server\Server.csproj" />
-        <ProjectReference Include="..\..\Database\Data\Data.csproj" />
-
-        <ProjectReference Include="..\Server.Contracts\Server.Common.csproj" />
+        <ProjectReference Include="..\..\..\Server.Entities\Server.Entities.csproj" />
+        <ProjectReference Include="..\..\Server.GameWorldSimulator\Game.Creatures\Game.Creatures.csproj" />
+        <ProjectReference Include="..\..\Server.GameWorldSimulator\Game.Systems\Game.Systems.csproj" />
+        <ProjectReference Include="..\..\Server.Loader\Loader.csproj" />
+        <ProjectReference Include="..\..\Server.ApplicationServer\Server.Application\Server.Application.csproj" />
+        <ProjectReference Include="..\..\Server.Database\Server.Database\Data.csproj" />
+        <ProjectReference Include="..\Server.Contracts\Server.Contracts.csproj" />
     </ItemGroup>
 
     <PropertyGroup>

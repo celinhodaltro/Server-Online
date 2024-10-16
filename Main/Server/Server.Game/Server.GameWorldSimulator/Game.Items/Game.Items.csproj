@@ -21,6 +21,7 @@
     </ItemGroup>
 
     <ItemGroup>
+        <ProjectReference Include="..\..\..\Server.Entities\Server.Entities.csproj" />
         <ProjectReference Include="..\Game.Combat\Game.Combat.csproj" />
     </ItemGroup>
 

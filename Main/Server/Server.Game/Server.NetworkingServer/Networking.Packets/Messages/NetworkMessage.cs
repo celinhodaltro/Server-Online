@@ -3,7 +3,7 @@ using System.Buffers;
 using System.Text;
 using Server.Entities.Common.Contracts.Items;
 using Server.Entities.Common.Location.Structs;
-using Server.Common.Contracts.Network;
+using Server.Contracts.Contracts.Network;
 using Server.Security;
 
 namespace Networking.Packets.Messages;

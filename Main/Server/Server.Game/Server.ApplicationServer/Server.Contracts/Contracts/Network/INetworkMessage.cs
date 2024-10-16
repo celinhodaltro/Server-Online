@@ -2,7 +2,7 @@
 using Server.Entities.Common.Contracts.Items;
 using Server.Entities.Common.Location.Structs;
 
-namespace Server.Common.Contracts.Network;
+namespace Server.Contracts.Contracts.Network;
 
 public interface INetworkMessage : IReadOnlyNetworkMessage
 {

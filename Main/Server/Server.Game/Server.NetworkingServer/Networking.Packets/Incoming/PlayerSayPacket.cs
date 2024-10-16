@@ -1,5 +1,5 @@
 ﻿using Server.Entities.Common.Chats;
-using Server.Common.Contracts.Network;
+using Server.Contracts.Contracts.Network;
 
 namespace Networking.Packets.Incoming;
 

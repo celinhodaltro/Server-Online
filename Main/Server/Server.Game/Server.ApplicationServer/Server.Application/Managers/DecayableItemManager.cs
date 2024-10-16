@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Server.Entities.Common.Contracts.Items;
 using Server.Entities.Common.Contracts.Services;
-using Server.Common.Contracts;
+using Server.Contracts.Contracts;
 
 namespace Server.Managers;
 

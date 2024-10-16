@@ -1,7 +1,7 @@
 ﻿using Server.Entities.Common.Contracts.Creatures;
 using Server.Entities.Common.Helpers;
 using Networking.Packets.Outgoing.Player;
-using Server.Common.Contracts;
+using Server.Contracts.Contracts;
 
 namespace Server.Events.Combat;
 

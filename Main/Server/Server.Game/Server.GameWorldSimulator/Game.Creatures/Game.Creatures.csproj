@@ -5,7 +5,7 @@
         <PackageReference Include="Serilog" Version="4.0.1" />
     </ItemGroup>
     <ItemGroup>
-        <ProjectReference Include="..\..\..\..\WebApp\Back\Server.Entities\Server.Entities.csproj" />
+        <ProjectReference Include="..\..\..\Server.Entities\Server.Entities.csproj" />
         <ProjectReference Include="..\Game.Chats\Game.Chats.csproj" />
         <ProjectReference Include="..\Game.Combat\Game.Combat.csproj" />
     </ItemGroup>

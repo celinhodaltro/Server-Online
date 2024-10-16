@@ -8016,7 +8016,7 @@
 			},
 			{
 				"key": "script",
-				"value": "NeoServer.Extensions.Items.Tools.Rope"
+				"value": "Server.Extensions.Items.Tools.Rope"
 			}
 		]
 	},

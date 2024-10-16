@@ -2,7 +2,7 @@
 using System.Linq;
 using Data.Entities;
 using Server.Entities.Common.Contracts.Creatures;
-using Server.Common.Contracts.Network;
+using Server.Contracts.Contracts.Network;
 
 namespace Networking.Packets.Outgoing.Player;
 

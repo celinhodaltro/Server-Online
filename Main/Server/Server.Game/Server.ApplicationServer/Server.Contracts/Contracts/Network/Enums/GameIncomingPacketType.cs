@@ -1,4 +1,4 @@
-namespace Server.Common.Contracts.Network.Enums;
+namespace Server.Contracts.Contracts.Network.Enums;
 
 public enum GameIncomingPacketType : byte
 {

@@ -5,8 +5,8 @@ using System.Collections.Immutable;
 using System.Linq;
 using Server.Entities.Common.Contracts.Creatures;
 using Server.Entities.Common.Contracts.World;
-using Server.Common.Contracts;
-using Server.Common.Contracts.Network;
+using Server.Contracts.Contracts;
+using Server.Contracts.Contracts.Network;
 using Serilog;
 
 namespace Server.Managers;

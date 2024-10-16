@@ -3,7 +3,7 @@ using Game.Combat.Spells;
 using Server.Entities.Common.Contracts.World;
 using Server.Entities.Common.Services;
 using Game.Systems.SafeTrade;
-using Server.Common.Contracts;
+using Server.Contracts.Contracts;
 using Server.Events.Combat;
 using Server.Events.Creature;
 using Server.Events.Player;

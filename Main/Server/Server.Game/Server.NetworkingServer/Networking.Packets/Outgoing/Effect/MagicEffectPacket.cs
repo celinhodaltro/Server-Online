@@ -1,6 +1,6 @@
 ﻿using Server.Entities.Common.Creatures;
 using Server.Entities.Common.Location.Structs;
-using Server.Common.Contracts.Network;
+using Server.Contracts.Contracts.Network;
 
 namespace Networking.Packets.Outgoing.Effect;
 

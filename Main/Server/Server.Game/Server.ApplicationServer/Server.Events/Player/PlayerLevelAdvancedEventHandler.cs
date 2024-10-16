@@ -1,8 +1,8 @@
 ﻿using Server.Entities.Common.Creatures;
 using Server.Entities.Common.Parsers;
 using Networking.Packets.Outgoing;
-using Server.Common.Contracts;
-using Server.Common.Contracts.Network;
+using Server.Contracts.Contracts;
+using Server.Contracts.Contracts.Network;
 
 namespace Server.Events.Player;
 

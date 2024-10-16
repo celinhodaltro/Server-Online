@@ -20,20 +20,20 @@
         <PackageReference Include="Serilog.Sinks.Console" Version="6.0.0" />
     </ItemGroup>
     <ItemGroup>
-        <ProjectReference Include="..\..\Database\Data\Data.csproj" />
-        <ProjectReference Include="..\..\Extensions\Extension.Lua\Extension.Lua.csproj" />
-        <ProjectReference Include="..\..\GameWorldSimulator\Game.Systems\Game.Systems.csproj" />
-        <ProjectReference Include="..\..\NetworkingServer\Networking.Handlers\Networking.Handlers.csproj" />
-        <ProjectReference Include="..\..\NetworkingServer\Networking\Networking.csproj" />
-        <ProjectReference Include="..\..\ApplicationServer\Server.Commands\Server.Commands.csproj" />
-        <ProjectReference Include="..\..\ApplicationServer\Server.Compiler\Server.Compiler.csproj" />
-        <ProjectReference Include="..\..\ApplicationServer\Server.Contracts\Server.Common.csproj" />
-        <ProjectReference Include="..\..\GameWorldSimulator\Game.Items\Game.Items.csproj" />
-        <ProjectReference Include="..\..\GameWorldSimulator\Game.World\Game.World.csproj" />
-        <ProjectReference Include="..\..\ApplicationServer\Server.Jobs\Server.Jobs.csproj" />
-        <ProjectReference Include="..\..\ApplicationServer\Server\Server.csproj" />
-        <ProjectReference Include="..\..\ApplicationServer\Server.Events\Server.Events.csproj" />
-        <ProjectReference Include="..\..\GameWorldSimulator\Game.Creatures\Game.Creatures.csproj" />
-        <ProjectReference Include="..\..\Loader\Loader.csproj" />
+        <ProjectReference Include="..\..\Server.Database\Server.Database\Data.csproj" />
+        <ProjectReference Include="..\..\Server.Extensions\Server.Extension.Lua.csproj" />
+        <ProjectReference Include="..\..\Server.GameWorldSimulator\Game.Systems\Game.Systems.csproj" />
+        <ProjectReference Include="..\..\Server.NetworkingServer\Networking.Handlers\Networking.Handlers.csproj" />
+        <ProjectReference Include="..\..\Server.NetworkingServer\Networking\Networking.csproj" />
+        <ProjectReference Include="..\..\Server.ApplicationServer\Server.Commands\Server.Commands.csproj" />
+        <ProjectReference Include="..\..\Server.ApplicationServer\Server.Compiler\Server.Compiler.csproj" />
+        <ProjectReference Include="..\..\Server.ApplicationServer\Server.Contracts\Server.Contracts.csproj" />
+        <ProjectReference Include="..\..\Server.GameWorldSimulator\Game.Items\Game.Items.csproj" />
+        <ProjectReference Include="..\..\Server.GameWorldSimulator\Game.World\Game.World.csproj" />
+        <ProjectReference Include="..\..\Server.ApplicationServer\Server.Jobs\Server.Jobs.csproj" />
+        <ProjectReference Include="..\..\Server.ApplicationServer\Server.Application\Server.Application.csproj" />
+        <ProjectReference Include="..\..\Server.ApplicationServer\Server.Events\Server.Events.csproj" />
+        <ProjectReference Include="..\..\Server.GameWorldSimulator\Game.Creatures\Game.Creatures.csproj" />
+        <ProjectReference Include="..\..\Server.Loader\Loader.csproj" />
     </ItemGroup>
 </Project>

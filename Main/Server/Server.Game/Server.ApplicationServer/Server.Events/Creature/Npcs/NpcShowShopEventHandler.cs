@@ -3,7 +3,7 @@ using System.Linq;
 using Server.Entities.Common.Contracts.Creatures;
 using Server.Entities.Common.Contracts;
 using Networking.Packets.Outgoing.Npc;
-using Server.Common.Contracts;
+using Server.Contracts.Contracts;
 
 namespace Server.Events.Creature.Npcs;
 

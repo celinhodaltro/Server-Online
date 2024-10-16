@@ -1,4 +1,4 @@
-namespace Server.Common.Contracts.Commands;
+namespace Server.Contracts.Contracts.Commands;
 
 public interface ICommand
 {

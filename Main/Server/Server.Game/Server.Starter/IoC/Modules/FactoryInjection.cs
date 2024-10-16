@@ -13,8 +13,8 @@ using Game.Items.Factories.AttributeFactory;
 using Game.World.Factories;
 using Networking.Handlers;
 using Networking.Handlers.Invalid;
-using Server.Common.Contracts.Network;
-using Server.Common.Contracts.Network.Enums;
+using Server.Contracts.Contracts.Network;
+using Server.Contracts.Contracts.Network.Enums;
 using Serilog;
 
 namespace Server.Start.IoC.Modules;

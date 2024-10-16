@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Data.Interfaces;
 using Server.Entities.Common.Contracts.Creatures;
 using Game.Systems.Depot;
-using Server.Common.Contracts;
+using Server.Contracts.Contracts;
 using Server.Configurations;
 using Serilog;
 

@@ -1,5 +1,5 @@
 ﻿using System;
-using Server.Common.Contracts.Network;
+using Server.Contracts.Contracts.Network;
 
 namespace Networking.Packets.Outgoing.Login;
 

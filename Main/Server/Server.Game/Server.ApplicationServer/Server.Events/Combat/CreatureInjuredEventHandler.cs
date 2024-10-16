@@ -9,7 +9,7 @@ using Networking.Packets.Outgoing;
 using Networking.Packets.Outgoing.Creature;
 using Networking.Packets.Outgoing.Effect;
 using Networking.Packets.Outgoing.Player;
-using Server.Common.Contracts;
+using Server.Contracts.Contracts;
 
 namespace Server.Events.Combat;
 

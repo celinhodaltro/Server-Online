@@ -1,14 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <ItemGroup>
-        <ProjectReference Include="..\ApplicationServer\Server.Helpers\Server.Helpers.csproj" />
-        <ProjectReference Include="..\Database\Data.InMemory\Data.InMemory.csproj" />
-        <ProjectReference Include="..\GameWorldSimulator\Game.Chats\Game.Chats.csproj" />
-        <ProjectReference Include="..\GameWorldSimulator\Game.Combat\Game.Combat.csproj" />
-        <ProjectReference Include="..\GameWorldSimulator\Game.Creatures\Game.Creatures.csproj" />
-        <ProjectReference Include="..\GameWorldSimulator\Game.Items\Game.Items.csproj" />
-        <ProjectReference Include="..\GameWorldSimulator\Game.World\Game.World.csproj" />
-        <ProjectReference Include="..\ApplicationServer\Server\Server.csproj" />
+        <ProjectReference Include="..\Server.ApplicationServer\Server.Helpers\Server.Helpers.csproj" />
+        <ProjectReference Include="..\Server.Database\Server.Database.InMemory\Data.InMemory.csproj" />
+        <ProjectReference Include="..\Server.GameWorldSimulator\Game.Chats\Game.Chats.csproj" />
+        <ProjectReference Include="..\Server.GameWorldSimulator\Game.Combat\Game.Combat.csproj" />
+        <ProjectReference Include="..\Server.GameWorldSimulator\Game.Creatures\Game.Creatures.csproj" />
+        <ProjectReference Include="..\Server.GameWorldSimulator\Game.Items\Game.Items.csproj" />
+        <ProjectReference Include="..\Server.GameWorldSimulator\Game.World\Game.World.csproj" />
+        <ProjectReference Include="..\Server.ApplicationServer\Server.Application\Server.Application.csproj" />
     </ItemGroup>
 
     <ItemGroup>

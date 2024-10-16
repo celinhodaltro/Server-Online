@@ -8,7 +8,7 @@ using Server.Entities.Common.Services;
 using Extension.Lua.EventRegister;
 using Extension.Lua.Functions;
 using Extension.Lua.Functions.Libs;
-using Server.Common.Contracts;
+using Server.Contracts.Contracts;
 using Server.Configurations;
 using Server.Helpers.Extensions;
 using NLua;

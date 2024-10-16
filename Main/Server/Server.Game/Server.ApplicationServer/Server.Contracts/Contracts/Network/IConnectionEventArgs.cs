@@ -1,4 +1,4 @@
-namespace Server.Common.Contracts.Network;
+namespace Server.Contracts.Contracts.Network;
 
 public interface IConnectionEventArgs
 {

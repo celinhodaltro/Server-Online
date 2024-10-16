@@ -2,7 +2,7 @@
 using Server.Entities.Common.Contracts.Creatures;
 using Server.Entities.Common.Contracts.Items;
 using Networking.Packets.Outgoing.Login;
-using Server.Common.Contracts;
+using Server.Contracts.Contracts;
 using Server.Tasks;
 
 namespace Server.Events.Creature;

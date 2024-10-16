@@ -2,7 +2,7 @@
 using Networking.Packets.Incoming;
 using Networking.Packets.Outgoing.Login;
 using Server.BusinessRules;
-using Server.Common.Contracts.Network;
+using Server.Contracts.Contracts.Network;
 using Server.Configurations;
 using System;
 using System.Security.Principal;

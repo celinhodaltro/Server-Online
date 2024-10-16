@@ -3,7 +3,7 @@ using Server.Entities.Common.Contracts.Items;
 using Server.Entities.Common.Contracts.Items.Types.Usable;
 using Server.Entities.Common.Creatures;
 using Networking.Packets.Outgoing.Effect;
-using Server.Common.Contracts;
+using Server.Contracts.Contracts;
 
 namespace Server.Events.Player;
 

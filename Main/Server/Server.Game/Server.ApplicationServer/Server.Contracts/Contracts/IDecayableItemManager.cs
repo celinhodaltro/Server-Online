@@ -1,6 +1,6 @@
 ﻿using Server.Entities.Common.Contracts.Items;
 
-namespace Server.Common.Contracts;
+namespace Server.Contracts.Contracts;
 
 public interface IDecayableItemManager
 {

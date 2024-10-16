@@ -1,6 +1,6 @@
 ﻿using System;
 using Networking.Packets.Messages;
-using Server.Common.Contracts.Network;
+using Server.Contracts.Contracts.Network;
 using Server.Security;
 
 namespace Networking.Packets.Incoming;

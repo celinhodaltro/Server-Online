@@ -4,9 +4,9 @@ using Server.Entities.Common.Contracts.Creatures;
 using Server.Entities.Common.Contracts;
 using Networking.Packets.Incoming;
 using Networking.Packets.Outgoing;
-using Server.Common.Contracts;
-using Server.Common.Contracts.Commands;
-using Server.Common.Contracts.Network;
+using Server.Contracts.Contracts;
+using Server.Contracts.Contracts.Commands;
+using Server.Contracts.Contracts.Network;
 
 namespace Server.Commands.Player;
 

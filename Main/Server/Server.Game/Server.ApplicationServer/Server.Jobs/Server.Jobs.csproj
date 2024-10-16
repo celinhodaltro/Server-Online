@@ -7,11 +7,11 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\..\GameWorldSimulator\Game.Combat\Game.Combat.csproj" />
-        <ProjectReference Include="..\..\GameWorldSimulator\Game.Creatures\Game.Creatures.csproj" />
-        <ProjectReference Include="..\..\GameWorldSimulator\Game.World\Game.World.csproj" />
-        <ProjectReference Include="..\..\ApplicationServer\Server.Commands\Server.Commands.csproj" />
-        <ProjectReference Include="..\..\ApplicationServer\Server\Server.csproj" />
+        <ProjectReference Include="..\..\Server.GameWorldSimulator\Game.Combat\Game.Combat.csproj" />
+        <ProjectReference Include="..\..\Server.GameWorldSimulator\Game.Creatures\Game.Creatures.csproj" />
+        <ProjectReference Include="..\..\Server.GameWorldSimulator\Game.World\Game.World.csproj" />
+        <ProjectReference Include="..\..\Server.ApplicationServer\Server.Commands\Server.Commands.csproj" />
+        <ProjectReference Include="..\..\Server.ApplicationServer\Server.Application\Server.Application.csproj" />
     </ItemGroup>
 
 </Project>

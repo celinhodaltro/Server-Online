@@ -11,8 +11,8 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\..\NetworkingServer\Networking.Packets\Networking.Packets.csproj" />
-        <ProjectReference Include="..\..\NetworkingServer\Networking.Handlers\Networking.Handlers.csproj" />
+        <ProjectReference Include="..\Server.NetworkingServer\Networking.Packets\Networking.Packets.csproj" />
+        <ProjectReference Include="..\Server.NetworkingServer\Networking.Handlers\Networking.Handlers.csproj" />
     </ItemGroup>
 
 </Project>

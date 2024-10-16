@@ -32,12 +32,12 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\..\..\..\WebApp\Back\Server.Entities\Server.Entities.csproj" />
-        <ProjectReference Include="..\..\ApplicationServer\Server.Contracts\Server.Common.csproj" />
-        <ProjectReference Include="..\..\ApplicationServer\Server.Security\Server.Security.csproj" />
-        <ProjectReference Include="..\..\GameWorldSimulator\Game.Creatures\Game.Creatures.csproj" />
-        <ProjectReference Include="..\..\GameWorldSimulator\Game.Items\Game.Items.csproj" />
-        <ProjectReference Include="..\..\GameWorldSimulator\Game.World\Game.World.csproj" />
+        <ProjectReference Include="..\..\..\Server.Entities\Server.Entities.csproj" />
+        <ProjectReference Include="..\..\Server.ApplicationServer\Server.Contracts\Server.Contracts.csproj" />
+        <ProjectReference Include="..\..\Server.ApplicationServer\Server.Security\Server.Security.csproj" />
+        <ProjectReference Include="..\..\Server.GameWorldSimulator\Game.Creatures\Game.Creatures.csproj" />
+        <ProjectReference Include="..\..\Server.GameWorldSimulator\Game.Items\Game.Items.csproj" />
+        <ProjectReference Include="..\..\Server.GameWorldSimulator\Game.World\Game.World.csproj" />
     </ItemGroup>
 
 </Project>

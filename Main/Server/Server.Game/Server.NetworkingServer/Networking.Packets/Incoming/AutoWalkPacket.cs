@@ -1,6 +1,6 @@
 ﻿using System;
 using Server.Entities.Common.Location;
-using Server.Common.Contracts.Network;
+using Server.Contracts.Contracts.Network;
 
 namespace Networking.Packets.Incoming;
 

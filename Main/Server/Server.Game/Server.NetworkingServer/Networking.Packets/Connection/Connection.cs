@@ -6,7 +6,7 @@ using Server.Entities.Common.Contracts.Creatures;
 using Networking.Packets.Messages;
 using Networking.Packets.Outgoing.Login;
 using Networking.Packets.Security;
-using Server.Common.Contracts.Network;
+using Server.Contracts.Contracts.Network;
 using Serilog;
 
 namespace Networking.Packets.Connection;

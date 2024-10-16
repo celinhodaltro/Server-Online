@@ -1,7 +1,7 @@
 ﻿using Game.Systems.SafeTrade.Request;
 using Networking.Packets.Outgoing.Trade;
-using Server.Common.Contracts;
-using Server.Common.Contracts.Network;
+using Server.Contracts.Contracts;
+using Server.Contracts.Contracts.Network;
 
 namespace Server.Events.Player.Trade;
 

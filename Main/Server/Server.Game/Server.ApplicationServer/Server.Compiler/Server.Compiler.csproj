@@ -15,13 +15,13 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\..\GameWorldSimulator\Game.Chats\Game.Chats.csproj" />
-        <ProjectReference Include="..\..\GameWorldSimulator\Game.Combat\Game.Combat.csproj" />
-        <ProjectReference Include="..\..\GameWorldSimulator\Game.Creatures\Game.Creatures.csproj" />
-        <ProjectReference Include="..\..\GameWorldSimulator\Game.Items\Game.Items.csproj" />
-        <ProjectReference Include="..\..\GameWorldSimulator\Game.World\Game.World.csproj" />
-        <ProjectReference Include="..\..\Loader\Loader.csproj" />
-        <ProjectReference Include="..\..\NetworkingServer\Networking.Packets\Networking.Packets.csproj" />
+        <ProjectReference Include="..\..\Server.GameWorldSimulator\Game.Chats\Game.Chats.csproj" />
+        <ProjectReference Include="..\..\Server.GameWorldSimulator\Game.Combat\Game.Combat.csproj" />
+        <ProjectReference Include="..\..\Server.GameWorldSimulator\Game.Creatures\Game.Creatures.csproj" />
+        <ProjectReference Include="..\..\Server.GameWorldSimulator\Game.Items\Game.Items.csproj" />
+        <ProjectReference Include="..\..\Server.GameWorldSimulator\Game.World\Game.World.csproj" />
+        <ProjectReference Include="..\..\Server.Loader\Loader.csproj" />
+        <ProjectReference Include="..\..\Server.NetworkingServer\Networking.Packets\Networking.Packets.csproj" />
     </ItemGroup>
 
 </Project>

@@ -3,8 +3,8 @@ using Server.Entities.Common.Texts;
 using Networking.Packets.Outgoing;
 using Networking.Packets.Outgoing.Effect;
 using Networking.Packets.Outgoing.Player;
-using Server.Common.Contracts;
-using Server.Common.Contracts.Network;
+using Server.Contracts.Contracts;
+using Server.Contracts.Contracts.Network;
 
 namespace Server.Events.Player;
 

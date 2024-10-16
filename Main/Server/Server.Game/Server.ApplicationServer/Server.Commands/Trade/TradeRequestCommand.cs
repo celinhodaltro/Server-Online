@@ -5,8 +5,8 @@ using Server.Entities.Common.Helpers;
 using Server.Entities.Common.Location;
 using Game.Systems.SafeTrade;
 using Networking.Packets.Incoming.Trade;
-using Server.Common.Contracts;
-using Server.Common.Contracts.Commands;
+using Server.Contracts.Contracts;
+using Server.Contracts.Contracts.Commands;
 
 namespace Server.Commands.Trade;
 

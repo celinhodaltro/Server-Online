@@ -1,6 +1,6 @@
 ﻿using System.Threading;
 
-namespace Server.Common.Contracts.Tasks;
+namespace Server.Contracts.Contracts.Tasks;
 
 public interface IDispatcher
 {

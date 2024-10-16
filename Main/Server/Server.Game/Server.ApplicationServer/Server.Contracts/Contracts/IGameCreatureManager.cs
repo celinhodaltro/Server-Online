@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using Server.Entities.Common.Contracts.Creatures;
-using Server.Common.Contracts.Network;
+using Server.Contracts.Contracts.Network;
 
-namespace Server.Common.Contracts;
+namespace Server.Contracts.Contracts;
 
 public interface IGameCreatureManager
 {

@@ -5,7 +5,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Networking.Packets.Connection;
 using Networking.Protocols;
-using Server.Common.Contracts.Network;
+using Server.Contracts.Contracts.Network;
 using Serilog;
 
 namespace Networking.Listeners;

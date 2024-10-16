@@ -1,6 +1,6 @@
 ﻿using Server.Entities.Common.Contracts.Items.Types;
 using Server.Entities.Common.Contracts.World.Tiles;
-using Server.Common.Contracts;
+using Server.Contracts.Contracts;
 
 namespace Server.Jobs.Items;
 

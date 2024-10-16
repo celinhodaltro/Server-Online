@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using Server.Entities.Common.Contracts.Creatures;
 
-namespace Server.Common.Contracts.Network;
+namespace Server.Contracts.Contracts.Network;
 
 public interface IConnection
 {

@@ -4,8 +4,8 @@ using Server.Entities.Common.Contracts.Items.Types.Usable;
 using Server.Entities.Common.Contracts.Services;
 using Server.Entities.Common.Location;
 using Networking.Packets.Incoming;
-using Server.Common.Contracts;
-using Server.Common.Contracts.Commands;
+using Server.Contracts.Contracts;
+using Server.Contracts.Contracts.Commands;
 
 namespace Server.Commands.Player.UseItem;
 

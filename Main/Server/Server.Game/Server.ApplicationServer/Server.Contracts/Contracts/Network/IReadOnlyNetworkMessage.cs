@@ -1,8 +1,8 @@
 using System;
 using Server.Entities.Common.Location.Structs;
-using Server.Common.Contracts.Network.Enums;
+using Server.Contracts.Contracts.Network.Enums;
 
-namespace Server.Common.Contracts.Network;
+namespace Server.Contracts.Contracts.Network;
 
 // <summary>
 /// Interface for read-only network messages.

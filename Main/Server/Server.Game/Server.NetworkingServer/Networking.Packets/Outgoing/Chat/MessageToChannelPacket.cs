@@ -1,6 +1,6 @@
 ﻿using Server.Entities.Common.Chats;
 using Server.Entities.Common.Contracts.Creatures;
-using Server.Common.Contracts.Network;
+using Server.Contracts.Contracts.Network;
 
 namespace Networking.Packets.Outgoing.Chat;
 

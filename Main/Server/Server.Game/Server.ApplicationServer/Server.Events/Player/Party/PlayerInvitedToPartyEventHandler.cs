@@ -2,7 +2,7 @@
 using Server.Entities.Common.Creatures.Party;
 using Server.Entities.Common.Helpers;
 using Networking.Packets.Outgoing.Party;
-using Server.Common.Contracts;
+using Server.Contracts.Contracts;
 
 namespace Server.Events.Player.Party;
 

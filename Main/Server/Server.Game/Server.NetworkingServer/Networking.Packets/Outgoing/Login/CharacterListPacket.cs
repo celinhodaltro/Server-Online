@@ -1,6 +1,6 @@
 ﻿using Data.Entities;
 using Microsoft.AspNet.Identity;
-using Server.Common.Contracts.Network;
+using Server.Contracts.Contracts.Network;
 using Server.Entities;
 
 namespace Networking.Packets.Outgoing.Login;

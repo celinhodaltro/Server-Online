@@ -4,7 +4,7 @@ using Server.Entities.Common.Helpers;
 using Server.Entities.Common.Texts;
 using Networking.Packets.Outgoing;
 using Networking.Packets.Outgoing.Party;
-using Server.Common.Contracts;
+using Server.Contracts.Contracts;
 
 namespace Server.Events.Player.Party;
 

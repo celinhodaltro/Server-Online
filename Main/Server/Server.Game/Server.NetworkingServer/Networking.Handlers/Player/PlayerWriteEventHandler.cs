@@ -1,8 +1,8 @@
 ﻿using Data.InMemory;
 using Server.Entities.Common.Contracts.Items.Types;
 using Networking.Packets.Incoming;
-using Server.Common.Contracts;
-using Server.Common.Contracts.Network;
+using Server.Contracts.Contracts;
+using Server.Contracts.Contracts.Network;
 using Server.Tasks;
 
 namespace Networking.Handlers.Player;

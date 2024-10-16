@@ -3,8 +3,8 @@ using System.Runtime.InteropServices;
 using System.Text;
 using Server.Entities.Common.Helpers;
 using Server.Entities.Common.Location.Structs;
-using Server.Common.Contracts.Network;
-using Server.Common.Contracts.Network.Enums;
+using Server.Contracts.Contracts.Network;
+using Server.Contracts.Contracts.Network.Enums;
 
 namespace Networking.Packets.Messages;
 

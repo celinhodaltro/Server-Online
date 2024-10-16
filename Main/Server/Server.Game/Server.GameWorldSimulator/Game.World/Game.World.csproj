@@ -18,7 +18,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\..\..\WebApp\Back\Server.Entities\Server.Entities.csproj" />
+      <ProjectReference Include="..\..\..\Server.Entities\Server.Entities.csproj" />
     </ItemGroup>
 
 </Project>

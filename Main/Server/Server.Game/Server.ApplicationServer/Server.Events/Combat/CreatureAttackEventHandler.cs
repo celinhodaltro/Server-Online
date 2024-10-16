@@ -7,8 +7,8 @@ using Server.Entities.Common.Helpers;
 using Server.Entities.Common.Item;
 using Server.Entities.Common.Location.Structs;
 using Networking.Packets.Outgoing.Effect;
-using Server.Common.Contracts;
-using Server.Common.Contracts.Network;
+using Server.Contracts.Contracts;
+using Server.Contracts.Contracts.Network;
 
 namespace Server.Events.Combat;
 
