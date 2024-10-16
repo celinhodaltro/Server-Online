@@ -42,7 +42,7 @@ public static class DatabaseInjection
     {
         builder.RegisterType<CharacterBusinessRules>().SingleInstance();
         builder.RegisterType<UserBusinessRules>().SingleInstance();
-        builder.RegisterType<LogBusinessRules>().SingleInstance();
+        builder.RegisterType<LoggerBusinessRules>().SingleInstance();
         return builder;
     }
 
