@@ -34,8 +34,8 @@ jobs:
 
     - name: Restore all projects
       run: |
-        dotnet clean
-        dotnet restore
+        dotnet clean 
+        dotnet restore --no-cache
         
     - name: Build Server.Game
       run: dotnet build $env:Game_Project_Path --configuration ${{ matrix.configuration }}
