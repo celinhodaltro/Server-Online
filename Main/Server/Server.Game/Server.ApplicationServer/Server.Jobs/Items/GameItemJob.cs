@@ -16,7 +16,6 @@ public class GameItemJob
     public void StartChecking()
     {
         _game.Scheduler.AddEvent(new SchedulerEvent(EVENT_CHECK_ITEM_INTERVAL, StartChecking));
-
         _game.DecayableItemManager.DecayExpiredItems();
     }
 }
