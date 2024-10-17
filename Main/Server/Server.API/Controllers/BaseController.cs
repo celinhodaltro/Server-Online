@@ -86,12 +86,6 @@ public abstract class BaseController : ControllerBase
             Errors = new List<string> { error }
         });
     }
-
-
-
-
-
-
 }
 
 
