@@ -1,5 +1,5 @@
 ﻿using Extensions.Services;
-using Server.Common.Contracts;
+using Server.Contracts.Contracts;
 using NLua;
 
 namespace Extensions;

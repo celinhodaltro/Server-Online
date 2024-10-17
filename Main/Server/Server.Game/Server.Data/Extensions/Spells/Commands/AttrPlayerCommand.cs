@@ -3,7 +3,7 @@ using Game.Combat.Spells;
 using Server.Entities.Common;
 using Server.Entities.Common.Contracts.Creatures;
 using Game.Creatures.Player;
-using Server.Common.Contracts;
+using Server.Contracts.Contracts;
 using Server.Helpers;
 
 namespace Extensions.Spells.Commands;

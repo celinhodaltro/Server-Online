@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="System.Collections" Version="4.3.0" />
+        <PackageReference Include="System.Collections.Immutable" Version="8.0.0" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\..\Server.ApplicationServer\Server.Contracts\Server.Contracts.csproj" />
+        <ProjectReference Include="..\..\Server.GameWorldSimulator\Game.Chats\Game.Chats.csproj" />
+        <ProjectReference Include="..\..\Server.GameWorldSimulator\Game.Combat\Game.Combat.csproj" />
+        <ProjectReference Include="..\..\Server.GameWorldSimulator\Game.Creatures\Game.Creatures.csproj" />
+        <ProjectReference Include="..\..\Server.GameWorldSimulator\Game.Items\Game.Items.csproj" />
+        <ProjectReference Include="..\..\Server.GameWorldSimulator\Game.World\Game.World.csproj" />
+        <ProjectReference Include="..\..\Server.Loader\Loader.csproj" />
+        <ProjectReference Include="..\..\Server.Standalone\Server.Game.csproj" />
+        <ProjectReference Include="..\..\Server.NetworkingServer\Networking.Handlers\Networking.Handlers.csproj" />
+        <ProjectReference Include="..\..\Server.NetworkingServer\Networking\Networking.csproj" />
+        <ProjectReference Include="..\..\Server.ApplicationServer\Server.Commands\Server.Commands.csproj" />
+        <ProjectReference Include="..\..\Server.ApplicationServer\Server.Contracts\Server.Common.csproj" />
+        <ProjectReference Include="..\..\Server.ApplicationServer\Server.Events\Server.Events.csproj" />
+        <ProjectReference Include="..\..\Server.ApplicationServer\Server.Jobs\Server.Jobs.csproj" />
+        <ProjectReference Include="..\..\Server.ApplicationServer\Server\Server.csproj" />
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Remove="Items\Sign.cs" />
+    </ItemGroup>
+
+</Project>

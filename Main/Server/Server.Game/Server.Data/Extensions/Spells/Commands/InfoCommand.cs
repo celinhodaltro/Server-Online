@@ -8,7 +8,7 @@ using Server.Entities.Common.Contracts.Items.Types;
 using Server.Entities.Common.Creatures;
 using Game.Items;
 using Networking.Packets.Outgoing;
-using Server.Common.Contracts;
+using Server.Contracts.Contracts;
 using Server.Configurations;
 using Server.Helpers;
 

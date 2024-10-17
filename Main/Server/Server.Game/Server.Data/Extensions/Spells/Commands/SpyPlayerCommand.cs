@@ -4,7 +4,7 @@ using Game.Combat.Spells;
 using Server.Entities.Common;
 using Server.Entities.Common.Contracts.Creatures;
 using Game.Items;
-using Server.Common.Contracts;
+using Server.Contracts.Contracts;
 using Server.Configurations;
 using Server.Helpers;
 

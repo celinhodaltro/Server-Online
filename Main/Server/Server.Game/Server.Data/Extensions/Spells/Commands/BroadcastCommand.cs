@@ -2,7 +2,7 @@
 using Server.Entities.Common;
 using Server.Entities.Common.Contracts.Creatures;
 using Networking.Packets.Outgoing;
-using Server.Common.Contracts;
+using Server.Contracts.Contracts;
 using Server.Helpers;
 
 using System;
