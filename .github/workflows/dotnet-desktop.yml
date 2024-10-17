@@ -13,8 +13,9 @@ jobs:
     strategy:
       matrix:
         configuration: [Debug, Release]
+        os: [windows-latest, ubuntu-latest] # Adiciona Ubuntu à matriz
 
-    runs-on: windows-latest
+    runs-on: ${{ matrix.os }} 
 
     env:
       Api_Project_Path: ./Main/Server/Server.API/Server.API.csproj
@@ -38,30 +39,34 @@ jobs:
         dotnet restore --no-cache
         
     - name: Building API
-      run: dotnet build $env:Api_Project_Path --configuration ${{ matrix.configuration }}
+      run: dotnet build ${{ env.Api_Project_Path }} --configuration ${{ matrix.configuration }}
 
     - name: Build Game
-      run: dotnet build $env:Game_Project_Path --configuration ${{ matrix.configuration }}
+      run: dotnet build ${{ env.Game_Project_Path }} --configuration ${{ matrix.configuration }}
 
     - name: Building Blazor
-      run: dotnet build $env:WebApp_Project_Path --configuration ${{ matrix.configuration }}
+      run: dotnet build ${{ env.WebApp_Project_Path }} --configuration ${{ matrix.configuration }}
       
 
     - name: Publish API
-      run: dotnet publish $env:Api_Project_Path --configuration ${{ matrix.configuration }} --output ./output/Server.API
+      run: dotnet publish ${{ env.Api_Project_Path }} --configuration ${{ matrix.configuration }} --output ./output/Server.API
       
     - name: Publish Game
-      run: dotnet publish $env:Game_Project_Path --configuration ${{ matrix.configuration }} --output ./output/Server.Game
+      run: dotnet publish ${{ env.Game_Project_Path }} --configuration ${{ matrix.configuration }} --output ./output/Server.Game
 
     - name: Publish Blazor
-      run: dotnet publish $env:WebApp_Project_Path --configuration ${{ matrix.configuration }} /p:PublishTrimmed=false --output ./output/Application.WebApp
+      run: dotnet publish ${{ env.WebApp_Project_Path }} --configuration ${{ matrix.configuration }} /p:PublishTrimmed=false --output ./output/Application.WebApp
 
     - name: Compress output folder
       run: |
-        Compress-Archive -Path ./output -DestinationPath ./output.zip
+        if (${{ matrix.os }} == 'windows-latest') {
+          Compress-Archive -Path ./output -DestinationPath ./output.zip
+        } else {
+          tar -czvf output.tar.gz ./output
+        }
 
     - name: Upload build artifacts
       uses: actions/upload-artifact@v3
       with:
         name: output
-        path: output.zip
+        path: ${{ matrix.os == 'windows-latest' && 'output.zip' || 'output.tar.gz' }} # Upload o arquivo correto dependendo do SO
