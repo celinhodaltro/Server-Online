@@ -56,26 +56,12 @@ jobs:
     - name: Publish Blazor
       run: dotnet publish $env:WebApp_Project_Path --configuration ${{ matrix.configuration }} /p:PublishTrimmed=false --output ./output/Application.WebApp
 
-    - name: Create Archive
+    - name: Compress output folder
       run: |
-        Compress-Archive -Path ./output/* -DestinationPath ./output.zip
+        Compress-Archive -Path ./output -DestinationPath ./output.zip
 
-    - name: Split file
-      run: |
-        $filePath = './output/output.zip'
-        $fileSize = (Get-Item $filePath).Length
-        $splitSize = 64MB
-        $chunkCount = [math]::Ceiling($fileSize / $splitSize)
-    
-        for ($i = 0; $i -lt $chunkCount; $i++) {
-          $startByte = $i * $splitSize
-          $endByte = [math]::Min($fileSize, ($i + 1) * $splitSize) - 1
-          $chunkName = "./output/output_part_$i.zip"
-          (Get-Content $filePath -AsByteStream -ReadCount 0 -TotalCount $splitSize).WriteTo($chunkName)
-        }
-
-    - name: Upload split files
+    - name: Upload build artifacts
       uses: actions/upload-artifact@v3
       with:
         name: output
-        path: ./output/output_part_*.zip
+        path: output.zip
