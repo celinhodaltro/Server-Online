@@ -37,15 +37,15 @@ jobs:
         dotnet restore $env:Api_Project_Path
         dotnet restore $env:WebApp_Project_Path
         dotnet restore $env:Game_Project_Path
-
-    - name: Build Server.API
-      run: dotnet build $env:Api_Project_Path --configuration ${{ matrix.configuration }}
+        
+    - name: Build Server.Game
+      run: dotnet build $env:Game_Project_Path --configuration ${{ matrix.configuration }}
 
     - name: Build Application.WebApp
       run: dotnet build $env:WebApp_Project_Path --configuration ${{ matrix.configuration }}
-
-    - name: Build Server.Game
-      run: dotnet build $env:Game_Project_Path --configuration ${{ matrix.configuration }}
+      
+    - name: Build Server.API
+      run: dotnet build $env:Api_Project_Path --configuration ${{ matrix.configuration }}
 
     - name: Publish Server.API
       run: dotnet publish $env:Api_Project_Path --configuration ${{ matrix.configuration }} --output ./output/Server.API
