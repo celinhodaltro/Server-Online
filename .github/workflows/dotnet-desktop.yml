@@ -13,7 +13,7 @@ jobs:
     strategy:
       matrix:
         configuration: [Debug, Release]
-        os: [windows-latest, ubuntu-latest] # Adiciona Ubuntu à matriz
+        os: [windows-latest, ubuntu-latest] # Add Ubuntu to the matrix
 
     runs-on: ${{ matrix.os }} 
 
@@ -47,7 +47,6 @@ jobs:
     - name: Building Blazor
       run: dotnet build ${{ env.WebApp_Project_Path }} --configuration ${{ matrix.configuration }}
       
-
     - name: Publish API
       run: dotnet publish ${{ env.Api_Project_Path }} --configuration ${{ matrix.configuration }} --output ./output/Server.API
       
@@ -57,16 +56,16 @@ jobs:
     - name: Publish Blazor
       run: dotnet publish ${{ env.WebApp_Project_Path }} --configuration ${{ matrix.configuration }} /p:PublishTrimmed=false --output ./output/Application.WebApp
 
-    - name: Compress output folder
-      run: |
-        if (${{ matrix.os }} == 'windows-latest') {
-          Compress-Archive -Path ./output -DestinationPath ./output.zip
-        } else {
-          tar -czvf output.tar.gz ./output
-        }
+    - name: Compress output folder on Windows
+      if: matrix.os == 'windows-latest'
+      run: Compress-Archive -Path ./output -DestinationPath ./output.zip
+
+    - name: Compress output folder on Ubuntu
+      if: matrix.os == 'ubuntu-latest'
+      run: tar -czvf output.tar.gz ./output
 
     - name: Upload build artifacts
       uses: actions/upload-artifact@v3
       with:
         name: output
-        path: ${{ matrix.os == 'windows-latest' && 'output.zip' || 'output.tar.gz' }} # Upload o arquivo correto dependendo do SO
+        path: ${{ matrix.os == 'windows-latest' && 'output.zip' || 'output.tar.gz' }} # Upload the correct file depending on the OS
