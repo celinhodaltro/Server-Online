@@ -19,7 +19,7 @@ jobs:
     env:
       Api_Project_Path: ./Main/Server/Server.API/Server.API.csproj
       WebApp_Project_Path: ./Main/Application/Application.WebApp/Application.WebApp.csproj
-      Game_Project_Path: ./Main/Server/Server.Game/Server.Game.csproj
+      Game_Project_Path: ./Main/Server/Server.Game/Server.Starter/Server.Starter.csproj
 
     steps:
     - name: Checkout
