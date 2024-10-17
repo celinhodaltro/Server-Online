@@ -12,7 +12,7 @@
 
     <ItemGroup>
         <ProjectReference Include="..\..\..\Server.Entities\Server.Entities.csproj" />
-        <ProjectReference Include="..\..Server.Database.InMemory\Data.InMemory\Data.InMemory.csproj" />
+        <ProjectReference Include="..\..\Server.Database\Server.Database.InMemory\Data.InMemory.csproj" />
         <ProjectReference Include="..\..\Server.GameWorldSimulator\Game.Systems\Game.Systems.csproj" />
         <ProjectReference Include="..\Networking.Packets\Networking.Packets.csproj" />
         <ProjectReference Include="..\..\Server.ApplicationServer\Server.Contracts\Server.Contracts.csproj" />
