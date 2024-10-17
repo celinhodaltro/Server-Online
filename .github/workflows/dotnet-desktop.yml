@@ -37,13 +37,6 @@ jobs:
         dotnet clean 
         dotnet restore --no-cache
 
-    - name: Verify project structure
-      run: |
-        echo "Listing contents of Main/Server"
-        ls Main/Server
-        echo "Listing contents of Main/Server/Server.Entities"
-        ls Main/Server/Server.Entities
-        
     - name: Build Server.Game
       run: dotnet build $env:Game_Project_Path --configuration ${{ matrix.configuration }}
 
