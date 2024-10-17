@@ -57,7 +57,7 @@ jobs:
       run: dotnet publish $env:Api_Project_Path --configuration ${{ matrix.configuration }} --output ./output/Server.API
 
     - name: Publish Application.WebApp
-      run: dotnet publish $env:WebApp_Project_Path --configuration ${{ matrix.configuration }} --output ./output/Application.WebApp
+      run: dotnet publish $env:WebApp_Project_Path --configuration ${{ matrix.configuration }} /p:PublishTrimmed=false --output ./output/Application.WebApp
 
     - name: Publish Server.Game
       run: dotnet publish $env:Game_Project_Path --configuration ${{ matrix.configuration }} --output ./output/Server.Game
