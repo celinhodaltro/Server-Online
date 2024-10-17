@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Reflection;
 using Server.Entities.Common.Contracts.Creatures;
-using Server.Common.Contracts;
+using Server.Contracts.Contracts;
 
 namespace Extensions;
 

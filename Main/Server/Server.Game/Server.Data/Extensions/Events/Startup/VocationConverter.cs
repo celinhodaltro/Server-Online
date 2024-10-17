@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Server.Entities.Common.Contracts;
 using Server.Entities.Common.Item;
-using Server.Common.Contracts;
+using Server.Contracts.Contracts;
 using Serilog;
 
 namespace Extensions.Events.Startup;

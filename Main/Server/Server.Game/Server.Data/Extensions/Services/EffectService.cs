@@ -2,7 +2,7 @@
 using Server.Entities.Common.Creatures;
 using Server.Entities.Common.Location.Structs;
 using Networking.Packets.Outgoing.Effect;
-using Server.Common.Contracts;
+using Server.Contracts.Contracts;
 using Server.Helpers;
 
 namespace Extensions.Services;
