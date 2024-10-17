@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Library</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <IsPublishable>false</IsPublishable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Autofac" Version="8.1.0" />
+        <PackageReference Include="NLua" Version="1.7.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Server.GameWorldSimulator\Game.Items\Game.Items.csproj" />
+        <ProjectReference Include="..\Server.ApplicationServer\Server.Helpers\Server.Helpers.csproj" />
+        <ProjectReference Include="..\Server.ApplicationServer\Server.Application\Server.Application.csproj" />
+        <ProjectReference Include="..\Server.NetworkingServer\Networking\Networking.csproj" />
+    </ItemGroup>
+
+</Project>

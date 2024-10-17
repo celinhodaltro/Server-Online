@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <ItemGroup>
+        <Compile Remove="Combat\**" />
+        <EmbeddedResource Remove="Combat\**" />
+        <None Remove="Combat\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Serilog" Version="4.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\..\Server.BusinessRules\Server.BusinessRules.csproj" />
+        <ProjectReference Include="..\..\..\Server.Entities\Server.Entities.csproj" />
+        <ProjectReference Include="..\..\Server.GameWorldSimulator\Game.Creatures\Game.Creatures.csproj" />
+        <ProjectReference Include="..\..\Server.GameWorldSimulator\Game.Systems\Game.Systems.csproj" />
+        <ProjectReference Include="..\..\Server.Loader\Loader.csproj" />
+        <ProjectReference Include="..\..\Server.ApplicationServer\Server.Application\Server.Application.csproj" />
+        <ProjectReference Include="..\..\Server.Database\Server.Database\Data.csproj" />
+        <ProjectReference Include="..\Server.Contracts\Server.Contracts.csproj" />
+    </ItemGroup>
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Platforms>AnyCPU;x64</Platforms>
+        <IsPublishable>false</IsPublishable>
+    </PropertyGroup>
+
+</Project>

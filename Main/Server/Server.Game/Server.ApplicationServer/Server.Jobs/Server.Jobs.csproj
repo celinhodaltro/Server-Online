@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Platforms>AnyCPU;x64</Platforms>
+        <IsPublishable>false</IsPublishable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\Server.GameWorldSimulator\Game.Combat\Game.Combat.csproj" />
+        <ProjectReference Include="..\..\Server.GameWorldSimulator\Game.Creatures\Game.Creatures.csproj" />
+        <ProjectReference Include="..\..\Server.GameWorldSimulator\Game.World\Game.World.csproj" />
+        <ProjectReference Include="..\..\Server.ApplicationServer\Server.Commands\Server.Commands.csproj" />
+        <ProjectReference Include="..\..\Server.ApplicationServer\Server.Application\Server.Application.csproj" />
+    </ItemGroup>
+
+</Project>

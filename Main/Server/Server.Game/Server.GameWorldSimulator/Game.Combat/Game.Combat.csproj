@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <IsPublishable>false</IsPublishable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\..\Server.Entities\Server.Entities.csproj" />
+        <ProjectReference Include="..\Game.World\Game.World.csproj" />
+    </ItemGroup>
+
+</Project>

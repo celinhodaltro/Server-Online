@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "Server.Start": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "ENVIRONMENT": "Local"
+      },
+      "nativeDebugging": true
+    }
+  }
+}

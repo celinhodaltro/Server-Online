@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <UserSecretsId>ec7b0ace-791f-4a46-97cc-5bd34da37651</UserSecretsId>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <IsPublishable>false</IsPublishable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.11.0" />
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+        <PackageReference Include="System.Drawing.Common" Version="8.0.0" />
+        <PackageReference Include="System.Reactive.Linq" Version="6.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\Server.GameWorldSimulator\Game.Chats\Game.Chats.csproj" />
+        <ProjectReference Include="..\..\Server.GameWorldSimulator\Game.Combat\Game.Combat.csproj" />
+        <ProjectReference Include="..\..\Server.GameWorldSimulator\Game.Creatures\Game.Creatures.csproj" />
+        <ProjectReference Include="..\..\Server.GameWorldSimulator\Game.Items\Game.Items.csproj" />
+        <ProjectReference Include="..\..\Server.GameWorldSimulator\Game.World\Game.World.csproj" />
+        <ProjectReference Include="..\..\Server.Loader\Loader.csproj" />
+        <ProjectReference Include="..\..\Server.NetworkingServer\Networking.Packets\Networking.Packets.csproj" />
+    </ItemGroup>
+
+</Project>
