@@ -11,6 +11,7 @@
     </ItemGroup>
 
     <ItemGroup>
+        <ProjectReference Include="..\..\..\Server.BusinessRules\Server.BusinessRules.csproj" />
         <ProjectReference Include="..\..\..\Server.Entities\Server.Entities.csproj" />
         <ProjectReference Include="..\..\Server.GameWorldSimulator\Game.Creatures\Game.Creatures.csproj" />
         <ProjectReference Include="..\..\Server.GameWorldSimulator\Game.Systems\Game.Systems.csproj" />
