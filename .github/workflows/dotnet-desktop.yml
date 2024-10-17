@@ -17,9 +17,9 @@ jobs:
     runs-on: windows-latest
 
     env:
-      Api_Project_Path: ./Server/Server.API/Server.API.csproj
-      WebApp_Project_Path: ./Application/Application.WebApp/Application.WebApp.csproj
-      Game_Project_Path: ./Server/Server.Game/Server.Game.csproj
+      Api_Project_Path: ./Main/Server/Server.API/Server.API.csproj
+      WebApp_Project_Path: ./Main/Application/Application.WebApp/Application.WebApp.csproj
+      Game_Project_Path: ./Main/Server/Server.Game/Server.Game.csproj
 
     steps:
     - name: Checkout
