@@ -1,69 +1,31 @@
-﻿name: _Template Build
+﻿name: Build and Deploy Blazor App
+
 on:
-  workflow_call:
-    inputs:
-      project:
-        description: 'The *csproj project path passed from the caller workflow'
-        required: true
-        type: string
-      deploy:
-        description: 'enable publish code to enviroment'
-        required: true
-        type: boolean
-        default: false
-      test:
-        description: 'The test path passed from the caller workflow'
-        required: true
-        type: string
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
 jobs:
   build:
-    name: ${{ matrix.os }}
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [ ubuntu-latest, windows-latest, macOS-latest ]
+    runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3.1.0
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v3.0.2
-
-      - name: Cache dependencies
-        uses: actions/cache@v3.0.11
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v2
         with:
-          path: ~/.nuget/packages
-          key: ${{ runner.os }}-nuget-${{ hashFiles('**/packages.lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-nuget  
+          dotnet-version: '8.0'
 
-      - name: Install dependencies
-        working-directory: ${{ inputs.project }}
-        run: dotnet restore
+      - name: Restore dependencies
+        run: dotnet restore ./Main/Application/Application.WebApp/Application.WebApp.csproj
 
-      - name: Install dependencies for testing
-        working-directory: ${{ inputs.test }}
-        run: dotnet restore
+      - name: Build 
+        run: dotnet build ./Main/Application/Application.WebApp/Application.WebApp.csproj --configuration Release --no-restore
 
-      - name: Build
-        working-directory: ${{ inputs.project }}
-        run: dotnet build --configuration Release --no-restore
-
-      - name: Test
-        uses: nick-fields/retry@v2
-        with:
-          timeout_minutes: 15
-          max_attempts: 3
-          command: dotnet test ${{ inputs.test }} --no-restore --verbosity normal
-
-      - name: Publish
-        working-directory: ${{ inputs.project }}
-        if: ${{ inputs.deploy == true }}
-        run: dotnet publish --configuration Release --no-restore --no-build --output ./publish
-      
-      - name: Upload Artifact
-        if: ${{ inputs.deploy == true }}
-        uses: actions/upload-artifact@v3
-        with:
-          name: publish
-          path: ${{ inputs.project }}/publish
+      - name: Publish 
+        run: dotnet publish ./Main/Application/Application.WebApp/Application.WebApp.csproj --configuration Release --output ./publish
