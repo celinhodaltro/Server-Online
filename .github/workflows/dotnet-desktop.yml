@@ -40,7 +40,7 @@ jobs:
     - name: Building API
       run: dotnet build $env:Api_Project_Path --configuration ${{ matrix.configuration }}
 
-    - name: Build Server.Game
+    - name: Build Game
       run: dotnet build $env:Game_Project_Path --configuration ${{ matrix.configuration }}
 
     - name: Building Blazor
