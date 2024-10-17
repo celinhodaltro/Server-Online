@@ -1,7 +1,12 @@
 
-# Ursulla Project
+# Ursulla Game Project ##
 
-![License](https://img.shields.io/github/license/celinhodaltro/Server-Online) ![Issues](https://img.shields.io/github/issues/celinhodaltro/Server-Online)
+## Project Status
+![Issues](https://img.shields.io/github/issues/celinhodaltro/Server-Online)
+![Build Status](https://github.com/celinhodaltro/Server-Online/actions/workflows/dotnet-desktop.yml/badge.svg)
+
+
+
 
 ## Conteudos
 
