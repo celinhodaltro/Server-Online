@@ -57,7 +57,7 @@ jobs:
 
     - name: Create Archive
       run: |
-        zip -r output.zip ./output
+        Compress-Archive -Path ./output/* -DestinationPath ./output.zip
 
     - name: Upload build artifacts
       uses: actions/upload-artifact@v3
