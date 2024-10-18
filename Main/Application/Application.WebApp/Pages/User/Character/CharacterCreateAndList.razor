@@ -1,0 +1,59 @@
+﻿@inject CharacterService CharacterService
+@inject AuthService AuthService
+@inject NavigationManager NavigationManager
+
+
+<style>
+    .main {
+        font-family: 'Cinzel', serif !important;
+        color: white !important;
+        background-image: url('/Images/User/Layout.jpeg') !important;
+        background-size: cover;
+        color: #fff;
+        height: 102.5vh !important;
+    }
+</style>
+
+<MudGrid style="padding:80px;" Class="main text-center">
+
+    <MudItem xs="12" md="3">
+        <MudCard>
+            <MudCardContent>
+                <CharacterCreate/>
+            </MudCardContent>
+        </MudCard>
+    </MudItem>
+    @if (Characters?.Count > 0)
+        @foreach (var character in Characters)
+        {
+            <MudItem xs="12" md="3">
+                <MudCard>
+                    <MudCardContent>
+                        <MudText Typo="Typo.h5">@character.Name <MudIcon Icon="@Icons.Material.Filled.Person" Title="Person" /></MudText>
+                        <MudText Typo="Typo.h6">@character.Gender </MudText>
+                    </MudCardContent>
+                    <MudCardActions>
+                        <MudButtonGroup Class="mt-3" OverrideStyles="false" FullWidth="true">
+                            <MudButton Variant="Variant.Filled" Color="Color.Primary">View</MudButton>
+                            <MudButton Variant="Variant.Filled" Color="Color.Error" EndIcon="@Icons.Material.Filled.Delete">Delete</MudButton>
+                        </MudButtonGroup>
+                    </MudCardActions>
+                </MudCard>
+            </MudItem>
+        }
+</MudGrid>
+
+@code {
+    private List<Server.Entities.Character>? Characters;
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        if (!await AuthService.IsAuthenticated())
+            NavigationManager.NavigateTo("Auth/Index");
+
+
+        var UserId = await AuthService.GetUserId();
+        Characters = await CharacterService.GetCharacters(UserId);
+    }
+}

@@ -8,25 +8,26 @@
 
 
 <EditForm Model="loginModel" OnValidSubmit="HandleLogin">
-    <MudText Class="mb-5" Typo="Typo.h4">Login</MudText>
-    <MudDivider DividerType="DividerType.Middle"/>
+    <MudDivider DividerType="DividerType.FullWidth" />
+    <MudText Class="my-5" Typo="Typo.h4">Login</MudText>
+    <MudDivider DividerType="DividerType.FullWidth" />
     <DataAnnotationsValidator />
     <ValidationSummary />
 
-    <div class="form-group mt-2">
-        <MudTextField T="string" @bind-Value="@loginModel.Email" Variant="Variant.Outlined" ShrinkLabel="true" InputType="InputType.Email" Label="Email" Required="true" RequiredError="Email is required!" />
-    </div>
+    <MudGrid Spacing="1">
+        <MudItem xs="12">
+            <MudTextField T="string" @bind-Value="@loginModel.Email" Placeholder="Your Email" Variant="Variant.Outlined" ShrinkLabel="true" InputType="InputType.Email" Label="Email" Required="true" RequiredError="Email is required!" />
+        </MudItem>
 
-    <div class="form-group mt-2">
-        <MudTextField T="string" @bind-Value="@loginModel.Password" Variant="Variant.Outlined" ShrinkLabel="true" InputType="InputType.Password" Label="Password" Required="true" RequiredError="Password is required!" />
-    </div>
+        <MudItem xs="12" >
+            <MudTextField T="string" @bind-Value="@loginModel.Password" Placeholder="Your Password" Variant="Variant.Outlined" ShrinkLabel="true" InputType="InputType.Password" Label="Password" Required="true" RequiredError="Password is required!" />
+        </MudItem>
 
-    <MudButton ButtonType="ButtonType.Submit" StartIcon="@Icons.Material.Filled.Person" Class="mt-4" Variant="Variant.Filled" Color="Color.Primary">Login</MudButton>
-
-
+        <MudItem xs="12" Class="my-3">
+            <MudButton ButtonType="ButtonType.Submit" StartIcon="@Icons.Material.Filled.Person" Variant="Variant.Filled" Color="Color.Primary">Login</MudButton>
+        </MudItem>
+    </MudGrid>
 </EditForm>
-
-
 
 @if (ShowErrors)
 {

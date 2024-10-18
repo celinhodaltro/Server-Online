@@ -6,44 +6,45 @@
 
 
 <EditForm Model="RegisterModel" OnValidSubmit="HandleRegister">
-    <MudText Class="mb-5" Typo="Typo.h4">Register</MudText>
-    <MudDivider DividerType="DividerType.Middle" Class="my-6" />
+    <MudDivider DividerType="DividerType.FullWidth" />
+    <MudText Class="my-5" Typo="Typo.h4">Register</MudText>
+    <MudDivider DividerType="DividerType.FullWidth" />
     <DataAnnotationsValidator />
     <ValidationSummary />
 
-    <div class="form-group mt-2">
-        <MudTextField T="string" @bind-Value="@RegisterModel.Email" ShrinkLabel="true" Variant="Variant.Outlined" InputType="InputType.Email" Label="Email" Required="true" RequiredError="Email is required!" />
-    </div>
+    <MudGrid Spacing="1">
+        <MudItem xs="12"  >
+            <MudTextField T="string" @bind-Value="@RegisterModel.Email" Placeholder="Email" ShrinkLabel="true" Variant="Variant.Outlined" InputType="InputType.Email" Label="Email" Required="true" RequiredError="Email is required!" />
+        </MudItem>
 
-    <div class="form-group mt-2">
-        <MudTextField T="string" @bind-Value="@RegisterModel.Password" ShrinkLabel="true" Variant="Variant.Outlined" InputType="InputType.Password" Label="Password" Required="true" RequiredError="Password is required!" />
-    </div>
+        <MudItem xs="12" >
+            <MudTextField T="string" @bind-Value="@RegisterModel.Password" Placeholder="Password" ShrinkLabel="true" Variant="Variant.Outlined" InputType="InputType.Password" Label="Password" Required="true" RequiredError="Password is required!" />
+        </MudItem>
 
-    <div class="form-group mt-2">
-        <MudTextField T="string" @bind-Value="@RepeatPasssword" ShrinkLabel="true" Variant="Variant.Outlined" InputType="InputType.Password" Label="Repeat Password" Required="true" RequiredError="Repeat Password is required!" />
-    </div>
+        <MudItem xs="12" >
+            <MudTextField T="string" @bind-Value="@RepeatPasssword" Placeholder="Repeat Password" ShrinkLabel="true" Variant="Variant.Outlined" InputType="InputType.Password" Label="Repeat Password" Required="true" RequiredError="Repeat Password is required!" />
+        </MudItem>
 
-    <div class="form-group mt-2">
-        <MudCheckBox @bind-Value="IsChecked" UncheckedColor="Color.Error" Dense="true" Color="Color.Success" Label="I agree to the rules to enter the game."></MudCheckBox>
-    </div>
+        <MudItem xs="12" >
+            <MudCheckBox @bind-Value="IsChecked" UncheckedColor="Color.Error" Dense="true" Color="Color.Success" Label="I agree to the rules to enter the game."></MudCheckBox>
+        </MudItem>
 
-    <div class="form-group mt-2">
-        <MudButton ButtonType="ButtonType.Submit" Disabled="!IsChecked" Class="mt-4" StartIcon="@Icons.Material.Filled.Send" Variant="Variant.Filled" Color="Color.Secondary">Register</MudButton>
-    </div>
+        <MudItem xs="12" Class="my-3" >
+            <MudButton ButtonType="ButtonType.Submit" Disabled="!IsChecked" Class="mt-4" StartIcon="@Icons.Material.Filled.Send"  Variant="Variant.Filled" Color="Color.Secondary">Register</MudButton>
+        </MudItem>
 
-
-
-    @if (ShowErrors)
-    {
-        <div class="form-group mt-2">
-            @foreach(var Error in Errors)
-            {
-                <MudAlert Severity="Severity.Error" Variant="Variant.Outlined">@Error </MudAlert>
-            }
-        </div>
-    }
-
+        @if (ShowErrors)
+        {
+            <MudItem xs="12">
+                @foreach (var Error in Errors)
+                {
+                    <MudAlert Severity="Severity.Error" Variant="Variant.Outlined">@Error </MudAlert>
+                }
+            </MudItem>
+        }
+    </MudGrid>
 </EditForm>
+
 
 
 
@@ -56,6 +57,7 @@
     bool IsChecked = false;
     bool ShowErrors = false;
     List<string>? Errors = new();
+
 
     private async Task HandleRegister()
     {
