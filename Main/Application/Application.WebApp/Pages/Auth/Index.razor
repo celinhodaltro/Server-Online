@@ -1,8 +1,6 @@
 ﻿@page "/Auth/Index"
 @inject NavigationManager NavigationManager
 
-
-
 <style>
     .login-container {
         display: flex;
@@ -11,14 +9,27 @@
         height: 100vh;
         background-image: url('/Images/Designer.jpeg') !important;
         background-size: cover;
-        padding: 20px
+        position: relative;
+        padding: 20px;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
     }
 
     .login-card {
         width: 400px;
-        max-width: 400px;
+        max-width: 100%;
         border-radius: 13px;
         padding: 20px;
+        position: relative;
+        z-index: 2;
     }
 
     .mud-paper, .login-card {
@@ -34,7 +45,7 @@
         color: white !important;
     }
 
-    h4, p, h1, h2, h3 {
+    h1, h2, h3, h4, p {
         font-family: 'Cinzel', serif !important;
         color: white;
     }
@@ -53,16 +64,32 @@
         margin-top: 20px;
     }
 
+    .welcome-message {
+        margin-bottom: 20px;
+        color: #f0f0f0;
+        font-size: 1.2rem;
+    }
+
+    .mud-button {
+        transition: background-color 0.3s ease;
+    }
+
+    .mud-button:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
 </style>
 
 <div class="login-container">
+    <div class="overlay"></div>
     <MudCard Class="login-card">
         <MudFab Size="Size.Small" Class="close-button" Color="Color.Error" OnClick="BackToStart" StartIcon="@Icons.Material.Filled.ArrowBack" />
 
         <MudCardContent Class="text-center">
             @if (!showLogin && !showRegister)
             {
-                <MudText Class="mb-5" Typo="Typo.h4">Auth</MudText>
+
+                <MudText Class="mb-5" Typo="Typo.h4">Authenticate</MudText>
+                <MudText Class="mb-5 welcome-message">Welcome to Our Authentication Portal</MudText>
                 <MudDivider DividerType="DividerType.Middle" />
                 <MudButtonGroup OverrideStyles="false" Class="button-group" DropShadow="true" Color="Color.Primary" Variant="Variant.Outlined">
                     <MudButton StartIcon="@Icons.Material.Filled.Person" Variant="Variant.Filled" Color="Color.Primary" OnClick="ShowLogin">Login</MudButton>
