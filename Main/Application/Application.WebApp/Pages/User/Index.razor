@@ -1,65 +1,37 @@
 ﻿@page "/User/Index"
-@inject CharacterService CharacterService
-@inject AuthService AuthService
 
-@inject NavigationManager NavigationManager
-
-<style>
-    .main {
-        font-family: 'Cinzel', serif !important;
-        color: white !important;
-        background-image: url('/Images/User/Layout.jpeg') !important;
-        background-size: cover;
-        color: #fff;
-        height: 102.5vh !important;
-    }
-</style>
-
-
-<MudGrid style="padding:40px;" Class="main text-center">
-
-    <MudItem xs="12" md="3">
-        <MudCard>
-            <MudCardContent>
-                <Create />
-            </MudCardContent>
-        </MudCard>
-    </MudItem>
-    @if (Characters?.Count > 0)
-        @foreach (var character in Characters)
-        {
-            <MudItem xs="12" md="3">
-                <MudCard>
-                    <MudCardContent>
-                        <MudText Typo="Typo.h5">@character.Name <MudIcon Color="Color.Primary" Icon="@Icons.Material.Filled.Person" Title="Person" /></MudText>
-
-
-                        <MudButtonGroup Class="mt-3" OverrideStyles="false">
-                            <MudButton Variant="Variant.Outlined" Color="Color.Success" EndIcon="@Icons.Material.Filled.WorkspacePremium">Upgrade</MudButton>
-                            <MudButton Variant="Variant.Filled" Color="Color.Primary" EndIcon="@Icons.Material.Filled.Delete">View</MudButton>
-                            <MudButton Variant="Variant.Filled" Color="Color.Error" EndIcon="@Icons.Material.Filled.Delete">Delete</MudButton>
-                        </MudButtonGroup>
-                    </MudCardContent>
-                </MudCard>
-            </MudItem>
-        }
-</MudGrid>
-
-
+<MudPaper Height="100vh" Class="mud-theme-primary" Style="overflow:hidden; position:relative;">
+    <MudDrawerContainer Class="mud-height-full">
+        <MudDrawer @bind-Open="@MenuAsOpened" Anchor="Anchor.Left" Elevation="0" Variant="@DrawerVariant.Persistent">
+            <MudDrawerHeader>
+                <MudText Typo="Typo.h6">Welcome to Ursulla!</MudText>
+            </MudDrawerHeader>
+            <MudNavMenu>
+                <MudNavLink Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.Store">Character</MudNavLink>
+                <MudNavLink Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.LocalLibrary">Library</MudNavLink>
+                <MudNavLink Match="NavLinkMatch.All" Icon="@Icons.Material.Filled.Forum">Community</MudNavLink>
+            </MudNavMenu>
+        </MudDrawer>
+        <div class="d-flex justify-center align-center mud-height-full">
+            <CharacterCreateAndList />
+        </div>
+        <div style="position: absolute; top: 20px; left: 20px;">
+            <MudButton EndIcon="@Icons.Material.Filled.Menu" Color="Color.Inherit" OnClick="@ToggleLeftDrawer">
+                @(MenuAsOpened? "Close Menu":"Open Menu")
+            </MudButton>
+        </div>
+    </MudDrawerContainer>
+</MudPaper>
 
 @code
 {
-    private List<Server.Entities.Character>? Characters;
+    private bool MenuAsOpened = true;
 
-    protected override async Task OnInitializedAsync()
+    [CascadingParameter]
+    public bool Rtl { get; set; }
+
+    private void ToggleLeftDrawer()
     {
-
-        if (!await AuthService.IsAuthenticated())
-            NavigationManager.NavigateTo("Auth/Index");
-
-
-        var UserId = await AuthService.GetUserId();
-        Characters = await CharacterService.GetCharacters(UserId);
+        MenuAsOpened = !MenuAsOpened;
     }
-
 }
