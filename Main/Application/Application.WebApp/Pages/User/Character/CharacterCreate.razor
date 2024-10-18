@@ -45,7 +45,7 @@
     {
         var User = await AuthService.GetUser();
 
-        if(User is { Id: 0 })
+        if(User.Id is 0)
             NavigationManager.NavigateTo("Auth/Index");
 
         Character.UserId = User.Id;
