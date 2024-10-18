@@ -37,7 +37,8 @@
 }
 
 
-@code {
+@code 
+{
     private Character? Character { get; set; } = new Character();
     private string? Error { get; set; }
     private async Task CreateCharacter()
@@ -54,7 +55,7 @@
         if (result is true)
             NavigationManager.Refresh();
         else
-            Error = "Falha ao criar personagem.";            
+            Error = "Falha ao criar personagem.";
 
     }
 }
