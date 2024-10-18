@@ -9,14 +9,14 @@
         font-family: 'Cinzel', serif !important;
         color: white !important;
         background-image: url('/Images/User/Layout.jpeg') !important;
-        background-size: auto;
+        background-size: cover;
         color: #fff;
         height: 102.5vh !important;
     }
 </style>
 
 
-<MudGrid style="padding:40px;" Class="main">
+<MudGrid style="padding:40px;" Class="main text-center">
 
     <MudItem xs="12" md="3">
         <MudCard>
@@ -32,12 +32,14 @@
                 <MudCard>
                     <MudCardContent>
                         <MudText Typo="Typo.h5">@character.Name <MudIcon Color="Color.Primary" Icon="@Icons.Material.Filled.Person" Title="Person" /></MudText>
-                        <MudText Typo="Typo.body2">@character.Level</MudText>
-                        <MudText Typo="Typo.body2">@(character.Online ? "Sim" : "Não")</MudText>
+
+
+                        <MudButtonGroup Class="mt-3" OverrideStyles="false">
+                            <MudButton Variant="Variant.Outlined" Color="Color.Success" EndIcon="@Icons.Material.Filled.WorkspacePremium">Upgrade</MudButton>
+                            <MudButton Variant="Variant.Filled" Color="Color.Primary" EndIcon="@Icons.Material.Filled.Delete">View</MudButton>
+                            <MudButton Variant="Variant.Filled" Color="Color.Error" EndIcon="@Icons.Material.Filled.Delete">Delete</MudButton>
+                        </MudButtonGroup>
                     </MudCardContent>
-                    <MudCardActions>
-                        <MudButton Variant="Variant.Text" Color="Color.Error" EndIcon="@Icons.Material.Filled.Delete">Delete</MudButton>
-                    </MudCardActions>
                 </MudCard>
             </MudItem>
         }
