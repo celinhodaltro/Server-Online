@@ -1,4 +1,5 @@
 using Server.Entities.Common.Characters;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Server.Entities;
 
@@ -12,7 +13,7 @@ public sealed class Character : DefaultDb
         CharacterDepotItems = new List<CharacterDepotItem>();
     }
 
-    public int? UserId { get; set; }
+
     public int TownId { get; set; }
     public string Name { get; set; }
     public int PlayerType { get; set; }
@@ -45,7 +46,13 @@ public sealed class Character : DefaultDb
     public Gender Gender { get; set; }
     public byte Vocation { get; set; }
     public int RemainingRecoverySeconds { get; set; }
-    public User? Account { get; set; }
+
+
+    public int? UserId { get; set; }
+
+    [ForeignKey("UserId")]
+    public User? User { get; set; }
+
 
     public CharacterSkill? CharacterSkills { get; set; }
     public ICollection<CharacterItem> CharacterItems { get; set; }
