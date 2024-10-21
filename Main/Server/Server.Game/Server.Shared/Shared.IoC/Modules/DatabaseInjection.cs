@@ -14,6 +14,7 @@ using Server.BusinessRules;
 using Autofac.Core;
 using System.Configuration;
 using System.Provider;
+using Server.Providers;
 
 namespace Shared.IoC.Modules;
 
@@ -50,6 +51,7 @@ public static class DatabaseInjection
     {
         builder.RegisterType<CharacterProvider>().AsSelf().InstancePerLifetimeScope();
         builder.RegisterType<DefaultProvider>().AsSelf().InstancePerLifetimeScope();
+        builder.RegisterType<UserProvider>().AsSelf().InstancePerLifetimeScope();
         return builder;
     }
 
