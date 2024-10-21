@@ -13,6 +13,18 @@ namespace Server.Providers
             _context = context;
         }
 
+        public async Task<User> GetUser(string Name, string Password)
+        {
+            var User = await _context.Set<User>()
+                                     .Include("UserInfo")
+                                     .Include("Characters")
+                                     .FirstOrDefaultAsync(x => x.Email.Equals(Name, StringComparison.OrdinalIgnoreCase) && x.Password.Equals(Password, StringComparison.OrdinalIgnoreCase));
+
+            return User;
+
+
+        }
+
         public async Task<UserInfo?> GetUserByIdAsync(int id)
         {
             return await _context.UserInfo
@@ -26,6 +38,8 @@ namespace Server.Providers
                                  .Where(u => !u.IsDeleted.Value)  
                                  .FirstOrDefaultAsync(u => u.UniqueId == uniqueId);
         }
+
+
 
         public async Task<bool> SoftDeleteUserByIdAsync(int id)
         {

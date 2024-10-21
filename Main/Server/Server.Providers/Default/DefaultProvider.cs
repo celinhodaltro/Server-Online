@@ -24,7 +24,7 @@ namespace System.Provider
 
         public async Task<IEnumerable<T>> GetAllAsync<T>() where T : class
         {
-            return await _context.Set<T>().IncludeNavigations().ToListAsync();
+            return await _context.Set<T>().ToListAsync();
         }
 
 

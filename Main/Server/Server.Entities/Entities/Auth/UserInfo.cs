@@ -1,4 +1,5 @@
-﻿using System.Net.Mail;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.Net.Mail;
 
 namespace Server.Entities
 {
@@ -10,11 +11,14 @@ namespace Server.Entities
         public DateTime? BanishedAt { get; set; } 
         public string? BanishmentReason { get; set; } = string.Empty;
         public uint? BannedBy { get; set; } = 0;
+
         public int? UserId { get; set; } = 0;
 
-        public ICollection<Character>? Players { get; set; }
-        public ICollection<UserVipList>? VipList { get; set; }
+        [ForeignKey("UserId")]
+        public User? User { get; set; }
 
+        public ICollection<UserVipList>? VipList { get; set; }
+  
 
     }
 }

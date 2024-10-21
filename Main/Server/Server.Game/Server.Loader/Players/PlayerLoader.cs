@@ -104,7 +104,7 @@ public class PlayerLoader
             MapTool,
             town)
         {
-            PremiumTime = playerEntity.Account?.UserInfo.PremiumTime ?? 0,
+            PremiumTime = playerEntity.User?.UserInfo.PremiumTime ?? 0,
             AccountId = (uint)playerEntity.UserId,
             Guild = GuildStore.Get((ushort)(playerEntity.GuildMember?.GuildId ?? 0)),
             GuildLevel = (ushort)(playerEntity.GuildMember?.RankId ?? 0)

@@ -46,7 +46,7 @@ public class PlayerLogInCommand : ICommand
         game.CreatureManager.AddPlayer(player, connection);
 
         player.Login();
-        player.Vip.LoadVipList(playerRecord.Account.UserInfo.VipList.Select(x => ((uint)x.PlayerId, x.Player?.Name)));
+        player.Vip.LoadVipList(playerRecord.User.UserInfo.VipList.Select(x => ((uint)x.PlayerId, x.Player?.Name)));
         _logger.Information("Player {PlayerName} logged in", player.Name);
     }
 }

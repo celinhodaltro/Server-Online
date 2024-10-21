@@ -62,13 +62,13 @@ public class AccountLoginHandler : PacketHandler
             return;
         }
 
-        if (foundedAccount.UserInfo.BanishedAt is not null)
+        if (foundedAccount.UserInfo is {BanishedAt: not null})
         {
             connection.Disconnect("Your account has been banished. Reason: " + foundedAccount.UserInfo.BanishmentReason);
             return;
         }
 
-        if(foundedAccount.UserInfo.Players is null || foundedAccount.UserInfo.Players.Count == 0)
+        if(foundedAccount.Characters is {Count: 0 })
         {
             connection.Disconnect("Your account not have Characters.");
             return;

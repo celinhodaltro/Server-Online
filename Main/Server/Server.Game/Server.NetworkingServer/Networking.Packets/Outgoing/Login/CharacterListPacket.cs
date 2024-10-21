@@ -26,11 +26,12 @@ public class CharacterListPacket : OutgoingPacket
     private void AddCharList(INetworkMessage message)
     {
         message.AddByte(0x64);
-        message.AddByte((byte)_user.UserInfo.Players.Count);
+
+        message.AddByte((byte)_user.Characters.Count);
 
         var ipAddress = ParseIpAddress(_ipAddress);
 
-        foreach (var player in _user.UserInfo.Players)
+        foreach (var player in _user.Characters)
         {
             if (!string.IsNullOrWhiteSpace(player.World?.Ip)) ipAddress = ParseIpAddress(player.World.Ip);
 

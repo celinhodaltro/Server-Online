@@ -27,6 +27,8 @@
         height: 100vh !important;
     }
 
+
+
     .hero-image {
         max-width: 100%;
         height: auto;
@@ -52,6 +54,19 @@
         background-image: url('Images/Home/History/Background.png') !important;
         background-size: cover;
     }
+
+    .timeline-section {
+        font-family: 'Cinzel', serif !important;
+        color: whitesmoke;
+        background-color: black;
+        padding-top: 2%;
+        height: 100vh;
+        width: 100%;
+        background-image: url('Images/Home/TimeLine/Background.png') !important;
+        background-size: cover;
+        background-position: center
+    }
+
 
     .signup-section {
         background-color: black;
@@ -147,6 +162,36 @@
                         </MudCard>
                     </MudItem>
                 </MudGrid>
+            </div>
+        </MudCarouselItem>
+
+        <!-- Slide 2: TimeLine Section -->
+        <MudCarouselItem Transition="Transition.Fade">
+            <div id="features" class="timeline-section">
+                <MudText Typo="Typo.h2">T I M E L I N E</MudText>
+                <MudTimeline Style="margin-top:300px;" TimelineOrientation="TimelineOrientation.Horizontal">
+                    <MudTimelineItem Color="Color.Success">
+                        <MudText Align="Align.Center" Typo="Typo.h4">Planning</MudText>
+                    </MudTimelineItem>
+                    <MudTimelineItem Color="Color.Warning">
+                        <MudText Align="Align.Center" Typo="Typo.h4"> Pre-Production</MudText>
+                    </MudTimelineItem>
+                    <MudTimelineItem>
+                        <MudText Align="Align.Center" Typo="Typo.h4">Production</MudText>
+                    </MudTimelineItem>
+                    <MudTimelineItem>
+                        <MudText Align="Align.Center" Typo="Typo.h4">Testing</MudText>
+                    </MudTimelineItem>
+                    <MudTimelineItem>
+                        <MudText Align="Align.Center" Typo="Typo.h4">Marketing</MudText>
+                    </MudTimelineItem>
+                    <MudTimelineItem>
+                        <MudText Align="Align.Center" Typo="Typo.h4">Launch</MudText>
+                    </MudTimelineItem>
+                    <MudTimelineItem>
+                        <MudText Align="Align.Center" Typo="Typo.h4">Post-Launch</MudText>
+                    </MudTimelineItem>
+                </MudTimeline>
             </div>
         </MudCarouselItem>
 

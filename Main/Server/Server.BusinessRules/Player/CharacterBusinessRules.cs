@@ -51,8 +51,8 @@ namespace Server.BusinessRules
 
             var Players = await CharacterProvider.GetAllAsync<Character>();
 
-            return Players.FirstOrDefault(x => x.Account.Email.Equals(accountName) &&
-                                                    x.Account.Password.Equals(password) &&
+            return Players.FirstOrDefault(x => x.User.Email.Equals(accountName) &&
+                                                    x.User.Password.Equals(password) &&
                                                     x.Name.Equals(charName));
 
         }
@@ -61,7 +61,7 @@ namespace Server.BusinessRules
         {
             var Players = await CharacterProvider.GetAllAsync<Character>();
 
-            return Players.FirstOrDefault(x => x.Account.Email.Equals(accountName) && x.Online);
+            return Players.FirstOrDefault(x => x.User.Email.Equals(accountName) && x.Online);
 
         }
 

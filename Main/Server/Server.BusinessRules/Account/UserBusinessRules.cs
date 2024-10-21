@@ -6,6 +6,8 @@ using System.Text;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using Microsoft.Extensions.Configuration;
+using System.Xml.Linq;
+using Server.Providers;
 
 namespace Server.BusinessRules;
 
@@ -13,12 +15,14 @@ public class UserBusinessRules
 {
 
     public DefaultProvider DefaultProvider { get; set; }
+    public UserProvider UserProvider { get; set; }
     public LoggerBusinessRules LogBusinessRules { get; set; }
 
-    public UserBusinessRules(DefaultProvider defaultProvider, LoggerBusinessRules logBusinessRules)
+    public UserBusinessRules(DefaultProvider defaultProvider, LoggerBusinessRules logBusinessRules, UserProvider userProvider)
     {
         DefaultProvider = defaultProvider;
         LogBusinessRules = logBusinessRules;
+        UserProvider = userProvider;
     }
 
     public async Task CreateUserInfo(User userInfo, ApplicationUser applicationUser)
@@ -54,8 +58,8 @@ public class UserBusinessRules
             if (String.IsNullOrEmpty(name) || String.IsNullOrEmpty(password))
                 throw new Exception("Name or Password is empty");
 
-            var Users = await DefaultProvider.GetAllAsync<User>();
-            return Users.FirstOrDefault(x => x.Email.Equals(name, StringComparison.OrdinalIgnoreCase) && x.Password.Equals(password, StringComparison.OrdinalIgnoreCase));
+            var User = await UserProvider.GetUser(name, password);
+            return User;
 
         }
         catch (Exception ex)
