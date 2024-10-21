@@ -48,6 +48,7 @@ public static class DatabaseInjection
 
     public static ContainerBuilder AddProvider(this ContainerBuilder builder)
     {
+        builder.RegisterType<CharacterProvider>().AsSelf().InstancePerLifetimeScope();
         builder.RegisterType<DefaultProvider>().AsSelf().InstancePerLifetimeScope();
         return builder;
     }
