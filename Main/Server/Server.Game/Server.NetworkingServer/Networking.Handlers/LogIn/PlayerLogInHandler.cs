@@ -17,21 +17,25 @@ namespace Networking.Handlers.LogIn;
 public class PlayerLogInHandler : PacketHandler
 {
     private readonly IAccountRepository _accountRepository;
-    private readonly CharacterBusinessRules playerBusinessRules;
+    private readonly CharacterBusinessRules CharacterBusinessRules;
     private readonly IGameServer _game;
     private readonly PlayerLogInCommand _playerLogInCommand;
     private readonly PlayerLogOutCommand _playerLogOutCommand;
     private readonly ServerConfiguration _serverConfiguration;
 
     public PlayerLogInHandler(IAccountRepository repositoryNeo,
-        IGameServer game, ServerConfiguration serverConfiguration, PlayerLogInCommand playerLogInCommand,
-        PlayerLogOutCommand playerLogOutCommand)
+                              IGameServer game, 
+                              ServerConfiguration serverConfiguration, 
+                              PlayerLogInCommand playerLogInCommand,
+                              PlayerLogOutCommand playerLogOutCommand,
+                              CharacterBusinessRules characterBusinessRules)
     {
         _accountRepository = repositoryNeo;
         _game = game;
         _serverConfiguration = serverConfiguration;
         _playerLogInCommand = playerLogInCommand;
         _playerLogOutCommand = playerLogOutCommand;
+        CharacterBusinessRules = characterBusinessRules;
     }
 
     public override void HandleMessage(IReadOnlyNetworkMessage message, IConnection connection)
@@ -62,7 +66,7 @@ public class PlayerLogInHandler : PacketHandler
 
         if (ValidateOnlineStatus(connection, playerOnline, packet).Failed) return;
 
-        var playerRecord = await playerBusinessRules.GetPlayer(packet.Account, packet.Password, packet.CharacterName);
+        var playerRecord = await CharacterBusinessRules.GetPlayer(packet.Account, packet.Password, packet.CharacterName);
 
         if (playerRecord is null)
         {
@@ -70,7 +74,7 @@ public class PlayerLogInHandler : PacketHandler
             return;
         }
 
-        if (playerRecord.Account.UserInfo.BanishedAt is not null)
+        if (playerRecord.User.UserInfo.BanishedAt is not null)
         {
             Disconnect(connection, "Your account is banned.");
             return;
