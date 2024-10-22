@@ -123,7 +123,10 @@ public class PlayerLoader
     protected ITown GetTown(Server.Entities.Character playerEntity)
     {
         if (!World.TryGetTown((ushort)playerEntity.TownId, out var town))
+        {
             Logger.Error("player town not found: {PlayerModelTownId}", playerEntity.TownId);
+            return World.LoadedFirstTown;
+        }
         return town;
     }
 
