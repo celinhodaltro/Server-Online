@@ -32,11 +32,11 @@ jobs:
       with:
         dotnet-version: '8.0.x'
 
+    - name: Install .NET SDK
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '4.7.1'
 
-    - name: Install .NET Framework 4.7.1 SDK on Windows
-      if: matrix.os == 'windows-latest'
-      run: |
-        choco install netfx-4.7.1-devpack -y
 
     - name: Clean and restore specific projects
       run: |
@@ -48,9 +48,11 @@ jobs:
         dotnet restore  ${{ env.Game_Project_Path }}   --no-cache
         dotnet restore  ${{ env.WebApp_Project_Path }} --no-cache
         
-
     - name: Building Application Client
-      run: dotnet build ./Main/Application/Application.Client/Application.Client/Application.Client.csproj
+      if: matrix.os == 'windows-latest'
+      run: |
+        choco install netfx-4.7.1-devpack -y
+        dotnet build ./Main/Application/Application.Client/Application.Client/Application.Client.csproj
 
     - name: Building API
       run: dotnet build ${{ env.Api_Project_Path }} --configuration ${{ matrix.configuration }}
