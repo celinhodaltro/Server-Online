@@ -26,7 +26,7 @@ A estrutura do projeto é dividida em três principais módulos:
 ├── /Server
 │   ├── /Server.API                 # Endpoints da API
 │   ├── /Server.Entities            # Entidades do domínio (Character, Game, User)
-│   ├── /Server.Bussiness            # Regras de negócios
+│   ├── /Server.Bussiness           # Regras de negócios
 │   ├── /Server.Util                # Utilitários comuns do servidor
 │   └── /Server.Provider            # Acesso a dados e lógica de persistência
 │
