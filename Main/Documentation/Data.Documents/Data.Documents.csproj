@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <Folder Include="Github Documents\" />
+    <Folder Include="Drawio Diagrams\" />
   </ItemGroup>
 
 </Project>
