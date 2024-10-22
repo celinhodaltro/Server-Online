@@ -32,6 +32,12 @@ jobs:
       with:
         dotnet-version: '8.0.x'
 
+
+    - name: Install .NET Framework 4.7.1 SDK on Windows
+      if: matrix.os == 'windows-latest'
+      run: |
+        choco install netfx-4.7.1-devpack -y
+
     - name: Clean and restore specific projects
       run: |
         dotnet clean ${{ env.Api_Project_Path }}  
