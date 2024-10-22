@@ -6,18 +6,6 @@
 ![Build Status](https://github.com/celinhodaltro/Server-Online/actions/workflows/dotnet-desktop.yml/badge.svg)
 
 
-
-
-## Conteudos
-
-- [Overview](#overview)
-- [Project Structure](#project-structure)
-- [Technologies Used](#technologies-used)
-- [Getting Started](#getting-started)
-- [API Documentation](#api-documentation)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Overview
 
 **Ursulla** é um projeto de jogo e aplicação web que visa fornecer uma experiência integrada entre uma aplicação de jogo nativa e uma interface web moderna. O sistema foi projetado com uma arquitetura modular para garantir escalabilidade, facilidade de manutenção e suporte a novas funcionalidades.
@@ -38,7 +26,7 @@ A estrutura do projeto é dividida em três principais módulos:
 ├── /Server
 │   ├── /Server.API                 # Endpoints da API
 │   ├── /Server.Entities            # Entidades do domínio (Character, Game, User)
-│   ├── /Server.Bussiness            # Regras de negócios
+│   ├── /Server.Bussiness           # Regras de negócios
 │   ├── /Server.Util                # Utilitários comuns do servidor
 │   └── /Server.Provider            # Acesso a dados e lógica de persistência
 │
@@ -50,8 +38,11 @@ A estrutura do projeto é dividida em três principais módulos:
 │       └── /Shared             # Componentes compartilhados da aplicação Blazor
 │
 └── /Docs
-    ├── ArchitectureDiagram.drawio  # Diagrama da arquitetura do projeto
-    └── ReadMe.md                   # Documentação do projeto
+    ├── Github.Documents  # Documentos do Git
+    │    └── ReadMe.md    # Documentação do projeto
+    │
+    └── Drawio.Diagrams 
+            └── diagram.png    # Diagrama do projeto (Fluxo)
 ```
 
 
@@ -67,48 +58,53 @@ A estrutura do projeto é dividida em três principais módulos:
 
 ### Requisitos
 
+
+Libs:
 - [.NET 8 SDK](https://dotnet.microsoft.com/download)
 - [Node.js](https://nodejs.org/en/) (opcional, para ferramentas de desenvolvimento da WebApp)
+
+Ferramentas de desenvolvimento
+- [visual Studio 2022](https://visualstudio.microsoft.com/vs/community/) (Ideal para um desenvolvimento mais funcional) 
+- [Visual Studio Code](https://code.visualstudio.com/) (Eu prefiro o Visual Studio 2022, porem essa é uma otima opção tambem!)
+
 
 ### Rodando o projeto:
 
 #### 1. Clonar o Repositório
 
 ```bash
-git clone https://github.com/yourusername/ursulla.git
-cd Ursulla
+git clone https://github.com/celinhodaltro/Server-Online.git
+cd Server
 ```
 
-#### 2. Configurar o Servidor
+#### 2. Buildando projeto
 
 Navegue até o diretório do servidor e instale as dependências necessárias:
 
 ```bash
-cd Server
+cd Main
 dotnet restore
 dotnet run
 ```
 
+- Para um desenvolvimeto mais rapido e funcional eu recomendo setar 3 projetos como projetos de inicialização: Server.Start | Server.API | Application.WebApp
+
 #### 3. Executar o Cliente de Jogo
 
-No diretório `GameApp`, compile e execute a aplicação:
+- O client Unity (Application.Client) requer uma build própria.
+- Se preferir o cliente padrão do tibia tambem funciona, porem recomendo que consiga a source do mesmo para ter um desenvolvimento sem nenhum limite.
 
 
-#### 4. Executar a Aplicação Web
+##### Links para o build do cliente:
+[Unity](https://slavi.gitbook.io/opentibiaunity/getting-started/running-the-game) - C#, Eu escolhi essa opção por ter como objetivo principal um servidor 100% em c# para facilitar o desenvolvimento
+[Otcv8](https://github.com/OTCv8/otclientv8) - C++
+[Edubart](https://github.com/edubart/otclient) - C++ 
 
-Navegue até o diretório da `WebApp` e execute a aplicação:
-
-```bash
-cd Clients/WebApp
-dotnet run
-```
 
 ## API Documentation
-
 A API oferece endpoints para gerenciar entidades como `Character` e `User`. Para acessar a documentação completa e exemplos de requisições, utilize o Swagger disponível na URL `/swagger` após o servidor estar em execução.
 
 ## Contributing
-
 Contribuições são bem-vindas! Para começar:
 
 1. Faça um Fork do projeto.
@@ -117,11 +113,10 @@ Contribuições são bem-vindas! Para começar:
 4. Envie o Push para o Branch (`git push origin feature/nova-funcionalidade`).
 5. Crie um Pull Request.
 
-## License
+## Créditos
 
-Este projeto está licenciado sob a MIT License - veja o arquivo [LICENSE](LICENSE) para mais detalhes.\
-*Dou total credito como base do projeto a este projeto do @caioavidal: https://github.com/caioavidal/OpenCoreMMO* (Juro que conforme eu for avançando com este projeto irei me dedicar a resolver issues la no projeto do Caio!)
-
+* @Caioavidal: Dou uma grande parte do crédito como base do projeto a este projeto: https://github.com/caioavidal/OpenCoreMMO* (Juro que conforme eu for avançando com este projeto irei me dedicar a resolver issues la no projeto do Caio!)
+* @Slavi: O cliente Unity consegue tirar os limites do que a gente consegue fazer visualmente em um projeto de tibia, e sair dessa caixinha. *
 ---
 
 *Projetado com ❤️ por [João Marcelo Daltro Marques](https://github.com/celinhodaltro).*
