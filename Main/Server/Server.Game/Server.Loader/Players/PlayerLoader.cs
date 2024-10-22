@@ -133,7 +133,11 @@ public class PlayerLoader
     protected IVocation GetVocation(Server.Entities.Character playerEntity)
     {
         if (!VocationStore.TryGetValue(playerEntity.Vocation, out var vocation))
+        {
             Logger.Error("Player vocation not found: {PlayerModelVocation}", playerEntity.Vocation);
+        }
+        if (vocation is null)
+            VocationStore.TryGetValue(0, out vocation);
         return vocation;
     }
 
