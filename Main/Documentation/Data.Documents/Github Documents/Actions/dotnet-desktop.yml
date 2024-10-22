@@ -1,0 +1,71 @@
+name: Build .NET Applications
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+
+  build:
+
+    strategy:
+      matrix:
+        configuration: [Release]
+        os: [windows-latest, ubuntu-latest] # Add Ubuntu to the matrix
+
+    runs-on: ${{ matrix.os }} 
+
+    env:
+      Api_Project_Path: ./Main/Server/Server.API/Server.API.csproj
+      WebApp_Project_Path: ./Main/Application/Application.WebApp/Application.WebApp.csproj
+      Game_Project_Path: ./Main/Server/Server.Game/Server.Starter/Server.Starter.csproj
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Install .NET SDK
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '8.0.x'
+
+    - name: Restore all projects
+      run: |
+        dotnet clean 
+        dotnet restore --no-cache
+        
+    - name: Building API
+      run: dotnet build ${{ env.Api_Project_Path }} --configuration ${{ matrix.configuration }}
+
+    - name: Build Game
+      run: dotnet build ${{ env.Game_Project_Path }} --configuration ${{ matrix.configuration }}
+
+    - name: Building Blazor
+      run: dotnet build ${{ env.WebApp_Project_Path }} --configuration ${{ matrix.configuration }}
+      
+    - name: Publish API
+      run: dotnet publish ${{ env.Api_Project_Path }} --configuration ${{ matrix.configuration }} --output ./output/Server.API
+      
+    - name: Publish Game
+      run: dotnet publish ${{ env.Game_Project_Path }} --configuration ${{ matrix.configuration }} --output ./output/Server.Game
+
+    - name: Publish Blazor
+      run: dotnet publish ${{ env.WebApp_Project_Path }} --configuration ${{ matrix.configuration }} /p:PublishTrimmed=false --output ./output/Application.WebApp
+
+    - name: Compress output folder on Windows
+      if: matrix.os == 'windows-latest'
+      run: Compress-Archive -Path ./output -DestinationPath ./output.zip
+
+    - name: Compress output folder on Ubuntu
+      if: matrix.os == 'ubuntu-latest'
+      run: tar -czvf output.tar.gz ./output
+
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: output
+        path: ${{ matrix.os == 'windows-latest' && 'output.zip' || 'output.tar.gz' }} # Upload the correct file depending on the OS
