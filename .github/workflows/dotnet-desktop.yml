@@ -42,7 +42,12 @@ jobs:
         dotnet restore  ${{ env.Api_Project_Path }}    --no-cache
         dotnet restore  ${{ env.Game_Project_Path }}   --no-cache
         dotnet restore  ${{ env.WebApp_Project_Path }} --no-cache
-        
+   
+    - name: Setup Unity
+      uses: game-ci/unity-builder@v2
+      with:
+        unityVersion: 2022.3.43f1  
+
     - name: Building Application Client
       if: matrix.os == 'windows-latest'
       run: |
