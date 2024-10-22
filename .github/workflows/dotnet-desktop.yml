@@ -8,13 +8,13 @@ on:
 
 jobs:
 
-  build:
+  # Job 1: Clean, Restore and Build Projects
+  clean_restore_build:
     strategy:
       matrix:
         configuration: [Release]
-        os: [windows-latest, ubuntu-latest] # Add Ubuntu to the matrix
-
-    runs-on: ${{ matrix.os }} 
+        os: [windows-latest, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
 
     env:
       Api_Project_Path: ./Main/Server/Server.API/Server.API.csproj
@@ -22,64 +22,101 @@ jobs:
       Game_Project_Path: ./Main/Server/Server.Game/Server.Starter/Server.Starter.csproj
 
     steps:
-    - name: Checkout
-      uses: actions/checkout@v4
-      with:
-        fetch-depth: 0
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-    - name: Install .NET SDK
-      uses: actions/setup-dotnet@v4
-      with:
-        dotnet-version: '8.0.x'
+      - name: Install .NET SDK
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
 
+      - name: Clean and restore specific projects
+        run: |
+          dotnet clean ${{ env.Api_Project_Path }}
+          dotnet clean ${{ env.Game_Project_Path }}
+          dotnet clean ${{ env.WebApp_Project_Path }}
 
-    - name: Clean and restore specific projects
-      run: |
-        dotnet clean ${{ env.Api_Project_Path }}  
-        dotnet clean ${{ env.Game_Project_Path }}
-        dotnet clean ${{ env.WebApp_Project_Path }}
+          dotnet restore ${{ env.Api_Project_Path }} --no-cache
+          dotnet restore ${{ env.Game_Project_Path }} --no-cache
+          dotnet restore ${{ env.WebApp_Project_Path }} --no-cache
 
-        dotnet restore  ${{ env.Api_Project_Path }}    --no-cache
-        dotnet restore  ${{ env.Game_Project_Path }}   --no-cache
-        dotnet restore  ${{ env.WebApp_Project_Path }} --no-cache
-   
-    - name: Setup Unity
-      uses: game-ci/unity-builder@v2
-      with:
-        unityVersion: 2022.3.43f1  
+  # Job 2: Restore and Build Application.Client
+  build_application_client:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-    - name: Building Application Client
-      if: matrix.os == 'windows-latest'
-      run: |
-        choco install netfx-4.7.1-devpack -y
-        dotnet build ./Main/Application/Application.Client/Application.Client/Application.Client.csproj
+      - name: Install .NET SDK
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
 
-    - name: Building API
-      run: dotnet build ${{ env.Api_Project_Path }} --configuration ${{ matrix.configuration }}
+      - name: Setup Unity
+        uses: game-ci/unity-builder@v2
+        with:
+          unityVersion: 2022.3.43f1
 
-    - name: Build Game
-      run: dotnet build ${{ env.Game_Project_Path }} --configuration ${{ matrix.configuration }}
+      - name: Install .NET Framework 4.7.1 Developer Pack
+        run: choco install netfx-4.7.1-devpack -y
 
-    - name: Building Blazor
-      run: dotnet build ${{ env.WebApp_Project_Path }} --configuration ${{ matrix.configuration }}
-      
-    - name: Publish Projects
-      run: |
-        dotnet publish ${{ env.Api_Project_Path }} --configuration ${{ matrix.configuration }} --output ./output/Server.API
-        dotnet publish ${{ env.Game_Project_Path }} --configuration ${{ matrix.configuration }} --output ./output/Server.Game
-        dotnet publish ${{ env.WebApp_Project_Path }} --configuration ${{ matrix.configuration }} /p:PublishTrimmed=false --output ./output/Application.WebApp
+      - name: Build Application Client
+        run: dotnet build ./Main/Application/Application.Client/Application.Client/Application.Client.csproj
 
+  # Job 3: Publish All Projects
+  publish_all_projects:
+    strategy:
+      matrix:
+        os: [windows-latest, ubuntu-latest]
+        configuration: [Release]
 
-    - name: Compress output folder on Windows
-      if: matrix.os == 'windows-latest'
-      run: Compress-Archive -Path ./output -DestinationPath ./output.zip
+    runs-on: ${{ matrix.os }}
 
-    - name: Compress output folder on Ubuntu
-      if: matrix.os == 'ubuntu-latest'
-      run: tar -czvf output.tar.gz ./output
+    env:
+      Api_Project_Path: ./Main/Server/Server.API/Server.API.csproj
+      WebApp_Project_Path: ./Main/Application/Application.WebApp/Application.WebApp.csproj
+      Game_Project_Path: ./Main/Server/Server.Game/Server.Starter/Server.Starter.csproj
 
-    - name: Upload build artifacts
-      uses: actions/upload-artifact@v3
-      with:
-        name: output
-        path: ${{ matrix.os == 'windows-latest' && 'output.zip' || 'output.tar.gz' }} # Upload the correct file depending on the OS
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install .NET SDK
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Build API
+        run: dotnet build ${{ env.Api_Project_Path }} --configuration ${{ matrix.configuration }}
+
+      - name: Build Game
+        run: dotnet build ${{ env.Game_Project_Path }} --configuration ${{ matrix.configuration }}
+
+      - name: Build Blazor
+        run: dotnet build ${{ env.WebApp_Project_Path }} --configuration ${{ matrix.configuration }}
+
+      - name: Publish Projects
+        run: |
+          dotnet publish ${{ env.Api_Project_Path }} --configuration ${{ matrix.configuration }} --output ./output/Server.API
+          dotnet publish ${{ env.Game_Project_Path }} --configuration ${{ matrix.configuration }} --output ./output/Server.Game
+          dotnet publish ${{ env.WebApp_Project_Path }} --configuration ${{ matrix.configuration }} /p:PublishTrimmed=false --output ./output/Application.WebApp
+
+      - name: Compress output folder on Windows
+        if: matrix.os == 'windows-latest'
+        run: Compress-Archive -Path ./output -DestinationPath ./output.zip
+
+      - name: Compress output folder on Ubuntu
+        if: matrix.os == 'ubuntu-latest'
+        run: tar -czvf output.tar.gz ./output
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: output
+          path: ${{ matrix.os == 'windows-latest' && 'output.zip' || 'output.tar.gz' }}
