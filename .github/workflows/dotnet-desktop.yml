@@ -33,10 +33,15 @@ jobs:
       with:
         dotnet-version: '8.0.x'
 
-    - name: Restore all projects
+    - name: Clean and restore specific projects
       run: |
-        dotnet clean 
-        dotnet restore --no-cache
+        dotnet clean ${{ env.Api_Project_Path }}  
+        dotnet clean ${{ env.Game_Project_Path }}
+        dotnet clean ${{ env.WebApp_Project_Path }}
+
+        dotnet restore  ${{ env.Api_Project_Path }}    --no-cache
+        dotnet restore  ${{ env.Game_Project_Path }}   --no-cache
+        dotnet restore  ${{ env.WebApp_Project_Path }} --no-cache
         
     - name: Building API
       run: dotnet build ${{ env.Api_Project_Path }} --configuration ${{ matrix.configuration }}
