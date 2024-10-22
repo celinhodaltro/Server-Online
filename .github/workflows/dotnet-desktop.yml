@@ -44,7 +44,7 @@ jobs:
         
 
     - name: Building Application Client
-      run: dotnet build ./Main/Application/Application.Client/Application.Client.csproj
+      run: dotnet build ./Main/Application/Application.Client/Application.Client/Application.Client.csproj
 
     - name: Building API
       run: dotnet build ${{ env.Api_Project_Path }} --configuration ${{ matrix.configuration }}
