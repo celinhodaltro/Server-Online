@@ -16,9 +16,10 @@ namespace Server.Providers
         public async Task<User> GetUser(string Name, string Password)
         {
             var User = await _context.Set<User>()
-                                     .Include("UserInfo")
-                                     .Include("Characters")
-                                     .FirstOrDefaultAsync(x => x.Email.Equals(Name, StringComparison.OrdinalIgnoreCase) && x.Password.Equals(Password, StringComparison.OrdinalIgnoreCase));
+                .Include(u => u.UserInfo)
+                .Include(u => u.Characters)
+                    .ThenInclude(c => c.CharacterSkills)
+                .FirstOrDefaultAsync(x => x.Email.Equals(Name, StringComparison.OrdinalIgnoreCase) && x.Password.Equals(Password, StringComparison.OrdinalIgnoreCase));
 
             return User;
 
@@ -28,14 +29,14 @@ namespace Server.Providers
         public async Task<UserInfo?> GetUserByIdAsync(int id)
         {
             return await _context.UserInfo
-                                 .Where(u => !u.IsDeleted.Value) 
+                                 .Where(u => !u.IsDeleted.Value)
                                  .FirstOrDefaultAsync(u => u.Id == id);
         }
 
         public async Task<UserInfo?> GetUserByUniqueIdAsync(Guid uniqueId)
         {
             return await _context.UserInfo
-                                 .Where(u => !u.IsDeleted.Value)  
+                                 .Where(u => !u.IsDeleted.Value)
                                  .FirstOrDefaultAsync(u => u.UniqueId == uniqueId);
         }
 
@@ -46,13 +47,13 @@ namespace Server.Providers
             var user = await _context.UserInfo.FirstOrDefaultAsync(u => u.Id == id);
             if (user == null || user.IsDeleted.Value)
             {
-                return false; 
+                return false;
             }
 
             user.IsDeleted = true;
             _context.UserInfo.Update(user);
             await _context.SaveChangesAsync();
-            return true; 
+            return true;
         }
 
         public async Task<bool> SoftDeleteUserByUniqueIdAsync(Guid uniqueId)
@@ -60,13 +61,13 @@ namespace Server.Providers
             var user = await _context.UserInfo.FirstOrDefaultAsync(u => u.UniqueId == uniqueId);
             if (user == null || user.IsDeleted.Value)
             {
-                return false; 
+                return false;
             }
 
             user.IsDeleted = true;
             _context.UserInfo.Update(user);
             await _context.SaveChangesAsync();
-            return true; 
+            return true;
         }
     }
 }

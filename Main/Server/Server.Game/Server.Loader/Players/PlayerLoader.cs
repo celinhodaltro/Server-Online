@@ -123,14 +123,21 @@ public class PlayerLoader
     protected ITown GetTown(Server.Entities.Character playerEntity)
     {
         if (!World.TryGetTown((ushort)playerEntity.TownId, out var town))
+        {
             Logger.Error("player town not found: {PlayerModelTownId}", playerEntity.TownId);
+            return World.LoadedFirstTown;
+        }
         return town;
     }
 
     protected IVocation GetVocation(Server.Entities.Character playerEntity)
     {
         if (!VocationStore.TryGetValue(playerEntity.Vocation, out var vocation))
+        {
             Logger.Error("Player vocation not found: {PlayerModelVocation}", playerEntity.Vocation);
+        }
+        if (vocation is null)
+            VocationStore.TryGetValue(0, out vocation);
         return vocation;
     }
 
