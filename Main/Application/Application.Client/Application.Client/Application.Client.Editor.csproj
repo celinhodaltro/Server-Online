@@ -10,10 +10,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>OpenTibiaUnity</RootNamespace>
-    <ProjectGuid>{ADE1873C-E020-688A-C240-70C92CFFA2F9}</ProjectGuid>
+    <ProjectGuid>{79133667-AB7A-14F0-338C-F6A8CC057363}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -23,7 +23,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>UNITY_2022_3_43;UNITY_2022_3;UNITY_2022;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_NAVIGATION_PACKAGE_DEBUG_VISUALIZATION;ENABLE_NAVIGATION_HEIGHTMESH_RUNTIME_SUPPORT;ENABLE_NAVIGATION_UI_REQUIRES_PACKAGE;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;PLATFORM_INITIALIZES_MEMORY_MANAGER_EXPLICITLY;ENABLE_MONO;NET_4_6;NET_UNITY_4_8;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;UNITY_POST_PROCESSING_STACK_V2;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>UNITY_2022_3_43;UNITY_2022_3;UNITY_2022;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_NAVIGATION_PACKAGE_DEBUG_VISUALIZATION;ENABLE_NAVIGATION_HEIGHTMESH_RUNTIME_SUPPORT;ENABLE_NAVIGATION_UI_REQUIRES_PACKAGE;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;PLATFORM_INITIALIZES_MEMORY_MANAGER_EXPLICITLY;ENABLE_MONO;NET_4_6;NET_UNITY_4_8;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;UNITY_POST_PROCESSING_STACK_V2;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER;UNITY_EDITOR_ONLY_COMPILATION</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169;USG0001</NoWarn>
@@ -50,7 +50,7 @@
     <UnityProjectGenerator>Package</UnityProjectGenerator>
     <UnityProjectGeneratorVersion>2.0.22</UnityProjectGeneratorVersion>
     <UnityProjectGeneratorStyle>Legacy</UnityProjectGeneratorStyle>
-    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityProjectType>Editor:5</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2022.3.43f1</UnityVersion>
   </PropertyGroup>
@@ -60,315 +60,8 @@
     <Analyzer Include="E:\Unity\2022.3.43f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Core\Communication\Exceptions\ByteArrayInalidModeException.cs" />
-    <Compile Include="Assets\Scripts\Core\Components\Base\MiniWindow.cs" />
-    <Compile Include="Assets\Scripts\Core\Input\StaticAction\PlayerMove.cs" />
-    <Compile Include="Assets\Scripts\Core\Components\CheckboxWrapper.cs" />
-    <Compile Include="Assets\Scripts\Core\Options\ScreenshotPolicy.cs" />
-    <Compile Include="Assets\Scripts\Modules\Console\ConsoleModule.cs" />
-    <Compile Include="Assets\Scripts\Core\Appearances\Provider\GeneralSpriteProvider.cs" />
-    <Compile Include="Assets\Scripts\Core\Input\StaticAction\ChatInsertClipboard.cs" />
-    <Compile Include="Assets\Scripts\Core\Communication\Game\Trade.cs" />
-    <Compile Include="Assets\Scripts\Core\Utils\ByteArray.cs" />
-    <Compile Include="Assets\Scripts\Core\Appearances\Provider\SpritesInformation.cs" />
-    <Compile Include="Assets\Scripts\Modules\Hotkeys\HotkeyActionPanel.cs" />
-    <Compile Include="Assets\Scripts\Core\Input\GameAction\AutoWalkActionImpl.cs" />
-    <Compile Include="Assets\Scripts\Core\Creatures\CreatureStorage.cs" />
-    <Compile Include="Assets\Scripts\Core\MiniMap\MiniMapSector.cs" />
-    <Compile Include="Assets\Scripts\Core\Input\StaticAction\ChatMoveCursorLeft.cs" />
-    <Compile Include="Assets\Scripts\Modules\Console\ConsoleBuffer.cs" />
-    <Compile Include="Assets\Scripts\Core\Input\StaticAction\ChatMoveCursorEnd.cs" />
-    <Compile Include="Assets\Scripts\Core\Components\Base\AbstractComponent.cs" />
-    <Compile Include="Assets\Scripts\Modules\Console\ChannelMessageContextMenu.cs" />
-    <Compile Include="Assets\Scripts\Modules\Login\CharactersWindow.cs" />
-    <Compile Include="Assets\Scripts\Modules\Skills\SkillProgressIconPanel.cs" />
-    <Compile Include="Assets\Scripts\Modules\Options\LegacyGeneralOptionsWindow.cs" />
-    <Compile Include="Assets\Scripts\Core\Communication\Internal\Protocol.cs" />
-    <Compile Include="Assets\Scripts\Modules\Login\AuthenticatorWindow.cs" />
-    <Compile Include="Assets\Scripts\Core\Utils\EventImpl.cs" />
-    <Compile Include="Assets\Scripts\Core\Communication\Game\ModalDialog.cs" />
-    <Compile Include="Assets\Scripts\Core\Creatures\ExperienceGainInfo.cs" />
-    <Compile Include="Assets\Scripts\Core\Appearances\Marks.cs" />
-    <Compile Include="Assets\Scripts\Core\Communication\Cryptography\XTEA.cs" />
-    <Compile Include="Assets\Scripts\Modules\Options\LegacyOptionsWindow.cs" />
-    <Compile Include="Assets\Scripts\Core\Communication\Game\Prey.cs" />
-    <Compile Include="Assets\Scripts\Core\Store\StoreFeaturedOffer.cs" />
-    <Compile Include="Assets\Scripts\Core\Container\BodyContainerView.cs" />
-    <Compile Include="Assets\Scripts\Core\Input\InputHandler.cs" />
-    <Compile Include="Assets\Scripts\OpenTibiaUnity.cs" />
-    <Compile Include="Assets\Scripts\Modules\Outfit\OutfitWindow.cs" />
-    <Compile Include="Assets\Scripts\Core\Input\GameAction\TalkActionImpl.cs" />
-    <Compile Include="Assets\Scripts\Modules\Trade\NPCTradeItem.cs" />
-    <Compile Include="Assets\Scripts\Core\Chat\MessageBlock.cs" />
-    <Compile Include="Assets\Scripts\Core\Communication\Internal\Connection.cs" />
-    <Compile Include="Assets\Scripts\Modules\Container\ContainerWindow.cs" />
-    <Compile Include="Assets\Scripts\Core\Input\GameAction\UseActionImpl.cs" />
-    <Compile Include="Assets\Scripts\Modules\Console\ChannelTab.cs" />
-    <Compile Include="Assets\Scripts\Core\WorldMap\OnscreenMessageBox.cs" />
-    <Compile Include="Assets\Scripts\Core\Utils\GraphicsUtility.cs" />
-    <Compile Include="Assets\Scripts\Core\Utils\Utility.cs" />
-    <Compile Include="Assets\Scripts\Core\Store\Visualisations\StoreMountVisualisation.cs" />
-    <Compile Include="Assets\Scripts\Core\Communication\Game\BuddyData.cs" />
-    <Compile Include="Assets\Scripts\Modules\Skills\SkillRawPanel.cs" />
-    <Compile Include="Assets\Scripts\Core\Communication\Game\Startup.cs" />
-    <Compile Include="Assets\Scripts\Core\Communication\Game\Player.cs" />
-    <Compile Include="Assets\Scripts\Core\Utils\Texture2DPart.cs" />
-    <Compile Include="Assets\Scripts\Core\DailyReward\Types\XpBoost.cs" />
-    <Compile Include="Assets\Scripts\Core\Input\StaticAction\ChatDeletePrev.cs" />
-    <Compile Include="Assets\Scripts\Core\Appearances\AppearanceInstance.cs" />
-    <Compile Include="Assets\Scripts\Core\Input\GameAction\ToggleWrapStateActionImpl.cs" />
-    <Compile Include="Assets\Scripts\Core\Communication\Game\Spells.cs" />
-    <Compile Include="Assets\Scripts\Core\Market\Offer.cs" />
-    <Compile Include="Assets\Scripts\Core\Options\OptionStorage.cs" />
-    <Compile Include="Assets\Scripts\Core\Game\IWidgetContainerWidget.cs" />
-    <Compile Include="Assets\Scripts\Core\Input\StaticAction\StaticAction.cs" />
-    <Compile Include="Assets\Scripts\Core\Compression\Zlib\ZlibCodec.cs" />
-    <Compile Include="Assets\Scripts\Core\Communication\Game\Container.cs" />
-    <Compile Include="Assets\Scripts\Core\Colors.cs" />
-    <Compile Include="Assets\Scripts\Core\Store\OpenParameters\StoreEmptyOpenParamater.cs" />
-    <Compile Include="Assets\Scripts\Core\Store\Visualisations\StoreObjectVisualisation.cs" />
-    <Compile Include="Assets\Scripts\Core\Store\StoreOpenParameters.cs" />
-    <Compile Include="Assets\Scripts\Core\Utils\PriorityQueue.cs" />
-    <Compile Include="Assets\Scripts\Core\Trade\TradeObjectRef.cs" />
-    <Compile Include="Assets\Scripts\Core\Utils\Delay.cs" />
-    <Compile Include="Assets\Scripts\Core\Input\StaticAction\ChatCopySelected.cs" />
-    <Compile Include="Assets\Scripts\Core\Appearances\AppearanceTypeRef.cs" />
-    <Compile Include="Assets\Scripts\Core\Store\StoreOfferQuantityConfiguration.cs" />
-    <Compile Include="Assets\Scripts\Modules\Battle\BattleWindow.cs" />
-    <Compile Include="Assets\Scripts\Core\Input\StaticAction\ChangeCharacter.cs" />
-    <Compile Include="Assets\Scripts\Core\Appearances\Provider\SpritesAsset.cs" />
-    <Compile Include="Assets\Scripts\Core\Utils\CustomInputModule.cs" />
-    <Compile Include="Assets\Scripts\Core\Components\ButtonWrapper.cs" />
-    <Compile Include="Assets\Scripts\Core\Input\StaticAction\PlayerTurn.cs" />
-    <Compile Include="Assets\Scripts\Core\Magic\Rune.cs" />
-    <Compile Include="Assets\Scripts\Core\Communication\Game\ProtocolGame.cs" />
-    <Compile Include="Assets\Scripts\Core\Input\GameAction\ToggleAttackTargetActionImpl.cs" />
-    <Compile Include="Assets\Scripts\Modules\Container\ContainerWindowHandler.cs" />
-    <Compile Include="Assets\Scripts\Core\Chat\ChatStorage.cs" />
-    <Compile Include="Assets\Scripts\Core\WorldMap\Field.cs" />
-    <Compile Include="Assets\Scripts\Core\Communication\Game\DailyReward.cs" />
-    <Compile Include="Assets\Scripts\Core\Communication\Game\Map.cs" />
-    <Compile Include="Assets\Scripts\Core\WorldMap\WorldMapStorage.cs" />
-    <Compile Include="Assets\Scripts\Protobuf\Protocol\ProtocolMessage.cs" />
-    <Compile Include="Assets\Scripts\Core\Chat\MessageStorage.cs" />
-    <Compile Include="Assets\Scripts\Protobuf\Protocol\Outfit.cs" />
-    <Compile Include="Assets\Scripts\Core\Communication\Game\ProtocolGameSend.cs" />
-    <Compile Include="Assets\Scripts\Core\Magic\Spell.cs" />
-    <Compile Include="Assets\Scripts\Core\Communication\Game\Speech.cs" />
-    <Compile Include="Assets\Scripts\Core\Utils\UnionStrInt.cs" />
-    <Compile Include="Assets\Scripts\Core\WorldMap\Rendering\MeshBasedLightmapRenderer.cs" />
-    <Compile Include="Assets\Scripts\Modules\GameWindow\GameMapContainer.cs" />
-    <Compile Include="Assets\Scripts\Core\DailyReward\Types\PreyBonusRerolls.cs" />
-    <Compile Include="Assets\Scripts\Core\Input\Mapping\Binding.cs" />
-    <Compile Include="Assets\Scripts\Core\Components\ToggleWrapper.cs" />
-    <Compile Include="Assets\Scripts\Core\Components\DropdownExtention.cs" />
-    <Compile Include="Assets\Scripts\TextResources.cs" />
-    <Compile Include="Assets\Scripts\Modules\Options\LegacyGraphicsOptionsWindow.cs" />
-    <Compile Include="Assets\Scripts\Core\Cyclopedia\CyclopediaStorage.cs" />
-    <Compile Include="Assets\Scripts\Core\Communication\Game\ProtocolGameExtentions.cs" />
-    <Compile Include="Assets\Scripts\Core\Communication\Login\ProtocolLogin.cs" />
-    <Compile Include="Assets\Scripts\Core\Communication\Cryptography\PublicRSA.cs" />
-    <Compile Include="Assets\Scripts\Core\Magic\SpellStorage.cs" />
-    <Compile Include="Assets\Scripts\Core\Components\Base\Module.cs" />
-    <Compile Include="Assets\Scripts\Core\Components\TabBar.cs" />
-    <Compile Include="Assets\Scripts\Core\Communication\Attributes\ClientVersionAttribute.cs" />
-    <Compile Include="Assets\Scripts\Core\Chat\MessageMode.cs" />
-    <Compile Include="Assets\Scripts\Core\Input\StaticAction\ChatHistoryNext.cs" />
-    <Compile Include="Assets\Scripts\Core\Container\ContainerStorage.cs" />
-    <Compile Include="Assets\Scripts\Core\Communication\Login\CharacterList.cs" />
-    <Compile Include="Assets\Scripts\Modules\Hotkeys\HotkeyAction.cs" />
-    <Compile Include="Assets\Scripts\Core\Input\GameAction\PartyActionImpl.cs" />
-    <Compile Include="Assets\Scripts\Protobuf\Appearances\AppearancesExtentions.cs" />
-    <Compile Include="Assets\Scripts\Core\Appearances\Animation\EnhancedAnimator.cs" />
-    <Compile Include="Assets\Scripts\Core\Appearances\Animation\LegacyAnimator.cs" />
-    <Compile Include="Assets\Scripts\Core\Components\Base\MiniWindowContainer.cs" />
-    <Compile Include="Assets\Scripts\Core\Components\ScrollRectExtention.cs" />
-    <Compile Include="Assets\Scripts\Core\Input\StaticAction\LogoutCharacter.cs" />
-    <Compile Include="Assets\Scripts\Core\WorldMap\CreatureStatus.cs" />
-    <Compile Include="Assets\Scripts\Core\Communication\Web\WebClient.cs" />
-    <Compile Include="Assets\Scripts\Core\Appearances\Rendering\MarksView.cs" />
-    <Compile Include="Assets\Scripts\Core\Appearances\AppearanceStorage.cs" />
-    <Compile Include="Assets\Scripts\Core\DailyReward\Types\Object.cs" />
-    <Compile Include="Assets\Scripts\Core\Communication\Login\LoginWebClient.cs" />
-    <Compile Include="Assets\Scripts\Core\Utils\RingBuffer.cs" />
-    <Compile Include="Assets\Scripts\Modules\Container\ItemView.cs" />
-    <Compile Include="Assets\Scripts\Core\Communication\Game\ExivaOptions.cs" />
-    <Compile Include="Assets\Scripts\Modules\GameWindow\GameInterface.cs" />
-    <Compile Include="Assets\Scripts\Core\Communication\Login\Session.cs" />
-    <Compile Include="Assets\Scripts\Core\Chat\ChannelMessage.cs" />
-    <Compile Include="Assets\Scripts\Modules\Skills\SkillPanel.cs" />
-    <Compile Include="Assets\Scripts\Core\Components\Draggable.cs" />
-    <Compile Include="Assets\Scripts\Core\Appearances\OutfitInstance.cs" />
-    <Compile Include="Assets\Scripts\Core\Store\OpenParameters\StoreCategoryAndFilterOpenParamater.cs" />
-    <Compile Include="Assets\Scripts\Core\Communication\Internal\NetworkPacketWriter.cs" />
-    <Compile Include="Assets\Scripts\Core\Components\PopupWindow.cs" />
-    <Compile Include="Assets\Scripts\Core\Creatures\SkillCounter.cs" />
-    <Compile Include="Assets\Scripts\Core\Utils\CursorController.cs" />
-    <Compile Include="Assets\Scripts\Modules\Options\LegacyOptionsWindowItem.cs" />
-    <Compile Include="Assets\Scripts\Core\Input\GameAction\LootActionImpl.cs" />
-    <Compile Include="Assets\Scripts\Core\Appearances\ObjectInstance.cs" />
-    <Compile Include="Assets\Scripts\Core\Container\InventoryTypeInfo.cs" />
-    <Compile Include="Assets\Scripts\Core\Creatures\Creature.cs" />
-    <Compile Include="Assets\Scripts\Modules\Options\LegacyConsoleOptionsWindow.cs" />
-    <Compile Include="Assets\Scripts\Core\Input\StaticAction\StaticActionList.cs" />
-    <Compile Include="Assets\Scripts\Core\Appearances\MissleInstance.cs" />
-    <Compile Include="Assets\Scripts\Modules\GameWindow\GameSideNonVolatileContentPanel.cs" />
-    <Compile Include="Assets\Scripts\Core\Utils\UIHelper.cs" />
-    <Compile Include="Assets\Scripts\Core\Communication\Game\Cyclopedia.cs" />
-    <Compile Include="Assets\Scripts\Core\Communication\Game\Inspection.cs" />
-    <Compile Include="Assets\Scripts\Modules\Skills\SkillsWindow.cs" />
-    <Compile Include="Assets\Scripts\Core\Chat\Channel.cs" />
-    <Compile Include="Assets\Scripts\Core\Game\ObjectDragImpl.cs" />
-    <Compile Include="Assets\Scripts\Core\MiniMap\MiniMapStorage.cs" />
-    <Compile Include="Assets\Scripts\Core\Components\SplitStackWindow.cs" />
-    <Compile Include="Assets\Scripts\Core\Appearances\Rendering\CachedSpriteInformation.cs" />
-    <Compile Include="Assets\Scripts\Core\Communication\Login\Playdata.cs" />
-    <Compile Include="Assets\Scripts\Modules\Trade\NPCTradeWindow.cs" />
-    <Compile Include="Assets\Scripts\Core\Store\StoreCategoryAndFilter.cs" />
-    <Compile Include="Assets\Scripts\Core\Communication\Game\Market.cs" />
-    <Compile Include="Assets\Scripts\Modules\Login\CharacterPanel.cs" />
-    <Compile Include="Assets\Scripts\Core\Communication\Exceptions\MemoryStreamEOFException.cs" />
-    <Compile Include="Assets\Scripts\Modules\Login\LoginWindow.cs" />
-    <Compile Include="Assets\Scripts\Modules\HealthInfo\HealthInfoWidget.cs" />
-    <Compile Include="Assets\Scripts\Core\WorldMap\Rendering\EffectRenderAtom.cs" />
-    <Compile Include="Assets\Scripts\Modules\GameWindow\GamePanelContainer.cs" />
-    <Compile Include="Assets\Scripts\Core\Store\OpenParameters\StoreCategoryOpenParamater.cs" />
-    <Compile Include="Assets\Scripts\Core\Input\StaticAction\ChatMoveCursorHome.cs" />
-    <Compile Include="Assets\Scripts\Modules\MiniMap\MinimapScrollButton.cs" />
-    <Compile Include="Assets\Scripts\Modules\GameWindow\GameSideContentPanel.cs" />
-    <Compile Include="Assets\Scripts\Core\Components\SliderWrapper.cs" />
-    <Compile Include="Assets\Scripts\Constants.cs" />
-    <Compile Include="Assets\Scripts\Core\WorldMap\Rendering\TileCursor.cs" />
-    <Compile Include="Assets\Scripts\Core\Communication\Cryptography\Adler32Checksum.cs" />
-    <Compile Include="Assets\Scripts\Core\Communication\Internal\NetworkPacketReader.cs" />
-    <Compile Include="Assets\Scripts\Core\Components\TabButton.cs" />
-    <Compile Include="Assets\Scripts\Core\Components\ContextMenuBase.cs" />
-    <Compile Include="Assets\Scripts\Core\Input\StaticAction\ToggleFullScreen.cs" />
-    <Compile Include="Assets\Scripts\Protobuf\Appearances\Shared.cs" />
-    <Compile Include="Assets\Scripts\Modules\Skills\SkillProgressPanel.cs" />
-    <Compile Include="Assets\Scripts\Core\Input\GameAction\LookActionImpl.cs" />
-    <Compile Include="Assets\Scripts\Core\Components\Base\Window.cs" />
-    <Compile Include="Assets\Scripts\Core\Store\OpenParameters\IStoreOpenParamater.cs" />
-    <Compile Include="Assets\Scripts\Core\Components\OTU_ScrollRect.cs" />
-    <Compile Include="Assets\Scripts\Modules\Battle\BattleCreature.cs" />
-    <Compile Include="Assets\Scripts\Core\Input\StaticAction\ChatDeleteNext.cs" />
-    <Compile Include="Assets\Scripts\Core\Input\StaticAction\ChatCutSelected.cs" />
-    <Compile Include="Assets\Scripts\Core\Compression\Zlib\ZlibConst.cs" />
-    <Compile Include="Assets\Scripts\Core\WorldMap\Rendering\WorldMapRenderer.cs" />
-    <Compile Include="Assets\Scripts\Modules\ModulesManager.cs" />
-    <Compile Include="Assets\Scripts\Core\Communication\Compression\Inflater.cs" />
-    <Compile Include="Assets\Scripts\Core\Input\MappingSet.cs" />
-    <Compile Include="Assets\Scripts\Core\Input\GameAction\MoveActionImpl.cs" />
-    <Compile Include="Assets\Scripts\Core\Chat\MessageFilterSet.cs" />
-    <Compile Include="Assets\Scripts\Core\Communication\Game\QuickLoot.cs" />
-    <Compile Include="Assets\Scripts\Modules\MiniMap\MiniMapModule.cs" />
-    <Compile Include="Assets\Scripts\Core\Store\OpenParameters\StoreOfferOpenParamater.cs" />
-    <Compile Include="Assets\Scripts\Core\Creatures\Player.cs" />
-    <Compile Include="Assets\Scripts\Core\Store\StoreStorage.cs" />
-    <Compile Include="Assets\Scripts\Core\Magic\Magic.cs" />
-    <Compile Include="Assets\Scripts\Core\DailyReward\Types\Item.cs" />
-    <Compile Include="Assets\Scripts\Core\Appearances\Provider\SingleSpriteProvider.cs" />
-    <Compile Include="Assets\Scripts\Core\Store\StoreProduct.cs" />
-    <Compile Include="Assets\Scripts\Core\Components\Checkbox.cs" />
-    <Compile Include="Assets\Scripts\Modules\GameWindow\GameSidePanel.cs" />
-    <Compile Include="Assets\Scripts\Core\Appearances\SpriteProvider.cs" />
-    <Compile Include="Assets\Scripts\Core\Input\StaticAction\ChatHistoryPrev.cs" />
-    <Compile Include="Assets\Scripts\Core\StringHelper.cs" />
-    <Compile Include="Assets\Scripts\Core\Game\IMoveWidget.cs" />
-    <Compile Include="Assets\Scripts\Core\Store\StoreOffer.cs" />
-    <Compile Include="Assets\Scripts\Core\Components\ObjectContextMenu.cs" />
-    <Compile Include="Assets\Scripts\Core\Input\StaticAction\PlayerCancel.cs" />
-    <Compile Include="Assets\Scripts\Core\Chat\NameFilterItem.cs" />
-    <Compile Include="Assets\Scripts\Core\Game\ObjectMultiUseHandler.cs" />
-    <Compile Include="Assets\Scripts\Core\GameManager.cs" />
-    <Compile Include="Assets\Scripts\Core\Communication\Game\Store.cs" />
-    <Compile Include="Assets\Scripts\Core\Communication\Game\Effects.cs" />
-    <Compile Include="Assets\Scripts\Core\Appearances\TextualEffectInstance.cs" />
-    <Compile Include="Assets\Scripts\Core\DailyReward\DailyReward.cs" />
-    <Compile Include="Assets\Scripts\Core\Input\StaticAction\ChatSelectAll.cs" />
-    <Compile Include="Assets\Scripts\Core\Game\IUseWidget.cs" />
-    <Compile Include="Assets\Scripts\Core\Input\GameAction\GreetAction.cs" />
-    <Compile Include="Assets\Scripts\Core\Communication\Game\Imbuing.cs" />
-    <Compile Include="Assets\Scripts\Modules\Outfit\OutfitColorItem.cs" />
-    <Compile Include="Assets\Scripts\Core\Store\StoreCategory.cs" />
-    <Compile Include="Assets\Scripts\Core\Store\Visualisations\StoreIconVisualisation.cs" />
-    <Compile Include="Assets\Scripts\Core\Store\OpenParameters\StoreCategoryTypeOpenParamater.cs" />
-    <Compile Include="Assets\Scripts\Modules\GameWindow\GameWorldMap.cs" />
-    <Compile Include="Assets\Scripts\Core\Input\InputEvent.cs" />
-    <Compile Include="Assets\Scripts\Core\Chat\NameFilterSet.cs" />
-    <Compile Include="Assets\Scripts\Core\Input\IAction.cs" />
-    <Compile Include="Assets\Scripts\Core\Communication\Internal\CommunicationStream.cs" />
-    <Compile Include="Assets\Scripts\Core\Input\StaticAction\ShowDialog.cs" />
-    <Compile Include="Assets\Scripts\Core\Communication\Game\Creatures.cs" />
-    <Compile Include="Assets\Scripts\Core\Appearances\AppearanceType.cs" />
-    <Compile Include="Assets\Scripts\Modules\GameWindow\GameBottomContainer.cs" />
-    <Compile Include="Assets\Scripts\Core\Store\OpenParameters\StoreOfferTypeOpenParamater.cs" />
-    <Compile Include="Assets\Scripts\Core\Input\GameAction\BrowseFieldActionImpl.cs" />
-    <Compile Include="Assets\Scripts\Core\Input\StaticAction\ChatMoveCursorRight.cs" />
-    <Compile Include="Assets\Scripts\Core\Communication\Game\Analytics.cs" />
-    <Compile Include="Assets\Scripts\Core\Store\Visualisations\StoreOutfitVisualisation.cs" />
-    <Compile Include="Assets\Scripts\Core\Communication\Types\Login.cs" />
-    <Compile Include="Assets\Scripts\Core\Appearances\Animation\IAppearanceAnimator.cs" />
-    <Compile Include="Assets\Scripts\Core\Communication\Attributes\ClientFeatureAttribute.cs" />
-    <Compile Include="Assets\Scripts\Modules\MiniWindows\MiniWindowButtons.cs" />
-    <Compile Include="Assets\Scripts\Core\Utils\Timer.cs" />
-    <Compile Include="Assets\Scripts\Core\Input\GameAction\PrivateChatActionImpl.cs" />
-    <Compile Include="Assets\Scripts\Core\WorldMap\Rendering\RenderAtom.cs" />
-    <Compile Include="Assets\Scripts\Core\Communication\Exceptions\MemoryStreamInvalidEnumValue.cs" />
-    <Compile Include="Assets\Scripts\Protobuf\Appearances\Appearances.cs" />
-    <Compile Include="Assets\Scripts\Core\Input\GameAction\TurnActionImpl.cs" />
-    <Compile Include="Assets\Scripts\Core\WorldMap\Rendering\LightmapRenderer.cs" />
-    <Compile Include="Assets\Scripts\Core\Input\StaticAction\ChatSendText.cs" />
-    <Compile Include="Assets\Scripts\Core\Container\ContainerView.cs" />
-    <Compile Include="Assets\Scripts\Core\Communication\Game\OTClient.cs" />
-    <Compile Include="Assets\Scripts\Core\Input\Mapping\Mapping.cs" />
-    <Compile Include="Assets\Scripts\Modules\Hotkeys\HotkeysWindow.cs" />
-    <Compile Include="Assets\Scripts\Core\Store\StoreVisualisation.cs" />
-    <Compile Include="Assets\Scripts\Core\Appearances\EffectInstance.cs" />
-    <Compile Include="Assets\Scripts\Core\Communication\Types\Game.cs" />
-    <Compile Include="Assets\Scripts\Core\Input\StaticAction\PlayerMount.cs" />
-    <Compile Include="Assets\Scripts\Core\Input\IActionImpl.cs" />
-    <Compile Include="Assets\Scripts\Modules\Inventory\InventoryWindow.cs" />
-    <Compile Include="Assets\Scripts\Core\WorldMap\OnscreenMessage.cs" />
-    <Compile Include="Assets\Scripts\Core\MiniMap\Rendering\MinimapRenderer.cs" />
-    <Compile Include="Assets\Scripts\Core\Components\MiniWindowBottomResizer.cs" />
-    <Compile Include="Assets\Scripts\Core\Appearances\AppearanceTypeInfo.cs" />
-    <Compile Include="Assets\Scripts\Core\Components\DraggableTabButton.cs" />
-    <Compile Include="Assets\Scripts\Core\MiniMap\PathItem.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
-    <None Include="Assets\Materials\OutfitType.shader" />
-    <None Include="Assets\Materials\Lightmap.shader" />
-    <None Include="Assets\Materials\MarksView.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets\JsonDotNet\link.xml" />
-    <None Include="Assets\JsonDotNet\Assemblies\Windows\Newtonsoft.Json.XML" />
-    <None Include="Assets\JsonDotNet\Assemblies\Standalone\Newtonsoft.Json.XML" />
-    <None Include="Assets\JsonDotNet\Assemblies\Standalone\Newtonsoft.Json.dll" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
-    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
-    <None Include="Assets\JsonDotNet\Assemblies\AOT\Newtonsoft.Json.dll" />
-    <None Include="Assets\External\Ionic.Zlib.dll" />
-    <None Include="Assets\Materials\AppearanceType.shader" />
-    <None Include="Assets\JsonDotNet\Assemblies\AOT\Newtonsoft.Json.XML" />
-    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-    <None Include="Assets\JsonDotNet\Assemblies\Windows\Newtonsoft.Json.dll" />
-    <None Include="Assets\External\Google.Protobuf.dll" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets\Materials\Colored.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
-    <None Include="Assets\External\BouncyCastle.Crypto.dll" />
-    <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
+    <Compile Include="Assets\Editor\AssetsBuilder.cs" />
+    <Compile Include="Assets\Editor\Core\Components\DraggableEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -391,12 +84,20 @@
       <HintPath>E:\Unity\2022.3.43f1\Editor\Data\Managed\UnityEngine\UnityEngine.AndroidJNIModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>E:\Unity\2022.3.43f1\Editor\Data\Managed\UnityEngine\UnityEngine.AnimationModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="UnityEngine.AssetBundleModule">
       <HintPath>E:\Unity\2022.3.43f1\Editor\Data\Managed\UnityEngine\UnityEngine.AssetBundleModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.AudioModule">
       <HintPath>E:\Unity\2022.3.43f1\Editor\Data\Managed\UnityEngine\UnityEngine.AudioModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>E:\Unity\2022.3.43f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClothModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.ClusterInputModule">
@@ -421,6 +122,10 @@
     </Reference>
     <Reference Include="UnityEngine.DSPGraphModule">
       <HintPath>E:\Unity\2022.3.43f1\Editor\Data\Managed\UnityEngine\UnityEngine.DSPGraphModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>E:\Unity\2022.3.43f1\Editor\Data\Managed\UnityEngine\UnityEngine.DirectorModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.GIModule">
@@ -463,8 +168,20 @@
       <HintPath>E:\Unity\2022.3.43f1\Editor\Data\Managed\UnityEngine\UnityEngine.LocalizationModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="UnityEngine.NVIDIAModule">
+      <HintPath>E:\Unity\2022.3.43f1\Editor\Data\Managed\UnityEngine\UnityEngine.NVIDIAModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>E:\Unity\2022.3.43f1\Editor\Data\Managed\UnityEngine\UnityEngine.ParticleSystemModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="UnityEngine.PerformanceReportingModule">
       <HintPath>E:\Unity\2022.3.43f1\Editor\Data\Managed\UnityEngine\UnityEngine.PerformanceReportingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>E:\Unity\2022.3.43f1\Editor\Data\Managed\UnityEngine\UnityEngine.PhysicsModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.Physics2DModule">
@@ -507,8 +224,20 @@
       <HintPath>E:\Unity\2022.3.43f1\Editor\Data\Managed\UnityEngine\UnityEngine.SubstanceModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="UnityEngine.SubsystemsModule">
+      <HintPath>E:\Unity\2022.3.43f1\Editor\Data\Managed\UnityEngine\UnityEngine.SubsystemsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="UnityEngine.TLSModule">
       <HintPath>E:\Unity\2022.3.43f1\Editor\Data\Managed\UnityEngine\UnityEngine.TLSModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>E:\Unity\2022.3.43f1\Editor\Data\Managed\UnityEngine\UnityEngine.TerrainModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>E:\Unity\2022.3.43f1\Editor\Data\Managed\UnityEngine\UnityEngine.TerrainPhysicsModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.TextCoreFontEngineModule">
@@ -533,6 +262,10 @@
     </Reference>
     <Reference Include="UnityEngine.UIElementsModule">
       <HintPath>E:\Unity\2022.3.43f1\Editor\Data\Managed\UnityEngine\UnityEngine.UIElementsModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>E:\Unity\2022.3.43f1\Editor\Data\Managed\UnityEngine\UnityEngine.UmbraModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.UnityAnalyticsModule">
@@ -579,12 +312,28 @@
       <HintPath>E:\Unity\2022.3.43f1\Editor\Data\Managed\UnityEngine\UnityEngine.VFXModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>E:\Unity\2022.3.43f1\Editor\Data\Managed\UnityEngine\UnityEngine.VRModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>E:\Unity\2022.3.43f1\Editor\Data\Managed\UnityEngine\UnityEngine.VehiclesModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="UnityEngine.VideoModule">
       <HintPath>E:\Unity\2022.3.43f1\Editor\Data\Managed\UnityEngine\UnityEngine.VideoModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.VirtualTexturingModule">
       <HintPath>E:\Unity\2022.3.43f1\Editor\Data\Managed\UnityEngine\UnityEngine.VirtualTexturingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>E:\Unity\2022.3.43f1\Editor\Data\Managed\UnityEngine\UnityEngine.WindModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>E:\Unity\2022.3.43f1\Editor\Data\Managed\UnityEngine\UnityEngine.XRModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEditor">
@@ -651,6 +400,18 @@
       <HintPath>E:\Unity\2022.3.43f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>E:\Unity\2022.3.43f1\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.WebGL.Extensions">
+      <HintPath>E:\Unity\2022.3.43f1\Editor\Data\PlaybackEngines\WebGLSupport\UnityEditor.WebGL.Extensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+      <HintPath>E:\Unity\2022.3.43f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Assets\JsonDotNet\Assemblies\Standalone\Newtonsoft.Json.dll</HintPath>
       <Private>False</Private>
@@ -665,6 +426,10 @@
     </Reference>
     <Reference Include="BouncyCastle.Crypto">
       <HintPath>Assets\External\BouncyCastle.Crypto.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="mscorlib">
@@ -1167,6 +932,14 @@
       <HintPath>E:\Unity\2022.3.43f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XPath.XDocument.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="UnityEngine.TestRunner">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.TestRunner.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.TestRunner">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.TestRunner.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.AI.Navigation">
       <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.dll</HintPath>
       <Private>False</Private>
@@ -1221,6 +994,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Application.Client.csproj">
+      <Project>{ADE1873C-E020-688A-C240-70C92CFFA2F9}</Project>
+      <Name>Assembly-CSharp</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

@@ -9,11 +9,13 @@ namespace Server.BusinessRules
     public class CharacterBusinessRules
     {
 
+        public UserProvider UserProvider { get; set; }
         public CharacterProvider CharacterProvider { get; set; }
 
-        public CharacterBusinessRules(CharacterProvider CharacterProvider)
+        public CharacterBusinessRules(CharacterProvider CharacterProvider, UserProvider userProvider)
         {
             this.CharacterProvider = CharacterProvider;
+            this.UserProvider = userProvider;
         }
 
 
@@ -49,11 +51,8 @@ namespace Server.BusinessRules
         public async Task<Character?> GetPlayer(string accountName, string password, string charName)
         {
 
-            var Players = await CharacterProvider.GetAllAsync<Character>();
-
-            return Players.FirstOrDefault(x => x.User.Email.Equals(accountName) &&
-                                                    x.User.Password.Equals(password) &&
-                                                    x.Name.Equals(charName));
+            var Users = await this.UserProvider.GetUser(accountName, password);
+            return Users.Characters.FirstOrDefault(x => x.Name.Equals(charName));
 
         }
 

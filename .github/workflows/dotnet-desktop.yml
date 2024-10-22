@@ -9,7 +9,6 @@ on:
 jobs:
 
   build:
-
     strategy:
       matrix:
         configuration: [Release]
@@ -23,48 +22,54 @@ jobs:
       Game_Project_Path: ./Main/Server/Server.Game/Server.Starter/Server.Starter.csproj
 
     steps:
-    - name: Checkout
+    - name: (.) Checkout
       uses: actions/checkout@v4
       with:
         fetch-depth: 0
 
-    - name: Install .NET SDK
+    - name: (.) Install .NET SDK
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: '8.0.x'
 
-    - name: Restore all projects
+
+    - name: (1) Clean Projects
       run: |
-        dotnet clean 
-        dotnet restore --no-cache
+        dotnet clean ${{ env.Api_Project_Path }}  
+        dotnet clean ${{ env.Game_Project_Path }}
+        dotnet clean ${{ env.WebApp_Project_Path }}
+
+
+    - name: (2) Restore Projects
+      run: |
+        dotnet restore  ${{ env.Api_Project_Path }}    --no-cache
+        dotnet restore  ${{ env.Game_Project_Path }}   --no-cache
+        dotnet restore  ${{ env.WebApp_Project_Path }} --no-cache
         
-    - name: Building API
-      run: dotnet build ${{ env.Api_Project_Path }} --configuration ${{ matrix.configuration }}
 
-    - name: Build Game
-      run: dotnet build ${{ env.Game_Project_Path }} --configuration ${{ matrix.configuration }}
+    - name: (3) Build Projects (Game | API | WebApp)
+      run: |
+        dotnet build ${{ env.Game_Project_Path }} --configuration ${{ matrix.configuration }}
+        dotnet build ${{ env.Api_Project_Path }} --configuration ${{ matrix.configuration }}
+        dotnet build ${{ env.WebApp_Project_Path }} --configuration ${{ matrix.configuration }}
 
-    - name: Building Blazor
-      run: dotnet build ${{ env.WebApp_Project_Path }} --configuration ${{ matrix.configuration }}
       
-    - name: Publish API
-      run: dotnet publish ${{ env.Api_Project_Path }} --configuration ${{ matrix.configuration }} --output ./output/Server.API
-      
-    - name: Publish Game
-      run: dotnet publish ${{ env.Game_Project_Path }} --configuration ${{ matrix.configuration }} --output ./output/Server.Game
+    - name: (4) Publish Projects
+      run: |
+        dotnet publish ${{ env.Api_Project_Path }} --configuration ${{ matrix.configuration }} --output ./output/Server.API
+        dotnet publish ${{ env.Game_Project_Path }} --configuration ${{ matrix.configuration }} --output ./output/Server.Game
+        dotnet publish ${{ env.WebApp_Project_Path }} --configuration ${{ matrix.configuration }} /p:PublishTrimmed=false --output ./output/Application.WebApp
 
-    - name: Publish Blazor
-      run: dotnet publish ${{ env.WebApp_Project_Path }} --configuration ${{ matrix.configuration }} /p:PublishTrimmed=false --output ./output/Application.WebApp
 
-    - name: Compress output folder on Windows
+    - name: (5) Compress output folder  (Windows)
       if: matrix.os == 'windows-latest'
       run: Compress-Archive -Path ./output -DestinationPath ./output.zip
 
-    - name: Compress output folder on Ubuntu
+    - name: (5) Compress output folder (Ubuntu)
       if: matrix.os == 'ubuntu-latest'
       run: tar -czvf output.tar.gz ./output
 
-    - name: Upload build artifacts
+    - name: (6) Upload build artifacts
       uses: actions/upload-artifact@v3
       with:
         name: output
