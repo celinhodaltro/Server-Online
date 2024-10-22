@@ -10,51 +10,10 @@
 
 **Ursulla** é um projeto de jogo e aplicação web que visa fornecer uma experiência integrada entre uma aplicação de jogo nativa e uma interface web moderna. O sistema foi projetado com uma arquitetura modular para garantir escalabilidade, facilidade de manutenção e suporte a novas funcionalidades.
 
-## Estrutura
-
-A estrutura do projeto é dividida em três principais módulos:
-
-- **Server**: Responsável pela lógica de negócios, API e manipulação de dados.
-- **Clients**: Contém as aplicações que interagem com os usuários, tanto o jogo quanto a aplicação web.
-- **Docs**: Documentação técnica e diagramas de arquitetura.
-
-### Arquitetura
-
-```bash
-/Ursulla
-│
-├── /Server
-│   ├── /Server.API                 # Endpoints da API
-│   ├── /Server.Entities            # Entidades do domínio (Character, Game, User)
-│   ├── /Server.Bussiness           # Regras de negócios
-│   ├── /Server.Util                # Utilitários comuns do servidor
-│   └── /Server.Provider            # Acesso a dados e lógica de persistência
-│
-├── /Application
-│   ├── /Application.Services   # Código fonte para requisição com o back (Pensar em alterar nome para Application.Request)
-│   ├── /Application.GameClient # Client do jogo
-│   └── /Application.WebApp     # Aplicação web Blazor
-│       ├── /Pages              # Páginas da aplicação Blazor
-│       └── /Shared             # Componentes compartilhados da aplicação Blazor
-│
-└── /Docs
-    ├── Github.Documents  # Documentos do Git
-    │    └── ReadMe.md    # Documentação do projeto
-    │
-    └── Drawio.Diagrams 
-            └── diagram.png    # Diagrama do projeto (Fluxo)
-```
 
 
-## Tecnologias
 
-- **Backend**: ASP.NET Core, Entity Framework Core
-- **Frontend**: Blazor, MudBlazor
-- **Database**: MySql
-- **Game Client**: Unity
-- **Documentation**: Draw.io, Markdown
-
-## Getting Started
+## Buildando e rodando o projeto
 
 ### Requisitos
 
@@ -100,6 +59,50 @@ dotnet run
 [Otcv8](https://github.com/OTCv8/otclientv8) - C++
 [Edubart](https://github.com/edubart/otclient) - C++ 
 
+
+## Estrutura
+
+A estrutura do projeto é dividida em três principais módulos:
+
+- **Server**: Responsável pela lógica de negócios, API e manipulação de dados.
+- **Application**: Contém as aplicações que interagem com os usuários, tanto o jogo quanto a aplicação web.
+- **Docs**: Documentação técnica e diagramas de arquitetura.
+
+### Arquitetura
+
+```bash
+/Ursulla
+│
+├── /Server
+│   ├── /Server.API                 # Endpoints da API
+│   ├── /Server.Entities            # Entidades do domínio (Character, Game, User)
+│   ├── /Server.Bussiness           # Regras de negócios
+│   ├── /Server.Util                # Utilitários comuns do servidor
+│   └── /Server.Provider            # Acesso a dados e lógica de persistência
+│
+├── /Application
+│   ├── /Application.Services   # Código fonte para requisição com o back (Pensar em alterar nome para Application.Request)
+│   ├── /Application.GameClient # Client do jogo
+│   └── /Application.WebApp     # Aplicação web Blazor
+│       ├── /Pages              # Páginas da aplicação Blazor
+│       └── /Shared             # Componentes compartilhados da aplicação Blazor
+│
+└── /Docs
+    ├── Github.Documents  # Documentos do Git
+    │    └── ReadMe.md    # Documentação do projeto
+    │
+    └── Drawio.Diagrams 
+            └── diagram.png    # Diagrama do projeto (Fluxo)
+```
+
+
+## Tecnologias
+
+- **Backend**: ASP.NET Core, Entity Framework Core
+- **Frontend**: Blazor, MudBlazor
+- **Database**: MySql
+- **Game Client**: Unity
+- **Documentation**: Draw.io, Markdown
 
 ## API Documentation
 A API oferece endpoints para gerenciar entidades como `Character` e `User`. Para acessar a documentação completa e exemplos de requisições, utilize o Swagger disponível na URL `/swagger` após o servidor estar em execução.
