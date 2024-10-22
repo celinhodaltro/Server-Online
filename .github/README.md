@@ -96,9 +96,9 @@ dotnet run
 
 
 ##### Links para o build do cliente:
-[Unity](https://slavi.gitbook.io/opentibiaunity/getting-started/running-the-game) - C#, Eu escolhi essa opção por ter como objetivo principal um servidor 100% em c# para facilitar o desenvolvimento
-[Otcv8](https://github.com/OTCv8/otclientv8) - C++
-[Edubart](https://github.com/edubart/otclient) - C++ 
+- [Unity](https://slavi.gitbook.io/opentibiaunity/getting-started/running-the-game) - C#, Eu escolhi essa opção por ter como objetivo principal um servidor 100% em c# para facilitar o desenvolvimento
+- [Otcv8](https://github.com/OTCv8/otclientv8) - C++
+- [Edubart](https://github.com/edubart/otclient) - C++ 
 
 
 ## API Documentation
