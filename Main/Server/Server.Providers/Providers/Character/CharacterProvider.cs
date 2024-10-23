@@ -20,11 +20,9 @@ namespace Server.Providers
                                  .FirstOrDefaultAsync(c => c.Id == id);
         }
 
-        public async Task<Character?> GetCharacterByUniqueIdAsync(Guid uniqueId)
+        public async Task<Character?> GetAsync(string Name)
         {
-            return await _context.Characters
-                                 .Where(c => !c.IsDeleted.Value)  
-                                 .FirstOrDefaultAsync(c => c.UniqueId == uniqueId);
+            return await _context.Characters.FirstOrDefaultAsync(c => c.Name == Name && !c.IsDeleted);
         }
 
         public async Task<bool> SoftDeleteCharacterByIdAsync(int? id)
