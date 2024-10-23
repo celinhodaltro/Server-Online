@@ -1,4 +1,5 @@
 ﻿using System.Provider;
+using System.Xml;
 using Microsoft.EntityFrameworkCore;
 using Server.Entities;
 
@@ -13,62 +14,49 @@ namespace Server.Providers
             _context = context;
         }
 
-        public async Task<Character?> GetCharacterByIdAsync(int? id)
+        public async Task<Character?> GetAsync(int? id)
         {
-            return await _context.Characters
-                                 .Where(c => !c.IsDeleted.Value)  
-                                 .FirstOrDefaultAsync(c => c.Id == id);
+            return await _context.Characters.FirstOrDefaultAsync(c => c.Id == id && !c.IsDeleted);
         }
 
-        public async Task<Character?> GetCharacterByUniqueIdAsync(Guid uniqueId)
+        public async Task<Character?> GetAsync(string Name)
         {
-            return await _context.Characters
-                                 .Where(c => !c.IsDeleted.Value)  
-                                 .FirstOrDefaultAsync(c => c.UniqueId == uniqueId);
+            return await _context.Characters.FirstOrDefaultAsync(c => c.Name == Name && !c.IsDeleted);
         }
 
-        public async Task<bool> SoftDeleteCharacterByIdAsync(int? id)
+        public async Task<Character?> GetAsync(Guid uniqueId)
         {
-            var character = await _context.Characters.FirstOrDefaultAsync(c => c.Id == id);
-            if (character == null || character.IsDeleted.Value)
-            {
-                return false; 
-            }
-
-            character.IsDeleted = true;
-            _context.Characters.Update(character);
-            await _context.SaveChangesAsync();
-            return true; 
+            return await _context.Characters.FirstOrDefaultAsync(c => c.UniqueId == uniqueId && !c.IsDeleted);
         }
 
-        public async Task<bool> SoftDeleteCharacterByUniqueIdAsync(Guid uniqueId)
+        public async Task<bool> SoftDeleteAsync(int? id)
         {
-            var character = await _context.Characters.FirstOrDefaultAsync(c => c.UniqueId == uniqueId);
-            if (character == null || character.IsDeleted.Value)
-            {
-                return false; 
-            }
+            var affectedRows = await _context.Characters
+                .Where(c => c.Id == id && !c.IsDeleted)
+                .ExecuteUpdateAsync(c => c.SetProperty(c => c.IsDeleted, true));
 
-            character.IsDeleted = true;
-            _context.Characters.Update(character);
-            await _context.SaveChangesAsync();
-            return true;
+            return affectedRows > 0;
+        }
+
+        public async Task<bool> SoftDeleteAsync(Guid uniqueId)
+        {
+            var affectedRows = await _context.Characters
+                .Where(c => c.UniqueId == uniqueId && !c.IsDeleted)
+                .ExecuteUpdateAsync(c => c.SetProperty(c => c.IsDeleted, true));
+
+            return affectedRows > 0;
         }
 
 
-        public async Task<List<Character>?> GetCharacterByUserUniqueIdAsync(Guid userUniqueId)
+        public async Task<List<Character>> GetByUserUniqueIdAsync(Guid userUniqueId)
         {
+            var User = await _context.Set<User>().Include(u => u.Characters)
+                                                  .FirstOrDefaultAsync(c => c.UniqueId == userUniqueId);
 
-            var Users = await this.GetAllAsync<UserInfo?>();
-            var User = Users.FirstOrDefault(u => u.UniqueId == userUniqueId);
+            if (User is {Characters: null})
+                return new();
 
-            if (User == null)
-                return new List<Character>();
-
-
-            return await _context.Characters
-                                 .Where(c => !c.IsDeleted.Value && c.UserId == User.Id)
-                                 .ToListAsync();
+            return User.Characters.ToList();
         }
     }
 }

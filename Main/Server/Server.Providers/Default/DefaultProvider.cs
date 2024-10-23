@@ -12,24 +12,24 @@ namespace System.Provider
             _context = context;
         }
 
-        public async Task<T?> GetAsync<T>(int id) where T : class
+        public virtual async Task<T?> GetAsync<T>(int id) where T : class
         {
             return await _context.Set<T>().FindAsync(id);
         }
 
-        public async Task<T?> GetAsync<T>(Guid UniqueId) where T : class
+        public virtual async Task<T?> GetAsync<T>(Guid UniqueId) where T : class
         {
             return await _context.Set<T>().FindAsync(UniqueId);
         }
 
-        public async Task<IEnumerable<T>> GetAllAsync<T>() where T : class
+        public virtual async Task<IEnumerable<T>> GetAllAsync<T>() where T : class
         {
             return await _context.Set<T>().ToListAsync();
         }
 
 
 
-        public async Task<T> CreateAsync<T>(T entity) where T : class
+        public virtual async Task<T> CreateAsync<T>(T entity) where T : class
         {
             await ValidateEntity(entity);
 
@@ -38,7 +38,7 @@ namespace System.Provider
             return entity;
         }
 
-        public async Task<T> UpdateAsync<T>(T entity) where T : class
+        public virtual async Task<T> UpdateAsync<T>(T entity) where T : class
         {
             await ValidateEntity(entity);
 
@@ -47,7 +47,7 @@ namespace System.Provider
             return entity;
         }
 
-        public async Task DeleteAsync<T>(int? id) where T : class
+        public virtual async Task DeleteAsync<T>(int? id) where T : class
         {
 
             var entity = await _context.Set<T>().FindAsync(id);
@@ -59,7 +59,7 @@ namespace System.Provider
             await _context.SaveChangesAsync();
         }
 
-        public async Task SoftDeleteAsync<T>(int id) where T : class
+        public virtual async Task SoftDeleteAsync<T>(int id) where T : class
         {
             var entity = await _context.Set<T>().FindAsync(id);
 

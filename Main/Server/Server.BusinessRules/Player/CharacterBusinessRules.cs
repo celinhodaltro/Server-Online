@@ -30,13 +30,13 @@ namespace Server.BusinessRules
 
         public async Task<Character> GetById(int Id)
         {
-            var player = await CharacterProvider.GetAsync<Character>(Id);
+            var player = await CharacterProvider.GetAsync(Id);
             return player;
         }
 
         public async Task<List<Character>> GetByUserUniqueId(Guid userUniqueId)
         {
-            var Players = await CharacterProvider.GetCharacterByUserUniqueIdAsync(userUniqueId);
+            var Players = await CharacterProvider.GetByUserUniqueIdAsync(userUniqueId);
             return Players;
         }
 
