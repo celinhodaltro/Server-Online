@@ -14,8 +14,6 @@ namespace Server.Providers
             _context = context;
         }
 
-
-
         public async Task<Character?> GetAsync(int? id)
         {
             return await _context.Characters.FirstOrDefaultAsync(c => c.Id == id && !c.IsDeleted);
