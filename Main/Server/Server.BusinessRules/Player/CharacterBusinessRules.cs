@@ -30,7 +30,7 @@ namespace Server.BusinessRules
 
         public async Task<Character> GetById(int Id)
         {
-            var player = await CharacterProvider.GetAsync<Character>(Id);
+            var player = await CharacterProvider.GetAsync(Id);
             return player;
         }
 
