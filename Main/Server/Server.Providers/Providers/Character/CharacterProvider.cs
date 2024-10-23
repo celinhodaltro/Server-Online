@@ -33,24 +33,22 @@ namespace Server.Providers
                 return false; 
             }
 
-            character.IsDeleted = true;
-            _context.Characters.Update(character);
-            await _context.SaveChangesAsync();
-            return true; 
+        public async Task<bool> SoftDeleteAsync(int? id)
+        {
+            var affectedRows = await _context.Characters
+                .Where(c => c.Id == id && !c.IsDeleted)
+                .ExecuteUpdateAsync(c => c.SetProperty(c => c.IsDeleted, true));
+
+            return affectedRows > 0;
         }
 
-        public async Task<bool> SoftDeleteCharacterByUniqueIdAsync(Guid uniqueId)
+        public async Task<bool> SoftDeleteAsync(Guid uniqueId)
         {
-            var character = await _context.Characters.FirstOrDefaultAsync(c => c.UniqueId == uniqueId);
-            if (character == null || character.IsDeleted.Value)
-            {
-                return false; 
-            }
+            var affectedRows = await _context.Characters
+                .Where(c => c.UniqueId == uniqueId && !c.IsDeleted)
+                .ExecuteUpdateAsync(c => c.SetProperty(c => c.IsDeleted, true));
 
-            character.IsDeleted = true;
-            _context.Characters.Update(character);
-            await _context.SaveChangesAsync();
-            return true;
+            return affectedRows > 0;
         }
 
 
