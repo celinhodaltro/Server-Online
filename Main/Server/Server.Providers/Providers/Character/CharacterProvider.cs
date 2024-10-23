@@ -1,4 +1,5 @@
 ﻿using System.Provider;
+using System.Xml;
 using Microsoft.EntityFrameworkCore;
 using Server.Entities;
 
@@ -25,13 +26,10 @@ namespace Server.Providers
             return await _context.Characters.FirstOrDefaultAsync(c => c.Name == Name && !c.IsDeleted);
         }
 
-        public async Task<bool> SoftDeleteCharacterByIdAsync(int? id)
+        public async Task<Character?> GetAsync(Guid uniqueId)
         {
-            var character = await _context.Characters.FirstOrDefaultAsync(c => c.Id == id);
-            if (character == null || character.IsDeleted.Value)
-            {
-                return false; 
-            }
+            return await _context.Characters.FirstOrDefaultAsync(c => c.UniqueId == uniqueId && !c.IsDeleted);
+        }
 
         public async Task<bool> SoftDeleteAsync(int? id)
         {
@@ -52,19 +50,15 @@ namespace Server.Providers
         }
 
 
-        public async Task<List<Character>?> GetCharacterByUserUniqueIdAsync(Guid userUniqueId)
+        public async Task<List<Character>> GetByUserUniqueIdAsync(Guid userUniqueId)
         {
+            var User = await _context.Set<User>().Include(u => u.Characters)
+                                                  .FirstOrDefaultAsync(c => c.UniqueId == userUniqueId);
 
-            var Users = await this.GetAllAsync<UserInfo?>();
-            var User = Users.FirstOrDefault(u => u.UniqueId == userUniqueId);
+            if (User is {Characters: null})
+                return new();
 
-            if (User == null)
-                return new List<Character>();
-
-
-            return await _context.Characters
-                                 .Where(c => !c.IsDeleted.Value && c.UserId == User.Id)
-                                 .ToListAsync();
+            return User.Characters.ToList();
         }
     }
 }
