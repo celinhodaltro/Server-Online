@@ -13,11 +13,11 @@ namespace Server.Providers
             _context = context;
         }
 
-        public async Task<Character?> GetCharacterByIdAsync(int? id)
+
+
+        public async Task<Character?> GetAsync(int? id)
         {
-            return await _context.Characters
-                                 .Where(c => !c.IsDeleted.Value)  
-                                 .FirstOrDefaultAsync(c => c.Id == id);
+            return await _context.Characters.FirstOrDefaultAsync(c => c.Id == id && !c.IsDeleted);
         }
 
         public async Task<Character?> GetAsync(string Name)
