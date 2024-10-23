@@ -12,7 +12,7 @@ namespace Server.Entities
 
         public Guid? UniqueId { get; set; } = Guid.NewGuid();
 
-        public bool? IsDeleted { get; set; } = false;
+        public bool IsDeleted { get; set; } = false;
 
         public DateTime? LastUpdate { get; set; } = DateTime.MinValue;
 
