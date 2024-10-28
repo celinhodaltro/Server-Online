@@ -67,6 +67,7 @@ A estrutura do projeto é dividida em três principais módulos:
 - **Server**: Responsável pela lógica de negócios, API e manipulação de dados.
 - **Application**: Contém as aplicações que interagem com os usuários, tanto o jogo quanto a aplicação web.
 - **Docs**: Documentação técnica e diagramas de arquitetura.
+- **Tests**: Testes automaticos do projeto (Implementação futura)
 
 ### Arquitetura
 
@@ -86,6 +87,10 @@ A estrutura do projeto é dividida em três principais módulos:
 │   └── /Application.WebApp     # Aplicação web Blazor
 │       ├── /Pages              # Páginas da aplicação Blazor
 │       └── /Shared             # Componentes compartilhados da aplicação Blazor
+│
+├── /Tests
+│      ├── /Test.Server         # Implementação de testes de Server
+│      └── /Test.Application    # Implementação de Testes de Application
 │
 └── /Docs
     ├── Github.Documents  # Documentos do Git
