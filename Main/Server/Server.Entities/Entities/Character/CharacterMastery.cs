@@ -10,5 +10,5 @@ public class CharacterMastery :DefaultDb
 
     public int CharacterId { get; set; }
     [ForeignKey("CharacterId")]
-    public virtual Character Character { get; set; }
+    public virtual Character? Character { get; set; }
 }
