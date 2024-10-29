@@ -19,11 +19,19 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     public DbSet<CharacterQuest> CharacterQuests { get; set; }
     public DbSet<CharacterOutfitAddon> CharacterOutfitAddons { get; set; }
     public DbSet<CharacterSkill> CharacterSkill { get; set; }
+    public DbSet<CharacterMastery> CharacterMastery { get; set; }
+    #endregion
+
+    #region Guild 
     public DbSet<Guild> Guilds { get; set; }
     public DbSet<GuildMembership> GuildMemberships { get; set; }
+    #endregion
+
+    #region World
     public DbSet<World> Worlds { get; set; }
     #endregion
-    #region Logs
+
+    #region Log
     public DbSet<LogTrack> Logs { get; set; }
     #endregion
 
