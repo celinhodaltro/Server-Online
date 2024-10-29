@@ -5,8 +5,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Server.Entities;
 public class CharacterMastery :DefaultDb
 {
-    public int MasteryId { get; set; }
+    public int? Id { get; set; }
     public CharacterMasteryType MasteryType { get; set; }
+    public string Name { get; set; } = string.Empty;
 
     public int CharacterId { get; set; }
     [ForeignKey("CharacterId")]
