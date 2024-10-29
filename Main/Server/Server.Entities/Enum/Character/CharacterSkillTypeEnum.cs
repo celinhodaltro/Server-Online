@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Server.Entities.Enum
 {
-    enum CharacterMasteryType
+    public enum CharacterMasteryType
     {
         #region Magic
         Pyromance = 0, 
